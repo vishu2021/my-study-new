@@ -1,0 +1,1012 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="../atom-one-light.css">
+						<title>P6_GS_IV_200</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">P6_GS_IV_200</div>
+
+<style>
+		/* https://necolas.github.io/normalize.css/ */
+		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
+		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
+		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
+
+		body {
+			font-size: 15px;
+			color: #32373F;
+			word-wrap: break-word;
+			line-height: 1.6em;
+			background-color: #ffffff;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+			padding-bottom: 0px;
+			padding-top: 0px;
+		}
+		kbd {
+			border: 1px solid rgb(220, 220, 220);
+			box-shadow: inset 0 -1px 0 rgb(220, 220, 220);
+			padding: 2px 4px;
+			border-radius: 3px;
+			background-color: rgb(243, 243, 243);
+		}
+
+		:root {
+			--scrollbar-size: 7px;
+		}
+
+		::-webkit-scrollbar {
+			width: var(--scrollbar-size);
+			height: var(--scrollbar-size);
+		}
+		::-webkit-scrollbar-thumb {
+			border-radius: calc(var(--scrollbar-size) / 2);
+		}
+		::-webkit-scrollbar-corner {
+			background: none;
+		}
+		::-webkit-scrollbar-track {
+			border: none;
+		}
+		::-webkit-scrollbar-thumb {
+			background: rgba(50, 55, 63, 0.54); 
+		}
+		::-webkit-scrollbar-track:hover {
+			background: rgba(0, 0, 0, 0.1); 
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background: rgba(50, 55, 63, 0.63); 
+		}
+
+		
+
+		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
+
+		#rendered-md > h1:first-child,
+		#rendered-md > h2:first-child,
+		#rendered-md > h3:first-child,
+		#rendered-md > h4:first-child,
+		#rendered-md > ul:first-child,
+		#rendered-md > ol:first-child,
+		#rendered-md > table:first-child,
+		#rendered-md > blockquote:first-child,
+		#rendered-md > img:first-child,
+		#rendered-md > p:first-child {
+			margin-top: 0;
+			padding-top: 0;
+		}
+		
+		p, h1, h2, h3, h4, h5, h6, ul, table {
+			margin-top: .6em;
+			margin-bottom: 1.35em;
+
+			/*
+				Adds support for RTL text in the note body. It automatically detects the direction using the content.
+				Issue: https://github.com/laurent22/joplin/issues/3991
+			*/
+			unicode-bidi: plaintext;
+		}
+
+		h1, h2, h3, h4, h5, h6, ul, table {
+			margin-bottom: 0.65em;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			line-height: 1.5em;
+		}
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			border-bottom: 1px solid #dddddd;
+			padding-bottom: .3em;
+		}
+		h2 {
+			font-size: 1.3em;
+			font-weight: bold;
+			padding-bottom: .1em; */
+		}
+		h3 {
+			font-size: 1.1em;
+			font-weight: bold;
+		}
+		h4, h5, h6 {
+			font-size: 1em;
+			font-weight: bold;
+		}
+
+		.exported-note-title {
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 0.8em;
+			line-height: 1.5em;
+			padding-bottom: .35em;
+			border-bottom: 1px solid #dddddd;
+		}
+
+		a {
+			color: #155BDA;
+		}
+		ul, ol {
+			padding-left: 0;
+			margin-left: 1.7em;
+		}
+		li {
+			margin-bottom: .4em;
+		}
+		li p {
+			margin-top: 0.2em;
+			margin-bottom: 0;
+		}
+
+		dt {
+			font-weight: bold;
+			margin-bottom: 0.25em;
+		}
+
+		dd {
+			margin-inline-start: 2.5em;
+			margin-bottom: 0.5em;
+		}
+
+		.resource-icon {
+			display: inline-block;
+			position: relative;
+			top: 0.3em;
+			text-decoration: none;
+			width: 1.2em;
+			height: 1.4em;
+			margin-right: 0.4em;
+			background-color:  #155BDA;
+		}
+    /* These icons are obtained from the wonderful ForkAwesome project by copying the src svgs 
+     * into the css classes below.
+     * svgs are obtained from https://github.com/ForkAwesome/Fork-Awesome/tree/master/src/icons/svg
+     * instead of the svg width, height property you must use a viewbox here, 0 0 1536 1792 is typically the actual size of the icon
+     * each line begins with the pre-amble -webkit-mask: url("data:image/svg+xml;utf8,
+     * and of course finishes with ");
+     * to prevent artifacts it is also necessary to include -webkit-mask-repeat: no-repeat;
+     * on the following line
+     * */
+		.fa-joplin {
+			/* Awesome Font file */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M373.834 128C168.227 128 0 296.223 0 501.834v788.336C0 1495.778 168.227 1664 373.834 1664h788.336c205.608 0 373.83-168.222 373.83-373.83V501.834C1536 296.224 1367.778 128 1162.17 128zm397.222 205.431h417.424a7.132 7.132 0 0 1 7.132 7.133v132.552c0 4.461-3.619 8.073-8.077 8.073h-57.23c-24.168 0-43.768 19.338-44.284 43.374v2.377h-.017v136.191h-.053l-.466 509.375c-5.02 77.667-39.222 149.056-96.324 201.046-60.28 54.834-141.948 85.017-229.962 85.017-12.45 0-25.208-.61-37.907-1.785-92.157-8.682-181.494-48.601-251.662-112.438-71.99-65.517-117.147-150.03-127.164-238-11.226-98.763 23.42-192.783 95.045-257.937 81.99-74.637 198.185-101.768 316.613-75.704 5.574 1.227 9.55 6.282 9.55 11.997v199.52c-.199 2.625-1.481 6.599-8.183 2.896-.663-.365-1.194-.511-1.653-.531-21.987-10.587-45.159-17.57-68.559-19.916-.38-.04-.757-.124-1.138-.163-.537-.048-1.034-.033-1.556-.075-4.13-.354-8.183-.517-12.203-.58-.87-.011-1.771-.127-2.641-.127-.486 0-.951.05-1.437.057-1.464.011-2.886.115-4.33.163-2.76.102-5.497.211-8.182.448-.273.024-.547.07-.835.097-25.509 2.4-47.864 11.104-65.012 25.47-.954.802-1.974 1.53-2.9 2.36a1.34 1.34 0 0 1-.168.146c-23.96 21.8-34.881 53.872-30.726 90.316 4.62 40.737 26.94 81.156 62.841 113.823 35.908 32.67 80.335 52.977 125.113 57.186 35.118 3.36 66.547-3.919 89.899-20.461a97.255 97.255 0 0 0 9.365-7.501c2.925-2.661 5.569-5.5 8.086-8.416.3-.348.672-.673.975-1.024 8.253-9.864 14.222-21.067 17.996-33.148.639-2.034 1.051-4.148 1.564-6.227.381-1.563.81-3.106 1.112-4.693.555-2.784.923-5.632 1.253-8.49.086-.709.183-1.414.237-2.128.492-4.893.693-9.858.55-14.91h.013V521.623c-2.01-22.626-20.78-40.434-43.928-40.434h-57.23a8.071 8.071 0 0 1-8.077-8.073V340.564a7.132 7.132 0 0 1 7.136-7.133z'/></svg>");
+		}
+		.fa-file-image {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-128-448v320H256v-192l192-192 128 128 384-384zm-832-192c-106 0-192-86-192-192s86-192 192-192 192 86 192 192-86 192-192 192z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-pdf {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-514-593c25 20 53 38 84 56 42-5 81-7 117-7 67 0 152 8 177 49 7 10 13 28 2 52-1 1-2 3-3 4v1c-3 18-18 38-71 38-64 0-161-29-245-73-139 15-285 46-392 83-103 176-182 262-242 262-10 0-19-2-28-7l-24-12c-3-1-4-3-6-5-5-5-9-16-6-36 10-46 64-123 188-188 8-5 18-2 23 6 1 1 2 3 2 4 31-51 67-116 107-197 45-90 80-178 104-262-32-109-42-221-24-287 7-25 22-40 42-40h22c15 0 27 5 35 15 12 14 15 36 9 68-1 3-2 6-4 8 1 3 1 5 1 8v30c-1 63-2 123-14 192 35 105 87 190 146 238zm-576 411c30-14 73-57 137-158-75 58-122 124-137 158zm398-920c-10 28-10 76-2 132 3-16 5-31 7-44 2-17 5-31 7-43 1-3 2-5 4-8-1-1-1-3-2-5-1-18-7-29-13-36 0 2-1 3-1 4zm-124 661c88-35 186-63 284-81-10-8-20-15-29-23-49-43-93-103-127-176-19 61-47 126-83 197-15 28-30 56-45 83zm646-16c-5-5-31-24-140-24 49 18 94 28 124 28 9 0 14 0 18-1 0-1-1-2-2-3z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-word {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM233 768v107h70l164 661h159l128-485c5-15 8-30 10-46 1-8 2-16 2-24h4l3 24c3 14 4 30 9 46l128 485h159l164-661h70V768h-300v107h90l-99 438c-4 16-6 33-7 46l-2 21h-4c0-6-2-14-3-21-3-13-5-30-9-46L825 768H711l-144 545c-4 16-5 33-8 46l-4 21h-4l-2-21c-1-13-3-30-7-46l-99-438h90V768H233z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-powerpoint {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-992-234v106h327v-106h-93v-167h137c43 0 82-2 118-15 90-31 146-124 146-233s-54-193-137-228c-38-15-84-19-130-19H416v107h92v555h-92zm353-280H650V882h120c35 0 62 6 83 18 36 21 56 62 56 115 0 56-20 99-62 120-21 10-47 15-78 15z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-excel {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-979-234v106h281v-106h-75l103-161c12-19 18-34 21-34h2c1 4 3 7 5 10 4 8 10 14 17 24l107 161h-76v106h291v-106h-68l-192-273 195-282h67V768H828v107h74l-103 159c-12 19-21 34-21 33h-2c-1-4-3-7-5-10-4-7-9-14-17-23L648 875h76V768H434v107h68l189 272-194 283h-68z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-audio {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM620 850c12 5 20 17 20 30v544c0 13-8 25-20 30-4 1-8 2-12 2-8 0-16-3-23-9l-166-167H288c-18 0-32-14-32-32v-192c0-18 14-32 32-32h131l166-167c10-9 23-12 35-7zm417 689c19 0 37-8 50-24 83-102 129-231 129-363s-46-261-129-363c-22-28-63-32-90-10-28 23-32 63-9 91 65 80 100 178 100 282s-35 202-100 282c-23 28-19 68 9 90 12 10 26 15 40 15zm-211-148c17 0 34-7 47-20 56-60 87-137 87-219s-31-159-87-219c-24-26-65-27-91-3-25 24-27 65-2 91 33 36 52 82 52 131s-19 95-52 131c-25 26-23 67 2 91 13 11 29 17 44 17z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-video {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM768 768c70 0 128 58 128 128v384c0 70-58 128-128 128H384c-70 0-128-58-128-128V896c0-70 58-128 128-128h384zm492 2c12 5 20 17 20 30v576c0 13-8 25-20 30-4 1-8 2-12 2-8 0-17-3-23-9l-265-266v-90l265-266c6-6 15-9 23-9 4 0 8 1 12 2z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-archive {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M640 384V256H512v128h128zm128 128V384H640v128h128zM640 640V512H512v128h128zm128 128V640H640v128h128zm700-388c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H768v128H640V128H128v1536h1280zM781 943c85 287 107 349 107 349 5 17 8 34 8 52 0 111-108 192-256 192s-256-81-256-192c0-18 3-35 8-52 0 0 21-62 120-396V768h128v128h79c29 0 54 19 62 47zm-141 465c71 0 128-29 128-64s-57-64-128-64-128 29-128 64 57 64 128 64z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-code {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM480 768c11-14 31-17 45-6l51 38c14 11 17 31 6 45l-182 243 182 243c11 14 8 34-6 45l-51 38c-14 11-34 8-45-6l-226-301c-8-11-8-27 0-38zm802 301c8 11 8 27 0 38l-226 301c-11 14-31 17-45 6l-51-38c-14-11-17-31-6-45l182-243-182-243c-11-14-8-34 6-45l51-38c14-11 34-8 45 6zm-620 461c-18-3-29-20-26-37l138-831c3-18 20-29 37-26l63 10c18 3 29 20 26 37l-138 831c-3 18-20 29-37 26z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-alt, .fa-file-csv {
+      /* fork-awesome doesn't have csv so we use the text icon */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM384 800c0-18 14-32 32-32h704c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64zm736 224c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704zm0 256c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		blockquote {
+			border-left: 4px solid rgb(220, 220, 220);
+			padding-left: 1.2em;
+			margin-left: 0;
+			opacity: 0.7;
+		}
+
+		.jop-tinymce table,
+		table {
+			text-align: left;
+			border-collapse: collapse;
+			border: 1px solid rgb(220, 220, 220);
+			background-color: #ffffff;
+		}
+
+		.jop-tinymce table td, .jop-tinymce table th,
+		table td, th {
+			text-align: left;
+			padding: .5em 1em .5em 1em;
+			font-size: 15;
+			color: #32373F;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+		}
+
+		.jop-tinymce table td,
+		table td {
+			border: 1px solid rgb(220, 220, 220);
+		}
+
+		.jop-tinymce table th,
+		table th {
+			border: 1px solid rgb(220, 220, 220);
+			border-bottom: 2px solid rgb(220, 220, 220);
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:nth-child(even),
+		table tr:nth-child(even) {
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:hover,
+		table tr:hover {
+			background-color: #e5e5e5;
+		}
+
+		hr {
+			border: none;
+			border-bottom: 2px solid #dddddd;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		.inline-code,
+		.mce-content-body code {
+			border: 1px solid rgb(220, 220, 220);
+			background-color: rgb(243, 243, 243);
+			padding-right: .2em;
+			padding-left: .2em;
+			border-radius: .25em;
+			color: rgb(0,0,0);
+			font-size: .9em;
+		}
+
+		.highlighted-keyword {
+			background-color: #F3B717;
+			color: black;
+		}
+
+		
+	.not-loaded-resource img {
+		width: 1.15em;
+		height: 1.15em;
+		background: white;
+		padding: 2px !important;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px #000000aa;
+	}
+
+	a.not-loaded-resource img {
+		margin-right: .2em;
+	}
+
+	a.not-loaded-resource {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+
+		.md-checkbox input[type=checkbox]:checked {
+			opacity: 0.7;
+		}
+
+		.jop-tinymce ul.joplin-checklist .checked,
+		.md-checkbox .checkbox-label-checked {
+			opacity: 0.5;
+		}
+
+		.exported-note {
+			padding: 1em;
+		}
+
+		.joplin-editable .joplin-source {
+			display: none;
+		}
+
+		mark {
+			background: #F7D26E;
+			color: black;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		.mce-content-body {
+			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
+			padding: 5px 10px 10em 0;
+		}
+
+		/*
+		.mce-content-body code {
+			background-color: transparent;
+		}
+		*/
+
+		.mce-content-body [data-mce-selected=inline-boundary] {
+			background-color: transparent;
+		}
+
+		.mce-content-body .joplin-editable {
+			cursor: pointer !important;
+		}
+
+		.mce-content-body.mce-content-readonly {
+			opacity: 0.5;
+		}
+
+		/* We need that to make sure click events have the A has a target */
+		.katex a span {
+			pointer-events: none;
+		}
+
+		.media-player {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.media-player.media-pdf {
+			min-height: 35rem;
+			width: 100%;
+			max-width: 1000px;
+			margin: 0;
+			border: 0;
+			display: block;
+		}
+
+		/* Clear the CODE style if the element is within a joplin-editable block */
+		.mce-content-body .joplin-editable code {
+			border: none;
+			background: none;
+			padding: 0;
+			color: inherit;
+			font-size: inherit;
+		}
+
+		/* To make code blocks horizontally scrollable */
+		/* https://github.com/laurent22/joplin/issues/5740 */
+		pre.hljs {
+			overflow-x: auto;
+		}
+
+		.joplin-table-wrapper{
+			overflow-x: auto;
+			overflow-y: hidden;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		@media print {
+			body {
+				height: auto !important;
+			}
+
+			pre {
+				white-space: pre-wrap;
+			}
+
+			.code, .inline-code {
+				border: 1px solid #CBCBCB;
+			}
+
+			#joplin-container-content {
+				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
+				   around various issues related to scrolling. However when printing we don't want this
+				   fixed size as that would crop the content. So we set it to auto here. "important" is
+				   needed to override the style set by JavaScript at the element-level. */
+				height: auto !important;
+			}
+		}
+	
+
+				/*
+					FOR THE MARKDOWN EDITOR
+				*/
+
+				/* Remove the indentation from the checkboxes at the root of the document
+				   (otherwise they are too far right), but keep it for their children to allow
+				   nested lists. Make sure this value matches the UL margin. */
+
+				li.md-checkbox {
+					list-style-type: none;
+				}
+
+				li.md-checkbox input[type=checkbox] {
+					margin-left: -1.71em;
+					margin-right: 0.7em;
+					position: relative;
+					top: 1px;
+				}
+				
+				ul.joplin-checklist {
+					list-style:none;
+				}
+
+				/*
+					FOR THE RICH TEXT EDITOR
+				*/
+
+				ul.joplin-checklist li::before {
+					content:"\f14a";
+					font-family:"Font Awesome 5 Free";
+					background-size: 16px 16px;
+					pointer-events: all;
+					cursor: pointer;
+					width: 1em;
+					height: 1em;
+					margin-left: -1.3em;
+					position: absolute;
+					color: #32373F;
+				}
+
+				.joplin-checklist li:not(.checked)::before {
+					content:"\f0c8";
+				}
+.mermaid { width: 640px; }
+pre.mermaid[data-processed=true] { white-space: unset; }
+.mermaid-export-graph {
+					opacity: 0;
+					height: 0;
+					z-index: 1;
+					position: relative;
+				} 
+				.joplin-editable:hover .mermaid-export-graph,
+				.joplin-editable .mermaid-export-graph:has(:focus-visible) {
+					opacity: 1;
+				}
+				.mermaid-export-graph > button:hover {
+					background-color: #CBDAF1 !important;
+				}</style><div id="rendered-md"><p><strong>General Studies - IV - 200M - 3H</strong></p>
+<h1 id="syllabus">Syllabus</h1>
+<h3 id="ethics-integrity-and-aptitude"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Ethics, integrity and Aptitude</strong></span></h3>
+<ul>
+<li>This paper will include questions about the candidates’ attitude and approach to issues relating to integrity, probity in public life and his problem-solving approach to various issues and conflicts faced by him in dealing with society. Questions may utilize the case study approach to determine these aspects. The following broad areas will be covered:
+<ul>
+<li><strong>Ethics and Human Interface:</strong> Essence, determinates and consequences of Ethics in – human actions; dimensions of ethics; ethics – in private and public relationships. Human values – lessons from the lives and teachings of great leaders, reformers and administrators; role of society and educational institutions in inculcating value</li>
+<li><strong>Attitude:</strong> Content, structure, function; its influence and relation with thought and behavior; moral and political attitudes; social influence and persuasion</li>
+<li>Aptitude and foundational values for civil service, integrity, impartiality and – partisanship, objectivity, dedication to public service, empathy, tolerance and compassion towards the weaker sections</li>
+<li><strong>Emotional Intelligence:</strong> Concepts, and their utilities and application in administration and governance</li>
+<li>Contributions of moral thinkers and philosophers from India and the world</li>
+<li><strong>Public/Civil Service Values and Ethics in Public Administration:</strong> Status and problems; concerns and dilemmas in government and private institutions; laws, rules, regulations and conscience as sources of ethical guidance; accountability and ethical governance; strengthening of ethical and moral values in governance; ethical issues in international relations and funding; corporate governance</li>
+<li><strong>Probity in Governance:</strong> Concept of public; philosophical basis of governance and probity; Information sharing and transparency in government, Right to information, Codes of Ethics, Codes of Conduct, Citizen’s Charters, Work culture, Quality of service delivery, Utilization of public funds, challenges of corruption</li>
+<li>Case studies on above issues</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h1 id="2012-31-jan-to-3-feb-2016-general-aptitude-and-ethics">2012 - 31 Jan to 3 Feb 2016 - General Aptitude and Ethics</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/UKPSC-2012%20(Mains)%20(G.S%20Paper-VII).pdf' href='https://www.drishtiias.com/images/pdf/UKPSC-2012%20%28Mains%29%20%28G.S%20Paper-VII%29.pdf'>https://www.drishtiias.com/images/pdf/UKPSC-2012 (Mains) (G.S Paper-VII).pdf</a></p>
+<h2 id="part-1-30-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 1 : 30 M</strong></span></h2>
+<h3 id="2m-20w">2M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.  BUCKET : ACTVBDJLDFSU :: BONUS : ?  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong>  In the following statements, identify which one is the cause and which one is the effect?<br>
+Statement I : Uttarkashi is very prone to earthquakes.<br>
+Statement II : According to seismologists, there is a lot of tectonic activities going on the down belt of Uttarkashi. (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.  The algebraic sum of the deviations of 20 observations, measured from 30, is 4 (four). Find the arithmetic mean of these observations.  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. Find the value of 1/(3 + √7) + 1/(√7 + √5) + 1/(√5 + √3) + 1/(√3 + 1)</strong>   (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.  C is a positive number. What % of 500 C, is 500% of C?  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> A’s salary is 40% more than B’s salary. By what percentage (%) B’s salary is less than A’s salary?  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. If 05th January, 2000 is Monday, then what would be the day on 30th March, 2000?   (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> Pointing towards a person, a woman said, ‘His wife is the only daughter of my father.’ What is the relation of that person with the woman?  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.  If geometric mean of two positive numbers is 12 and their harmonic mean is 14 / 13 , then what are the numbers?  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong>  Ethics is a Normative Study of Conduct or Positive Study? Discuss. (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11.   Elucidate the kinds of 'values'. (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> What is the contribution of Emmanuel Kant in the field of Ethics?  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. What do you understand by work-culture?   (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong>  What are the important values required in public service? (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15.  What is Conduct?  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="part-2-50-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 2 : 50 M</strong></span></h2>
+<h3 id="5m-50w">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. Why Ethics is related to rational human life only? Discuss briefly. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17.</strong>  Describe moral attitude. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18.</strong> Discuss 'Emotional Intelligence' as a trait of human personality. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19.</strong> Write a note on Corporate Governance.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20.</strong>  Solve the following equations taking them as linear:<br>
+ 2/x + 3/(3y) = 1/6 and 3/x + 4/y = -1/2<br>
+</span><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21.</strong> Find the ratio of the volumes of cone, hemisphere and cylinder which are made with the same circular base and height?  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.</strong> Find the difference of median and mode of the following data :<br>
+25, 33, 72, 65, 29, 60, 30, 54, 32, 53, 42, 52, 42, 51, 42, 48, 45, 47, 46, 33<br>
+(5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>23.</strong> The average age of a class was 15 years. When 5 more boys, whose average age was 12 years 6 months were admitted in the class, the average age of the whole class was reduced by 6 months. How many students were there in the class originally? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>24.</strong> If the cost price of 150 shirts is equal to the selling price of 120 shirts, find the profit in percentage.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>25.</strong> The coordinates of the vertices B and C of a triangle ABC are (1, – 2) and (2, 3), respectively. Third vertex A lies on the line 2x + y – 2 = 0. Area of the triangle is 8 square units. Find the coordinates of the vertex A. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<h2 id="part-3-40-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv">Part - 3 : 40 M</span></h2>
+<h3 id="section-1-general-aptitude"><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Section - 1 : General Aptitude</strong></span></h3>
+<h3 id="8m-125w">8M 125W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>26. There are 400 students in a class of a school. Of these 270 study Maths, 300 French and 50 Business Studies. All those who study Maths, study French also. 20 study Maths and Business studies. 35 study French and Business studies. A student is selected at random. Find the probability that the selected student studies French but neither Maths nor Business Studies. Use Venn diagram only. (8M125W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>27.</strong>  A and B alone can complete a piece of work in 7 and 14 days, respectively. A and B work it together for 2 days and after 2 days, C joins them. Now, the work is completed in one day. In how many days can C alone do that work?  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>28.</strong> A man borrowed   ₹30,000 at the rate of 12% per annum simple interest from a bank. He paid ₹15,200 after two years to the bank. How much he will have to pay after two more years, to clear the loan? (8M125W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>29.</strong> A manufacturer sells an article at p% more than the cost of production. If he gives a discount of q% to the customer, find the profit in percentage.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<h3 id="section-2-ethics"><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Section - 2 : Ethics</strong></span></h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>30.</strong>  Discuss the formation of attitude. (8M125W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>31.</strong> What is the contribution of the teachings of Swami Vivekanand for Society? Explain.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>32.</strong> Discuss the importance of ‘Accountability’ in governance. (8M125W)</span></strong></strong><br>
+Ans</p>
+<h2 id="part-4-80-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 4 : 80 M</strong></span></h2>
+<h3 id="section-1-general-aptitude-2"><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Section - 1 : General Aptitude</strong></span></h3>
+<h3 id="16m-250w">16M 250W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>33. A selling agent’s remuneration consists partly of a fixed monthly salary and partly of a fixed percentage on all sales effected by him. During the first four months of the year 2011, he sold goods for ₹26,272 and received a total remuneration of ₹5,284. During the rest of the year, he sold goods for ₹43,008 and received the total remuneration of ₹9,376. Find his monthly salary and the percentage rate of commission. (16M250W)</strong></span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>34.</strong> A rectangular garden is 60 metre long and 40 metre wide. Two cross paths, each 4 metre wide, are to be constructed parallel to the sides of the garden. These paths pass through the centre of the garden. Find the cost of construction of the two paths at the rate of <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>₹</strong></span>70 per square metre.  <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></span><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>35.</strong> Simplify: (4 1/7 - 2 1/4) / (1/2 + 1 1/7) ÷ [ 1 / ( 2 + 1 / ( 2 + 1 / ( 5 - 1/5 ) ) ) ]<br>
+<strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>36.</strong> A, B and C are partners in a business. A being working partner, receives 10% of the total profit as salary. The remaining profit is distributed among them in the ratio 2 : 3 : 4, respectively. If A gets <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>₹</strong></span>3 lac in all, then find the amount received by B and C.  <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></span><br>
+Ans</p>
+<h3 id="section-2-ethics-2"><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Section - 2 : Ethics</strong></span></h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>37.</strong>  Discuss the role of Ethics in Public Administration.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>38.</strong> Discuss the role of ‘Right to Information’ for transparency in Governance. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>39.</strong> Study the following case carefully and answer the questions that follow: <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(16M250W)<br>
+Mr. ‘X’ is a veteran teacher who is very popular among his students. He frequently offers students extra help after school, so it is not uncommon to see students visiting his classroom after school. He has tutored one student ‘Swati’ in a variety of subjects over a two years period. During that time Mr. ‘X’ has e-mailed messages on Swati’s cell phone, using his personal e-mail address. At first, the messages were very general (e.g. asking Swati, about a sick family member). Recently, the student began to text her teacher about more personal feelings.<br>
+Questions :<br>
+I : What possible issues/concerns might this scenario raise?<br>
+II: How can this situation become a violation of the professional code of conduct for teachers?<br>
+III: Discuss the case 'What should Mr. ‘X’ do?<br>
+</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2016-26-sept-to-29-sept-2017-general-aptitude-and-ethics">2016 - 26 Sept to 29 Sept 2017 - General Aptitude and Ethics</h1>
+<p> <a data-from-md title='https://www.drishtiias.com/images/pdf/UKPSC-2016%20(Mains)%20(G.S%20Paper-VII).pdf' href='https://www.drishtiias.com/images/pdf/UKPSC-2016%20%28Mains%29%20%28G.S%20Paper-VII%29.pdf'>https://www.drishtiias.com/images/pdf/UKPSC-2016 (Mains) (G.S Paper-VII).pdf</a></p>
+<h2 id="part-1-30-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 1 : 30 M</strong></span></h2>
+<h3 id="2m-20w-2">2M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.  If FINANCE = 39, MARKETING = 52, then PRODUCTION = ?  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> The number 0.01, is what percent of number 0.1?  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.  If A is the solution set of 9x + 2 &gt; 7x – 2, where x is a natural number, then find A.  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> If the co-ordinates of the centroid of a triangle are (3, 2) and co-ordinates of the two vertices are (1, 1) and (2, 5), then find the co-ordinates of the third vertex.  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.  Anita thinks of a number and subtracts 5 2 from it. She multiplies this result by 8. The resulting number so obtained is 3 times of the original thought number. What is the number thought by her?  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Sum of two numbers is 40 and their difference is 4. Find the ratio of the two numbers.  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.  3/7 of the total of 350 students of a school are girls and 2/5 of the girls play cricket. How many girls do not play cricket? (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong>  Three coins are tossed. What is the probability of getting neither 3 heads nor 3 tails? (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.   A rectangular sheet of card-board has length and breadth as 4 cm and 2 cm respectively. The largest possible circle is cut from this sheet. Find the area of the remaining portion of the sheet. (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong>  Explain 'Intuition' as source of Ethical guide. (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Who is the author of 'The Republic&quot;? What is the main subject matter of the book?   (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> Does information sharing serve the public interest ? Why is it an important feature of democracy?  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13.  How does corruption hamper the basic aims of positive governance?  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong>  Why is the need of compassion towards weaker section in civil services? (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15.  What do you understand by 'Whistle-blower' ? What are the main functions of `Whistle-blower'?  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="part-2-50-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 2 : 50 M</strong></span></h2>
+<h3 id="5m-50w-2">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. What do you understand by Higher values ? What is the nature of higher values? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17.</strong>  What is 'Attitude' ? Explain changes in Attitude. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18.</strong> What is importance of rules and regulations for good governance? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19.</strong>  Explain Gandhi's concept of Satyagraha. Do you think that Gandhi adopted it only as a political strategy since India was not in a position to fight the mighty British Empire? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20.</strong>  Calculate geometric mean of the numbers 3, 6, 24 and 48. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21.</strong>  In a legislative assembly, the ratio of the members of the ruling party. to the members of the opposition party was 7 : 3. Eighteen members of the ruling party left their party and joined the opposition party making this ratio to 3 2. Find the total number of members in the assembly. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.</strong> The difference between compound interest and simple interest on an amount of ₹15,000 for 2 years is ₹96. Find the rate of interest per annum. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>23. Find the value of (5√3 - 3√12 + 2√75) / (2 + √3) in the form a + b√3, where a and b are rational numbers.</strong> <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>24. Calculate the average speed of a car running at the rate of 20 km/hour during the first 30 <strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>kms</strong></span></strong>, at 25 <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>km/hour</strong></span></strong></strong> during the next 30 kms and at 30 <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>km/hour</strong></span></strong></strong> during the last 30 kms.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>25.</strong> The length of the minute hand of a clock is 14 cms. Find the area covered by it in 5 minutes. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<h2 id="part-3-40-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 3 : 40 M</strong></span></h2>
+<h3 id="8m-125w-2">8M 125W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>26. Out of a group of 60 students, 25 students play cricket, 30 students play football and 24 students play Hockey while 10 students play cricket and football, 9 students play cricket and hockey, 12 students play hockey and football and 5 students play all the three games. Using Venn-diagram, find the number of students who play only one game. (8M125W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>27.</strong>   A person loses 12.5% of his money and spends 60% of the remaining money. The part of his total money, now left with him, if he deposits this left over money in a bank for 2 years at 8% annual simple rate of interest, he gets ₹2,030 after 2 years. What was the total initial money with the person? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>28.</strong> The area of a rectangle gets reduced by 9 sq. metre, if its length is reduced by 5 metres and breadth is increased by 3 metres and if its length is increased by 3 metres and breadth is increased by 2 metres, its area increases by 67 sq. metre. Find the length and breadth of the rectangle. (8M125W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>29.</strong> Find the median from the following data :</span></strong></strong></p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">Class Interval Frequency</span></strong><br>
+<strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">0 – 10                  15</span></strong><br>
+<strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">10 – 20                18</span></strong><br>
+<strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">20 – 30                20</span></strong><br>
+<strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">30 – 40                14</span></strong><br>
+<strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">40 – 50                25</span></strong><br>
+<strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">50 – 60                40</span></strong><br>
+<span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>30.</strong> Point out main contributions of Maharshi Oayanand Indian society.         (8M125W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>31.</strong> Point out the measures to minimize corruption.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>32.</strong> Explain the moral values of social life. (8M125W)</span></strong></strong><br>
+Ans</p>
+<h2 id="part-4-80-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 4 : 80 M</strong></span></h2>
+<h3 id="16m-250w-2">16M 250W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>33. A medicine capsule is in the shape of a cylinder with two hemispheres stuck to each of its end. The length of the entire capsule is 14 mm and the diameter is 5 mm. Find its volume and surface area. If the cost of covering capsule with sweat edible coating is ₹5 per 100 mm2 then what will he the total cost of manufacturing of 500 such capsules. (16M250W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>34.</strong>  A shopkeeper gives two options to the buyer of the same coat,<br>
+(i) on coat's price of ₹5,500, three consecutive discounts of 15%, 10% and 5%.<br>
+(ii) on coat's price of ₹6,000, three consecutive discounts of 18%, 15% and 6%. Which option will be beneficial for the buyer ? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>35.</strong> For the following two frequency distributions, the mean calculated for the first was 25.4 and that of the second was 32.5. Find the values of x and y.<br>
+Class :          10-20      20-30     30-40     40-50      50-60<br>
+Frequency I :   20          15           10          x              y<br>
+Frequency II :   4            8             4          2x             y<br>
+<strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>36.</strong> Part-(l) :<br>
+A, B and C each of them working alone can complete a job in 6, 8 and 12 days respectively. If all three of them work together to complete the said job, they earn ₹23,400. Determine the share of C in their earnings.<br>
+Part-(2) :<br>
+In what ratio should a 20% methyl alcohol solution be mixed with a 50% methyl alcohol so that the resulting solution has 40% methyl alcohol ?  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>37.</strong>  Explain the essential moral values of civil service as described by different school of thoughts. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>38.</strong> Study the following case carefully and answer the questions that follow: <br>
+Swati, a police officer in control room, reaches a scene of a bad accident. Two young persons, a boy and a girl, are badly hurt. They need immediate first aid or their injuries will prove fatal. No other police patrol or ambulance can reach the site immediately. Swati has good paramedical training because of her background. She assesses that the condition of the girl is such that the probability of her single handed effort succeeding is slim. To whom should she attend first ? This is an agonizing dilemma for her.<br>
+Question :<br>
+How will you evaluate the problem?<br>
+1. Swati should toss a coin and decide whom to help.<br>
+2. Swati should help the boy first.<br>
+3. Swati should help the boy as a boy always has priority in Indian society.<br>
+4. There is no acceptable solution to the problem.<br>
+<strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>39.</strong> Study the folIowing case carefully and answer the 'questions that follow:<br>
+Suresh started a business from scratch, and ended up as substantial owner of a mid sized engineering company. The position of technical director in the company fell vacant when its incumbent resigned to take up another assignment. To the surprise of the board, Suresh proposed that his young son Ramlal should be made a technical director. One director openly expressed his opposition to the proposal and doubted Ramlal's credentials. Suresh replied that his son has studied engineering in Remote Westbrook Technical University. In reply to the member's question, he added that Remote Westbrook Technical University is an accredited university in New Mexico. Ramlal, he added also took training in some workshops near Detroit. When there was further opposition, he pleaded that his health was poor and that he would like someone from his family to take reins if he were to become too ill. Ramlal, he added, would be elected a member on the strength of his shareholding.<br>
+Question :<br>
+Assume that you have been the secretary of the company for many years and have the ears of Suresh.<br>
+What would be your advice to Suresh ?<br>
+1. You would advise Suresh that such opposition from independent Directors is routine in corporate life. Suresh should not change his position.<br>
+2. Your advice would be that Ramlal should start at the shop floor and then gradually take up higher responsibility.<br>
+3. Company should appoint an elderly technocrat with management experience who is nearing retirement and he should be appointed with specific mission to groom Ramlal.<br>
+4. You should stay away because in family matters people do not pay heed to reason.<br>
+<br class="jop-noMdConv"/></span></strong></strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span><br>
+Ans</p>
+<p> </p>
+<h1 id="2021-23-feb-to-26-feb-2023-general-science-and-technology">2021 - 23 Feb to 26 Feb 2023 - General Science and Technology</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/UKPCSMainsP-6and7-2023.pdf' href='https://www.drishtiias.com/images/pdf/UKPCSMainsP-6and7-2023.pdf'>https://www.drishtiias.com/images/pdf/UKPCSMainsP-6and7-2023.pdf</a></p>
+<h2 id="part-1-30-m-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 1 : 30 M</strong></span></h2>
+<h3 id="2m-20w-3">2M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.  What are electromagnetic waves? Mention their properties.  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Differentiate between nuclear fission and nuclear fusion.  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.  Explain the effect of temperature on surface tension of liquids.  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong>  Mention the applications of Global Positioning System (G.P.S.). (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.  Define watershed and mention its importance.  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Define watershed and mention its importance.  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.   Explain the importance of immunology. (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> Explain the difference between active and passive immunity.  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.  What are food preservatives? Name any four preservatives.  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> Mention the features of digital computers.  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11.   Which area of Uttarakhand has been declared as Eco-Sensitive zone? (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> What are molecular markers? Mention their significance.  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. Indicate the main difference between exocrine and endocrine glands.   (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong>  “E-mail is not a real time communication system”, comment on this statement. (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15.  What are the basic principles of TRIPS Agreement?  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="part-2-50-m-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 2 : 50 M</strong></span></h2>
+<h3 id="5m-50w-3">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. Classify the chromosomes on the basis of position of Centromere. Write brief note on giant chromosomes. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17.</strong> Describe any four diseases of honey-bees and their main symptoms.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18.</strong> Write the differences between volatile memory and non-volatile memory. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19.</strong>  When was State Disaster Response Force (S.D.R.F.) established by Uttarakhand and who is responsible for State Disaster Response Force? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20.</strong>  What are the main reasons of land slides and avalanches in the Himalayan region? Mention them. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21.</strong> Mention the causes of Ozone layer depletion.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.</strong> Give an account of cultivable species of fishes in Uttarakhand. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>23.</strong> Why is blood group O-negative (O⁻) considered as the universal donor? Give the reason for it. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>24.</strong>  Explain the working mechanism of Solar Cell. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>25.</strong> Explain the steps of data processing in Computer System. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<h2 id="part-3-40-m-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 3 : 40 M</strong></span></h2>
+<h3 id="8m-125w-3">8M 125W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>26. Explain the structure of glucose, and its method of testing. (8M125W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>27.</strong> Describe the objectives of National Air Quality Monitoring Programme.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>28.</strong> Give a brief account of types and advantages of bio-fertilizers. (8M125W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>29.</strong> What are the basic differences between Rural and Urban planning?  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>30.</strong> Explain disaster management cycles and its components. (8M125W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>31.</strong> Discuss the applications of nanotechnology in the field of agriculture and animal husbandry.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>32.</strong> What do you understand by ‘Genetic-Engineering’? Mention its applications. (8M125W)</span></strong></strong><br>
+Ans</p>
+<h2 id="part-4-80-m-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 4 : 80 M</strong></span></h2>
+<h3 id="16m-250w-3">16M 250W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>33. What do you understand by Intellectual Property Right (IPR)? Why is it important in biotechnology? (16M250W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>34.</strong> Discuss the main features of Forest Conservation Act, 1980.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>35.</strong>  Discuss India’s achievements in the field of Space Science and Technology. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>36.</strong> Describe the various methods of water-purification.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>37.</strong>  What are n-type and p-type semiconductors? How are they prepared? Discuss their uses. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>38.</strong> What do you understand by biometric identification and authentication? Explain in brief the different types of biometric security. Also list the applications of biometric security system. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>39.</strong> Explain the synthesis of Nylon-6 and Nylon-6,6 and mention their applications. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2021-23-feb-to-26-feb-2023-general-aptitude-and-ethics">2021 - 23 Feb to 26 Feb 2023 - General Aptitude and Ethics</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/UKPCSMainsP-6and7-2023.pdf' href='https://www.drishtiias.com/images/pdf/UKPCSMainsP-6and7-2023.pdf'>https://www.drishtiias.com/images/pdf/UKPCSMainsP-6and7-2023.pdf</a></p>
+<h2 id="part-1-30-m-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 1 : 30 M</strong></span></h2>
+<h3 id="2m-20w-4">2M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Find the smallest number of 5 digits which divided by 15, 30, 38, 40 respectively always leaves 2 as remainder.   (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong>  Find the value: 18 / (5 + √7) + 4 / (√7 + √3) + 1 / (√3 + √2) + 1 / (√2 + 1) (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.  A box contains 4 red, 5 black and 3 blue balls. Let xxx be the probability to draw 1 red and 1 blue ball and y be the probability to draw 2 black and 1 blue ball. Find the value of x + y. (Balls are drawn at random.)  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong>  Let A and B be two independent events. If P(A) = 1/3 and P(B) = 1/5​</span><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">, then what is the value of P(A∪B). (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5. If a number is decreased by 5% and then increased by 10%, then how much in percentage the obtained number is increased or decreased from the original number? (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> If a certain sum of money becomes 7 times at the simple interest rate of R% p.a. in 24 years, then what is the rate of interest R%?  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. A man buys an old car for ₹15,000 and after one year sells it for ₹20,000. After six months, again he buys the same car at ₹35,000 and sells it for ₹40,000. What is the overall profit percent for that man over both the transactions?   (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong>  A number x is multiplied by 2 and then subtracted 7/2 from it. The resulting number so obtained is multiplied by 6 and then a number y is added to it. Finally, obtained number is 11 times of the original number x. What is the value of  2x + 2y  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. Find the length of diameter of a circular ground whose area is equal to the sum of the areas of a circle with radius 8 m and a triangle with area of 36π sq.m.   (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong>  Discuss the importance of ‘Integrity’ in Civil Administration. (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11.   What are the benefits of having a Citizen’s Charter in an organization? (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong>  What do you understand by attitude? (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13.  According to Kautilya, what should be the ethical qualities of a King?  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong> State impact of ‘empathy’ in civil administration.  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15. What do you mean by disaster management?   (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="part-2-50-m-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 2 : 50 M</strong></span></h2>
+<h3 id="5m-50w-4">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. Can the 'Niskama Karma Yoga' of Bhagavadgita resolve all the ethical dilemmas of civil servants? Comment. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17.</strong> Discuss about ‘conscience’ as source of ethical guidance.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18.</strong> Discuss Swami Vivekananda’s contribution regarding national integration. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19.</strong> State the salient features of RTI Act and suggest some safety measures to avoid its misuse.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20.</strong>  For any two arbitrary sets A and B containing 5 and 6 elements respectively, what are the possible minimum and maximum numbers of elements in A∪B ? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21.</strong> The end points of a diagonal of a square are (3, 4) and (1, −1). Find the coordinates of the remaining angular points.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.</strong>  In an examination of Hindi, English and Mathematics subjects, the total marks are 120, 140 and 100 respectively. A student gets 40%, 55% and 45% marks in these subjects respectively. How many marks should he get in the Science subject out of the total 180 marks in it so that his combined percentage of marks obtained in all the four subjects becomes 60%? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>23.</strong> Consider an ascending data 57, 110, 112, 114, x, 118, 120, y. If the mean and median of the data are 108.5 and 114.5 respectively, then what is the value of y - x ? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>24.</strong> The coordinates of three vertices of a rectangle ABCD are A(2, 3), B(3, 0) and C(9, 2). Find the area of the rectangle and length of the diagonal BD.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>25.</strong> A completes a work in 15 days, B completes the same work in 8 days while B and C jointly complete the work in 4 days. If A and C jointly complete the work in x days and A and B in y  days, then what is the value of x / y ?  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<h2 id="part-3-40-m-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 3 : 40 M</strong></span></h2>
+<h3 id="8m-125w-4">8M 125W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>26. Two finite sets A and B have m and n elements respectively. The total number of subsets of the set A is 56 more than the total number of subsets of the set B. Find the value of (m+n)<sup class="jop-noMdConv">2</sup> (8M125W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>27.</strong>  Points A(0, 4), B(1, 3) and C(6, 0) are the vertices of the triangle ABC. Point D divides the line segment AC in the ratio 1 : 3. Find the coordinates of the point D and the ratio of the area of triangle ABD to the area of the triangle ABC. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>28.</strong> Find the values of x and y from the following equations: 2/x + 3/(2y) = 1/6 and 1/(3x) + 3/(4y) = -1 (8M125W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>29.</strong>  An amount of ₹15,02,000 was divided amongst A, B and C in the ratio 5 : 7 : 8 respectively. All the three deposit their amounts in a bank with simple annual interest rates of 4%, 5% and 6% for 2 years, 3 years and 5 years respectively. Find the simple interests obtained by A and C.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>30.</strong> Describe the significance of transparency in the context of administration in the present times. (8M125W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>31.</strong>  State the meaning of ‘emotional intelligence’ and point out its utility. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>32.</strong> According to Gandhiji, what are the seven social sins? Illustrate them. (8M125W)</span></strong></strong><br>
+Ans</p>
+<h2 id="part-4-80-m-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 4 : 80 M</strong></span></h2>
+<h3 id="16m-250w-4">16M 250W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>33. Three men A, B and C can individually do a work in 24, 36 and 48 days respectively. They start working together but C left the work after 4 days and A left the work 3 days before completion of the work. In how many days will the work be completed? (16M250W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>34.</strong>  Three men A, B and C can individually do a work in 24, 36 and 48 days respectively. They start working together but C left the work after 4 days and A left the work 3 days before completion of the work. In how many days will the work be completed? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>35.</strong>  Consider the following data:<br>
+Class Interval: 0–10, 10–20, 20–30, 30–40, 40–50, 50–60, 60–70, 70–80, 80–90, 90–100<br>
+Frequency:         5,       10,      15,        x,        22,      10,        y,         8,        3,         4<br>
+</span></strong></strong></p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">Find the values of x and y, if the median is 45, total sum of frequencies N = 100 and median class is 40–50. Also find the mode of the data.</span></p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>36.</strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">A person lends some money at 12½% annual rate of compound interest. If he gets the amount returned in three equal instalments each of ₹91,854, find the amount of interest earned by him.</span></strong></strong> <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>37.</strong> If you have to prepare a ‘code of ethics’ for the civil servants, which five fundamental values will you want to prioritize?  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>38.</strong> Study the following case carefully and answer the questions that follow:<br>
+You are the head of your Government office. There are certain houses reserved for the allotment to the officials and you have been given the discretion to do so. A set of rules for the allotment of the houses has been laid down by you and has been made public. Your personal secretary, who is very close to you, comes to you and pleads that as his father is seriously ill, he should be given priority in allotment of a house. The office secretariat that examined the request as per the rules turned down the request and recommends the procedure to be followed according to the rules. You do not want to annoy your personal secretary.<br>
+In such circumstances, what would you do?<br>
+(a) Call him over to your room and personally explain why the allotment cannot be done.<br>
+(b) Allot the house to him to win his loyalty.<br>
+(c) Approve the office-note to show that you do not indulge in favouritism.<br>
+(d) Keep the file with you and not pass any orders.<br>
+<strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>39.</strong> Study the following case carefully and answer the questions that follow: <br>
+You are a Chairperson of a State Sports Committee. You have received a complaint and later it was found that an athlete in the junior age category, who has won a medal, has crossed the age criteria by five days.<br>
+</span></strong></strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">In such circumstances, what would you do?<br>
+(a) Ask the screening committee for a clarification.<br>
+(b) Ask the athlete to return the medal.<br>
+(c) Ask the athlete to get an affidavit from the court declaring his/her age.<br>
+(d) Take the opinion of the members of the committee.<br>
+</span><strong>(16M250W)</strong><br>
+Ans</p>
+<p> </p>
+<p> </p>
+<h1 id="2024-16-to-19-november-2024"><strong>2024</strong> <strong>-</strong> <strong>16 to 19 November 2024</strong></h1>
+<p> <a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/UKPSC_Mains_2024_General_Studies_IV.pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/UKPSC_Mains_2024_General_Studies_IV.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/UKPSC_Mains_2024_General_Studies_IV.pdf</a></p>
+<h2 id="part-1-20-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 1 : 20 M</strong></span></h2>
+<h3 id="4m-50w">4M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.  Write five dreams of Sri Aurobindo.  (4M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong>  Explain strength of attitude and its impact on behaviour with example. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong>   Describe the significance of value of integrity in context of Public Administration. (4M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong>  “Ethics and values are frequently conflated, especially when discussing how to combat corruption or poor administration.” Comment. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong>   “Public Officers should be innovative, objective, professional and efficient and work to get better result for the community and the government.” Comment. (4M50W)</span></strong></strong><br>
+Ans</p>
+<h2 id="part-2-80-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 2 : 80 M</strong></span></h2>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong>  Point out main contributions of Raja Rammohan Roy in the upliftment of Indian society. (8M100W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">7. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">What are the cardinal virtue ethics? Is it relevant in the modern time? <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"></strong></strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(</span><strong><strong></span>8M100W)</span></strong></strong><br>
+</span>Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong>  According to Gandhiji, “what is the ethical conduct”? Illustrate them. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.  Describe the essential moral and political attitudes required for “good governance”.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> Empathy is considered an important disposition in a civil servant for effective administration. Comment.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Describe the ways to prevent non-ethical behaviour in civil servants.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> What are the main steps of ethical dilemma approach? Answer as a civil servant. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. “Civil servants must comply with legal frameworks and Constitutional Principles, ensuring due process and protecting individual rights.” Analyse.</strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong><br>
+</span>Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong>  “Good corporate governance should be part of any company’s game plan for resilience and long-term success.” Explain the statement. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15. “Probity in governance refers to the adherence to high level ethical standards and the avoidance of corruption and abuse of power.” Critically explain. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></strong></span></strong></strong><br>
+Ans</p>
+<h2 id="part-3-100-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 3 : 100 M</strong></span></h2>
+<h3 id="10m-150w">10M 150W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. What are the New Dimensions of International Morality? Illustrate them. (10M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17.</strong>  How will you use emotional intelligence in administrative functions? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18.</strong>  Conceptualize aptitude and explain which aptitudes a civil servant must necessarily have. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19.</strong> Define social influence. What is the contribution of social influence and persuasion in “Beti Bachao – Beti Padhao” abhiyan? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20.</strong>  <strong>“I do not want to be at the mercy of my emotions. I want to use them, to enjoy them, to control them.” Comment by giving your logic in favour of or against this statement, in the light of emotional intelligence. <strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"></strong>(10M150W)</strong></span>****<br>
+</span>Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21.</strong>  “Right to Information Act sets out the rules and procedures regarding citizens’ right to information under the control of public authorities, in order to promote transparency and accountability.” Analyse. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.</strong> “Corruption destroys and represses economic growth and makes inequality, poverty, social division and environmental problems worse.” Critically explain. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>23. Study the following case carefully and answer the questions that follow: <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"></strong>(10M150W)<strong></span><br>
+For many years, officials in the state transport department have been accused of corruption. Processes such as issuing licenses, collecting taxes and granting fitness certificates are marred by bribery and the handling of false documents.<br>
+A recent report has revealed that many officials and employees of the department are taking bribes to issue licenses and fitness certificates to individuals who are neither qualified nor have legitimate documents.<br>
+The main problem is that fitness certificates and driving licenses are being issued without proper verification, leading to an increase in road accidents in the state. Additionally, vehicle owners who are irregular in paying taxes are being given undue exemptions, resulting in financial losses for the state.<br>
+ <br>
+Questions : How will you solve the problem ?<br>
+a. How can transparency and accountability be enhanced in the processes of issuing licenses and fitness certificates within the department? (60W)<br>
+<strong></span></strong></strong>**<strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>b. How can transparency and accountability be enhanced in the processes of issuing licenses and fitness certificates within the department? ****<span style="color: rgb(241, 196, 15);" class="jop-noMdConv"></strong>(60W)</strong></span></strong></strong><br>
+c. What steps should be implemented to curb tax evasion and improve revenue collection? **<strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(30W)<br>
+<strong></span></strong></strong></strong></span>****Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>24. Case Study - I <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"></strong>(10M150W)<strong></span><br>
+A sugar mill unit was established close to a city. Local people objected to it but their opposition was brushed aside. When the unit started its full swing cane crushing, there was a lot of pollution caused by industrial effluents. Burning of bagasse in boilers produced nitrogen, carbon and sulphur, affecting the health status of people. However, it led to a series of agitations by local people demanding immediate closure of the plant.<br>
+<br class="jop-noMdConv"/>Agitations created law and order problems, so stern police action was taken. Due to a lot of public screaming, the state government ordered the closure of the sugar mill plant. The mill was closed. It resulted in a lot of unemployment, badly affecting the financial health of employees and consequently affecting the health and education of their children and other family members who were dependent on the sugar mill for their livelihood.<br>
+<br class="jop-noMdConv"/>As an officer-in-charge in the State Government, how will you solve this problem? Give your argument in favour of / against the following options:</strong></strong></strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">**<br>
+(a) From perspective of environmental responsibility. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(60W)</strong></span></strong></strong><br>
+(b) Perspective of financial problems of local people in the area. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(60W)</strong></span></strong></strong><br>
+(c) Perspective of public administration. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(30W)</strong></span></strong></strong><br>
+**</span><strong><strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>25.</strong> Case Study - II <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)<br>
+You are a senior civil servant. One of your officer friends is hard working, completes her work on time but always demoralizes her subordinates by blaming them for one or the other thing. She keeps everyone on toes; often she shouts in her office and wants to just follow the blue book while working. She also insults the junior officers if one fails to get the things done. Her only mantra to work is to “get the things done – whatever it takes”. Due to this bossy attitude, your friend is not liked by the subordinates.<br>
+What action do you suggest about her attitude?<br>
+(a) Officer’s inter-departmental social ties and voice behaviour need to be improved.<br>
+(b) Alignment of service rules with the officer.<br>
+<br class="jop-noMdConv"/></strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+</div></div>
+					</body>
+				</html>
+			

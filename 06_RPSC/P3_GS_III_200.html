@@ -1,0 +1,1423 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="../atom-one-light.css">
+						<title>P3_GS_III_200</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">P3_GS_III_200</div>
+
+<style>
+		/* https://necolas.github.io/normalize.css/ */
+		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
+		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
+		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
+
+		body {
+			font-size: 15px;
+			color: #32373F;
+			word-wrap: break-word;
+			line-height: 1.6em;
+			background-color: #ffffff;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+			padding-bottom: 0px;
+			padding-top: 0px;
+		}
+		kbd {
+			border: 1px solid rgb(220, 220, 220);
+			box-shadow: inset 0 -1px 0 rgb(220, 220, 220);
+			padding: 2px 4px;
+			border-radius: 3px;
+			background-color: rgb(243, 243, 243);
+		}
+
+		:root {
+			--scrollbar-size: 7px;
+		}
+
+		::-webkit-scrollbar {
+			width: var(--scrollbar-size);
+			height: var(--scrollbar-size);
+		}
+		::-webkit-scrollbar-thumb {
+			border-radius: calc(var(--scrollbar-size) / 2);
+		}
+		::-webkit-scrollbar-corner {
+			background: none;
+		}
+		::-webkit-scrollbar-track {
+			border: none;
+		}
+		::-webkit-scrollbar-thumb {
+			background: rgba(50, 55, 63, 0.54); 
+		}
+		::-webkit-scrollbar-track:hover {
+			background: rgba(0, 0, 0, 0.1); 
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background: rgba(50, 55, 63, 0.63); 
+		}
+
+		
+
+		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
+
+		#rendered-md > h1:first-child,
+		#rendered-md > h2:first-child,
+		#rendered-md > h3:first-child,
+		#rendered-md > h4:first-child,
+		#rendered-md > ul:first-child,
+		#rendered-md > ol:first-child,
+		#rendered-md > table:first-child,
+		#rendered-md > blockquote:first-child,
+		#rendered-md > img:first-child,
+		#rendered-md > p:first-child {
+			margin-top: 0;
+			padding-top: 0;
+		}
+		
+		p, h1, h2, h3, h4, h5, h6, ul, table {
+			margin-top: .6em;
+			margin-bottom: 1.35em;
+
+			/*
+				Adds support for RTL text in the note body. It automatically detects the direction using the content.
+				Issue: https://github.com/laurent22/joplin/issues/3991
+			*/
+			unicode-bidi: plaintext;
+		}
+
+		h1, h2, h3, h4, h5, h6, ul, table {
+			margin-bottom: 0.65em;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			line-height: 1.5em;
+		}
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			border-bottom: 1px solid #dddddd;
+			padding-bottom: .3em;
+		}
+		h2 {
+			font-size: 1.3em;
+			font-weight: bold;
+			padding-bottom: .1em; */
+		}
+		h3 {
+			font-size: 1.1em;
+			font-weight: bold;
+		}
+		h4, h5, h6 {
+			font-size: 1em;
+			font-weight: bold;
+		}
+
+		.exported-note-title {
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 0.8em;
+			line-height: 1.5em;
+			padding-bottom: .35em;
+			border-bottom: 1px solid #dddddd;
+		}
+
+		a {
+			color: #155BDA;
+		}
+		ul, ol {
+			padding-left: 0;
+			margin-left: 1.7em;
+		}
+		li {
+			margin-bottom: .4em;
+		}
+		li p {
+			margin-top: 0.2em;
+			margin-bottom: 0;
+		}
+
+		dt {
+			font-weight: bold;
+			margin-bottom: 0.25em;
+		}
+
+		dd {
+			margin-inline-start: 2.5em;
+			margin-bottom: 0.5em;
+		}
+
+		.resource-icon {
+			display: inline-block;
+			position: relative;
+			top: 0.3em;
+			text-decoration: none;
+			width: 1.2em;
+			height: 1.4em;
+			margin-right: 0.4em;
+			background-color:  #155BDA;
+		}
+    /* These icons are obtained from the wonderful ForkAwesome project by copying the src svgs 
+     * into the css classes below.
+     * svgs are obtained from https://github.com/ForkAwesome/Fork-Awesome/tree/master/src/icons/svg
+     * instead of the svg width, height property you must use a viewbox here, 0 0 1536 1792 is typically the actual size of the icon
+     * each line begins with the pre-amble -webkit-mask: url("data:image/svg+xml;utf8,
+     * and of course finishes with ");
+     * to prevent artifacts it is also necessary to include -webkit-mask-repeat: no-repeat;
+     * on the following line
+     * */
+		.fa-joplin {
+			/* Awesome Font file */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M373.834 128C168.227 128 0 296.223 0 501.834v788.336C0 1495.778 168.227 1664 373.834 1664h788.336c205.608 0 373.83-168.222 373.83-373.83V501.834C1536 296.224 1367.778 128 1162.17 128zm397.222 205.431h417.424a7.132 7.132 0 0 1 7.132 7.133v132.552c0 4.461-3.619 8.073-8.077 8.073h-57.23c-24.168 0-43.768 19.338-44.284 43.374v2.377h-.017v136.191h-.053l-.466 509.375c-5.02 77.667-39.222 149.056-96.324 201.046-60.28 54.834-141.948 85.017-229.962 85.017-12.45 0-25.208-.61-37.907-1.785-92.157-8.682-181.494-48.601-251.662-112.438-71.99-65.517-117.147-150.03-127.164-238-11.226-98.763 23.42-192.783 95.045-257.937 81.99-74.637 198.185-101.768 316.613-75.704 5.574 1.227 9.55 6.282 9.55 11.997v199.52c-.199 2.625-1.481 6.599-8.183 2.896-.663-.365-1.194-.511-1.653-.531-21.987-10.587-45.159-17.57-68.559-19.916-.38-.04-.757-.124-1.138-.163-.537-.048-1.034-.033-1.556-.075-4.13-.354-8.183-.517-12.203-.58-.87-.011-1.771-.127-2.641-.127-.486 0-.951.05-1.437.057-1.464.011-2.886.115-4.33.163-2.76.102-5.497.211-8.182.448-.273.024-.547.07-.835.097-25.509 2.4-47.864 11.104-65.012 25.47-.954.802-1.974 1.53-2.9 2.36a1.34 1.34 0 0 1-.168.146c-23.96 21.8-34.881 53.872-30.726 90.316 4.62 40.737 26.94 81.156 62.841 113.823 35.908 32.67 80.335 52.977 125.113 57.186 35.118 3.36 66.547-3.919 89.899-20.461a97.255 97.255 0 0 0 9.365-7.501c2.925-2.661 5.569-5.5 8.086-8.416.3-.348.672-.673.975-1.024 8.253-9.864 14.222-21.067 17.996-33.148.639-2.034 1.051-4.148 1.564-6.227.381-1.563.81-3.106 1.112-4.693.555-2.784.923-5.632 1.253-8.49.086-.709.183-1.414.237-2.128.492-4.893.693-9.858.55-14.91h.013V521.623c-2.01-22.626-20.78-40.434-43.928-40.434h-57.23a8.071 8.071 0 0 1-8.077-8.073V340.564a7.132 7.132 0 0 1 7.136-7.133z'/></svg>");
+		}
+		.fa-file-image {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-128-448v320H256v-192l192-192 128 128 384-384zm-832-192c-106 0-192-86-192-192s86-192 192-192 192 86 192 192-86 192-192 192z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-pdf {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-514-593c25 20 53 38 84 56 42-5 81-7 117-7 67 0 152 8 177 49 7 10 13 28 2 52-1 1-2 3-3 4v1c-3 18-18 38-71 38-64 0-161-29-245-73-139 15-285 46-392 83-103 176-182 262-242 262-10 0-19-2-28-7l-24-12c-3-1-4-3-6-5-5-5-9-16-6-36 10-46 64-123 188-188 8-5 18-2 23 6 1 1 2 3 2 4 31-51 67-116 107-197 45-90 80-178 104-262-32-109-42-221-24-287 7-25 22-40 42-40h22c15 0 27 5 35 15 12 14 15 36 9 68-1 3-2 6-4 8 1 3 1 5 1 8v30c-1 63-2 123-14 192 35 105 87 190 146 238zm-576 411c30-14 73-57 137-158-75 58-122 124-137 158zm398-920c-10 28-10 76-2 132 3-16 5-31 7-44 2-17 5-31 7-43 1-3 2-5 4-8-1-1-1-3-2-5-1-18-7-29-13-36 0 2-1 3-1 4zm-124 661c88-35 186-63 284-81-10-8-20-15-29-23-49-43-93-103-127-176-19 61-47 126-83 197-15 28-30 56-45 83zm646-16c-5-5-31-24-140-24 49 18 94 28 124 28 9 0 14 0 18-1 0-1-1-2-2-3z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-word {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM233 768v107h70l164 661h159l128-485c5-15 8-30 10-46 1-8 2-16 2-24h4l3 24c3 14 4 30 9 46l128 485h159l164-661h70V768h-300v107h90l-99 438c-4 16-6 33-7 46l-2 21h-4c0-6-2-14-3-21-3-13-5-30-9-46L825 768H711l-144 545c-4 16-5 33-8 46l-4 21h-4l-2-21c-1-13-3-30-7-46l-99-438h90V768H233z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-powerpoint {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-992-234v106h327v-106h-93v-167h137c43 0 82-2 118-15 90-31 146-124 146-233s-54-193-137-228c-38-15-84-19-130-19H416v107h92v555h-92zm353-280H650V882h120c35 0 62 6 83 18 36 21 56 62 56 115 0 56-20 99-62 120-21 10-47 15-78 15z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-excel {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-979-234v106h281v-106h-75l103-161c12-19 18-34 21-34h2c1 4 3 7 5 10 4 8 10 14 17 24l107 161h-76v106h291v-106h-68l-192-273 195-282h67V768H828v107h74l-103 159c-12 19-21 34-21 33h-2c-1-4-3-7-5-10-4-7-9-14-17-23L648 875h76V768H434v107h68l189 272-194 283h-68z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-audio {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM620 850c12 5 20 17 20 30v544c0 13-8 25-20 30-4 1-8 2-12 2-8 0-16-3-23-9l-166-167H288c-18 0-32-14-32-32v-192c0-18 14-32 32-32h131l166-167c10-9 23-12 35-7zm417 689c19 0 37-8 50-24 83-102 129-231 129-363s-46-261-129-363c-22-28-63-32-90-10-28 23-32 63-9 91 65 80 100 178 100 282s-35 202-100 282c-23 28-19 68 9 90 12 10 26 15 40 15zm-211-148c17 0 34-7 47-20 56-60 87-137 87-219s-31-159-87-219c-24-26-65-27-91-3-25 24-27 65-2 91 33 36 52 82 52 131s-19 95-52 131c-25 26-23 67 2 91 13 11 29 17 44 17z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-video {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM768 768c70 0 128 58 128 128v384c0 70-58 128-128 128H384c-70 0-128-58-128-128V896c0-70 58-128 128-128h384zm492 2c12 5 20 17 20 30v576c0 13-8 25-20 30-4 1-8 2-12 2-8 0-17-3-23-9l-265-266v-90l265-266c6-6 15-9 23-9 4 0 8 1 12 2z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-archive {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M640 384V256H512v128h128zm128 128V384H640v128h128zM640 640V512H512v128h128zm128 128V640H640v128h128zm700-388c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H768v128H640V128H128v1536h1280zM781 943c85 287 107 349 107 349 5 17 8 34 8 52 0 111-108 192-256 192s-256-81-256-192c0-18 3-35 8-52 0 0 21-62 120-396V768h128v128h79c29 0 54 19 62 47zm-141 465c71 0 128-29 128-64s-57-64-128-64-128 29-128 64 57 64 128 64z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-code {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM480 768c11-14 31-17 45-6l51 38c14 11 17 31 6 45l-182 243 182 243c11 14 8 34-6 45l-51 38c-14 11-34 8-45-6l-226-301c-8-11-8-27 0-38zm802 301c8 11 8 27 0 38l-226 301c-11 14-31 17-45 6l-51-38c-14-11-17-31-6-45l182-243-182-243c-11-14-8-34 6-45l51-38c14-11 34-8 45 6zm-620 461c-18-3-29-20-26-37l138-831c3-18 20-29 37-26l63 10c18 3 29 20 26 37l-138 831c-3 18-20 29-37 26z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-alt, .fa-file-csv {
+      /* fork-awesome doesn't have csv so we use the text icon */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM384 800c0-18 14-32 32-32h704c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64zm736 224c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704zm0 256c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		blockquote {
+			border-left: 4px solid rgb(220, 220, 220);
+			padding-left: 1.2em;
+			margin-left: 0;
+			opacity: 0.7;
+		}
+
+		.jop-tinymce table,
+		table {
+			text-align: left;
+			border-collapse: collapse;
+			border: 1px solid rgb(220, 220, 220);
+			background-color: #ffffff;
+		}
+
+		.jop-tinymce table td, .jop-tinymce table th,
+		table td, th {
+			text-align: left;
+			padding: .5em 1em .5em 1em;
+			font-size: 15;
+			color: #32373F;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+		}
+
+		.jop-tinymce table td,
+		table td {
+			border: 1px solid rgb(220, 220, 220);
+		}
+
+		.jop-tinymce table th,
+		table th {
+			border: 1px solid rgb(220, 220, 220);
+			border-bottom: 2px solid rgb(220, 220, 220);
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:nth-child(even),
+		table tr:nth-child(even) {
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:hover,
+		table tr:hover {
+			background-color: #e5e5e5;
+		}
+
+		hr {
+			border: none;
+			border-bottom: 2px solid #dddddd;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		.inline-code,
+		.mce-content-body code {
+			border: 1px solid rgb(220, 220, 220);
+			background-color: rgb(243, 243, 243);
+			padding-right: .2em;
+			padding-left: .2em;
+			border-radius: .25em;
+			color: rgb(0,0,0);
+			font-size: .9em;
+		}
+
+		.highlighted-keyword {
+			background-color: #F3B717;
+			color: black;
+		}
+
+		
+	.not-loaded-resource img {
+		width: 1.15em;
+		height: 1.15em;
+		background: white;
+		padding: 2px !important;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px #000000aa;
+	}
+
+	a.not-loaded-resource img {
+		margin-right: .2em;
+	}
+
+	a.not-loaded-resource {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+
+		.md-checkbox input[type=checkbox]:checked {
+			opacity: 0.7;
+		}
+
+		.jop-tinymce ul.joplin-checklist .checked,
+		.md-checkbox .checkbox-label-checked {
+			opacity: 0.5;
+		}
+
+		.exported-note {
+			padding: 1em;
+		}
+
+		.joplin-editable .joplin-source {
+			display: none;
+		}
+
+		mark {
+			background: #F7D26E;
+			color: black;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		.mce-content-body {
+			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
+			padding: 5px 10px 10em 0;
+		}
+
+		/*
+		.mce-content-body code {
+			background-color: transparent;
+		}
+		*/
+
+		.mce-content-body [data-mce-selected=inline-boundary] {
+			background-color: transparent;
+		}
+
+		.mce-content-body .joplin-editable {
+			cursor: pointer !important;
+		}
+
+		.mce-content-body.mce-content-readonly {
+			opacity: 0.5;
+		}
+
+		/* We need that to make sure click events have the A has a target */
+		.katex a span {
+			pointer-events: none;
+		}
+
+		.media-player {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.media-player.media-pdf {
+			min-height: 35rem;
+			width: 100%;
+			max-width: 1000px;
+			margin: 0;
+			border: 0;
+			display: block;
+		}
+
+		/* Clear the CODE style if the element is within a joplin-editable block */
+		.mce-content-body .joplin-editable code {
+			border: none;
+			background: none;
+			padding: 0;
+			color: inherit;
+			font-size: inherit;
+		}
+
+		/* To make code blocks horizontally scrollable */
+		/* https://github.com/laurent22/joplin/issues/5740 */
+		pre.hljs {
+			overflow-x: auto;
+		}
+
+		.joplin-table-wrapper{
+			overflow-x: auto;
+			overflow-y: hidden;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		@media print {
+			body {
+				height: auto !important;
+			}
+
+			pre {
+				white-space: pre-wrap;
+			}
+
+			.code, .inline-code {
+				border: 1px solid #CBCBCB;
+			}
+
+			#joplin-container-content {
+				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
+				   around various issues related to scrolling. However when printing we don't want this
+				   fixed size as that would crop the content. So we set it to auto here. "important" is
+				   needed to override the style set by JavaScript at the element-level. */
+				height: auto !important;
+			}
+		}
+	
+
+				/*
+					FOR THE MARKDOWN EDITOR
+				*/
+
+				/* Remove the indentation from the checkboxes at the root of the document
+				   (otherwise they are too far right), but keep it for their children to allow
+				   nested lists. Make sure this value matches the UL margin. */
+
+				li.md-checkbox {
+					list-style-type: none;
+				}
+
+				li.md-checkbox input[type=checkbox] {
+					margin-left: -1.71em;
+					margin-right: 0.7em;
+					position: relative;
+					top: 1px;
+				}
+				
+				ul.joplin-checklist {
+					list-style:none;
+				}
+
+				/*
+					FOR THE RICH TEXT EDITOR
+				*/
+
+				ul.joplin-checklist li::before {
+					content:"\f14a";
+					font-family:"Font Awesome 5 Free";
+					background-size: 16px 16px;
+					pointer-events: all;
+					cursor: pointer;
+					width: 1em;
+					height: 1em;
+					margin-left: -1.3em;
+					position: absolute;
+					color: #32373F;
+				}
+
+				.joplin-checklist li:not(.checked)::before {
+					content:"\f0c8";
+				}
+.mermaid { width: 640px; }
+pre.mermaid[data-processed=true] { white-space: unset; }
+.mermaid-export-graph {
+					opacity: 0;
+					height: 0;
+					z-index: 1;
+					position: relative;
+				} 
+				.joplin-editable:hover .mermaid-export-graph,
+				.joplin-editable .mermaid-export-graph:has(:focus-visible) {
+					opacity: 1;
+				}
+				.mermaid-export-graph > button:hover {
+					background-color: #CBDAF1 !important;
+				}</style><div id="rendered-md"><p><strong>Paper III:</strong> General Studies - III - 200M - 3H</p>
+<h1 id="syllabus">Syllabus</h1>
+<h2 id="unit-i-indian-political-system-world-politics-and-current-affairs"><span style="color: rgb(185, 106, 217);" class="jop-noMdConv"><strong>Unit I - Indian Political System, World Politics and Current Affairs</strong></span></h2>
+<h3 id="constitution-of-india"><strong>Constitution of India</strong></h3>
+<ul>
+<li>Framing, Features, Amendments, Basic Structure.</li>
+</ul>
+<h3 id="ideological-contents"><strong>Ideological Contents</strong></h3>
+<ul>
+<li>Preamble, Fundamental Rights, Directive Principles of State Policy, Fundamental Duties.</li>
+</ul>
+<h3 id="institutional-framework-i"><strong>Institutional Framework - I</strong></h3>
+<p>Parliamentary System, President, Prime Minister, Council of Ministers, Parliament.</p>
+<h3 id="institutional-framework-ii"><strong>Institutional Framework - II</strong></h3>
+<ul>
+<li>Federalism, Centre-State relations, Supreme Court, High Courts, Judicial Review, Judicial Activism.</li>
+</ul>
+<h3 id="institutional-framework-iii"><strong>Institutional Framework - III</strong></h3>
+<ul>
+<li>Election Commission of India, Comptroller and Auditor General, UPSC, NITI Aayog, Central Vigilance Commission, CIC, NHRC.</li>
+</ul>
+<h3 id="political-dynamics"><strong>Political Dynamics</strong></h3>
+<ul>
+<li>Role of Caste, Religion, Class, Ethnicity, Language, and Gender in Indian Politics.</li>
+<li>Political Parties, Electoral Behaviour.</li>
+<li>Civil Society and Political Movements.</li>
+<li>National Integrity, Security, and Socio-Political conflicts.</li>
+</ul>
+<h3 id="state-politics-of-rajasthan"><strong>State Politics of Rajasthan</strong></h3>
+<ul>
+<li>Party System, Political Demography, Political competition phases, Panchayati Raj, and Urban Self-Government.</li>
+</ul>
+<h3 id="emerging-world-order"><strong>Emerging World Order</strong></h3>
+<ul>
+<li>Post-Cold War era, USA’s hegemony and resistance.</li>
+<li>UN, Regional Organizations, International Economy, Terrorism, Environmental Issues.</li>
+</ul>
+<h3 id="foreign-policy-of-india"><strong>Foreign Policy of India</strong></h3>
+<ul>
+<li>Evolution, Determinants.</li>
+<li>India’s relations: USA, China, Russia, EU, Neighbouring Countries.</li>
+<li>Role in UN, NAM, BRICS, G-20, G-77, SAARC.</li>
+</ul>
+<h3 id="geo-political-and-strategic-issues"><strong>Geo-political and Strategic Issues</strong></h3>
+<ul>
+<li>South Asia, South East Asia, West Asia, Far-East and their impact on India.</li>
+</ul>
+<h3 id="current-affairs"><strong>Current Affairs</strong></h3>
+<ul>
+<li>Current events, persons, and places of Rajasthan.</li>
+<li>National and international importance.</li>
+<li>Recent sports activities.</li>
+</ul>
+<h2 id="unit-ii-concepts-issues-and-dynamics-of-public-administration-and-management"><span style="color: rgb(185, 106, 217);" class="jop-noMdConv"><strong>Unit II - Concepts, Issues and Dynamics of Public Administration and Management</strong></span></h2>
+<h3 id="administration-and-management"><strong>Administration and Management</strong></h3>
+<ul>
+<li>Meaning, nature, significance, and role in developed/developing societies.</li>
+<li>Evolution of Public Administration, New Public Administration.</li>
+</ul>
+<h3 id="key-concepts"><strong>Key Concepts</strong></h3>
+<ul>
+<li>Power, Authority, Legitimacy, Responsibility, Delegation.</li>
+</ul>
+<h3 id="principles-of-organization"><strong>Principles of Organization</strong></h3>
+<ul>
+<li>Hierarchy, Span of Control, Unity of Command.</li>
+</ul>
+<h3 id="functions-of-management"><strong>Functions of Management</strong></h3>
+<ul>
+<li>Corporate governance, Social responsibility, New Public Management, Change Management.</li>
+</ul>
+<h3 id="attitude-and-values-of-civil-services"><strong>Attitude and Values of Civil Services</strong></h3>
+<ul>
+<li>Ethics, integrity, impartiality, non-partisanship, dedication to public service.</li>
+<li>Generalists vs Specialists.</li>
+</ul>
+<h3 id="control-over-administration"><strong>Control over Administration</strong></h3>
+<ul>
+<li>Legislative, Executive, and Judicial: Means and limitations.</li>
+</ul>
+<h3 id="administrative-setup-of-rajasthan"><strong>Administrative Setup of Rajasthan</strong></h3>
+<ul>
+<li>Governor, Chief Minister, Council of Ministers, State Secretariat, Directorates, Chief Secretary.</li>
+</ul>
+<h3 id="district-administration"><strong>District Administration</strong></h3>
+<ul>
+<li>Role of District Collector, District Magistrate, Superintendent of Police, Sub-divisional and Tehsil administration.</li>
+</ul>
+<h3 id="development-administration"><strong>Development Administration</strong></h3>
+<ul>
+<li>Meaning, scope, characteristics.</li>
+</ul>
+<h3 id="key-commissionsacts-in-rajasthan"><strong>Key Commissions/Acts in Rajasthan</strong></h3>
+<ul>
+<li>State Human Rights Commission, State Election Commission, Lokayukt.</li>
+<li>Rajasthan Public Service Commission, Guaranteed Delivery of Public Services Act (2011), Right to Hearing Act (2012).</li>
+</ul>
+<h2 id="unit-iii-sports-and-yoga-behaviour-and-law"><span style="color: rgb(185, 106, 217);" class="jop-noMdConv"><strong>Unit III - Sports and Yoga, Behaviour and Law</strong></span></h2>
+<h3 id="part-a-sports-and-yoga"><strong><strong><strong>Part A - <strong>Sports and Yoga</strong></strong></strong></strong></h3>
+<ul>
+<li>Sports Policies of India and Rajasthan.</li>
+<li>Sports Authorities: SAI, Rajasthan State Sports Council.</li>
+<li>National and Rajasthan State-level Sports Awards.</li>
+<li>Yoga: Positive way of life.</li>
+<li>Eminent sports personalities of India.</li>
+<li>First Aid and Rehabilitation.</li>
+<li>Indian participation in Olympics, Asian Games, Commonwealth Games, Para-Olympics.</li>
+</ul>
+<h3 id="part-b-behaviour"><strong>Part B - <strong>Behaviour</strong></strong></h3>
+<ul>
+<li>Intelligence: Cognitive, Social, Emotional, Cultural, Spiritual.</li>
+<li>Personality: Traits, Types, Determinants, Assessment.</li>
+<li>Learning and Motivation: Styles, Models of memory, Causes of forgetting.</li>
+<li>Stress and Management: Nature, Symptoms, Effects, Stress Management, Mental Health promotion.</li>
+</ul>
+<h3 id="part-c-law"><strong>Part C - <strong>Law</strong></strong></h3>
+<ul>
+<li>Concepts of Law: Ownership, Possession, Personality, Liability, Rights, Duties.</li>
+<li>Contemporary Legal Issues: RTI, IT Law, Cyber Crimes, IPR.</li>
+<li>Crimes against Women/Children: Domestic Violence, Sexual Harassment, POCSO Act (2012), Child Labour Laws.</li>
+<li>Maintenance and Welfare of Parents and Senior Citizens Act (2007).</li>
+<li>Important Land Laws in Rajasthan: Rajasthan Land Revenue Act (1956), Rajasthan Tenancy Act (1955).</li>
+</ul>
+<p> </p>
+<h1 id="2013-11-april-2016">2013 - 11 April 2016</h1>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2013_PREVIOUS_YEARS_QUESTION_(PAPER-3).pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2013_PREVIOUS_YEARS_QUESTION_%28PAPER-3%29.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2013_PREVIOUS_YEARS_QUESTION_(PAPER-3).pdf</a></p>
+<h2 id="unit-i-69-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 69 M</strong></span></h2>
+<h3 id="part-a-14-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 14 M</strong></span></h3>
+<h3 id="2m-15w">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Name the campaign initiated for promoting efficient water use in the country and discuss its features. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. What is the new 'logo' of Rajasthan Tourism?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Name any three unions set up for regional economic co-operation at the Global level. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. Analyse the danger of terrorism in today's world.</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> What do you understand by BRICS Countries ? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6. How do you define Maternal Mortality Rate? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong> Name the world organization which deals with the problem of International Liquidity. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-35-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 35 M</strong></span></h3>
+<h3 id="5m-50w">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> Analyse the factors responsible for the recent Global recession. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. What  were the objectives of India-Africa Forum Summit-2015 recently held in New Delhi ? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> What is the likely impact of the devaluation of the Chinese currency on the Global Economy?(5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. &quot;Со-оperation among the India and ASEAN countries is important.&quot; Analyse. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12. Differentiate between the role of FDI and FII for economic development. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13  &quot;In Human Development Report, small countries like Sweden and Norway are leading.&quot; <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Analyze.</strong></span></strong></strong> (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14. &quot;Out sourcing is an important segment in service sector in India.&quot; Discuss. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-c-20-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 20 M</strong></span></h3>
+<h3 id="20m-200w">20M 200W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15. What were the objectives and outcomes of 'Resurgent Rajasthan programme recently held in Jaipur? (20M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> Explain the current Indian foreign policy towards its neighbours. (20M200W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-ii-69-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 69 M</strong></span></h2>
+<h3 id="part-a-14-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 14 M</strong></span></h3>
+<h3 id="2m-15w-2">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What is Global Terrorism Index? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Why Piplantri Village of Rajasthan was in the news recently? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> What is the origin of the word &quot;Naxalism'? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Define 'Cyber Crime. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5. To what extent have the Self Help Groups succeeded in Rajasthan?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6. What is UDAY scheme? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. What are the features of the Minority Welfare Policy in Rajasthan?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-35-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 35 M</strong></span></h3>
+<h3 id="5m-50w-2">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> &quot;Justice delayed is justice denied&quot; - Comment. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. &quot;Social justice is impossible without the protection of human rights.&quot; Comment. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10. Write a note on Renewable Energy and its role in the economic development of Rajasthan.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. &quot;The problem of terrorism can be tackled only through a multidimensional strategy.&quot; Discuss the various steps needed to control terrorism in India. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12. Comment on the linkage of Indian rivers and its impact on sustainable development. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. What has been the progress of Rajasthan in the field of road development? In this context, refer to all types of roads. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14. Which are the main programmes for women welfare in Rajasthan? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-c-20-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 20 M</strong></span></h3>
+<h3 id="20m-200w-2">20M 200W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15. &quot;Rajasthan is no more a 'BIMARU' State.&quot; Do you agree with this view? Substantiate your answer with relevant facts. If you think that it is still a BIMARU State, then give practical suggestions to take the state out of the BIMARU status. (20M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> &quot;Weak sections of society are weak because they are weak.&quot; How to break this vicious circle? Give suggestions to ameliorate the socio-economic condition of these groups. (20M200W)</span></strong></strong><br>
+Ans</p>
+<h2 id="unit-iii-62-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - III : 62 M</strong></span></h2>
+<h3 id="part-a-12-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 12 M</strong></span></h3>
+<h3 id="2m-15w-3">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What is delegation of authority? How is it different from decentralization? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Distinguish between Corporate Social Responsibility and Corporate Governance. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Explain Span of control. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. Define impartiality. What are its basic ingredients?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> In your view, what should be the key moral values in public administration? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6. What are the basic causes of corruption in Government agencies? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-30-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 30 M</strong></span></h3>
+<h3 id="5m-50w-3">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. What are the main differences between Public Administration and Business Management?</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8. Compare Theory X with Theory Y. Which is more relevant to Government Organization?</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. &quot;Leadership is a function of leader, followers and situation.&quot; Comment. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> Give three suggestions to make civil servants more compassionate towards the weaker sections of society. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. &quot;Ethics is a phenomenon with divergent dimensions.&quot; Comment. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12. If you were asked to prepare a 'Code of Ethics' for the civil servants of India, which five important principles will you prioritize? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-c-20-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 20 M</strong></span></h3>
+<h3 id="20m-200w-3">20M 200W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. What do you understand by New Public Management? Explain its features and examine its utility in Government Administration. Give examples.</strong> (20M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) What do you understand by Emotional Intelligence' ? Explain its components and application for effective and sensitive administration.</strong> (20M200W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2016-27-28-march-2017">2016 - 27 / 28 March 2017</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202016%20Paper-3.pdf' href='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202016%20Paper-3.pdf'>https://www.drishtiias.com/images/pdf/Mains Rajasthan 2016 Paper-3.pdf</a></p>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2016_PREVIOUS_YEARS_QUESTION_(PAPER-3).pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2016_PREVIOUS_YEARS_QUESTION_%28PAPER-3%29.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2016_PREVIOUS_YEARS_QUESTION_(PAPER-3).pdf</a></p>
+<h2 id="unit-i-75-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 75 M</strong></span></h2>
+<h3 id="part-a-10-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-4">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What is the constitutional status of 'Right to Property' in India? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> What is the relevance of 'Yekateriburg Summit'? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Enumerate the four grounds on which a member of Union Public Service Commission can be removed by the President of India. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong>  Explain the phenomenon of 'Politicisation of castes' in Rajasthan. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Explain the relevance of G-20. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-25-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-4">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Discuss the major functions of Niti Aayog. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. What are the criteria for recognizing a political party as a National Political Party? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> What are the challenges confronting the SAARC at present? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. Discuss India's response to China's activities in the South China Sea. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> Point out the major recommendations of Punchi Commission. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-c-40-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 40 M</strong></span></h3>
+<h3 id="10m-100w">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. What are the major features of Paris Agreement (COP 21) of the United Nations' framework convention on climate change? (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> Discuss the significance of the landmark judgement of Supreme Court of 1997 regarding gender justice. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. Discuss the phenomenon of stabilisation of 'Two Party System' in the politics of Rajasthan since 1998. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong> What are the important recommendations regarding electoral reforms in the 255th Report of the law Commission of India? (10M100W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-ii-65-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 65 M</strong></span></h2>
+<h3 id="part-a-10-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-5">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What is the purpose of writ of Habeas Corpus? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> What do you mean by Generalist Administrator? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> What do you understand by politico-administration dichotomy? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Point out any two differences between authority and power. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Write any two functions of State Secretariat. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-25-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-5">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Enumerate four basic features of New Public Administration. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Explain the discretionary powers of the Governor. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> Write any five functions of Lok-Ayukta. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. Distinguish between Development Administration and Administrative Development. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> 'Grass-root unit of administration is Patwari&quot;. Comment. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-c-30-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-2">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Critically examine the role of District Collector in District Administration. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> Point out the role of Chief Secretary in State Administration. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. Trace the evaluation of Public Administration as an independent academic discipline. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-iii-60-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv">Unit - III : 60 M</span></h2>
+<h3 id="section-a-20-m"><span style="color: rgb(194, 224, 244);" class="jop-noMdConv"><strong>Section - A : 20 M</strong></span></h3>
+<h3 id="part-a-10-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-6">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Write the name of 'Cardinal Virtues' of Plato. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> What is the meaning of 'Utilitarianism' according to J.S. Mill? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> What is the concept of 'Naturalistic Fallacy'? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Define 'Swadharma' according to Geeta. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Explain the meaning of 'Categorical Imperatives' according to Kant. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-10-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-6">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Describe the notion of &quot;Niskamakarmyaoga&quot; according to Geeta. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Explain the postulates of morality according to Kant. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="section-b-20-m"><strong>Section - B : 20 M</strong></h3>
+<h3 id="part-a-10-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-7">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What is Social Intelligence? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Describe Allport's definition of Personality. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> What do you understand by Retroactive Inhibition? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> What is Stress? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Define Ebbingaus Curve. (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-7">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> How Semi projective techniques are useful to assess personality? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Analyse different ways of Coping for stress management. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="section-c-20-m"><strong>Section - C : 20 M</strong></h3>
+<h3 id="part-a-10-m-5"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-8">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. State Salmon's definition of ownership. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Who are entitled to seek information under the Right to Information Act, 2005? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> What is the definition of 'child' under the protection of women from Domestic Violence Act, 2005? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Define 'Nazul Land' under the Rajasthan Law Revenue Act, 1956. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> What are the kinds of 'Person' under law? (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-8">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> What are the 'Primary Rights' of tenants under the Rajasthan Tenancy Act, 1955? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. What do you mean by &quot;Hacking with Computer System&quot;? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h1 id="2018-25-26-june-2019">2018 - 25 / 26 June 2019</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202018%20Paper-3.pdf' href='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202018%20Paper-3.pdf'>https://www.drishtiias.com/images/pdf/Mains Rajasthan 2018 Paper-3.pdf</a></p>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2018_PREVIOUS_YEARS_QUESTION_(PAPER-3).pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2018_PREVIOUS_YEARS_QUESTION_%28PAPER-3%29.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2018_PREVIOUS_YEARS_QUESTION_(PAPER-3).pdf</a></p>
+<h2 id="unit-i-75-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 75 M</strong></span></h2>
+<h3 id="part-a-10-m-6"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-9">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Mention the scope of freedom guaranteed in the objectives resolution. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Explain the role of Article-355 as a bridge between Article-352 and Article-356. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Can the Chief Vigilance Commission investigate a case against anybody? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Explain ‘Operation Enduring Freedom’ (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Who was Anna Rajam Malhotra and why she was in the news recently? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-25-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-9">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Explain the implications of Right to Life and Personal Liberty provided in Article-21 of the Constitution of India. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Describe the shortcomings in the electoral procedure of the  President in India. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> Describe the political demography of Rajasthan. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. Discuss India’s stand on the international initiatives on climate change. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> Explain the United States of America’s angle in the Indo – China relations in South-East Asia. (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-40-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 40 M</strong></span></h3>
+<h3 id="10m-100w-3">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Explaining the various implications of 'Justice' described in the Preamble of the Constitution, discuss how have they been assured through Fundamental Rights and Directive Principles of State Policy. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> In India’s Constitutional system, discuss the structural and operational aspects of conflicts for supremacy between the Parliament and the Supreme Court. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. Analyse the phenomena of absence of any effective State political party in Rajasthan. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong> Discuss the impact of Brexit on India–EU relations. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-ii-65-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 65 M</strong></span></h2>
+<h3 id="part-a-10-m-7"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-10">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What do you mean by administrative culture? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> What are the main values of the Civil Services? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Write five functions of Management as given by Henry Fayol. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Write any four factors affecting span of control. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> What is Zero Hour? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-25-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-10">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6. What is the difference between Prohibition and Mandamus writs in reference to judicial control?</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Discuss the main assumptions of Neo-Classical theory of Administration. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> What do you understand by social responsibility of public administration? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. Describe the ‘Philosophy of Management’. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> Which posts and persons have been exempted from the jurisdiction of Lokayukta in Rajasthan? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-c-30-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-4">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Discuss the salient features of the Rajasthan Guaranteed Delivery of Public Services Act, 2011. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> Describe the powers of the Governor regarding promulgation of ordinance. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. Explain the measures taken to enhance the integrity in administration in India. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-iii-60-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv">Unit - III : 60 M</span></h2>
+<h3 id="section-a-20-m-2"><strong>Section - A : 20 M</strong></h3>
+<h3 id="part-a-10-m-8"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-11">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Write short note on Vashisth award in sports. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Explain the hierarchy of the members of “Rajasthan State Sports Council”. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. Write about the achievements of Apoorvi Chandela.</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Write a note about “Green Stick Fracture”. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Elaborate the achievements of Manav Thakkar in sports. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-10-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-11">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Elaborate “Yog Karmsu Kauslam”. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Write a short note on P.S.P.B. Table Tennis Academy. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="section-b-20-m-2"><strong>Section - B : 20 M</strong></h3>
+<h3 id="part-a-10-m-9"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-12">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What is Emotional Intelligence? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> What is ideographic approach to personality? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> What is the view of Bartlett on memory? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> What is Thema and Apperception in TAT? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> What is General Adaptation syndrome? (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-5"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-12">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Explain Gardner’s theory of multiple intelligence. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. What are the factors that promote positive health and well-being? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="section-c-20-m-2"><strong>Section - C : 20 M</strong></h3>
+<h3 id="part-a-10-m-10"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-13">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. How has Salmond defined the term ‘right’? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> What is meant by the expression ‘agriculturist’ under the Rajasthan Tenancy Act, 1955? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Enumerate the persons who may present an application to the Magistrate seeking relief under the Protection of Women from Domestic Violence Act, 2005. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> What do you understand by 'third party' under the Right to Information Act, 2005? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> State the main object of enacting protection of children from Sexual Offences Act, 2012. (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-6"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-13">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Do you agree to the view that the expression 'annual register' as used in the Rajasthan Land Revenue Act, 1956 is wider than the expression ‘record of rights’? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. What is the scope of 'right to information' under the Right to Information Act, 2005? Explain. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2021-20-21-march-2022">2021 - 20 / 21 March 2022</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202018%20Paper-3.pdf' href='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202018%20Paper-3.pdf'>https://www.drishtiias.com/images/pdf/Mains Rajasthan 2018 Paper-3.pdf</a></p>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2021_PREVIOUS_YEARS_QUESTION_(PAPER-3).pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2021_PREVIOUS_YEARS_QUESTION_%28PAPER-3%29.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2021_PREVIOUS_YEARS_QUESTION_(PAPER-3).pdf</a></p>
+<h2 id="unit-i-75-m-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 75 M</strong></span></h2>
+<h3 id="part-a-10-m-11"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-14">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Explain 'Fraternity' as mentioned in the Preamble of the Constitution of India. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> What is the role of Election Commission in Article 103 of the Constitution of India? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> What are the key points of 'Abraham Accords'? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. What is 'THAAD'?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Write four major issues discussed in G-20 Rome Summit 2021. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-25-m-5"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-14">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> &quot;The first cabinet of Independent Indian was not of political character but of national character.&quot; Support or oppose the statement with facts only. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Chief Justice Ramana said that the tendency to brand judicial review as judicial overreach is not correct. What does he mean? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> Explain the constitutional provision to remove the President of India from his office. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. Explain the concept of 'one sun, one world, one grid'. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> Describe the main features of First Assembly Election in Rajasthan, after independence. (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-40-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 40 M</strong></span></h3>
+<h3 id="10m-100w-5">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Describe the features and evolution of Judicial Review in India. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> Differentiate the working of Planning Commission and Niti Aayog and its impact on Indian Federalism. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. Discuss the strategic role played by 'Quad' in the Indo-Pacific Region. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong> Give suggestions for effective working of Gram Sabha in Rajasthan. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-ii-65-m-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 65 M</strong></span></h2>
+<h3 id="part-a-10-m-12"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-15">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What is the difference between Unity of Command and Unity of Direction? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Explain managerial view about the nature of administration. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> What is Vote on Account? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Define Corporate Social Responsibility. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> What is Formal Delegation? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-25-m-6"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-15">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Mention various forms of judicial control over administration. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Enlist major difference between conventional and development administration. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> Differentiate between Secretariat and Directorate. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. Analyze the impact of lateral entry system in higher civil services. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> Discuss the jurisdiction of Lokayukta in Rajasthan. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-c-30-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-6">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Evaluate the salient features of the Rajasthan Right to Hearing Act, 2012. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> &quot;The aim of good governance and morality in civil services can be achieved through following the Gandhi's Seven Social Sins concept.&quot; Analyze. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. Analyse the roles of the District Collector vis-a-vis Superintendent of Police in maintaining the law and order in a district. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-iii-60-m-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv">Unit - III : 60 M</span></h2>
+<h3 id="section-a-20-m-3"><strong>Section - A : 20 M</strong></h3>
+<h3 id="part-a-10-m-13"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-16">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Name the award for excellence in sports in Rajasthan given annually and write the hierarchy of its selection committee. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Write the types of yoga according to Yograj Upanishad. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Write the contribution of Sh. Magan Singh Rajvi in Rajasthan sports. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Name any 4 sports academies governed by Rajasthan State Sports Council. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Name the para-players and their sports who were awarded Major Dhyanchand Khel Ratan Award in 2021. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-10-m-7"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-16">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> What is the significance of scientific backup to sports person in National Sports Policy? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. What is rehabilitation in sports? Define TENS therapy. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="section-b-20-m-3"><strong>Section - B : 20 M</strong></h3>
+<h3 id="part-a-10-m-14"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-17">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What is meant by Emotional Intelligence? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Which are the big five factors of personality? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Write about the three stages of memory. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Mention the sources of stress. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Define intelligence. (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-8"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-17">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Describe the major projective measures of personality. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Explain the strategies of stress management. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="section-c-20-m-3"><strong>Section - C : 20 M</strong></h3>
+<h3 id="part-a-10-m-15"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-18">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What is the difference between 'perfect' and 'imperfect' right? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Define the expression 'right to information' as used in the Right to Information Act, 2005. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Write down the meaning of 'Sexual harassment' mentioned under the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Define the term 'relative' as per the Maintenance and Welfare of Parents and Senior Citizens Act, 2007. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Define the term 'Nazul Land'. (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-9"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-18">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> State the contents of &quot;Record of Rights&quot; under the Rajasthan Land Revenue Act, 1956. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Explain the term 'Sexual assault' as mentioned in the Protection of Children from Sexual Offences Act, 2012. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2023-20-21-july-2024">2023 - 20 / 21 July 2024</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/RPSC%20Mains%20Exam-2023%20Paper-III.pdf' href='https://www.drishtiias.com/images/pdf/RPSC%20Mains%20Exam-2023%20Paper-III.pdf'>https://www.drishtiias.com/images/pdf/RPSC Mains Exam-2023 Paper-III.pdf</a></p>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2023_PREVIOUS_YEARS_QUESTION_(PAPER-3).pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2023_PREVIOUS_YEARS_QUESTION_%28PAPER-3%29.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2023_PREVIOUS_YEARS_QUESTION_(PAPER-3).pdf</a></p>
+<h2 id="unit-i-75-m-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 75 M</strong></span></h2>
+<h3 id="part-a-10-m-16"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-19">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. In the context of federal system, what are the provisions regarding Residuary matters in the Constitution of India? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Regarding the Bharatiya Adivasi Party's performance in the Rajasthan Vidhan Sabha elections held in 2023, answer the following questions:<br>
+(a) Total seats contested by BАР<br>
+(b) Total seats won by BAP<br>
+(c) Percentage of valid votes secured by BAР<br>
+(d) Percentage of valid votes secured by BAP in seats contested by it (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> What is 'Global Stock Take (GST)'? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Why the following persons were recently in the news? (i) Idashisha Nongrang (ii) Alok Shukla (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Who are the Shompen tribe? Why this tribe was recently in news? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-25-m-7"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-19">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Explain the principle of 'Reasonable Classification' implied in Article 14 of the Constitution of India. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. In the context of people's movements, discuss the 'Non-Party Political Process' in India. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> Mention the major 'subjects' given to urban local governance institutions under Article 243-W of the Constitution of India. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. On what grounds the registration of Overseas Citizens of India (OCI) can be cancelled under the Citizenship Amendment Act, 2019? Against cancellation of citizenship; what rights do these citizens have? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10. Write a note on India's performance at 77th Cannes film festival.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-40-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 40 M</strong></span></h3>
+<h3 id="10m-100w-7">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Describe the Electoral process of members of Rajya Sabha. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> Discuss the process of 'Secularisation of Caste' and its impact. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. Identify the distinguishing features of the first phase of electoral politics (1952-1971) in Rajasthan. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong> There is a viewpoint that the foreign policy of India is in a dilemma, i.e., between joining the 'developed North' or leading the 'developing South'. Analyse this viewpoint with plausible arguments. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-ii-65-m-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 65 M</strong></span></h2>
+<h3 id="part-a-10-m-17"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-20">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15. Write the name of any two H.Q. of Directorates or Executive Departments of State Government located in Ajmer. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. What do you mean by sub-national government?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17.</strong> What is the main concern of Corporate Governance? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18.</strong> Who is responsible to upload on the web portal of Rajya Sabha / Lok Sabha Secretariat the text version of answers to the questions asked in parliament? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19.</strong> What is the main function of State Election Commission? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-25-m-8"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-20">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20.</strong> Discuss the salient features of Change Management. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21. Analyse the concept of Legitimacу. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.</strong> What are Seven Deadly Sins propounded by Mahatma Gandhi and why they are important? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>23. Describe the duties of Chief Minister as mentioned in the Constitution of India &amp; also underline the most important duty which makes him head of the Government. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>24.</strong> Evaluate the provisions made in Article-315 of Constitution of India for State Public Service Commission. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-c-30-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-8">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>25. Describe the formula of Graicunaz propounded for calculation of span of control and give mathematical solution of a situation when number of relations is 5. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>26. Critically analyse the forms and methods of judicial control in India.</strong> (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>27. Discuss the main points of the conflict between Generalists v/s Specialists. Also mention the recommendations given by First ARC-in this regard. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-iii-60-m-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv">Unit - III : 60 M</span></h2>
+<h3 id="section-a-20-m-4"><strong>Section - A : 20 M</strong></h3>
+<h3 id="part-a-10-m-18"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-21">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>28. Enlist the major achievements of the flag bearer from India in Paris Olympics 2024 opening ceremony. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>29.</strong> Write the number of total 'Khelo India' centres in India with special reference to Rajasthan State with Sports discipline. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>30.</strong> Which father and daughter duo from Rajasthan holds pride to receive Arjun award and in which game? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>31.</strong> Enlist the major achievement of Rajasthan State's Divyakrati Singh in Sports. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>32.</strong> Define and write difference between sprain and strain. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-10-m-10"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-21">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>33.</strong> Write name of any ten verticals of &quot;Khelo India&quot; Scheme. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>34. &quot;Janmoshadhi Mantratapah Samadhija Siddhaya&quot; is originated from which couplet of Yogsutra? Elaborate the content included in it. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="section-b-20-m-4"><strong>Section - B : 20 M</strong></h3>
+<h3 id="part-a-10-m-19"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-22">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>35. What kind of competencies are identified as facets of Intelligence in the Indian tradition? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>36.</strong> Define Intelligence as proposed by David Wechsler. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>37.</strong> Write any two characteristics of analytical style of learning. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>38.</strong> Explain Sensory Memory. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>39.</strong> Explain Forgetting due to trace decay.. (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-11"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-22">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>40. Explain type A and type B personality as suggested by Friedman &amp; Rosenman.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>41. Distinguish between emotion focussed and problem focussed coping strategies to reduce stress. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="section-c-20-m-4"><strong>Section - C : 20 M</strong></h3>
+<h3 id="part-a-10-m-20"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-23">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>42. The government of India received information in confidence from a foreign Government. Can it be asked under the R.T.I. Act, 2005? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>43.</strong> What do you. mean by the term 'private area' mentioned under the Information Technology Act, 2000? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>44.</strong> State the subject matter of copyright. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>45.</strong> What includes 'Children' under the Maintenance and Welfare of Parents and Senior Citizens Act, 2007? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>46.</strong> What are included under the term &quot;Sexual abuse&quot; in the Protection of Women from Domestic Violence Act, 2005? (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-12"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-23">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>47.</strong> What is the legal status of a Hindu Idol? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>48. What do you understand by the term &quot;Sayar&quot; under the Rajasthan Tenancy Act, 1955? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h1 id="2024-17-18-june-2025">2024 - 17 / 18 June 2025</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/RAS%20Mains%202024%20Paper%204.pdf' href='https://www.drishtiias.com/images/pdf/RAS%20Mains%202024%20Paper%204.pdf'>https://www.drishtiias.com/images/pdf/RAS Mains 2024 Paper 4.pdf</a></p>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2018_PREVIOUS_YEARS_QUESTION_(PAPER-3).pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2018_PREVIOUS_YEARS_QUESTION_%28PAPER-3%29.pdf'></a><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_Mains_2024_Paper_4.pdf%5B%5D' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_Mains_2024_Paper_4.pdf%5B%5D'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_Mains_2024_Paper_4.pdf[]</a>(<a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2018_PREVIOUS_YEARS_QUESTION_%28PAPER-3%29.pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2018_PREVIOUS_YEARS_QUESTION_%28PAPER-3%29.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2018_PREVIOUS_YEARS_QUESTION_(PAPER-3).pdf</a> &quot;<a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2018_PREVIOUS_YEARS_QUESTION_(PAPER-3).pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2018_PREVIOUS_YEARS_QUESTION_(PAPER-3).pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2018_PREVIOUS_YEARS_QUESTION_(PAPER-3).pdf</a>&quot;)</p>
+<h2 id="unit-i-75-m-5"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 75 M</strong></span></h2>
+<h3 id="part-a-10-m-21"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-24">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Explain the 'Golden Triangle of Fundamental Rights' in the Constitution of India. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> What is the procedure to remove the Central Vigilance Commissioner from the office? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. What is the concept of 'bullock capitalists' in the context of the rise of the intermediate castes?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> What was India's stand on the 1956 Suez Canal crisis? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Who is Sunny Sebastian? Why was he in news recently? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-25-m-9"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-24">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Evaluate the claim, 'We, the people of India', made by the Constituent Assembly. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Mention the major provisions of the Constitution of India which impose limitations on the Territorial Jurisdiction of Parliament. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> Discuss the features of 'autonomous women movement' in India. Cite few examples of such movements. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. How will President Donald Trump's threat of the United States' retreat from multilateral institutions affect international peace and security? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> What is AI Kosha? Write the name of its seven core pillars. (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-40-m-5"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 40 M</strong></span></h3>
+<h3 id="10m-100w-9">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Explain the constitutional implications of Secularism in India. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> Considering the efficacy of Indian federalism, analyse the role of the Governor in the special context of the recent judgement of the Supreme Court in the State of Tamil Nadu V/s The Governor of Tamil Nadu case about Article 200 and Article 201. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. What are the challenges in the effective implementation of &quot;Rajasthan Panchayat Raj (Modification of Provisions in their Application to the Scheduled Areas) Act, 1999&quot; ? (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong> &quot;While the Ministry of External Affairs led by its Minister is the institutional anchor in the making of India's foreign policy, various Prime Ministers have assumed a dominant role in the process.&quot; In the light of this statement, discuss the instances where Prime Ministers have personally shaped the foreign policy of India. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-ii-65-m-5"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 65 M</strong></span></h2>
+<h3 id="part-a-10-m-22"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-25">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15. Under the Rajasthan Right to Hearing Act, 2012 who has been notified as the second appellate authority to hear non-revenue matters in panchayats ? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16.</strong> Distinguish between Block and Tehsil. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17.</strong> What is the difference between 'removal' from service and 'dismissal' from service? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18.</strong> Mention the three trends in Comparative Public Administration as enumerated by F.W. Riggs. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19.</strong> What do you understand by 'Res Judicata'? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-25-m-10"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-25">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20. Discuss the paradoxes inherent in the New Public Management approach to governance.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21. Discuss the role of the office of the Accountant General (A.G.) in the Process of Control over Executive. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.</strong> What do you understand by Post-modernism in Public Administration?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>23. Elaborate the difference between delegation and decentralization. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>24.</strong> What are the provisions for appointment, resignation and removal of a member of the Rajasthan State Human Rights Commission? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-c-30-m-5"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-10">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>25. ' The classical principles are proverbs and myths.' In the light of this statement, discuss the contradiction between hierarchy and span of control. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>26.</strong> In what ways do the concept of legitimacy as given by Weber and Barnard differ? (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>27. 'It would be a gross fallacy to regard the institution of the Governor as a faint presence like a full moon at mid-day.' Discuss. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-iii-60-m-5"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv">Unit - III : 60 M</span></h2>
+<h3 id="section-a-20-m-5"><strong>Section - A : 20 M</strong></h3>
+<h3 id="part-a-10-m-23"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-26">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>28. Name the courses offered and universities under the National Centre of Sports Sciences and Research (NCSSR) in Rajasthan. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>29.</strong> Write a note on &quot;Mission Olympics 2028&quot; launched by the Government of Rajasthan. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>30.</strong> List the six core awards that make up the Indian National Sports Awards. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>31.</strong> Write a short note about Payal Nag's inspiring sports journey. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>32.</strong> List the names of Indian shooters and their events in which they won medals at the Paris Olympic 2024. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-10-m-13"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-26">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>33.</strong> Write a short explanation of 'Vatkram Kapalbhati'. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>34. Write in brief about any five soft tissue injuries in sports. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="section-b-20-m-5"><strong>Section - B : 20 M</strong></h3>
+<h3 id="part-a-10-m-24"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-27">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>35. What is serial-position effect in learning and retention? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>36.</strong> What leads to learned helplessness? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>37.</strong> What is stress resistant personality? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>38.</strong> Differentiate between regression and sublimation. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>39.</strong> What is Social Readjustment Rating Scale? (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-14"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-27">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>40. In what way Cultural Intelligence differ from Emotional Intelligence?</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>41. What are major issues in personality assessment? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="section-c-20-m-5"><strong>Section - C : 20 M</strong></h3>
+<h3 id="part-a-10-m-25"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-28">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>42. What are included in the term &quot;Crops&quot; under the Rajasthan Tenancy Act, 1955? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>43.</strong> What is meant by &quot;Cyber Cafe&quot; under the Information Technology Act, 2000? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>44.</strong> What are the provisions of protecting a female living in a &quot;live-in-relationship” against domestic violence? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>45.</strong> What is the meaning of &quot;Shared household&quot; according to the Protection of Children from Sexual Offences Act, 2012? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>46.</strong> Injurious contents were found in a &quot;Branded Sweet&quot; on its examination. Can any person ask for this information from the competent authority under the Right to Information Act, 2005? (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-15"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-28">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>47.</strong> State the provisions relating to &quot;Mutation&quot; under the Rajasthan Land Revenue Act, 1956. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>48. Define 'possession' and point out its elements. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+</div></div>
+					</body>
+				</html>
+			

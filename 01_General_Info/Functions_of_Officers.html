@@ -1,0 +1,2137 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="../atom-one-light.css">
+						<title>Functions_of_Officers</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">Functions_of_Officers</div>
+
+<style>
+		/* https://necolas.github.io/normalize.css/ */
+		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
+		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
+		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
+
+		body {
+			font-size: 15px;
+			color: #32373F;
+			word-wrap: break-word;
+			line-height: 1.6em;
+			background-color: #ffffff;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+			padding-bottom: 0px;
+			padding-top: 0px;
+		}
+		kbd {
+			border: 1px solid rgb(220, 220, 220);
+			box-shadow: inset 0 -1px 0 rgb(220, 220, 220);
+			padding: 2px 4px;
+			border-radius: 3px;
+			background-color: rgb(243, 243, 243);
+		}
+
+		:root {
+			--scrollbar-size: 7px;
+		}
+
+		::-webkit-scrollbar {
+			width: var(--scrollbar-size);
+			height: var(--scrollbar-size);
+		}
+		::-webkit-scrollbar-thumb {
+			border-radius: calc(var(--scrollbar-size) / 2);
+		}
+		::-webkit-scrollbar-corner {
+			background: none;
+		}
+		::-webkit-scrollbar-track {
+			border: none;
+		}
+		::-webkit-scrollbar-thumb {
+			background: rgba(50, 55, 63, 0.54); 
+		}
+		::-webkit-scrollbar-track:hover {
+			background: rgba(0, 0, 0, 0.1); 
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background: rgba(50, 55, 63, 0.63); 
+		}
+
+		
+
+		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
+
+		#rendered-md > h1:first-child,
+		#rendered-md > h2:first-child,
+		#rendered-md > h3:first-child,
+		#rendered-md > h4:first-child,
+		#rendered-md > ul:first-child,
+		#rendered-md > ol:first-child,
+		#rendered-md > table:first-child,
+		#rendered-md > blockquote:first-child,
+		#rendered-md > img:first-child,
+		#rendered-md > p:first-child {
+			margin-top: 0;
+			padding-top: 0;
+		}
+		
+		p, h1, h2, h3, h4, h5, h6, ul, table {
+			margin-top: .6em;
+			margin-bottom: 1.35em;
+
+			/*
+				Adds support for RTL text in the note body. It automatically detects the direction using the content.
+				Issue: https://github.com/laurent22/joplin/issues/3991
+			*/
+			unicode-bidi: plaintext;
+		}
+
+		h1, h2, h3, h4, h5, h6, ul, table {
+			margin-bottom: 0.65em;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			line-height: 1.5em;
+		}
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			border-bottom: 1px solid #dddddd;
+			padding-bottom: .3em;
+		}
+		h2 {
+			font-size: 1.3em;
+			font-weight: bold;
+			padding-bottom: .1em; */
+		}
+		h3 {
+			font-size: 1.1em;
+			font-weight: bold;
+		}
+		h4, h5, h6 {
+			font-size: 1em;
+			font-weight: bold;
+		}
+
+		.exported-note-title {
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 0.8em;
+			line-height: 1.5em;
+			padding-bottom: .35em;
+			border-bottom: 1px solid #dddddd;
+		}
+
+		a {
+			color: #155BDA;
+		}
+		ul, ol {
+			padding-left: 0;
+			margin-left: 1.7em;
+		}
+		li {
+			margin-bottom: .4em;
+		}
+		li p {
+			margin-top: 0.2em;
+			margin-bottom: 0;
+		}
+
+		dt {
+			font-weight: bold;
+			margin-bottom: 0.25em;
+		}
+
+		dd {
+			margin-inline-start: 2.5em;
+			margin-bottom: 0.5em;
+		}
+
+		.resource-icon {
+			display: inline-block;
+			position: relative;
+			top: 0.3em;
+			text-decoration: none;
+			width: 1.2em;
+			height: 1.4em;
+			margin-right: 0.4em;
+			background-color:  #155BDA;
+		}
+    /* These icons are obtained from the wonderful ForkAwesome project by copying the src svgs 
+     * into the css classes below.
+     * svgs are obtained from https://github.com/ForkAwesome/Fork-Awesome/tree/master/src/icons/svg
+     * instead of the svg width, height property you must use a viewbox here, 0 0 1536 1792 is typically the actual size of the icon
+     * each line begins with the pre-amble -webkit-mask: url("data:image/svg+xml;utf8,
+     * and of course finishes with ");
+     * to prevent artifacts it is also necessary to include -webkit-mask-repeat: no-repeat;
+     * on the following line
+     * */
+		.fa-joplin {
+			/* Awesome Font file */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M373.834 128C168.227 128 0 296.223 0 501.834v788.336C0 1495.778 168.227 1664 373.834 1664h788.336c205.608 0 373.83-168.222 373.83-373.83V501.834C1536 296.224 1367.778 128 1162.17 128zm397.222 205.431h417.424a7.132 7.132 0 0 1 7.132 7.133v132.552c0 4.461-3.619 8.073-8.077 8.073h-57.23c-24.168 0-43.768 19.338-44.284 43.374v2.377h-.017v136.191h-.053l-.466 509.375c-5.02 77.667-39.222 149.056-96.324 201.046-60.28 54.834-141.948 85.017-229.962 85.017-12.45 0-25.208-.61-37.907-1.785-92.157-8.682-181.494-48.601-251.662-112.438-71.99-65.517-117.147-150.03-127.164-238-11.226-98.763 23.42-192.783 95.045-257.937 81.99-74.637 198.185-101.768 316.613-75.704 5.574 1.227 9.55 6.282 9.55 11.997v199.52c-.199 2.625-1.481 6.599-8.183 2.896-.663-.365-1.194-.511-1.653-.531-21.987-10.587-45.159-17.57-68.559-19.916-.38-.04-.757-.124-1.138-.163-.537-.048-1.034-.033-1.556-.075-4.13-.354-8.183-.517-12.203-.58-.87-.011-1.771-.127-2.641-.127-.486 0-.951.05-1.437.057-1.464.011-2.886.115-4.33.163-2.76.102-5.497.211-8.182.448-.273.024-.547.07-.835.097-25.509 2.4-47.864 11.104-65.012 25.47-.954.802-1.974 1.53-2.9 2.36a1.34 1.34 0 0 1-.168.146c-23.96 21.8-34.881 53.872-30.726 90.316 4.62 40.737 26.94 81.156 62.841 113.823 35.908 32.67 80.335 52.977 125.113 57.186 35.118 3.36 66.547-3.919 89.899-20.461a97.255 97.255 0 0 0 9.365-7.501c2.925-2.661 5.569-5.5 8.086-8.416.3-.348.672-.673.975-1.024 8.253-9.864 14.222-21.067 17.996-33.148.639-2.034 1.051-4.148 1.564-6.227.381-1.563.81-3.106 1.112-4.693.555-2.784.923-5.632 1.253-8.49.086-.709.183-1.414.237-2.128.492-4.893.693-9.858.55-14.91h.013V521.623c-2.01-22.626-20.78-40.434-43.928-40.434h-57.23a8.071 8.071 0 0 1-8.077-8.073V340.564a7.132 7.132 0 0 1 7.136-7.133z'/></svg>");
+		}
+		.fa-file-image {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-128-448v320H256v-192l192-192 128 128 384-384zm-832-192c-106 0-192-86-192-192s86-192 192-192 192 86 192 192-86 192-192 192z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-pdf {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-514-593c25 20 53 38 84 56 42-5 81-7 117-7 67 0 152 8 177 49 7 10 13 28 2 52-1 1-2 3-3 4v1c-3 18-18 38-71 38-64 0-161-29-245-73-139 15-285 46-392 83-103 176-182 262-242 262-10 0-19-2-28-7l-24-12c-3-1-4-3-6-5-5-5-9-16-6-36 10-46 64-123 188-188 8-5 18-2 23 6 1 1 2 3 2 4 31-51 67-116 107-197 45-90 80-178 104-262-32-109-42-221-24-287 7-25 22-40 42-40h22c15 0 27 5 35 15 12 14 15 36 9 68-1 3-2 6-4 8 1 3 1 5 1 8v30c-1 63-2 123-14 192 35 105 87 190 146 238zm-576 411c30-14 73-57 137-158-75 58-122 124-137 158zm398-920c-10 28-10 76-2 132 3-16 5-31 7-44 2-17 5-31 7-43 1-3 2-5 4-8-1-1-1-3-2-5-1-18-7-29-13-36 0 2-1 3-1 4zm-124 661c88-35 186-63 284-81-10-8-20-15-29-23-49-43-93-103-127-176-19 61-47 126-83 197-15 28-30 56-45 83zm646-16c-5-5-31-24-140-24 49 18 94 28 124 28 9 0 14 0 18-1 0-1-1-2-2-3z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-word {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM233 768v107h70l164 661h159l128-485c5-15 8-30 10-46 1-8 2-16 2-24h4l3 24c3 14 4 30 9 46l128 485h159l164-661h70V768h-300v107h90l-99 438c-4 16-6 33-7 46l-2 21h-4c0-6-2-14-3-21-3-13-5-30-9-46L825 768H711l-144 545c-4 16-5 33-8 46l-4 21h-4l-2-21c-1-13-3-30-7-46l-99-438h90V768H233z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-powerpoint {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-992-234v106h327v-106h-93v-167h137c43 0 82-2 118-15 90-31 146-124 146-233s-54-193-137-228c-38-15-84-19-130-19H416v107h92v555h-92zm353-280H650V882h120c35 0 62 6 83 18 36 21 56 62 56 115 0 56-20 99-62 120-21 10-47 15-78 15z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-excel {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-979-234v106h281v-106h-75l103-161c12-19 18-34 21-34h2c1 4 3 7 5 10 4 8 10 14 17 24l107 161h-76v106h291v-106h-68l-192-273 195-282h67V768H828v107h74l-103 159c-12 19-21 34-21 33h-2c-1-4-3-7-5-10-4-7-9-14-17-23L648 875h76V768H434v107h68l189 272-194 283h-68z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-audio {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM620 850c12 5 20 17 20 30v544c0 13-8 25-20 30-4 1-8 2-12 2-8 0-16-3-23-9l-166-167H288c-18 0-32-14-32-32v-192c0-18 14-32 32-32h131l166-167c10-9 23-12 35-7zm417 689c19 0 37-8 50-24 83-102 129-231 129-363s-46-261-129-363c-22-28-63-32-90-10-28 23-32 63-9 91 65 80 100 178 100 282s-35 202-100 282c-23 28-19 68 9 90 12 10 26 15 40 15zm-211-148c17 0 34-7 47-20 56-60 87-137 87-219s-31-159-87-219c-24-26-65-27-91-3-25 24-27 65-2 91 33 36 52 82 52 131s-19 95-52 131c-25 26-23 67 2 91 13 11 29 17 44 17z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-video {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM768 768c70 0 128 58 128 128v384c0 70-58 128-128 128H384c-70 0-128-58-128-128V896c0-70 58-128 128-128h384zm492 2c12 5 20 17 20 30v576c0 13-8 25-20 30-4 1-8 2-12 2-8 0-17-3-23-9l-265-266v-90l265-266c6-6 15-9 23-9 4 0 8 1 12 2z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-archive {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M640 384V256H512v128h128zm128 128V384H640v128h128zM640 640V512H512v128h128zm128 128V640H640v128h128zm700-388c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H768v128H640V128H128v1536h1280zM781 943c85 287 107 349 107 349 5 17 8 34 8 52 0 111-108 192-256 192s-256-81-256-192c0-18 3-35 8-52 0 0 21-62 120-396V768h128v128h79c29 0 54 19 62 47zm-141 465c71 0 128-29 128-64s-57-64-128-64-128 29-128 64 57 64 128 64z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-code {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM480 768c11-14 31-17 45-6l51 38c14 11 17 31 6 45l-182 243 182 243c11 14 8 34-6 45l-51 38c-14 11-34 8-45-6l-226-301c-8-11-8-27 0-38zm802 301c8 11 8 27 0 38l-226 301c-11 14-31 17-45 6l-51-38c-14-11-17-31-6-45l182-243-182-243c-11-14-8-34 6-45l51-38c14-11 34-8 45 6zm-620 461c-18-3-29-20-26-37l138-831c3-18 20-29 37-26l63 10c18 3 29 20 26 37l-138 831c-3 18-20 29-37 26z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-alt, .fa-file-csv {
+      /* fork-awesome doesn't have csv so we use the text icon */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM384 800c0-18 14-32 32-32h704c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64zm736 224c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704zm0 256c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		blockquote {
+			border-left: 4px solid rgb(220, 220, 220);
+			padding-left: 1.2em;
+			margin-left: 0;
+			opacity: 0.7;
+		}
+
+		.jop-tinymce table,
+		table {
+			text-align: left;
+			border-collapse: collapse;
+			border: 1px solid rgb(220, 220, 220);
+			background-color: #ffffff;
+		}
+
+		.jop-tinymce table td, .jop-tinymce table th,
+		table td, th {
+			text-align: left;
+			padding: .5em 1em .5em 1em;
+			font-size: 15;
+			color: #32373F;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+		}
+
+		.jop-tinymce table td,
+		table td {
+			border: 1px solid rgb(220, 220, 220);
+		}
+
+		.jop-tinymce table th,
+		table th {
+			border: 1px solid rgb(220, 220, 220);
+			border-bottom: 2px solid rgb(220, 220, 220);
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:nth-child(even),
+		table tr:nth-child(even) {
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:hover,
+		table tr:hover {
+			background-color: #e5e5e5;
+		}
+
+		hr {
+			border: none;
+			border-bottom: 2px solid #dddddd;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		.inline-code,
+		.mce-content-body code {
+			border: 1px solid rgb(220, 220, 220);
+			background-color: rgb(243, 243, 243);
+			padding-right: .2em;
+			padding-left: .2em;
+			border-radius: .25em;
+			color: rgb(0,0,0);
+			font-size: .9em;
+		}
+
+		.highlighted-keyword {
+			background-color: #F3B717;
+			color: black;
+		}
+
+		
+	.not-loaded-resource img {
+		width: 1.15em;
+		height: 1.15em;
+		background: white;
+		padding: 2px !important;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px #000000aa;
+	}
+
+	a.not-loaded-resource img {
+		margin-right: .2em;
+	}
+
+	a.not-loaded-resource {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+
+		.md-checkbox input[type=checkbox]:checked {
+			opacity: 0.7;
+		}
+
+		.jop-tinymce ul.joplin-checklist .checked,
+		.md-checkbox .checkbox-label-checked {
+			opacity: 0.5;
+		}
+
+		.exported-note {
+			padding: 1em;
+		}
+
+		.joplin-editable .joplin-source {
+			display: none;
+		}
+
+		mark {
+			background: #F7D26E;
+			color: black;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		.mce-content-body {
+			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
+			padding: 5px 10px 10em 0;
+		}
+
+		/*
+		.mce-content-body code {
+			background-color: transparent;
+		}
+		*/
+
+		.mce-content-body [data-mce-selected=inline-boundary] {
+			background-color: transparent;
+		}
+
+		.mce-content-body .joplin-editable {
+			cursor: pointer !important;
+		}
+
+		.mce-content-body.mce-content-readonly {
+			opacity: 0.5;
+		}
+
+		/* We need that to make sure click events have the A has a target */
+		.katex a span {
+			pointer-events: none;
+		}
+
+		.media-player {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.media-player.media-pdf {
+			min-height: 35rem;
+			width: 100%;
+			max-width: 1000px;
+			margin: 0;
+			border: 0;
+			display: block;
+		}
+
+		/* Clear the CODE style if the element is within a joplin-editable block */
+		.mce-content-body .joplin-editable code {
+			border: none;
+			background: none;
+			padding: 0;
+			color: inherit;
+			font-size: inherit;
+		}
+
+		/* To make code blocks horizontally scrollable */
+		/* https://github.com/laurent22/joplin/issues/5740 */
+		pre.hljs {
+			overflow-x: auto;
+		}
+
+		.joplin-table-wrapper{
+			overflow-x: auto;
+			overflow-y: hidden;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		@media print {
+			body {
+				height: auto !important;
+			}
+
+			pre {
+				white-space: pre-wrap;
+			}
+
+			.code, .inline-code {
+				border: 1px solid #CBCBCB;
+			}
+
+			#joplin-container-content {
+				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
+				   around various issues related to scrolling. However when printing we don't want this
+				   fixed size as that would crop the content. So we set it to auto here. "important" is
+				   needed to override the style set by JavaScript at the element-level. */
+				height: auto !important;
+			}
+		}
+	
+
+				/*
+					FOR THE MARKDOWN EDITOR
+				*/
+
+				/* Remove the indentation from the checkboxes at the root of the document
+				   (otherwise they are too far right), but keep it for their children to allow
+				   nested lists. Make sure this value matches the UL margin. */
+
+				li.md-checkbox {
+					list-style-type: none;
+				}
+
+				li.md-checkbox input[type=checkbox] {
+					margin-left: -1.71em;
+					margin-right: 0.7em;
+					position: relative;
+					top: 1px;
+				}
+				
+				ul.joplin-checklist {
+					list-style:none;
+				}
+
+				/*
+					FOR THE RICH TEXT EDITOR
+				*/
+
+				ul.joplin-checklist li::before {
+					content:"\f14a";
+					font-family:"Font Awesome 5 Free";
+					background-size: 16px 16px;
+					pointer-events: all;
+					cursor: pointer;
+					width: 1em;
+					height: 1em;
+					margin-left: -1.3em;
+					position: absolute;
+					color: #32373F;
+				}
+
+				.joplin-checklist li:not(.checked)::before {
+					content:"\f0c8";
+				}
+.mermaid { width: 640px; }
+pre.mermaid[data-processed=true] { white-space: unset; }
+.mermaid-export-graph {
+					opacity: 0;
+					height: 0;
+					z-index: 1;
+					position: relative;
+				} 
+				.joplin-editable:hover .mermaid-export-graph,
+				.joplin-editable .mermaid-export-graph:has(:focus-visible) {
+					opacity: 1;
+				}
+				.mermaid-export-graph > button:hover {
+					background-color: #CBDAF1 !important;
+				}</style><div id="rendered-md"><h2 id="functions-of-officers-civil-servants-in-india"><span style="color: rgb(45, 194, 107);" class="jop-noMdConv">Functions of Officers (Civil Servants) in India</span></h2>
+<ol>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Framing Policies</strong></span><br>
+Civil servants play a key role in policy formulation. They collect data, analyse problems, prepare reports, and draft policy proposals that form the basis of government decisions.</p>
+<p><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Posts involved:</strong></span></p>
+<ul>
+<li>
+<p>Secretary to Government (Union / State)</p>
+</li>
+<li>
+<p>Additional Secretary</p>
+</li>
+<li>
+<p>Joint Secretary</p>
+</li>
+<li>
+<p>Director / Deputy Secretary (Ministries &amp; Departments)</p>
+</li>
+<li>
+<p>Senior officers of <strong>IAS</strong> at Secretariat level</p>
+</li>
+</ul>
+<p>📌 <em>They draft policy notes, cabinet papers, rules, and long-term plans.</em></p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Advising Ministers</strong></span><br>
+Officers advise ministers on administrative, technical, financial, and legal matters. Since ministers may change but civil servants remain permanent, their expertise ensures continuity and informed decision-making.</p>
+<p><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Posts involved:</strong></span></p>
+<ul>
+<li>
+<p>Cabinet Secretary</p>
+</li>
+<li>
+<p>Principal Secretary to Chief Minister</p>
+</li>
+<li>
+<p>Secretary / Additional Secretary of a Department</p>
+</li>
+<li>
+<p>Private Secretary / Officer on Special Duty (OSD) to Ministers</p>
+</li>
+</ul>
+<p>📌 <em>They provide administrative, legal, financial, and technical advice to ministers.</em></p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Maintaining Law and Order</strong></span><br>
+Civil servants, especially those in the police and district administration, are responsible for maintaining peace, public safety, and law and order in their jurisdictions.</p>
+<p><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Posts involved:</strong></span></p>
+<ul>
+<li>
+<p>District Magistrate (DM) / Collector</p>
+</li>
+<li>
+<p>Sub-Divisional Magistrate (SDM)</p>
+</li>
+<li>
+<p>Superintendent of Police (SP)</p>
+</li>
+<li>
+<p>Director General of Police (DGP)</p>
+</li>
+<li>
+<p>Commissioner of Police (in commissionerates)</p>
+</li>
+</ul>
+<p>📌 <em>These officers are responsible for public order, security, and crisis management.</em></p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Implementing Government Policies</strong></span><br>
+They supervise and ensure the proper implementation of policies and programs of both the <strong>State Government</strong> and the <strong>Central Government</strong>, translating decisions into action at the ground level.</p>
+<p><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Posts involved:</strong></span></p>
+<ul>
+<li>
+<p>District Collector / District Magistrate</p>
+</li>
+<li>
+<p>Chief Executive Officer (Zilla Parishad)</p>
+</li>
+<li>
+<p>Block Development Officer (BDO)</p>
+</li>
+<li>
+<p>Departmental Heads at district and state level</p>
+</li>
+<li>
+<p>Field officers of Central schemes</p>
+</li>
+</ul>
+<p>📌 <em>They translate policies into action at the grassroots level.</em></p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Revenue Collection and Judicial Functions</strong></span><br>
+Officers collect land revenue, taxes, and other government dues. Many also function as courts in revenue matters, settling disputes related to land and revenue administration.</p>
+<p><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Posts involved:</strong></span></p>
+<ul>
+<li>
+<p>District Collector</p>
+</li>
+<li>
+<p>Additional District Magistrate (ADM – Revenue)</p>
+</li>
+<li>
+<p>Sub-Divisional Magistrate (SDM)</p>
+</li>
+<li>
+<p>Tehsildar / Tahsildar</p>
+</li>
+<li>
+<p>Naib Tehsildar</p>
+</li>
+</ul>
+<p>📌 <em>They collect land revenue, decide land disputes, and act as revenue courts.</em></p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Supervising Public Expenditure</strong></span><br>
+Civil servants ensure that public funds are spent according to rules of financial propriety—meaning money is used economically, efficiently, and only for approved purposes.</p>
+<p><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Posts involved:</strong></span></p>
+<ul>
+<li>
+<p>Secretary (Finance Department)</p>
+</li>
+<li>
+<p>Controller of Accounts</p>
+</li>
+<li>
+<p>Drawing and Disbursing Officer (DDO)</p>
+</li>
+<li>
+<p>Comptroller and Auditor General (CAG)</p>
+</li>
+<li>
+<p>Heads of Departments</p>
+</li>
+</ul>
+<p>📌 <em>They ensure public money is spent according to financial rules and propriety.</em></p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Day-to-Day Administration</strong></span><br>
+They handle the daily affairs of government departments, including drafting rules, coordinating between departments, and implementing policies in consultation with the concerned minister.</p>
+<p><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Posts involved:</strong></span></p>
+<ul>
+<li>
+<p>Secretary / Joint Secretary in Ministries</p>
+</li>
+<li>
+<p>District Collector</p>
+</li>
+<li>
+<p>Heads of Departments</p>
+</li>
+<li>
+<p>Section Officers and Under Secretaries</p>
+</li>
+<li>
+<p>Municipal Commissioners / CEOs of local bodies</p>
+</li>
+</ul>
+<p>📌 *They manage routine administration, coordination, and departmental functioning.<br>
+*</p>
+</li>
+</ol>
+<p><span style="color: rgb(236, 202, 250);" class="jop-noMdConv">**Policy → Secretary / Joint Secretary<br>
+**</span><span style="color: rgb(236, 202, 250);" class="jop-noMdConv">**Law &amp; Order → DM / SP<br>
+**</span><span style="color: rgb(236, 202, 250);" class="jop-noMdConv">**Revenue → Collector / Tehsildar<br>
+**</span><span style="color: rgb(236, 202, 250);" class="jop-noMdConv">**Finance → Finance Secretary / DDO<br>
+**</span><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Implementation → Collector / BDO</strong></span></p>
+<h2 id="better-memory-formation-tips"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Better Memory Formation Tips</strong></span></h2>
+<ol>
+<li>
+<p>Instant revision</p>
+</li>
+<li>
+<p>Familiarization</p>
+</li>
+<li>
+<p>Say it loud</p>
+</li>
+<li>
+<p>Memory Places</p>
+</li>
+<li>
+<p>Teach others (Best way - You may teach hypothetical fellow also instead of actual)</p>
+</li>
+<li>
+<p>Make its importance known to brain (Importance of Concepts)</p>
+</li>
+<li>
+<p>Method of association</p>
+</li>
+<li>
+<p>Mnemonics</p>
+</li>
+<li>
+<p>Chunking (the process of taking individual pieces of information and grouping them into larger units)</p>
+</li>
+<li>
+<p>Core concepts understanding</p>
+</li>
+<li>
+<p>Never learn/read wrong concepts, data or facts (verify wisely)</p>
+</li>
+<li>
+<p>Be a good listener</p>
+</li>
+<li>
+<p>Understand Hard Core Concepts + Learning Techniques + Memory Techniques (Only memory tricks will not lead to selection)</p>
+</li>
+<li>
+<p>Have clear thoughts - Pay attention to your thoughts</p>
+</li>
+</ol>
+<h2 id="important-characteristicstraits-of-all-the-toppers"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Important Characteristics/Traits of all the Toppers</strong></span></h2>
+<ol>
+<li>
+<p>Don't lower your bar (Don't think you are MEDIOCRE and IMPROVE YOURSELF)</p>
+</li>
+<li>
+<p>Study because of discipline (INNER MOTIVATION + STRICT DISCIPLINE + PUNCTUALITY)</p>
+</li>
+<li>
+<p>Set priority right (Do read only those concepts which are useful for your exams)</p>
+</li>
+<li>
+<p>Don't be lazy (DO EXERCISE DAILY)</p>
+</li>
+<li>
+<p>Follow routine (DO NOT PROCRASTINATE)</p>
+</li>
+<li>
+<p>Focus more on journey (RATHER THAN END RESULT)</p>
+</li>
+<li>
+<p>Validate yourself internally (INTROSPECT)</p>
+</li>
+<li>
+<p>Think about future-think long term(DON'T LIVE IN MOMENT ONLY)</p>
+</li>
+<li>
+<p>Don't bock-down by social pressure</p>
+</li>
+<li>
+<p>Don't do things to sound cool</p>
+</li>
+<li>
+<p>Supplement hard work and smart work with tricks (DON'T ELIMINATE HARD WORK + SMART WORK WITH TRICKS)</p>
+</li>
+<li>
+<p>Don't do day dreaming (BE REALISTIC)</p>
+</li>
+<li>
+<p>Get it done attitude(Don't give excuse) - NO EXCUSES</p>
+</li>
+<li>
+<p>Don't Complain, Criticize and Condemn</p>
+</li>
+</ol>
+<h2 id="how-to-become-a-topper"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>How to become a topper</strong></span></h2>
+<ol>
+<li>
+<p>At least 6 hours with focus daily is sufficient to clear any exam in one or two years</p>
+</li>
+<li>
+<p>At least 3 Revision</p>
+</li>
+<li>
+<p>Be Discipline and self dependent</p>
+</li>
+<li>
+<p>Don't be depressed and emotional</p>
+</li>
+<li>
+<p>Study for exam - Know the syllabus - PYQs last 5-10 years</p>
+</li>
+<li>
+<p>Take breaks in between studies (Pomo-Doro Technique , Exercise)</p>
+</li>
+<li>
+<p>Different subjects study  (Change Subjects )</p>
+</li>
+<li>
+<p>Don't study from bad book, bad teacher, bad video</p>
+</li>
+<li>
+<p>Switch off distraction before study (put earbuds in ear at the study time )</p>
+</li>
+<li>
+<p>Make friends  with good and big ambition</p>
+</li>
+<li>
+<p>Eat healthy and do mild exercise</p>
+</li>
+<li>
+<p>No option other than Crack the Exam</p>
+</li>
+<li>
+<p>1st  Revision - within 24 hrs - 2nd Revision - 1 week - 3rd Revision - 1 month</p>
+</li>
+<li>
+<p>Consistent practice</p>
+</li>
+<li>
+<p>Use of Pomo-Doro technique</p>
+</li>
+<li>
+<p>10 years Archive is necessary</p>
+</li>
+<li>
+<p>Check your company</p>
+</li>
+<li>
+<p>Stay positive - It's a marathon with daily sprint</p>
+</li>
+</ol>
+<h2 id="how-to-clear-a-competitive-exam-in-first-attempt"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>How to Clear a Competitive Exam in First Attempt</strong></span></h2>
+<ol>
+<li>
+<p>Start preparing right now</p>
+</li>
+<li>
+<p>Don't make 5 year plan e.g. I will crack this exam in 5 years. Mindset should be e.g. I will crack in first attempt.</p>
+</li>
+<li>
+<p>Don't take 1st attempt as test .. instead -  Solve mock tests - Solve other exam papers or past papers</p>
+</li>
+<li>
+<p>Don't compare yourself from others</p>
+</li>
+<li>
+<p>Don't prepare for 2 exams or 2 courses together</p>
+</li>
+<li>
+<p>Don't be overwhelm - Do not fear from the huge syllabus - Be strong like mountains</p>
+</li>
+<li>
+<p>Stay away from rumours</p>
+</li>
+<li>
+<p>Have faith on yourself - Be self confident</p>
+</li>
+</ol>
+<h2 id="tips-and-tricks-for-competitive-exams"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Tips and Tricks for Competitive Exams</strong></span></h2>
+<ol>
+<li>
+<p>Start to say no for unnecessary things.</p>
+</li>
+<li>
+<p>Don't break own rule for other</p>
+</li>
+<li>
+<p>take quality time for 9 -10 hours</p>
+</li>
+<li>
+<p>Quantity is not important Quality is much much more important.</p>
+</li>
+<li>
+<p>Spend time wisely on every work</p>
+</li>
+<li>
+<p>Be  multitasking for less important things</p>
+</li>
+<li>
+<p>Always think like a examiner 😎 - Analyse Previous Years Questions (5-10 years)</p>
+</li>
+<li>
+<p>Reward own-self</p>
+</li>
+<li>
+<p>Make proper notes  - Synopsis and Mind-Maps (<a data-from-md title='https://www.iasexpress.net/' href='https://www.iasexpress.net/'>https://www.iasexpress.net</a>)</p>
+</li>
+<li>
+<p>Do what is need not what you want 😁</p>
+</li>
+<li>
+<p>Don't think about other and don't be distracted  . Social media  se dur</p>
+</li>
+<li>
+<p>Social commitment is dangerous thing 🤔</p>
+</li>
+<li>
+<p>Some positive environment like happy</p>
+</li>
+<li>
+<p>Don't be social - Be like a monk</p>
+</li>
+<li>
+<p>Take proper break</p>
+</li>
+<li>
+<p>Study techniques</p>
+</li>
+<li>
+<p>Persistent is important</p>
+</li>
+<li>
+<p>Self Talk regarding productivity</p>
+</li>
+</ol>
+<h2 id="general-mistakes-in-preparation-of-cse"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>General Mistakes in Preparation of CSE</strong></span></h2>
+<ol>
+<li>Get proper guidance</li>
+<li>Get proper and strong motivation (Inner motivation is the best)</li>
+<li>Know actual work of IAS/IPS and other services before preparation</li>
+<li>Need to clear reason to be an IAS (Why IAS?) - Reason should be strong</li>
+<li>Don't have casual approach - A topper thinks each attempt as last attempt</li>
+<li>Don't have 5 years plan (yojana) for preparation [Try to crack the exam max to max in 2 years]</li>
+<li>Make concrete plan and strategy for throughout the year</li>
+<li>Stick to your plans and strategy - These should be in written</li>
+<li>Revise books and notes multiple times actively.</li>
+<li>Booklist should be concise.</li>
+<li>Have patience and consistency</li>
+<li>Avoid saturation point of study (knowledge)</li>
+<li>Don't be tensed and avoid anxiety.</li>
+<li>Inculcate qualities of an IAS officer</li>
+<li>Have great vision instead of just having aim of clearing exam and securing a good rank</li>
+<li>Have practical approach instead of theoretical</li>
+<li>Hope for the best and prepare for the worst</li>
+<li>Have courage that is the most important aspect during preparation</li>
+<li>Listen carefully and read carefully with optimum concentration</li>
+<li>Pay attention to your thoughts (MOST IMPORTANT)</li>
+<li>Avoid perfection and try to be an average student as per demand of exam (Be generalist instead of specialist)</li>
+<li>Have focused approach</li>
+</ol>
+<h2 id="why-ias"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Why IAS ?</strong></span></h2>
+<ul>
+<li>
+<p>I feel I must answer this question!</p>
+</li>
+<li>
+<p>Few years ago, I was a motivated engineer who wanted to contribute, in my own small way, towards the welfare of society.</p>
+</li>
+<li>
+<p>I lived in Char Imli colony Bhopal which is very near to Panchsheel slum ( largest slum in Bhopal).</p>
+</li>
+<li>
+<p>Therefore, during my evening walks I often met small children from the area.</p>
+</li>
+<li>
+<p>During my Interactions with them,</p>
+</li>
+<li>
+<p>They told me about their experience at school.</p>
+</li>
+<li>
+<p>Their teachers often missed school.</p>
+</li>
+<li>
+<p>They couldn't read their books.</p>
+</li>
+<li>
+<p>Hence, I felt I must do something to improve the quality of education they received.</p>
+</li>
+<li>
+<p>So in 2013, I and my few friends found an N.G.O. Called S.E.E.D.O.</p>
+</li>
+<li>
+<p>Eventually we had a network of 45 volunteers working with 150 slum children.</p>
+</li>
+<li>
+<p>We interacted with the kids every weekend,</p>
+</li>
+<li>
+<p>helping them with their schoolwork,</p>
+</li>
+<li>
+<p>conducting workshops etc.</p>
+</li>
+<li>
+<p>The experience was deeply satisfying.</p>
+</li>
+<li>
+<p>My experience at SEEDO helped me understand the ground realities of education in India.</p>
+</li>
+<li>
+<p>I could see how the government had all the right schemes but the implementation was not up to the mark.</p>
+</li>
+<li>
+<p>I eagerly wanted to reach out to more and more children.</p>
+</li>
+<li>
+<p>I felt my scale of operation and the impact of my work was limited.</p>
+</li>
+<li>
+<p>I could only volunteer and employ the limited resources that I had.</p>
+</li>
+<li>
+<p>I felt there is a need to work from within the government to make the system better.</p>
+</li>
+<li>
+<p>I felt IAS will give me a platform to make policies, improve its implementation and make structural transformations.</p>
+</li>
+<li>
+<p>With this motivation I started studying for UPSC in 2015 and finally cleared the exam in 2017.</p>
+</li>
+<li>
+<p>I am really excited about this opportunity I have now and hope to make the best of it.</p>
+</li>
+<li>
+<p>I have met many NGO workers who are deeply motivated to work for our country.</p>
+</li>
+<li>
+<p>I would love to see more NGO workers like me making this leap- from social worker to IAS! All the best.</p>
+</li>
+</ul>
+<h2 id="the-following-can-be-considered-as-good-responses"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>The following can be considered as good responses.</strong></span></h2>
+<ol>
+<li>
+<p>To take the right decision on time to support the system and help people.</p>
+</li>
+<li>
+<p>Stand with the peoples to help them in all possible ways.</p>
+</li>
+<li>
+<p>Transforming the lives of many by encouraging them to show our good work.</p>
+</li>
+<li>
+<p>Utilizing of power for helping needy people.</p>
+</li>
+<li>
+<p>To convert the dream into reality.</p>
+</li>
+<li>
+<p>Bringing the change into the system as of today needs to serve the country.</p>
+</li>
+<li>
+<p>Encouraging subordinates with unique work styles.</p>
+</li>
+<li>
+<p>This system requires sophisticated candidates and those have leadership quality, the same quality I carry and hope, the same will help to Organization where I will be going to join.</p>
+</li>
+<li>
+<p>This field helps people of all disciplines as engineers can help in technical, the doctor can help to the patient, and so on.</p>
+</li>
+<li>
+<p>We get respect from society, knowledge while preparing, experience when do we meet different kinds of peoples every day on duty and solve their problem.</p>
+</li>
+</ol>
+<p>The best answer is that it is an excellent career where I can help policy makers to make policies for developing my country.</p>
+<ul>
+<li>
+<p><strong>Whether I become an IAS or not but I will serve the society.</strong></p>
+</li>
+<li>
+<p><strong>As an ordinary person I can't serve the masses of people.</strong></p>
+</li>
+<li>
+<p><strong>A layman who doesn't have any authority can't bring any sea change regarding society and so I  can't push anyone towards my goal of goodness.</strong></p>
+</li>
+<li>
+<p><strong>Although they may get success but that too in least amount.</strong></p>
+</li>
+<li>
+<p><strong>So by giving authority, it gives power and other equipped controls to do the same thing over a mass in a precise time.</strong></p>
+</li>
+<li>
+<p><strong>It means, that individually, I might not be able to do good deeds but</strong></p>
+</li>
+<li>
+<p><strong>with the power and authority of being a Civil Servant will allow me to do more good deeds in a short interval of time.</strong></p>
+</li>
+<li>
+<p>I must mention here the even in a common life, the one who is nicer, is hit harder by the life &amp; society.</p>
+</li>
+<li>
+<p>But that doesn't mean that common man should stop believing in goodness, that's true in all the areas of life.</p>
+</li>
+<li>
+<p>Because “A hero” has to pay the cost.</p>
+</li>
+<li>
+<p>Krishna did, Rama did, Jesus did so did Mahatma Gandhi.</p>
+</li>
+<li>
+<p>Among thousands of civil servants, we have seen the examples of</p>
+</li>
+<li>
+<p>Kiran bedi,</p>
+</li>
+<li>
+<p>Ashok sir,</p>
+</li>
+<li>
+<p>Armstrong pame, who went against all the odds &amp; made the faith in goodness darker.</p>
+</li>
+<li>
+<p><strong>Motives, good or bad, are futile without authority.</strong></p>
+</li>
+<li>
+<p>People sign and submit thousands of petitions everyday.</p>
+</li>
+<li>
+<p>But, how many of those do you know were enacted upon and actually implemented.</p>
+</li>
+<li>
+<p>Many NGO workers, missionaries and samaritans suffer a helluva toil and turmoil only to discover all their efforts going down the drain.</p>
+</li>
+<li>
+<p>There's a reason to why the board asks you to read and understand that long, never-ending syllabus and to become aware of the ground reality</p>
+</li>
+<li>
+<p>(not the one portrayed on social media.)</p>
+</li>
+<li>
+<p>The actual world looks and works nothing like that.</p>
+</li>
+<li>
+<p>“Power comes with great responsibility! “ Yes, someone said that just right.</p>
+</li>
+</ul>
+<p><strong>This IG ranked senior while on a candid conservation spoke on so many things, not just about IAS or IPS but for any profession this is valid:</strong></p>
+<h2 id="dont-crib"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Don't Crib:</strong></span></h2>
+<ul>
+<li>
+<p>If You crib or if you compare yourself with others, you will never be happy.</p>
+</li>
+<li>
+<p>You may be the most powerful IAS or powerful IPS or wealthy businessman if</p>
+</li>
+<li>
+<p>you keep on complaining your inner peace will be gone.</p>
+</li>
+</ul>
+<h2 id="work-life-balance"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Work Life Balance:</strong></span></h2>
+<ul>
+<li>
+<p>Keep your service or designation at office.</p>
+</li>
+<li>
+<p>Outside office be yourself, a human.</p>
+</li>
+<li>
+<p>Connect with people, rejoice.</p>
+</li>
+<li>
+<p>Do not discriminate.</p>
+</li>
+<li>
+<p>At home You are not a DM or SP.</p>
+</li>
+<li>
+<p>You are a son or a father or a husband.</p>
+</li>
+<li>
+<p>Do not bring your office to home.</p>
+</li>
+<li>
+<p>I have seen few of my seniors how well they live with family.</p>
+</li>
+<li>
+<p>They are quite good at work too</p>
+</li>
+</ul>
+<h2 id="perks"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Perks:</strong></span></h2>
+<ul>
+<li>
+<p>Do not run after perks and all.</p>
+</li>
+<li>
+<p>These are very short term.</p>
+</li>
+<li>
+<p>When I had joined I had 2 personal security guard and 3–4 others staffs including cook, Driver and others.</p>
+</li>
+<li>
+<p>But you get used to it in a month or two.</p>
+</li>
+<li>
+<p>You get it for a reason since you are holding an office.</p>
+</li>
+</ul>
+<h2 id="good-postings-and-fame"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Good Postings and Fame:</strong></span></h2>
+<ul>
+<li>
+<p>Never run after good postings and fame, else you have to compromise a lot.</p>
+</li>
+<li>
+<p>If you deserve important posts, it will come to you, but have patience.</p>
+</li>
+<li>
+<p>In Government The Chief Minister is like the king and he needs all types of people King maker, clown, corrupt, honest.</p>
+</li>
+<li>
+<p>When people want work, they bring the best and honest ones and when their goals are different,</p>
+</li>
+<li>
+<p>they brought other types of people.</p>
+</li>
+<li>
+<p>Never get disappointed in this.</p>
+</li>
+<li>
+<p>Life is always full of ups and downs.</p>
+</li>
+<li>
+<p>But these are external ups and downs.</p>
+</li>
+<li>
+<p>Nothing should hamper your personal peace and joy.</p>
+</li>
+</ul>
+<h2 id="grow-always"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Grow Always:</strong></span></h2>
+<ul>
+<li>
+<p>And from my own personal experience after working 2 years I believe grow always.</p>
+</li>
+<li>
+<p>Work on yourself.</p>
+</li>
+<li>
+<p>Have a hobby and have a friend circle outside services.</p>
+</li>
+<li>
+<p>This will keep you contained.</p>
+</li>
+</ul>
+<p>So for me it's an amazing job.</p>
+<p>When you work for people, you can not imagine how satisfying it is.</p>
+<h2 id="there-are-several-reasons-for-why-ias"><span style="color: rgb(45, 194, 107);" class="jop-noMdConv"><strong>There are several reasons for 'Why IAS':</strong></span></h2>
+<ol>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Better Job:</strong></span></p>
+<p>Trust me, giving up your entire youth and middle age in a mediocre (after graduation school) job isn't the kind of a challenge that you seek in life.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Preparation:</strong></span></p>
+<p>If not the job, the preparation itself is such a thing,</p>
+<p>which will be making an everlasting impact on your personality. (If done seriously)</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Appreciation for your Country:</strong></span></p>
+<p>Even if you failed at it, you will have an appreciation for your country:</p>
+<p>Its easy to sit back and complaint about,</p>
+<p>why Modi is pro industrialists and</p>
+<p>why UPA didn't do well,</p>
+<p>without even knowing a single crap about polity or governance or</p>
+<p>the situation of our economy</p>
+<p>All the tea time 'charcha' that we do with each other.</p>
+<p>Believe me such discussions just makes us delusional day by day and</p>
+<p>doesn't add a single thing of net worth.</p>
+<p>But if you tried becoming an IAS officer,</p>
+<p>at least you will have a better understanding of how the country runs and</p>
+<p>wont have those foolish prejudices.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Intelligence</strong></span></p>
+<p>If you think intelligence (high IQ, or technical expertise) or communication skills are the criteria on which you can get any job.</p>
+<p>Try this one.</p>
+<p>You have a lot to learn about life then.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Differences:</strong></span></p>
+<p>Not to forget the difference that you can make to the nation being an IAS officer.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Service Not a Job:</strong></span></p>
+<p>If you are an Engineer: to be frank we don't have jobs for engineers in India (even if we have those dream jobs, the no. is infinitesimally small).</p>
+<p>I meant the jobs which make you innovate rather than</p>
+<p>making excel sheets, power points or, follow up on maintenance schedule or</p>
+<p>support a product (any app) at 2 am in the morning just because</p>
+<p>the (overseas) clients would be comfortable then.</p>
+<p>Do you think, this is why you slogged your higher secondary schooling for,</p>
+<p>or the hours you spent studying late night in engineering colleges</p>
+<p>(although not many of us did, but I guess you understand what I am trying to say ).</p>
+<p>Its important to realise that, although we don't have such jobs which can give us satisfaction in our technical skills that we have acquired over time,</p>
+<p>we still have jobs which are waiting for people who can make a difference to the nation, to the people.</p>
+</li>
+</ol>
+<p>I choose civil services ( IAS ) because this provide me a platform to work for the betterment of my society &amp; ultimately for my country from a very grassroot level.</p>
+<p>I have a great passion to work for my country and civil services will certainly fulfill my passion to serve.</p>
+<p>None other service can give me a chance to serve peer to peer or person to person in particular.</p>
+<p>I will be happy to work for my villages, my cities, my towns and for my people, <strong>People of India.</strong></p>
+<p>It will make me very happy and satisfied to see the happiness on the faces of those who are deprived,</p>
+<p>and if I'll (or my work ) be the reason behind this smile, it will make me even more fascinated and cherished.</p>
+<h1 id="indian-administrative-service-ias"><span style="color: rgb(185, 106, 217);" class="jop-noMdConv"><strong>Indian Administrative Service (IAS)</strong></span></h1>
+<h2 id="advantages"><span style="color: rgb(45, 194, 107);" class="jop-noMdConv"><strong>Advantages:</strong></span></h2>
+<ol>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Job Security:</strong></span></p>
+<p>IAS officers enjoy job security as they are permanent government employees.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Prestige and Respect:</strong></span></p>
+<p>IAS officers are held in high regard in society and enjoy immense respect due to the nature of their job.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Power and Authority:</strong></span></p>
+<p>IAS officers have a lot of power and authority as they are responsible for the administration of a district, state, or the country.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Good Salary and Perks:</strong></span></p>
+<p>IAS officers are paid a good salary along with various perks such as</p>
+<p>a government house,</p>
+<p>car,</p>
+<p>medical facilities, etc.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Opportunities for Career Growth:</strong></span></p>
+<p>IAS officers have various opportunities for</p>
+<p>career growth,</p>
+<p>including promotions and</p>
+<p>the chance to serve in different departments and roles.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Chance to Serve Society:</strong></span></p>
+<p>IAS officers have the chance to serve society and</p>
+<p>make a difference in people's lives by</p>
+<p>implementing policies and programs that</p>
+<p>can improve their standard of living.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Diverse Job Profile:</strong></span></p>
+<p>IAS officers have a diverse job profile, which</p>
+<p>includes handling public affairs,</p>
+<p>managing government finances,</p>
+<p>executing development projects, and</p>
+<p>maintaining law and order.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Chance to Travel:</strong></span></p>
+<p>IAS officers get the chance to travel to different parts of the country for work and training purposes,</p>
+<p>which can be a great opportunity to learn about different cultures and traditions.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Personal Development:</strong></span></p>
+<p>Becoming an IAS officer involves a lot of training,</p>
+<p>which can lead to personal development and improvement in various areas such as</p>
+<p>leadership,</p>
+<p>decision-making, and</p>
+<p>communication skills.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Social Influence:</strong></span></p>
+<p>IAS officers have the opportunity to work with influential individuals and decision-makers,</p>
+<p>which can help them to build a strong network and influence policy decisions.</p>
+</li>
+</ol>
+<p>Overall, becoming an IAS officer can be a challenging and rewarding career option that offers various benefits,</p>
+<p>including job security, prestige, power, good salary, career growth opportunities, the chance to serve society, personal development, and social influence.</p>
+<h2 id="challenges"><span style="color: rgb(45, 194, 107);" class="jop-noMdConv"><strong>Challenges:</strong></span></h2>
+<ol>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>High Stress and Pressure:</strong></span></p>
+<p>IAS officers have a challenging job that involves</p>
+<p>managing public affairs,</p>
+<p>executing development projects, and</p>
+<p>maintaining law and order.</p>
+<p>The high-stress environment and pressure to perform can take a toll on their mental and physical health.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Bureaucratic Hurdles:</strong></span></p>
+<p>IAS officers have to deal with various bureaucratic hurdles and red tape,</p>
+<p>which can make it difficult to implement their ideas and plans.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Political Interference:</strong></span></p>
+<p>IAS officers may face political interference in their work,</p>
+<p>which can hinder their ability to perform their duties effectively.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Lack of Autonomy:</strong></span></p>
+<p>IAS officers have to work within a framework of rules and regulations and</p>
+<p>may have limited autonomy in decision-making.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Transferable Job:</strong></span></p>
+<p>IAS officers are subject to transfer every few years,</p>
+<p>which can disrupt their personal life and impact their career growth.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Public Scrutiny:</strong></span></p>
+<p>IAS officers are constantly under public scrutiny and</p>
+<p>can face criticism and backlash for their actions.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Ethical Dilemmas:</strong></span></p>
+<p>IAS officers may face ethical dilemmas while performing their duties, such as</p>
+<p>choosing between upholding the law and protecting human rights.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Work-Life Balance:</strong></span></p>
+<p>IAS officers often have to work long hours,</p>
+<p>which can affect their work-life balance and personal life.</p>
+</li>
+</ol>
+<p>Overall, becoming an IAS officer can be a highly demanding and challenging career that requires a lot of dedication and hard work.</p>
+<p>The potential disadvantages include high stress and pressure, bureaucratic hurdles, political interference, lack of autonomy, transferable job, public scrutiny, ethical dilemmas, and work-life balance issues.</p>
+<h2 id="responsibilities"><span style="color: rgb(45, 194, 107);" class="jop-noMdConv"><strong>Responsibilities:</strong></span></h2>
+<ol>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Policy formulation and implementation:</strong></span></p>
+<p>IAS officers are responsible for formulating and implementing government policies at the national, state, and local levels.</p>
+<p>This involves analyzing issues, developing strategies, and implementing programs to achieve policy objectives.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Financial management:</strong></span></p>
+<p>IAS officers are responsible for managing public funds and ensuring efficient and effective use of resources.</p>
+<p>This involves budget planning, financial management, and auditing of government accounts.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Developmental initiatives:</strong></span></p>
+<p>IAS officers are responsible for promoting development initiatives at the grassroots level.</p>
+<p>This involves identifying developmental needs, planning and implementing projects, and monitoring progress.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Public service delivery:</strong></span></p>
+<p>IAS officers are responsible for delivering public services to citizens.</p>
+<p>This involves ensuring access to basic services like</p>
+<p>health, education and sanitation, and</p>
+<p>improving the quality of service delivery.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Regulatory functions:</strong></span></p>
+<p>IAS officers are responsible for enforcing laws and regulations related to various sectors, such as</p>
+<p>environment,  agriculture and industry.</p>
+<p>This involves developing regulatory frameworks, issuing licenses, and monitoring compliance.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Crisis management:</strong></span></p>
+<p>IAS officers are responsible for managing crises and emergencies, such as</p>
+<p>natural disasters and public health emergencies.</p>
+<p>This involves coordinating with other agencies,</p>
+<p>providing relief and rescue operations, and</p>
+<p>ensuring the safety and well-being of citizens.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Judicial and Quasi-judicial functions:</strong></span></p>
+<p>IAS officers are responsible for performing judicial and quasi-judicial functions.</p>
+<p>This involves adjudicating disputes and grievances, and ensuring justice is delivered to citizens.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Public relations:</strong></span></p>
+<p>IAS officers are responsible for building good public relations and engaging with the community.</p>
+<p>This involves addressing public concerns, communicating government policies, and</p>
+<p>ensuring transparency in government operations.</p>
+</li>
+</ol>
+<h1 id="indian-police-service-ips"><span style="color: rgb(185, 106, 217);" class="jop-noMdConv"><strong>Indian Police Service (IPS)</strong></span></h1>
+<h2 id="advantages-2"><span style="color: rgb(45, 194, 107);" class="jop-noMdConv"><strong>Advantages:</strong></span></h2>
+<ol>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Job Security:</strong></span></p>
+<p>IPS officers enjoy job security as they are permanent government employees.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Prestige and Respect:</strong></span></p>
+<p>IPS officers are held in high regard in society and enjoy immense respect due to the nature of their job.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Power and Authority:</strong></span></p>
+<p>IPS officers have a lot of power and authority as they are responsible for maintaining law and order in the country.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Good Salary and Perks:</strong></span></p>
+<p>IPS officers are paid a good salary along with various perks such as a government house, car, medical facilities, etc.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Opportunities for Career Growth:</strong></span></p>
+<p>IPS officers have various opportunities for career growth,</p>
+<p>including promotions and the chance to serve in different departments and roles.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Chance to Serve Society:</strong></span></p>
+<p>IPS officers have the chance to serve society and make a difference in people's lives by protecting them from crime and ensuring their safety.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Diverse Job Profile:</strong></span></p>
+<p>IPS officers have a diverse job profile,</p>
+<p>which includes maintaining law and order, investigating crimes, protecting VIPs, and managing traffic.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Chance to Travel:</strong></span></p>
+<p>IPS officers get the chance to travel to different parts of the country for work and training purposes,</p>
+<p>which can be a great opportunity to learn about different cultures and traditions.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Personal Development:</strong></span></p>
+<p>Becoming an IPS officer involves a lot of training, which can lead to personal development and improvement</p>
+<p>in various areas such as leadership, decision-making, and communication skills.</p>
+</li>
+</ol>
+<p>Overall, becoming an IPS officer can be a challenging and rewarding career option that</p>
+<p>offers various benefits, including job security, prestige, power, good salary, career growth opportunities, the chance to serve society, and personal development.</p>
+<h2 id="challenges-2"><span style="color: rgb(45, 194, 107);" class="jop-noMdConv"><strong>Challenges:</strong></span></h2>
+<ol>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>High Stress and Pressure:</strong></span></p>
+<p>IPS officers have a challenging job that involves dealing with crimes, emergencies, and maintaining law and order.</p>
+<p>The high-stress environment and pressure to perform can take a toll on their mental and physical health.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Exposure to Violence and Danger:</strong></span></p>
+<p>IPS officers are at risk of encountering violence and danger while on duty,</p>
+<p>which can put their lives at risk.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Long Working Hours:</strong></span></p>
+<p>IPS officers have to work long and irregular hours, including night shifts,</p>
+<p>which can affect their work-life balance.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Bureaucratic Hurdles:</strong></span></p>
+<p>IPS officers have to deal with various bureaucratic hurdles and red tape,</p>
+<p>which can make it difficult to implement their ideas and plans.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Political Interference:</strong></span></p>
+<p>IPS officers may face political interference in their work,</p>
+<p>which can hinder their ability to perform their duties effectively.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Lack of Personal Time:</strong></span></p>
+<p>IPS officers often have to be available for work at all times,</p>
+<p>which can leave them with little personal time for themselves and their families.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Public Scrutiny:</strong></span></p>
+<p>IPS officers are constantly under public scrutiny and can face criticism and backlash for their actions.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Ethical Dilemmas:</strong></span></p>
+<p>IPS officers may face ethical dilemmas while performing their duties, such as</p>
+<p>choosing between upholding the law and protecting human rights.</p>
+</li>
+</ol>
+<p>Overall, becoming an IPS officer can be a highly demanding and challenging career that requires a lot of dedication and hard work.</p>
+<p>The potential disadvantages include high stress and pressure, exposure to violence and danger, long working hours, bureaucratic hurdles, political interference, lack of personal time, public scrutiny, and ethical dilemmas.</p>
+<h2 id="responsibilities-2"><span style="color: rgb(45, 194, 107);" class="jop-noMdConv"><strong>Responsibilities:</strong></span></h2>
+<ol>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Maintaining law and order:</strong></span></p>
+<p>IPS officers are responsible for maintaining law and order in their respective jurisdictions.</p>
+<p>This involves preventing and detecting crime, ensuring public safety, and enforcing laws.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Investigating crimes:</strong></span></p>
+<p>IPS officers are responsible for investigating crimes and bringing the perpetrators to justice.</p>
+<p>This involves gathering evidence, interviewing witnesses, and</p>
+<p>working with other law enforcement agencies.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Managing police forces:</strong></span></p>
+<p>IPS officers are responsible for managing police forces in their respective jurisdictions.</p>
+<p>This includes recruiting and training police officers, ensuring their well-being, and</p>
+<p>ensuring they are equipped to carry out their duties.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Disaster management:</strong></span></p>
+<p>IPS officers are responsible for managing disasters and emergency situations.</p>
+<p>This involves coordinating with other agencies, providing relief and rescue operations, and</p>
+<p>ensuring the safety and well-being of citizens.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Intelligence gathering:</strong></span></p>
+<p>IPS officers are responsible for gathering intelligence and monitoring potential threats to national security.</p>
+<p>This involves working with other law enforcement agencies and intelligence agencies.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Public relations:</strong></span></p>
+<p>IPS officers are responsible for maintaining good public relations and building trust with the public.</p>
+<p>This involves engaging with the community, addressing their concerns, and</p>
+<p>ensuring transparency in police operations.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Policy formulation:</strong></span></p>
+<p>IPS officers are responsible for formulating policies related to law enforcement and crime prevention.</p>
+<p>This involves working with other government agencies and stakeholders to develop policies that are effective and efficient.</p>
+</li>
+</ol>
+<h1 id="indian-foreign-officer"><span style="color: rgb(185, 106, 217);" class="jop-noMdConv"><strong>Indian Foreign Officer</strong></span></h1>
+<h2 id="advantages-3"><span style="color: rgb(45, 194, 107);" class="jop-noMdConv"><strong>Advantages:</strong></span></h2>
+<ol>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Serving the country:</strong></span></p>
+<p>As a foreign officer, you have the opportunity to serve your country and represent India in the international arena.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>International exposure:</strong></span></p>
+<p>Working as an Indian Foreign Officer can provide you with significant international exposure,</p>
+<p>including interacting with diplomats and officials from other countries,</p>
+<p>learning about their cultures and customs, and</p>
+<p>gaining valuable insights into global issues.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Job security:</strong></span></p>
+<p>The Indian Foreign Service offers a stable and secure career, with a clear career path, regular promotions, and a good salary.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Prestige and recognition:</strong></span></p>
+<p>Being an Indian Foreign Officer comes with a certain degree of prestige and recognition both within India and abroad.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Diverse opportunities:</strong></span></p>
+<p>The Indian Foreign Service provides diverse opportunities for working in different countries,</p>
+<p>handling a wide range of issues, and</p>
+<p>working in various areas, such as trade, culture, politics, and security.</p>
+</li>
+</ol>
+<h2 id="challenges-3"><span style="color: rgb(45, 194, 107);" class="jop-noMdConv"><strong>Challenges:</strong></span></h2>
+<ol>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>High pressure and responsibility:</strong></span></p>
+<p>The job of an Indian Foreign Officer can be highly stressful and demanding,</p>
+<p>with long hours and a lot of responsibility for representing the country and safeguarding its interests.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Frequent transfers:</strong></span></p>
+<p>Indian Foreign Officers may have to move frequently to different countries and regions,</p>
+<p>which can be challenging for themselves and their families.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Limited personal life:</strong></span></p>
+<p>The demands of the job can make it difficult to maintain a work-life balance,</p>
+<p>which can affect personal relationships and other aspects of life.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Bureaucratic hurdles:</strong></span></p>
+<p>Working in a government organization can involve dealing with a lot of bureaucracy,</p>
+<p>which can be frustrating and time-consuming.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Risk and danger:</strong></span></p>
+<p>Indian Foreign Officers may be posted in regions or countries that</p>
+<p>are politically unstable or pose security risks, which can put them in danger.</p>
+</li>
+</ol>
+<h2 id="responsibilities-3"><span style="color: rgb(45, 194, 107);" class="jop-noMdConv"><strong>Responsibilities:</strong></span></h2>
+<ol>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Representing India:</strong></span></p>
+<p>The primary responsibility of an Indian Foreign Officer is to represent India in the international arena.</p>
+<p>This involves promoting India's interests and values, communicating India's views on global issues, and</p>
+<p>building strong relationships with other countries and international organizations.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Negotiating and policymaking:</strong></span></p>
+<p>Indian Foreign Officers are responsible for negotiating with other countries to advance India's interests and</p>
+<p>to develop policies to address various global issues, such as trade, climate change, and security.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Consular services:</strong></span></p>
+<p>Indian Foreign Officers are responsible for providing consular services to Indian citizens</p>
+<p>who are living or traveling abroad.</p>
+<p>This includes assisting with visa applications, providing emergency services, and</p>
+<p>protecting the rights of Indian citizens abroad.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Reporting and analysis:</strong></span></p>
+<p>Indian Foreign Officers are responsible for providing regular reports and</p>
+<p>analysis to the Indian government on political, economic, and</p>
+<p>social issues affecting other countries.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Cultural and educational exchange:</strong></span></p>
+<p>Indian Foreign Officers are responsible for promoting cultural and</p>
+<p>educational exchange between India and other countries.</p>
+<p>This includes organizing cultural events, facilitating student exchange programs, and</p>
+<p>promoting Indian art, music, and cuisine.</p>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Managing Indian missions abroad:</strong></span></p>
+<p>Indian Foreign Officers are responsible for managing Indian missions abroad,</p>
+<p>which include embassies, high commissions, and consulates.</p>
+<p>This involves managing staff, budget, and resources, and</p>
+<p>ensuring the smooth functioning of the mission.</p>
+</li>
+</ol>
+<p>Mind Maps and PYQs</p>
+<p> </p>
+<p><strong>Text to Mind Maps</strong></p>
+<p><a data-from-md title='https://tobloef.com/text2mindmap/' href='https://tobloef.com/text2mindmap/'>https://tobloef.com/text2mindmap/</a></p>
+<p><strong>Types to Mind Maps</strong></p>
+<p><a data-from-md title='https://www.breakdown-notes.com/' href='https://www.breakdown-notes.com/'>https://www.breakdown-notes.com/</a></p>
+<p><a data-from-md title='https://www.mindomo.com/blog/mind-map-types/' href='https://www.mindomo.com/blog/mind-map-types/'>https://www.mindomo.com/blog/mind-map-types/</a></p>
+<p><a data-from-md title='https://www.makeuseof.com/types-of-mind-maps-to-know/' href='https://www.makeuseof.com/types-of-mind-maps-to-know/'>https://www.makeuseof.com/types-of-mind-maps-to-know/</a></p>
+<p><a data-from-md title='https://www.edrawmind.com/article/9-popular-types-of-mind-map.html' href='https://www.edrawmind.com/article/9-popular-types-of-mind-map.html'>https://www.edrawmind.com/article/9-popular-types-of-mind-map.html</a></p>
+<p><strong>Artificial Intelligence</strong></p>
+<p><a data-from-md title='https://www.insightsonindia.com/wp-content/uploads/2017/02/Artificial-Intelligence.pdf' href='https://www.insightsonindia.com/wp-content/uploads/2017/02/Artificial-Intelligence.pdf'>https://www.insightsonindia.com/wp-content/uploads/2017/02/Artificial-Intelligence.pdf</a></p>
+<p><strong>Subject-wise PYQs</strong></p>
+<p><a data-from-md title='https://www.nextias.com/mains/mains-previous-year-papers/subject-wise-papers' href='https://www.nextias.com/mains/mains-previous-year-papers/subject-wise-papers'>https://www.nextias.com/mains/mains-previous-year-papers/subject-wise-papers</a></p>
+<p><strong>Topic-wise PYQs</strong></p>
+<p><a data-from-md title='https://mrunal.org/2020/06/download-upsc-mains-general-studies-paper-2-topicwise.html' href='https://mrunal.org/2020/06/download-upsc-mains-general-studies-paper-2-topicwise.html'>https://mrunal.org/2020/06/download-upsc-mains-general-studies-paper-2-topicwise.html</a></p>
+<p><strong>Yojana and  Kurukshetra Magazines for Local Bodies related topics</strong></p>
+<p><a data-from-md title='http://yojana.gov.in/Recent_archive_2019.asp' href='http://yojana.gov.in/Recent_archive_2019.asp'>http://yojana.gov.in/Recent_archive_2019.asp</a></p>
+<p><strong>Sleepy Classes - All at One Place</strong></p>
+<p><a data-from-md title='https://sleepyclasses.com/upsc-mains-2022-paper-discussion/' href='https://sleepyclasses.com/upsc-mains-2022-paper-discussion/'>https://sleepyclasses.com/upsc-mains-2022-paper-discussion/</a></p>
+<p><strong>National &amp; International NEWS (IR)</strong></p>
+<p><a data-from-md title='https://www.youtube.com/@Firstpostt/videos' href='https://www.youtube.com/@Firstpostt/videos'>https://www.youtube.com/@Firstpostt/videos</a></p>
+<p><strong>Maps</strong></p>
+<p><a data-from-md title='https://www.mapsofindia.com/' href='https://www.mapsofindia.com/'>https://www.mapsofindia.com/</a></p>
+<p><a data-from-md title='http://worldatlas.com' href='http://worldatlas.com'>worldatlas.com</a></p>
+<p><strong>Mind Maps</strong></p>
+<p><a data-from-md title='https://www.iasexpress.net/' href='https://www.iasexpress.net/'>https://www.iasexpress.net/</a></p>
+<p><strong>Toppers Study Hacks</strong></p>
+<p><a data-from-md title='https://www.studocu.com/in/document/k-j-somaiya-college-of-nursing/nursing/toppers-study-hacks-by-avinash-agarwal-z-lib/45852540' href='https://www.studocu.com/in/document/k-j-somaiya-college-of-nursing/nursing/toppers-study-hacks-by-avinash-agarwal-z-lib/45852540'>https://www.studocu.com/in/document/k-j-somaiya-college-of-nursing/nursing/toppers-study-hacks-by-avinash-agarwal-z-lib/45852540</a></p>
+<p><strong>Concious Mind vs Sub-concious Mind</strong></p>
+<ul>
+<li>
+<p>Here’s the thing.</p>
+</li>
+<li>
+<p>Most people lack the discipline to change their life.</p>
+</li>
+<li>
+<p>That’s it. That’s the reason you are stuck.</p>
+</li>
+<li>
+<p>It’s you who is stopping you from becoming your highest self.</p>
+</li>
+<li>
+<p>(Sorry if it’s harsh, but that’s the truth)</p>
+</li>
+<li>
+<p>Your current reality is a result of what &amp; how you think on a daily basis.</p>
+</li>
+<li>
+<p>One more time..</p>
+</li>
+</ul>
+<p><strong>Your current reality is a result of what &amp; how you think on a daily basis.</strong></p>
+<p><strong>Thoughts become things.</strong></p>
+<ul>
+<li>It’s that simple.</li>
+</ul>
+<p><em><strong>Anything that you give your thought &amp; emotional energy to for a significant period of time, it becomes your reality.</strong></em></p>
+<ul>
+<li>
+<p>You don’t have to take my word for it.</p>
+</li>
+<li>
+<p>You can just see it all around you.</p>
+</li>
+<li>
+<p>The person who cribs all the time?</p>
+</li>
+<li>
+<p>Yeah, they get more things to crib about.</p>
+</li>
+<li>
+<p>The person who is always whining about their problems?</p>
+</li>
+<li>
+<p>Yep, get more problems to whine about.</p>
+</li>
+<li>
+<p>Similarly..</p>
+</li>
+<li>
+<p>Everyone knows that person who breezes through life.</p>
+</li>
+<li>
+<p>Just dancing his way through everything.</p>
+</li>
+<li>
+<p>He always seems to be getting lucky.</p>
+</li>
+<li>
+<p>He is always everyone’s favorite. Life of the party.</p>
+</li>
+<li>
+<p>Looking from outside it seems like everything is easy for him.</p>
+</li>
+<li>
+<p>Guess what?</p>
+</li>
+</ul>
+<p><strong>It’s all a game of the internal state a person holds.</strong></p>
+<ul>
+<li>
+<p>That’s the internal state he holds.</p>
+</li>
+<li>
+<p>Hence, that’s the external state that life reflects back to him.</p>
+</li>
+<li>
+<p>Let me explain this.</p>
+</li>
+<li>
+<p>So everyone has a state of being.</p>
+</li>
+<li>
+<p>The “state” simply means the condition of their being.</p>
+</li>
+<li>
+<p>It’s <em>how</em>  they <em>are</em>.</p>
+</li>
+<li>
+<p>There are 2 types of states: <strong>Internal &amp; External</strong>.</p>
+</li>
+</ul>
+<p><strong>Internal State:</strong></p>
+<ul>
+<li>
+<p>The state that you hold within, that is, in your mind &amp; heart.</p>
+</li>
+<li>
+<p>Essentially, your Thoughts and Emotions.</p>
+</li>
+<li>
+<p><em>How you think, feel and act on a day to day basis.</em></p>
+</li>
+</ul>
+<p><strong>External State:</strong></p>
+<ul>
+<li>
+<p>The state that you experience outside, that is, in the physical world.</p>
+</li>
+<li>
+<p>It’s your ‘reality’.</p>
+</li>
+<li>
+<p>It’s essentially your life.</p>
+</li>
+</ul>
+<p><strong>Fun Fact:</strong></p>
+<ul>
+<li>
+<p>Your external state is always a result of your internal state. Not vice versa.</p>
+</li>
+<li>
+<p>So your internal state determines your external state.</p>
+</li>
+<li>
+<p><em>As within, so without.</em></p>
+</li>
+</ul>
+<p><strong>The state you hold within, manifests into your life.</strong></p>
+<ul>
+<li>
+<p>So suppose you theoretically understand this concept.</p>
+</li>
+<li>
+<p>And you try to hold the ideal internal state.</p>
+</li>
+<li>
+<p>You decide - “I’m going to think, feel &amp; act as my ideal self from now on.”</p>
+</li>
+<li>
+<p>But then, something happens in the external reality &amp; you become reactive.</p>
+</li>
+<li>
+<p>Things do not go perfectly in the outer world &amp; you let it affect your internal world.</p>
+</li>
+</ul>
+<p>Hence, <em><strong>you reverse the loop</strong></em>.</p>
+<ul>
+<li>
+<p>Now, the external world is signalling your internal world.</p>
+</li>
+<li>
+<p>This begins to change your internal state.</p>
+</li>
+<li>
+<p>You become anxious or you become negative.</p>
+</li>
+<li>
+<p>When that becomes your internal state, the external state responds to it again.</p>
+</li>
+<li>
+<p>Hence, things get even worse in the outer reality.</p>
+</li>
+<li>
+<p>More things that upset you, more things that make you anxious, more problems.</p>
+</li>
+<li>
+<p>This creates a vicious cycle of negativity.</p>
+</li>
+<li>
+<p>And it keeps you stuck.</p>
+</li>
+<li>
+<p>Now…why did that happen?</p>
+</li>
+<li>
+<p>Simply because there’s one missing piece to the puzzle.</p>
+</li>
+<li>
+<p>You see, things do not happen ‘instantly’ in the real world.</p>
+</li>
+<li>
+<p>It’s not that you will think, feel &amp; act as your ideal self for a week &amp; you’ll be a millionaire the coming weekend.</p>
+</li>
+<li>
+<p>I mean it could happen but it’s rare. It all depends on your spiritual bandwidth - but that’s a topic for another day.</p>
+</li>
+</ul>
+<p>So the missing piece is - the <strong>Time Delay</strong>.</p>
+<ul>
+<li>
+<p>There’s a time delay between you holding the ideal internal state &amp; it manifesting into your reality.</p>
+</li>
+<li>
+<p>You have to be very careful about it.</p>
+</li>
+</ul>
+<p><strong>The dominant thoughts &amp; feelings that you hold within for a significant period of time become your reality.</strong></p>
+<ul>
+<li><em>If you can pass this test of time delay, you can change your life.</em></li>
+</ul>
+<p><strong>If you firmly hold the ideal internal state &amp; not allow external events to disturb it then you allow it to become your reality.</strong></p>
+<p><strong>And here’s what to do next:</strong></p>
+<ol>
+<li>
+<p>Grab a cup of coffee/tea</p>
+</li>
+<li>
+<p>Switch off your phone</p>
+</li>
+<li>
+<p>Grab a notebook &amp; pen (don’t do this on your phone)</p>
+</li>
+<li>
+<p>Retreat to your favourite corner of the home</p>
+</li>
+<li>
+<p>Set a timer for 30 minutes</p>
+</li>
+<li>
+<p>Write about what the highest version of yourself looks like</p>
+</li>
+<li>
+<p>How does this person think, feel &amp; act on a daily basis?</p>
+</li>
+<li>
+<p>Now create that internal state within you</p>
+</li>
+<li>
+<p>Meditate on it, visualize it every single day for 6 months</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>That’s how simple it is.</p>
+</li>
+<li>
+<p>And when life challenges you (&amp; it will), remember the principle of time delay.</p>
+</li>
+<li>
+<p>You won’t believe the changes this brings to your life!</p>
+</li>
+<li>
+<p>Hope this helps.</p>
+</li>
+</ul>
+<p>Want to <strong>change your current reality</strong>, <strong>become the highest version of yourself</strong> &amp; easily <strong>manifest your goals in 6 months or less</strong>?</p>
+<p><strong>1. No Difference:</strong></p>
+<ul>
+<li>
+<p>The subconscious mind makes no difference between what’s real and what’s imagined.</p>
+</li>
+<li>
+<p>The analyzing part is largely the domain of your conscious mind. So that’s what Mind power, The Law of attraction , or hypnosis is all about.</p>
+</li>
+</ul>
+<p><strong>2. Thinks only in the Present:</strong></p>
+<ul>
+<li>
+<p>The subconscious mind thinks only in the present and does not know anything about the past or future.</p>
+</li>
+<li>
+<p><em>Try saying , “I</em> <em><strong>am</strong></em> <em>beautiful and healthy” , instead of “I will be beautiful and healthy”.</em></p>
+</li>
+<li>
+<p><em>The first sentence is prone to work and get you results faster.</em></p>
+</li>
+<li>
+<p>Now  you get the reasons your previous affirmations didn’t work. Don’t lose hope, start over!</p>
+</li>
+</ul>
+<p><strong>3. Illogical:</strong></p>
+<ul>
+<li>
+<p>Your subconscious mind is illogical.</p>
+</li>
+<li>
+<p>It doesn’t realize that what you desire is not logical.</p>
+</li>
+</ul>
+<p><strong>4. Data Storage:</strong></p>
+<ul>
+<li>
+<p>The subconscious stores all the data of our existence before we are born and arguably of our past lives.</p>
+</li>
+<li>
+<p>Your conscious mind may slip out many memories, but your subconscious doesn’t.</p>
+</li>
+<li>
+<p>Your subconscious mind is always alert. Be careful, what you feed it with.</p>
+</li>
+<li>
+<p>It’s time to ward off your negative thoughts.</p>
+</li>
+</ul>
+<p><strong>5</strong>. <strong>Version of the Truth:</strong></p>
+<ul>
+<li>
+<p>It contains ‘your version of the truth’ such as limitations and beliefs which are not necessarily true.</p>
+</li>
+<li>
+<p>Since your subconscious has no mind of it’s own it believes what you feed it.</p>
+</li>
+<li>
+<p>You do have chances of getting rid of your phobias!</p>
+</li>
+</ul>
+<p><strong>6. Programmed:</strong></p>
+<ul>
+<li>
+<p>The subconscious mind can be programmed.</p>
+</li>
+<li>
+<p>So we can have the perfect life we want, but unfortunately, that is not what most people do .</p>
+</li>
+<li>
+<p>Repetition is important when you program the subconscious mind.</p>
+</li>
+</ul>
+<p><strong>7.  Beliefs &amp; Thoughts:</strong></p>
+<ul>
+<li>
+<p>Most of our beliefs and thoughts from the world, were formed during the ages of 2 and 7,</p>
+<p>when most learning was subconscious.</p>
+</li>
+<li>
+<p>That’s why it is crucial to teach children the right things.</p>
+</li>
+<li>
+<p>These things will never be forgotten and will lay the basis of the character and beliefs which</p>
+<p>will be hard cored in their DNA and it’s quite difficult to break the pattern.</p>
+</li>
+<li>
+<p>So , do it right the first time and don’t set bad examples.</p>
+</li>
+</ul>
+<p><strong>8. Gut-instinct:</strong></p>
+<ul>
+<li>
+<p>The subconscious is where your ‘gut-instinct’ and inner knowledge originates.</p>
+</li>
+<li>
+<p>Now , all of us have had that ‘feeling’ that something doesn’t fit, or the eerie unexplained feeling when</p>
+<p>you meet a compete stranger.Remember those times.</p>
+</li>
+<li>
+<p>Well, congratulations, these are your messages from your subconscious,</p>
+</li>
+<li>
+<p>which has this uncanny ability to predict your troubles, before your conscious registers the signs of danger!</p>
+</li>
+</ul>
+<p><strong>9. Behavior &amp; Decisions:</strong></p>
+<ul>
+<li>It is responsible for 95% of our behavior and decisions and that it can scan information at lightning speed.</li>
+</ul>
+<p><strong>10.</strong> <strong>Will &amp; Power:</strong></p>
+<ul>
+<li>The conscious has the will, the subconscious has the power.</li>
+</ul>
+<p> </p>
+<p>Current Affairs</p>
+<p>Making a Difference: The IAS as a Career<br>
+<a data-from-md title='https://www.gktoday.in/quizbase/current-affairs-quiz-june-2023' href='https://www.gktoday.in/quizbase/current-affairs-quiz-june-2023'>https://www.gktoday.in/quizbase/current-affairs-quiz-june-2023</a><br>
+<a data-from-md title='https://books.google.co.in/books?id=ppFFEAAAQBAJ&amp;pg=PT3&amp;source=gbs_selected_pages&amp;cad=2#v=onepage&amp;q&amp;f=false' href='https://books.google.co.in/books?id=ppFFEAAAQBAJ&amp;pg=PT3&amp;source=gbs_selected_pages&amp;cad=2#v=onepage&amp;q&amp;f=false'>https://books.google.co.in/books?id=ppFFEAAAQBAJ&amp;pg=PT3&amp;source=gbs_selected_pages&amp;cad=2#v=onepage&amp;q&amp;f=false</a><br>
+<a data-from-md title='https://www.quora.com/profile/Suyash-Chavan-7' href='https://www.quora.com/profile/Suyash-Chavan-7'>https://www.quora.com/profile/Suyash-Chavan-7</a><br>
+<a data-from-md title='https://www.youtube.com/watch?v=xemjYp4y2PQ&amp;t=258shttps://www.youtube.com/watch?v=1j16X4Ymsm0&amp;list=PLiqj4Wg9rmPgUFIaatXzJLPNgX7Ji0pZd&amp;index=3Critical' href='https://www.youtube.com/watch?v=xemjYp4y2PQ&amp;t=258shttps://www.youtube.com/watch?v=1j16X4Ymsm0&amp;list=PLiqj4Wg9rmPgUFIaatXzJLPNgX7Ji0pZd&amp;index=3Critical'>https://www.youtube.com/watch?v=xemjYp4y2PQ&amp;t=258shttps://www.youtube.com/watch?v=1j16X4Ymsm0&amp;list=PLiqj4Wg9rmPgUFIaatXzJLPNgX7Ji0pZd&amp;index=3Critical</a> Thinking - Rajan Singh<br>
+<a data-from-md title='https://www.quora.com/profile/Rajan-Singh-824' href='https://www.quora.com/profile/Rajan-Singh-824'>https://www.quora.com/profile/Rajan-Singh-824</a><br>
+Vision IAS<br>
+<a data-from-md title='http://www.visionias.in/resources/daily_current_affairs_programs.php?type=1&amp;m=02&amp;y=2023' href='http://www.visionias.in/resources/daily_current_affairs_programs.php?type=1&amp;m=02&amp;y=2023'>http://www.visionias.in/resources/daily_current_affairs_programs.php?type=1&amp;m=02&amp;y=2023</a><br>
+Drishti IAS<br>
+<a data-from-md title='https://www.drishtiias.com/images/pdf/Monthly%20Current%20Affairs%20Consolidation%20(March%202023)%20Part-I.pdf' href='https://www.drishtiias.com/images/pdf/Monthly%20Current%20Affairs%20Consolidation%20%28March%202023%29%20Part-I.pdf'>https://www.drishtiias.com/images/pdf/Monthly Current Affairs Consolidation (March 2023) Part-I.pdf</a><br>
+World Atlas<br>
+<a data-from-md title='https://www.worldatlas.com/' href='https://www.worldatlas.com/'>https://www.worldatlas.com/</a></p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>UPSC Equivalent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Warrior</td>
+<td>Vishu (Me)</td>
+</tr>
+<tr>
+<td>Opponent King</td>
+<td>Syllabus</td>
+</tr>
+<tr>
+<td>Ministers</td>
+<td>History - Geography - Polity - Economics</td>
+</tr>
+<tr>
+<td>Military</td>
+<td>Sub-Topics</td>
+</tr>
+<tr>
+<td>Military Commander</td>
+<td>NCERT</td>
+</tr>
+<tr>
+<td>Direction about Warzone</td>
+<td>PYQs</td>
+</tr>
+<tr>
+<td>Aid (External Help) in War</td>
+<td>Reference Books</td>
+</tr>
+<tr>
+<td>Primary Weapon</td>
+<td>Brain - Mind - Attitude</td>
+</tr>
+<tr>
+<td>Secondary Weapon</td>
+<td>Optional Subject - Sociology</td>
+</tr>
+<tr>
+<td>Practice of War</td>
+<td>Test Series</td>
+</tr>
+<tr>
+<td>Sharpening of Weapon</td>
+<td>Revision</td>
+</tr>
+<tr>
+<td>Entry Point of Warzone</td>
+<td>Preliminary Exam</td>
+</tr>
+<tr>
+<td>Actual Fight in Battlefield</td>
+<td>Mains Exam</td>
+</tr>
+<tr>
+<td>To know about Winner</td>
+<td>Interview (Personality Test)</td>
+</tr>
+<tr>
+<td>To Know About Conquered Kingdom</td>
+<td>LBSNAA</td>
+</tr>
+<tr>
+<td>Dedication and Faith towards the People of the Kingdom and the Country</td>
+<td>Duty - Responsibility</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></div>
+					</body>
+				</html>
+			

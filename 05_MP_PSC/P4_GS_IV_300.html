@@ -1,0 +1,1462 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="../atom-one-light.css">
+						<title>P4_GS_IV_300</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">P4_GS_IV_300</div>
+
+<style>
+		/* https://necolas.github.io/normalize.css/ */
+		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
+		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
+		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
+
+		body {
+			font-size: 15px;
+			color: #32373F;
+			word-wrap: break-word;
+			line-height: 1.6em;
+			background-color: #ffffff;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+			padding-bottom: 0px;
+			padding-top: 0px;
+		}
+		kbd {
+			border: 1px solid rgb(220, 220, 220);
+			box-shadow: inset 0 -1px 0 rgb(220, 220, 220);
+			padding: 2px 4px;
+			border-radius: 3px;
+			background-color: rgb(243, 243, 243);
+		}
+
+		:root {
+			--scrollbar-size: 7px;
+		}
+
+		::-webkit-scrollbar {
+			width: var(--scrollbar-size);
+			height: var(--scrollbar-size);
+		}
+		::-webkit-scrollbar-thumb {
+			border-radius: calc(var(--scrollbar-size) / 2);
+		}
+		::-webkit-scrollbar-corner {
+			background: none;
+		}
+		::-webkit-scrollbar-track {
+			border: none;
+		}
+		::-webkit-scrollbar-thumb {
+			background: rgba(50, 55, 63, 0.54); 
+		}
+		::-webkit-scrollbar-track:hover {
+			background: rgba(0, 0, 0, 0.1); 
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background: rgba(50, 55, 63, 0.63); 
+		}
+
+		
+
+		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
+
+		#rendered-md > h1:first-child,
+		#rendered-md > h2:first-child,
+		#rendered-md > h3:first-child,
+		#rendered-md > h4:first-child,
+		#rendered-md > ul:first-child,
+		#rendered-md > ol:first-child,
+		#rendered-md > table:first-child,
+		#rendered-md > blockquote:first-child,
+		#rendered-md > img:first-child,
+		#rendered-md > p:first-child {
+			margin-top: 0;
+			padding-top: 0;
+		}
+		
+		p, h1, h2, h3, h4, h5, h6, ul, table {
+			margin-top: .6em;
+			margin-bottom: 1.35em;
+
+			/*
+				Adds support for RTL text in the note body. It automatically detects the direction using the content.
+				Issue: https://github.com/laurent22/joplin/issues/3991
+			*/
+			unicode-bidi: plaintext;
+		}
+
+		h1, h2, h3, h4, h5, h6, ul, table {
+			margin-bottom: 0.65em;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			line-height: 1.5em;
+		}
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			border-bottom: 1px solid #dddddd;
+			padding-bottom: .3em;
+		}
+		h2 {
+			font-size: 1.3em;
+			font-weight: bold;
+			padding-bottom: .1em; */
+		}
+		h3 {
+			font-size: 1.1em;
+			font-weight: bold;
+		}
+		h4, h5, h6 {
+			font-size: 1em;
+			font-weight: bold;
+		}
+
+		.exported-note-title {
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 0.8em;
+			line-height: 1.5em;
+			padding-bottom: .35em;
+			border-bottom: 1px solid #dddddd;
+		}
+
+		a {
+			color: #155BDA;
+		}
+		ul, ol {
+			padding-left: 0;
+			margin-left: 1.7em;
+		}
+		li {
+			margin-bottom: .4em;
+		}
+		li p {
+			margin-top: 0.2em;
+			margin-bottom: 0;
+		}
+
+		dt {
+			font-weight: bold;
+			margin-bottom: 0.25em;
+		}
+
+		dd {
+			margin-inline-start: 2.5em;
+			margin-bottom: 0.5em;
+		}
+
+		.resource-icon {
+			display: inline-block;
+			position: relative;
+			top: 0.3em;
+			text-decoration: none;
+			width: 1.2em;
+			height: 1.4em;
+			margin-right: 0.4em;
+			background-color:  #155BDA;
+		}
+    /* These icons are obtained from the wonderful ForkAwesome project by copying the src svgs 
+     * into the css classes below.
+     * svgs are obtained from https://github.com/ForkAwesome/Fork-Awesome/tree/master/src/icons/svg
+     * instead of the svg width, height property you must use a viewbox here, 0 0 1536 1792 is typically the actual size of the icon
+     * each line begins with the pre-amble -webkit-mask: url("data:image/svg+xml;utf8,
+     * and of course finishes with ");
+     * to prevent artifacts it is also necessary to include -webkit-mask-repeat: no-repeat;
+     * on the following line
+     * */
+		.fa-joplin {
+			/* Awesome Font file */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M373.834 128C168.227 128 0 296.223 0 501.834v788.336C0 1495.778 168.227 1664 373.834 1664h788.336c205.608 0 373.83-168.222 373.83-373.83V501.834C1536 296.224 1367.778 128 1162.17 128zm397.222 205.431h417.424a7.132 7.132 0 0 1 7.132 7.133v132.552c0 4.461-3.619 8.073-8.077 8.073h-57.23c-24.168 0-43.768 19.338-44.284 43.374v2.377h-.017v136.191h-.053l-.466 509.375c-5.02 77.667-39.222 149.056-96.324 201.046-60.28 54.834-141.948 85.017-229.962 85.017-12.45 0-25.208-.61-37.907-1.785-92.157-8.682-181.494-48.601-251.662-112.438-71.99-65.517-117.147-150.03-127.164-238-11.226-98.763 23.42-192.783 95.045-257.937 81.99-74.637 198.185-101.768 316.613-75.704 5.574 1.227 9.55 6.282 9.55 11.997v199.52c-.199 2.625-1.481 6.599-8.183 2.896-.663-.365-1.194-.511-1.653-.531-21.987-10.587-45.159-17.57-68.559-19.916-.38-.04-.757-.124-1.138-.163-.537-.048-1.034-.033-1.556-.075-4.13-.354-8.183-.517-12.203-.58-.87-.011-1.771-.127-2.641-.127-.486 0-.951.05-1.437.057-1.464.011-2.886.115-4.33.163-2.76.102-5.497.211-8.182.448-.273.024-.547.07-.835.097-25.509 2.4-47.864 11.104-65.012 25.47-.954.802-1.974 1.53-2.9 2.36a1.34 1.34 0 0 1-.168.146c-23.96 21.8-34.881 53.872-30.726 90.316 4.62 40.737 26.94 81.156 62.841 113.823 35.908 32.67 80.335 52.977 125.113 57.186 35.118 3.36 66.547-3.919 89.899-20.461a97.255 97.255 0 0 0 9.365-7.501c2.925-2.661 5.569-5.5 8.086-8.416.3-.348.672-.673.975-1.024 8.253-9.864 14.222-21.067 17.996-33.148.639-2.034 1.051-4.148 1.564-6.227.381-1.563.81-3.106 1.112-4.693.555-2.784.923-5.632 1.253-8.49.086-.709.183-1.414.237-2.128.492-4.893.693-9.858.55-14.91h.013V521.623c-2.01-22.626-20.78-40.434-43.928-40.434h-57.23a8.071 8.071 0 0 1-8.077-8.073V340.564a7.132 7.132 0 0 1 7.136-7.133z'/></svg>");
+		}
+		.fa-file-image {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-128-448v320H256v-192l192-192 128 128 384-384zm-832-192c-106 0-192-86-192-192s86-192 192-192 192 86 192 192-86 192-192 192z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-pdf {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-514-593c25 20 53 38 84 56 42-5 81-7 117-7 67 0 152 8 177 49 7 10 13 28 2 52-1 1-2 3-3 4v1c-3 18-18 38-71 38-64 0-161-29-245-73-139 15-285 46-392 83-103 176-182 262-242 262-10 0-19-2-28-7l-24-12c-3-1-4-3-6-5-5-5-9-16-6-36 10-46 64-123 188-188 8-5 18-2 23 6 1 1 2 3 2 4 31-51 67-116 107-197 45-90 80-178 104-262-32-109-42-221-24-287 7-25 22-40 42-40h22c15 0 27 5 35 15 12 14 15 36 9 68-1 3-2 6-4 8 1 3 1 5 1 8v30c-1 63-2 123-14 192 35 105 87 190 146 238zm-576 411c30-14 73-57 137-158-75 58-122 124-137 158zm398-920c-10 28-10 76-2 132 3-16 5-31 7-44 2-17 5-31 7-43 1-3 2-5 4-8-1-1-1-3-2-5-1-18-7-29-13-36 0 2-1 3-1 4zm-124 661c88-35 186-63 284-81-10-8-20-15-29-23-49-43-93-103-127-176-19 61-47 126-83 197-15 28-30 56-45 83zm646-16c-5-5-31-24-140-24 49 18 94 28 124 28 9 0 14 0 18-1 0-1-1-2-2-3z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-word {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM233 768v107h70l164 661h159l128-485c5-15 8-30 10-46 1-8 2-16 2-24h4l3 24c3 14 4 30 9 46l128 485h159l164-661h70V768h-300v107h90l-99 438c-4 16-6 33-7 46l-2 21h-4c0-6-2-14-3-21-3-13-5-30-9-46L825 768H711l-144 545c-4 16-5 33-8 46l-4 21h-4l-2-21c-1-13-3-30-7-46l-99-438h90V768H233z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-powerpoint {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-992-234v106h327v-106h-93v-167h137c43 0 82-2 118-15 90-31 146-124 146-233s-54-193-137-228c-38-15-84-19-130-19H416v107h92v555h-92zm353-280H650V882h120c35 0 62 6 83 18 36 21 56 62 56 115 0 56-20 99-62 120-21 10-47 15-78 15z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-excel {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-979-234v106h281v-106h-75l103-161c12-19 18-34 21-34h2c1 4 3 7 5 10 4 8 10 14 17 24l107 161h-76v106h291v-106h-68l-192-273 195-282h67V768H828v107h74l-103 159c-12 19-21 34-21 33h-2c-1-4-3-7-5-10-4-7-9-14-17-23L648 875h76V768H434v107h68l189 272-194 283h-68z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-audio {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM620 850c12 5 20 17 20 30v544c0 13-8 25-20 30-4 1-8 2-12 2-8 0-16-3-23-9l-166-167H288c-18 0-32-14-32-32v-192c0-18 14-32 32-32h131l166-167c10-9 23-12 35-7zm417 689c19 0 37-8 50-24 83-102 129-231 129-363s-46-261-129-363c-22-28-63-32-90-10-28 23-32 63-9 91 65 80 100 178 100 282s-35 202-100 282c-23 28-19 68 9 90 12 10 26 15 40 15zm-211-148c17 0 34-7 47-20 56-60 87-137 87-219s-31-159-87-219c-24-26-65-27-91-3-25 24-27 65-2 91 33 36 52 82 52 131s-19 95-52 131c-25 26-23 67 2 91 13 11 29 17 44 17z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-video {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM768 768c70 0 128 58 128 128v384c0 70-58 128-128 128H384c-70 0-128-58-128-128V896c0-70 58-128 128-128h384zm492 2c12 5 20 17 20 30v576c0 13-8 25-20 30-4 1-8 2-12 2-8 0-17-3-23-9l-265-266v-90l265-266c6-6 15-9 23-9 4 0 8 1 12 2z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-archive {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M640 384V256H512v128h128zm128 128V384H640v128h128zM640 640V512H512v128h128zm128 128V640H640v128h128zm700-388c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H768v128H640V128H128v1536h1280zM781 943c85 287 107 349 107 349 5 17 8 34 8 52 0 111-108 192-256 192s-256-81-256-192c0-18 3-35 8-52 0 0 21-62 120-396V768h128v128h79c29 0 54 19 62 47zm-141 465c71 0 128-29 128-64s-57-64-128-64-128 29-128 64 57 64 128 64z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-code {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM480 768c11-14 31-17 45-6l51 38c14 11 17 31 6 45l-182 243 182 243c11 14 8 34-6 45l-51 38c-14 11-34 8-45-6l-226-301c-8-11-8-27 0-38zm802 301c8 11 8 27 0 38l-226 301c-11 14-31 17-45 6l-51-38c-14-11-17-31-6-45l182-243-182-243c-11-14-8-34 6-45l51-38c14-11 34-8 45 6zm-620 461c-18-3-29-20-26-37l138-831c3-18 20-29 37-26l63 10c18 3 29 20 26 37l-138 831c-3 18-20 29-37 26z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-alt, .fa-file-csv {
+      /* fork-awesome doesn't have csv so we use the text icon */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM384 800c0-18 14-32 32-32h704c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64zm736 224c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704zm0 256c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		blockquote {
+			border-left: 4px solid rgb(220, 220, 220);
+			padding-left: 1.2em;
+			margin-left: 0;
+			opacity: 0.7;
+		}
+
+		.jop-tinymce table,
+		table {
+			text-align: left;
+			border-collapse: collapse;
+			border: 1px solid rgb(220, 220, 220);
+			background-color: #ffffff;
+		}
+
+		.jop-tinymce table td, .jop-tinymce table th,
+		table td, th {
+			text-align: left;
+			padding: .5em 1em .5em 1em;
+			font-size: 15;
+			color: #32373F;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+		}
+
+		.jop-tinymce table td,
+		table td {
+			border: 1px solid rgb(220, 220, 220);
+		}
+
+		.jop-tinymce table th,
+		table th {
+			border: 1px solid rgb(220, 220, 220);
+			border-bottom: 2px solid rgb(220, 220, 220);
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:nth-child(even),
+		table tr:nth-child(even) {
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:hover,
+		table tr:hover {
+			background-color: #e5e5e5;
+		}
+
+		hr {
+			border: none;
+			border-bottom: 2px solid #dddddd;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		.inline-code,
+		.mce-content-body code {
+			border: 1px solid rgb(220, 220, 220);
+			background-color: rgb(243, 243, 243);
+			padding-right: .2em;
+			padding-left: .2em;
+			border-radius: .25em;
+			color: rgb(0,0,0);
+			font-size: .9em;
+		}
+
+		.highlighted-keyword {
+			background-color: #F3B717;
+			color: black;
+		}
+
+		
+	.not-loaded-resource img {
+		width: 1.15em;
+		height: 1.15em;
+		background: white;
+		padding: 2px !important;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px #000000aa;
+	}
+
+	a.not-loaded-resource img {
+		margin-right: .2em;
+	}
+
+	a.not-loaded-resource {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+
+		.md-checkbox input[type=checkbox]:checked {
+			opacity: 0.7;
+		}
+
+		.jop-tinymce ul.joplin-checklist .checked,
+		.md-checkbox .checkbox-label-checked {
+			opacity: 0.5;
+		}
+
+		.exported-note {
+			padding: 1em;
+		}
+
+		.joplin-editable .joplin-source {
+			display: none;
+		}
+
+		mark {
+			background: #F7D26E;
+			color: black;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		.mce-content-body {
+			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
+			padding: 5px 10px 10em 0;
+		}
+
+		/*
+		.mce-content-body code {
+			background-color: transparent;
+		}
+		*/
+
+		.mce-content-body [data-mce-selected=inline-boundary] {
+			background-color: transparent;
+		}
+
+		.mce-content-body .joplin-editable {
+			cursor: pointer !important;
+		}
+
+		.mce-content-body.mce-content-readonly {
+			opacity: 0.5;
+		}
+
+		/* We need that to make sure click events have the A has a target */
+		.katex a span {
+			pointer-events: none;
+		}
+
+		.media-player {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.media-player.media-pdf {
+			min-height: 35rem;
+			width: 100%;
+			max-width: 1000px;
+			margin: 0;
+			border: 0;
+			display: block;
+		}
+
+		/* Clear the CODE style if the element is within a joplin-editable block */
+		.mce-content-body .joplin-editable code {
+			border: none;
+			background: none;
+			padding: 0;
+			color: inherit;
+			font-size: inherit;
+		}
+
+		/* To make code blocks horizontally scrollable */
+		/* https://github.com/laurent22/joplin/issues/5740 */
+		pre.hljs {
+			overflow-x: auto;
+		}
+
+		.joplin-table-wrapper{
+			overflow-x: auto;
+			overflow-y: hidden;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		@media print {
+			body {
+				height: auto !important;
+			}
+
+			pre {
+				white-space: pre-wrap;
+			}
+
+			.code, .inline-code {
+				border: 1px solid #CBCBCB;
+			}
+
+			#joplin-container-content {
+				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
+				   around various issues related to scrolling. However when printing we don't want this
+				   fixed size as that would crop the content. So we set it to auto here. "important" is
+				   needed to override the style set by JavaScript at the element-level. */
+				height: auto !important;
+			}
+		}
+	
+
+				/*
+					FOR THE MARKDOWN EDITOR
+				*/
+
+				/* Remove the indentation from the checkboxes at the root of the document
+				   (otherwise they are too far right), but keep it for their children to allow
+				   nested lists. Make sure this value matches the UL margin. */
+
+				li.md-checkbox {
+					list-style-type: none;
+				}
+
+				li.md-checkbox input[type=checkbox] {
+					margin-left: -1.71em;
+					margin-right: 0.7em;
+					position: relative;
+					top: 1px;
+				}
+				
+				ul.joplin-checklist {
+					list-style:none;
+				}
+
+				/*
+					FOR THE RICH TEXT EDITOR
+				*/
+
+				ul.joplin-checklist li::before {
+					content:"\f14a";
+					font-family:"Font Awesome 5 Free";
+					background-size: 16px 16px;
+					pointer-events: all;
+					cursor: pointer;
+					width: 1em;
+					height: 1em;
+					margin-left: -1.3em;
+					position: absolute;
+					color: #32373F;
+				}
+
+				.joplin-checklist li:not(.checked)::before {
+					content:"\f0c8";
+				}
+.mermaid { width: 640px; }
+pre.mermaid[data-processed=true] { white-space: unset; }
+.mermaid-export-graph {
+					opacity: 0;
+					height: 0;
+					z-index: 1;
+					position: relative;
+				} 
+				.joplin-editable:hover .mermaid-export-graph,
+				.joplin-editable .mermaid-export-graph:has(:focus-visible) {
+					opacity: 1;
+				}
+				.mermaid-export-graph > button:hover {
+					background-color: #CBDAF1 !important;
+				}</style><div id="rendered-md"><p><strong>Paper 2: General Studies - IV - 300 M - 3 H</strong></p>
+<h1 id="syllabus">Syllabus</h1>
+<p><strong>Part A :  <strong>Philosophy, Psychology, Public Administration and Case Study</strong></strong><br>
+<strong>Part B : <strong>Science, Technology and Public Health</strong></strong></p>
+<p>===================</p>
+<p><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part (A) – <strong>Philosophy, Psychology, Public Administration and Case Study</strong></strong></span></p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Indian Shaddarshan, Philosophers/Thinkers, Social Reformers:</strong></span></p>
+<ul>
+<li>Indian Shaddarshan, Socrates, Plato, Aristotle, Mahavir, Buddha, Acharya Shankar, Charwak, Bharthari, Gurunanak, Kabir, Tulsidas, Sant Ravidas, Ravindra Nath Tagore, Raja Rammohan Roy, Devi Ahilyabai Holkar, Savitribai Phule, Swami Dayanand Saraswati, Swami Vivekanand, Maharshi Arvind and Sarvpalli Radhakrishnan, Dr. Bhimrao Ambedkar, Pandit Deendayal Upadhyay.</li>
+</ul>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Nation Building and Moral Concepts:</strong></span></p>
+<ul>
+<li>Concept of Nation, Powers and Constituents, National Security, Interests and Character, National Security Operations (Armed forces, Bodies, Divisions, and Spy Agencies), Basic Morality Concepts (Goodness, Virtues, Non-Violence, Responsibility), Role of Bhagawat Geeta in Ethics and Administration.</li>
+</ul>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Human Behaviour and Psychotherapy:</strong></span></p>
+<ul>
+<li>Attitude (Subject-matter, Elements, Function, Formation of Attitude, Attitudinal Change, Persuasive Communication, Prejudice and Discrimination, Stereotypes in Indian context)</li>
+<li>Aptitude (Fundamental values for Civil Service, Integrity, Impartiality, Objectivity, Dedication to Public Service, Empathy, Tolerance, Compassion)</li>
+<li>Emotional Intelligence (Concepts, Utilities, Application in Administration and Governance)</li>
+<li>Individual Differences (Factors, Theories, Behaviour Differences), Mental Disorders (Depression, Social Anxiety Disorder, Schizophrenia, Social Phobia, Bipolar Disorder),</li>
+<li>Psychotherapy (Person-Centered Therapy, Behaviour Therapy, Rational Emotive Behaviour Therapy, Cognitive Behaviour Therapy, Positive Therapy, Family Therapy)</li>
+</ul>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Moral Value in Public Administration:</strong></span></p>
+<ul>
+<li>Human Need and Motivation (Elements affecting Human Personalities, Dutifulness, Sense of Values, Life Value, Sensitivity, Technology, and Moral Values)</li>
+<li>Ethics and Values in Public Administration (Integrity, Accountability, Transparency, Ethical Reasoning, Moral Dilemmas, Conscience, Code of Conduct for Civil Servants, Implementation of Higher Values in Governance)</li>
+<li>Corruption (Types, Causes, Effects, Approaches to minimizing Corruption, Role of Society, Media, Family, Whistleblower, United Nation Convention on Corruption, Measuring corruption, Transparency International, Lokpal and Lokayukt).</li>
+</ul>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Case Study:</strong></span></p>
+<ul>
+<li>Based on the contents of the syllabus in Part-A (Philosophy, Psychology and Public Administration) of Question Paper.</li>
+</ul>
+<p> </p>
+<p><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong><strong><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part (B) – <strong>Entrepreneurship, Management, Personality Development and Case Study</strong></strong></span></strong></strong></span></p>
+<ul>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit- I Entrepreneurship Concept and Development</strong></span></p>
+<ul>
+<li>Concept and Significance of Entrepreneurship.</li>
+<li>Symptoms of Entrepreneurship, Principles, Characteristics and Importance of Innovation.</li>
+<li>Process of Entrepreneurship – Creativity, Idea Generation, Analysis and Business Plan.</li>
+<li>Important factors and statutory requirements for new Enterprise Management, Challenges faced by Women Entrepreneurs.</li>
+<li>Development of Entrepreneurship in India- Startup India, Make in India, Organizations for promoting Entrepreneurial development in India.</li>
+</ul>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit-II Business Organizations and Management</strong></span></p>
+<ul>
+<li>Business – Concept and Significance, Scope, Administration and Management, Purchase and Material, Management.</li>
+<li>Management Process, Resource Management and functions of Management- Plan, Organization, Direction, Control, Coordination, Decision Making, Motivation, Leadership and Communication.</li>
+<li>Time Management and Organization.</li>
+<li>Branding, Marketing and Networking.</li>
+</ul>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit-III Administration and Management</strong></span></p>
+<ul>
+<li>Important dimensions of Management in Public Administration. Human Resource Management.</li>
+<li>Financial Management- Its scope and significance in Public Administration.</li>
+<li>Stress and Conflict Management Techniques and their significance in Public Service Domain.</li>
+<li>Administration and Management of Plurality, Opportunities and Challenges in Public Administration.</li>
+<li>Disaster Management.</li>
+</ul>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit-IV Overall Personality Development</strong></span></p>
+<ul>
+<li>Overall Personality and National Development.</li>
+<li>Different components of Personality Development.</li>
+<li>Concepts of successfulness.</li>
+<li>Impediments in achieving success.</li>
+<li>Factors responsible for success.</li>
+<li>Learning from failure- accepting failure as an opportunity for continuous improvement and valuable introspection</li>
+<li>Implementation of Government Programme- Planning effective strategy to ensure successful implementation of Government Programme.</li>
+<li>Approach and facts regarding following issues- Civic Sense, Loyalty to the Institution, Voter Awareness Programme. Transport Management, Trend of Drug abuse, Adulteration in food items, Night Culture, Value based life and Legal Awareness Programme.</li>
+</ul>
+</li>
+<li>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit-V Case Study</strong></span></p>
+<ul>
+<li>Based on the Contents of the Syllabus in Part-B (Entrepreneurship, Management and Personality Development) Question Paper.</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h1 id="2017">2017</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20GS-4.pdf' href='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20GS-4.pdf'>https://www.drishtiias.com/images/pdf/MPPCS Mains GS-4.pdf</a></p>
+<h2 id="3m-20w"><strong>3M 20W</strong></h2>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Define ethical values.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) What do you mean by Openness and Transparency in administration?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) Who is the author of the book ‘Arthashastra’?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Explain the meaning of intrinsic motivation.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) What is collection of Kabir verses called?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) What are the four causes of Aristotle?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) What is the meaning of Prejudice?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) What do you understand by positive self concept?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) Explain the meaning of ‘Sarvodaya’.</strong></span></strong></strong>         <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) What is ‘situational judgement test’?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) Name the components of attitude.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) Who was the founder of Arya Samaj?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) What do you mean by ‘Foot-in-the-door technique’?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N) State the main causes of Corruption.</strong></span></strong></strong>  <br>
+Ans</p>
+<p> </p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Discuss the ways to improve integrity and morality in administration.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Discuss the objectives of moral training in the training of administrative officers.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) Throw light on contribution of Kautilya in Indian Political thought.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Write comments on the social coonsciousness in the poetry of Kabir.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Throw light on the Social Philosophy of Swami Dayanand Sarasati.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F)  Discuss the theory of ‘Anekantvada’ in Jain-Philosophy. (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G)  Discuss the contribution of Swami Vivekananda in awakening national consciousness. (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Write comments on the social thoughts of Dr. Bhimrao Ambedkar.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I)  Explain the concept of ‘Trusteeship’ in Gandhian Philosophy. (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) Explain the relevance of Integral Humanism. (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) Explain the meaning and characteristics of attitude. (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L)  Discuss the concept of ‘Persuasive Communication’. (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) Discuss the role of active listening in empathy.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N)  Throw light on educational-philosophy of Ravindranath Tagore. (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O) What are the foundational values of impartiality and non-partisanship for Civil Services?  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(P) Explain the ill-effects of corruption.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(Q)  Write comments on the Whistle-blower Protection Bill in India. (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(R) Write comments on ‘Measuring Corruption’ and ‘Transparency International’.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3)  Case Studies based on the contents of syllabus :</strong></span></strong></strong></p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) First Case Study :</strong></span><br>
+<span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Sub : Child Labour – Causes and Remedies.</strong></span><br>
+<span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Mr. X is a Sub-District Magistrate, yesterday he had taken lunch in a hotel. There he was some small children are cleaning tables and washing dishes.</strong></span><br>
+<span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Being an administrative Officer what is his moral duty? Because this is a case of child-labour and child-exploitation.</strong></span></p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">Answer any two questions in the light of above mentioned topic :<br>
+(a) Whether he should try to free children from hotel and rehabilitate them?<br>
+(b) Whether he should take disciplinary action against the concerned officer of the area?<br>
+(c) Is this social problem can be abolish without the intervention of the administration?<br>
+</span>Ans</p>
+<p><span style="color: #f1c40f;" class="jop-noMdConv"><strong>(B) Second Case Study : <br>
+Sub: Naxalite problem – Release of hostages.<br>
+Mr. X is a high level Administrative officer, one day he received information, that few Naxalites have taken around 55 people as hostages, including 12 children and 4 foreigners. The Naxalite group asked the Government to release their ten colleagues from the jail and the cases against them should be withdrawn. The Government tried to solve the problem by other means, but in the mean-time the Naxalite killed one hostage. The public asks to free the hostages. The state Government has appointed Mr. X to take proper action in the matter. If he wish he can talk to Naxalite leaders to resolve the problem.<br>
+Answer the following questions in the light of above mentioned topic:<br>
+(a) Whether Mr. X should discuss the matter with Naxalite leaders?<br>
+(b) Whether the Military action should be taken or not?<br>
+(c) What should be the role of media in this matter?<br>
+(d) If the attempt for dialogue failed, then Government should take strict action against Naxalites or not.<br>
+(e) Should any other external pressure be made?</strong></span></p>
+<p>Ans</p>
+<h1 id="2018">2018</h1>
+<p> <a data-from-md title='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20GS%20-%204.pdf' href='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20GS%20-%204.pdf'>https://www.drishtiias.com/images/pdf/MPPCS Mains GS - 4.pdf</a></p>
+<h2 id="3m-20w-2"><strong>3M 20W</strong></h2>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Explain the meaning of integrity in public administration.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) What is the basis of public utility services in public administration?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) What do you understand by 'conscience' as source of ethical guidance?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) What are the three golden, paths according to Buddha? Point out.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Point out any six vows out of the eleven vows told by Gandhiji.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Name the authors of the following books :<br>
+i. Ramcharitmanas<br>
+ii. The Religion of Man<br>
+iii. The Life Divine</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) Who were the two founders of Brahma Samaj?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Explain the meaning of 'impartiality' in public service.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) Define 'aptitude' as an internal attitude determinant.</strong></span></strong></strong>         <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) Clarify the role of 'intelligence' in public service.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) Explain the place of beliefs' in attitudinal change.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) What do you understand by tolerance?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) &quot;Public administration is an agent of social change.&quot;Explain this statement.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N) Clarify the purport of Benami Sampatti (property) in India.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O) According to the Right to Information Act, 2005, under the normal circumstances, in how, many, days the public information officer is obliged to provide information?</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Analyze the main provisions of the code of conduct for civil servants.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) &quot;Administration is a moral act and the administrator is a moral agent&quot;. Discuss this statement  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) &quot;I slept and dreamt that life was beauty. I woke and found that life was duty.&quot; Elucidate E. S. Hooper's couplet in respect of duty of civil servants.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Point out five moral principles (Panchmahavratas) of Vardhamana Mahavira.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Write comments on social, consciousness in the poetry of Tulasidas.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Throw light on the ethical points of Gandhian philosophy  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G)  Describe the contribution of Raja Ram Mohan Roy as a social reformer. (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Write comments on 'humanism' of Rabindranath Tagore.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) Clarify the views of Ram Manohar Lohia regarding socialism  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) What are the determining factors of attitude formation? Discuss  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) Explain the concepts of stereotyping and prejudice in Indian context.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) &quot;Broadly viewed motivation isthe problem of determining the forces which impel or incite all living organisms to action.&quot; In the light of this statement, given by famous psychologists Boring and Langfield, explain the role of inspiration in changing attitude.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) Throw light on the importance of empathy as one of the basic values for civil service.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N) &quot;The ideal administrative expectations ensure aptitude of dedication to public service.&quot; Write comments on this statement.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O) Describe the concept of 'emotional intelligence' and point out its importance. (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(P) Give a brief account of main kinds of corruption. What are the main causes of corruption? Point out.  (6M150W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(Q) Give suggestions for prevention of corruption in public life.  (6M150W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(R) Describe United Nations Convention on Corruption.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(A)  Case studies based on contents of syllabus:<br>
+First Case Study:<br>
+Subject: Predicament in Examination System<br>
+You are a Director of some State Secondary Education Board. Board has conducted the Physics examination of class twelfth.<br>
+A week after the examination by some source it comes to your knowledge that there could have been a paper leak before the starting of the examination done by a collusion of some school and coaching centre. After some preliminary investigation, you get a conclusive proof that indeed the paper was leaked. Gradually the news came into public and also was published in newspapers. Board decided to conduct a re-examination of Physics paper.<br>
+Answer any two questions in the light of above mentioned case study:<br>
+i. What are the reasons behind such paper leak?<br>
+</span></strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>ii. What implications such incidents have on the system and students?<br>
+iii. As a Director, what measures. would you take to prevent such incidents from happening again?<br>
+(15M300W)</strong></span><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(B)  Second Case Study:<br>
+Subject : Public service and conflict of ethical values<br>
+A poor aged woman abandoned by her family meets her ends by selling flowers on a roadside shop. In spite of her circumstances she is a very cheerful and mother-like figure. You are an SDM and everyday you yourself, go to her shop and purchase flowers from her. Declaring that region as 'No Tolerance Zone' the DM instructs you to demolish all illegal constructions as soon as possible. The woman cries for her helplessness. By emotions, the locals too request you to exempt her shop.<br>
+<br class="jop-noMdConv"/>Answer the following questions in the light of above mentioned case study:<br>
+i. Would you exempt the woman's shop?<br>
+ii. In respect of their request, what would you reply to the locals?<br>
+iii. Which values would be in question, if you decide to exempt her shop?<br>
+iv. Which values would be in question, if you decide to demolish her shop?<br>
+v. Mahatma Gandhi believed that &quot;a nation's greatness is measured by how it treats its weakest members&quot;. On account of the given statement, what, according to you, are the nation's responsibilities towards its fragile populace?<br>
+</span></strong></p>
+<p> </p>
+<h1 id="2019">2019</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/MPPSC%20Mains%202019%20Paper_GS_IV.pdf' href='https://www.drishtiias.com/images/pdf/MPPSC%20Mains%202019%20Paper_GS_IV.pdf'>https://www.drishtiias.com/images/pdf/MPPSC Mains 2019 Paper_GS_IV.pdf</a></p>
+<h2 id="section-a"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h2 id="3m-20w-3"><strong>3M 20W</strong></h2>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) State the importance of values in Governance.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) Discuss peculiarity of ‘Swantah Sukhay’ of Tulasidas.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Name major institution to curb corruption in India.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Describe Gandhian thought regarding Truth and God.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) What is transparency?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What is ‘Triratna’ as per Jainism?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) Discuss ideas of Plato from teleological stand point.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) What do you mean by non-verbal communication?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Discuss thoughts of Swami Dayanand Saraswati about Western Education.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) What is ethical guidance?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Write about Transparency International.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) What three dimensions of emotional intelligence that a civil servant should learn?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) Write the tools of accountability.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Discuss Pratityasamutpada according to Mahatma Buddha.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Discuss Rights and Duties as per Deen Dayal Upadhyay.</strong></span></strong></strong><br>
+Ans</p>
+<p>+++++++</p>
+<h2 id="section-b"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) Why Swami Vivekanand is known for?   (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)  Elaborate the significance and basic provisions of Whistleblower Protection Bill, 2015.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3) What is the contribution of Raja Rammohan Roy to the Society?   (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)  What are the basic attributes of ethical leadership in Administration?  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)  Why is having tolerance and compassion towards the weaker section important for a Civil Servant?  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6) ‘Rule of Law’ is an essential component of good Governance. Explain.   (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)  What is the contribution of Dr. B.R. Ambedkar in the history of free modern India?  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)   What are the Central Civil Service (Conduct) Rule related to lending, borrowing and private trade? (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)  Define corruption and its relation with value system. Enlist legal framework to fight against corruption in India.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)  What are the duties of a King according to Kautilya?  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.11) What are the methods of removing prejudice?   (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.12)  What is the contribution of Dr. Radhakrishnan in the history of Philosophy?  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.13)  Clarify the concept of Emotional Intelligence.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.14) What is the ideal role of ruler according to ‘Ramcharit Manas’?   (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.15) How aptitude is different from interest and intelligence?   (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.16)  What is the importance of non-violence?  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.17) Describe the elements involved in the process of communication.   (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.18)  Is behaviour always a reflection of one’s attitude? Explain with a relevant examples.  (6M150W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="section-c"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - C</strong></span></h2>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3) Case studies based on the contents of syllabus : Case Study-1 <br>
+In the behaviour of a government official, with humility, honesty and devotion to duty, with the ability to properly discharge his authority, cooperation and service sense, the richness of these characteristics makes him an officer as well as a superior citizen of the country. Polite behaviour brings happiness to all. Enhances social harmony. Elimination of ego is the path for polite behaviour. Just as a person stays aware of duty and authority by his behaviour while living in society, similarly his behaviour towards the country should be felt with a sense of duty and authority. It is his duty to neither do such a thing himself nor allow others to do something which is not in the interest of the country. Protecting the honour and property of the country is the ultimate responsibility of a government official.    <br>
+Answer the following questions in the light of above mentioned case study. Answer the each question in 150 words. Each question carries 10 (ten) marks.</strong></span></strong></strong></p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3.1) How is polite behaviour necessary and comforta</span></strong></strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>b</strong></span><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong>le for everyone? (10M150W)</strong></strong></span><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2) What is needed to behave courteously?</strong>  (10M150W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)  What should be the behaviour and duty of a government official towards the country and society? (10M150W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="or"><span style="color: rgb(224, 62, 45);" class="jop-noMdConv"><strong>OR</strong></span></h2>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3)  Case studies based on the contents of syllabus : Case Study-2  <br>
+The President of the Resident's Welfare Association has written to you in his letter, drawing attention to the situation of 'air pollution' in his colony. People living nearby are disturbed by the smell of the garbage house built on the main entrance of the colony. Already, indiscriminate industrialization in the city is leading to rapid increase in air pollution. Twenty-four hours of smoke coming from factories' chimneys are making the environment toxic. The increasing number of vehicles on the roads is increasing air pollution. People are suffering from respiratory and lung diseases. Also, the increasing population on the city is responsible for air pollution. Because tree pruning continues to expand facilities which will cause air pollution to increase qualitatively. You should find ways to conserve trees as a competent officer. To protect the environment plantation of more and more trees are necessary. Necessary action should also be taken in the direction of disposal of 'garbage house' of the colonies.<br>
+Answer the following questions in the light of above mentioned case study : Answer the each question in 150 words. Each question carries 10 (ten) marks.<br>
+<br class="jop-noMdConv"/></strong></span></strong></strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) What are the main causes of air pollution in Metros?</strong> <strong>(10M150W)</strong></span><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2) What is the impact of increasing population on the environment? Explain.</strong> (10M150W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3) What should be done to protect the environment?</strong> (10M150W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4) Case studies based on the contents of syllabus : Case Study-3  <br>
+The 21st century world economy is knowledge-based economy. Information technology is a driven force therefore, it is necessary to be familiar with the informational infrastructure of manpower just like the transport system, cars, rail, roads and highways. For developed economy, easy accessibility is a strong mode of communication and access and familiarity of communication tools is necessary. Information technology data, information related to applications of computers for the performance of collection, security, change, exchange, study etc. It is the basis of a computer-based information system that is currently an integral part of commerce and business that has currently being made. The economy is moving in a knowledge-based direction, the global economy is increasingly changing into 'knowledge economy'. Hence the rules, laws and activities of the industrial economy which used to run, will no longer work. The new world order now requires new standards.  <br>
+<br class="jop-noMdConv"/>Answer the following questions in the light of above mentioned case study in maximum 100 words each. Each question carries 7 (seven) marks.</strong></span></strong></strong></p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong><strong>(4.1) Explain the main purpose of the above content. (7M100W)</strong></strong></strong></span><br>
+Ans<br>
+<br class="jop-noMdConv"/><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.2) Explain the importance of information technology.</span></strong></strong> <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M100W)</strong></span><br>
+Ans<br>
+<br class="jop-noMdConv"/><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.3) What is the meaning of ubiquity? Explain.</span></strong></strong> <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M100W)</strong></span><br>
+Ans<br>
+<br class="jop-noMdConv"/><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.4) Which kind of manpower is essential today? Explain.</span></strong></strong> <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M100W)</strong></span><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.5) Which kind of knowledge of communication system is essential in the 21st Century? Explain.</span></strong></strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M100W)</strong></span><br>
+Ans</p>
+<h1 id="2020">2020</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/mppsc%202020%20Paper_IV.pdf' href='https://www.drishtiias.com/images/pdf/mppsc%202020%20Paper_IV.pdf'>https://www.drishtiias.com/images/pdf/mppsc 2020 Paper_IV.pdf</a></p>
+<h3 id="2m10w">2M10W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) What are ‘Ananta Chatustayas’ as per Jainism?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) What are 'Tripitakas' in Buddhism?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Describe the importance of Teacher (Guru-Mahima) according to Kabir.</strong></span></strong></strong>     <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Explain ‘Virtue is Knowledge’ according to Socrates.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Describe Advaita Vedanta.</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) Who had proposed the concept of balance?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) What do you mean by stereotypes?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) Describe the characteristics of helping behaviour.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) What are the basic abilities of Civil Servant?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) What do you mean by individual differences?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Why ethical element is required in governance?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) What are the attributes of integrity?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) What is the objective of accountability?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) How the higher values in governance can be achieved?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) What is moral dilemmas of public personnel?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.16) Which Indian book refers to the various forms of corruption and who is the writer of the book?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.17) Write down three main divisions of Central Bureau of Investigation (C.B.I.).</strong></span></strong></strong>        <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.18) Who is known as ‘Watch dog’ in India?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.19) Who had proposed to set up Lokpal at central level for the first time in India?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.20) What does Article 311 of Indian Constitution say?</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)   Discuss Aristotle's theory of form and matter. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)   Describe eightfold path of Buddha.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3) Differentiate between prejudice and discrimination.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4) Discuss various types of aptitude test. Explain the benefits of aptitude measurement.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5) What is the need of integrity?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)  What are the outcomes of transparency?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7) What are the effects of corruption?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8) How the transparency can be maintained in Public Service?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)  Discuss ‘World-appearance’ according to Acharya Shankara.          (20M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2) How are attitudes formed? Explain Heider's and Festinger's theories of attitude change.</strong> (20M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3) Write down the key features of Good Governance.</strong>  (20M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4) How Lokpal is appointed and what are the scope of functions of Lokpal?</strong>  (20M200W)</span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4)  Case Study:</strong></span></strong>  <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.1)</span> <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">You are a female activist associated with the awareness campaign “How women survive domestic violence” run by the Ministry of Women and Child Development, Govt. of India. Gender violence is a very sensitive issue in the society. According to the National Family Health Survey (NHFS-4) Report released by the Union Health Ministry, every third women after the age of 15 years has faced domestic violence of various forms in the country. According to the Survey, 27% of women in India have experienced physical violence since the age of 15 years. The Protection of Women from Domestic Violence Act, 2005 clearly defines domestic violence, which is so wide and this includes all forms of physical, emotional, verbal, sexual and economic violence. But the helplessness to stop domestic female violence lies in the fact that Indian women surprisingly seems to support domestic violence. Illiteracy is the main reason for acceptance of domestic violence. The environment of poverty, inequality, violence and illiteracy in India increases the graph of female violence. During the COVID-19 crisis, the incidents of domestic violence increased very rapidly. How will you make women aware about the Domestic Violence Elimination Act, 2005, under this awareness campaign, what will be your priority?</span></strong><br>
+<br class="jop-noMdConv"/><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4.1.1) Explain domestic violence against women.</strong> (4M100W)</span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(</span></strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.1</strong></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.2) <strong>Explain the relation of violence against women with education.</strong></span>   <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4M100W)</span></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong></span><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.1</strong></span><strong>.<span style="color: rgb(241, 196, 15);" class="jop-noMdConv">3) Suggest solutions for violence against women in the society. (4M100W)</span></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.1</strong></span><strong>.4) What is the Protection of Women from Domestic Violence Act, 2005? (4M100W)</strong></span><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.1</strong></span>.5) <strong>Why did the graph of violence against women increase during the lockdown? (4M100W)</strong></span><br>
+Ans</p>
+<p> </p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.2)</span></strong>  <strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">An NGO has hired you as a social worker to explain the legal process of adopting a child. You have to explain the entire legal process of adopting a child. This adoption and decision making process is long and complicated. Because the prospective parents may also face legal hardles. The Juvenile Justice Board in India can adopt a child who is committed to the Court. Procedure for adoption under the Guardians and Wards Act, 1890 (GAWA), the Central Adoption Resources Authority (CARA) is the primary adoption statutory body in India. This process includes both in country and Inland adoption systems. For this it is necessary to go through a long process in which the first step is to register. Necessary information has to be given on an online portal under the Central Adoption Resource Authority (CARA). Prospective parents are required to provide information regarding adoption preference. You are required to provide all your identity documents including birth certificate, marriage certificate, income tax returns, medical certificate etc. After completion of these formalities, a registration number is provided to the prospective adoptive parents. After completion of these, second phase is of home study, under which the physical verification of the prospective parents is done by visiting their home. The 3rd stage is that of proper matching of the child and the parent in which priority is given to an environment conductive to the development of the child. The fourth and most important step is the completion with the rules of the entire Court process under which the child is handed over to the prospective parents.</span><br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.2.1) What are the eligibility criteria for adoption of a child In India?</span></strong> <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.2</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.2) What are the major steps in the legal process of child adoption?</span></strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.2</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.3) Which children can be adopted under the law of India?</span></strong>   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.2</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.4) Who can adopt a child under Indian Law?</span></strong>   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.2</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.5) The process of child adoption in India is very complicated. Explain.</span></strong>   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2021">2021</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/2021Mains_GS-IV.pdf' href='https://www.drishtiias.com/images/pdf/2021Mains_GS-IV.pdf'>https://www.drishtiias.com/images/pdf/2021Mains_GS-IV.pdf</a></p>
+<h3 id="2m10w-2">2M10W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Explain Buddhist theory of 'Idam Pratyayata'.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) According to Plato, which 'idea' co-ordinates all the ideas?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Which Greek Philosopher finds the 'Knowledge' as the prime base of morality?</strong></span></strong></strong>       <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) 'He is One and Onkar formed, Adi Purush and Akal'. Who thinks so?</strong></span></strong></strong>     <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Point out the three components of evolution process of Sri Aurobindo.</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6)  Write the definition of Attitude.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) Define the Aptitude.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) Define the Orthodox.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9)  Define the Empathy.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Write the definition of Emotional Intelligence proposed by Mayer &amp; Salovey.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) What is required for Ethical Governance to work?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) How are Ethics and Integrity associated with each other?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) What is Ethical Reasoning?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) What do you mean by Moral Dilemma?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) What is the origin of the word &quot;Conscience&quot;?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.16) Where is the old mention of Corruption?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.17) In which decade corruption is supposed to have increased to the maximum?</strong></span></strong></strong>       <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.18) Who are the Whistle Blowers?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.19) What may be the main cause of Corruption?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.20) Is economic offense considered as Corruption?</strong></span></strong></strong>  <br>
+Ans</p>
+<p> </p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  Discuss the purport of 'Socialism' according to Swami Vivekananda.  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2) Discuss the 'Golden Mean' principle of Aristotle.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong>   Write about the importance of Impartiality in Civil Services. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4) Write the meaning of Emotional Intelligence and characteristics of an Emotionally Intelligent Person.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5) What is the importance of Transparency in Administration Explain.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6) What is the meaning of &quot;Government&quot; in All India (Conduct) Rulės, 1968?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2.7)  How can the Corruption be classified ? (<strong>5M50W)</strong></span></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8) Introduce United Nations convention on Corruption.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)     Discuss Sankaracharya's view of theory of Vivartavada.        (20M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)  Describe the meaning and effecting causes of Individual differences.</strong> (20M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)  How can effective ethical standards in Government and the Civil Services be implemented? Discuss in detail.</strong>  (20M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4) Describe the Preamble of United, Nations convention on Corruption.</strong>  (20M200W)</span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4)  Case Study:</strong></span></strong><br>
+ <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.1) One day, Siddhartha took several rides in a chariot across the countryside because he was so curious. He encountered terrible views of an old man, a sick man, and a corpse on his trips. He was deeply disturbed by the bleak depictions of old age, illness and death. Later, he came to a wandering ascetic looking for freedom from the fear of pain and death after giving up. the world. For a while, he went back to living at the palace, but he wasn't very happy there. Even the news of the birth of his son did not make him happy. He was alone in the palace one night when he wondered around and felt his opulent existence was pointless. He left the palace, shaved his head, put on a beggar's robe instead of his princely attire, and started his quest for enlightenment. Siddhartha had discussions with esteemed professors and studied meditation and religious theories. He still couldn't find any solutions to his uncertainties and queries. He then started his own independent search for enlightenment along with five disciplines. Through physical restraint, putting up with discomfort, holding their breath and starving almost to hunger, they sought freedom from suffering. Siddhartha tried the middle path but couldn't find a solution. He came to understand that mental discipline was the key to release. He obtained enlightenment while meditating under a sacred fig tree that became known as the Bodhi tree. His spiritual conflict was mythologized as a Great battle with Mara, a demonic figure who symbolizes human passions and whose name means &quot;destruction&quot;.</span></strong>  <br>
+<br class="jop-noMdConv"/><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4.1.1) In his quest of enlightenment, Buddha 'discovered and taught the four Noble Truths. However, they were taught as a religion by Buddhists. Explain whether Buddhism is a Philosophy or a religion in this aspect.</strong>  (4M100W)</span></strong></strong> <br>
+Ans<br>
+<br class="jop-noMdConv"/><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(</span></strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.1</strong></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.2) Describe how you can use Buddhist principles in Governance.</span></strong>    <strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4M100W)</span> <br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(<span class="jop-noMdConv">4.1</span>.3) What does Buddhism define as Karma?   (4M100W)</span> <br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(<span class="jop-noMdConv">4.1</span>.4) The &quot;Path to Liberation is through the Discipline of Mind&quot;, how did Buddha came to understand and use it?  (4M100W)</span> <br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(<span class="jop-noMdConv">4.1</span>.5) Which is known as Middle-Path in Buddhism?   (4M100W)</span></strong> <br>
+Ans</p>
+<p> </p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.2) Mary and Tom left their hotel the first evening of their vacation in Rome to go out to supper. A guy approached Tom from behind as they waited on the sidewalk for the light to change so they could cross the street. Tom's arms were restrained to his sides by the man, who also wrapped an arm over Mary's neck. Despite Tom's efforts to free himself, a young woman hurried up and quickly stole Mary's purse and Tom's wallet from his hand. Tom tried to catch up with the duo as they fled, but they vanished through a little side street. Tom and Mary were unharmed, but Mary was afraid; her heart began to race, she felt frail and trembling and she began to cry. Tom had lost all colour; his face was not completely white. They returned along the same route to their hotel, constantly scanning their surroundings as they went. Back in the hotel lobby, they found Mary still trembling. When Tom and Mary explained what had occurred to the receptionist, he was appalled and offered them drinks before calling the police. While they waited for the cops, Mary began to tremble and feel queasy. When the police showed up, they brought Mary and Tom to the police station in the heart of Rome to submit a report. As they made their way back to their hotel, the unsteadiness began to subside and instead, everyone began to feel irritated that they had been singled out for attack. Tom was unable to think or speak much. Tom relaxed once they were back in their room and fell asleep on the bed. However, Mary was unable to sleep and spent most of the night awake, replaying the events in her head. Even though Mary and Tom were unharmed physically, they were both having a significant emotional response to the stressful scenario.</span></strong>   <br>
+<span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.2.1) Emotions are complex things. How did Mary feel furious and afraid ?</span>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.2</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.2)  How do the emotional experiences' Physical and Mental components interact with each other?</span></strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.2</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.3)  What feelings would you have had if you had been in Tom and Mary's position? Mention your feelings.</span></strong>   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.2</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.4)  How does the Parasympathetic nervous system helps the body to relax?</span></strong>   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.2</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.5) Describe, how do two distinct people behave differently in the same condition with reference to the case study.</span></strong>   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2022">2022</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/Paper_GS_IV_State_Service_Main_Exam_2022%20with%20cover.pdf' href='https://www.drishtiias.com/images/pdf/Paper_GS_IV_State_Service_Main_Exam_2022%20with%20cover.pdf'>https://www.drishtiias.com/images/pdf/Paper_GS_IV_State_Service_Main_Exam_2022 with cover.pdf</a></p>
+<h3 id="3m-20w-4">3M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Why is 'sense-perception' not a knowledge, according to Plato?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) What is the biggest contribution of Charvaka Philosophy to Indian Philosophy?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) According to Rabindranath Tagore, which type of relation is there between man and nature?</strong></span></strong></strong>       <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) What is Triratna in Jain philosophy? What is its importance?</strong></span></strong></strong>     <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Why is Savitribai Phule special as a social reformer?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What is persuasive communication?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) What is the basic difference between Prejudice and Discrimination?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) How does an attitude work as an ego-defensive mechanism for a person?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) What are the characteristics of emotionally intelligent person?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Present an example of change in Attitude by Classical Conditioning.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) What is ethics?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) What is transparency in governance?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) What is organisational integrity?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) What is  ethical infrastructure?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) What are the three fundamental principles of public accountability?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.16) What is the definition of 'corruption' given by Transparency International?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.17) What are the three main areas of operation of Central Bureau of Investigation (OBI)?</strong></span></strong></strong>       <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.18) What do you mean by 'Whistleblowing'?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.19) What is nepotism?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.20) Elucidate bureaucratic corruption.</strong></span></strong></strong>  <br>
+Ans</p>
+<p> </p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  According to Aristotle, what is the importance' of virtues in human life?  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong>  How has Gautam- Buddha propounded the  theory of 'Madhyam Marg' with momentariness?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong>  Describe Integrity in Civil Services.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong> Are stereotypes always negative? Clarify.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong> Throw light on the Nolan Committee's principles of public life.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong> What are the essential elements of the framework of ethical behaviour? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2.7) According to Alatas, what are. the seven types of corruption? (<strong>5M50W)</strong></span></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong> Write a brief note on the Central Vigilance Commission.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)   Throw light upon Swami Vivekananda's famous Chicago address and its significance in present time.          (20M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong> Describe the concept of Individual Difference and throw light on Nature-Nurture controversy.  (20M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong> Comment on the code of conduct for Civil Servants in India.   (20M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)</strong>  Is it possible to have a corruption free India? Discuss. (20M200W)</span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4)  Case Study:</strong></span></strong><br>
+ <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.1) You have been appointed as District Magistrate. The law and order and development work of the district is in your trust. You are the head of the police and prosecution agency. It is your job to coordinate between the various departments of the district administration. You are a connecting bridge between the public and the Government. The District Magistrate executes the policies and administers the rules/regulations made by the .Government from time to time. Along with the district <strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">administration</span></strong>, civil administration, development, panchayats, local bodies, etc. you have many responsibilities related to the areas. The head of the district administration is the executive head of the civil administration. Coordination is to be done by guiding various departments of the district such as Municipal Committees, Market Committees, Panchayat Samitis, Development Block and Zilla Parishad Administration. At the same time, the execution of rural development plans is also important. Apart from this, as the District Election Officer, you are also responsible for the peaceful and orderly conduct of all the elections held from time to time. You have an important role in the decade Census. As the District Revenue Officer, all the development related works. Five Year Plans and local development are your important responsibilities.</span></strong>  <br>
+<br class="jop-noMdConv"/><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4.1.1)</strong> If you are a District Officer of a district, then what is your main responsibility?  (4M100W)</span></strong></strong> <br>
+Ans<br>
+<br class="jop-noMdConv"/><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><span class="jop-noMdConv">(</span><span class="jop-noMdConv">4.1</span>.2) What are the development related works as District Magistrate?   (4M100W)</span> <br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(<span class="jop-noMdConv">4.1</span>.3)  What are the major responsibilities related to rural development? (4M100W)</span> <br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(<span class="jop-noMdConv">4.1</span>.4) What are the main responsibilities as a District Election Officer?  (4M100W)</span> <br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(<span class="jop-noMdConv">4.1</span>.5)  In your view, what challenges are faced by a District Magistrate?  (4M100W)</span></strong> <br>
+Ans</p>
+<p> </p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.2) Promoting and sustaining professional ethics among public administrators continues to be a key concern of NPM advocates. There have been attempts to fundamentally transform the style of public management to prefer the people as valued customers. For this to happen, public administrators need to be more focused to achieve results and be entrepreneurial in their style of operation. The UK Government has adopted a strategy in this line that compels public officials to make a number of commitments. This includes developing policies to deliver results that matter, delivering efficient and high quality public services to meet the needs of citizens, using new technology to cater to the needs of citizens and business. The public wants, those offering their services for the State, should show moral public service leadership. In other words, honesty, ethics and moral mores must be the order of the normal fines in society. If ethics are off, the society is on the certain path of deterioration, degradation and decay. Without ethical values, life is not worth living.</span></strong>    <br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.2.1) <strong>In the context of accountability, new public management approach is different from traditional approach. Discuss.</strong></span>    <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.2</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.2) Discuss the mutual relationship between ethics and values.</span></strong>    <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.2</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.3) &quot;For tackling corruption, morality and administration are complementary to each other.&quot; Do you agree with this statement?</span></strong>     <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.2</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.4) How do morality and values affect the working of administration?</span></strong>     <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.2</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.5) Which moral dilemmas have been faced by the Government related to Farm Bill, 2020?</span></strong>    <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2023">2023</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20Exam_2023-IV.pdf' href='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20Exam_2023-IV.pdf'>https://www.drishtiias.com/images/pdf/MPPCS Mains Exam_2023-IV.pdf</a></p>
+<h3 id="3m-20w-5">3M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Point out the four causes according to Aristotle.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) What is the Carvaka view point of atman?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) What is the difference between Kabir's and Tulasidas' Ram?</strong></span></strong></strong>       <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) What is Dayananda Saraswati's idea about the Vedas?</strong></span></strong></strong>     <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Write the names of five great vows according to Mahavira.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) Write the concept of emotional intelligence.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) Write the meaning of the word Integrity'</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) What does 'power in attitude' indicate?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) What is heuristic processing in persuasive communication?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Who gave the Balance theory and what does this theory study?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Which Administrative Reforms Commission stressed upon the ethics in governance?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) What are the two key elements of Good Governance indicated by World Bank?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) How many ways of corruption have been mentioned in Kautilya's administration?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Central Vigilance Commission was established on the recommendation of which committee?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Who first suggested the establishment of Lokpal?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.16) In which year was the United Nations Convention against corruption adopted?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.17) On whose recommendation does the President appoint the Central Vigilance Commissioner?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.18) On 23rd March, 2019, who was appointed as the first Lokpal of India?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.19) Who said that. Integrity is much more than financial honesty'?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.20) Write any two tools of securing moral conduct.</strong></span></strong></strong>  <br>
+Ans</p>
+<p> </p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) What is the difference between intuition and intellect according to S. Radhakrishnan?   (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong>  Discuss the concept of form and matter according to Aristotle.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong>  How can we reduce prejudices? Write some important ways.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong>  Write suggestions to improve integrity and impartiality in Civil Services.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong>  What are the basic implications of the concept of Accountability in Public Administration? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong>  What do you understand by 'Social Accountability' of Public Administration? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2.7) Explain any five forms of corruption identified by Central Vigilance Commission. (<strong>5M50W)</strong></span></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong> Analyse the definitional complexity of corruption.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) Explain Anekantavada in Jain Philosophy.        (20M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong> Describe the main causes of decline of integrity in Civil Services.  (20M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong> What role does 'code of conduct for civil servants' play in securing discipline and control over civil servants in India? Discuss.   (20M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)</strong> Evaluate the powers and limitations of Lokpal in India.  (20M200W)</span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4)  Case Study:</strong></span></strong><br>
+ <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.1) Understanding emotions of others and ours is very significant for human life. Happiness, sadness, fear, disgust and jealousy are universal emotions. They are meaningful for communication, health, well-being and relationships. Effective emotional skills involve appropriate awareness and management of others and one's emotions. For example, frequent expression of anger in interpersonal relationships may create fear and insecurity in others. Consequently, it may weaken interpersonal and social relationships. Being in stress for long also leads to the development of physical and mental health problems. Thus, for the success and fulfilment in personal, interpersonal and social relationships; it is imperative that one should develop emotional skills. Better understanding of emotions may have direct implications for success, performance and productivity on variety of indices in human life.</span></strong>  <br>
+<br class="jop-noMdConv"/><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4.1.1)</strong> Why are emotional skills important?  (4M100W)</span></strong></strong> <br>
+Ans<br>
+<br class="jop-noMdConv"/><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><span class="jop-noMdConv">(</span><span class="jop-noMdConv">4.1</span>.2) How do emotions shape people's life outcomes?   (4M100W)</span> <br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(<span class="jop-noMdConv">4.1</span>.3)  Mention the major components of emotional intelligence. (4M100W)</span> <br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(<span class="jop-noMdConv">4.1</span>.4) Suggest measures to enhance emotional intelligence. (4M100W)</span> <br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(<span class="jop-noMdConv">4.1</span>.5)  How are emotional skills useful for administrative jobs?  (4M100W)</span></strong> <br>
+Ans</p>
+<p> </p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.2) The COVID-19 pandemic has been exerting negative influences on people of all age groups. Due to suddenness, novelty and fatality, it gave birth to a variety of psychological distress and negative health outcomes. It resulted in unemployment on a mass scale. People faced unavailability of essentials and felt lack of aU types human interactions. Experts opined that precaution is the only alternative through which people can save the life of others and their own. After one year of the outbreak of the pandemic, researchers discovered vaccine. Indian Government is working on the plan of vaccinating all of its citizens. Although majority of Indians took vaccination, but a few of them did not adhere to the call. Misconception, lack of awareness and lack of knowledge of the consequences and importance of vaccination for the health of others may be the reason behind their hesitation. This challenge even persists today.<br>
+</span></strong>  <br>
+<span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.2.1) <strong>Why is COVID-19 pandemic very harmful?</strong></span>   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.2</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.2) What psychological outcomes were faced by people during COVID-19 pandemic?</span></strong>    <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.2</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.3) What are the social and economical impacts of COVID pandemic?</span></strong>     <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.2</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.4) What are the possible causes behind hesitancy in vaccination?</span></strong>     <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.2</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">.5) Suggest measures to motivate people to get vaccinated.</span></strong>    <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2024">2024</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/Paper_GS_IV_Mains_Exam_2024.pdf' href='https://www.drishtiias.com/images/pdf/Paper_GS_IV_Mains_Exam_2024.pdf'>https://www.drishtiias.com/images/pdf/Paper_GS_IV_Mains_Exam_2024.pdf</a></p>
+<h2 id="section-a-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h2 id="2m-20w"><strong>2M 20W</strong></h2>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) State the five elements of Pararthānumāna in Indian tradition.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) Define Perception' according to Charvāka.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Write the names of ‘Eight-Fold-Path’ in Buddhist Philosophy.</strong></span></strong></strong>       <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Write the kinds of Mukti according to Acharya Shankara.</strong></span></strong></strong>     <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) What are the names of virtues, according to Plato?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What is the definition of ‘Character’?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) What is ‘Swadharma’ in the Gita?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) What is the concept of Nation?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Define foot-in-the-door technique.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) What are the ways of reducing prejudice?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Differentiate between aptitude and intelligence test.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) What is the basic purpose of emotional intelligence?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) What do you mean by Ethics?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Who are whistleblowers?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Define values.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.16) What is work ethics?</strong></span></strong></strong>  <br>
+Ans</p>
+<p> </p>
+<p> </p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Give an introduction of activities done by Savitribai Phule for the women empowerment.</strong></span></strong></strong>  (7M60W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Write the concept of 'Sarvabhaumadharmā' according to Swami Vivekananda.</strong></span></strong></strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong> <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>'National interest is inherent in its Security.' Explain this statement.</strong></span></strong></strong>   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Write the concept of Non-Violence according to Gandhiji.</strong></span></strong></strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong>  Is there any relationship between IQ and emotional intelligence?. Explain. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong> Define the symptoms of depression.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2.7) Explain the moral dilemma of civil servants in Administration.</span></strong> (7M60W)<br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong> Evaluate Abraham A. Maslow's Human Need Theory.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) 'Virtue is knowledge.' Discuss, according to Socrates. (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Explain the social philosophy of Swami Dayananda Saraswati. (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong> What is power? What are its different factors?  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) How far is Gita's Karma theory relevant in administration? (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong> What are the factors on which attitude change depends?   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Write in details the principles of Behaviour therapy. (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)</strong> What do you mean by motivation? Explain the difference between intrinsic and extrinsic motivations.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Evaluate the provisions of UN Convention against corruption. (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4)  Case Study:</strong></span></strong><br>
+ <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">Psychotherapy is a term that refers to the treatment of mental and emotional disorders through the use of psychological techniques designed to encourage communication of conflicts and insights into problems with the goal being personality and growth and behaviour modification. It' is generally a long term treatment which focuses more on gaining insight into chronic physical and emotional problems. Its focus is on the patient's thought process and way of being in the world rather than specific problem. In short, Psychotherapy is a longer term treatment that concentrates on addressing long-held beliefs and behaviours that no longer benefit the patient. Though very specific issues are frequently dealt with in Psychotherapy, the focus is on the client's thought processes and relationship with themselves, others and the world. Both Psychotherapy and counselling are helpful and compatible. Irrespective of the approach to which one subscribes the differences between Psychotherapy and Counselling do exist. The interchangeable use of both these words generally do not create any controversy or doubt.</span></strong>  <br>
+<br class="jop-noMdConv"/><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4.1) What is done through Psychotherapy?</strong>   (3M30W)</span></strong></strong> <br>
+Ans<br>
+<br class="jop-noMdConv"/><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><span class="jop-noMdConv">(</span><span class="jop-noMdConv">4.</span>2) What is the purpose of Psychotherapy?   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong></span><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(<span class="jop-noMdConv">4.</span>3) What does Psychotherapy focus on? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong></span><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(<span class="jop-noMdConv">4.</span>4) How much time does Psychotherapy treatment usually take? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong></span><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(<span class="jop-noMdConv">4.</span>5) Are Psychotherapy and Counselling alternative to each other?   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong></span></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(<span class="jop-noMdConv">4.</span>6) What is the difference between Psychotherapy and Counselling? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong></span></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="or-2"><span style="color: rgb(45, 194, 107);" class="jop-noMdConv"><strong><span class="jop-noMdConv">OR</span></strong></span></h2>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Case Study:</strong></span></strong><br>
+<span style="color: rgb(241, 196, 15);" class="jop-noMdConv">Joginder worked as District Magistrate in district Amarpur for some years. He was an enthusiastic player of Bridge. He used to play Bridge regularly in Advocates Club. Many of his Bridge partners were advocates and they became fast friends of Joginder. Later on he moved from Amarpur and became a member of Board of Revenue. Being a member of the Board of Revenue, he had to hear the appeals regarding land matters. With the progress of time, Amarpur became an industrial centre. The cost of the land became very high. Joginder felt embarrassed when he saw that his advocate fast friends of Bridge Club appeared in the cases of land.</span></strong></p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.1) Should Joginder dissociate himself from those cases filed by his advocate friends?</span></strong>   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">2) Should he get himself transferred due to clash of interest?</span></strong>    <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">3) Should he hear the case and remain being honest?</span></strong>     <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">4) Should he take the side of his friends?</span></strong>     <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">5) Should he give judgement on the basis of merit?</span></strong>    <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">6) Should Joginder cooperate with his friends?</span></strong>    <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong><br>
+Ans</p>
+<h2 id="section-b-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h2 id="2m-20w-2"><strong>2M 20W</strong></h2>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Define entrepreneurship.</strong></span></strong></strong>      <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) Define creativity in entrepreneurship.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Explain the interpersonal managerial skills.</strong></span></strong></strong>     <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Why was 'Make in India' program initiated?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Write the meaning of Bin Card.</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What is meant by Functional Planning?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) What do you mean by Vertical Conflict?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) What is meant by Brand?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Write the meaning of Human Resource Management.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) What do you understand by Stress?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) What is meant by Negotiation?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Write the primary cause of the droughts.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) Define personality.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Write the meaning of success.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Write human values and its importance.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.16) What is food adulteration?</strong></span></strong></strong>  <br>
+Ans</p>
+<p> </p>
+<p> </p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) Explain the Gordon method under problem inventory analysis technique of idea generation.     (7M60W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong>  Explain Intellectual Property Rights.   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3) What are the steps involved in the purchase procedure?</strong> <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong> How is cooperation different from coordination? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong>  Explain the competency based job analysis.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong>   Explain how the poverty and risk to disasters are linked.         <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2.7) What challenges are faced while implementing Government schemes and how can review and monitoring system address these issues to ensure successful program execution?</span></strong> <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong> Why is civic sense crucial for a society and how can the lack of it's negatively impact public spaces and social behaviour in India?   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)  Mention the reasons for slow development of entrepreneurship in India after independence. (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) What are the major challenges/problems related to women entrepreneurs in India?  (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong>  Explain the difference between management and administration. (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)  Describe the meaning, advantages and disadvantages of functional organisation structure. (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong> Explain the scope of financial administration.    (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)  How does an institution derive competitive advantage from training and development? Explain. (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)</strong>  What are the key factors that influence personality development and how do these factors vary in their impact on individuals?  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) How can individuals overcome the fear of failure?  (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4)  Case Study:</strong></span></strong><br>
+  <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">One of the most important decisions that a marketer has to take in the area of 'product' is in respect of branding. He has to decide whether the firm's products will be marketed under a brand name or a generic name. Generic name refers to the name of the whole class of the product. For example, a book, a wristwatch, tyre, camera, toilet soap etc. We know that a camera is a lens surrounded by plastic or steel from all sides and having certain other features such as a flash gun and so on. Similarly, book is a bunch of papers, which are in a bound form, on which some useful information about a subject is printed. Thus, all products having these characteristics would be called by the generic name such as camera or book. If products were sold by generic names, it would be very difficult for the marketers to distinguish their products from that of their competitors. Thus, most marketers give a name to their product, which helps in identifying and distinguishing their products from the competitor's products. This process of giving a name or a sign or a symbol etc. to a product is called branding.</span></strong> <br>
+<br class="jop-noMdConv"/><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4.1) What is Brand? Clarify.</strong>   (3M30W)</span></strong></strong> <br>
+Ans<br>
+<br class="jop-noMdConv"/><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><span class="jop-noMdConv">(</span><span class="jop-noMdConv">4.</span>2)  Describe the characteristics of a good brand.   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong></span><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(<span class="jop-noMdConv">4.</span>3)  Explain the Brand Value. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong></span><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(<span class="jop-noMdConv">4.</span>4) Explain the difference between Brand Name and Brand Symbol.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong></span><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(<span class="jop-noMdConv">4.</span>5)   How does a brand become a trade mark?  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong></span></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(<span class="jop-noMdConv">4.</span>6)  The name selected by a firm for the brand should be durable i.e. evergreen. Explain. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong></span></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="or-3"><span style="color: rgb(45, 194, 107);" class="jop-noMdConv"><strong><span class="jop-noMdConv">OR</span></strong></span></h2>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Case Study:</strong></span></strong><br>
+ <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">You are Vice-Chancellor of a University. Today you get information from one affiliated college that a question paper of B.A. First Year of English has been probably leaked, which is conducted by the University Examination. This information is also being circulated by the different social media and T.V. channels. This is indicated that a question paper leak can be a significant contradiction of the University students on their academic performance and psychological impact as well as public trust in the University system.<br>
+The responsibility to maintain credit and decorum of the University depends on you. Before starting the examination, some of the student organisations are also demanding to postpone the examination.</span></strong></p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(4.1)  If the question paper has been leaked, then what are its reasons?</span></strong>   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">2) Can the question paper leak information, which is being circulated in social media, be trustworthy?</span></strong>      <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">3) Has the question paper been leaked or not? What action is to be taken?</span></strong>       <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">4) For these incidents not to be repeated/recurred in the future, what important suggestions can be proposed?</span></strong>      <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">5) Should the started examination be stopped in between?</span></strong>      <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(</strong><span class="jop-noMdConv"><strong>4.</strong></span></span><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">6) If the question paper has been leaked, then how and on which ground may the decision of postponement of examination be revised?</span></strong>      <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3M30W)</span></strong></strong><br>
+Ans</p>
+</div></div>
+					</body>
+				</html>
+			

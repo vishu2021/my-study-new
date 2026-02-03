@@ -1,0 +1,1791 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="../atom-one-light.css">
+						<title>P2_GS_II_300</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">P2_GS_II_300</div>
+
+<style>
+		/* https://necolas.github.io/normalize.css/ */
+		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
+		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
+		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
+
+		body {
+			font-size: 15px;
+			color: #32373F;
+			word-wrap: break-word;
+			line-height: 1.6em;
+			background-color: #ffffff;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+			padding-bottom: 0px;
+			padding-top: 0px;
+		}
+		kbd {
+			border: 1px solid rgb(220, 220, 220);
+			box-shadow: inset 0 -1px 0 rgb(220, 220, 220);
+			padding: 2px 4px;
+			border-radius: 3px;
+			background-color: rgb(243, 243, 243);
+		}
+
+		:root {
+			--scrollbar-size: 7px;
+		}
+
+		::-webkit-scrollbar {
+			width: var(--scrollbar-size);
+			height: var(--scrollbar-size);
+		}
+		::-webkit-scrollbar-thumb {
+			border-radius: calc(var(--scrollbar-size) / 2);
+		}
+		::-webkit-scrollbar-corner {
+			background: none;
+		}
+		::-webkit-scrollbar-track {
+			border: none;
+		}
+		::-webkit-scrollbar-thumb {
+			background: rgba(50, 55, 63, 0.54); 
+		}
+		::-webkit-scrollbar-track:hover {
+			background: rgba(0, 0, 0, 0.1); 
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background: rgba(50, 55, 63, 0.63); 
+		}
+
+		
+
+		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
+
+		#rendered-md > h1:first-child,
+		#rendered-md > h2:first-child,
+		#rendered-md > h3:first-child,
+		#rendered-md > h4:first-child,
+		#rendered-md > ul:first-child,
+		#rendered-md > ol:first-child,
+		#rendered-md > table:first-child,
+		#rendered-md > blockquote:first-child,
+		#rendered-md > img:first-child,
+		#rendered-md > p:first-child {
+			margin-top: 0;
+			padding-top: 0;
+		}
+		
+		p, h1, h2, h3, h4, h5, h6, ul, table {
+			margin-top: .6em;
+			margin-bottom: 1.35em;
+
+			/*
+				Adds support for RTL text in the note body. It automatically detects the direction using the content.
+				Issue: https://github.com/laurent22/joplin/issues/3991
+			*/
+			unicode-bidi: plaintext;
+		}
+
+		h1, h2, h3, h4, h5, h6, ul, table {
+			margin-bottom: 0.65em;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			line-height: 1.5em;
+		}
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			border-bottom: 1px solid #dddddd;
+			padding-bottom: .3em;
+		}
+		h2 {
+			font-size: 1.3em;
+			font-weight: bold;
+			padding-bottom: .1em; */
+		}
+		h3 {
+			font-size: 1.1em;
+			font-weight: bold;
+		}
+		h4, h5, h6 {
+			font-size: 1em;
+			font-weight: bold;
+		}
+
+		.exported-note-title {
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 0.8em;
+			line-height: 1.5em;
+			padding-bottom: .35em;
+			border-bottom: 1px solid #dddddd;
+		}
+
+		a {
+			color: #155BDA;
+		}
+		ul, ol {
+			padding-left: 0;
+			margin-left: 1.7em;
+		}
+		li {
+			margin-bottom: .4em;
+		}
+		li p {
+			margin-top: 0.2em;
+			margin-bottom: 0;
+		}
+
+		dt {
+			font-weight: bold;
+			margin-bottom: 0.25em;
+		}
+
+		dd {
+			margin-inline-start: 2.5em;
+			margin-bottom: 0.5em;
+		}
+
+		.resource-icon {
+			display: inline-block;
+			position: relative;
+			top: 0.3em;
+			text-decoration: none;
+			width: 1.2em;
+			height: 1.4em;
+			margin-right: 0.4em;
+			background-color:  #155BDA;
+		}
+    /* These icons are obtained from the wonderful ForkAwesome project by copying the src svgs 
+     * into the css classes below.
+     * svgs are obtained from https://github.com/ForkAwesome/Fork-Awesome/tree/master/src/icons/svg
+     * instead of the svg width, height property you must use a viewbox here, 0 0 1536 1792 is typically the actual size of the icon
+     * each line begins with the pre-amble -webkit-mask: url("data:image/svg+xml;utf8,
+     * and of course finishes with ");
+     * to prevent artifacts it is also necessary to include -webkit-mask-repeat: no-repeat;
+     * on the following line
+     * */
+		.fa-joplin {
+			/* Awesome Font file */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M373.834 128C168.227 128 0 296.223 0 501.834v788.336C0 1495.778 168.227 1664 373.834 1664h788.336c205.608 0 373.83-168.222 373.83-373.83V501.834C1536 296.224 1367.778 128 1162.17 128zm397.222 205.431h417.424a7.132 7.132 0 0 1 7.132 7.133v132.552c0 4.461-3.619 8.073-8.077 8.073h-57.23c-24.168 0-43.768 19.338-44.284 43.374v2.377h-.017v136.191h-.053l-.466 509.375c-5.02 77.667-39.222 149.056-96.324 201.046-60.28 54.834-141.948 85.017-229.962 85.017-12.45 0-25.208-.61-37.907-1.785-92.157-8.682-181.494-48.601-251.662-112.438-71.99-65.517-117.147-150.03-127.164-238-11.226-98.763 23.42-192.783 95.045-257.937 81.99-74.637 198.185-101.768 316.613-75.704 5.574 1.227 9.55 6.282 9.55 11.997v199.52c-.199 2.625-1.481 6.599-8.183 2.896-.663-.365-1.194-.511-1.653-.531-21.987-10.587-45.159-17.57-68.559-19.916-.38-.04-.757-.124-1.138-.163-.537-.048-1.034-.033-1.556-.075-4.13-.354-8.183-.517-12.203-.58-.87-.011-1.771-.127-2.641-.127-.486 0-.951.05-1.437.057-1.464.011-2.886.115-4.33.163-2.76.102-5.497.211-8.182.448-.273.024-.547.07-.835.097-25.509 2.4-47.864 11.104-65.012 25.47-.954.802-1.974 1.53-2.9 2.36a1.34 1.34 0 0 1-.168.146c-23.96 21.8-34.881 53.872-30.726 90.316 4.62 40.737 26.94 81.156 62.841 113.823 35.908 32.67 80.335 52.977 125.113 57.186 35.118 3.36 66.547-3.919 89.899-20.461a97.255 97.255 0 0 0 9.365-7.501c2.925-2.661 5.569-5.5 8.086-8.416.3-.348.672-.673.975-1.024 8.253-9.864 14.222-21.067 17.996-33.148.639-2.034 1.051-4.148 1.564-6.227.381-1.563.81-3.106 1.112-4.693.555-2.784.923-5.632 1.253-8.49.086-.709.183-1.414.237-2.128.492-4.893.693-9.858.55-14.91h.013V521.623c-2.01-22.626-20.78-40.434-43.928-40.434h-57.23a8.071 8.071 0 0 1-8.077-8.073V340.564a7.132 7.132 0 0 1 7.136-7.133z'/></svg>");
+		}
+		.fa-file-image {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-128-448v320H256v-192l192-192 128 128 384-384zm-832-192c-106 0-192-86-192-192s86-192 192-192 192 86 192 192-86 192-192 192z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-pdf {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-514-593c25 20 53 38 84 56 42-5 81-7 117-7 67 0 152 8 177 49 7 10 13 28 2 52-1 1-2 3-3 4v1c-3 18-18 38-71 38-64 0-161-29-245-73-139 15-285 46-392 83-103 176-182 262-242 262-10 0-19-2-28-7l-24-12c-3-1-4-3-6-5-5-5-9-16-6-36 10-46 64-123 188-188 8-5 18-2 23 6 1 1 2 3 2 4 31-51 67-116 107-197 45-90 80-178 104-262-32-109-42-221-24-287 7-25 22-40 42-40h22c15 0 27 5 35 15 12 14 15 36 9 68-1 3-2 6-4 8 1 3 1 5 1 8v30c-1 63-2 123-14 192 35 105 87 190 146 238zm-576 411c30-14 73-57 137-158-75 58-122 124-137 158zm398-920c-10 28-10 76-2 132 3-16 5-31 7-44 2-17 5-31 7-43 1-3 2-5 4-8-1-1-1-3-2-5-1-18-7-29-13-36 0 2-1 3-1 4zm-124 661c88-35 186-63 284-81-10-8-20-15-29-23-49-43-93-103-127-176-19 61-47 126-83 197-15 28-30 56-45 83zm646-16c-5-5-31-24-140-24 49 18 94 28 124 28 9 0 14 0 18-1 0-1-1-2-2-3z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-word {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM233 768v107h70l164 661h159l128-485c5-15 8-30 10-46 1-8 2-16 2-24h4l3 24c3 14 4 30 9 46l128 485h159l164-661h70V768h-300v107h90l-99 438c-4 16-6 33-7 46l-2 21h-4c0-6-2-14-3-21-3-13-5-30-9-46L825 768H711l-144 545c-4 16-5 33-8 46l-4 21h-4l-2-21c-1-13-3-30-7-46l-99-438h90V768H233z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-powerpoint {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-992-234v106h327v-106h-93v-167h137c43 0 82-2 118-15 90-31 146-124 146-233s-54-193-137-228c-38-15-84-19-130-19H416v107h92v555h-92zm353-280H650V882h120c35 0 62 6 83 18 36 21 56 62 56 115 0 56-20 99-62 120-21 10-47 15-78 15z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-excel {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-979-234v106h281v-106h-75l103-161c12-19 18-34 21-34h2c1 4 3 7 5 10 4 8 10 14 17 24l107 161h-76v106h291v-106h-68l-192-273 195-282h67V768H828v107h74l-103 159c-12 19-21 34-21 33h-2c-1-4-3-7-5-10-4-7-9-14-17-23L648 875h76V768H434v107h68l189 272-194 283h-68z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-audio {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM620 850c12 5 20 17 20 30v544c0 13-8 25-20 30-4 1-8 2-12 2-8 0-16-3-23-9l-166-167H288c-18 0-32-14-32-32v-192c0-18 14-32 32-32h131l166-167c10-9 23-12 35-7zm417 689c19 0 37-8 50-24 83-102 129-231 129-363s-46-261-129-363c-22-28-63-32-90-10-28 23-32 63-9 91 65 80 100 178 100 282s-35 202-100 282c-23 28-19 68 9 90 12 10 26 15 40 15zm-211-148c17 0 34-7 47-20 56-60 87-137 87-219s-31-159-87-219c-24-26-65-27-91-3-25 24-27 65-2 91 33 36 52 82 52 131s-19 95-52 131c-25 26-23 67 2 91 13 11 29 17 44 17z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-video {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM768 768c70 0 128 58 128 128v384c0 70-58 128-128 128H384c-70 0-128-58-128-128V896c0-70 58-128 128-128h384zm492 2c12 5 20 17 20 30v576c0 13-8 25-20 30-4 1-8 2-12 2-8 0-17-3-23-9l-265-266v-90l265-266c6-6 15-9 23-9 4 0 8 1 12 2z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-archive {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M640 384V256H512v128h128zm128 128V384H640v128h128zM640 640V512H512v128h128zm128 128V640H640v128h128zm700-388c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H768v128H640V128H128v1536h1280zM781 943c85 287 107 349 107 349 5 17 8 34 8 52 0 111-108 192-256 192s-256-81-256-192c0-18 3-35 8-52 0 0 21-62 120-396V768h128v128h79c29 0 54 19 62 47zm-141 465c71 0 128-29 128-64s-57-64-128-64-128 29-128 64 57 64 128 64z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-code {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM480 768c11-14 31-17 45-6l51 38c14 11 17 31 6 45l-182 243 182 243c11 14 8 34-6 45l-51 38c-14 11-34 8-45-6l-226-301c-8-11-8-27 0-38zm802 301c8 11 8 27 0 38l-226 301c-11 14-31 17-45 6l-51-38c-14-11-17-31-6-45l182-243-182-243c-11-14-8-34 6-45l51-38c14-11 34-8 45 6zm-620 461c-18-3-29-20-26-37l138-831c3-18 20-29 37-26l63 10c18 3 29 20 26 37l-138 831c-3 18-20 29-37 26z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-alt, .fa-file-csv {
+      /* fork-awesome doesn't have csv so we use the text icon */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM384 800c0-18 14-32 32-32h704c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64zm736 224c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704zm0 256c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		blockquote {
+			border-left: 4px solid rgb(220, 220, 220);
+			padding-left: 1.2em;
+			margin-left: 0;
+			opacity: 0.7;
+		}
+
+		.jop-tinymce table,
+		table {
+			text-align: left;
+			border-collapse: collapse;
+			border: 1px solid rgb(220, 220, 220);
+			background-color: #ffffff;
+		}
+
+		.jop-tinymce table td, .jop-tinymce table th,
+		table td, th {
+			text-align: left;
+			padding: .5em 1em .5em 1em;
+			font-size: 15;
+			color: #32373F;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+		}
+
+		.jop-tinymce table td,
+		table td {
+			border: 1px solid rgb(220, 220, 220);
+		}
+
+		.jop-tinymce table th,
+		table th {
+			border: 1px solid rgb(220, 220, 220);
+			border-bottom: 2px solid rgb(220, 220, 220);
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:nth-child(even),
+		table tr:nth-child(even) {
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:hover,
+		table tr:hover {
+			background-color: #e5e5e5;
+		}
+
+		hr {
+			border: none;
+			border-bottom: 2px solid #dddddd;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		.inline-code,
+		.mce-content-body code {
+			border: 1px solid rgb(220, 220, 220);
+			background-color: rgb(243, 243, 243);
+			padding-right: .2em;
+			padding-left: .2em;
+			border-radius: .25em;
+			color: rgb(0,0,0);
+			font-size: .9em;
+		}
+
+		.highlighted-keyword {
+			background-color: #F3B717;
+			color: black;
+		}
+
+		
+	.not-loaded-resource img {
+		width: 1.15em;
+		height: 1.15em;
+		background: white;
+		padding: 2px !important;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px #000000aa;
+	}
+
+	a.not-loaded-resource img {
+		margin-right: .2em;
+	}
+
+	a.not-loaded-resource {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+
+		.md-checkbox input[type=checkbox]:checked {
+			opacity: 0.7;
+		}
+
+		.jop-tinymce ul.joplin-checklist .checked,
+		.md-checkbox .checkbox-label-checked {
+			opacity: 0.5;
+		}
+
+		.exported-note {
+			padding: 1em;
+		}
+
+		.joplin-editable .joplin-source {
+			display: none;
+		}
+
+		mark {
+			background: #F7D26E;
+			color: black;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		.mce-content-body {
+			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
+			padding: 5px 10px 10em 0;
+		}
+
+		/*
+		.mce-content-body code {
+			background-color: transparent;
+		}
+		*/
+
+		.mce-content-body [data-mce-selected=inline-boundary] {
+			background-color: transparent;
+		}
+
+		.mce-content-body .joplin-editable {
+			cursor: pointer !important;
+		}
+
+		.mce-content-body.mce-content-readonly {
+			opacity: 0.5;
+		}
+
+		/* We need that to make sure click events have the A has a target */
+		.katex a span {
+			pointer-events: none;
+		}
+
+		.media-player {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.media-player.media-pdf {
+			min-height: 35rem;
+			width: 100%;
+			max-width: 1000px;
+			margin: 0;
+			border: 0;
+			display: block;
+		}
+
+		/* Clear the CODE style if the element is within a joplin-editable block */
+		.mce-content-body .joplin-editable code {
+			border: none;
+			background: none;
+			padding: 0;
+			color: inherit;
+			font-size: inherit;
+		}
+
+		/* To make code blocks horizontally scrollable */
+		/* https://github.com/laurent22/joplin/issues/5740 */
+		pre.hljs {
+			overflow-x: auto;
+		}
+
+		.joplin-table-wrapper{
+			overflow-x: auto;
+			overflow-y: hidden;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		@media print {
+			body {
+				height: auto !important;
+			}
+
+			pre {
+				white-space: pre-wrap;
+			}
+
+			.code, .inline-code {
+				border: 1px solid #CBCBCB;
+			}
+
+			#joplin-container-content {
+				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
+				   around various issues related to scrolling. However when printing we don't want this
+				   fixed size as that would crop the content. So we set it to auto here. "important" is
+				   needed to override the style set by JavaScript at the element-level. */
+				height: auto !important;
+			}
+		}
+	
+
+				/*
+					FOR THE MARKDOWN EDITOR
+				*/
+
+				/* Remove the indentation from the checkboxes at the root of the document
+				   (otherwise they are too far right), but keep it for their children to allow
+				   nested lists. Make sure this value matches the UL margin. */
+
+				li.md-checkbox {
+					list-style-type: none;
+				}
+
+				li.md-checkbox input[type=checkbox] {
+					margin-left: -1.71em;
+					margin-right: 0.7em;
+					position: relative;
+					top: 1px;
+				}
+				
+				ul.joplin-checklist {
+					list-style:none;
+				}
+
+				/*
+					FOR THE RICH TEXT EDITOR
+				*/
+
+				ul.joplin-checklist li::before {
+					content:"\f14a";
+					font-family:"Font Awesome 5 Free";
+					background-size: 16px 16px;
+					pointer-events: all;
+					cursor: pointer;
+					width: 1em;
+					height: 1em;
+					margin-left: -1.3em;
+					position: absolute;
+					color: #32373F;
+				}
+
+				.joplin-checklist li:not(.checked)::before {
+					content:"\f0c8";
+				}
+.mermaid { width: 640px; }
+pre.mermaid[data-processed=true] { white-space: unset; }
+.mermaid-export-graph {
+					opacity: 0;
+					height: 0;
+					z-index: 1;
+					position: relative;
+				} 
+				.joplin-editable:hover .mermaid-export-graph,
+				.joplin-editable .mermaid-export-graph:has(:focus-visible) {
+					opacity: 1;
+				}
+				.mermaid-export-graph > button:hover {
+					background-color: #CBDAF1 !important;
+				}</style><div id="rendered-md"><p><strong>Paper 2: General Studies - II - 300 M - 3 H</strong></p>
+<h1 id="syllabus">Syllabus</h1>
+<p><strong>Part A :  <strong>Constitution, Governance, Political and Administrative Structure</strong></strong><br>
+<strong>Part B : <strong>Sociology</strong></strong></p>
+<p>===================</p>
+<p><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part (A) – <strong>Constitution, Governance, Political and Administrative Structure</strong></strong></span></p>
+<ul>
+<li>
+<p>Formation, characteristics, basic structure, and important amendments of the Constitution of India.</p>
+</li>
+<li>
+<p>Objectives, Fundamental Rights, Fundamental Duties, and Directive Principles of State Policy.</p>
+</li>
+<li>
+<p>Central-State Relations, Supreme Court, High Court, Judicial Review, Judicial Activism, Lok Adalat, and Public Interest Litigation.</p>
+</li>
+<li>
+<p>Election Commission of India, Comptroller and Auditor General of India, Union Public Service Commission, Madhya Pradesh Public Service Commission, and NITI Aayog.</p>
+</li>
+<li>
+<p>Role of caste, religion, class, ethnicity, language, and gender; political parties and voting behavior; civil society and mass movements; issues related to national integrity and security.</p>
+</li>
+<li>
+<p>Political Representation, Participation of Citizens in the Decision-Making Process.</p>
+</li>
+<li>
+<p>Role of CBOs, NGOs, and SHGs in Indian politics and governance.</p>
+</li>
+<li>
+<p>Issues and challenges related to electronic, print, and social media.</p>
+</li>
+<li>
+<p>Contributions of Kau tilya, Devi Ahilya Bai Holkar, Mahatma Gandhi, Jawaharlal Nehru, Sardar Vallabh Bhai Patel, Ram Manohar Lohia, Dr. Bhimrao Ambedkar, Pandit Deendayal Upadhyaya, and Jayaprakash Narayan.</p>
+</li>
+<li>
+<p>Reorganization of States in 1956 and the foundation of Madhya Pradesh; partition of Madhya Pradesh in 2000.</p>
+</li>
+<li>
+<p>Appointment, powers, and status of the Governor; Chief Minister and Council of Ministers—Structure, function, and role.</p>
+</li>
+<li>
+<p>Constitution, powers, role of the Speaker, and role of the Opposition in the State Legislature of Madhya Pradesh.</p>
+</li>
+<li>
+<p>Constitution, jurisdiction, and role of the High Court of Madhya Pradesh.</p>
+</li>
+<li>
+<p>Competition Commission, Scheduled Caste Commission, Scheduled Tribes Commission, Other Backward Caste Commission, Central Vigilance Commission, Human Rights Commission, Information Commission, Consumer Forum, Children’s Commission, and Women’s Commission.</p>
+</li>
+<li>
+<p><strong>Administration of Madhya Pradesh-</strong><br>
+Secretariat, Chief Secretary, Secretary and Commissioner, District Administration in Madhya Pradesh, Role of District Collector.</p>
+</li>
+<li>
+<p><strong>Rural Local Self Government in Madhya Pradesh-</strong><br>
+Panchayati Raj organization and Powers, Urban Local Self Government- Organization and Power, Finance Bureaucracy in Local Self Government and importance of autonomy.</p>
+</li>
+<li>
+<p>Upliftment of Tribal, Backward, and Deprived Classes; issues related to Naxalite problem in Madhya Pradesh.</p>
+</li>
+<li>
+<p>Contribution of women in the politics of Madhya Pradesh.</p>
+</li>
+<li>
+<p>Current issues in the politics of Madhya Pradesh.</p>
+</li>
+</ul>
+<p><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong><strong><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part (B) – <strong>Sociology</strong></strong></span></strong></strong></span></p>
+<ul>
+<li><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit-I Basic Concepts of Sociology</strong></span>
+<ul>
+<li>Indian Concept of Society- Joint Family, Family, Kinship, Lineage, Clan, Gotra tradition.</li>
+<li>Community, Institution, Association, Culture, Norms and Values.</li>
+<li>Elements of Social Harmony, Concept of Civilisation and Culture. Salient Features of Indian Culture.</li>
+<li>Social Institutions- Family, Education, Religion, Varna, Rin, Yagya, Sanskar.</li>
+<li>Rituals- Various references, Caste system. Ashram, Purushartha, Impact of Religion and Sects on society and marriage.</li>
+</ul>
+</li>
+<li><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit-II Diversity and Challenges in Indian Society</strong></span>
+<ul>
+<li>Conceptualizing Indian Society- People of India, Unity in diversity.</li>
+<li>Cultural diversity- Regional, Linguistic, Religious, and Tribal.</li>
+<li>Changing scenario of Crime- Drug addiction, Suicide, Cyber Crime, Crimes against Women and Domestic Violence.</li>
+<li>Current Debate- Tradition and Modernity in India.</li>
+<li>Problems of Nation Building- Secularism, Pluralism and Nation building.</li>
+</ul>
+</li>
+<li><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit-III Rural and Urban Sociology</strong></span>
+<ul>
+<li>Approaches to the study of Rural Society- Rural-Urban differences, Ruralism, and Urbanism.</li>
+<li>Peasant studies, Panchayati Raj System before and after the 73rd Amendment, Rural Leadership, Factionalism, Empowerment of People.</li>
+<li>Social issues and Strategies for Rural Development- Bonded and Migrant labours, Trends of changes in rural society.</li>
+<li>Characteristics of Urban Community, Changes in Urban Community, Causes and Impact of Urbanization.</li>
+<li>Concept of Town Planning, Factors affecting Urban Planning, Problems of Urban Management in India.</li>
+</ul>
+</li>
+<li><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit-IV Industrialization, Globalization, Social Development and Population</strong></span>
+<ul>
+<li>Industrialization and Social Change in India- Impact on Family, Education, Stratification. Class and Class Conflict in Industrial Society.</li>
+<li>The Challenges of Globalization, Indianization of Sociology, Privatization of Education.</li>
+<li>Social Structure and Development, Facilitators, Inhibitors, Development and Socio-Economic disparities.</li>
+<li>Culture and Development- Culture as aid and impediment, Post-Modernization, Westernization.</li>
+<li>Population Growth and Distribution in India- Growth since 1901, Causes and Effects.</li>
+<li>Concepts- Fertility, Mortality, Morbidity, Migration, Age and Sex composition.</li>
+</ul>
+</li>
+<li><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit-V Human Resource Development and Social Welfare Schemes</strong></span>
+<ul>
+<li>National Education Policy 2020- Vision, Principles, School Education, Higher Education, Professional Education, Online and Digital Education, Adult Education and Lifelong learning.</li>
+<li>Issues related to Social Classes and their Welfare Programmes- Senior Citizens, Children, Women, Under Privileged Classes and Displaced groups arising out of Developmental Projects. Issues related to Girl's Education.</li>
+<li>Community Development Programme, Extension Education, Panchayati Raj, Role of Non-Governmental Organizations (NGOs) in Community Development.</li>
+<li>Status of Tribes in Madhya Pradesh and their Social Structure, Customs.</li>
+<li>Beliefs, Marriage, Kinship, Religious Beliefs, Traditions, Festivals and Celebrations.</li>
+<li>Folk Culture of Madhya Pradesh.</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h1 id="2017">2017</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20GS-2.pdf' href='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20GS-2.pdf'>https://www.drishtiias.com/images/pdf/MPPCS Mains GS-2.pdf</a></p>
+<h2 id="section-a"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="2-lines-3-marks"><strong>2 Lines 3 Marks</strong></h3>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A)</strong></span>  <strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">Write any three basic principles in the Preamble of the Constitution of India.</span></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) What is the 12th Schedule of the Constitution about and how many subjects are there in this Schedule?</strong></span>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) What is the provision in Article 323–A of the Constitution of India?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Which Article of the Constitution of India provides the method of election of the President of India and what is the name of this method?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) In which month and year the Lokpal Bill was enacted by the Parliament?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) What is the emergency powers of the President of India.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) Write down any two important provisions of the 74th Amendment to the Constitution of India.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) How many All India Service Cadres are there? Write their names.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) Write any two duties of the M.P. Public Service Commission.</strong></span></strong></strong>         <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) What is meant by ‘Fraternity’ mentioned in the Preamble of India Constitution?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) What is meant by ‘Original Jurisdiction of the Supreme Court’?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) Write any two important provisions of the Consumer Protection Act, 1986.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Write any two constitutional safeguards for the autonomy and impartiality of Comptroller &amp; Auditor General.</strong></span></strong></strong></strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A)  Unitary elements in Indian Constitution. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B)  Jurisdiction of State High Courts. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C)  Ineffectiveness of State Lokayukta Institution. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D)  Controversial issues regarding the Union–State financial relations. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Legislative powers of State Governor.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Procedure for impeachment of the President.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G)  Right to Equality in Indian Constitution. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Utility of Central Information Commission.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I)  Functions and duties of Estimate Committee. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J)  Transparency in Administration. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) Role of Self-Help Groups.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L)  Citizens participation in Decision-making process (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M)  Role of Chief Minister in State Administration. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N)  Monetary policy and its objectives. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O)  Media and its type. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A)  Critically evaluate the role of Prime Minister in the governance of the country. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B)  Write a critical essay on the Working of Urban local self government Institutions in your State. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) Analyse the Union – State legislative relations.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D)  Write a note on ‘Co-operative Federalism : Problems and Possibilities’. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E)  Explain the training system of higher Civil Services in your state and offer a few suggestions to bring reforms in this field.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F)  Discuss aims and functions of World Trade Organisation and examine its impact on India. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="section-b"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="2-lines-3-marks-2"><strong>2 Lines 3 Marks</strong></h3>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A)</strong></span>  <strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">What is Dowry Prohibition Act of 1961?</span></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(B) Describe UJJAWALA Scheme’s role in order to combat atrocities on women.</span></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) Write the reasons for the failure of Scheduled Tribes (Prevention of Atrocities) Act, 1989.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) How women empowerment is possible through the Protection of Women from Domestic Violence Act, 2005?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) How law can brings changes in the society?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) What is Copenhegen Convention?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) Women of Madhya Pradesh and the problem of anemia.</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) The role of ASHA and the health of rural women of Madhya Pradesh.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) The importance of breast-feeding on the health of new-born.</strong></span></strong></strong>         <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) What is malnutrition and the mid-day meal scheme?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) What is institutionalized delivery and the health of mother and new born?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) Write on the vaccinations given to a child from the birth till the age of 5 years.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M)  What is Right to Education Act?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N) What is the role of U.G.C in maintaining quality education at higher level of education?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O) What are various Welfare Schemes for the aged?</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A)  Do you think that the changes in Indian Society have been as per the Preamble of Indian Constitution? Answer by giving reasons. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B)  What are various Acts passed to check women exploitation in family? Describe any one of such Acts. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) Has the Right to Information Act, 2005 been able to control corruption? Answer by giving reasons.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Describe various Provisions of the Consumer Protection Act, 1986.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E)  Write a note on the UNICEF’s Polio Eradication Programme in India.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F)  Write on the Maternal Health Service Programmes in M.P.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G)   Write the objectives of the World Health Organisation. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Describe reasons for the high infant mortality rate in India.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I)  ‘‘The greatest obstacle in the girls education is Womens Marriage Act, 2006.’’ Comment.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J)  Write on the causes of malnutrition in M.P.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A)  Write on the Provisions of Section 4 of the Protection of Civil Rights Act, 1955. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Describe the punishment for offences of atrocities on the Scheduled Caste and Scheduled tribes (Prevention of Atrocities) Act, 1989 under Section 3(i)).   (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) Explain Welfare Programmes relating to labour as per Factories Act, 1948.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Write on the steps taken for the prevention of communicable diseases in the 21th century.   (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2018">2018</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20GS%20-%202.pdf' href='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20GS%20-%202.pdf'>https://www.drishtiias.com/images/pdf/MPPCS Mains GS - 2.pdf</a></p>
+<h2 id="section-a-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="2-lines-3-marks-3">2 Lines 3 Marks</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Who prepared the draft of the Constitution of India?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Sardar Vallabhbhai Patel was the Chairman of which committee/committees of the Constituent Assembly?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) &quot;The Constitution of India is the, largest constitutional document of the World.&quot; Explain.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) What is the impact of the Constitutions of Canada and Ireland on the Constitution of India?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Clarify the provision of Article 14 of the Constitution of India.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Write down any two main provisions of the 73rd Amendment Act of the Indian Constitution.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) Write the constitution of Indian Parliament as per the provision of the Constitution.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) &quot;In Indian Constitution, the fundamental rights and the directive principles of state policy are the component parts of each other.&quot; Explain.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) Clarify the constitution of Finance Commission in India.</strong></span></strong></strong>         <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) Write the part of the Constitution and new Schedule which were added in the Constitution of India for urban local self-bodies.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) In which year was the Estimates Committee of Indian Parliament established in Independent India and with what aim?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) What was the main cause of removal of the right of property from the fundamental rights in India?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) Write any two discretionary powers of a Governor as per the provision of the Indian Constitution and Conventions of Parliamentary Government.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N) About what the 11th Schedule of the Constitution of India is there? Write any four subjects of the Schedule.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O) Identify the few shortcomings of the election system in India.</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Make a comparison of Preambles of the Constitutions of India and United States of America.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) What were the main issues before the Constituent Assembly of India? Explain.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) &quot;The federal, supremacy is the fundamental element of the system of governance in India.&quot; Explain.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Clarify the administrative relations between the Union and the States in India.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Examine the justification and significance of the post of Governor in India.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Which are the necessary conditions to strengthen the parliamentary democracy in India? Explain.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) Make the clarifications of the prerogatives of the Indian President and their importance.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H)  Evaluate the relationship of Indian President and Prime Minister. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I)  Make an assessment of the rural bureaucracy arid its role in Pahchayati Raj Institutions at the grass-root level in India. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) Explain the structure of the subordinate courts and their constitutional basis in India.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) Explain the proposed office of Lokpal in the law and his jurisdictions in India.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) Discuss the ideology and programme of any two major political parties in India.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) &quot;Judiciary is a watchdog to protect the fundamental rights.&quot; Evaluate.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Write a critical essay on basic assumptions and utilities of the directive principles of state policy as provided by the Constitution of India.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Critically examine the State Information Commission and its powers and functions.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C)  Write a critical note on the working and problems of rural local self-government in State. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Clarify the legal form of the domestic violence and the protection of women from it in India.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Explain the structure and functions of the National Commission for Scheduled Tribes in India.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Present an analysis of the different types of jurisdictions of the Supreme Court according to the Constitution of India.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="section-b-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="2-lines-3-marks-4">2 Lines 3 Marks</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) What are social legislations?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Rehabilitation and Rehabilitation Policy, 2007</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) What is division of labour?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) What is skill development programme?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) AYUSH method of medication</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) What is meant by 'old age?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) Concept of Biotechnology</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Human Right Index</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) Santhanam Committee  of Corruption</strong></span></strong></strong>         <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) Causes of malnutrition</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) What do you understand by child abuse?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) E-inclusion project</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) National Child Health Programme</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N) Uniform Elementary Education</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O) Nirbhaya fund</strong></span></strong></strong>   <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) State the structure of human resource in India.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) What is the role of paramedical staff in medical field? Elaborate.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) Evaluate the whistle-blower law of India.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D)  Who is consumer? What are the basic rights of consumer? (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E)  What are the main indicators of Human Development Index? Elaborate. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) What is the meaning of demographic dividend? What is its importance?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) Highlight the Indian scenario of aging.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) What is the need of vocational education in India? Explain.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) Displacement is the result of development. Explain.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) To whom will you say the socially deprived class? Why does it originate in society?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) Describe the main provisions given in Madhya Pradesh Lok Sewaon Ke Pradaan Ki Guarantee Act, 2010.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) What is 'Sanjha Chulha Yojna' of Madhya Pradesh? Elaborate its impact.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) What do you mean by Information Technology? Highlight the specific provisions given in the Information Technology Act, 2000.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) What has been the contribution of Open Universities in extension of higher education in India? Write in detail.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C)  What technological interventions has been in the field of immunization? Describe in detail. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Critically evaluate the role of the Comptroller and Auditor General in parliamentary democracy in India.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<h1 id="2019">2019</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/MPPSC%20Mains%202019%20Paper_GS_I.pdf' href='https://www.drishtiias.com/images/pdf/MPPSC%20Mains%202019%20Paper_GS_I.pdf'>https://www.drishtiias.com/images/pdf/MPPSC Mains 2019 Paper_GS_I.pdf</a></p>
+<h2 id="section-a-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="2-lines-3-marks-5">2 Lines 3 Marks</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Write three significant features of Indian Constitution which bear the impact of the Constitution of United States of America.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) What is the meaning of fraternity in the Preamble of Indian Constitution?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Who termed the Indian Constitution as ‘Quasi-federal Constitution’?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Who can take part in the proceedings of the Parliament despite not being its member?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) When and why the Santhanam committee was formed?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What is the purpose of Protection of Civil Rights Act, 1955?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) What is the meaning of the Slogan 'Jago Grahak Jago'?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) What are the techniques adopted by pressure groups to secure their purpose?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) What does ‘Public duty’ mean under the Prevention of Corruption Act, 1988?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) When and why the ‘Competition Commission of India’ was formed?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Why are the ‘Self help groups’ being formed?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) By which provision, the digital signatures are recognised?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) Write the names of any two Committees set-up for Electoral Reforms in India.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) What are the words added to the Preamble by 42nd Constitutional Amendments?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Inspired by which International Conference, the Environment (Protection) Act, 1986 was brought in India?</strong></span></strong></strong><br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) Write the functions of Governor as the Representative of the Union.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2) Which body gives recognition to the political parties and on what grounds?    (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3) “The objective of Directive Principles of State Policy is to establish the social system to encourage public welfare.” Clarify.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4) What are the duties of Chief Minister with regard to Governor?   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)  Write the Functional duties of Comptroller and Auditor General of India.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6) What are the powers of Prime minister as a Chief of Central Council of Ministers?   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)  Define the original jurisdiction of supreme Court of India.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8) What are the powers of ‘State Information Commission’?   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)  How is the State Legislative Council formed?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)  In which cases the Lokayukta has the right to accept complaints against the Public Servants?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.11)  What are the principal duties of the ‘Central Council of Local Self-Government’?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.12) “Administrative accountability is essential for good-governance and development.” Clarify.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)  ‘Rajya Sabha is a financial burden.’ Evaluate the statement.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2) Throw light on composition and the functions of ‘National Woman Commission’. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3) Write the major Provision of 74th Constitutional Amendment Act.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4) Write the functions of Consumer Court in the contest of Rights available to the consumers.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5)  Discuss the main provisions of ‘Protection of Women from Domestic Violence Act, 2005’. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.6) What is the meaning of ‘Judicial Activism’? Give arguments in favour and against.   (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="section-b-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="2-lines-3-marks-6">2 Lines 3 Marks</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) What is sustainable development?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) Mention two important factors influencing infant mortality rate.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) What is the meaning of “Lateral Entry” in Administration?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) What is the relationship between skilled manpower and foreign direct investment?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Mention any two examinations conducted by UPSC.</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) Explain concept of displacement and rehabilitation.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) What do you understand by Child Abuse?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) How domestic violence against women has been defined?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Mention the agencies to maintain Human Rights in India.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Mention three important factors contributing to increasing Globalisation.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) What is meant by fertility?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) What is Employees Provident fund?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) What is the plan of Universal Primary Education?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) What are functions of Indian Council of Agricultural Research?</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) Explain meaning of Social sector.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2) Write note on National Rural Health Mission.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3) Give suggestions to improve curative programmes of health.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4) Explain role of Immunization in controlling communicable diseases.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5) Name Govt. programmes for supplementary nutrition.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)  How education is a tool of H.R. Development?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7) What steps should be suggested for improvement of quality of higher education?   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)  Indicate problems of working women in India.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9) How displaced people are affected by development projects?   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10) What are problems being faced by ‘SAARC’?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.11)   Elaborate functions of Accountant General of Madhya Pradesh. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.12) Discuss structure of World Bank.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)  Define health. What are different types of health care? What are different types of home health care services during lockdown period?  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2) Who are differently abled persons? What are various schemes and programmes for differently able persons offered by Govt. of India? (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3) Define immunology. How shield strategy and enhanced shield strategy can reduce death rate among COVID-19 positive patients?  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4) What is Human Resource Development? How do goals of Human Resource Development lead to development of social system? What are features of Human Resource Development?  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5) What do you understand by vital statistics? What are methods for obtaining vital statistics? Why is vital statistics more important during COVID-19 period?   (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.6)  When is Public Service Day celebrated? How can public service be improved by changing governance system?  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<h1 id="2020">2020</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/mppsc%202020%20Paper_II.pdf' href='https://www.drishtiias.com/images/pdf/mppsc%202020%20Paper_II.pdf'>https://www.drishtiias.com/images/pdf/mppsc 2020 Paper_II.pdf</a></p>
+<h2 id="section-a-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="2-lines-3-marks-7">2 Lines 3 Marks</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) What do you understand by 'Objectives Resolution'?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) Point out three salient features of Fundamental Rights in Indian Constitution.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Define Judicial Review.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Explain the role of Comptroller and Auditor General of India.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) State the main functions of Administrative Tribunal as described in the 1985 Act.</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What do you mean by linguistic minority?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) When and why Balwantrai Mehta Committee was formed?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) What is the purpose of Protection of Child Rights Act, 2005?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Explain the doctrine of 'Popular Sovereignty' with reference to Public Administration.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) What are the main organs of a State according to Kautilya?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) What is the meaning of 'True Freedom' according to Tagore?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Which are the five pillars of democracy as described by Jaiprakash Narayan?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) What are the 'three Es' of New Public Management?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Point out the types of authorities described by Max Weber.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) What is the idea of 'Unity of Command'?</strong></span></strong></strong><br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  Write down the steps taken to bring social and economic changes through Constitutional Amendments.  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2) Define the term 'State autonomy' along with the reasons for the rise of its demand in India.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)  Write a short note on the guiding principles of NITI Ayog.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4) Write a brief description of the duties and functions of Election Commission of India.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5) Elucidate briefly the composition and powers of National Commission for Scheduled Tribes.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)  Press is considered as the Fourth Pillar of Democracy. Discuss.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7) Explain the concept of 'Four Pillar State' expressed by Ram Manohar Lohiya.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)  Explain the Trusteeship theory of Mohandas Karamchand Gandhi.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9) Discuss the concept of delegation and its benefits.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10) Authority and responsibility go hand in hand. Comment.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)  Critically examine the administrative distribution of powers with reference to Centre-State relations.  (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2) Write a critical note one ‘Judicial Activism’.</strong> (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)  Elucidate the major Electoral Reforms in India after 1996.</strong> (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4) Explain the role of media in influencing the voting behaviour of voters.</strong> (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5) Evaluate the role of National Human Rights Commission in protecting Human Rights in India.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.6) Explain the ideas of Constitutional Democracy of Dr. Ambedkar.</strong>   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.7) Discuss the evolution of the concept of 'Basic structure' and its importance in strengthening democracy.</strong>   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.8) Evaluate the concept of 'Sarvodaya' of Jaiprakash Narayan.</strong>  (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.9)  Discuss the significant stages in the evolution of Public Administration as discipline.</strong>  (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.10) Differentiate between Permanent Executives and Political Executives with suitable examples.</strong>  (11M200W)</span></strong></strong> <br>
+Ans</p>
+<h2 id="section-b-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="2-lines-3-marks-8">2 Lines 3 Marks</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) What is 'Farmer Producer Organisations Scheme'?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) What do you understand by 'Open Market Operations'?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) What do you understand by 'Special Drawing Rights' of International Monetary Fund?</strong></span></strong></strong>     <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Explain 'Chief Minister Farmer Welfare Scheme'.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Which are the main pulses crops of Madhya Pradesh?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) Which spice crops are included in 'Spice Area Extension Scheme'?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) In which Schedule the education as a subject is in the Indian Constitution? When it was included in the concurrent list?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) Who said? 'Neither Hindu nor Hindu traditions discouraged education among women.'</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Write three objectives of education.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Who considered civilisation as equal meaning to culture?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) In which book the description of four Ashramas mentioned first time?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Write any four impact of Hindu Dharma on Indian Society.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) Write any five negative impact of population explosion.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) What is 'Maiyari'?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) What is the goal of World Health Organisation?</strong></span></strong></strong><br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) Discuss the role of foreign assistance in economic development of India.   (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2) Write the causes of regional imbalances in India.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3) Highlight the favourable factors of industrial development in Madhya Pradesh.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)  Explain the main initiatives taken by Madhya Pradesh Govt. regarding Woman Policy of Madhya Pradesh, 2015.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5) Discuss the major goals of universalisation of elementary education.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6) Discuss the various aspects of intervention mentioned in National Policy of Senior Citizens, 2011.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7) What is clash of civilization?</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)  Explain the Family Court Act, 1984.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9) What is Sociology of Health and Health Care?</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10) What is malnutrition?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) What is Financial Inclusion? What are its objectives? In this context, discuss the role of Pradhan Mantri Jan-Dhan Yojana (PMJDY).   (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2) What is unemployment? What are the main causes of unemployment in India? Give a brief description about Make in India' and 'Aatmanirbhar Bharat Abhiyan.' (Self reliant India Campaign).</strong> (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3) What do you understand by Horticulture? How can horticulture double the income of farmers of Madhya Pradesh? State the various efforts to improve of agricultural marketing reforms by Madhya Pradesh Govt.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4) Which activities are included in service sector? Explain the role of tourism industry in Madhya Pradesh economy.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5) Write a short note on the status and challenges of Women's education.</strong> (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.6) Discuss the causes and solutions of the problems of the deprived class.</strong> (11M200W)<br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.7) Explain the meaning and sociological importance of Purushartha. (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.8) Evaluate the community development programme. (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.9) Define Kinship and explain the usages of Kinship. (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.10) Discuss the objectives and functions of World Health Organisation. (11M200W)</strong><br>
+</span>Ans</p>
+<h1 id="2021">2021</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/2021Mains_GS-II.pdf' href='https://www.drishtiias.com/images/pdf/2021Mains_GS-II.pdf'>https://www.drishtiias.com/images/pdf/2021Mains_GS-II.pdf</a></p>
+<h2 id="section-a-5"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="2-lines-3-marks-9">2 Lines 3 Marks</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Write five elements of the Preamble to the Constitution of India.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) What are any four aspects of liberty described in the Indian Constitution ?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Explain the basic rationale behind the Directive Principles of State Policy.</strong></span></strong></strong>     <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Write any two methods of recruitment by the Union Public Service Commission.</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) What are the two major categories of activities of NITI Aayog?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) Write four determining factors of voting behaviour.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) Write three salient features of 73rd Constitutional Amendment Act.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) What are the major advantages of self-help groups?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Describe the various dimensions of the role of media in elections.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Which are the four objectives of humankind narrated by Deendayal Upadhyaya?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Explain the economic ideas of Sardar Vallabhbhai Patel.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Bring out any two basic elements of New socialism propounded by Ram Manohar Lohia.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) Write names of any three branches of Public Administration as a discipline.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Name any two factors affecting the span of control.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Write any two advantages of delegation.</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) How is judicial activism different from judicial overreach Explain.    (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)  Indian federalism is moving from co-operative federalism to competitive federalism. Comment.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)  Indian Politics marks a shift from politicisation of caste to casteization of politics. Explain.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong>   Do you think coalitions are the key characteristics of party politics at the centre and the states? Discuss. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5) Discuss the functions of the Competition Commission of India.</strong>    (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6) What are the key limitations of the National Human Rights Commission?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7) Social democracy is the major basis of political democracy. Discuss with reference to the vision of Babasaheb Ambedkar.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8) Describe the key characteristics of integral humanism advocated by Deendayal Upadhyaya.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9) What is bounded rationality ? What role does it play in decision making?</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10) How is New Public Administration different from New Public Management?</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) Write a critical note on Indian Constitution.  (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) State the difference between Directive Principles of State Policy and Fundamental Rights.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2) What is the significance of Union Public Service Commission? Describe the suggestions for its reform.</strong>   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Define political party and point out the main features of the party sýstem in India.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3) What are the functional domains of the Central Vigilance Commission? Throw light on the key points of the Whistle Blower Protection Act.</strong>   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong>  What is meant by representation? Describe the different forms of proportional representation system.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)  What kind of society has been conceptualised by Ram Manohar Lohia for the establishment of social justice in the special conditions of India? Discuss in detail.</strong> (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)  &quot;Jayaprakash Narayan's view on democracy is closely linked to the ideals of Socialism and Sarvodaya.&quot; Explain this statement.</strong>  (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5) Explain the significance of Public Administration. Is Public Administration art or science ? Answer with suitable arguments.</strong>   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)  Explaining the characteristics of development administration, discuss the problems of development administration in India.</strong>  (11M200W)</span></strong></strong> <br>
+Ans</p>
+<h2 id="section-b-5"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="2-lines-3-marks-10">2 Lines 3 Marks</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Write the instruments of fiscal policy.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) In which of the sectors in India, the Foreign Direct Investment is not allowed (banned)?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) When was 'ASEAN' formed (established) and who were its member countries at the time of establishment?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) What are the major objectives of Industrial Promotion Policy 2021? Explain with reference to Madhya Pradesh.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Where is global skills park in Madhya Pradesh situated and when was it established and with whose help ?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) How many units were registered under MSME in the year 2021-22 in Madhya Pradesh and how many. persons got employment?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) When was Sarva Shiksha Abhiyan launched ?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) Who was the Chairman of the University Education Commission established in 1948?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) What is child labour according to Child Labour (Prohibition and Regulation) Act, 1986?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Which rituals are celebrated before birth ?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Write the names of Purusharthas.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Write the names of Ashramas in the right order.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) What is the purpose of Kasturba Gandhi Balika Vidyalaya?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Write the name of major tribe and its sub-tribes of the western region of Madhya Pradesh.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Which ministry is responsible for implementing the Mid-Day Meal Scheme?</strong></span></strong></strong> <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) Discuss the measures of Government for reduction of unemployment in India.   (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)  What do you understand by Bank Rate Policy and Open Market Operations?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)  Write the schemes run by Madhya Pradesh for the farmer's prosperity.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)  What is Service sector ? What is the contribution of service sector in Gross state value addition of Madhya Pradesh?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5) What are the key elements of 'Beti Bachao Beti Padhao' scheme?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)  What measures should be taken by the government to provide health care facilities to transgender person?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7) Write eight types of marriages prescribed for Hindus.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)   What are the aims of Pradhan Mantri Adarsh Gram Yojana?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)  As per census 2011 what is the education status of women in India?</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10) What are sexually transmitted diseases and how are they transmitted from one person to another ?</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) Describe different methods of measuring National Income and explain by which method National Income is measured in India.   (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)  Write any five major causes that bring disequilibrium in the balance of payment. Describe those measures which are used in India to correct it.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2) State the causes of increase in population of Madhya Pradesh and its effects on economy.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) To provide employment in Madhya Pradesh, what type of schemes are being run by government and what measures should government take?</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3) How would you like to reflect on the provisions of Article 15(4) and 15(5) established in the Constitution of India?</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)  What is 'Restructuring school curriculum and pedagogy in a new 5 + 3 + 3 + 4 design' of 'National Education Policy 2020' adopted by the Union Government of India? (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4) Define culture and outline some important functions of culture.   (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)  Describe the concept of 'Family Court' and its jurisdiction. (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5) Discuss the context and the purpose of ICDS to combat malnutrition in Irtdia.  (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Write a note on Non-Communicable Diseases (NCDs).  (11M200W)</strong><br>
+</span>Ans</p>
+<h1 id="2022">2022</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/Paper_GS_II_State_Service_Main_Exam_2022%20with%20cover.pdf' href='https://www.drishtiias.com/images/pdf/Paper_GS_II_State_Service_Main_Exam_2022%20with%20cover.pdf'>https://www.drishtiias.com/images/pdf/Paper_GS_II_State_Service_Main_Exam_2022 with cover.pdf</a></p>
+<h2 id="section-a-6"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="2m30w">2M30W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) What has been added to the 10th Amendment Act, 1961 of the Indian Constitution?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) .'In Bommai Case,  which  Justice  of the Supreme Court called the 'Preamble' as the integral part of the Constitution?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Which Articles of the Indian Constitution indicate the declaration of distribution of Legislative power between Union, and State?</strong></span></strong></strong>     <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) &quot;Political Parties are the PiUars of Modem Politics.&quot; Which scholar has mentioned this statement?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Who has the authority to decide the procedure for impeachment of the Chief Election Commissioner?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) When did Madhya Pradesh Public Service Commission conduct the first, competitive examination?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) Which system is meant by the term 'Panchayati Raj'?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) At what rate do Cooperative Banks give loan to all women self-help groups?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) When was telecommunication service started in Madhya Pradesh?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Who is the author of the book Hitopadesha?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Which new ideology was developed by Pandit Deendayal Upadhyaya? What is its name?&quot;</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) &quot;Unless man's economic needs are fulfilled, it is futile to expect cultural creativity from him.&quot; Whose statement is this? Explain.</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) Who gets the credit for developing and expanding the concept of Development Administration?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) What is meant by delegation?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) What are the determining factors of control?</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  What do you mean by the basic structure of the Constitution? List at least five elements of the basic structure.   (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong>  Discuss the Advisory Jurisdiction of the Supreme Court.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong>  What is the procedure for formation of a Joint Public Service Commission for two or more States? Explain.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong> Review the factors for the rise of Other Backward Classes . (OBC) in Indian Politics.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong> Discuss the challenges before women's representation in the Indian democratic process.    (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong> Elucidate the role of Non-Governmental Organizations (NGOs) in rural development.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)</strong> Discuss the diverse aspects of politics and statecraft described in Kautilya's Arthashastra.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong> What did Ambedkar mean by social democracy? Discuss.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)</strong>  What are the basic concerns of public administration as a field of study?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)</strong> What are the inter-relationships between authority and responsibility? Explain.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) Explain the content of the preamble of the Indian Constitution.  (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong>  Explaining the concept and purpose of Public Court, state who are eligible to get free legal aid. (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong> Explain the function of the Election Commission of India, keeping in mind its structure and organisation.   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span>  <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Is the role of caste in Indian politics a blessing or a curse ? Explain. (11M200W)</strong></span><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong> Explain the main functions of urban body under the 74th Constitutional Amendment mentioned in the 12th Schedule of the Constitution.   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span>  <strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">What is Artificial Intelligence? Explain the losses due to its misuse.  (11M200W)</span></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)</strong>  Explain the Satyagraha philosophy of Mahatma Gandhi and explain its various forms. (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span> <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Explain the concept of Four Pillar State of Ram Manohar Lohia?   (11M200W)</strong></span> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5)</strong> Explain the goals of the New Public Administration.    (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span> <strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">Explain the role of Public Administration in the developing countries.   (11M200W)</span></strong> <br>
+Ans</p>
+<h2 id="section-b-6"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="3m-20w">3M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) What is the objective of Minimum Support Price (MSP)?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) What is progressive taxation?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) What is the primary function of International Monetary Fund?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) What is the primary objective of Madhya Pradesh State Forest Development Corporation?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) What is the percentage of child population (0-14 years ) in Madhya Pradesh, as per Census 2011?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What is the aim of Mukhyamantri Gramin Path Vikreta Yojana?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) What is UGC?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) What is old age according to Oxford Dictionary?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) What is meant by deprived class?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) What is culture according to Broom and Selznick?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Write the key objective of Sanskar.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Which aspects of rural life does community development change?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) According to Census 2011, what is the population of Scheduled Tribes in Madhya Pradesh?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) What is Patalia Community? Where do they reside in Madhya Pradesh?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Why does immuno-deficiency occur?</strong></span></strong></strong> <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) What are the main components of Green Revolution in India?   (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong> What is included in the Non-Tax Revenue Receipts of Government of India?   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong>  What is the meaning of 'Current Account Full Convertibility'?   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong>  What is the scenario of Co-operative Banks in Madhya Pradesh?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong> Which is the first stage of elementary education?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong> Write the three stages of disability according to World Health Organization.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)</strong> It is simple to measure the civilization but not culture. Explain.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong>  What is NABARD? How is it useful for villagers?   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)</strong> What is vasectomy? Explain its surgical procedure.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)</strong>  Explain the GOL GADHEDO marriage custom in Bhil Tribe.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) Explain the possible impacts of Indian agriculture through World Trade Organisation.   (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong>  Explain the 'Make in India' initiative of Government of India. (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong> Explain the working population in Madhya Pradesh on the basis of their economic activities as per the Census 2011.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> Explain the infrastructural facilities for industries in Madhya Pradesh.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong>  Explain the challenges of vocational education' in India. Give solutions also. (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Write the main problems of the elderly people in India.  (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)  Explain the status of Women Reservation in Panchayati Raj system and its challenges  (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong>(OR)</strong></strong></span> <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>What is exogamy? Explain Gotra exogamy.  (11M200W)</strong></span><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5)  Discuss the important measures of population control. (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong>(OR)</strong></strong></span>  <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Avoidance and joking are opposite to each other in kinship customs. Explain. (11M200W)</strong></span><br>
+Ans</p>
+<p> </p>
+<h1 id="2023">2023</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20Exam_2023-II.pdf' href='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20Exam_2023-II.pdf'>https://www.drishtiias.com/images/pdf/MPPCS Mains Exam_2023-II.pdf</a></p>
+<h2 id="section-a-7"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="3m-20w-2">3M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Mention three federal features of the Indian Constitution.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) What are the three main objectives of Public Interest Litigation?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) What are the three importance of Judicial Review?</strong></span></strong></strong>     <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) How many types of Party System have been witnessed in India since independence?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) What is included in the ambit of civil society?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) Mention the seven pillars of NITI Aayog.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) Write down the two issues which are out of jurisdiction of National Human Rights Commission.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) What is the role of media during elections?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Define Non-Governmental Organisation (NOG).</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) How has Babasaheb Ambedkar defined Democracy?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) What is True Democracy' concept of Jayaprakash Narayan?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Write down any three points of Panchsheel Theory of J. L. Nehru.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) What is the main difference between old administration and new administration?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Define 'Span of Contror.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) What are the limits of authority?</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) Write the importance of the Preamble of the Indian Constitution.     (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2) On which grounds is the Constituent Assembly criticized?</strong>    (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3) What is the importance of the study of voting behaviour?</strong>     (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4) What is the scope of activities of the Comptroller and Auditor General of India?</strong>    (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong>  What are the key objectives of Central Information Commission?   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong> Mention the five reasons of ineffective performance of Panchayati Raj Institutions.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)</strong> Write down a short note on Ram Manohar Lohia's concept of 'Small Unit Technology'.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong> What were Mahatma Gandhi's views about the State?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)</strong>  Explain briefly the integral view of Public Administration.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)</strong> Differentiate between the features of classical and modern approaches of organisation.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)  &quot;Indian Parliament can amend the Constitution, but not its basic structure&quot; — comment. (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> Discuss the financial aspect of Centre-State relations with reference to 'One Nation One Tax' regime.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong> Discuss the contemporary non-traditional security challenges of India.   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> What do you mean by the independence of Election Commission of India? What are its guiding principles?  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong>  Critically evaluate the &quot;First Past The Post System' in the Indian context.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong>  Describe the rights of consumers under Consumer Protection Act, 1986.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)</strong>  Discuss the contemporary relevance of Kautilya's Foreign Policy. (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> 'Self-reliance' was among the main principles of Economic Policy of Sardar Patel. Discuss.   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5)</strong> Explain the Human Relation theory of organisation.   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong>  Discuss the contemporary trends and issues in Public Administration.   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<h2 id="section-b-7"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="3m-20w-3">3M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) What do you mean by commercialisation in Agriculture?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) What do you mean by Tree riders'?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Who are the beneficiary of social security and its key components?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) What is the major objective of Mukhyamantri Kisan Kalyan Yojana in Madhya Pradesh?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Which sectors have received significant capital expenditure contribution for development of infrastructure?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What is 'Hub &amp; Spoke' model in Madhya Pradesh?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) Write the meaning of elementary education.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) Who is considered a child labour as per Child Labour (Prohibition and Regulation) Act, 1986?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) What is punishable under Section 363-A of Indian Penal Code (IPC)?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Write the names of the four rituals after birth.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Which committee recommended democratic decentralization in India and when?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Write the meaning of Non-Governmental Organization.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) What is health?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Write the names of the main deities of Gond tribe.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) What is the purpose of Kasturba Gandhi Balika Vidyalaya?</strong></span></strong></strong>   <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  What is the concept of 'ease of doing business'?  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong> Explain the process of credit creation.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong> How is agroforestry-based silk production helpful to provide profitable employment to the villagers in Madhya Pradesh? Explain briefly.    (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong> What are the primary cropping patterns in different regions of Madhya Pradesh?   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong> Write down the factors inhibiting female literacy.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong>  Who are underprivileged?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)</strong> State the difference between material and non-material cultures.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong>  Write a note on family court.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)</strong> Explain the probationary marriage prevalent among the tribes.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)</strong> Write the socio-cultural factors of malnutrition.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)  Explain the concepts of direct taxes and indirect taxes in India and describe each with an example.  (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> Mention the contribution of service sector in Indian Economy and its main characteristics.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong> How does Madhya Pradesh Agricultural Marketing Board and warehousing corporation contribute to the State's agriculture, considering its initiative, storage capacity and benefits to farmers?  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) How does the State Government of Madhya Pradesh support MSME development through initiatives like Mukhyamantri Udyam Kranti Yojana and start-up policy?</strong>   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong>  Explain the Integrated Child Protection Scheme. (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong>  <strong>Write about the welfare schemes related to senior citizens. (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)   What changes have taken place in the nature and perception of Hindu marriage? Explain. (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Describe the historical development of extension education in India before independence.  (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5) What is National Population Policy? What are its long term objectives?  (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)  Explain communicable and non-communicable diseases with examples. (11M200W)</strong><br>
+</span>Ans</p>
+<p> </p>
+<h1 id="2024">2024</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/MPPSC_2024_Mains-GS_II.pdf' href='https://www.drishtiias.com/images/pdf/MPPSC_2024_Mains-GS_II.pdf'>https://www.drishtiias.com/images/pdf/MPPSC_2024_Mains-GS_II.pdf</a></p>
+<h2 id="section-a-8"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="3m-20w-4">3M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Name the four members of the Constitution Drafting Committee.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) What do you understand by Political Justice' mentioned in the Preamble of the Indian Constitution?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Which are the two new benches formed by the Supreme Court of India?</strong></span></strong></strong>     <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) What is the provision in Article 149 of the Indian Constitution?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) What are the four determinants of voting behaviour in Indian politics?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What is meant by 'Civil Society'?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) What is the meaning of Political Participation?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) Write four merits of universal adult franchise.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) What are the types of forts according to Kautilya?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) On 1st November, 1956, four legislative assemblies merged and reorganised Madhya, Pradesh. Write the names of these four legislative assemblies.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Discretionary Power of the Governor is mentioned in which Article of the Constitution?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Constitution committee for the Appointment of the Central Vigilance Commissioner and who heads the Committee?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) What is the tenure of the Chief Secretary?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Elucidate on Particularly Vulnerable Tribal Groups (PVTG) of Madhya Pradesh.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) What are the objectives of Ladli Behna Yojana?</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  Write the Directive Principles of State Policy related to environment and women.   (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong> ‘Coalition Politics has made federalism strong in India.’ Discuss.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong>  Analyze the positive effects of ‘One nation-One election’.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4) Mention 7 (seven) solutions for resolving the problem of National Integration.</strong>    (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5) Explain the ‘Single Transferable Vote System’.</strong>     (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong> Write the issues of democratic society according to Jai Prakash Narayan.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)</strong> Write the procedure of removal of High Court Judges.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong>  How is accountability there in Parliamentary Democraсу? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)</strong>  Write 7 (seven) recommendations of Ashok Mehta Committee.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)</strong>  Explain the causes of less representation of women <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">in</span></strong></strong> Madhya Pradesh Politic.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) Fundamental Rights and Directive Principles of State Policy are complementary to each other.' Explain.   (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Discuss the areas of conflict in financial aspects of Centre-State relations.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong>  Which institutional reforms have been done in the electoral process in the last three decades?  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span> <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Explain the functions of Public Service Commission and state the prohibitions for its members on ceasing to be such members.  (11M200W)</strong></span><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong> Discuss the essential conditions for the successful working of Democracу.   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span>  <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>'Sustainable development in the 21st century can only be achieved by the Gandhian path.' Discuss.  (11M200W)</strong></span><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)</strong> Chief Minister is the apex authority in State. Explain.  (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span>  <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Explain the functions of National Commission for Women and state its limitations.  (11M200W)</strong></span> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5)</strong> Describe the duties of the District Collector in Madhya Pradesh. Give suggestions to enhance the efficiency of the District Collector.   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span> <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Describe the functions of Janpad Panchayat according to Madhya Pradesh Panchayat Raj Avam Gram Swaraj Adhiniyam, 1993. Briefly state the problems confronting the Panchayat Raj.   (11M200W)</strong></span> <br>
+Ans</p>
+<h2 id="section-b-8"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="3m-20w-5">3M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Which word did John Stuart Mill suggest to use in place of Sociology? What was the reason to use that word?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) Whose statement is this that 'Family is a domestic group'? What else did he/she say about family?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) How is culture defined by Herskovits?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Generally how many Varnas were there? According to G. S. Ghurye, what were the two Varnas in the beginning?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Mention the types of suicide as mentioned by Durkheim.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) Which new Schedule was added in the 73rd Constitutional Amendment Act, 1993 and what effect did it have?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7)  According to United Nations' definition, what should be the population of an area to become a Megacity? Mention three large cities of India.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) What is the main basis of informal education? Mention its means.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) How is the density of the population of a country calculated?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) What is Emigration?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) National Education Policy-2020 is based on the report of which committee? What structural change has been done in school education?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) What are the three types of polygamy among tribes?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) Under which Section, the District Panchayat can be dissolved in Panchayati Raj System? Mention the tenure of District Panchayat and its members.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) What is the Manda or Mando custom in Korku tribe?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) What do you understand by extension education?</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  Explain tertiary category of kinship with example.  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong>  Explain briefly the Punsvan Sanskar.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong> Explain the regional/geographical diversities in India.    (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong> What is meant by cyber crime?   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong> 'Family tension is a cause of domestic violence.' Discuss.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong> How did westernization promote secularization in India?   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)</strong> What are the objectives of Prime Minister Kisan Samman Nidhi Yojana?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong>  Discuss Rural Faction and mention the names of a few scholars who worked on this.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)</strong> Differentiate between fertility and fecundity.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)</strong>  Describe briefly the religion and beliefs among the Gond tribes of Madhya Pradesh.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)  Discuss family as a major agency of socialization.  (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong>  Cultural trait can be divided but after division it becomes insignificant. Explain with example. (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong> &quot;Despite socio-cultural diversities, there is a unity in Indian social structure.&quot; Explain.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span> <strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">Explain the concept of Vansh (lineage). Why is Vansh (lineage) compared with bamboo? Discuss.  (11M200W)</span></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong>  Differentiate between rural and urban society. (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong>(OR)</strong></strong></span> <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Despite being different, tradition and modernity are comparable situations. Explain.   (11M200W)</strong></span><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)  How has urbanization created several problems in our social life? Discuss.  (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong>(OR)</strong></strong></span> <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Discuss the main causes of Agrarian unrest in India.  (11M200W)</strong></span><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5) Throw light on the main features of folk art and craft of Madhya Pradesh.  (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong>(OR)</strong></strong></span>  <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Explain each in 100 words.</strong></span><br>
+<span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(i) चाइल्ड लाइन सेवाएँ Child line services</strong></span><br>
+<span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(ii) धनलक्ष्मी योजना Dhanlaxmi Scheme</strong></span><br>
+<span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(11M200W)</strong></span><br>
+Ans</p>
+</div></div>
+					</body>
+				</html>
+			

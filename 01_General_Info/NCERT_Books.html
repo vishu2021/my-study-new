@@ -1,0 +1,3817 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="../atom-one-light.css">
+						<title>NCERT_Books  </title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">NCERT_Books  </div>
+
+<style>
+		/* https://necolas.github.io/normalize.css/ */
+		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
+		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
+		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
+
+		body {
+			font-size: 15px;
+			color: #32373F;
+			word-wrap: break-word;
+			line-height: 1.6em;
+			background-color: #ffffff;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+			padding-bottom: 0px;
+			padding-top: 0px;
+		}
+		kbd {
+			border: 1px solid rgb(220, 220, 220);
+			box-shadow: inset 0 -1px 0 rgb(220, 220, 220);
+			padding: 2px 4px;
+			border-radius: 3px;
+			background-color: rgb(243, 243, 243);
+		}
+
+		:root {
+			--scrollbar-size: 7px;
+		}
+
+		::-webkit-scrollbar {
+			width: var(--scrollbar-size);
+			height: var(--scrollbar-size);
+		}
+		::-webkit-scrollbar-thumb {
+			border-radius: calc(var(--scrollbar-size) / 2);
+		}
+		::-webkit-scrollbar-corner {
+			background: none;
+		}
+		::-webkit-scrollbar-track {
+			border: none;
+		}
+		::-webkit-scrollbar-thumb {
+			background: rgba(50, 55, 63, 0.54); 
+		}
+		::-webkit-scrollbar-track:hover {
+			background: rgba(0, 0, 0, 0.1); 
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background: rgba(50, 55, 63, 0.63); 
+		}
+
+		
+
+		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
+
+		#rendered-md > h1:first-child,
+		#rendered-md > h2:first-child,
+		#rendered-md > h3:first-child,
+		#rendered-md > h4:first-child,
+		#rendered-md > ul:first-child,
+		#rendered-md > ol:first-child,
+		#rendered-md > table:first-child,
+		#rendered-md > blockquote:first-child,
+		#rendered-md > img:first-child,
+		#rendered-md > p:first-child {
+			margin-top: 0;
+			padding-top: 0;
+		}
+		
+		p, h1, h2, h3, h4, h5, h6, ul, table {
+			margin-top: .6em;
+			margin-bottom: 1.35em;
+
+			/*
+				Adds support for RTL text in the note body. It automatically detects the direction using the content.
+				Issue: https://github.com/laurent22/joplin/issues/3991
+			*/
+			unicode-bidi: plaintext;
+		}
+
+		h1, h2, h3, h4, h5, h6, ul, table {
+			margin-bottom: 0.65em;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			line-height: 1.5em;
+		}
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			border-bottom: 1px solid #dddddd;
+			padding-bottom: .3em;
+		}
+		h2 {
+			font-size: 1.3em;
+			font-weight: bold;
+			padding-bottom: .1em; */
+		}
+		h3 {
+			font-size: 1.1em;
+			font-weight: bold;
+		}
+		h4, h5, h6 {
+			font-size: 1em;
+			font-weight: bold;
+		}
+
+		.exported-note-title {
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 0.8em;
+			line-height: 1.5em;
+			padding-bottom: .35em;
+			border-bottom: 1px solid #dddddd;
+		}
+
+		a {
+			color: #155BDA;
+		}
+		ul, ol {
+			padding-left: 0;
+			margin-left: 1.7em;
+		}
+		li {
+			margin-bottom: .4em;
+		}
+		li p {
+			margin-top: 0.2em;
+			margin-bottom: 0;
+		}
+
+		dt {
+			font-weight: bold;
+			margin-bottom: 0.25em;
+		}
+
+		dd {
+			margin-inline-start: 2.5em;
+			margin-bottom: 0.5em;
+		}
+
+		.resource-icon {
+			display: inline-block;
+			position: relative;
+			top: 0.3em;
+			text-decoration: none;
+			width: 1.2em;
+			height: 1.4em;
+			margin-right: 0.4em;
+			background-color:  #155BDA;
+		}
+    /* These icons are obtained from the wonderful ForkAwesome project by copying the src svgs 
+     * into the css classes below.
+     * svgs are obtained from https://github.com/ForkAwesome/Fork-Awesome/tree/master/src/icons/svg
+     * instead of the svg width, height property you must use a viewbox here, 0 0 1536 1792 is typically the actual size of the icon
+     * each line begins with the pre-amble -webkit-mask: url("data:image/svg+xml;utf8,
+     * and of course finishes with ");
+     * to prevent artifacts it is also necessary to include -webkit-mask-repeat: no-repeat;
+     * on the following line
+     * */
+		.fa-joplin {
+			/* Awesome Font file */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M373.834 128C168.227 128 0 296.223 0 501.834v788.336C0 1495.778 168.227 1664 373.834 1664h788.336c205.608 0 373.83-168.222 373.83-373.83V501.834C1536 296.224 1367.778 128 1162.17 128zm397.222 205.431h417.424a7.132 7.132 0 0 1 7.132 7.133v132.552c0 4.461-3.619 8.073-8.077 8.073h-57.23c-24.168 0-43.768 19.338-44.284 43.374v2.377h-.017v136.191h-.053l-.466 509.375c-5.02 77.667-39.222 149.056-96.324 201.046-60.28 54.834-141.948 85.017-229.962 85.017-12.45 0-25.208-.61-37.907-1.785-92.157-8.682-181.494-48.601-251.662-112.438-71.99-65.517-117.147-150.03-127.164-238-11.226-98.763 23.42-192.783 95.045-257.937 81.99-74.637 198.185-101.768 316.613-75.704 5.574 1.227 9.55 6.282 9.55 11.997v199.52c-.199 2.625-1.481 6.599-8.183 2.896-.663-.365-1.194-.511-1.653-.531-21.987-10.587-45.159-17.57-68.559-19.916-.38-.04-.757-.124-1.138-.163-.537-.048-1.034-.033-1.556-.075-4.13-.354-8.183-.517-12.203-.58-.87-.011-1.771-.127-2.641-.127-.486 0-.951.05-1.437.057-1.464.011-2.886.115-4.33.163-2.76.102-5.497.211-8.182.448-.273.024-.547.07-.835.097-25.509 2.4-47.864 11.104-65.012 25.47-.954.802-1.974 1.53-2.9 2.36a1.34 1.34 0 0 1-.168.146c-23.96 21.8-34.881 53.872-30.726 90.316 4.62 40.737 26.94 81.156 62.841 113.823 35.908 32.67 80.335 52.977 125.113 57.186 35.118 3.36 66.547-3.919 89.899-20.461a97.255 97.255 0 0 0 9.365-7.501c2.925-2.661 5.569-5.5 8.086-8.416.3-.348.672-.673.975-1.024 8.253-9.864 14.222-21.067 17.996-33.148.639-2.034 1.051-4.148 1.564-6.227.381-1.563.81-3.106 1.112-4.693.555-2.784.923-5.632 1.253-8.49.086-.709.183-1.414.237-2.128.492-4.893.693-9.858.55-14.91h.013V521.623c-2.01-22.626-20.78-40.434-43.928-40.434h-57.23a8.071 8.071 0 0 1-8.077-8.073V340.564a7.132 7.132 0 0 1 7.136-7.133z'/></svg>");
+		}
+		.fa-file-image {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-128-448v320H256v-192l192-192 128 128 384-384zm-832-192c-106 0-192-86-192-192s86-192 192-192 192 86 192 192-86 192-192 192z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-pdf {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-514-593c25 20 53 38 84 56 42-5 81-7 117-7 67 0 152 8 177 49 7 10 13 28 2 52-1 1-2 3-3 4v1c-3 18-18 38-71 38-64 0-161-29-245-73-139 15-285 46-392 83-103 176-182 262-242 262-10 0-19-2-28-7l-24-12c-3-1-4-3-6-5-5-5-9-16-6-36 10-46 64-123 188-188 8-5 18-2 23 6 1 1 2 3 2 4 31-51 67-116 107-197 45-90 80-178 104-262-32-109-42-221-24-287 7-25 22-40 42-40h22c15 0 27 5 35 15 12 14 15 36 9 68-1 3-2 6-4 8 1 3 1 5 1 8v30c-1 63-2 123-14 192 35 105 87 190 146 238zm-576 411c30-14 73-57 137-158-75 58-122 124-137 158zm398-920c-10 28-10 76-2 132 3-16 5-31 7-44 2-17 5-31 7-43 1-3 2-5 4-8-1-1-1-3-2-5-1-18-7-29-13-36 0 2-1 3-1 4zm-124 661c88-35 186-63 284-81-10-8-20-15-29-23-49-43-93-103-127-176-19 61-47 126-83 197-15 28-30 56-45 83zm646-16c-5-5-31-24-140-24 49 18 94 28 124 28 9 0 14 0 18-1 0-1-1-2-2-3z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-word {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM233 768v107h70l164 661h159l128-485c5-15 8-30 10-46 1-8 2-16 2-24h4l3 24c3 14 4 30 9 46l128 485h159l164-661h70V768h-300v107h90l-99 438c-4 16-6 33-7 46l-2 21h-4c0-6-2-14-3-21-3-13-5-30-9-46L825 768H711l-144 545c-4 16-5 33-8 46l-4 21h-4l-2-21c-1-13-3-30-7-46l-99-438h90V768H233z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-powerpoint {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-992-234v106h327v-106h-93v-167h137c43 0 82-2 118-15 90-31 146-124 146-233s-54-193-137-228c-38-15-84-19-130-19H416v107h92v555h-92zm353-280H650V882h120c35 0 62 6 83 18 36 21 56 62 56 115 0 56-20 99-62 120-21 10-47 15-78 15z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-excel {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-979-234v106h281v-106h-75l103-161c12-19 18-34 21-34h2c1 4 3 7 5 10 4 8 10 14 17 24l107 161h-76v106h291v-106h-68l-192-273 195-282h67V768H828v107h74l-103 159c-12 19-21 34-21 33h-2c-1-4-3-7-5-10-4-7-9-14-17-23L648 875h76V768H434v107h68l189 272-194 283h-68z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-audio {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM620 850c12 5 20 17 20 30v544c0 13-8 25-20 30-4 1-8 2-12 2-8 0-16-3-23-9l-166-167H288c-18 0-32-14-32-32v-192c0-18 14-32 32-32h131l166-167c10-9 23-12 35-7zm417 689c19 0 37-8 50-24 83-102 129-231 129-363s-46-261-129-363c-22-28-63-32-90-10-28 23-32 63-9 91 65 80 100 178 100 282s-35 202-100 282c-23 28-19 68 9 90 12 10 26 15 40 15zm-211-148c17 0 34-7 47-20 56-60 87-137 87-219s-31-159-87-219c-24-26-65-27-91-3-25 24-27 65-2 91 33 36 52 82 52 131s-19 95-52 131c-25 26-23 67 2 91 13 11 29 17 44 17z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-video {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM768 768c70 0 128 58 128 128v384c0 70-58 128-128 128H384c-70 0-128-58-128-128V896c0-70 58-128 128-128h384zm492 2c12 5 20 17 20 30v576c0 13-8 25-20 30-4 1-8 2-12 2-8 0-17-3-23-9l-265-266v-90l265-266c6-6 15-9 23-9 4 0 8 1 12 2z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-archive {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M640 384V256H512v128h128zm128 128V384H640v128h128zM640 640V512H512v128h128zm128 128V640H640v128h128zm700-388c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H768v128H640V128H128v1536h1280zM781 943c85 287 107 349 107 349 5 17 8 34 8 52 0 111-108 192-256 192s-256-81-256-192c0-18 3-35 8-52 0 0 21-62 120-396V768h128v128h79c29 0 54 19 62 47zm-141 465c71 0 128-29 128-64s-57-64-128-64-128 29-128 64 57 64 128 64z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-code {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM480 768c11-14 31-17 45-6l51 38c14 11 17 31 6 45l-182 243 182 243c11 14 8 34-6 45l-51 38c-14 11-34 8-45-6l-226-301c-8-11-8-27 0-38zm802 301c8 11 8 27 0 38l-226 301c-11 14-31 17-45 6l-51-38c-14-11-17-31-6-45l182-243-182-243c-11-14-8-34 6-45l51-38c14-11 34-8 45 6zm-620 461c-18-3-29-20-26-37l138-831c3-18 20-29 37-26l63 10c18 3 29 20 26 37l-138 831c-3 18-20 29-37 26z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-alt, .fa-file-csv {
+      /* fork-awesome doesn't have csv so we use the text icon */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM384 800c0-18 14-32 32-32h704c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64zm736 224c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704zm0 256c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		blockquote {
+			border-left: 4px solid rgb(220, 220, 220);
+			padding-left: 1.2em;
+			margin-left: 0;
+			opacity: 0.7;
+		}
+
+		.jop-tinymce table,
+		table {
+			text-align: left;
+			border-collapse: collapse;
+			border: 1px solid rgb(220, 220, 220);
+			background-color: #ffffff;
+		}
+
+		.jop-tinymce table td, .jop-tinymce table th,
+		table td, th {
+			text-align: left;
+			padding: .5em 1em .5em 1em;
+			font-size: 15;
+			color: #32373F;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+		}
+
+		.jop-tinymce table td,
+		table td {
+			border: 1px solid rgb(220, 220, 220);
+		}
+
+		.jop-tinymce table th,
+		table th {
+			border: 1px solid rgb(220, 220, 220);
+			border-bottom: 2px solid rgb(220, 220, 220);
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:nth-child(even),
+		table tr:nth-child(even) {
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:hover,
+		table tr:hover {
+			background-color: #e5e5e5;
+		}
+
+		hr {
+			border: none;
+			border-bottom: 2px solid #dddddd;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		.inline-code,
+		.mce-content-body code {
+			border: 1px solid rgb(220, 220, 220);
+			background-color: rgb(243, 243, 243);
+			padding-right: .2em;
+			padding-left: .2em;
+			border-radius: .25em;
+			color: rgb(0,0,0);
+			font-size: .9em;
+		}
+
+		.highlighted-keyword {
+			background-color: #F3B717;
+			color: black;
+		}
+
+		
+	.not-loaded-resource img {
+		width: 1.15em;
+		height: 1.15em;
+		background: white;
+		padding: 2px !important;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px #000000aa;
+	}
+
+	a.not-loaded-resource img {
+		margin-right: .2em;
+	}
+
+	a.not-loaded-resource {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+
+		.md-checkbox input[type=checkbox]:checked {
+			opacity: 0.7;
+		}
+
+		.jop-tinymce ul.joplin-checklist .checked,
+		.md-checkbox .checkbox-label-checked {
+			opacity: 0.5;
+		}
+
+		.exported-note {
+			padding: 1em;
+		}
+
+		.joplin-editable .joplin-source {
+			display: none;
+		}
+
+		mark {
+			background: #F7D26E;
+			color: black;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		.mce-content-body {
+			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
+			padding: 5px 10px 10em 0;
+		}
+
+		/*
+		.mce-content-body code {
+			background-color: transparent;
+		}
+		*/
+
+		.mce-content-body [data-mce-selected=inline-boundary] {
+			background-color: transparent;
+		}
+
+		.mce-content-body .joplin-editable {
+			cursor: pointer !important;
+		}
+
+		.mce-content-body.mce-content-readonly {
+			opacity: 0.5;
+		}
+
+		/* We need that to make sure click events have the A has a target */
+		.katex a span {
+			pointer-events: none;
+		}
+
+		.media-player {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.media-player.media-pdf {
+			min-height: 35rem;
+			width: 100%;
+			max-width: 1000px;
+			margin: 0;
+			border: 0;
+			display: block;
+		}
+
+		/* Clear the CODE style if the element is within a joplin-editable block */
+		.mce-content-body .joplin-editable code {
+			border: none;
+			background: none;
+			padding: 0;
+			color: inherit;
+			font-size: inherit;
+		}
+
+		/* To make code blocks horizontally scrollable */
+		/* https://github.com/laurent22/joplin/issues/5740 */
+		pre.hljs {
+			overflow-x: auto;
+		}
+
+		.joplin-table-wrapper{
+			overflow-x: auto;
+			overflow-y: hidden;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		@media print {
+			body {
+				height: auto !important;
+			}
+
+			pre {
+				white-space: pre-wrap;
+			}
+
+			.code, .inline-code {
+				border: 1px solid #CBCBCB;
+			}
+
+			#joplin-container-content {
+				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
+				   around various issues related to scrolling. However when printing we don't want this
+				   fixed size as that would crop the content. So we set it to auto here. "important" is
+				   needed to override the style set by JavaScript at the element-level. */
+				height: auto !important;
+			}
+		}
+	
+
+				/*
+					FOR THE MARKDOWN EDITOR
+				*/
+
+				/* Remove the indentation from the checkboxes at the root of the document
+				   (otherwise they are too far right), but keep it for their children to allow
+				   nested lists. Make sure this value matches the UL margin. */
+
+				li.md-checkbox {
+					list-style-type: none;
+				}
+
+				li.md-checkbox input[type=checkbox] {
+					margin-left: -1.71em;
+					margin-right: 0.7em;
+					position: relative;
+					top: 1px;
+				}
+				
+				ul.joplin-checklist {
+					list-style:none;
+				}
+
+				/*
+					FOR THE RICH TEXT EDITOR
+				*/
+
+				ul.joplin-checklist li::before {
+					content:"\f14a";
+					font-family:"Font Awesome 5 Free";
+					background-size: 16px 16px;
+					pointer-events: all;
+					cursor: pointer;
+					width: 1em;
+					height: 1em;
+					margin-left: -1.3em;
+					position: absolute;
+					color: #32373F;
+				}
+
+				.joplin-checklist li:not(.checked)::before {
+					content:"\f0c8";
+				}
+.mermaid { width: 640px; }
+pre.mermaid[data-processed=true] { white-space: unset; }
+.mermaid-export-graph {
+					opacity: 0;
+					height: 0;
+					z-index: 1;
+					position: relative;
+				} 
+				.joplin-editable:hover .mermaid-export-graph,
+				.joplin-editable .mermaid-export-graph:has(:focus-visible) {
+					opacity: 1;
+				}
+				.mermaid-export-graph > button:hover {
+					background-color: #CBDAF1 !important;
+				}</style><div id="rendered-md"><h1 id="prompt-for-ai"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">PROMPT FOR AI</span></h1>
+<p>&quot;Analyze this UPSC Mains question from [Year, Paper, Question No.]. Provide an answer that follows UPSC's GS/ESSAY answer guidelines with:</p>
+<p>1. Introduction (contextual, balanced)<br>
+2. Body with headings/subheadings<br>
+3. Multi-dimensional analysis (political, economic, social, environmental, ethical)<br>
+4. Current examples/data (post-2020)<br>
+5. Balanced conclusion with way forward<br>
+6. Keywords UPSC expects<br>
+7. Word limit: [250/150/1000 as per question]<br>
+8. Clarity over Complexity - Simple, clear language<br>
+9. Structure - Logical flow with signposting<br>
+10. Balance - Multiple perspectives without bias<br>
+11. Current Relevance - Latest examples, data, schemes<br>
+12. Answer Directly - Address all parts of question</p>
+<p>Question: [Paste question here]&quot;</p>
+<p> </p>
+<h1 id="important-caution"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">Important Caution:</span></h1>
+<p>No AI can guarantee &quot;maximum marks&quot; - UPSC evaluates original thinking, critical analysis, and unique insights. Use AI for:</p>
+<p>Structuring practice</p>
+<p>Understanding demand of questions</p>
+<p>Getting different perspectives</p>
+<p>Improving presentation</p>
+<p>But always add your own:</p>
+<p>Local examples</p>
+<p>Personal observations</p>
+<p>Innovative solutions</p>
+<p>Ethical dimensions</p>
+<p>Final Verdict: DeepSeek for daily practice + ChatGPT for occasional polish + Human evaluation for final improvement. The best answer comes from your mind - AI is just a tool to refine it! 🚀</p>
+<h1 id="ncert-books-strategy"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">NCERT Books - Strategy</span></h1>
+<p><strong>Micro Topics of UPSC Syllabus</strong></p>
+<p><a data-from-md title='https://iasscore.in/upsc-syllabus/history' href='https://iasscore.in/upsc-syllabus/history'>https://iasscore.in/upsc-syllabus/history</a></p>
+<p><strong>Order of Reading NCERT:</strong></p>
+<ul>
+<li>
+<p>Geography</p>
+</li>
+<li>
+<p>Economics</p>
+</li>
+<li>
+<p>Polity</p>
+</li>
+<li>
+<p>History</p>
+</li>
+<li>
+<p>Sociology</p>
+</li>
+</ul>
+<p><strong>NOTE:</strong></p>
+<ol>
+<li>
+<p>Developing analytical ability requires interlinking subjects and creating new perspectives from it.</p>
+</li>
+<li>
+<p>That's the main requirement of this examination and this is the reason why we need to read NCERTs.</p>
+</li>
+<li>
+<p>NCERTs are not only easy to understand but also has government backing. This is important.</p>
+</li>
+</ol>
+<p><strong>Strong Foundation</strong> — (builds)→ <strong>Conceptual Clarity</strong> —(helps in)→ <strong>Interlinkage</strong> —(gives)→ <strong>Analytical Thinking</strong></p>
+<p><strong>For Guess Work in Pre :</strong></p>
+<ol>
+<li>
+<p>Videos of Anshuman Rajhans (available in Youtube)</p>
+</li>
+<li>
+<p>Blog of Archit Chandak</p>
+</li>
+<li>
+<p>Manish Kumar (Youtube channel: Hardworking Human)</p>
+</li>
+</ol>
+<p><strong>CALMNESS, CONFIDENCE, CONCENTRATION</strong> and <strong>COMMON SENSE</strong></p>
+<p>**(**very important <em><strong>as UPSC is a general exam and sometimes we need to see it from a COMMON MAN’s point of view).</strong></em></p>
+<p>You must have heard that NCERT books are must read books if you want to crack UPSC. Today I will decode it. I will focus on <strong>why, when, how, which</strong> and <strong>what</strong> to prepare from them.</p>
+<p><em><strong>Why</strong></em></p>
+<p>You can not build a great building on a weak foundation.</p>
+<p>If UPSC Civil Service Exam is superstructure then NCERTs are the bases.</p>
+<p>You should read them because</p>
+<ol>
+<li>
+<p>They will help you to start the habit of learning.</p>
+<p>The topics also converge with the demands of UPSC.</p>
+</li>
+<li>
+<p>They are written in very simple language and from neutral perspective.</p>
+</li>
+<li>
+<p>UPSC wants to provide level playing field for all.</p>
+<p>These books are not costly, readily accessible everywhere for all regardless of rich -poor or city-villages.</p>
+</li>
+<li>
+<p>Every year at least 30-35 questions are directly asked from NCERTs.</p>
+</li>
+<li>
+<p>Most importantly today’s era is flooded with vast information, contents and materials.</p>
+<p>Here NCERT books will filter the excesses.</p>
+<p>They will be time and content efficient.</p>
+</li>
+<li>
+<p>If you are planning for humanities optional, but you are from non-humanities background,</p>
+<p>then after going through these books it will be easier to choose optional according to your personality.</p>
+</li>
+</ol>
+<p><em><strong>When</strong></em></p>
+<ol>
+<li>
+<p>Next question comes in mind is when one should read them?</p>
+</li>
+<li>
+<p>The answer is very simple.</p>
+</li>
+<li>
+<p>From the very first day you decide to become an officer.</p>
+</li>
+<li>
+<p>Before buying the essential reference books or joining in any academy you should complete them.</p>
+</li>
+<li>
+<p>The UPSC syllabus will seem much easier for you.</p>
+</li>
+<li>
+<p>First 2-3 months of your preparation should be focused on NCERTs only.</p>
+</li>
+</ol>
+<p><em><strong>How</strong></em></p>
+<p>You may choose a single subject for a limited timeframe.</p>
+<p>Suppose you want to prepare history.</p>
+<p>Then start from class 6 books to class 7, next class 8,9,10,11 and class 12 comes gradually.</p>
+<p><strong>While Reading:</strong></p>
+<ul>
+<li>
+<p>Underline in the 1st reading.</p>
+</li>
+<li>
+<p>Read and optimise the underlined stuff in the 2nd reading.</p>
+</li>
+<li>
+<p>Make short notes in 3rd reading.</p>
+</li>
+<li>
+<p>Now forget about book. Just rely on notes.</p>
+</li>
+<li>
+<p>Revise them monthly.</p>
+</li>
+<li>
+<p>After some revision you should reach such a standard that</p>
+<p>it will take only 4-5 hours to revise the entire subject from class 6 to class 12.</p>
+</li>
+<li>
+<p>Do not forget that it is not about completing the NCERTs,</p>
+<p>but remembering the key concepts and facts for mains and preliminary respectively.</p>
+</li>
+</ul>
+<p><em><strong>Which</strong></em></p>
+<p>The most important books are listed below.</p>
+<p><strong>History</strong></p>
+<ul>
+<li>
+<p>Class 12: Themes in Indian History I, II and III (new syllabus)</p>
+</li>
+<li>
+<p>Class 12: Modern India (old syllabus)</p>
+</li>
+<li>
+<p>Class 11: Ancient India, medieval India (old syllabus)</p>
+</li>
+</ul>
+<p><strong>Art &amp; Culture</strong></p>
+<p>Class 11: An Introduction to Indian Art</p>
+<p><strong>Geography</strong></p>
+<ul>
+<li>
+<p>Class 7: Our Environment</p>
+</li>
+<li>
+<p>Class 8: Resources and Development</p>
+</li>
+<li>
+<p>Class 11: Fundamentals of Physical Geography</p>
+</li>
+<li>
+<p>Class 11: India - Physical Environment</p>
+</li>
+<li>
+<p>Class 12: Fundamentals of Human Geography</p>
+</li>
+<li>
+<p>Class 12: India - People and Economy</p>
+</li>
+</ul>
+<p><strong>Economics</strong></p>
+<ul>
+<li>
+<p>Class 10: Understanding Economic Development</p>
+</li>
+<li>
+<p>Class 11: Indian Economic Development</p>
+</li>
+<li>
+<p>Class 12: Introductory Macroeconomics</p>
+</li>
+</ul>
+<p><strong>Polity</strong></p>
+<ul>
+<li>
+<p>Class 9: Democratic Politics I</p>
+</li>
+<li>
+<p>Class 10: Democratic Politics II</p>
+</li>
+<li>
+<p>Class 11: Indian Constitution at work</p>
+</li>
+<li>
+<p>Class 11: Political Theory</p>
+</li>
+<li>
+<p>Class 12: Contemporary World Politics</p>
+</li>
+<li>
+<p>Class 12: Politics in India since Independence</p>
+</li>
+</ul>
+<p><strong>Sociology</strong></p>
+<p>Class 12: Social change &amp; development in India</p>
+<p><strong>Indian Society</strong></p>
+<p>Class 11: Sociology: Understanding Society</p>
+<p>Class 12: Indian society</p>
+<p><strong>Environment and Ecology</strong></p>
+<p>Class 12: Biology: Last four chapters (13 to 16)</p>
+<p>Chapters on Biotechnology</p>
+<p><em><strong>What</strong></em></p>
+<p>Now we will discuss what to prepare from them.</p>
+<p><em><strong>History :</strong></em></p>
+<ul>
+<li>
+<p>Read it from timeline perspective.</p>
+</li>
+<li>
+<p>It will help both in preliminary and mains.</p>
+</li>
+<li>
+<p>For preliminary focus on facts and for mains focus on contexts.</p>
+</li>
+</ul>
+<p><strong><em>Geography</em> :</strong></p>
+<p>Learn all the maps, rivers, mountain ranges, passes mentioned in book.</p>
+<p><strong><em>Art &amp; Culture</em>:</strong></p>
+<p>The 11th standard book is very important for Gs 1 paper.</p>
+<p><strong><em>Polity</em> :</strong></p>
+<ul>
+<li>
+<p>No need to make notes like other subjects.</p>
+</li>
+<li>
+<p>Read it from essay writing perspective.</p>
+</li>
+<li>
+<p>Focus on philosophical lines which are based on facts.</p>
+</li>
+</ul>
+<p><em><strong>Sociology :</strong></em></p>
+<ul>
+<li>
+<p>It will give you the basic idea to understand the current dynamics of Indian society.</p>
+</li>
+<li>
+<p>Also read according to social issues mentioned in mains syllabus.</p>
+</li>
+<li>
+<p>Give preference to sections related to women, children, class, caste and other deprived section.</p>
+</li>
+</ul>
+<p><strong><em>Environment and Biology</em> :</strong></p>
+<ul>
+<li>
+<p>Every year on average 10-12 questions are asked from this area.</p>
+</li>
+<li>
+<p>But you have link them with current trends around the world.</p>
+</li>
+<li>
+<p>Now you have a clear picture. Start the foundation early so that you can reach the top early.</p>
+</li>
+</ul>
+<p><strong>Don’t waste time.</strong></p>
+<p><strong>Best of luck!</strong></p>
+<p><strong>Benefits of Reading NCERT Books for Preparation of UPSC CSE:</strong></p>
+<p>NCERT books are highly recommended for aspirants preparing for the UPSC Civil Services Examination (CSE) for several reasons.</p>
+<p>Here are some benefits of reading NCERT books for the preparation of UPSC CSE:</p>
+<ol>
+<li>
+<p><strong>NCERT books provide a strong foundation:</strong></p>
+<p>The books published by NCERT cover a wide range of topics in a comprehensive manner,</p>
+<p>providing a strong foundation for aspirants preparing for the UPSC CSE.</p>
+</li>
+<li>
+<p><strong>Easy to understand:</strong></p>
+<p>The language used in NCERT books is simple and easy to understand,</p>
+<p>making it ideal for beginners who are just starting their preparation for the UPSC CSE.</p>
+</li>
+<li>
+<p><strong>Covers basic concepts:</strong></p>
+<p>NCERT books cover the basic concepts of each subject in a clear and concise manner,</p>
+<p>making it easier for aspirants to grasp the fundamental concepts.</p>
+</li>
+<li>
+<p><strong>Useful for prelims and mains:</strong></p>
+<p>NCERT books cover a wide range of subjects and topics that</p>
+<p>are important for both the UPSC CSE prelims and mains examinations.</p>
+</li>
+<li>
+<p><strong>Good source for static information:</strong></p>
+<p>NCERT books provide reliable and accurate information on various subjects that</p>
+<p>are necessary for the UPSC CSE examination.</p>
+<p>They also provide a good source of static information that remains relevant for years.</p>
+</li>
+<li>
+<p><strong>Helps in building analytical skills:</strong></p>
+<p>NCERT books often include questions at the end of each chapter,</p>
+<p>which helps in building analytical skills and prepares aspirants for the UPSC CSE examination.</p>
+</li>
+<li>
+<p><strong>Cost-effective:</strong></p>
+<p>NCERT books are relatively inexpensive compared to other reference books,</p>
+<p>making them an affordable option for aspirants preparing for the UPSC CSE.</p>
+</li>
+</ol>
+<p>Overall, NCERT books are an essential tool for aspirants preparing for the UPSC CSE.</p>
+<p>They provide a strong foundation, cover basic concepts, and are useful for both the prelims and mains exams.</p>
+<p>Additionally, they are easy to understand and a cost-effective option for those preparing for the exam.</p>
+<p><strong>How do I crack the UPSC CSE in the first attempt while being under any circumstances ?</strong></p>
+<ul>
+<li>
+<p>I will share my story and the strategy that I followed to clear the coveted Civil Services Exam in the first attempt.</p>
+</li>
+<li>
+<p>First of all, let me tell you a bit about myself. Civil services was never childhood dream.</p>
+</li>
+<li>
+<p><strong>I did not start preparing from my school days and if anyone tells you that you need to start preparing from 8th standard,</strong></p>
+</li>
+<li>
+<p><strong>it is a myth and do not take them at face value</strong>.</p>
+</li>
+<li>
+<p>I did my B.Tech from College of Engineering, Trivandrum in Kerala.</p>
+</li>
+<li>
+<p>After graduating in 2015 I was working with ITC Limited, as a mechanical engineer. It was during my stint at ITC that I decided to prepare.</p>
+</li>
+<li>
+<p>So, I put in my papers in the June of 2016 and started preparing from July 2016.</p>
+</li>
+</ul>
+<p><strong>Term of preparation:</strong></p>
+<ul>
+<li>
+<p>I started my preps from July 2016 and wrote Prelims in June 2017.</p>
+</li>
+<li>
+<p>So that is a total of 11 months of focused preparation before appearing for CSE 2017.</p>
+</li>
+<li>
+<p>So let me now come to the topic of how to crack civil services in the first attempt.</p>
+</li>
+<li>
+<p>These are some prerequisites that anyone should have before starting their preparation.</p>
+</li>
+</ul>
+<ol>
+<li>
+<p><strong>Unflinching self belief :-</strong></p>
+<p>No one in the world is going to believe in you and your capabilities.</p>
+<p>And every tom, dick and harry will not miss any opportunity to question your abilities and to blame you for every decision.</p>
+<p>So you of all people should believe in you,</p>
+<p>without that kind of confidence in yourself,</p>
+<p>seeing through this exam would become a Herculean task.</p>
+</li>
+<li>
+<p><strong>Having an original plan/strategy :-</strong></p>
+<p>Before I started my preparation for civil services,</p>
+<p>I had gone through strategies of many toppers.</p>
+<p>What I found out was that no two people had cleared this exam with the same strategy,</p>
+<p>but the common factor that runs through all those toppers were that they had their own strategies.</p>
+<p><strong>Now that is rule number one.</strong></p>
+<p><strong>Do not blindly follow the strategy shown to you by a coaching institute or any topper,</strong></p>
+<p><strong>you need to have your own plan which magnifies your strong points and diminishes your weaknesses.</strong></p>
+</li>
+<li>
+<p><strong>Be tougher than the exam :-</strong></p>
+<p>The civil services exam is dubiously dubbed as the toughest exam in the world.</p>
+<p>So to master the exam you need to tougher than it.</p>
+<p>You need to be prepared to face failures and get up and fight back stronger.</p>
+</li>
+<li>
+<p><strong>Know your syllabus :-</strong></p>
+<p>The most common mistake that most aspirants make is that they fail to go through the syllabus for the exam.</p>
+<p>Knowing what the syllabus demands and not demands is absolutely necessary for clearing this exam.</p>
+<p>Only then will we be able to target our efforts for quick results.</p>
+<p>Merely pouring through volumes and volumes of history and geography is not what the exam demands.</p>
+<p>There is a very highly defined syllabus and our effort should be to cover as much of the syllabus with as much clarity as possible.</p>
+</li>
+<li>
+<p><strong>It is breadth that matters and not depth :-</strong></p>
+<p>The Civil Services Exam is an examination to recruit <em><strong>Generalist Bureaucrats</strong></em> who would be able to handle any department under the government.</p>
+<p>The exam, therefore, demands the exact same thing, your vastness and breadth of understanding matters and</p>
+<p>not depth of understanding in any subject.</p>
+<p>A common mistake that I have seen aspirants make is that they try to cover a subject from cover to cover and</p>
+<p>in the end amassing[to collect or put together a large quantity of something] as much knowledge in the subject as</p>
+<p>a PhD holder in that subject would have.</p>
+<p>Whereas the exam demands a mere fraction of that knowledge.</p>
+</li>
+</ol>
+<p><strong>Should one attend a coaching class to clear Civil Service Exam?</strong></p>
+<ul>
+<li>
+<p>This is perhaps the first decision any civil service aspirant will have to make before starting your preparation.</p>
+</li>
+<li>
+<p>Now this is highly subjective.</p>
+</li>
+<li>
+<p>Given the huge amount of online content that is available now-a-days it is perfectly possible to clear the CSE without joining any coaching institute.</p>
+</li>
+<li>
+<p>But I had enrolled at a coaching centre in Kerala.</p>
+</li>
+<li>
+<p>I did so because, at the start of my preparation I had absolutely no idea about the exam or how to prepare for the same.</p>
+</li>
+<li>
+<p>So for me some amount of guidance and handholding was necessary for me.</p>
+</li>
+<li>
+<p>Now I should add a word of caution here. Even if a candidate decides to join some coaching class there is only so much classes can do</p>
+</li>
+<li>
+<p>(at best say 20–30% of the work might get done in a classroom),</p>
+</li>
+<li>
+<p>it will entirely depend on how much effort that you put in that will decide your result.</p>
+</li>
+</ul>
+<p><strong>What books should I read?</strong></p>
+<p>This is again a very subjective topic and there is not a single comprehensive book list that will help you clear this exam.</p>
+<p><strong>NCERT Text books of history, geography, economics and polity from class Vi to XII</strong> are a must read in my opinion.</p>
+<ul>
+<li>
+<p>Reading these books will help you cover and basics and create a strong foundation which you can supplement with your further reading.</p>
+</li>
+<li>
+<p>Personally almost 60% of my knowledge base for the static subjects come from NCERT text books.</p>
+</li>
+<li>
+<p>Below is a list of books that I followed for my preparation.</p>
+</li>
+</ul>
+<p><strong>The key here is to select the books you are comfortable with and to stick with them.</strong></p>
+<p><strong>Reading all the material that comes out daily is both impractical and unfruitful. Reading the same texts multiple times will be much more beneficial.</strong></p>
+<p><strong>How important is newspaper reading?</strong></p>
+<ul>
+<li>
+<p>Newspapers are vital for any preparation strategy.</p>
+</li>
+<li>
+<p>I used to spend atleast 2–3 hours daily reading the newspaper.</p>
+</li>
+<li>
+<p>It helps one cement the concepts and helps you evolve opinions and will help you analyse a given situation from multiple perspectives.</p>
+</li>
+<li>
+<p>This will come in handy especially during mains and interview stages.</p>
+</li>
+<li>
+<p>I used to prepare notes from The Hindu daily on the evernote app.</p>
+</li>
+<li>
+<p>This helped me stay organised. During the last 2 months of prelims preparation,</p>
+</li>
+<li>
+<p>I further reduced my one year worth of newspaper notes into crisp notes that filled one 100 page notebook.</p>
+</li>
+<li>
+<p>I read this condensed version multiple times and was the major source for current affairs preparation for prelims as well as mains.</p>
+</li>
+</ul>
+<p><strong>How important is mock exams?</strong></p>
+<ul>
+<li>
+<p><strong>Mocks tests are very very very very very important in all the three stages of the exam.</strong></p>
+</li>
+<li>
+<p>I cannot stress the importance of mock tests any more.</p>
+</li>
+<li>
+<p>For Prelims, giving lot of mock tests will help you refine your strategy to maximise your scoring.</p>
+</li>
+<li>
+<p>For some answering only those questions which they are absolutely sure of will do the trick.</p>
+</li>
+<li>
+<p>Whereas for someone else (like me) maximizing the number of attempts may help clear the cut off.</p>
+</li>
+<li>
+<p>And there is only one way to find out the strategy that will work for you, do umpteen number of mock exams.</p>
+</li>
+<li>
+<p>Perhaps, mock tests for mains are the most important.</p>
+</li>
+<li>
+<p>In mains it is not how much you know that matters,</p>
+</li>
+<li>
+<p>but how well you can articulate the things that you know in the limited time that is available.</p>
+</li>
+<li>
+<p>Mains answer writing is a skill, which can be mastered only with practice.</p>
+</li>
+</ul>
+<p><strong>Choosing the right optional subject</strong></p>
+<p>The optional paper can make or break your career. So be very careful in choosing your optional.</p>
+<p>Your criteria while choosing the optional should be</p>
+<ol>
+<li>
+<p>Do you like the subject, enough to spend thousands of hours pouring over it.</p>
+</li>
+<li>
+<p>Is there good guidance available for the subject.</p>
+<p>Especially are there good mock tests with good feedback available for the chosen subject.</p>
+</li>
+<li>
+<p>Also check the trend of past few years and check the scoring trend.</p>
+<p>However this should be the last consideration and the primary consideration should be for your passion for the subject.</p>
+</li>
+</ol>
+<p><strong>Pacing your preparation</strong></p>
+<ul>
+<li>
+<p>It is of utmost importance to rightly pace your preparation so that you never run out of steam.</p>
+</li>
+<li>
+<p>One must start slowly, but steadily build up momentum so that he/she can give the final push close to the examination.</p>
+</li>
+<li>
+<p>But the most important aspect to clearing this exam is to <strong>enjoy the journey and not just the destination.</strong></p>
+</li>
+<li>
+<p>One must thoroughly enjoy the preparation phase to be able to bear with the stress that this exam puts on an aspirant.</p>
+</li>
+<li>
+<p>Take it one day at a time, enjoying the learning process and you are sure to succeed.</p>
+</li>
+</ul>
+<p><strong>All the very best!!</strong></p>
+<p><strong>How to study NCERT Books:</strong></p>
+<ul>
+<li>
+<p>NCERTs are overwhelming when you are reading them for the first time.</p>
+</li>
+<li>
+<p>When you read them for the second time they are simply amazing and the third reading makes you realize how enlightening and insightful they can be.</p>
+</li>
+<li>
+<p>First you should read every NCERT just to get a gist of what NCERTs are about. Finish this passive reading of NCERTs from 6th NCERTs to 12th std NCERTs.</p>
+</li>
+<li>
+<p>Okay so you know which NCERTs to read and so I will answer the question HOW ?</p>
+</li>
+</ul>
+<p><strong>IF YOU HAVE TIME</strong></p>
+<p>Preferably you should read NCERTs in 3 passes.</p>
+<p><strong>1st Pass</strong></p>
+<ol>
+<li>
+<p>Read the textbook with pencil in your hand.</p>
+</li>
+<li>
+<p>Underline what you think is important.</p>
+</li>
+<li>
+<p>Don't try to remember anything , just read it like a novel.</p>
+</li>
+<li>
+<p>Try to understand what the author is trying to convey.</p>
+</li>
+<li>
+<p>If you don't understand then use Google , YouTube, Quora, Wikipedia etc.</p>
+</li>
+</ol>
+<p><strong>Checkpoint :</strong></p>
+<ul>
+<li>
+<p>Try solving previous year's question papers or any test series.</p>
+</li>
+<li>
+<p>You will start having an idea about type of questions asked,</p>
+</li>
+<li>
+<p>your grasping power and application skill - the three most important aspects to clear prelims.</p>
+</li>
+</ul>
+<p><strong>2nd Pass</strong></p>
+<ol>
+<li>
+<p>Read the textbook with an eraser in hand.</p>
+</li>
+<li>
+<p>Erase/rub out the lines that you feel you unnecessarily marked the first time.</p>
+</li>
+<li>
+<p>Try to revise the concepts you read the first time.</p>
+</li>
+<li>
+<p>Interconnect - While reading about history try to remember the social and economic condition of that period.</p>
+<p>Try to recollect the geography of that particular place.</p>
+<p>Try to associate if that place is in news in recent time or does it have a biosphere reserve.</p>
+<p>In short , play around.</p>
+<p>You get the idea.</p>
+</li>
+<li>
+<p>The above step is not necessary if you are short on time.</p>
+</li>
+</ol>
+<p><strong>Checkpoint :</strong></p>
+<ul>
+<li>
+<p>Do the same thing as mentioned above.</p>
+</li>
+<li>
+<p>Try solving previous year's question papers or any test series.</p>
+</li>
+<li>
+<p>You will start having an idea about</p>
+</li>
+<li>
+<p>type of questions asked,</p>
+</li>
+<li>
+<p>your grasping power and</p>
+</li>
+<li>
+<p>application skill -</p>
+</li>
+<li>
+<p>the three most important aspects to clear prelims.</p>
+</li>
+</ul>
+<p><strong>3rd Pass</strong></p>
+<ol>
+<li>
+<p>This is the revision pass.</p>
+<p>Sit with a highlighter / pen.</p>
+</li>
+<li>
+<p>Swim through the pages and highlight the things or concepts or definitions that you cannot recall.</p>
+</li>
+<li>
+<p>After one chapter is over, summarize the content of the whole chapter in no more than 50-100 words.</p>
+</li>
+<li>
+<p>Done. Go and give your exam.</p>
+<p>Don't forget to rock it.</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>If you are able to successfully summarize the chapter then you are prepared for Prelims and</p>
+</li>
+<li>
+<p>if you can successfully identify what you know and</p>
+</li>
+<li>
+<p>what you can't recall then you are prepared for Mains.</p>
+</li>
+</ul>
+<p><strong>IF YOU DON'T HAVE TIME</strong></p>
+<p>Again we do it in three passes.</p>
+<p><strong>1st Pass</strong></p>
+<p>Read the previous year question papers.</p>
+<p><strong>2nd Pass</strong></p>
+<p>Read the textbooks.</p>
+<p><strong>3rd Pass</strong></p>
+<p>Give tests or attempt previous year question papers.</p>
+<p><strong>Revision</strong></p>
+<ul>
+<li>
+<p>Come back to textbooks only to read the concepts or things you got wrong.</p>
+</li>
+<li>
+<p>Also read the related things.</p>
+</li>
+<li>
+<p>As rightly said by successful candidates , don't forget to link the current affairs.</p>
+</li>
+<li>
+<p>Read the NCERTs and connect current affairs or read current affairs and the link the NCERTs. Choice is yours !</p>
+</li>
+<li>
+<p>Read new NCERTs. Old NCERTS are already redundant.</p>
+</li>
+<li>
+<p>However if you can get hold of old NCERTs , Geography and history of 11th and 12th comes highly recommended.</p>
+</li>
+<li>
+<p>Follow top-bottom approach.</p>
+</li>
+<li>
+<p>Read NCERTs of higher classes first and then read lower classes' NCERTs.</p>
+</li>
+<li>
+<p>Higher NCERTs give you a broad framework and lower NCERTs fill in the minute details.</p>
+</li>
+<li>
+<p>This top-bottom learning will present you with a clearer and more organised picture.</p>
+</li>
+</ul>
+<p><strong>Approach to study NCERT Books</strong></p>
+<ul>
+<li>
+<p>NCERT’s are building base for any competition in India especially Civil Services.</p>
+</li>
+<li>
+<p>Based on the experience i can suggest a method to start NCERT and ensure effective reading then learning:</p>
+</li>
+</ul>
+<p><strong>1:</strong> <strong>First Reading:</strong></p>
+<ul>
+<li>
+<p>It should be basic reading like a novel, one should get the feel of the content while reading.</p>
+</li>
+<li>
+<p>Involvement while reading in one go can be helpful in getting things into subconscious memory.</p>
+</li>
+</ul>
+<p><strong>2:</strong> <strong>Second Reading:</strong></p>
+<ul>
+<li>
+<p>In this reading conscious effort should be paid in understanding things one has already read.</p>
+</li>
+<li>
+<p>In fact students would be surprised to find new things which somehow got missed in the first stage.</p>
+</li>
+<li>
+<p>Think and introspect 10–20% of you time while reading.</p>
+</li>
+<li>
+<p>You should also highlight and make small indications in the book itself.</p>
+</li>
+<li>
+<p>This stage will help to get things into retention mode and getting a deep analysis of concepts required.</p>
+</li>
+</ul>
+<p><strong>3:</strong> <strong>Synopsis:</strong></p>
+<ul>
+<li>
+<p>This is last and most important stage, here you should make a synopsis of 5–8 pages(Total) based on your understanding of concepts read.</p>
+</li>
+<li>
+<p>This should be for all the NCERTs. One can make flow chart and note important concepts in synopsis.</p>
+</li>
+</ul>
+<p><strong>PYQs:</strong></p>
+<ul>
+<li>
+<p>Along with NCERT don’t forget to refer previous years question papers ,</p>
+</li>
+<li>
+<p>you will surprised to find many questions based on very basic concepts.</p>
+</li>
+<li>
+<p>InsightsOnIndia papers are decent, however they are not good for beginners,</p>
+</li>
+<li>
+<p>here questions based entirely on NCERT can be referred.</p>
+</li>
+<li>
+<p>In fact once you are over with your basic NCERTs then only books like Bipin Chandra &amp; RC Guha should be referred.</p>
+</li>
+<li>
+<p>This is advisable for first time students, though after a while based on comfort zone one can refer these books, but stick to basics then others.</p>
+</li>
+</ul>
+<p><strong>Notes Making Process:</strong></p>
+<ul>
+<li>
+<p>The process mentioned might take some time initially but notes making process should be precise,</p>
+</li>
+<li>
+<p>since it is practically impossible to makes detailed notes.</p>
+</li>
+<li>
+<p>Smart approach with innovation is needed here.</p>
+</li>
+</ul>
+<p><strong>Timeline for NCERT:</strong></p>
+<ul>
+<li>
+<p>Now this is a very subjective question, still for a student devoting 5–6 hours on a average should be able cover NCERT’s in 3–4 months.</p>
+</li>
+<li>
+<p>This timeline is for qualitative approach.</p>
+</li>
+</ul>
+<p><strong>Answer Writing:</strong></p>
+<ul>
+<li>
+<p>Now don’t forget this process if you are an aspirant.</p>
+</li>
+<li>
+<p>Don’t wait for things to get over, since there will always be something on the platter to cover.</p>
+</li>
+<li>
+<p>Write or scribble something for at least 10–15 minutes daily.</p>
+</li>
+</ul>
+<p><strong>Small revisions:</strong></p>
+<ul>
+<li>
+<p>Revision can be done in a baby step method.</p>
+</li>
+<li>
+<p>Just give 10–15 minutes of slot three times a day to ensure effective revision with retention.</p>
+</li>
+</ul>
+<p><strong>Switching Subjects in case of Boredom:</strong></p>
+<ul>
+<li>
+<p>Always remember <strong>“Change of work is the biggest source of relaxation”</strong>,</p>
+</li>
+<li>
+<p>hence change subject if you find the momentum difficult.</p>
+</li>
+</ul>
+<p><strong>Love &amp; Respect the Process:</strong></p>
+<ul>
+<li>
+<p>Civil services preparation requires perseverance and innovation along with respect.</p>
+</li>
+<li>
+<p>Respect the process, exams and its preparation.</p>
+</li>
+</ul>
+<p><strong>Find some good mentor:</strong></p>
+<ul>
+<li>
+<p>Seek regular advice &amp; inputs from your mentor.</p>
+</li>
+<li>
+<p>He/She should have an experience in the exam process.</p>
+</li>
+<li>
+<p>His/her approach should be practical too.</p>
+</li>
+<li>
+<p>If this process is continued for 6 months then civil services aspirant would find the examination process and learning very enlightening &amp; joyous.</p>
+</li>
+</ul>
+<p><strong>Celebrate Leaning !</strong></p>
+<p><strong>SELF STUDY:</strong></p>
+<p>Self-study is an essential and powerful tool for preparing for any competitive exam.</p>
+<p>It enables you to take control of your learning and progress at your own pace.</p>
+<p>Here are some of the key benefits of self-study:</p>
+<ol>
+<li>
+<p><strong>Flexibility:</strong></p>
+<p>Self-study allows you to design your own study schedule and learn at your own pace.</p>
+<p>You can focus on areas where you need more help and skip over topics that you already know.</p>
+</li>
+<li>
+<p><strong>Independence:</strong></p>
+<p>With self-study, you are in charge of your own learning.</p>
+<p>You can set goals and work towards them, without depending on others to teach you.</p>
+</li>
+<li>
+<p><strong>Efficiency:</strong></p>
+<p>Self-study is an efficient way to prepare for exams,</p>
+<p>as it allows you to focus on the specific topics and concepts that you need to master.</p>
+</li>
+<li>
+<p><strong>Customization:</strong></p>
+<p>Self-study enables you to customize your learning experience to your own preferences.</p>
+<p>You can choose the resources that work best for you and tailor your study plan accordingly.</p>
+</li>
+<li>
+<p><strong>Self-discipline:</strong></p>
+<p>Self-study requires discipline and motivation, which are essential skills for success in any competitive exam.</p>
+<p>By developing these skills, you will be better equipped to handle the pressure and demands of the exam.</p>
+</li>
+</ol>
+<p>Overall, self-study is a powerful tool that can help you achieve success in any competitive exam.</p>
+<p>It requires dedication, discipline, and motivation, but the rewards are well worth the effort.</p>
+<p><strong>Some tips for effective and efficient self-study:</strong></p>
+<ol>
+<li>
+<p><strong>Set clear goals:</strong></p>
+<p>Define your study objectives and set specific, measurable goals.</p>
+<p>This will help you stay focused and motivated.</p>
+</li>
+<li>
+<p><strong>Plan your study schedule:</strong></p>
+<p>Create a study schedule that aligns with your goals and allows you to cover all the necessary topics.</p>
+<p>Make sure to allocate time for breaks and rest.</p>
+</li>
+<li>
+<p><strong>Create a study environment:</strong></p>
+<p>Set up a quiet and distraction-free environment for studying.</p>
+<p>Eliminate any potential distractions and create a space that is conducive to learning.</p>
+</li>
+<li>
+<p><strong>Use high-quality resources:</strong></p>
+<p>Choose high-quality study resources that are relevant to your exam and cover all the necessary topics.</p>
+<p>This could include textbooks, online courses, practice tests, and study guides.</p>
+</li>
+<li>
+<p><strong>Practice active learning:</strong></p>
+<p>Instead of passively reading, actively engage with the material by</p>
+<p>taking notes,</p>
+<p>summarizing key points, and</p>
+<p>creating flashcards or mind maps.</p>
+</li>
+<li>
+<p><strong>Test yourself regularly:</strong></p>
+<p>Test yourself regularly using practice tests or sample questions.</p>
+<p>This will help you identify areas where you need more practice and build your confidence.</p>
+</li>
+<li>
+<p><strong>Seek feedback:</strong></p>
+<p>Get feedback from others, such as study partners or tutors,</p>
+<p>to identify areas where you need improvement and</p>
+<p>adjust your study plan accordingly.</p>
+</li>
+<li>
+<p><strong>Stay motivated:</strong></p>
+<p>Stay motivated by reminding yourself of your goals,</p>
+<p>rewarding yourself for progress, and</p>
+<p>seeking support from family.</p>
+</li>
+</ol>
+<p>By following these tips, you can effectively and efficiently self-study and get maximum benefit from your efforts.</p>
+<p> </p>
+<p>Polity</p>
+<p><strong>Micro Topics of UPSC Syllabus</strong></p>
+<p><a data-from-md title='https://iasscore.in/upsc-syllabus/polity-governance' href='https://iasscore.in/upsc-syllabus/polity-governance'>https://iasscore.in/upsc-syllabus/polity-governance</a></p>
+<p><strong>Strategy:</strong></p>
+<ol>
+<li>
+<p>See the way to read Laxmikant is the <strong>Reverse Way</strong>.</p>
+</li>
+<li>
+<p>What is <strong>Reverse Way</strong>?</p>
+</li>
+<li>
+<p>First purchase <strong>Prelims Previous Year Question Bank</strong>.</p>
+</li>
+<li>
+<p>Then look for <strong>Polity Questions</strong>.</p>
+</li>
+<li>
+<p>Then note down the topics from which questions are <strong>Frequently Asked</strong>.</p>
+</li>
+<li>
+<p>Then open Laxmikant and study those <strong>Topics</strong> with <strong>Full Dedication</strong>.</p>
+</li>
+<li>
+<p>Later look for preparing the <strong>Fringe Topics</strong>.</p>
+</li>
+</ol>
+<div class="joplin-table-wrapper jop-noMdConv"><table width="1079px" style="border-collapse: collapse; width: 1079px;" class="jop-noMdConv"><colgroup class="jop-noMdConv"><col style="width: 471px;" class="jop-noMdConv"/><col style="width: 608px;" class="jop-noMdConv"/></colgroup><tbody class="jop-noMdConv"><tr class="jop-noMdConv"><td style="background-color: rgb(0, 168, 45); color: #ffffff; padding: 10px; border: 1px solid hsl(136.10000000000002, 100%, 26.4%);" data-colwidth="471" class="jop-noMdConv"><h2 nodeid="fee2689a-c836-4041-9ce4-d3887dc45aed" draggable="false" style="text-align: center;" class="jop-noMdConv"><span style="font-size: 14px;" class="jop-noMdConv">Don&apos;ts</span></h2></td><td style="background-color: rgb(0, 168, 45); color: #ffffff; padding: 10px; border: 1px solid hsl(136.10000000000002, 100%, 26.4%);" data-colwidth="608" class="jop-noMdConv"><h2 nodeid="774abd67-bcad-4145-b960-29923f138ee9" draggable="false" style="text-align: center;" class="jop-noMdConv"><span style="font-size: 14px;" class="jop-noMdConv">Dos</span></h2></td></tr><tr class="jop-noMdConv"><td style="padding: 10px; border: 1px solid #ccc;" data-colwidth="471" class="jop-noMdConv"><div draggable="false" class="jop-noMdConv"><span style="font-size: 14px; color: rgb(255, 255, 255);" class="jop-noMdConv"><span class="jop-noMdConv">Don&apos;t make a separate notebook to write down notes from Laxmikant Book. Duplication is to be avoided at all costs.</span></span></div></td><td style="padding: 10px; border: 1px solid #ccc;" data-colwidth="608" class="jop-noMdConv"><div draggable="false" class="jop-noMdConv"><span style="font-size: 14px; color: rgb(255, 255, 255);" class="jop-noMdConv"><span class="jop-noMdConv">Do mark and study the tables as a first step. This gives you overview of the entire constitution.</span></span></div></td></tr><tr class="jop-noMdConv"><td style="padding: 10px; border: 1px solid #ccc;" data-colwidth="471" class="jop-noMdConv"><div draggable="false" class="jop-noMdConv"><span style="font-size: 14px; color: rgb(255, 255, 255);" class="jop-noMdConv"><span class="jop-noMdConv">Don&apos;t study this book (just as in the case of other subjects) more than 45 min a day.</span></span></div></td><td style="padding: 10px; border: 1px solid #ccc;" data-colwidth="608" class="jop-noMdConv"><div draggable="false" class="jop-noMdConv"><span style="font-size: 14px; color: rgb(255, 255, 255);" class="jop-noMdConv"><span class="jop-noMdConv">Do make micro-notes in the margins of the book.</span></span></div></td></tr><tr class="jop-noMdConv"><td style="padding: 10px; border: 1px solid #ccc;" data-colwidth="471" class="jop-noMdConv"><div draggable="false" class="jop-noMdConv"><span style="font-size: 14px; color: rgb(255, 255, 255);" class="jop-noMdConv"><span class="jop-noMdConv">Don&apos;t attempt to read big chapters like Parliament in a single sitting. This will reduce your motivational level.</span></span></div></td><td style="padding: 10px; border: 1px solid #ccc;" data-colwidth="608" class="jop-noMdConv"><div draggable="false" class="jop-noMdConv"><span style="font-size: 14px; color: rgb(255, 255, 255);" class="jop-noMdConv"><span class="jop-noMdConv">Do club easy and tough chapters together. For chapters like Parliament trifurcate and cover the contents spread across three days.</span></span></div></td></tr><tr class="jop-noMdConv"><td style="padding: 10px; border: 1px solid #ccc;" data-colwidth="471" class="jop-noMdConv"><div draggable="false" class="jop-noMdConv"><span style="font-size: 14px; color: rgb(255, 255, 255);" class="jop-noMdConv"><span class="jop-noMdConv">Don&apos;t study this structured book randomly.</span></span></div></td><td style="padding: 10px; border: 1px solid #ccc;" data-colwidth="608" class="jop-noMdConv"><div draggable="false" class="jop-noMdConv"><span style="font-size: 14px; color: rgb(255, 255, 255);" class="jop-noMdConv"><span class="jop-noMdConv">Do compress chapters on functionaries about 180 pages into 6 to 8 size A4 sheets (only tabular notes to be made).</span></span></div></td></tr><tr class="jop-noMdConv"><td style="padding: 10px; border: 1px solid #ccc;" data-colwidth="471" class="jop-noMdConv"><div draggable="false" class="jop-noMdConv"><span style="font-size: 14px; color: rgb(255, 255, 255);" class="jop-noMdConv"><span class="jop-noMdConv">Don&apos;t ignore tables at any cost.</span></span></div></td><td style="padding: 10px; border: 1px solid #ccc;" data-colwidth="608" class="jop-noMdConv"><div draggable="false" class="jop-noMdConv"><span style="font-size: 14px; color: rgb(255, 255, 255);" class="jop-noMdConv"><span class="jop-noMdConv">Do make mention of important case laws and judgements as they appear like Champakam Dorairajan Case, Minerva Mills case etc.</span></span></div></td></tr><tr class="jop-noMdConv"><td style="padding: 10px; border: 1px solid #ccc;" data-colwidth="471" class="jop-noMdConv"><div draggable="false" class="jop-noMdConv"><span style="font-size: 14px; color: rgb(255, 255, 255);" class="jop-noMdConv"><span data-markholder="true" class="jop-noMdConv"></span></span></div></td><td style="padding: 10px; border: 1px solid #ccc;" data-colwidth="608" class="jop-noMdConv"><div draggable="false" class="jop-noMdConv"><span style="font-size: 14px; color: rgb(255, 255, 255);" class="jop-noMdConv"><span class="jop-noMdConv">Do develop a strong command over 125 plus Articles, Names of Parts and Schedules of the Constitution of India</span></span></div></td></tr></tbody></table></div>
+<p>&quot;Polity&quot; by M. Laxmikanth is divided into 11 parts, each covering different aspects of Indian polity and governance.</p>
+<p>Here is a list of all the chapters in the book:</p>
+<p><strong>Part 1: Constitution of India</strong></p>
+<ul>
+<li>
+<p>Historical Background</p>
+</li>
+<li>
+<p>Making of the Constitution</p>
+</li>
+<li>
+<p>Salient Features of the Constitution</p>
+</li>
+<li>
+<p>Preamble</p>
+</li>
+</ul>
+<p><strong>Part 2: Fundamental Rights</strong></p>
+<ul>
+<li>
+<p>Right to Equality</p>
+</li>
+<li>
+<p>Right to Freedom</p>
+</li>
+<li>
+<p>Right against Exploitation</p>
+</li>
+<li>
+<p>Right to Freedom of Religion</p>
+</li>
+<li>
+<p>Cultural and Educational Rights</p>
+</li>
+<li>
+<p>Right to Constitutional Remedies</p>
+</li>
+</ul>
+<p><strong>Part 3: Directive Principles of State Policy</strong></p>
+<ul>
+<li>Directive Principles of State Policy</li>
+</ul>
+<p><strong>Part 4: Fundamental Duties</strong></p>
+<ul>
+<li>Fundamental Duties</li>
+</ul>
+<p><strong>Part 5: Union Government</strong></p>
+<ul>
+<li>
+<p>The President</p>
+</li>
+<li>
+<p>Vice-President</p>
+</li>
+<li>
+<p>Prime Minister</p>
+</li>
+<li>
+<p>Central Council of Ministers</p>
+</li>
+<li>
+<p>Cabinet Committees</p>
+</li>
+<li>
+<p>Parliamentary System</p>
+</li>
+<li>
+<p>Parliament</p>
+</li>
+<li>
+<p>Parliamentary Committees</p>
+</li>
+</ul>
+<p><strong>Part 6: State Government</strong></p>
+<ul>
+<li>
+<p>Governor</p>
+</li>
+<li>
+<p>Chief Minister</p>
+</li>
+<li>
+<p>State Council of Ministers</p>
+</li>
+<li>
+<p>State Legislature</p>
+</li>
+<li>
+<p>High Courts in the States</p>
+</li>
+<li>
+<p>Subordinate Courts</p>
+</li>
+</ul>
+<p><strong>Part 7: Local Government</strong></p>
+<ul>
+<li>Local Government</li>
+</ul>
+<p><strong>Part 8: Judiciary</strong></p>
+<ul>
+<li>
+<p>Supreme Court</p>
+</li>
+<li>
+<p>High Court</p>
+</li>
+<li>
+<p>Subordinate Courts</p>
+</li>
+</ul>
+<p><strong>Part 9: Constitutional Bodies</strong></p>
+<ul>
+<li>
+<p>Election Commission</p>
+</li>
+<li>
+<p>Union Public Service Commission</p>
+</li>
+<li>
+<p>State Public Service Commission</p>
+</li>
+<li>
+<p>Finance Commission</p>
+</li>
+<li>
+<p>National Commission for SCs and STs</p>
+</li>
+<li>
+<p>Comptroller and Auditor General of India</p>
+</li>
+<li>
+<p>Attorney General of India</p>
+</li>
+<li>
+<p>Advocate General of the State</p>
+</li>
+</ul>
+<p><strong>Part 10: Non-Constitutional Bodies</strong></p>
+<ul>
+<li>
+<p>Planning Commission</p>
+</li>
+<li>
+<p>National Development Council</p>
+</li>
+<li>
+<p>National Human Rights Commission</p>
+</li>
+<li>
+<p>State Human Rights Commission</p>
+</li>
+<li>
+<p>Central Information Commission</p>
+</li>
+<li>
+<p>State Information Commission</p>
+</li>
+<li>
+<p>Central Vigilance Commission</p>
+</li>
+<li>
+<p>Central Bureau of Investigation</p>
+</li>
+<li>
+<p>Lokpal and Lokayuktas</p>
+</li>
+</ul>
+<p><strong>Part 11: Appendices</strong></p>
+<ul>
+<li>
+<p>Constitutional Amendments at a Glance</p>
+</li>
+<li>
+<p>Indian Constitution: A Comparative Study</p>
+</li>
+<li>
+<p>Table of Precedence</p>
+</li>
+<li>
+<p>Glossary</p>
+</li>
+<li>
+<p>Practice Questions</p>
+</li>
+<li>
+<p>Previous Years' Questions</p>
+</li>
+</ul>
+<p><strong>Block 1: The Base - Constitutional Framework - 155</strong></p>
+<ol>
+<li>
+<p>Salient Features of COI - 172</p>
+</li>
+<li>
+<p>Sources of COI - 170</p>
+</li>
+<li>
+<p>Preamble to the Constitution - 173</p>
+</li>
+<li>
+<p>Union and its Territory - 177</p>
+</li>
+<li>
+<p>Fundamental Rights - 185</p>
+</li>
+<li>
+<p>Directive Principles of State Policy - 191</p>
+</li>
+<li>
+<p>Fundamental Duties - 193</p>
+</li>
+<li>
+<p>Amendment of the Constitution - 194</p>
+</li>
+<li>
+<p>Basic Structure of the Constitution</p>
+</li>
+</ol>
+<p><strong>Block 2: Union Govt - System of Gov - 105</strong></p>
+<ol>
+<li>
+<p>Emergency Provisions - 126</p>
+</li>
+<li>
+<p>President - 50</p>
+</li>
+<li>
+<p>Vice-President - 42</p>
+</li>
+<li>
+<p>Prime Minister - 52</p>
+</li>
+<li>
+<p>Central Council of Ministers - 55</p>
+</li>
+<li>
+<p>Parliament - 203</p>
+</li>
+</ol>
+<p><strong>Block 3: Judiciary</strong></p>
+<ol>
+<li>
+<p>Supreme Court -</p>
+</li>
+<li>
+<p>High Court - 26</p>
+</li>
+<li>
+<p>Subordinate Courts - 32</p>
+</li>
+</ol>
+<p><strong>Block 4: State Government - 1</strong></p>
+<ol>
+<li>
+<p>Governor - 1</p>
+</li>
+<li>
+<p>Chief Minister - 8</p>
+</li>
+<li>
+<p>State Council of Ministers - 11</p>
+</li>
+<li>
+<p>State Legislature</p>
+</li>
+</ol>
+<p><strong>Block 5: Local Government - 105</strong></p>
+<ol>
+<li>
+<p>Panchayati Raj - 137</p>
+</li>
+<li>
+<p>Municipalities - 148</p>
+</li>
+</ol>
+<p><strong>Block 6: Constitutional Bodies - 65</strong></p>
+<ol>
+<li>
+<p>Election Commission - 66</p>
+</li>
+<li>
+<p>Union Public Service Commission - 67</p>
+</li>
+<li>
+<p>State Public Service Commission - 69</p>
+</li>
+<li>
+<p>Finance Commission - 69</p>
+</li>
+<li>
+<p>National Commission for SC’s - 71</p>
+</li>
+<li>
+<p>National Commission for ST’s - 73</p>
+</li>
+<li>
+<p>Special Officer for Linguistic Minorities - 75</p>
+</li>
+<li>
+<p>Comptroller and Auditor General of India - 77</p>
+</li>
+<li>
+<p>Attorney General of India - 81</p>
+</li>
+<li>
+<p>Advocate General of India - 82</p>
+</li>
+</ol>
+<p><strong>Block 7: Non-Constitutional Bodies - 84</strong></p>
+<p><strong>Block 8: System of Government  - 105</strong></p>
+<ol>
+<li>
+<p>Parliamentary System - 106</p>
+</li>
+<li>
+<p>Federal System - 107</p>
+</li>
+<li>
+<p>Centre-state Relations - 108</p>
+</li>
+<li>
+<p>Inter-state Relations - 121</p>
+</li>
+</ol>
+<p><strong>Block 9: Auxiliary Topics - 155</strong></p>
+<ol>
+<li>
+<p>Citizenship - 180</p>
+</li>
+<li>
+<p>Cabinet Committees - 58</p>
+</li>
+<li>
+<p>Parliamentary Committees - 60</p>
+</li>
+<li>
+<p>Parliamentary Forums - 61</p>
+</li>
+<li>
+<p>Special Status of Jammu and Kashmir - 33</p>
+</li>
+<li>
+<p>Special Provision for Some States - 37</p>
+</li>
+<li>
+<p>Union Territories - 177</p>
+</li>
+<li>
+<p>Scheduled and Tribal Areas -</p>
+</li>
+</ol>
+<p><strong>Block 10: Constitutional Framework - 155</strong></p>
+<ol>
+<li>
+<p>Historical Background - 156</p>
+</li>
+<li>
+<p>Making of the Constitution - 166</p>
+</li>
+</ol>
+<p>Topper's Strategy - All Subjects</p>
+<p><strong>Jaagrati Awasthi ( AIR 2  - CSE 2020)</strong></p>
+<ul>
+<li>Refer - Previous Years Questions of at least last 5 years for every topic</li>
+</ul>
+<p><strong>1. History:</strong></p>
+<ul>
+<li>
+<p>Ancient - TN Board Class XI</p>
+</li>
+<li>
+<p>Medieval - TN Board Class XI</p>
+</li>
+<li>
+<p>Modern - Spectrum</p>
+</li>
+<li>
+<p>World - TN Board Class XII</p>
+</li>
+</ul>
+<p><strong>2. ART &amp; Culture</strong></p>
+<ul>
+<li>
+<p>Art &amp; Culture - Fine Arts NCERT (Class XI) and Nitin Singhania Handwritten Notes</p>
+</li>
+<li>
+<p>Pictorial Learning (See Pictures on Google for example Madhubani Painting)</p>
+</li>
+</ul>
+<p><strong>3. Geography:</strong></p>
+<ul>
+<li>
+<p>Class XI and XII NCERT</p>
+</li>
+<li>
+<p>Atlas</p>
+</li>
+<li>
+<p>Mapping (Geography + EVS)</p>
+</li>
+</ul>
+<p><strong>4. Polity</strong></p>
+<ul>
+<li>
+<p>M. Laxmi kanth</p>
+</li>
+<li>
+<p>Any Latest Compilation - (Current Affairs)</p>
+</li>
+</ul>
+<p><strong>5. Environment and Ecology (EVS)</strong></p>
+<ul>
+<li>
+<p>Class XI and XII NCERT</p>
+</li>
+<li>
+<p>Chemistry NCERT Class XI Part II Chapter - Environmental Chemistry]</p>
+</li>
+<li>
+<p>Biology NCERT Class XII Units Environment &amp; Ecology]</p>
+</li>
+<li>
+<p>Any Latest Compilation (Pre + Current Affairs and for Mains also)</p>
+</li>
+</ul>
+<p><strong>6. Economics</strong></p>
+<ul>
+<li>
+<p>Mrunal Patel Sir's Economics (Latest Notes and updates)</p>
+</li>
+<li>
+<p>PIB Summary of Economic Survey</p>
+</li>
+<li>
+<p>Budget Highlights</p>
+</li>
+<li>
+<p>RSTV Discussion (Summary - The Big Picture Program - for Opinion Based Question - for Mains &amp; Interview)</p>
+</li>
+</ul>
+<p><strong>7. Science &amp; Technology</strong></p>
+<ul>
+<li>
+<p>Any Latest Compilation</p>
+</li>
+<li>
+<p>Keyword Analysis</p>
+</li>
+</ul>
+<p><strong>8. Current Affairs</strong></p>
+<ul>
+<li>
+<p>The Hindu or Indian Expression (Understanding + Analysis)</p>
+</li>
+<li>
+<p>Monthly Compilation</p>
+</li>
+<li>
+<p>Prelims Specific Compilation</p>
+</li>
+<li>
+<p>Main Specific Compilation</p>
+</li>
+<li>
+<p>Rajya Sabha TV summaries (only for the most active topics in news)</p>
+</li>
+</ul>
+<p><strong>Gaurav Kaushal (Pre + Mains)</strong></p>
+<p><strong>History</strong></p>
+<ul>
+<li>
+<p>Ancient India by RS Sharma 11th Std Old NCERT.</p>
+</li>
+<li>
+<p>Medieval India by Satish Chandra 11th Std Old NCERT.</p>
+</li>
+<li>
+<p>Modern India by Bipin Chandra 12th Std Old NCERT.</p>
+</li>
+<li>
+<p>India struggle for Independence by Bipin Chandra.</p>
+</li>
+<li>
+<p>India since Independence by Bipin Chandra.</p>
+</li>
+<li>
+<p>NCERT book on world History.</p>
+</li>
+</ul>
+<p><strong>Geography</strong></p>
+<ul>
+<li>
+<p>NCERT 6th-12th.</p>
+</li>
+<li>
+<p>G.C.Leong Part 1 or Majid Hussain.</p>
+</li>
+<li>
+<p>Maps from Oxford student Atlas.</p>
+</li>
+</ul>
+<p><strong>Arts&amp;Culture</strong></p>
+<ul>
+<li>
+<p>11th Std NCERT</p>
+</li>
+<li>
+<p>Nitin Singhania (Limited Reference)</p>
+</li>
+</ul>
+<p><strong>Polity</strong></p>
+<ul>
+<li>M.Laxmikant</li>
+</ul>
+<p><strong>Economy</strong></p>
+<ul>
+<li>
+<p>9th - 12th NCERT.</p>
+</li>
+<li>
+<p>Current Affairs.</p>
+</li>
+<li>
+<p>Economic survey (Monthly Magazine).</p>
+</li>
+</ul>
+<p><strong>Environment</strong></p>
+<ul>
+<li>
+<p>NCERT 11th &amp; 12th (Last Few Chapters)</p>
+</li>
+<li>
+<p>Shankar IAS (Limited reference)</p>
+</li>
+</ul>
+<p><strong>Sci &amp; Tech</strong></p>
+<ul>
+<li>
+<p>Current Affairs.</p>
+</li>
+<li>
+<p>Science Reporter Magazine (If you have ample time).</p>
+</li>
+</ul>
+<p><strong>Social Issues</strong></p>
+<ul>
+<li>Current Affairs.</li>
+</ul>
+<p><strong>Disaster Management</strong></p>
+<ul>
+<li>
+<p>NCERT book on disaster management.</p>
+</li>
+<li>
+<p>2nd ARC Report.</p>
+</li>
+</ul>
+<p><strong>Governance</strong></p>
+<ul>
+<li>Governance by M.Laxmikant.</li>
+</ul>
+<p><strong>International relations</strong></p>
+<ul>
+<li>
+<p>Contemporary world by NCERT.</p>
+</li>
+<li>
+<p>Current Affairs.</p>
+</li>
+</ul>
+<p><strong>Internal security</strong></p>
+<ul>
+<li>
+<p>Arihant Book by Ashok Kumar.</p>
+</li>
+<li>
+<p>Current Affairs.</p>
+</li>
+</ul>
+<p><strong>Ethics</strong></p>
+<ul>
+<li>
+<p>12th Sociology NCERT (Chapter 6&amp;7).</p>
+</li>
+<li>
+<p>Lexicon for Ethics, Integrity and Aptitude.</p>
+</li>
+<li>
+<p>2nd ARC Report.</p>
+</li>
+</ul>
+<p><strong>Current Affairs</strong></p>
+<ul>
+<li>
+<p>The Hindu</p>
+</li>
+<li>
+<p>Indian Express</p>
+</li>
+<li>
+<p>PIB Website</p>
+</li>
+<li>
+<p>Monthly Magazine (Insights or Vision IAS or Civil Service Chronical)</p>
+</li>
+</ul>
+<p><strong>Anudeep Durishetty</strong></p>
+<ul>
+<li>The Complete Booklist for UPSC Civil Services – Prelims Exam (Paper I)</li>
+</ul>
+<p><strong>Polity</strong></p>
+<ul>
+<li>Indian Polity by Laxmikanth</li>
+</ul>
+<p><strong>Economy</strong></p>
+<ul>
+<li>
+<p>Indian Economy by Ramesh Singh</p>
+</li>
+<li>
+<p>Mrunal.org articles</p>
+</li>
+<li>
+<p>Macroeconomics – NCERT Class XII</p>
+</li>
+<li>
+<p>Indian Economic Development – NCERT Class XI</p>
+</li>
+<li>
+<p>Economic Survey (Selective reading from Prelims perspective)</p>
+</li>
+<li>
+<p>The Hindu</p>
+</li>
+<li>
+<p>Internet for understanding concepts (Arthapedia, Google, Youtube)</p>
+</li>
+</ul>
+<p><strong>History</strong></p>
+<ul>
+<li>
+<p>Ancient History of India</p>
+</li>
+<li>
+<p>Old NCERT by RS Sharma</p>
+</li>
+<li>
+<p>Medieval History of India</p>
+</li>
+<li>
+<p>Old NCERT by Satish Chandra (Selective Reading)</p>
+</li>
+<li>
+<p>Modern History</p>
+</li>
+<li>
+<p>A Brief history of Modern India- Spectrum Publications</p>
+</li>
+<li>
+<p>India’s Struggle for Independence – Bipan Chandra (Selective Reading)</p>
+</li>
+<li>
+<p>NCERT by Bipan Chandra (For the period 1700s to 1857)</p>
+</li>
+</ul>
+<p><strong>Indian Art and Culture</strong></p>
+<ul>
+<li>
+<p>An Introduction to Indian Art – Class XI NCERT</p>
+</li>
+<li>
+<p>Chapters related to culture in Ancient and Medieval India NCERTs</p>
+</li>
+<li>
+<p>Centre for Cultural Resource and Training (CCRT) material</p>
+</li>
+<li>
+<p>Heritage Crafts: Living Craft Traditions of India -NCERT</p>
+</li>
+</ul>
+<p><strong>Environment and Biodiversity</strong></p>
+<ul>
+<li>Shankar IAS book</li>
+</ul>
+<p><strong>General Science</strong></p>
+<ul>
+<li>
+<p>General Science books – IX and X standard</p>
+</li>
+<li>
+<p>The Hindu (Note down and read about the latest scientific terms, discoveries and inventions frequently mentioned in news)</p>
+</li>
+<li>
+<p>Google and YouTube</p>
+</li>
+</ul>
+<p><strong>Geography</strong></p>
+<ul>
+<li>
+<p>Fundamentals of Physical Geography XI NCERT</p>
+</li>
+<li>
+<p>India: Physical Environment XI NCERT</p>
+</li>
+<li>
+<p>Fundamentals of Human Geography XII NCERT</p>
+</li>
+<li>
+<p>India: People and Economy XII NCERT</p>
+</li>
+<li>
+<p>Certificate Physical and Human Geography: GC Leong</p>
+</li>
+<li>
+<p>PMFIAS (Excellent resource for understanding complex topics)</p>
+</li>
+<li>
+<p>Google and YouTube</p>
+</li>
+</ul>
+<p><strong>Govt Schemes</strong></p>
+<ul>
+<li>
+<p>Govt schemes compilation by the website Civils Daily</p>
+</li>
+<li>
+<p>General Trivia (Eg: Global groupings, Reports, Institutions, Rankings etc)</p>
+</li>
+<li>
+<p>Any coaching material</p>
+</li>
+<li>
+<p>Google</p>
+</li>
+<li>
+<p>Current Affairs</p>
+</li>
+<li>
+<p>The Hindu</p>
+</li>
+<li>
+<p>Civils Daily</p>
+</li>
+<li>
+<p>Forum IAS</p>
+</li>
+</ul>
+<p><strong>UPSC Toppers - Working Professionals</strong></p>
+<ul>
+<li>
+<p>Ms Pujya Priyadashni, (AIR 11, CSE 2018)</p>
+</li>
+<li>
+<p>Mr GSS Praveen Chand (AIR 64, CSE 2018)</p>
+</li>
+<li>
+<p>Mr Nitin Sangwan (AIR 28, CSE 2015)</p>
+</li>
+<li>
+<p>Ms Mittali Sethi (AIR 56, CSE 2016)</p>
+</li>
+<li>
+<p>Ms Bandana Pokhriyal (AIR 83, CSE 2015)</p>
+</li>
+<li>
+<p>Dr Ravindra Goswami (CSE 152, CSE 2015)</p>
+</li>
+</ul>
+<p><strong>Mr. Shubhankar Pratyush Pathak, AIR 11, UPSC CSE 2021</strong></p>
+<p><strong>Strategy:</strong></p>
+<p><a data-from-md title='https://www.youtube.com/watch?v=_tsaM2O4-wU' href='https://www.youtube.com/watch?v=_tsaM2O4-wU'>https://www.youtube.com/watch?v=_tsaM2O4-wU</a></p>
+<p><strong>Free Resources for Preparation of CSE (YouTube)</strong></p>
+<ol>
+<li>
+<p>Gaurav Budania  (<a data-from-md title='https://www.youtube.com/@UPSC_topper/videos' href='https://www.youtube.com/@UPSC_topper/videos'>https://www.youtube.com/@UPSC_topper/videos</a>) - Basic Guidance</p>
+</li>
+<li>
+<p>PrepLadder (<a data-from-md title='https://www.youtube.com/watch?v=qYmOncbOw8M&amp;list=PLYA-oUeN_g2XSBqrVHYCS3-34tUS5iAPI' href='https://www.youtube.com/watch?v=qYmOncbOw8M&amp;list=PLYA-oUeN_g2XSBqrVHYCS3-34tUS5iAPI'>https://www.youtube.com/watch?v=qYmOncbOw8M&amp;list=PLYA-oUeN_g2XSBqrVHYCS3-34tUS5iAPI</a>) - PYQ - 5 Saal 25 Sawaal</p>
+</li>
+</ol>
+<h2 id="roadmap-of-cse-2023-2024"><strong>Roadmap of CSE (2023-2024)</strong></h2>
+<p>Kanki Mam</p>
+<p><a data-from-md title='https://www.youtube.com/watch?v=lg62iC2mCGg' href='https://www.youtube.com/watch?v=lg62iC2mCGg'>https://www.youtube.com/watch?v=lg62iC2mCGg</a></p>
+<p>CSE Preparation Mistakes to Avoid (2023-2024)</p>
+<p><a data-from-md title='https://www.youtube.com/watch?v=-6-m7JKI4Nk' href='https://www.youtube.com/watch?v=-6-m7JKI4Nk'>https://www.youtube.com/watch?v=-6-m7JKI4Nk</a></p>
+<p><a data-from-md title='https://www.youtube.com/watch?v=pTSCfe0_KMo' href='https://www.youtube.com/watch?v=pTSCfe0_KMo'>https://www.youtube.com/watch?v=pTSCfe0_KMo</a></p>
+<p><strong>Guidance - Shashank Sajwan (2023-2024)</strong></p>
+<ul>
+<li>
+<p><a data-from-md title='https://www.youtube.com/@ShashankSajwan/videos' href='https://www.youtube.com/@ShashankSajwan/videos'>https://www.youtube.com/@ShashankSajwan/videos</a></p>
+</li>
+<li>
+<p><a data-from-md title='https://www.youtube.com/@ShashankSajwanIASMentor/channels' href='https://www.youtube.com/@ShashankSajwanIASMentor/channels'>https://www.youtube.com/@ShashankSajwanIASMentor/channels</a></p>
+</li>
+<li>
+<p><a data-from-md title='https://www.youtube.com/channel/UCfgC56o4pgbsL1Tz-V5fvSA' href='https://www.youtube.com/channel/UCfgC56o4pgbsL1Tz-V5fvSA'>https://www.youtube.com/channel/UCfgC56o4pgbsL1Tz-V5fvSA</a></p>
+</li>
+</ul>
+<p><strong>RA Israel JebaSingh (Ex IAS)</strong></p>
+<p><a data-from-md title='https://www.quora.com/profile/R-A-Israel-Jebasingh' href='https://www.quora.com/profile/R-A-Israel-Jebasingh'>https://www.quora.com/profile/R-A-Israel-Jebasingh</a></p>
+<p><strong>Shubham Bansal (IAS)</strong></p>
+<p><a data-from-md title='https://www.quora.com/profile/Shubham-Bansal-804' href='https://www.quora.com/profile/Shubham-Bansal-804'>https://www.quora.com/profile/Shubham-Bansal-804</a></p>
+<p><strong>The Power of Thinking (Must Read Article)</strong></p>
+<p><a data-from-md title='https://neverfear43.wordpress.com/2022/09/12/the-power-of-thinking/' href='https://neverfear43.wordpress.com/2022/09/12/the-power-of-thinking/'>https://neverfear43.wordpress.com/2022/09/12/the-power-of-thinking/</a></p>
+<p><strong>Gaurav Aggarwal Notes ( IAS)</strong></p>
+<p><a data-from-md title='https://thesupermanreturns.wordpress.com/2014/06/18/upscnotesgauravagrawal/comment-page-12/' href='https://thesupermanreturns.wordpress.com/2014/06/18/upscnotesgauravagrawal/comment-page-12/'>https://thesupermanreturns.wordpress.com/2014/06/18/upscnotesgauravagrawal/comment-page-12/</a></p>
+<p><strong>Current Affairs</strong></p>
+<p><a data-from-md title='https://officerspulse.com/monthly-pulse-at-a-glance/' href='https://officerspulse.com/monthly-pulse-at-a-glance/'>https://officerspulse.com/monthly-pulse-at-a-glance/</a></p>
+<p><strong>PYQs</strong></p>
+<p><a data-from-md title='https://officerspulse.com/previous-years-papers/' href='https://officerspulse.com/previous-years-papers/'>https://officerspulse.com/previous-years-papers/</a></p>
+<p><strong>PDF - CSAT</strong></p>
+<ul>
+<li>
+<p><a data-from-md title='https://www.pdfdrive.com/csat-books.html' href='https://www.pdfdrive.com/csat-books.html'>https://www.pdfdrive.com/csat-books.html</a></p>
+</li>
+<li>
+<p><a data-from-md title='https://upscpdf.com/' href='https://upscpdf.com/'>https://upscpdf.com/</a></p>
+</li>
+<li>
+<p><a data-from-md title='https://edurev.in/chapter/6333_Basic-Numeracy' href='https://edurev.in/chapter/6333_Basic-Numeracy'>https://edurev.in/chapter/6333_Basic-Numeracy</a></p>
+</li>
+</ul>
+<p><strong>Physical Geography - World</strong></p>
+<ul>
+<li>
+<p><a data-from-md title='https://www.insightsonindia.com/world-geography/' href='https://www.insightsonindia.com/world-geography/'>https://www.insightsonindia.com/world-geography/</a></p>
+</li>
+<li>
+<p><a data-from-md title='https://lotusarise.com/upsc-notes/geography-upsc/' href='https://lotusarise.com/upsc-notes/geography-upsc/'>https://lotusarise.com/upsc-notes/geography-upsc/</a></p>
+</li>
+<li>
+<p><a data-from-md title='https://www.clearias.com/geography/' href='https://www.clearias.com/geography/'>https://www.clearias.com/geography/</a></p>
+</li>
+</ul>
+<p><strong>Sociology - Optional</strong></p>
+<p><a data-from-md title='https://www.youtube.com/watch?v=rIhqqQQilTA&amp;list=PLYSuG-KZy7JDFWh1oAMvzNLbaLZGY5Ina' href='https://www.youtube.com/watch?v=rIhqqQQilTA&amp;list=PLYSuG-KZy7JDFWh1oAMvzNLbaLZGY5Ina'>https://www.youtube.com/watch?v=rIhqqQQilTA&amp;list=PLYSuG-KZy7JDFWh1oAMvzNLbaLZGY5Ina</a></p>
+<p><strong>Sociology - IGNOU BA</strong></p>
+<p><a data-from-md title='https://drive.google.com/drive/folders/1l3Ezh3QmT69TAfNob75FH4vCQ_J7IsBl' href='https://drive.google.com/drive/folders/1l3Ezh3QmT69TAfNob75FH4vCQ_J7IsBl'>https://drive.google.com/drive/folders/1l3Ezh3QmT69TAfNob75FH4vCQ_J7IsBl</a></p>
+<p><strong>Sociology - IGNOU MA - Not Important</strong></p>
+<p><a data-from-md title='https://drive.google.com/drive/folders/1QSgQt2ClO-uTQhZlohkmXewmhum6iZ9O' href='https://drive.google.com/drive/folders/1QSgQt2ClO-uTQhZlohkmXewmhum6iZ9O'>https://drive.google.com/drive/folders/1QSgQt2ClO-uTQhZlohkmXewmhum6iZ9O</a></p>
+<p><strong>Sociology - Current Affairs</strong></p>
+<p><a data-from-md title='https://www.youtube.com/watch?v=oZlmTz_KqwA' href='https://www.youtube.com/watch?v=oZlmTz_KqwA'>https://www.youtube.com/watch?v=oZlmTz_KqwA</a></p>
+<p> </p>
+<p>Topper's Strategy - Sociology - Optional</p>
+<p><strong>Micro Topics of UPSC Syllabus</strong></p>
+<p><a data-from-md title='https://iasscore.in/upsc-syllabus/optional/sociology' href='https://iasscore.in/upsc-syllabus/optional/sociology'>https://iasscore.in/upsc-syllabus/optional/sociology</a></p>
+<p><strong>Anu Kumari</strong></p>
+<ul>
+<li>
+<p>Upendra Sir Notes (Classroom Hand written notes)- Paper 1</p>
+</li>
+<li>
+<p>Mahapatra Sir Notes (Classroom Hand written notes)- Paper 2</p>
+</li>
+<li>
+<p>Tushar Anshu Booklets (Selected topics)</p>
+</li>
+<li>
+<p>Kshitij Tyagi Handcopies (Selected topics)</p>
+</li>
+<li>
+<p>Tips: Limited Sources Multiple Revisions</p>
+</li>
+</ul>
+<p><strong>Blog:</strong></p>
+<ul>
+<li><a data-from-md title='https://anubhokar.wordpress.com/2018/06/06/sociology-strategy-anu-kumari' href='https://anubhokar.wordpress.com/2018/06/06/sociology-strategy-anu-kumari'>https://anubhokar.wordpress.com/2018/06/06/sociology-strategy-anu-kumari</a></li>
+</ul>
+<p><strong>Jagrati Awasthi</strong></p>
+<ul>
+<li>
+<p><strong>Why Sociology:</strong></p>
+</li>
+<li>
+<p>rewarding optional</p>
+</li>
+<li>
+<p>generic subject</p>
+</li>
+<li>
+<p>knowledge about society and its aspects</p>
+</li>
+<li>
+<p>Comprehensive Syllabus</p>
+</li>
+<li>
+<p>Cost Benefit Ratio is high (good)</p>
+</li>
+<li>
+<p>upsc asks questions mostly related to society</p>
+</li>
+<li>
+<p><strong>Books:</strong></p>
+</li>
+<li>
+<p>IGNOU BA Material on Government website (Selected Study)</p>
+</li>
+<li>
+<p>Nitin Sanghwaan - Essentials of Sociology (Base Material)</p>
+</li>
+<li>
+<p>Synoptic Notes</p>
+</li>
+<li>
+<p>Chronicle IAS - Solved Papers (13 years)</p>
+</li>
+<li>
+<p>Sleepy Classes on YouTube</p>
+</li>
+<li>
+<p>Done by Self Study</p>
+</li>
+<li>
+<p>Connection with Present</p>
+</li>
+<li>
+<p>Triumph IAS Test Series</p>
+</li>
+<li>
+<p>Innovative Answers</p>
+</li>
+<li>
+<p>Advantage - we can use in essay</p>
+</li>
+</ul>
+<p><strong>Shrushti Deshmukh</strong></p>
+<ul>
+<li>
+<p><strong>Basic Books</strong></p>
+</li>
+<li>
+<p>NCERT (XI + XII)</p>
+</li>
+<li>
+<p>IGNOU Study Material (BA + MA) - Topic Wise Study Only</p>
+</li>
+<li>
+<p><strong>Mains Exam - Paper 1</strong></p>
+</li>
+<li>
+<p>Coursera.org - Knowledge about thinkers</p>
+</li>
+<li>
+<p>Sleepy class you tube channel (videos)</p>
+</li>
+<li>
+<p>Haralambos &amp; Holborn - Blue Book - For chapters of Methodology</p>
+</li>
+<li>
+<p>Classical Sociology Theory by George Wilson (Knowledge about thinkers)</p>
+</li>
+<li>
+<p>Essential Sociology by Nitin Singhania</p>
+</li>
+<li>
+<p>Oxford Dictionary of Sociology (Try to learn definitions and keywords)</p>
+</li>
+<li>
+<p><strong>Mains Exam - Paper 2</strong></p>
+</li>
+<li>
+<p>Indian Sociology Thought by B.K Nagla (For Indian Thinkers)</p>
+</li>
+<li>
+<p>Indian Society and Culture Sociology Optional Material by Nadeem Hasnain (Online Book)</p>
+</li>
+<li>
+<p>Rural Sociology by SL Doshi (For Agrarian Transformation, Villages and Lands)</p>
+</li>
+<li>
+<p>Oxford Hand Book of Indian Sociology (by Veena Das) - (Family and Informal Sector)</p>
+</li>
+<li>
+<p>EPG Pathsaala (Videos)</p>
+</li>
+<li>
+<p><strong>Answer Writing</strong></p>
+</li>
+<li>
+<p>Explanation by Smriti Mam of Vision IAS - Videos</p>
+</li>
+<li>
+<p>Frameworks Videos of Sleepy Classes</p>
+</li>
+</ul>
+<p> </p>
+<p>Toppers + Unemployment + Corruption</p>
+<ol>
+<li>
+<p>The preparation for the exam is not as painful as it appears to be in reality.</p>
+</li>
+<li>
+<p>One need not study 12–14 hours a day. 6–8 hours of effective study regularly is more than enough.</p>
+</li>
+<li>
+<p>You can watch movies, use social media and live as normally as you want to.</p>
+</li>
+<li>
+<p>Everyone is underconfident and unsure about clearing this exam.</p>
+</li>
+<li>
+<p>Everyone has to face frustration, failure , insecurity.</p>
+</li>
+<li>
+<p>Even toppers are no different.</p>
+</li>
+<li>
+<p>It's just after clearing the exam everything seems to be picture perfect.</p>
+</li>
+<li>
+<p>The reality is they have struggled equally in their life.</p>
+</li>
+<li>
+<p>Just that the stories shared/seen is only about success.</p>
+</li>
+<li>
+<p>Till a day before the results they are equally scared/anxious about being in the list.</p>
+</li>
+<li>
+<p>It is not just effort but destiny and luck which plays a big role in clearing the exam.</p>
+</li>
+<li>
+<p>Lot of people whom you feel were better than you more hardworking or deserving miss out.</p>
+</li>
+<li>
+<p>So luck is always there in this exam along with efforts.</p>
+</li>
+<li>
+<p>If any topper is endorsing a particular institute to join don't follow it blindly.</p>
+</li>
+<li>
+<p>Make your own choice.</p>
+</li>
+<li>
+<p>Also don't listen to shortcuts told by any toppers.</p>
+</li>
+<li>
+<p>Always stick to basic books and newspapers.</p>
+</li>
+<li>
+<p>It is not about being intelligent or smart to clear this exam.</p>
+</li>
+<li>
+<p>Exams like IIT and CAT need more aptitude.</p>
+</li>
+<li>
+<p>What matters here is planning, patience and persistence.</p>
+</li>
+<li>
+<p>Most people keep a plan B ready in the mind.</p>
+</li>
+<li>
+<p>As there is no surety of success. Even I had a plan B in mind.</p>
+</li>
+<li>
+<p>There is no harm in having a plan B.</p>
+</li>
+<li>
+<p>Clearing this exam won't change your life forever.</p>
+</li>
+<li>
+<p>For sometime it might be rosy.</p>
+</li>
+<li>
+<p>After that it's just a normal journey.</p>
+</li>
+<li>
+<p>If you love your job you will be happy.</p>
+</li>
+<li>
+<p>Other things won't matter in a long run.</p>
+</li>
+<li>
+<p>The charm will fade away very soon.</p>
+</li>
+<li>
+<p>Many people are not happy even after being in services.</p>
+</li>
+<li>
+<p>Everyone wants what others have.</p>
+</li>
+<li>
+<p>The fight is endless.</p>
+</li>
+<li>
+<p>Firstly it's about getting selection then a good rank then IAS/IPS then home cadre then a good posting.</p>
+</li>
+<li>
+<p>So satisfaction is a rare commodity.</p>
+</li>
+<li>
+<p>A lot of people blindly fill their service preference and regret later.</p>
+</li>
+<li>
+<p>Just because a particular job is more famous it doesn't mean it will suit you.</p>
+</li>
+<li>
+<p>Many selected candidates later realise or feel they should have opted for some other service.</p>
+</li>
+</ol>
+<p><strong>What are pros and cons of having submissive nature for a person?</strong></p>
+<p>The pros and cons of having a submissive nature can vary depending on the person and the situation. Here are some potential pros and cons:</p>
+<p><strong>Pros:</strong></p>
+<ol>
+<li>
+<p><strong>Willingness to cooperate:</strong></p>
+<p>Submissive people may be more willing to cooperate with others,</p>
+<p>which can help build stronger relationships and increase social harmony.</p>
+</li>
+<li>
+<p><strong>Avoid Conflict:</strong></p>
+<p>Submissive people tend to avoid conflict,</p>
+<p>which can be beneficial in certain situations where conflict would be unproductive or harmful.</p>
+</li>
+<li>
+<p><strong>Flexibility:</strong></p>
+<p>Submissive people may be more flexible in their opinions and beliefs,</p>
+<p>which can make them more adaptable to changing circumstances.</p>
+</li>
+<li>
+<p><strong>Good Listener:</strong></p>
+<p>Submissive people tend to be good listeners and</p>
+<p>may be better at empathizing with others and understanding their perspectives.</p>
+</li>
+</ol>
+<p><strong>Cons:</strong></p>
+<ol>
+<li>
+<p><strong>Lack of Assertiveness:</strong></p>
+<p>Being assertive means communicating with others in a direct and honest manner without intentionally hurting anyone's feelings.</p>
+<p>Direct communication can</p>
+<p>reduce conflict,</p>
+<p>build self-confidence and</p>
+<p>enhance personal and work relationships.</p>
+<p>Submissive people may struggle with asserting themselves and expressing their needs and opinions,</p>
+<p>which can lead to frustration and resentment over time.</p>
+</li>
+<li>
+<p><strong>Exploitation:</strong></p>
+<p>Submissive people may be more vulnerable to being taken advantage of by others who may try to dominate or manipulate them.</p>
+</li>
+<li>
+<p><strong>Difficulty Making Decisions:</strong></p>
+<p>Submissive people may struggle with making decisions and</p>
+<p>may rely too much on others to make decisions for them.</p>
+</li>
+<li>
+<p><strong>Low Self-esteem:</strong></p>
+<p>Submissive people may struggle with low self-esteem and</p>
+<p>may not value their own opinions or contributions as much as they should.</p>
+</li>
+</ol>
+<p>It's important to note that being submissive is not inherently good or bad, and</p>
+<p>can be influenced by a variety of factors including personality, culture, and upbringing.</p>
+<p>Some people may naturally be more submissive or assertive, and</p>
+<p>it's important for individuals to find a balance that works for them and</p>
+<p>helps them navigate different social situations effectively.</p>
+<p><strong>How to eliminate submissive nature and build a strong and powerful personality. Explain in points.</strong></p>
+<p>Here are some potential steps to help eliminate a submissive nature and build a strong and powerful personality:</p>
+<ol>
+<li>
+<p><strong>Identify the root cause:</strong></p>
+<p>It's important to understand the reasons behind your submissive behavior.</p>
+<p>It could be due to</p>
+<p>past experiences,</p>
+<p>cultural or societal expectations, or</p>
+<p>a lack of self-confidence.</p>
+</li>
+<li>
+<p><strong>Build Self-awareness:</strong></p>
+<p>Practice self-reflection and become more aware of your thoughts, feelings, and behaviors.</p>
+<p>This can help you identify patterns of submissive behavior and take steps to address them.</p>
+</li>
+<li>
+<p><strong>Practice Assertiveness:</strong></p>
+<p>Start by setting small boundaries and expressing your opinions and needs in a clear and confident manner.</p>
+<p>Use &quot;I&quot; statements and avoid being overly aggressive or confrontational.</p>
+</li>
+<li>
+<p><strong>Build Self-confidence:</strong></p>
+<p>Work on building your self-esteem and self-confidence.</p>
+<p>This can be done through positive self-talk, self-care, and setting and achieving goals.</p>
+</li>
+<li>
+<p><strong>Learn New Skills:</strong></p>
+<p>Build skills that will help you feel more confident and assertive, such as</p>
+<p>public speaking,</p>
+<p>negotiation, or</p>
+<p>conflict resolution.</p>
+</li>
+<li>
+<p><strong>Surround yourself with Positive influences:</strong></p>
+<p>Surround yourself with people who support and encourage you, and</p>
+<p>who embody the qualities you want to develop.</p>
+</li>
+<li>
+<p><strong>Take Risks:</strong></p>
+<p>Take calculated risks and challenge yourself to step outside of your comfort zone.</p>
+<p>This can help build confidence and resilience.</p>
+</li>
+<li>
+<p><strong>Practice Self-care:</strong></p>
+<p>Take care of your physical, emotional, and mental well-being.</p>
+<p>This can help reduce stress and anxiety and improve your overall sense of well-being.</p>
+</li>
+<li>
+<p><strong>Seek Professional Help:</strong></p>
+<p>If you're struggling to eliminate submissive behavior on your own, consider seeking the help of a therapist or coach who can provide guidance and support.</p>
+</li>
+</ol>
+<p>It's important to remember that building a strong and powerful personality is a process that takes time and effort.</p>
+<p>Be patient with yourself and celebrate small successes along the way.</p>
+<p><strong>List the common traits of Strong and Powerful Personality.</strong></p>
+<p>Here are some common traits of a strong and powerful personality:</p>
+<ol>
+<li>
+<p><strong>Confidence:</strong></p>
+<p>A strong and powerful personality is often characterized by a sense of self-assuredness and confidence.</p>
+</li>
+<li>
+<p><strong>Assertiveness:</strong></p>
+<p>A strong personality is able to express their opinions and</p>
+<p>needs in a clear and confident manner,</p>
+<p>while also respecting the opinions and needs of others.</p>
+</li>
+<li>
+<p><strong>Resilience:</strong></p>
+<p>A strong personality is able to bounce back from setbacks and challenges, and</p>
+<p>is able to maintain a positive outlook even in difficult situations.</p>
+</li>
+<li>
+<p><strong>Self-awareness:</strong></p>
+<p>A strong personality is aware of their strengths and weaknesses, and</p>
+<p>is able to use this knowledge to make informed decisions and take appropriate actions.</p>
+</li>
+<li>
+<p><strong>Emotional intelligence:</strong></p>
+<p>A strong personality is able to understand and manage their own emotions,</p>
+<p>as well as empathize with and relate to the emotions of others.</p>
+</li>
+<li>
+<p><strong>Adaptability:</strong></p>
+<p>A strong personality is able to adapt to changing circumstances and</p>
+<p>navigate complex social situations with ease.</p>
+</li>
+<li>
+<p><strong>Creativity:</strong></p>
+<p>A strong personality is often characterized by a sense of creativity and innovation, and</p>
+<p>is able to come up with new and original ideas.</p>
+</li>
+<li>
+<p><strong>Open-mindedness:</strong></p>
+<p>A strong personality is open to new experiences and ideas, and</p>
+<p>is willing to consider different perspectives.</p>
+</li>
+<li>
+<p><strong>Integrity:</strong></p>
+<p>A strong personality is honest and trustworthy, and</p>
+<p>operates with a strong sense of personal values and ethics.</p>
+</li>
+<li>
+<p><strong>Leadership:</strong></p>
+<p>A strong personality is often seen as a natural leader,</p>
+<p>able to inspire and motivate others towards a shared goal or vision.</p>
+</li>
+</ol>
+<p><strong>Develop Right Understanding</strong></p>
+<p>Developing the right understanding can be a lifelong process and requires ongoing learning and self-reflection.</p>
+<p>Here are some steps you can take to develop the right understanding:</p>
+<ol>
+<li>
+<p><strong>Seek out Reliable Sources of Information:</strong></p>
+<p>Look for information from reputable sources such as academic journals, books, and expert opinions.</p>
+<p>Avoid unreliable sources such as social media, gossip, and propaganda.</p>
+</li>
+<li>
+<p><strong>Practice Critical Thinking:</strong></p>
+<p>Question the information you receive and analyse it objectively.</p>
+<p>Consider the evidence and assess the credibility of the sources.</p>
+</li>
+<li>
+<p><strong>Engage in Self-reflection:</strong></p>
+<p>Reflect on your beliefs and values, and question whether they are based on sound reasoning or emotional biases.</p>
+<p>Be open to changing your views if new evidence or arguments are presented.</p>
+</li>
+<li>
+<p><strong>Embrace Diversity:</strong></p>
+<p>Seek out diverse perspectives and engage with people from different backgrounds and experiences.</p>
+<p>This will help you understand different viewpoints and broaden your understanding.</p>
+</li>
+<li>
+<p><strong>Stay Curious and Open-minded:</strong></p>
+<p>Maintain a curiosity about the world and a willingness to learn new things.</p>
+<p>Be open-minded and willing to change your views based on new information.</p>
+</li>
+<li>
+<p><strong>Seek Feedback:</strong></p>
+<p>Seek feedback from others to get a different perspective on your understanding.</p>
+<p>Be open to constructive criticism and use it to improve your understanding.</p>
+</li>
+<li>
+<p><strong>Reflect on your Experiences:</strong></p>
+<p>Reflect on your experiences and how they have shaped your understanding of the world.</p>
+<p>Consider how different experiences may lead to different perspectives and understanding.</p>
+</li>
+</ol>
+<p>Remember that developing the right understanding is a lifelong process and requires ongoing effort and self-reflection.</p>
+<p>Be patient with yourself, stay curious, and keep learning.</p>
+<p><strong>PAPERWISE: GUIDANCE FOR EXAMS</strong></p>
+<p>To clear IAS Exam, aspirants are advised to have a long-term strategy.</p>
+<p>Though most of the serious candidates start preparation 9-12 months before the exam date,</p>
+<p>there are candidates who successfully achieve top ranks with only a few months of dedicated study.</p>
+<p>SO, YES YOU CAN CLEAR UPSC WITH PREPARATION OF 1 YEAR WITHOUT COACHING</p>
+<p><strong>JUST FOLLOW THIS STEPS:</strong></p>
+<p><strong>RIGHT GUIDANCE</strong></p>
+<p>LISTEN TO TOPPER INTERVIEW [ At least 10 ] IT WILL GIVE YOU GUIDANCE PLUS advise in which STANDARDS BOOKS TO READ .</p>
+<p><strong>A. PRE</strong></p>
+<ol>
+<li>
+<p><strong>Current Affairs:</strong></p>
+<p>This was the first pillar of preparation.</p>
+<p>[FOLLOW ANY ONLINE GIST OF CURRENT AFFIARS COMPILATION]</p>
+</li>
+<li>
+<p><strong>Newspapers:</strong></p>
+<p>THE HINDU ,INDIAN EXPRESS learn about things and understand issues deeply as they develop.</p>
+<p>It allows us to build our own opinions as we screen through contradicting viewpoints on editorial pages on different days.</p>
+</li>
+<li>
+<p><strong>Notes Making:</strong></p>
+<p>PREFER making YOUR own notes as could categorize things based on pre.. mains related etc.</p>
+<p>Mains oriented notes were divided into social, polity, economic, international relations, environment etc.</p>
+<p>Monthly magazine of Vision IS ALSO GOOD OPTION.</p>
+</li>
+<li>
+<p><strong>PIB Feeds:</strong></p>
+<p>Subscribed to PIB FEED AND PRS FOR BILLS PASSED where schemes, data of performance, briefings are covered well.</p>
+<p>You need not read every news but expertise on deciding will come with time.</p>
+</li>
+<li>
+<p><strong>RSTV:</strong></p>
+<p>RSTV and its programme like the BIG PICTURE, INDIA’S WORLD etc.</p>
+<p>Really helps to know issues Well.</p>
+</li>
+<li>
+<p><strong>Curiosity:</strong></p>
+<p>Becoming a little curious while you read current affairs will help you to cover major static portions along with it.</p>
+<p>Part of learning national parks, environment section, geography, economic concepts of budget- trade, great personalities etc can be covered by doing a little research side by side.</p>
+</li>
+<li>
+<p><strong>PYQs:</strong></p>
+<p>Previous years’ question papers to analyse the pattern of the exam and to understand the nature of questions asked.</p>
+</li>
+<li>
+<p><strong>Develop Basic Understanding:</strong></p>
+<p>Reading and revising basic books (like NCERTS).</p>
+<p>Many a times we mark the answer wrong due to lack of understanding.</p>
+<p>This can be avoided by giving due consideration to basic books FOR NCERT [READ 6–12] ITS VERY BASIC NOT TOO TOUGH MAKE YOUR NOTES SO THAT YOU CAN REVISE IT LATER.</p>
+</li>
+<li>
+<p><strong>Revision:</strong></p>
+<p>REVISION  THERE IS NO SHORTCUT IN THIS - REVISE ATLEAST 3-TIMES</p>
+</li>
+<li>
+<p><strong>Solving Test Papers:</strong></p>
+<p>This is crucial to break the inertia and to make your fear go away.</p>
+<p>Solve at least 40-45 test papers of reputed institutes so that the REAL exam should appear just like another test.</p>
+</li>
+<li>
+<p><strong>Take CSAT Seriously:</strong></p>
+<p>I know many aspirants who scored decently in GS but failed to make through CSAT.</p>
+<p>And this year’s CSAT paper speaks for itself. It says loud and clear, Don’t take me lightly</p>
+</li>
+</ol>
+<p><strong>B. MAINS</strong></p>
+<p>This is the “Main” exam in true sense which ultimately will decide Rank, Service and Cadre you get.</p>
+<p>Here, success rate is very high in comparison to prelims but you have to compete with the candidates having almost same knowledge base.</p>
+<p>Small differences create a big gap. Hence, try to fetch 1 extra mark in each question and that is going to create a very huge gap between you and the crowd.</p>
+<p><strong>GS-1 + GS-2 + GS-3</strong></p>
+<ol>
+<li>
+<p><strong>Read Basic Books:</strong></p>
+<p>Read basic books and supplement it with some standard books.</p>
+<p>The knowledge you have gathered during prelims preparation is going to help you in these papers.</p>
+</li>
+<li>
+<p><strong>Synopsis:</strong></p>
+<p>Try to make short notes on each single topic mentioned in the syllabus.</p>
+<p>This will help you revising the static part in very smooth manner.</p>
+</li>
+<li>
+<p><strong>Conceptual Understanding:</strong></p>
+<p>Have conceptual understanding of each topic so that you can write answers within the prescribed word limit and time limit.</p>
+</li>
+<li>
+<p><strong>Connect Dots:</strong></p>
+<p>Current affairs will enrich your knowledge.</p>
+<p>Try to link the dots of Current affairs and the static portion to see the broader picture.</p>
+</li>
+<li>
+<p><strong>Gather Some Knowledge:</strong></p>
+<p>Gather some knowledge before answer writing practice.</p>
+</li>
+<li>
+<p><strong>Practice Answer Writing:</strong></p>
+<p>Practice answer writing to ensure that you complete the paper within prescribed time.</p>
+<p>It will also help know one’s weaknesses and strengths.</p>
+<p>Answer writing helps in articulating our views properly and good articulation is always rewarding.</p>
+</li>
+<li>
+<p><strong>Revision Through Answer Writing:</strong></p>
+<p>Revision through answer writing can be a good approach if it works for someone as it’s like one arrow and two shots.</p>
+</li>
+<li>
+<p><strong>Focus on Writing:</strong></p>
+<p>Focus less on reading and more on writing because at the end of the day you have to do a hell of writing during mains.</p>
+<p>So writing will help preparing not only at the level of intellect but also at the level of psychology.</p>
+</li>
+<li>
+<p><strong>PYQs:</strong></p>
+<p>Have a look at the previous years’ question papers to know the type and nature of questions that UPSC asks.</p>
+</li>
+<li>
+<p><strong>No Page Blank:</strong></p>
+<p>Don’t leave any page of your answer sheet blank.</p>
+<p>Attempt all questions.</p>
+<p>Even if you have slight knowledge about the question, attempt it.</p>
+</li>
+<li>
+<p><strong>Verify Practice Answers:</strong></p>
+<p>THERE ARE MANY SITES LIKE INSIGHT IAS , IAS BABA you can submit your answer writing and get reviewed.</p>
+</li>
+</ol>
+<p><strong>GS-4</strong></p>
+<ol>
+<li>
+<p><strong>Evaluation:</strong></p>
+<p>UPSC intends to evaluate our ethics and morality,</p>
+<p>therefore our answers must reflect originality and should appear natural.</p>
+</li>
+<li>
+<p><strong>Write in Your Own Words:</strong></p>
+<p>You can pick any book and read the topics provided by UPSC in the syllabus.</p>
+<p>Try to have conceptual understanding of the topics so that you can write them in your own words at anytime.</p>
+</li>
+<li>
+<p><strong>Prepare Definition of all Keywords:</strong></p>
+<p>Prepare definition of all keywords and key phrases of the syllabus in your own simple words and try to write them in the exam.</p>
+</li>
+</ol>
+<p><strong>Optional</strong></p>
+<ol>
+<li>
+<p><strong>Choose Carefully:</strong></p>
+<p>Choose optional very carefully as you may need to spend 2-3 years in this field with the optional subject.</p>
+<p>Choice should totally be based on one’s interest.</p>
+<p>One can know ones interest by reading NCERTs.</p>
+</li>
+<li>
+<p><strong>Thorough Preparation:</strong></p>
+<p>Prepare the optional paper thoroughly so that you are assured of getting good marks.</p>
+</li>
+<li>
+<p><strong>Finish Before Prelims:</strong></p>
+<p>Try to finish it at least once before the prelims so that you become aware of the topics and the content of the paper.</p>
+</li>
+<li>
+<p><strong>Consult PYQs:</strong></p>
+<p>Need to consult PYQs to understand the demand and the pattern.</p>
+<p>In optional more often than not, questions are repeated so look at PYQs of at least 5 years.</p>
+</li>
+<li>
+<p><strong>Writing Speed &amp; Retention:</strong></p>
+<p>Answer writing practice is also needed here in order to increase the writing speed and retention.</p>
+</li>
+<li>
+<p><strong>300 Marks:</strong></p>
+<p>One must strive to enter into the “<strong>ELITE GROUP OF 300 MARKS</strong>” to get desired service .</p>
+</li>
+</ol>
+<p><strong>Essay</strong></p>
+<ol>
+<li>
+<p><strong>Values:</strong></p>
+<p>Like GS4, this paper also intends to check the values of a candidate.</p>
+<p>It provides an opportunity to express ourselves and our values clearly and to have a sway over the examiner.</p>
+</li>
+<li>
+<p><strong>Writing Practice:</strong></p>
+<p>Write at least 8-10 essays before going to the examination hall and get it checked by teachers or peers.</p>
+</li>
+<li>
+<p><strong>Chose Topics Wisely:</strong></p>
+<p>Always choose the topic which you are strong at.</p>
+<p>Write simple language, keep examiner interested in the essay and always go for smooth transition from one paragraph to another.</p>
+<p>Try to include various dimensions like social, economic, political, etc.</p>
+</li>
+<li>
+<p><strong>Evergreen Topics:</strong></p>
+<p>One can prepare notes on evergreen topics like Climate Change, Terrorism, Women empowerment, etc.</p>
+<p>Otherwise, the fodder of GS would be more than sufficient to write a good essay.</p>
+</li>
+<li>
+<p><strong>Beware:</strong></p>
+<p>Beware of self proclaimed UPSC “Experts” who keep on unfurling the so called perfect strategies.</p>
+<p>These experts have been misguiding candidates in the disguise of helping them.</p>
+<p>They are usually found at tea stalls in ORN, on YouTube, in libraries etc.</p>
+</li>
+<li>
+<p><strong>Right Strategy:</strong></p>
+<p>Strategies are very personal thing.</p>
+<p>What worked for me may or may not work for you.</p>
+<p>Every person has his own unique way of doing things.</p>
+</li>
+<li>
+<p><strong>Keep Moving:</strong></p>
+<p>Keep moving, don’t pay heed to who is saying what.</p>
+<p>Don’t waste time on things which are not in your control.</p>
+</li>
+<li>
+<p><strong>Competitive Approach:</strong></p>
+<p>Always remember that If you don’t do it, someone else will.</p>
+<p>It’s a competition and you need to get comparative advantage over others in order to see your name in the “sacred list”.</p>
+</li>
+</ol>
+<p><strong>Explain Unemployment</strong></p>
+<p>Unemployment refers to the situation where people who are willing and able to work are unable to find jobs.</p>
+<p>Here are some key points to explain unemployment:</p>
+<ol>
+<li>
+<p><strong>Types of unemployment:</strong></p>
+<p>There are several types of unemployment, including</p>
+<p>cyclical unemployment (caused by fluctuations in the business cycle),</p>
+<p>structural unemployment (caused by changes in the structure of the economy),</p>
+<p>frictional unemployment (caused by temporary job transitions), and</p>
+<p>seasonal unemployment (caused by changes in demand due to seasons).</p>
+</li>
+<li>
+<p><strong>Causes of unemployment:</strong></p>
+<p>Unemployment can be caused by various factors, including</p>
+<p>technological change,</p>
+<p>globalization,</p>
+<p>changes in consumer preferences, and</p>
+<p>changes in government policies.</p>
+</li>
+<li>
+<p><strong>Measuring unemployment:</strong></p>
+<p>Unemployment is typically measured using the unemployment rate,</p>
+<p>which is the percentage of the labour force that is unemployed.</p>
+<p>The labour force includes all people who are either employed or actively seeking work.</p>
+</li>
+<li>
+<p><strong>Effects of unemployment:</strong></p>
+<p>Unemployment can have significant negative effects on individuals, including</p>
+<p>reduced income,</p>
+<p>increased stress, and</p>
+<p>reduced social status.</p>
+<p>It can also have negative effects on the economy as a whole, including</p>
+<p>reduced consumer spending,</p>
+<p>reduced economic growth, and</p>
+<p>increased social inequality.</p>
+</li>
+<li>
+<p><strong>Solutions to unemployment:</strong></p>
+<p>Various policies can be implemented to reduce unemployment, including</p>
+<p>increasing government spending on infrastructure and other job-creating programs,</p>
+<p>offering tax incentives to businesses to create jobs,</p>
+<p>providing education and training to workers, and</p>
+<p>reducing barriers to entry for new businesses.</p>
+</li>
+<li>
+<p><strong>Impacts of COVID-19 pandemic:</strong></p>
+<p>The COVID-19 pandemic has had a significant impact on unemployment rates around the world,</p>
+<p>as many businesses have been forced to shut down or reduce operations.</p>
+<p>Governments have implemented various policies to support workers and businesses during this period,</p>
+<p>including unemployment insurance,</p>
+<p>wage subsidies, and</p>
+<p>other forms of financial support.</p>
+</li>
+</ol>
+<p>In summary, unemployment is a complex issue that can have significant impacts on individuals and the economy as a whole.</p>
+<p>By understanding the causes and effects of unemployment,</p>
+<p>policymakers can implement effective strategies to reduce unemployment rates and</p>
+<p>promote economic growth and stability.</p>
+<p><strong>Pros:</strong></p>
+<ol>
+<li>
+<p><strong>Lower Inflation:</strong></p>
+<p>High unemployment rates result in lower consumer spending,</p>
+<p>which reduces the demand for goods and services.</p>
+<p>This leads to lower inflation rates,</p>
+<p>making it easier for the government to control prices.</p>
+</li>
+<li>
+<p><strong>Availability of Labor:</strong></p>
+<p>High unemployment rates mean that there are more job seekers available in the labor market.</p>
+<p>This can be beneficial for businesses,</p>
+<p>as they can hire employees at lower wages and</p>
+<p>have a larger pool of candidates to choose from.</p>
+</li>
+<li>
+<p><strong>Reduction in Wage Discrimination:</strong></p>
+<p>With a larger pool of job seekers, employers may be more likely to offer equal pay and benefits to all employees,</p>
+<p>regardless of their gender,</p>
+<p>ethnicity, or</p>
+<p>other factors.</p>
+</li>
+</ol>
+<p><strong>Cons:</strong></p>
+<ol>
+<li>
+<p><strong>Economic Burden:</strong></p>
+<p>Unemployment leads to</p>
+<p>reduced economic activity,</p>
+<p>lower production, and</p>
+<p>lower overall growth.</p>
+<p>This results in a burden on the economy,</p>
+<p>as the government may have to provide welfare benefits to those who are unemployed.</p>
+</li>
+<li>
+<p><strong>Poverty and Inequality:</strong></p>
+<p>Unemployment can lead to poverty and inequality,</p>
+<p>as people without jobs may struggle to make ends meet.</p>
+<p>This can result in social unrest and can also impact the overall well-being of society.</p>
+</li>
+<li>
+<p><strong>Mental Health Issues:</strong></p>
+<p>Unemployment can also lead to mental health issues such as depression, anxiety, and stress.</p>
+<p>This can be particularly challenging for individuals who are the sole breadwinners of their families.</p>
+</li>
+<li>
+<p><strong>Skills Obsolescence:</strong></p>
+<p>Long-term unemployment can lead to the loss of skills and knowledge,</p>
+<p>making it difficult for individuals to re-enter the job market.</p>
+<p>This can also result in a decline in productivity and innovation,</p>
+<p>which can negatively impact the economy as a whole.</p>
+</li>
+<li>
+<p><strong>Brain Drain:</strong></p>
+<p>High unemployment rates can also lead to brain drain,</p>
+<p>as highly skilled individuals may leave the country in search of better job opportunities.</p>
+<p>This can result in a loss of talent and knowledge,</p>
+<p>which can be detrimental to the economy in the long run.</p>
+</li>
+</ol>
+<p><strong>Explain all Points  of sociological understanding regarding problem of Unemployment.</strong></p>
+<p>The problem of unemployment is a complex issue that can be examined from a sociological perspective.</p>
+<p>Here are some of the sociological understandings of the problem of unemployment:</p>
+<ol>
+<li>
+<p><strong>Structural Factors:</strong></p>
+<p>Unemployment is not solely an individual problem,</p>
+<p>but it is also a result of larger social and economic factors.</p>
+<p>These include globalization, technological advancements, and government policies that</p>
+<p>can lead to a lack of job opportunities, income inequality, and job insecurity.</p>
+</li>
+<li>
+<p><strong>Social Stratification:</strong></p>
+<p>Unemployment disproportionately affects certain groups, such as</p>
+<p>youth, women, and minorities,</p>
+<p>due to factors such as</p>
+<p>discrimination, limited access to education and training, and historical disadvantages.</p>
+<p>This results in social stratification,</p>
+<p>where certain groups are disadvantaged and</p>
+<p>unable to access the same opportunities as others.</p>
+</li>
+<li>
+<p><strong>Mental Health:</strong></p>
+<p>Unemployment can have a significant impact on</p>
+<p>an individual's mental health,</p>
+<p>leading to stress,</p>
+<p>depression, and</p>
+<p>anxiety.</p>
+<p>This can also affect their social relationships and overall well-being.</p>
+</li>
+<li>
+<p><strong>Social Integration:</strong></p>
+<p>Unemployment can lead to social isolation,</p>
+<p>as individuals may feel disconnected from their communities and</p>
+<p>struggle to participate in social activities due to financial constraints.</p>
+<p>This can also lead to a lack of social integration,</p>
+<p>where individuals may not have access to the same networks and</p>
+<p>resources as those who are employed.</p>
+</li>
+<li>
+<p><strong>Policy Solutions:</strong></p>
+<p>Sociologists also examine policy solutions that can help address the problem of unemployment, such as</p>
+<p>government investments in education and training programs,</p>
+<p>providing unemployment benefits, and</p>
+<p>creating job opportunities through public works projects.</p>
+<p>These policy solutions can help reduce the impact of structural factors and social stratification on unemployment.</p>
+</li>
+</ol>
+<p>Overall, sociological understandings of the problem of unemployment highlight the interconnectedness of social,</p>
+<p>economic, and</p>
+<p>political factors that contribute to the issue.</p>
+<p>These understandings help policymakers and individuals to develop solutions that</p>
+<p>address the root causes of unemployment and</p>
+<p>reduce its negative impact on individuals and society as a whole.</p>
+<p><strong>Explain Inflation.</strong></p>
+<p>Inflation is the overall increase in the price of goods and services in an economy over a period of time.</p>
+<p>Here are some of the key points about inflation, along with its pros and cons:</p>
+<ol>
+<li>
+<p><strong>Causes:</strong></p>
+<p>Inflation can be caused by various factors, including</p>
+<p>an increase in demand for goods and services,</p>
+<p>a decrease in the supply of goods and services, or</p>
+<p>an increase in the money supply.</p>
+</li>
+<li>
+<p><strong>Pros:</strong></p>
+<p>Moderate inflation can encourage economic growth by</p>
+<p>stimulating consumer spending,</p>
+<p>encouraging business investment, and</p>
+<p>increasing employment.</p>
+<p>Inflation can also help reduce the burden of debt for borrowers,</p>
+<p>as the value of money decreases over time.</p>
+</li>
+<li>
+<p><strong>Cons:</strong></p>
+<p>High inflation can</p>
+<p>erode the value of savings and investments,</p>
+<p>reduce the purchasing power of consumers, and</p>
+<p>increase the cost of borrowing.</p>
+<p>Inflation can also lead to social unrest,</p>
+<p>particularly if prices rise rapidly,</p>
+<p>leading to political instability and</p>
+<p>reduced confidence in the economy.</p>
+</li>
+<li>
+<p><strong>Measurement:</strong></p>
+<p>Inflation is generally measured using an inflation rate,</p>
+<p>which is the percentage increase in the overall price level of goods and services.</p>
+<p>The most commonly used measure of inflation is the Consumer Price Index (CPI),</p>
+<p>which tracks the changes in the prices of a basket of goods and services that an average consumer might buy.</p>
+</li>
+<li>
+<p><strong>Monetary policy:</strong></p>
+<p>Governments and central banks use various tools to manage inflation,</p>
+<p>including setting interest rates,</p>
+<p>adjusting the money supply, and</p>
+<p>implementing fiscal policies such as taxation and government spending.</p>
+</li>
+<li>
+<p><strong>Optimal level:</strong></p>
+<p>The optimal level of inflation is subject to debate,</p>
+<p>as different levels of inflation can have different impacts on the economy.</p>
+<p>Most economists agree that a moderate rate of inflation is desirable,</p>
+<p>as it can help stimulate economic growth without causing significant harm to consumers or investors.</p>
+</li>
+</ol>
+<p>In summary, inflation is a complex economic phenomenon that can have both positive and negative effects on the economy.</p>
+<p>By carefully managing inflation through monetary and fiscal policies,</p>
+<p>governments and central banks can help promote economic growth and stability while</p>
+<p>minimizing the negative impacts of inflation on consumers and investors.</p>
+<p><strong>High Inflation vs Low Inflation.</strong></p>
+<p>High Inflation and Low Inflation have different impacts on the economy, and</p>
+<p>both have their advantages and disadvantages.</p>
+<p><strong>High Inflation:</strong></p>
+<p>High inflation occurs when prices of goods and services increase at a faster rate than usual,</p>
+<p>which reduces the purchasing power of the currency.</p>
+<p>Some of the possible effects of high inflation include:</p>
+<ol>
+<li>
+<p><strong>Reduced purchasing power:</strong></p>
+<p>As prices increase, consumers are able to purchase fewer goods and services with their money.</p>
+<p>This can reduce the standard of living for individuals and families, particularly those on fixed incomes.</p>
+</li>
+<li>
+<p><strong>Reduced economic growth:</strong></p>
+<p>High inflation can reduce economic growth by</p>
+<p>increasing the cost of borrowing,</p>
+<p>reducing business investment, and</p>
+<p>decreasing consumer confidence.</p>
+</li>
+<li>
+<p><strong>Social unrest:</strong></p>
+<p>High inflation can lead to social unrest as people become frustrated with rising prices and reduced purchasing power.</p>
+</li>
+<li>
+<p><strong>Pressure on fixed-income earners:</strong></p>
+<p>Retirees and others living on fixed incomes can be hit hard by high inflation,</p>
+<p>as their incomes may not keep up with rising prices.</p>
+</li>
+</ol>
+<p><strong>Low Inflation:</strong></p>
+<p>Low inflation occurs when the rate of increase in prices of goods and services is moderate or low.</p>
+<p>Some of the possible effects of low inflation include:</p>
+<ol>
+<li>
+<p><strong>Stable prices:</strong></p>
+<p>Low inflation results in stable prices,</p>
+<p>which can provide a sense of stability and predictability for</p>
+<p>consumers,</p>
+<p>businesses, and</p>
+<p>investors.</p>
+</li>
+<li>
+<p><strong>Increased purchasing power:</strong></p>
+<p>When inflation is low,</p>
+<p>consumers are able to purchase more goods and services with their money,</p>
+<p>which can improve their standard of living.</p>
+</li>
+<li>
+<p><strong>Increased economic growth:</strong></p>
+<p>Low inflation can increase economic growth by encouraging business investment and consumer spending.</p>
+</li>
+<li>
+<p><strong>Reduced pressure on fixed-income earners:</strong></p>
+<p>Low inflation can reduce the pressure on those living on fixed incomes,</p>
+<p>as their purchasing power is more likely to remain stable over time.</p>
+</li>
+</ol>
+<p>In summary, both high and low inflation have their advantages and disadvantages, and</p>
+<p>the ideal rate of inflation will depend on the specific circumstances and goals of a particular economy.</p>
+<p>Governments and central banks typically aim to maintain a moderate rate of inflation that</p>
+<p>balances the benefits and drawbacks of both high and low inflation.</p>
+<p><strong>Why MNCs and High Tech companies are laying off their employees at large scale recently? Explain in points</strong></p>
+<ol>
+<li>
+<p><strong>Economic Downturn:</strong></p>
+<p>One of the main reasons for layoffs by MNCs and High Tech companies is the recent economic downturn caused by the COVID-19 pandemic.</p>
+<p>This has led to a decrease in demand for goods and services,</p>
+<p>which has resulted in a decrease in revenue for companies,</p>
+<p>making it difficult for them to sustain their workforce.</p>
+</li>
+<li>
+<p><strong>Technological Advancements:</strong></p>
+<p>With rapid technological advancements, companies are automating more tasks,</p>
+<p>which is leading to a decrease in the need for human workers.</p>
+<p>This is particularly true for manufacturing and service industries,</p>
+<p>where robots and artificial intelligence are being used to replace human workers.</p>
+</li>
+<li>
+<p><strong>Cost-cutting Measures:</strong></p>
+<p>Companies are always looking for ways to reduce costs and increase profits.</p>
+<p>Layoffs are one way to achieve this goal.</p>
+<p>By reducing the size of their workforce,</p>
+<p>companies can cut down on expenses related to salaries, benefits, and other employee-related costs.</p>
+</li>
+<li>
+<p><strong>Merger and Acquisition:</strong></p>
+<p>Mergers and acquisitions can also lead to layoffs as companies try to streamline their operations and eliminate redundancies.</p>
+<p>When two companies merge, they often have overlapping functions and departments, leading to a need for downsizing.</p>
+</li>
+<li>
+<p><strong>Shift in Consumer Preferences:</strong></p>
+<p>With changing consumer preferences,</p>
+<p>companies may need to shift their focus to new products or services,</p>
+<p>which may require a different skill set or workforce.</p>
+<p>This can lead to layoffs as companies restructure and reallocate their resources.</p>
+</li>
+<li>
+<p><strong>Outsourcing:</strong></p>
+<p>Many companies are outsourcing jobs to other countries where labor is cheaper.</p>
+<p>This allows them to reduce costs and increase profits,</p>
+<p>but it also leads to layoffs for workers in the home country.</p>
+</li>
+<li>
+<p><strong>Government Policies:</strong></p>
+<p>Changes in government policies such as</p>
+<p>tax regulations,</p>
+<p>labor laws, and</p>
+<p>trade policies can also have an impact on companies and their workforce.</p>
+<p>If the policies are unfavorable for companies, they may need to lay off employees to remain competitive.</p>
+</li>
+</ol>
+<p>Overall, layoffs by MNCs and High Tech companies are a result of various factors,</p>
+<p>including economic downturns, technological advancements, cost-cutting measures, mergers and acquisitions, shifting consumer preferences, outsourcing, and government policies.</p>
+<p><strong>Corruption in Private Sector in India</strong></p>
+<p>Corruption is a significant issue in both the public and private sectors in India.</p>
+<p>In recent years, corruption in the private sector has come into the limelight due to high-profile cases of corporate fraud and bribery.</p>
+<p>Here are some points that explain corruption in the private sector in India, along with examples:</p>
+<ol>
+<li>
+<p><strong>Bribery:</strong></p>
+<p>Bribery is the most common form of corruption in the private sector.</p>
+<p>Companies may offer bribes to government officials, regulators, or</p>
+<p>business partners to secure contracts, permits, or licenses.</p>
+<p>For example:</p>
+<p>the 2019 CBI case against Adani Enterprises alleged that the company paid bribes to get clearance from the environment ministry to expand its port in Gujarat.</p>
+</li>
+<li>
+<p><strong>Insider trading:</strong></p>
+<p>Insider trading is another form of corruption in the private sector,</p>
+<p>where individuals or companies use privileged information to gain an unfair advantage in the stock market.</p>
+<p>For example:</p>
+<p>the 2018 case against Tata Steel alleged that its managing director leaked sensitive financial information to his family members before the company's official announcement.</p>
+</li>
+<li>
+<p><strong>Fraud:</strong></p>
+<p>Fraud is a significant issue in the private sector,</p>
+<p>with companies engaging in fraudulent activities such as accounting fraud, tax evasion, and money laundering.</p>
+<p>For example:</p>
+<p>the 2018 case against Punjab National Bank revealed that</p>
+<p>Nirav Modi's companies had engaged in a multi-billion dollar fraud using fake letters of credit.</p>
+</li>
+<li>
+<p><strong>Nepotism:</strong></p>
+<p>Nepotism is another form of corruption in the private sector,</p>
+<p>where companies give preference to family members or friends of top executives for employment or promotion, even if they are not qualified.</p>
+<p>For example:</p>
+<p>the 2010 case against the Ambani brothers alleged that</p>
+<p>their companies had received favorable treatment from the government due to their political connections.</p>
+</li>
+<li>
+<p><strong>Cartels:</strong></p>
+<p>Cartels are groups of companies that collude to fix prices or reduce competition in the market,</p>
+<p>leading to higher profits at the expense of consumers.</p>
+<p>For example:</p>
+<p>the 2018 case against Google alleged that the company had abused its dominant position in the search engine market by imposing unfair restrictions on its rivals.</p>
+</li>
+</ol>
+<p>In conclusion, corruption in the private sector in India takes various forms, ranging from bribery, insider trading, and fraud to nepotism and cartels.</p>
+<p>It is essential to have strong laws and regulations to prevent and punish such corrupt practices and promote a level playing field for all businesses.</p>
+<p><strong>Measures to erase corruption in private sector in India.</strong></p>
+<p>Corruption in the private sector is a challenging problem to eradicate,</p>
+<p>but there are measures that can be taken to prevent and punish corrupt practices.</p>
+<p>Here are some points that explain measures to eradicate corruption in the private sector,</p>
+<p>along with examples:</p>
+<ol>
+<li>
+<p><strong>Transparency:</strong></p>
+<p>Transparency is key to preventing corruption in the private sector.</p>
+<p>Companies should disclose their financial information and</p>
+<p>business practices to the public, investors, and regulators.</p>
+<p>For example:</p>
+<p>the Securities and Exchange Board of India (SEBI) has mandated that listed companies disclose their</p>
+<p>financial information,</p>
+<p>related-party transactions, and</p>
+<p>corporate governance practices.</p>
+</li>
+<li>
+<p><strong>Whistleblower Protection:</strong></p>
+<p>Protecting whistleblowers who report corruption is crucial in preventing and detecting corrupt practices in the private sector.</p>
+<p>Companies should have robust mechanisms to protect whistleblowers from retaliation and encourage them to report any wrongdoing.</p>
+<p>For example:</p>
+<p>the Companies Act, 2013, mandates that companies have a whistleblower policy to protect whistleblowers.</p>
+</li>
+<li>
+<p><strong>Anti-Corruption Policies:</strong></p>
+<p>Companies should have strong anti-corruption policies and codes of conduct that prohibit bribery, fraud, and other corrupt practices.</p>
+<p>These policies should be communicated to all employees and stakeholders and strictly enforced.</p>
+<p>For example:</p>
+<p>the Tata Group has a code of conduct that prohibits bribery, corruption, and unethical practices.</p>
+</li>
+<li>
+<p><strong>Independent Oversight:</strong></p>
+<p>Independent oversight mechanisms such as</p>
+<p>audit committees,</p>
+<p>independent directors, and</p>
+<p>external auditors can help prevent and detect corrupt practices in the private sector.</p>
+<p>For example:</p>
+<p>the Companies Act, 2013, mandates that companies have independent directors on their boards and audit committees to oversee financial reporting and risk management.</p>
+</li>
+<li>
+<p><strong>Strong Legal Framework:</strong></p>
+<p>A strong legal framework that punishes corrupt practices is essential to eradicate corruption in the private sector.</p>
+<p>Companies found guilty of corruption should be held accountable and face severe penalties such as</p>
+<p>fines,</p>
+<p>disgorgement of profits, and</p>
+<p>criminal prosecution.</p>
+<p>For example:</p>
+<p>the Prevention of Corruption Act, 1988, provides for penalties for individuals and companies found guilty of corrupt practices.</p>
+</li>
+</ol>
+<p>In conclusion, eradicating corruption in the private sector requires a multi-pronged approach that</p>
+<p>includes transparency, whistleblower protection, anti-corruption policies, independent oversight, and a strong legal framework.</p>
+<p>Implementing these measures can help create a culture of ethical business practices and promote a level playing field for all businesses.</p>
+<p><strong>Corruption in a Private Company by its Employee in India</strong></p>
+<p>Corruption in private companies by their employees in India is a serious problem that</p>
+<p>can have a detrimental impact on the company's reputation, profitability, and growth.</p>
+<p>Here are some ways in which corruption can occur in a private company by its employees in India:</p>
+<ol>
+<li>
+<p><strong>Bribery:</strong></p>
+<p>Bribery is one of the most common forms of corruption in private companies.</p>
+<p>It occurs when an employee offers or accepts money, gifts, or other benefits in exchange for a favor.</p>
+<p>For example:</p>
+<p>a sales representative may offer a bribe to a potential customer to secure a sale, or</p>
+<p>an employee may accept a bribe to leak confidential information about the company's operations or finances.</p>
+</li>
+<li>
+<p><strong>Embezzlement:</strong></p>
+<p>Embezzlement is a form of corruption in which</p>
+<p>an employee steals funds, assets, or property from the company for personal use.</p>
+<p>For example:</p>
+<p>an accountant may embezzle funds from the company's account or an employee may steal inventory or other company assets.</p>
+</li>
+<li>
+<p><strong>Insider Trading:</strong></p>
+<p>Insider trading is another form of corruption that involves an employee using confidential information</p>
+<p>about the company to gain an advantage in the stock market.</p>
+<p>For example:</p>
+<p>an employee may buy or sell company stock based on non-public information about an upcoming merger or acquisition.</p>
+</li>
+<li>
+<p><strong>Conflict of interest:</strong></p>
+<p>A conflict of interest occurs when an employee's personal interests conflict with the interests of the company.</p>
+<p>For example:</p>
+<p>an employee may accept a job offer from a competitor while still working for the company,</p>
+<p>or an employee may engage in a side business that competes with the company.</p>
+</li>
+<li>
+<p><strong>Nepotism:</strong></p>
+<p>Nepotism is a form of corruption in which an employee favors family members or friends</p>
+<p>over other qualified candidates for job opportunities, promotions, or contracts.</p>
+<p>For example:</p>
+<p>an employee may recommend a family member for a job opening, even if they are not qualified for the position.</p>
+</li>
+<li>
+<p><strong>Misuse of company resources:</strong></p>
+<p>Misuse of company resources occurs when an employee uses the company's resources, such as</p>
+<p>equipment or facilities, for personal gain.</p>
+<p>For example:</p>
+<p>an employee may use the company's car for personal errands or use the company's computer to run a personal business.</p>
+</li>
+<li>
+<p><strong>Falsification of records:</strong></p>
+<p>Falsification of records involves an employee manipulating or falsifying company records for personal gain.</p>
+<p>For example:</p>
+<p>an employee may inflate their expenses or work hours to receive more compensation or bonuses.</p>
+</li>
+</ol>
+<p>In conclusion, corruption in private companies by their employees in India can have a negative impact on the company's profitability, reputation, and growth.</p>
+<p>It is essential for companies to implement strict ethical standards, and</p>
+<p>for the government to enforce laws and regulations to prevent corruption.</p>
+<p>It is also important for companies to train their employees to recognize and report any signs of corruption.</p>
+<p><strong>Measures to erase corruption done by an  Employee  in a Private Company in India.</strong></p>
+<p>Erasing corruption done by an employee in a private company in India is essential to maintain ethical business practices and protect the company's reputation.</p>
+<p>Here are some measures that can be taken to eradicate corruption by an employee in a private company in India:</p>
+<ol>
+<li>
+<p><strong>Implement Strict Policies and Procedures:</strong></p>
+<p>Companies should have a clear code of conduct and policies that prohibit corrupt practices by employees.</p>
+<p>These policies should be communicated to all employees and strictly enforced.</p>
+</li>
+<li>
+<p><strong>Whistleblower Policy:</strong></p>
+<p>A whistleblower policy can help employees report any unethical or illegal behavior without fear of retaliation.</p>
+<p>The company should have a mechanism in place to receive such reports and investigate them thoroughly.</p>
+</li>
+<li>
+<p><strong>Employee Training:</strong></p>
+<p>Companies should provide regular training to employees on ethical conduct and the importance of preventing corruption.</p>
+<p>This training should include examples of corrupt practices and their consequences.</p>
+</li>
+<li>
+<p><strong>Regular Audits:</strong></p>
+<p>Regular audits of the company's financial records and operations can help identify any irregularities or suspicious activities by employees.</p>
+</li>
+<li>
+<p><strong>Independent Oversight:</strong></p>
+<p>Companies can hire independent auditors or compliance experts to oversee their operations and ensure compliance with ethical standards.</p>
+</li>
+<li>
+<p><strong>Consequences for Violations:</strong></p>
+<p>Companies should have consequences in place for employees who engage in corrupt practices, such as</p>
+<p>termination, suspension, or legal action.</p>
+</li>
+<li>
+<p><strong>Promoting Transparency:</strong></p>
+<p>Companies should promote transparency by making information about their operations, finances, and decision-making processes available to employees and stakeholders.</p>
+</li>
+<li>
+<p><strong>Background Checks:</strong></p>
+<p>Companies can conduct thorough background checks on employees before hiring them to identify any past involvement in corrupt practices.</p>
+</li>
+</ol>
+<p>In conclusion, erasing corruption by an employee in a private company in India requires a comprehensive approach that includes</p>
+<p>strict policies, employee training, regular audits, independent oversight, consequences for violations, promoting transparency, and conducting background checks.</p>
+<p>Implementing these measures can help create a culture of ethical conduct and prevent corruption in private companies.</p>
+<p><strong>Corruption in Public/Government Sector in India.</strong></p>
+<p>Corruption in the public/government sector in India is a serious issue that affects the country's development and progress.</p>
+<p>It is a widespread problem that is often fueled by</p>
+<p>a lack of transparency,</p>
+<p>accountability, and</p>
+<p>weak legal frameworks.</p>
+<p>Here are some points that explain the various aspects of corruption in the public/government sector in India:</p>
+<ol>
+<li>
+<p><strong>Bribery:</strong></p>
+<p>Bribery is one of the most common forms of corruption in India's public/government sector.</p>
+<p>Public officials often demand bribes to provide basic services like issuing permits, licenses, or to expedite work.</p>
+<p>For example:</p>
+<p>a traffic police officer may demand a bribe from a motorist to avoid a traffic violation fine.</p>
+</li>
+<li>
+<p><strong>Misuse of public funds:</strong></p>
+<p>Corruption also happens when public officials misuse public funds for their personal gain.</p>
+<p>For example:</p>
+<p>they may siphon off money meant for public projects or use it for their personal expenses.</p>
+</li>
+<li>
+<p><strong>Nepotism:</strong></p>
+<p>Nepotism is another form of corruption, where people in positions of power favor their family and friends over others.</p>
+<p>This results in unfair practices in hiring, promotions, and the allocation of resources.</p>
+</li>
+<li>
+<p><strong>Political corruption:</strong></p>
+<p>Corruption in politics is another issue that plagues India.</p>
+<p>It is often seen during elections when political parties engage in malpractices like vote-buying and violence to win votes.</p>
+</li>
+<li>
+<p><strong>Red tape:</strong></p>
+<p>Bureaucratic red tape is another form of corruption in India's public/government sector.</p>
+<p>Officials may create unnecessary bureaucratic procedures to delay or deny services to individuals,</p>
+<p>forcing them to pay bribes to expedite their work.</p>
+</li>
+<li>
+<p><strong>Lack of transparency:</strong></p>
+<p>Corruption thrives in an environment where there is a lack of transparency.</p>
+<p>In India's public/government sector, officials often keep their activities and decision-making processes hidden from the public,</p>
+<p>making it difficult to hold them accountable for their actions.</p>
+</li>
+<li>
+<p><strong>Weak legal framework:</strong></p>
+<p>The weak legal framework is another reason why corruption persists in India's public/government sector.</p>
+<p>There are often delays in the prosecution of corrupt officials,</p>
+<p>and the punishments are often inadequate,</p>
+<p>which fails to deter others from engaging in corrupt practices.</p>
+</li>
+</ol>
+<p><strong>Examples of corruption in India's public/government sector include:</strong></p>
+<ol>
+<li>
+<p><strong>The 2G spectrum scam</strong></p>
+<p>where government officials allocated 2G spectrum licenses to private companies at below-market prices,</p>
+<p>causing a loss of billions of dollars to the exchequer.</p>
+</li>
+<li>
+<p><strong>The Commonwealth Games scam</strong></p>
+<p>where government officials siphoned off money meant for</p>
+<p>organizing the Commonwealth Games in Delhi in 2010.</p>
+</li>
+<li>
+<p><strong>The Adarsh Housing Society scam</strong></p>
+<p>where government officials and politicians colluded to allot apartments meant for</p>
+<p>war widows and veterans to themselves and their family members.</p>
+</li>
+<li>
+<p><strong>The coal allocation scam</strong></p>
+<p>where government officials allocated coal blocks to private companies at below-market prices,</p>
+<p>causing a loss of billions of dollars to the exchequer.</p>
+</li>
+<li>
+<p><strong>The Vyapam scam</strong></p>
+<p>where government officials and politicians engaged in malpractices during</p>
+<p>the recruitment process for various government jobs in Madhya Pradesh.</p>
+</li>
+</ol>
+<p>Overall, corruption in India's public/government sector is a major hindrance to the country's development and progress.</p>
+<p>Addressing this issue requires a concerted effort from all stakeholders, including</p>
+<p>the government,</p>
+<p>civil society organizations, and</p>
+<p>the public.</p>
+<p>It requires a transparent and accountable governance system, strong legal frameworks, and</p>
+<p>a culture of ethical behavior and integrity.</p>
+<p><strong>Erase Corruption in Public/Government Sector in India.</strong></p>
+<p>Erasing corruption in India's public/government sector is a complex and challenging task that requires a sustained effort from all stakeholders.</p>
+<p>Here are some points that explain how corruption can be addressed in the public/government sector in India:</p>
+<ol>
+<li>
+<p><strong>Transparency and Accountability:</strong></p>
+<p>The first step towards erasing corruption is to ensure transparency and accountability in all government activities.</p>
+<p>This can be achieved by implementing mechanisms like</p>
+<p>Right to Information (RTI) Act,</p>
+<p>Citizen Charter, and</p>
+<p>Whistleblower Protection Act.</p>
+<p>These mechanisms will allow citizens to access information about</p>
+<p>government activities and hold officials accountable for their actions.</p>
+</li>
+<li>
+<p><strong>Digitalization and Automation:</strong></p>
+<p>Digitization and automation of government processes can reduce corruption by</p>
+<p>minimizing the need for human interface and increasing transparency.</p>
+<p>For example:</p>
+<p>the digitization of land records has reduced corruption in the land registry process in many states of India.</p>
+</li>
+<li>
+<p><strong>Strengthening Legal Framework:</strong></p>
+<p>To address corruption effectively, there is a need to strengthen the legal framework by</p>
+<p>enacting more stringent laws and ensuring their effective implementation.</p>
+<p>This can be achieved by introducing laws such as</p>
+<p>the Prevention of Corruption Act, 1988, and</p>
+<p>the Lokpal and Lokayuktas Act, 2013.</p>
+</li>
+<li>
+<p><strong>Encouraging Ethical Behavior:</strong></p>
+<p>Encouraging ethical behavior is essential to erasing corruption in the public/government sector.</p>
+<p>This can be achieved by introducing training programs for</p>
+<p>government officials on ethical behavior,</p>
+<p>conducting awareness campaigns for citizens, and</p>
+<p>ensuring strict punishment for offenders.</p>
+</li>
+<li>
+<p><strong>Streamlining Bureaucratic Procedures:</strong></p>
+<p>Streamlining bureaucratic procedures can reduce corruption by</p>
+<p>minimizing the opportunities for officials to demand bribes or engage in corrupt practices.</p>
+<p>This can be achieved by</p>
+<p>simplifying procedures,</p>
+<p>introducing time-bound services, and</p>
+<p>reducing the discretionary powers of officials.</p>
+</li>
+</ol>
+<p><strong>Examples of successful anti-corruption measures in India include:</strong></p>
+<ol>
+<li>
+<p>The introduction of the Aadhaar card system has reduced corruption in</p>
+<p>the distribution of subsidies and social welfare schemes, by eliminating fake beneficiaries.</p>
+</li>
+<li>
+<p>The digitization of land records in Rajasthan has reduced corruption in</p>
+<p>the land registry process and increased transparency.</p>
+</li>
+<li>
+<p>The introduction of e-tendering systems for government contracts has reduced corruption in</p>
+<p>the procurement process, by increasing transparency and competition.</p>
+</li>
+<li>
+<p>The introduction of the Public Service Delivery Guarantee Act in some states of India has ensured</p>
+<p>time-bound delivery of services and minimized opportunities for officials to demand bribes.</p>
+</li>
+<li>
+<p>The introduction of the Right to Information Act has enabled citizens to</p>
+<p>access information about government activities and hold officials accountable for their actions.</p>
+</li>
+</ol>
+<p>Overall, erasing corruption in the public/government sector in India requires a comprehensive approach that</p>
+<p>addresses the root causes of corruption,</p>
+<p>strengthens the legal framework, encourages ethical behavior, and</p>
+<p>increases transparency and accountability in government activities.</p>
+<p>It requires a sustained effort from all stakeholders, including the government, civil society organizations, and the public.</p>
+<p><strong>Unconventional ways to erase Corruption in Public/Government Sector in India</strong></p>
+<p>Erasing corruption in India's public/government sector is a complex and challenging task that</p>
+<p>requires a sustained effort from all stakeholders.</p>
+<p>Here are some unconventional ways that could potentially help in erasing corruption in the public/government sector in India:</p>
+<ol>
+<li>
+<p><strong>Gamification:</strong></p>
+<p>One unconventional way to reduce corruption is by</p>
+<p>introducing gamification in government processes.</p>
+<p>This could involve creating a system of rewards and recognition for officials</p>
+<p>who demonstrate ethical behavior and penalizing those</p>
+<p>who engage in corrupt practices.</p>
+<p>For example:</p>
+<p>the state government of Rajasthan introduced a program called &quot;e-Mitra&quot;</p>
+<p>which used a point-based system to reward officials</p>
+<p>who delivered services efficiently and</p>
+<p>penalized those who failed to meet the standards.</p>
+</li>
+<li>
+<p><strong>Peer Monitoring:</strong></p>
+<p>Another unconventional way to reduce corruption is by introducing peer monitoring.</p>
+<p>This could involve creating a network of officials</p>
+<p>who monitor each other's activities and</p>
+<p>report any instances of corruption.</p>
+<p>This could create a sense of accountability among officials and</p>
+<p>reduce the chances of corrupt practices.</p>
+<p>For example:</p>
+<p>the state government of Kerala introduced a system called &quot;Kerala Service Rules&quot;</p>
+<p>which allowed officials to monitor each other's activities and</p>
+<p>report any instances of corruption.</p>
+</li>
+<li>
+<p><strong>Social Media Campaigns:</strong></p>
+<p>Social media can be an effective tool to create awareness and mobilize public opinion against corruption.</p>
+<p>Social media campaigns can be used to expose corrupt practices and hold officials accountable for their actions.</p>
+<p>For example:</p>
+<p>the &quot;India Against Corruption&quot; campaign led by social activist Anna Hazare used social media to</p>
+<p>mobilize public opinion against corruption and</p>
+<p>demand the enactment of a strong anti-corruption law.</p>
+</li>
+<li>
+<p><strong>Incentivizing Whistleblowers:</strong></p>
+<p>Another unconventional way to reduce corruption is by incentivizing whistleblowers who report instances of corruption.</p>
+<p>This could involve providing financial rewards or protection to whistleblowers who expose corrupt practices.</p>
+<p>For example:</p>
+<p>the state government of Haryana introduced a program called &quot;Whistleblower Protection Scheme&quot; which</p>
+<p>provided financial rewards and protection to whistleblowers who exposed corrupt practices.</p>
+</li>
+<li>
+<p><strong>Citizen's Jury:</strong></p>
+<p>Another unconventional way to reduce corruption is by introducing the concept of citizen's jury.</p>
+<p>This could involve selecting a group of citizens who are randomly chosen and</p>
+<p>trained to review government activities and provide feedback.</p>
+<p>This could create a system of checks and balances on government activities and</p>
+<p>reduce the chances of corrupt practices.</p>
+<p>For example:</p>
+<p>the state government of Andhra Pradesh introduced a program called &quot;Smart Pulse Survey&quot; which</p>
+<p>involved randomly selecting citizens and training them to monitor government activities.</p>
+</li>
+</ol>
+<p>Overall, erasing corruption in the public/government sector in India requires a comprehensive approach that</p>
+<p>addresses the root causes of corruption, strengthens the legal framework, encourages ethical behavior, and increases transparency and</p>
+<p>accountability in government activities.</p>
+<p>While unconventional methods such as</p>
+<p>gamification, peer monitoring, social media campaigns, incentivizing whistleblowers, and</p>
+<p>citizen's jury may not be a panacea,</p>
+<p>they can complement traditional methods and</p>
+<p>potentially contribute to erasing corruption in the public/government sector in India.</p>
+<p><strong>Types of Bribe given in  Public/Government Sector in India.</strong></p>
+<p>Bribery is a widespread phenomenon in India's public/government sector.</p>
+<p>It takes various forms and is often used to facilitate the delivery of services or gain favors from government officials.</p>
+<p>Here are some of the types of bribes given in the public/government sector in India:</p>
+<ol>
+<li>
+<p><strong>Cash bribes:</strong></p>
+<p>Cash bribes are the most common form of bribery in India.</p>
+<p>It involves giving money to officials to expedite the delivery of services or to gain undue favors.</p>
+<p>For example:</p>
+<p>a person may offer a bribe to a police officer to avoid paying a traffic fine or</p>
+<p>to a government clerk to expedite the processing of a document.</p>
+</li>
+<li>
+<p><strong>Gift bribes:</strong></p>
+<p>Gift bribes involve offering gifts to officials to gain favors or to influence their decisions.</p>
+<p>This could involve giving expensive gifts such as watches, jewelry, or</p>
+<p>electronic gadgets to officials in exchange for their services.</p>
+<p>For example:</p>
+<p>a person may offer a gift to a tax official to avoid paying taxes or to a government contractor to influence the award of a contract.</p>
+</li>
+<li>
+<p><strong>Travel bribes:</strong></p>
+<p>Travel bribes involve offering free travel or accommodation to officials to gain favors or influence their decisions.</p>
+<p>This could involve offering free air tickets, hotel stays, or</p>
+<p>other travel-related expenses to officials in exchange for their services.</p>
+<p>For example:</p>
+<p>a person may offer free travel and accommodation to a government official to influence the award of a contract or</p>
+<p>to expedite the processing of a document.</p>
+</li>
+<li>
+<p><strong>Job bribes:</strong></p>
+<p>Job bribes involve offering jobs or promotions to officials in exchange for their services.</p>
+<p>This could involve offering a job or promotion to a government official in exchange for</p>
+<p>their help in getting a contract or in expediting the processing of a document.</p>
+<p>For example:</p>
+<p>a person may offer a job to a government official's relative in exchange for their help in getting a contract.</p>
+</li>
+<li>
+<p><strong>Service bribes:</strong></p>
+<p>Service bribes involve offering services to officials in exchange for their services.</p>
+<p>This could involve offering to provide services such as</p>
+<p>legal, accounting, or consulting services to officials in exchange for</p>
+<p>their help in getting a contract or in expediting the processing of a document.</p>
+<p>For example:</p>
+<p>a person may offer legal services to a government official in exchange for their help in getting a contract.</p>
+</li>
+</ol>
+<p>In conclusion, bribery is a pervasive problem in India's public/government sector, and it takes various forms.</p>
+<p>Cash, gift, travel, job, and service bribes are some of the common types of bribes given in the public/government sector in India.</p>
+<p>It is essential to address this problem effectively by strengthening the legal framework, increasing transparency and accountability, and</p>
+<p>promoting ethical behavior among government officials.</p>
+</div></div>
+					</body>
+				</html>
+			

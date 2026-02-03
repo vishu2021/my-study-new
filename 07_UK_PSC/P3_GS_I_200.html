@@ -1,0 +1,890 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="../atom-one-light.css">
+						<title>P3_GS_I_200</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">P3_GS_I_200</div>
+
+<style>
+		/* https://necolas.github.io/normalize.css/ */
+		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
+		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
+		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
+
+		body {
+			font-size: 15px;
+			color: #32373F;
+			word-wrap: break-word;
+			line-height: 1.6em;
+			background-color: #ffffff;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+			padding-bottom: 0px;
+			padding-top: 0px;
+		}
+		kbd {
+			border: 1px solid rgb(220, 220, 220);
+			box-shadow: inset 0 -1px 0 rgb(220, 220, 220);
+			padding: 2px 4px;
+			border-radius: 3px;
+			background-color: rgb(243, 243, 243);
+		}
+
+		:root {
+			--scrollbar-size: 7px;
+		}
+
+		::-webkit-scrollbar {
+			width: var(--scrollbar-size);
+			height: var(--scrollbar-size);
+		}
+		::-webkit-scrollbar-thumb {
+			border-radius: calc(var(--scrollbar-size) / 2);
+		}
+		::-webkit-scrollbar-corner {
+			background: none;
+		}
+		::-webkit-scrollbar-track {
+			border: none;
+		}
+		::-webkit-scrollbar-thumb {
+			background: rgba(50, 55, 63, 0.54); 
+		}
+		::-webkit-scrollbar-track:hover {
+			background: rgba(0, 0, 0, 0.1); 
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background: rgba(50, 55, 63, 0.63); 
+		}
+
+		
+
+		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
+
+		#rendered-md > h1:first-child,
+		#rendered-md > h2:first-child,
+		#rendered-md > h3:first-child,
+		#rendered-md > h4:first-child,
+		#rendered-md > ul:first-child,
+		#rendered-md > ol:first-child,
+		#rendered-md > table:first-child,
+		#rendered-md > blockquote:first-child,
+		#rendered-md > img:first-child,
+		#rendered-md > p:first-child {
+			margin-top: 0;
+			padding-top: 0;
+		}
+		
+		p, h1, h2, h3, h4, h5, h6, ul, table {
+			margin-top: .6em;
+			margin-bottom: 1.35em;
+
+			/*
+				Adds support for RTL text in the note body. It automatically detects the direction using the content.
+				Issue: https://github.com/laurent22/joplin/issues/3991
+			*/
+			unicode-bidi: plaintext;
+		}
+
+		h1, h2, h3, h4, h5, h6, ul, table {
+			margin-bottom: 0.65em;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			line-height: 1.5em;
+		}
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			border-bottom: 1px solid #dddddd;
+			padding-bottom: .3em;
+		}
+		h2 {
+			font-size: 1.3em;
+			font-weight: bold;
+			padding-bottom: .1em; */
+		}
+		h3 {
+			font-size: 1.1em;
+			font-weight: bold;
+		}
+		h4, h5, h6 {
+			font-size: 1em;
+			font-weight: bold;
+		}
+
+		.exported-note-title {
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 0.8em;
+			line-height: 1.5em;
+			padding-bottom: .35em;
+			border-bottom: 1px solid #dddddd;
+		}
+
+		a {
+			color: #155BDA;
+		}
+		ul, ol {
+			padding-left: 0;
+			margin-left: 1.7em;
+		}
+		li {
+			margin-bottom: .4em;
+		}
+		li p {
+			margin-top: 0.2em;
+			margin-bottom: 0;
+		}
+
+		dt {
+			font-weight: bold;
+			margin-bottom: 0.25em;
+		}
+
+		dd {
+			margin-inline-start: 2.5em;
+			margin-bottom: 0.5em;
+		}
+
+		.resource-icon {
+			display: inline-block;
+			position: relative;
+			top: 0.3em;
+			text-decoration: none;
+			width: 1.2em;
+			height: 1.4em;
+			margin-right: 0.4em;
+			background-color:  #155BDA;
+		}
+    /* These icons are obtained from the wonderful ForkAwesome project by copying the src svgs 
+     * into the css classes below.
+     * svgs are obtained from https://github.com/ForkAwesome/Fork-Awesome/tree/master/src/icons/svg
+     * instead of the svg width, height property you must use a viewbox here, 0 0 1536 1792 is typically the actual size of the icon
+     * each line begins with the pre-amble -webkit-mask: url("data:image/svg+xml;utf8,
+     * and of course finishes with ");
+     * to prevent artifacts it is also necessary to include -webkit-mask-repeat: no-repeat;
+     * on the following line
+     * */
+		.fa-joplin {
+			/* Awesome Font file */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M373.834 128C168.227 128 0 296.223 0 501.834v788.336C0 1495.778 168.227 1664 373.834 1664h788.336c205.608 0 373.83-168.222 373.83-373.83V501.834C1536 296.224 1367.778 128 1162.17 128zm397.222 205.431h417.424a7.132 7.132 0 0 1 7.132 7.133v132.552c0 4.461-3.619 8.073-8.077 8.073h-57.23c-24.168 0-43.768 19.338-44.284 43.374v2.377h-.017v136.191h-.053l-.466 509.375c-5.02 77.667-39.222 149.056-96.324 201.046-60.28 54.834-141.948 85.017-229.962 85.017-12.45 0-25.208-.61-37.907-1.785-92.157-8.682-181.494-48.601-251.662-112.438-71.99-65.517-117.147-150.03-127.164-238-11.226-98.763 23.42-192.783 95.045-257.937 81.99-74.637 198.185-101.768 316.613-75.704 5.574 1.227 9.55 6.282 9.55 11.997v199.52c-.199 2.625-1.481 6.599-8.183 2.896-.663-.365-1.194-.511-1.653-.531-21.987-10.587-45.159-17.57-68.559-19.916-.38-.04-.757-.124-1.138-.163-.537-.048-1.034-.033-1.556-.075-4.13-.354-8.183-.517-12.203-.58-.87-.011-1.771-.127-2.641-.127-.486 0-.951.05-1.437.057-1.464.011-2.886.115-4.33.163-2.76.102-5.497.211-8.182.448-.273.024-.547.07-.835.097-25.509 2.4-47.864 11.104-65.012 25.47-.954.802-1.974 1.53-2.9 2.36a1.34 1.34 0 0 1-.168.146c-23.96 21.8-34.881 53.872-30.726 90.316 4.62 40.737 26.94 81.156 62.841 113.823 35.908 32.67 80.335 52.977 125.113 57.186 35.118 3.36 66.547-3.919 89.899-20.461a97.255 97.255 0 0 0 9.365-7.501c2.925-2.661 5.569-5.5 8.086-8.416.3-.348.672-.673.975-1.024 8.253-9.864 14.222-21.067 17.996-33.148.639-2.034 1.051-4.148 1.564-6.227.381-1.563.81-3.106 1.112-4.693.555-2.784.923-5.632 1.253-8.49.086-.709.183-1.414.237-2.128.492-4.893.693-9.858.55-14.91h.013V521.623c-2.01-22.626-20.78-40.434-43.928-40.434h-57.23a8.071 8.071 0 0 1-8.077-8.073V340.564a7.132 7.132 0 0 1 7.136-7.133z'/></svg>");
+		}
+		.fa-file-image {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-128-448v320H256v-192l192-192 128 128 384-384zm-832-192c-106 0-192-86-192-192s86-192 192-192 192 86 192 192-86 192-192 192z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-pdf {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-514-593c25 20 53 38 84 56 42-5 81-7 117-7 67 0 152 8 177 49 7 10 13 28 2 52-1 1-2 3-3 4v1c-3 18-18 38-71 38-64 0-161-29-245-73-139 15-285 46-392 83-103 176-182 262-242 262-10 0-19-2-28-7l-24-12c-3-1-4-3-6-5-5-5-9-16-6-36 10-46 64-123 188-188 8-5 18-2 23 6 1 1 2 3 2 4 31-51 67-116 107-197 45-90 80-178 104-262-32-109-42-221-24-287 7-25 22-40 42-40h22c15 0 27 5 35 15 12 14 15 36 9 68-1 3-2 6-4 8 1 3 1 5 1 8v30c-1 63-2 123-14 192 35 105 87 190 146 238zm-576 411c30-14 73-57 137-158-75 58-122 124-137 158zm398-920c-10 28-10 76-2 132 3-16 5-31 7-44 2-17 5-31 7-43 1-3 2-5 4-8-1-1-1-3-2-5-1-18-7-29-13-36 0 2-1 3-1 4zm-124 661c88-35 186-63 284-81-10-8-20-15-29-23-49-43-93-103-127-176-19 61-47 126-83 197-15 28-30 56-45 83zm646-16c-5-5-31-24-140-24 49 18 94 28 124 28 9 0 14 0 18-1 0-1-1-2-2-3z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-word {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM233 768v107h70l164 661h159l128-485c5-15 8-30 10-46 1-8 2-16 2-24h4l3 24c3 14 4 30 9 46l128 485h159l164-661h70V768h-300v107h90l-99 438c-4 16-6 33-7 46l-2 21h-4c0-6-2-14-3-21-3-13-5-30-9-46L825 768H711l-144 545c-4 16-5 33-8 46l-4 21h-4l-2-21c-1-13-3-30-7-46l-99-438h90V768H233z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-powerpoint {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-992-234v106h327v-106h-93v-167h137c43 0 82-2 118-15 90-31 146-124 146-233s-54-193-137-228c-38-15-84-19-130-19H416v107h92v555h-92zm353-280H650V882h120c35 0 62 6 83 18 36 21 56 62 56 115 0 56-20 99-62 120-21 10-47 15-78 15z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-excel {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-979-234v106h281v-106h-75l103-161c12-19 18-34 21-34h2c1 4 3 7 5 10 4 8 10 14 17 24l107 161h-76v106h291v-106h-68l-192-273 195-282h67V768H828v107h74l-103 159c-12 19-21 34-21 33h-2c-1-4-3-7-5-10-4-7-9-14-17-23L648 875h76V768H434v107h68l189 272-194 283h-68z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-audio {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM620 850c12 5 20 17 20 30v544c0 13-8 25-20 30-4 1-8 2-12 2-8 0-16-3-23-9l-166-167H288c-18 0-32-14-32-32v-192c0-18 14-32 32-32h131l166-167c10-9 23-12 35-7zm417 689c19 0 37-8 50-24 83-102 129-231 129-363s-46-261-129-363c-22-28-63-32-90-10-28 23-32 63-9 91 65 80 100 178 100 282s-35 202-100 282c-23 28-19 68 9 90 12 10 26 15 40 15zm-211-148c17 0 34-7 47-20 56-60 87-137 87-219s-31-159-87-219c-24-26-65-27-91-3-25 24-27 65-2 91 33 36 52 82 52 131s-19 95-52 131c-25 26-23 67 2 91 13 11 29 17 44 17z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-video {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM768 768c70 0 128 58 128 128v384c0 70-58 128-128 128H384c-70 0-128-58-128-128V896c0-70 58-128 128-128h384zm492 2c12 5 20 17 20 30v576c0 13-8 25-20 30-4 1-8 2-12 2-8 0-17-3-23-9l-265-266v-90l265-266c6-6 15-9 23-9 4 0 8 1 12 2z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-archive {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M640 384V256H512v128h128zm128 128V384H640v128h128zM640 640V512H512v128h128zm128 128V640H640v128h128zm700-388c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H768v128H640V128H128v1536h1280zM781 943c85 287 107 349 107 349 5 17 8 34 8 52 0 111-108 192-256 192s-256-81-256-192c0-18 3-35 8-52 0 0 21-62 120-396V768h128v128h79c29 0 54 19 62 47zm-141 465c71 0 128-29 128-64s-57-64-128-64-128 29-128 64 57 64 128 64z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-code {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM480 768c11-14 31-17 45-6l51 38c14 11 17 31 6 45l-182 243 182 243c11 14 8 34-6 45l-51 38c-14 11-34 8-45-6l-226-301c-8-11-8-27 0-38zm802 301c8 11 8 27 0 38l-226 301c-11 14-31 17-45 6l-51-38c-14-11-17-31-6-45l182-243-182-243c-11-14-8-34 6-45l51-38c14-11 34-8 45 6zm-620 461c-18-3-29-20-26-37l138-831c3-18 20-29 37-26l63 10c18 3 29 20 26 37l-138 831c-3 18-20 29-37 26z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-alt, .fa-file-csv {
+      /* fork-awesome doesn't have csv so we use the text icon */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM384 800c0-18 14-32 32-32h704c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64zm736 224c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704zm0 256c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		blockquote {
+			border-left: 4px solid rgb(220, 220, 220);
+			padding-left: 1.2em;
+			margin-left: 0;
+			opacity: 0.7;
+		}
+
+		.jop-tinymce table,
+		table {
+			text-align: left;
+			border-collapse: collapse;
+			border: 1px solid rgb(220, 220, 220);
+			background-color: #ffffff;
+		}
+
+		.jop-tinymce table td, .jop-tinymce table th,
+		table td, th {
+			text-align: left;
+			padding: .5em 1em .5em 1em;
+			font-size: 15;
+			color: #32373F;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+		}
+
+		.jop-tinymce table td,
+		table td {
+			border: 1px solid rgb(220, 220, 220);
+		}
+
+		.jop-tinymce table th,
+		table th {
+			border: 1px solid rgb(220, 220, 220);
+			border-bottom: 2px solid rgb(220, 220, 220);
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:nth-child(even),
+		table tr:nth-child(even) {
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:hover,
+		table tr:hover {
+			background-color: #e5e5e5;
+		}
+
+		hr {
+			border: none;
+			border-bottom: 2px solid #dddddd;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		.inline-code,
+		.mce-content-body code {
+			border: 1px solid rgb(220, 220, 220);
+			background-color: rgb(243, 243, 243);
+			padding-right: .2em;
+			padding-left: .2em;
+			border-radius: .25em;
+			color: rgb(0,0,0);
+			font-size: .9em;
+		}
+
+		.highlighted-keyword {
+			background-color: #F3B717;
+			color: black;
+		}
+
+		
+	.not-loaded-resource img {
+		width: 1.15em;
+		height: 1.15em;
+		background: white;
+		padding: 2px !important;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px #000000aa;
+	}
+
+	a.not-loaded-resource img {
+		margin-right: .2em;
+	}
+
+	a.not-loaded-resource {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+
+		.md-checkbox input[type=checkbox]:checked {
+			opacity: 0.7;
+		}
+
+		.jop-tinymce ul.joplin-checklist .checked,
+		.md-checkbox .checkbox-label-checked {
+			opacity: 0.5;
+		}
+
+		.exported-note {
+			padding: 1em;
+		}
+
+		.joplin-editable .joplin-source {
+			display: none;
+		}
+
+		mark {
+			background: #F7D26E;
+			color: black;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		.mce-content-body {
+			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
+			padding: 5px 10px 10em 0;
+		}
+
+		/*
+		.mce-content-body code {
+			background-color: transparent;
+		}
+		*/
+
+		.mce-content-body [data-mce-selected=inline-boundary] {
+			background-color: transparent;
+		}
+
+		.mce-content-body .joplin-editable {
+			cursor: pointer !important;
+		}
+
+		.mce-content-body.mce-content-readonly {
+			opacity: 0.5;
+		}
+
+		/* We need that to make sure click events have the A has a target */
+		.katex a span {
+			pointer-events: none;
+		}
+
+		.media-player {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.media-player.media-pdf {
+			min-height: 35rem;
+			width: 100%;
+			max-width: 1000px;
+			margin: 0;
+			border: 0;
+			display: block;
+		}
+
+		/* Clear the CODE style if the element is within a joplin-editable block */
+		.mce-content-body .joplin-editable code {
+			border: none;
+			background: none;
+			padding: 0;
+			color: inherit;
+			font-size: inherit;
+		}
+
+		/* To make code blocks horizontally scrollable */
+		/* https://github.com/laurent22/joplin/issues/5740 */
+		pre.hljs {
+			overflow-x: auto;
+		}
+
+		.joplin-table-wrapper{
+			overflow-x: auto;
+			overflow-y: hidden;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		@media print {
+			body {
+				height: auto !important;
+			}
+
+			pre {
+				white-space: pre-wrap;
+			}
+
+			.code, .inline-code {
+				border: 1px solid #CBCBCB;
+			}
+
+			#joplin-container-content {
+				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
+				   around various issues related to scrolling. However when printing we don't want this
+				   fixed size as that would crop the content. So we set it to auto here. "important" is
+				   needed to override the style set by JavaScript at the element-level. */
+				height: auto !important;
+			}
+		}
+	
+
+				/*
+					FOR THE MARKDOWN EDITOR
+				*/
+
+				/* Remove the indentation from the checkboxes at the root of the document
+				   (otherwise they are too far right), but keep it for their children to allow
+				   nested lists. Make sure this value matches the UL margin. */
+
+				li.md-checkbox {
+					list-style-type: none;
+				}
+
+				li.md-checkbox input[type=checkbox] {
+					margin-left: -1.71em;
+					margin-right: 0.7em;
+					position: relative;
+					top: 1px;
+				}
+				
+				ul.joplin-checklist {
+					list-style:none;
+				}
+
+				/*
+					FOR THE RICH TEXT EDITOR
+				*/
+
+				ul.joplin-checklist li::before {
+					content:"\f14a";
+					font-family:"Font Awesome 5 Free";
+					background-size: 16px 16px;
+					pointer-events: all;
+					cursor: pointer;
+					width: 1em;
+					height: 1em;
+					margin-left: -1.3em;
+					position: absolute;
+					color: #32373F;
+				}
+
+				.joplin-checklist li:not(.checked)::before {
+					content:"\f0c8";
+				}
+.mermaid { width: 640px; }
+pre.mermaid[data-processed=true] { white-space: unset; }
+.mermaid-export-graph {
+					opacity: 0;
+					height: 0;
+					z-index: 1;
+					position: relative;
+				} 
+				.joplin-editable:hover .mermaid-export-graph,
+				.joplin-editable .mermaid-export-graph:has(:focus-visible) {
+					opacity: 1;
+				}
+				.mermaid-export-graph > button:hover {
+					background-color: #CBDAF1 !important;
+				}</style><div id="rendered-md"><p><strong>General Studies - I - 200M - 3H</strong></p>
+<h1 id="syllabus">Syllabus</h1>
+<h3 id="indian-heritage-and-culture-history-and-geography-of-the-world-and-society"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Indian Heritage and Culture, History and Geography of the World and Society</strong></span></h3>
+<ul>
+<li>Indian culture will cover the salient aspects of art Forms, literature and Architecture from ancient to modern times</li>
+<li>Modern Indian history from about the middle of the eighteenth century until the present – significant events, personalities, issues</li>
+<li><strong>The Freedom Struggle</strong> – its various stages and important contributors/contributions from different parts of the country</li>
+<li>Post-independence consolidation and reorganization within the country</li>
+<li>History of the world will include events from the 18th century such as industrial revolution, world wars, re-drawal of national boundaries, colonization, decolonization, political philosophies like communism, capitalism, socialism etc. – their forms and effect on society</li>
+<li>Salient features of Indian Society, Diversity of India</li>
+<li>Role of women and women’s organization, population and associated issues, poverty and developmental issues, urbanization, their remedies</li>
+<li>Effects of globalization on Indian society</li>
+<li>Social empowerment, communalism, regionalism &amp; secularism</li>
+<li>Salient features of world’s physical geography</li>
+<li>Distribution of key natural resources across the world (including South Asia and the Indian subcontinent); factors responsible for the location of primary, secondary, and tertiary sector industries in various parts of the world (including India)</li>
+<li>Important Geophysical phenomena such as earthquakes, Tsunami, Volcanic activity, cyclones etc., geographical features and their location – changes in critical geographical features (including water-bodies and ice-caps) and in flora and fauna and the effects of such changes</li>
+</ul>
+<h1 id="2012-31-jan-to-3-feb-2016-history-of-india-national-movement-society-and-culture">2012 - 31 Jan to 3 Feb 2016 - History of India, National Movement, Society and Culture</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/UKPSC-2012%20(Mains)%20(G.S%20Paper-II).pdf' href='https://www.drishtiias.com/images/pdf/UKPSC-2012%20%28Mains%29%20%28G.S%20Paper-II%29.pdf'>https://www.drishtiias.com/images/pdf/UKPSC-2012 (Mains) (G.S Paper-II).pdf</a></p>
+<h2 id="part-1-30-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 1 : 30 M</strong></span></h2>
+<h3 id="2m-20w">2M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Depict the geographical boundary of Harappan culture.   (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong>  What is Vedang? (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.  Why is Bhimbetaka famous?  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong>  Name any epic of the Sangam Age. (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.   Evaluate the role of Rāmānand in Bhakti Movement. (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong>  What do you know about Krishna Dev Rai? (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.  Write a note on Ashta Pradhan.  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> In which year and between whom was the second battle of Panipat fought?  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. Who was the founder of the Young Bengal Movement and where was its headquarters located?   (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong>  Write a note on Wood's Despatch. (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Who prepared the Nehru report and what was its major recommendation?   (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> Name the members of the Cabinet Mission. Which year did it came to India?  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13.  Write a note on Kalsi inscription.  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong> What do you know about Barrister Mukundilal?  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15. Write a note on Jhanda fair.   (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="part-2-50-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 2 : 50 M</strong></span></h2>
+<h3 id="5m-50w">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. Highlight the outcomes of the third Buddhist Council. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17.</strong>   Discuss the ‘Saptāng theory’ (seven limbs) of Kautilya’s Arthashāstra. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18. Distinguish between Ālvārs and Nāyanārs.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19.</strong>   Evaluate Balban’s theory of Kingship. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20.   Examine the economic condition of Vijayanagar Empire.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21.</strong>  Write a note on Shaikh Muinuddin Chishti of Ajmer. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.  Enumerate the causes of the Santhal revolt.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>23. Give and outline of the growth of cotton textile industry in the 19th century India.</strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>24.  Give a brief account of the Kakori Conspiracy.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>25.</strong> Write a short note on Jhora–Chānchri. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<h2 id="part-3-40-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 3 : 40 M</strong></span></h2>
+<h3 id="8m-125w">8M 125W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>26. Discuss the Syādvāda theory in Jainism. (8M125W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>27.</strong>  Bring out the salient features of Ellora’s Kailāsha temple. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>28. Evaluate the Rajput Policy of Akbar.</strong> (8M125W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>29.</strong>  Discuss the main features of provincial administration of Mughals. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>30. Bring out the salient features of the Champaran Satyāgraha.</strong> (8M125W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>31.</strong>  Highlight the contribution of Thomas Munro towards land reform. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>32. Describe the taxation system under Chand Rule.</strong> (8M125W)</span></strong></strong><br>
+Ans</p>
+<h2 id="part-4-80-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 4 : 80 M</strong></span></h2>
+<h3 id="16m-250w">16M 250W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>33. Throw light on India's overseas trade with the Roman world from the 2nd Century B.C.E to 2nd Century C.E. (16M250W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>34.</strong>  Discuss critically the causes of the decline of the Mauryan Empire. How far was Ashoka responsible for it? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>35.</strong> Discuss the social conditions under Mughals <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>36.</strong>  Critically examine the Deccan Policy of Aurangzeb. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>37.</strong>  Write a critical note on the Brāhmo Samāj. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>38.</strong> Give a detailed account of the Dalit Movement in India. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>39.</strong> Describe the various stages of progress of Journalism during the British period in Uttarakhand. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2016-26-sept-to-29-sept-2017-history-of-india-national-movement-society-and-culture">2016 - 26 Sept to 29 Sept 2017 - History of India, National Movement, Society and Culture</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/UKPSC-2016%20(Mains)%20(G.S%20Paper-II).pdf' href='https://www.drishtiias.com/images/pdf/UKPSC-2016%20%28Mains%29%20%28G.S%20Paper-II%29.pdf'>https://www.drishtiias.com/images/pdf/UKPSC-2016 (Mains) (G.S Paper-II).pdf</a></p>
+<h2 id="part-1-30-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 1 : 30 M</strong></span></h2>
+<h3 id="2m-20w-2">2M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.   What is the meaning of ‘Balisadhak’? (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong>  Who was Bhaskaracharya? (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.  Who were ‘Kumaramatya’?  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong>  Why Qutubuddin Aibak is called ‘Lakh Bakhsh’? (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.  Who was the propagator of ‘Advaitism’?  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong>  Mohamud Gawan was associated with which dynasty and why he became famous? (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Define Local Self Government. Which Governor General is considered to be its main founder?  Write the names of four States who accepted ‘Subsidiary Alliance’. (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong>  What were the main defects of Lucknow Pact (1916)? (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.   What is meant by ‘Panchsheel’? (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> What was ‘MANI’ or ‘MANA’?  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11.  Explain the ‘Thadya-Dance’.  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong>  What do you know about ‘Sirtan’? (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13.  Who was ‘Tinchari Mai’?  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong> What do you know about ‘PANCH-PRAYAG’?  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15. Write the names of four States who accepted ‘Subsidiary Alliance’.   (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="part-2-50-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 2 : 50 M</strong></span></h2>
+<h3 id="5m-50w-2">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. Write a note on ‘Painted Gray Ware’ (PGW). (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17.</strong> Throw light on Epigraphic evidences related to ‘HUNA’ invasion on India.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18.</strong> What do you understand from the term ‘Kadaisiar’? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19.</strong> What do you understand from Balban’s Policy of “Blood and Iron”?  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20.</strong>  Throw light on the Social and Cultural works of Noorjahan. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21.</strong>  What was the declaration of 8th August, 1940? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.</strong> What were the aims of Muslim League at the time of its establishment? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>23.</strong> What do you know about ‘GARHWALI-PAINTING’? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>24.</strong> What was ‘Peshawar incident’?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>25.</strong> Discuss the causes for the downfall of the Katyuri Dynasty? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<h2 id="part-3-40-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 3 : 40 M</strong></span></h2>
+<h3 id="8m-125w-2">8M 125W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>26. Discuss the geographical expansion of Harappan Civilization. (8M125W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>27.</strong> Write an Essay on India as described by Megasthanese.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>28.</strong> Examine Maharaja Ranjit Singh’s Administration. (8M125W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>29.</strong> Write a brief note on Education and Literary Development under Shahjahan’s period.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>30.</strong> What is the contribution of revolutionary movement in freedom struggle? (8M125W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>31.</strong>  What do you know about ‘Ramman’? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>32.</strong> Describe the literary sources of the History of Uttarakhand.  (8M125W)</span></strong></strong><br>
+Ans</p>
+<h2 id="part-4-80-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 4 : 80 M</strong></span></h2>
+<h3 id="16m-250w-2">16M 250W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>33. Describe the relations of the contemporary Indian rulers with Harshvardhan. (16M250W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>34.</strong>  Describe the original Teachings of Buddha. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>35.</strong>  Discuss the Revenue system and Economic reforms of Shershah. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>36.</strong>  Explain the Multi-dimensional nature of ‘Arya Samaj’. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>37.</strong>  Evaluate the merits and demerits of the Cabinet Mission Plan. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>38.</strong> Narrate the political condition of Uttarakhand during the ‘Gorkha Rule’. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>39.</strong> Explain the Administrative System of Chand Dynasty. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2021-23-feb-to-26-feb-2023-history-of-india-national-movement-society-and-culture">2021 - 23 Feb to 26 Feb 2023 - History of India, National Movement, Society and Culture</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/UKPCSMainsHistory2023.pdf' href='https://www.drishtiias.com/images/pdf/UKPCSMainsHistory2023.pdf'>https://www.drishtiias.com/images/pdf/UKPCSMainsHistory2023.pdf</a></p>
+<h2 id="part-1-30-m-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 1 : 30 M</strong></span></h2>
+<h3 id="2m-15w">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.   Did the Indian humans of Stone Age know the use of fire ? Discuss. (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong>  What were the reasons for the downfall of Nanda Dynasty?  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.  Can the Rajtarangini of Kalhana be called a historical literature of Ancient India?  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong>  What was Sufi Movement? (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.  Who was the real founder of the Slave dynasty?  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong>   What was the Balban's Policy of Sijda and Paibos.? (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.  Why did the Chisti Silsila become so popular in India? Discuss.  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong>  Evaluate the character and personality of Mohammad Ghori and discuss his place in history. (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.  Describe the Indian invasion of Taimur. What was the effect of his invasion?  (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong>  Discuss the social and economic condition of India from 1200–1526 during the Sultanate period. (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Write a short note on Memoir of Babar.   (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> Discuss the contribution of Shivaji towards National Progress.  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. What was the main cause for the downfall of Siraj-ud-daula ?   (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong> Throw light upon Khilafat Movement and its political significance.  (2M20W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15. Write a short note on Dola Palki Movement.   (2M20W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="part-2-50-m-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 2 : 50 M</strong></span></h2>
+<h3 id="5m-50w-3">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. Can the Geography of Ancient India be studied by taking Purans as their base? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17.</strong> How did Chandragupta Maurya establish his dynasty?  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18.</strong> Did the Indo-Bactrian Kings issue their currency in large numbers? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19.</strong> Which two Sultanate rulers faced maximum invasions of Mangols? Give descriptions.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20.</strong>  Describe the Social, Political, Economic and Religious condition of India at the time of Arab invasion. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21.</strong>  Critically evaluate the military and administrative reforms of Feroz Tughlaq. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.</strong> What were the main causes of conflict between Vijayanagar and Bahmani Empires? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>23. Describe the circumstances that weakened Humayun’s position after Chausa. Was it possible to bring them under control?</strong> <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>24.</strong> Throw light upon Gaura Devi, the mother of Chipko Movement.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>25.</strong> What were the immediate and far reaching consequences for the movement of a separate State for Uttarakhand?. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(5M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<h2 id="part-3-40-m-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 3 : 40 M</strong></span></h2>
+<h3 id="8m-125w-3">8M 125W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>26. Compare Rigvedic and Later Vedic Period in short. (8M125W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>27.</strong>  What were the causes of the downfall of Buddhism? Discuss. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>28.</strong> ‘Arthashastra’ of Kautilya is definitely related to Maurya period, but what was its content? (8M125W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>29.</strong>  What were the reasons of Ibrahim Lodi’s defeat in the battle of Panipat? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>30.</strong> According to Dr. K.R. Qanungo, Sher Shah was a constructive genius and a better nation builder than Akbar the Great. Discuss. (8M125W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>31.</strong>  Examine the contribution of the Mughal rulers in the field of art and architecture. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(8M125W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>32.</strong> What was the effect of implementing Permanent Settlement System upon Bengal? (8M125W)</span></strong></strong><br>
+Ans</p>
+<h2 id="part-4-80-m-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 4 : 80 M</strong></span></h2>
+<h3 id="16m-250w-3">16M 250W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>33. According to S.N. Sen, “The Mutiny was not inevitable in 1857 but it was inherent in the constitution of the empire”. Discuss. (16M250W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>34.</strong>  What was the reason of accelerating the Labour Movements in India after the First World War? Discuss. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>35.</strong> Critically examine the Cripps Mission Plan of 1942 and give reasons for its failure. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>36.</strong> Write a note on Subhash Chandra Bose and Indian National Army.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>37.</strong> What was the role of Garhwal and Kumaun in the Quit India Movement? Discuss.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>38.</strong>  Discuss the contribution of Kalu Mahra in the Revolt of 1857. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>39.</strong> After the death of Katyuri King Brahmdev, this state was divided among whom? Describe. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(16M250W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2024-16-to-19-november-2024">2024 - 16 to 19 November 2024</h1>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/UKPSC_Mains_2024_General_Studies_I.pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/UKPSC_Mains_2024_General_Studies_I.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/UKPSC_Mains_2024_General_Studies_I.pdf</a></p>
+<h2 id="part-1-20-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 1 : 20 M</strong></span></h2>
+<h3 id="4m-50w">4M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Explain the characteristics of the art and architecture of the Harappan Civilization.   (4M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong>  Write a brief note on the Tripitaka. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. Analyse the changes occurred in the international politics after the Second World War.     ****<span style="color: rgb(241, 196, 15);" class="jop-noMdConv"></strong>(4M50W)<strong></span></strong></strong></strong></span>****<br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong>  What do you understand by &quot;Pacific Ring of Fire&quot; ? <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.  What do you understand by 'secularism' ? When and why the term 'Secular' was added in the Preamble of Indian Constitution ?  ****<span style="color: rgb(241, 196, 15);" class="jop-noMdConv"></strong>(4M50W)<strong></span></strong></strong></strong></span>****<br>
+Ans</p>
+<h2 id="part-2-80-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 2 : 80 M</strong></span></h2>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Gandhara Art was Greco-Roman in style and Indian in spirit. Discuss.  (8M100W)</span></strong></strong><br>
+Ans</p>
+<p>****<span style="color: rgb(241, 196, 15);" class="jop-noMdConv">**7.  Taking Taj Mahal as an example, delineate the main features of Indo-Islamic art. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong><br>
+**</span>****Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong>  Write briefly about the contribution of Bal Gangadhar Tilak in the Indian Freedom Struggle. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. Critically analyse the impacts and limitations of the Swadeshi Movement.   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> Why did the Industrial Revolution first originate in Britain?  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. What are the major causes of Tsunami and how can their impact be reduced?  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> Give an account of the major iron-ore producing regions of the world and mention the key countries contributing to its production and export. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p>****<span style="color: rgb(241, 196, 15);" class="jop-noMdConv">**13. Analyse the role of Secondary Sector of the economy in resource utilisation and employment generation with reference to India.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong><br>
+**</span>****Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong>  Discuss about the expected impacts of Uniform Civil Code, Uttarakhand Rules-2025 on the status and role of women in Uttarakhand. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15. Which are the main constraints in the economic development of India? Suggest some measures to eradicate them. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></strong></span></strong></strong><br>
+Ans</p>
+<h2 id="part-3-100-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 3 : 100 M</strong></span></h2>
+<h3 id="10m-150w">10M 150W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. Explain the differences between the Sultanate and the Mughal era architecture. (10M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17.</strong> Analyse the causes, nature and effects of the Quit India Movement. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18.</strong> Critically explain the causes, results and nature of the revolt of 1857. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19.</strong>  Evaluate the role of Sardar Vallabhbhai Patel in the integration of Indian States after independence. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p>****<span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20.</strong> Describe the importance of the French Revolution in the history of World. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong><br>
+</span>****Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21.</strong> What geographical factors have contributed to the development of the Shanghai Industrial region in China? Mention its major industries and environmental challenges. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.</strong> Analyse the impacts and consequences of climate change on flora and fauna of the monsoon forests in South Asia. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>23.</strong> Explain the causes for the origin of tropical cyclones in the Bay of Bengal and discuss their impacts on the east coast of India. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>24.</strong> Define Globalization and briefly explain its cultural impacts on Indian social system. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>25.</strong> Discuss in brief the efforts being made by the Government for the social empowerment of backward classes in contemporary India. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p> </p>
+<h1 id="2025-">2025 -</h1>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/UKPSC_Mains_2024_General_Studies_I.pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/UKPSC_Mains_2024_General_Studies_I.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/UKPSC_Mains_2024_General_Studies_I.pdf</a></p>
+<h2 id="part-1-20-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 1 : 20 M</strong></span></h2>
+<h3 id="4m-50w-2">4M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.    (4M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong>   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong>    (4M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong>   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(4M50W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong>    (4M50W)</span></strong></strong><br>
+Ans</p>
+<h2 id="part-2-80-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 2 : 80 M</strong></span></h2>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong>   (8M100W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">7.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong><br>
+</span>Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong>   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.    <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong>   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11.   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">13.   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong><br>
+</span>Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong>   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(8M100W)</span></strong></strong></strong></span></strong></strong><br>
+Ans</p>
+<h2 id="part-3-100-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part - 3 : 100 M</strong></span></h2>
+<h3 id="10m-150w-2">10M 150W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. (10M150W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17.</strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18.</strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19.</strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20.</strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong><br>
+</span>Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21.</strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.</strong> <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>23.</strong> <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>24.</strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>25.</strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M150W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+</div></div>
+					</body>
+				</html>
+			

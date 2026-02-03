@@ -1,0 +1,1361 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="../atom-one-light.css">
+						<title>P1_GS_I_200</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">P1_GS_I_200</div>
+
+<style>
+		/* https://necolas.github.io/normalize.css/ */
+		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
+		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
+		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
+
+		body {
+			font-size: 15px;
+			color: #32373F;
+			word-wrap: break-word;
+			line-height: 1.6em;
+			background-color: #ffffff;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+			padding-bottom: 0px;
+			padding-top: 0px;
+		}
+		kbd {
+			border: 1px solid rgb(220, 220, 220);
+			box-shadow: inset 0 -1px 0 rgb(220, 220, 220);
+			padding: 2px 4px;
+			border-radius: 3px;
+			background-color: rgb(243, 243, 243);
+		}
+
+		:root {
+			--scrollbar-size: 7px;
+		}
+
+		::-webkit-scrollbar {
+			width: var(--scrollbar-size);
+			height: var(--scrollbar-size);
+		}
+		::-webkit-scrollbar-thumb {
+			border-radius: calc(var(--scrollbar-size) / 2);
+		}
+		::-webkit-scrollbar-corner {
+			background: none;
+		}
+		::-webkit-scrollbar-track {
+			border: none;
+		}
+		::-webkit-scrollbar-thumb {
+			background: rgba(50, 55, 63, 0.54); 
+		}
+		::-webkit-scrollbar-track:hover {
+			background: rgba(0, 0, 0, 0.1); 
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background: rgba(50, 55, 63, 0.63); 
+		}
+
+		
+
+		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
+
+		#rendered-md > h1:first-child,
+		#rendered-md > h2:first-child,
+		#rendered-md > h3:first-child,
+		#rendered-md > h4:first-child,
+		#rendered-md > ul:first-child,
+		#rendered-md > ol:first-child,
+		#rendered-md > table:first-child,
+		#rendered-md > blockquote:first-child,
+		#rendered-md > img:first-child,
+		#rendered-md > p:first-child {
+			margin-top: 0;
+			padding-top: 0;
+		}
+		
+		p, h1, h2, h3, h4, h5, h6, ul, table {
+			margin-top: .6em;
+			margin-bottom: 1.35em;
+
+			/*
+				Adds support for RTL text in the note body. It automatically detects the direction using the content.
+				Issue: https://github.com/laurent22/joplin/issues/3991
+			*/
+			unicode-bidi: plaintext;
+		}
+
+		h1, h2, h3, h4, h5, h6, ul, table {
+			margin-bottom: 0.65em;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			line-height: 1.5em;
+		}
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			border-bottom: 1px solid #dddddd;
+			padding-bottom: .3em;
+		}
+		h2 {
+			font-size: 1.3em;
+			font-weight: bold;
+			padding-bottom: .1em; */
+		}
+		h3 {
+			font-size: 1.1em;
+			font-weight: bold;
+		}
+		h4, h5, h6 {
+			font-size: 1em;
+			font-weight: bold;
+		}
+
+		.exported-note-title {
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 0.8em;
+			line-height: 1.5em;
+			padding-bottom: .35em;
+			border-bottom: 1px solid #dddddd;
+		}
+
+		a {
+			color: #155BDA;
+		}
+		ul, ol {
+			padding-left: 0;
+			margin-left: 1.7em;
+		}
+		li {
+			margin-bottom: .4em;
+		}
+		li p {
+			margin-top: 0.2em;
+			margin-bottom: 0;
+		}
+
+		dt {
+			font-weight: bold;
+			margin-bottom: 0.25em;
+		}
+
+		dd {
+			margin-inline-start: 2.5em;
+			margin-bottom: 0.5em;
+		}
+
+		.resource-icon {
+			display: inline-block;
+			position: relative;
+			top: 0.3em;
+			text-decoration: none;
+			width: 1.2em;
+			height: 1.4em;
+			margin-right: 0.4em;
+			background-color:  #155BDA;
+		}
+    /* These icons are obtained from the wonderful ForkAwesome project by copying the src svgs 
+     * into the css classes below.
+     * svgs are obtained from https://github.com/ForkAwesome/Fork-Awesome/tree/master/src/icons/svg
+     * instead of the svg width, height property you must use a viewbox here, 0 0 1536 1792 is typically the actual size of the icon
+     * each line begins with the pre-amble -webkit-mask: url("data:image/svg+xml;utf8,
+     * and of course finishes with ");
+     * to prevent artifacts it is also necessary to include -webkit-mask-repeat: no-repeat;
+     * on the following line
+     * */
+		.fa-joplin {
+			/* Awesome Font file */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M373.834 128C168.227 128 0 296.223 0 501.834v788.336C0 1495.778 168.227 1664 373.834 1664h788.336c205.608 0 373.83-168.222 373.83-373.83V501.834C1536 296.224 1367.778 128 1162.17 128zm397.222 205.431h417.424a7.132 7.132 0 0 1 7.132 7.133v132.552c0 4.461-3.619 8.073-8.077 8.073h-57.23c-24.168 0-43.768 19.338-44.284 43.374v2.377h-.017v136.191h-.053l-.466 509.375c-5.02 77.667-39.222 149.056-96.324 201.046-60.28 54.834-141.948 85.017-229.962 85.017-12.45 0-25.208-.61-37.907-1.785-92.157-8.682-181.494-48.601-251.662-112.438-71.99-65.517-117.147-150.03-127.164-238-11.226-98.763 23.42-192.783 95.045-257.937 81.99-74.637 198.185-101.768 316.613-75.704 5.574 1.227 9.55 6.282 9.55 11.997v199.52c-.199 2.625-1.481 6.599-8.183 2.896-.663-.365-1.194-.511-1.653-.531-21.987-10.587-45.159-17.57-68.559-19.916-.38-.04-.757-.124-1.138-.163-.537-.048-1.034-.033-1.556-.075-4.13-.354-8.183-.517-12.203-.58-.87-.011-1.771-.127-2.641-.127-.486 0-.951.05-1.437.057-1.464.011-2.886.115-4.33.163-2.76.102-5.497.211-8.182.448-.273.024-.547.07-.835.097-25.509 2.4-47.864 11.104-65.012 25.47-.954.802-1.974 1.53-2.9 2.36a1.34 1.34 0 0 1-.168.146c-23.96 21.8-34.881 53.872-30.726 90.316 4.62 40.737 26.94 81.156 62.841 113.823 35.908 32.67 80.335 52.977 125.113 57.186 35.118 3.36 66.547-3.919 89.899-20.461a97.255 97.255 0 0 0 9.365-7.501c2.925-2.661 5.569-5.5 8.086-8.416.3-.348.672-.673.975-1.024 8.253-9.864 14.222-21.067 17.996-33.148.639-2.034 1.051-4.148 1.564-6.227.381-1.563.81-3.106 1.112-4.693.555-2.784.923-5.632 1.253-8.49.086-.709.183-1.414.237-2.128.492-4.893.693-9.858.55-14.91h.013V521.623c-2.01-22.626-20.78-40.434-43.928-40.434h-57.23a8.071 8.071 0 0 1-8.077-8.073V340.564a7.132 7.132 0 0 1 7.136-7.133z'/></svg>");
+		}
+		.fa-file-image {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-128-448v320H256v-192l192-192 128 128 384-384zm-832-192c-106 0-192-86-192-192s86-192 192-192 192 86 192 192-86 192-192 192z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-pdf {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-514-593c25 20 53 38 84 56 42-5 81-7 117-7 67 0 152 8 177 49 7 10 13 28 2 52-1 1-2 3-3 4v1c-3 18-18 38-71 38-64 0-161-29-245-73-139 15-285 46-392 83-103 176-182 262-242 262-10 0-19-2-28-7l-24-12c-3-1-4-3-6-5-5-5-9-16-6-36 10-46 64-123 188-188 8-5 18-2 23 6 1 1 2 3 2 4 31-51 67-116 107-197 45-90 80-178 104-262-32-109-42-221-24-287 7-25 22-40 42-40h22c15 0 27 5 35 15 12 14 15 36 9 68-1 3-2 6-4 8 1 3 1 5 1 8v30c-1 63-2 123-14 192 35 105 87 190 146 238zm-576 411c30-14 73-57 137-158-75 58-122 124-137 158zm398-920c-10 28-10 76-2 132 3-16 5-31 7-44 2-17 5-31 7-43 1-3 2-5 4-8-1-1-1-3-2-5-1-18-7-29-13-36 0 2-1 3-1 4zm-124 661c88-35 186-63 284-81-10-8-20-15-29-23-49-43-93-103-127-176-19 61-47 126-83 197-15 28-30 56-45 83zm646-16c-5-5-31-24-140-24 49 18 94 28 124 28 9 0 14 0 18-1 0-1-1-2-2-3z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-word {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM233 768v107h70l164 661h159l128-485c5-15 8-30 10-46 1-8 2-16 2-24h4l3 24c3 14 4 30 9 46l128 485h159l164-661h70V768h-300v107h90l-99 438c-4 16-6 33-7 46l-2 21h-4c0-6-2-14-3-21-3-13-5-30-9-46L825 768H711l-144 545c-4 16-5 33-8 46l-4 21h-4l-2-21c-1-13-3-30-7-46l-99-438h90V768H233z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-powerpoint {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-992-234v106h327v-106h-93v-167h137c43 0 82-2 118-15 90-31 146-124 146-233s-54-193-137-228c-38-15-84-19-130-19H416v107h92v555h-92zm353-280H650V882h120c35 0 62 6 83 18 36 21 56 62 56 115 0 56-20 99-62 120-21 10-47 15-78 15z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-excel {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-979-234v106h281v-106h-75l103-161c12-19 18-34 21-34h2c1 4 3 7 5 10 4 8 10 14 17 24l107 161h-76v106h291v-106h-68l-192-273 195-282h67V768H828v107h74l-103 159c-12 19-21 34-21 33h-2c-1-4-3-7-5-10-4-7-9-14-17-23L648 875h76V768H434v107h68l189 272-194 283h-68z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-audio {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM620 850c12 5 20 17 20 30v544c0 13-8 25-20 30-4 1-8 2-12 2-8 0-16-3-23-9l-166-167H288c-18 0-32-14-32-32v-192c0-18 14-32 32-32h131l166-167c10-9 23-12 35-7zm417 689c19 0 37-8 50-24 83-102 129-231 129-363s-46-261-129-363c-22-28-63-32-90-10-28 23-32 63-9 91 65 80 100 178 100 282s-35 202-100 282c-23 28-19 68 9 90 12 10 26 15 40 15zm-211-148c17 0 34-7 47-20 56-60 87-137 87-219s-31-159-87-219c-24-26-65-27-91-3-25 24-27 65-2 91 33 36 52 82 52 131s-19 95-52 131c-25 26-23 67 2 91 13 11 29 17 44 17z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-video {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM768 768c70 0 128 58 128 128v384c0 70-58 128-128 128H384c-70 0-128-58-128-128V896c0-70 58-128 128-128h384zm492 2c12 5 20 17 20 30v576c0 13-8 25-20 30-4 1-8 2-12 2-8 0-17-3-23-9l-265-266v-90l265-266c6-6 15-9 23-9 4 0 8 1 12 2z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-archive {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M640 384V256H512v128h128zm128 128V384H640v128h128zM640 640V512H512v128h128zm128 128V640H640v128h128zm700-388c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H768v128H640V128H128v1536h1280zM781 943c85 287 107 349 107 349 5 17 8 34 8 52 0 111-108 192-256 192s-256-81-256-192c0-18 3-35 8-52 0 0 21-62 120-396V768h128v128h79c29 0 54 19 62 47zm-141 465c71 0 128-29 128-64s-57-64-128-64-128 29-128 64 57 64 128 64z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-code {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM480 768c11-14 31-17 45-6l51 38c14 11 17 31 6 45l-182 243 182 243c11 14 8 34-6 45l-51 38c-14 11-34 8-45-6l-226-301c-8-11-8-27 0-38zm802 301c8 11 8 27 0 38l-226 301c-11 14-31 17-45 6l-51-38c-14-11-17-31-6-45l182-243-182-243c-11-14-8-34 6-45l51-38c14-11 34-8 45 6zm-620 461c-18-3-29-20-26-37l138-831c3-18 20-29 37-26l63 10c18 3 29 20 26 37l-138 831c-3 18-20 29-37 26z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-alt, .fa-file-csv {
+      /* fork-awesome doesn't have csv so we use the text icon */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM384 800c0-18 14-32 32-32h704c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64zm736 224c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704zm0 256c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		blockquote {
+			border-left: 4px solid rgb(220, 220, 220);
+			padding-left: 1.2em;
+			margin-left: 0;
+			opacity: 0.7;
+		}
+
+		.jop-tinymce table,
+		table {
+			text-align: left;
+			border-collapse: collapse;
+			border: 1px solid rgb(220, 220, 220);
+			background-color: #ffffff;
+		}
+
+		.jop-tinymce table td, .jop-tinymce table th,
+		table td, th {
+			text-align: left;
+			padding: .5em 1em .5em 1em;
+			font-size: 15;
+			color: #32373F;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+		}
+
+		.jop-tinymce table td,
+		table td {
+			border: 1px solid rgb(220, 220, 220);
+		}
+
+		.jop-tinymce table th,
+		table th {
+			border: 1px solid rgb(220, 220, 220);
+			border-bottom: 2px solid rgb(220, 220, 220);
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:nth-child(even),
+		table tr:nth-child(even) {
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:hover,
+		table tr:hover {
+			background-color: #e5e5e5;
+		}
+
+		hr {
+			border: none;
+			border-bottom: 2px solid #dddddd;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		.inline-code,
+		.mce-content-body code {
+			border: 1px solid rgb(220, 220, 220);
+			background-color: rgb(243, 243, 243);
+			padding-right: .2em;
+			padding-left: .2em;
+			border-radius: .25em;
+			color: rgb(0,0,0);
+			font-size: .9em;
+		}
+
+		.highlighted-keyword {
+			background-color: #F3B717;
+			color: black;
+		}
+
+		
+	.not-loaded-resource img {
+		width: 1.15em;
+		height: 1.15em;
+		background: white;
+		padding: 2px !important;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px #000000aa;
+	}
+
+	a.not-loaded-resource img {
+		margin-right: .2em;
+	}
+
+	a.not-loaded-resource {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+
+		.md-checkbox input[type=checkbox]:checked {
+			opacity: 0.7;
+		}
+
+		.jop-tinymce ul.joplin-checklist .checked,
+		.md-checkbox .checkbox-label-checked {
+			opacity: 0.5;
+		}
+
+		.exported-note {
+			padding: 1em;
+		}
+
+		.joplin-editable .joplin-source {
+			display: none;
+		}
+
+		mark {
+			background: #F7D26E;
+			color: black;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		.mce-content-body {
+			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
+			padding: 5px 10px 10em 0;
+		}
+
+		/*
+		.mce-content-body code {
+			background-color: transparent;
+		}
+		*/
+
+		.mce-content-body [data-mce-selected=inline-boundary] {
+			background-color: transparent;
+		}
+
+		.mce-content-body .joplin-editable {
+			cursor: pointer !important;
+		}
+
+		.mce-content-body.mce-content-readonly {
+			opacity: 0.5;
+		}
+
+		/* We need that to make sure click events have the A has a target */
+		.katex a span {
+			pointer-events: none;
+		}
+
+		.media-player {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.media-player.media-pdf {
+			min-height: 35rem;
+			width: 100%;
+			max-width: 1000px;
+			margin: 0;
+			border: 0;
+			display: block;
+		}
+
+		/* Clear the CODE style if the element is within a joplin-editable block */
+		.mce-content-body .joplin-editable code {
+			border: none;
+			background: none;
+			padding: 0;
+			color: inherit;
+			font-size: inherit;
+		}
+
+		/* To make code blocks horizontally scrollable */
+		/* https://github.com/laurent22/joplin/issues/5740 */
+		pre.hljs {
+			overflow-x: auto;
+		}
+
+		.joplin-table-wrapper{
+			overflow-x: auto;
+			overflow-y: hidden;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		@media print {
+			body {
+				height: auto !important;
+			}
+
+			pre {
+				white-space: pre-wrap;
+			}
+
+			.code, .inline-code {
+				border: 1px solid #CBCBCB;
+			}
+
+			#joplin-container-content {
+				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
+				   around various issues related to scrolling. However when printing we don't want this
+				   fixed size as that would crop the content. So we set it to auto here. "important" is
+				   needed to override the style set by JavaScript at the element-level. */
+				height: auto !important;
+			}
+		}
+	
+
+				/*
+					FOR THE MARKDOWN EDITOR
+				*/
+
+				/* Remove the indentation from the checkboxes at the root of the document
+				   (otherwise they are too far right), but keep it for their children to allow
+				   nested lists. Make sure this value matches the UL margin. */
+
+				li.md-checkbox {
+					list-style-type: none;
+				}
+
+				li.md-checkbox input[type=checkbox] {
+					margin-left: -1.71em;
+					margin-right: 0.7em;
+					position: relative;
+					top: 1px;
+				}
+				
+				ul.joplin-checklist {
+					list-style:none;
+				}
+
+				/*
+					FOR THE RICH TEXT EDITOR
+				*/
+
+				ul.joplin-checklist li::before {
+					content:"\f14a";
+					font-family:"Font Awesome 5 Free";
+					background-size: 16px 16px;
+					pointer-events: all;
+					cursor: pointer;
+					width: 1em;
+					height: 1em;
+					margin-left: -1.3em;
+					position: absolute;
+					color: #32373F;
+				}
+
+				.joplin-checklist li:not(.checked)::before {
+					content:"\f0c8";
+				}
+.mermaid { width: 640px; }
+pre.mermaid[data-processed=true] { white-space: unset; }
+.mermaid-export-graph {
+					opacity: 0;
+					height: 0;
+					z-index: 1;
+					position: relative;
+				} 
+				.joplin-editable:hover .mermaid-export-graph,
+				.joplin-editable .mermaid-export-graph:has(:focus-visible) {
+					opacity: 1;
+				}
+				.mermaid-export-graph > button:hover {
+					background-color: #CBDAF1 !important;
+				}</style><div id="rendered-md"><p>Paper I: General Studies - I - 200M - 3H</p>
+<h1 id="syllabus">Syllabus</h1>
+<h2 id="unit-i-history"><span style="color: rgb(185, 106, 217);" class="jop-noMdConv"><strong>Unit I - History</strong></span></h2>
+<h3 id="part-a-history-art-culture-literature-tradition-and-heritage-of-rajasthan"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Part A - History, Art, Culture, Literature, Tradition and Heritage of Rajasthan</strong></span></h3>
+<ul>
+<li>Major landmarks in Rajasthan’s history from pre-historic times to the 18th century, including dynasties, administrative, and revenue systems.</li>
+<li><strong>Salient events of the 19th and 20th centuries:</strong> Peasant and Tribal Movements, Political Awakening, Freedom Movement, and Integration.</li>
+<li><strong>Heritage:</strong> Performing and fine arts, handicrafts, architecture, World Heritage sites, fairs, festivals, folk music, and dance.</li>
+<li>Rajasthani Literature and Dialects.</li>
+<li>Saints, Lok Devtas, and eminent personalities.</li>
+</ul>
+<h3 id="part-b-indian-history-culture"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Part B - Indian History &amp; Culture</strong></span></h3>
+<ul>
+<li><strong>Indian Heritage:</strong> Fine art, performing art, architecture, and literature from the Indus Civilization to the British Era.</li>
+<li>Religious movements and philosophy in Ancient and Medieval India.</li>
+<li><strong>Modern Indian history (19th</strong> <strong>century to 1965):</strong> Significant events, personalities, and issues.</li>
+<li><strong>Indian National Movement:</strong> Various stages and contributions from different regions.</li>
+<li>Socio-religious reform movements in the 19th and 20th centuries.</li>
+<li><strong>Post-Independence:</strong> Accession of princely states and linguistic reorganization.</li>
+</ul>
+<h3 id="part-c-history-of-the-modern-world-up-to-1950-ad"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Part C - History of the Modern World (up to 1950 AD)</strong></span></h3>
+<ul>
+<li>Renaissance and Reformation.</li>
+<li>American War of Independence, French Revolution (1789), and Industrial Revolution.</li>
+<li>Imperialism and colonialism in Asia and Africa.</li>
+<li>Impact of World Wars.</li>
+</ul>
+<h2 id="unit-ii-economics"><span style="color: rgb(185, 106, 217);" class="jop-noMdConv"><strong>Unit II - Economics</strong></span></h2>
+<h3 id="part-a-indian-economy"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong>Part A - Indian Economy</strong></strong></span></h3>
+<ul>
+<li><strong>Agriculture:</strong> Growth, productivity trends, food processing, and management.</li>
+<li><strong>Industrial Sector:</strong> Policies, finance, liberalization, globalization, and privatization.</li>
+<li>Inflation, prices, and demand-supply management.</li>
+<li><strong>Fiscal Policies:</strong> Centre-State financial relations, Finance Commission, and tax reforms.</li>
+<li><strong>Social Sector:</strong> Poverty, unemployment, healthcare, education policies, and state roles in economic development.</li>
+</ul>
+<h3 id="part-b-world-economy"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Part B - World Economy</strong></span></h3>
+<ul>
+<li>Global economic issues and trends.</li>
+<li>Role of World Bank, IMF, and WTO.</li>
+<li>Sustainable development and climate change.</li>
+</ul>
+<h3 id="part-c-economy-of-rajasthan"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Part C - Economy of Rajasthan</strong></span></h3>
+<ul>
+<li><strong>Agriculture:</strong> Production, productivity, irrigation, and marketing.</li>
+<li><strong>Rural Development:</strong> Panchayati Raj, infrastructure, and State Finance Commission.</li>
+<li>Industrial growth, khadi, village industries, and public-private partnership (PPP) projects.</li>
+<li>Major development projects, state budget, fiscal management, and welfare schemes.</li>
+<li>Education, health services, and sustainable development goals.</li>
+</ul>
+<h2 id="unit-iii-sociology-management-accounting-auditing"><span style="color: rgb(185, 106, 217);" class="jop-noMdConv"><strong>Unit III - Sociology, Management, Accounting &amp; Auditing</strong></span></h2>
+<h3 id="part-a-sociology"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong>Part A - Sociology</strong></strong></span></h3>
+<ul>
+<li>Development of sociological thought in India.</li>
+<li><strong>Caste and Class:</strong> Nature, origin, functions, and challenges.</li>
+<li>Social Change Processes: Sanskritization, Westernization, Secularization, and Globalization.</li>
+<li><strong>Challenges:</strong> Dowry, child marriage, corruption, poverty, unemployment, drug addiction, and vulnerable sections (Dalit, elderly, disabled).</li>
+<li>Tribal communities in Rajasthan: Bhil, Mina, and Garasia.</li>
+</ul>
+<h3 id="part-b-management"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Part B - Management</strong></span></h3>
+<ul>
+<li><strong>Marketing:</strong> Concepts, mix (product, price, place, promotion), supply chain, and E-commerce.</li>
+<li><strong>Finance:</strong> Wealth maximization, sources, capital structure, banking, stock market, FDI, and FIIs.</li>
+<li><strong>Organizational Behavior:</strong> Leadership, motivation, team building, and conflict management.</li>
+<li><strong>Entrepreneurship:</strong> Startups, venture capital, angel investors, and incubation.</li>
+<li><strong>Essential Services:</strong> Education, healthcare, tourism, and hospitality management.</li>
+</ul>
+<h3 id="part-c-accounting-auditing"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Part C - Accounting &amp; Auditing</strong></span></h3>
+<ul>
+<li>Double-entry accounting and financial statement analysis.</li>
+<li><strong>Auditing:</strong> Social, performance, efficiency audits, and government audits.</li>
+<li><strong>Budgeting:</strong> Performance and zero-based budgeting.</li>
+</ul>
+<p> </p>
+<h1 id="2013-09-april-2016">2013 - 09 April 2016</h1>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2013_PREVIOUS_YEARS_QUESTION_(PAPER-1).pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2013_PREVIOUS_YEARS_QUESTION_%28PAPER-1%29.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2013_PREVIOUS_YEARS_QUESTION_(PAPER-1).pdf</a></p>
+<h2 id="unit-i-50-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 50 M</strong></span></h2>
+<h3 id="part-a-10-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Enlist any two salient features of Nathdwara paintings. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> What was the attitude of Jaipur Prajamandal towards Quit India Movement of 1942? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Explain the nature of Din-i-Ilahi of Akbar. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> What is the fundamental difference between the religious teachings of Arya Samaj and Ramkrishna Mission ? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> What do you understand by the ideals of the Renaissance Man? (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-20-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 20 M</strong></span></h3>
+<h3 id="5m-50w">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Throw light on the concept of &quot;Rina&quot; / &quot;Debt&quot; in Indian tradition. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Explain the strategic importance of the fort of Ranthambhor. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8. Discuss the nature of ****</strong>'</span><strong>****1857'. (5M50W)</strong></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. &quot;Treaty of Versailles was responsible for the Second World War.&quot; Comment. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-20-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 20 M</strong></span></h3>
+<h3 id="20m-200w">20M 200W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10. Critically discuss Maldeo's relations with Humayun and Sher Shah. (20M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong>  Write an essay on the ancient Indian Scientific Literature. (20M200W)</span></strong></strong><br>
+Ans</p>
+<h2 id="unit-ii-50-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 50 M</strong></span></h2>
+<h3 id="part-a-10-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-2">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.</strong> Define the word 'Secular' as contained in the preamble of India's Constitution. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. Define Money Bill (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. What are the characteristic features of Good governance'? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. What was the importance of Munshi-Ayangar formula in the Constituent Assembly? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5. Distinguish between the Secretariat departments and the Directorates at the State Level. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-20-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 20 M</strong></span></h3>
+<h3 id="5m-50w-2">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6. What did the Indian Constitution borrow from the Government of India Act of 1935 ? Explain. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong> What has been the progress in the realm of Citizen's Charters in India ? Discuss the positive impact and limitations. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> &quot;India is a Federal State with several Unitary features.&quot; Comment. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.</strong> &quot;A strong Indian democracy needs important reforms in its election system.&quot; Comment. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-c-20-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 20 M</strong></span></h3>
+<h3 id="20m-200w-2">20M 200W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> &quot;Despite several challenges, India will remain a strong and united Nation.&quot; Which political, administrative, social and economic factors lend strength to India's Unity? Discuss. (20M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) &quot;Ever  since its formation, the State of Rajasthan has been through a series of <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>administrative</strong></span></strong></strong> innovations and reforms.&quot; Discuss the major innovations and reforms in <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>the realm of public</strong></span></strong></strong> administration, policy making and responsiveness. (20M200W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="unit-iii-50-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - III : 50 M</strong></span></h2>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-3">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What programs have been initiated by Government for Skill Development in India? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Suggest important measures for improving the Global Competitiveness of India. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Which are the 'Sunrise' industries in India? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Specify the basic indicators used in preparing the Human Development indices. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Specify the features of Sansad Adarsh Gram Yojna. (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-20-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 20 M</strong></span></h3>
+<h3 id="5m-50w-3">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> &quot;Neglect of agriculture sector in India's Five Year Plans has far reaching implications for the State Economy.&quot; Comment. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong> Critically examine the strategy used for the development of manufacturing sector in <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Rajasthan.</strong></span></strong></strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> Analyse the salient features of Jan-Dhan Yojna initiated by Government of India. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.  &quot;Beti Bachao,  Beti Padhao&quot; Yojna is crucial for reducing gender disparities.&quot; Critically <strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>examine</strong></span></strong>  the statement.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-20-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 20 M</strong></span></h3>
+<h3 id="20m-200w-3">20M 200W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> &quot;Financial inclusion is imperative for the socio-economic development of the economy.&quot; Comment. (20M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Analyse the impact of road development for the rural economy of the country. (20M200W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="unit-iv-50-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - IV : 50 M</strong></span></h2>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-4">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What causes rainy winter and dry summer in Mediterranean climatic region? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> What is Nubra Valley? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> What is the significance of Hungrijan Moran? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> What makes western Rajasthan extreme drought affected area of India? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Give the characteristics of Dang region' of Rajasthan. (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-20-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 20 M</strong></span></h3>
+<h3 id="5m-50w-4">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Briefly describe the 'Diago-Garsia Conflict'. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong> Differentiate between Bangar and Khadar regions of India. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> Portray the geographic-cultural identity of Shekhawati region of Rajasthan. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.</strong> 'Rajasthan has immense potentiality of solar energy. Explain. (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-20-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 20 M</strong></span></h3>
+<h3 id="20m-200w-4">20M 200W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> Describe the causes of ecological crisis in India. (20M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Divide Rajasthan into Agro-climatic regions and describe any one in detail. (20M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2016-2728-march-2017">2016 : 27/28 March 2017</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202016%20Paper-1.pdf' href='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202016%20Paper-1.pdf'>https://www.drishtiias.com/images/pdf/Mains Rajasthan 2016 Paper-1.pdf</a></p>
+<p><a data-from-md title='https://cdn1.byjus.com/wp-content/uploads/2019/04/RAS-Mains-2016-paper-1.pdf' href='https://cdn1.byjus.com/wp-content/uploads/2019/04/RAS-Mains-2016-paper-1.pdf'>https://cdn1.byjus.com/wp-content/uploads/2019/04/RAS-Mains-2016-paper-1.pdf</a></p>
+<h2 id="unit-i-75-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 75 M</strong></span></h2>
+<h3 id="part-a-10-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-5">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What is the significance of Ghosundi Inscription? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. Write the names of any two ‘atheistic’ religious sects of India other than Buddhism and Jaini</strong></span>**<span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>s</strong></span></strong></strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">m</span>. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2M15W)</strong></span></strong></strong>******<br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. Mention any two Persian works written during the reign of Akbar.</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. Who was known as ‘Frontier Gandhi’? Which party was formed by him?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5. Explain the meaning of the term ‘Whiteman's Burden’.</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-5">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6. Discuss the salient features of the Fort architecture in Rajasthan.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. There was a rich tradition of ‘Nirguna Bhakti’ in medieval India. Explain. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8. Highlight the similarities and differences between the Bundi and Kishangarh schools of Rajasthani paintings (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. Discuss the contribution of Shahjahan in the field of Mughal Architecture. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10. In what way the revolt of 1857 was a turning point in Indian history? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-40-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 40 M</strong></span></h3>
+<h3 id="10m-100w">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. In what way the advent of Mahatma Gandhi transformed the Indian Nationalist Movement into a mass movement? (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12. Underline the basic features of the Prajamandal Movement in Rajasthan.</strong> (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. What was the distinctive contribution of Swami Vivekananda to India's Awakening?</strong> (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14. In what way the ‘Enlightenment Age’ transformed the course of European history?</strong> (10M100W)</span></strong></strong><br>
+Ans</p>
+<h2 id="unit-ii-65-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 65 M</strong></span></h2>
+<h3 id="part-a-10-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-6">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What do you understand by ‘Poonam field’ in Rajasthan?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. What are mini uphar markets? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. What is the basic theme underlying the National Agricultural Market (NAM) policy? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. What is the curse of Green Revolution. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5. Which crafts have been recently granted registration for Geographical Indication in Rajasthan under intellectual property Right initiatives of the state? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-6">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6. Explain the meaning of inclusive growth and financial inclusion in India. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. What is the ‘dual structure’ of Goods and Service Tax? Do you agree with this structure? Comment.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8. What is ‘interest subvention’ scheme for agricultural credit in India?</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. What are the objectives of Pradhan Mantri Khanij Kshetra Kalyan Yojana?</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10. Discuss the purpose, time frame and target of Mukhya Mantri Jal Swavlamban Abhiyan in Rajasthan-</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-30-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-2">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. In your view, what strategy should be adopted to double farmer's income by 2022 as targeted by the Indian Government?</strong> (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12. ‘The focus of India's new foreign trade policy 2015-20 is on supporting both manufacturing and services exports and align it with the Make in India, Digital India programme and to ease of doing business in India.’ Explain this statement. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. What are objectives of the ‘Bureau for Partnership’ in Rajasthan? (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="unit-iii-60-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - III : 60 M</strong></span></h2>
+<h3 id="section-a-20-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Section - A</strong></span> <span style="color: rgb(248, 202, 198);" class="jop-noMdConv">: 20 M</span></h3>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-7">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Name four classical Indian sociologists who have made pioneering contributions to Indian Sociology. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. How is caste traditionally associated with division of labour in society?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. What do you mean by the process of Sanskritization?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. What do you understand by Child Marriage?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5. Identify four major problems which the tribals in Rajasthan are facing.</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-7">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6. Describe the characteristics of caste given by G.S. Ghurye.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Explain the social consequences of terrorism.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="section-b-20-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Section - B</strong></span>  <span style="color: rgb(248, 202, 198);" class="jop-noMdConv">: 20 M</span></h3>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-8">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What do you mean by delegation?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. What constitutes ‘Marketing Mix’ for a service?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. What is ‘Capital Structure’ of a company?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. Distinguish between ‘Recruitment and Selection’.</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5. What do you understand by ‘Ordinary Share’?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-8">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6. Explain wheel, chain And circle communication network.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Explain different stages of product life cycle.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="section-c-20-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Section - C</strong></span>  <span style="color: rgb(248, 202, 198);" class="jop-noMdConv">: 20 M</span></h3>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-9">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Write Any two objectives of Financial Statement Analysis.</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. What do you understand by Net Working Capital?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. Define Social Accounting.</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. Write Any two limitations of Responsibility Accounting.</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5. Write formulae of (i) Solvency Ratio (ii) Debt-Equity Ratio</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-9">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6. Give any five differences between Fixed and Flexible Budgets.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Write the meaning of responsibility Accounting and the names of responsibility centres.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<h1 id="2018-25-26-june-2019">2018 - 25 / 26 June 2019</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202018%20Paper-1.pdf' href='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202018%20Paper-1.pdf'>https://www.drishtiias.com/images/pdf/Mains Rajasthan 2018 Paper-1.pdf</a></p>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_Mains_2018_Paper-1.pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_Mains_2018_Paper-1.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_Mains_2018_Paper-1.pdf</a></p>
+<h2 id="unit-i-75-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 75 M</strong></span></h2>
+<h3 id="part-a-10-m-5"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-10">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Which three sacred texts of ancient India are termed ‘Prasthan Trayi’? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Briefly describe the “Arjun’s Penance” sculpture? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Describe the text “Vishva Vallabh” in brief. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Who were Doongji and Jawaharji? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Define the European Enlightenment of 18th century. (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-10">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Write a short note on bronze images found from Harappan sites. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Bharatendu Harishchandra was the precursor of Modern trends in Hindi literature. Discuss. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8. Describe the method used by the Molela artists in preparing the terracotta objects. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. Discuss the causes of peasant unrest in the Jagirdari areas of Rajasthan. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10. What were the suggestions given by the State Reorganisation Commission to strengthen the National Unity? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-40-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 40 M</strong></span></h3>
+<h3 id="10m-100w-3">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. The Indian Renaissance of the 19th century was the result of the challenges as well as the inspiration of the West. Examine critically. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> Give an outline of the development of revolutionary freedom movement in 20th century India. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. Give a brief description of the following archaeological sites of Rajasthan :<br>
+(1) Bagore<br>
+(2) Kali <br>
+(3) Ahar</strong><br>
+(10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong> Discuss the impact of the World War II on international politics. (10M100W)</span></strong></strong><br>
+Ans</p>
+<h2 id="unit-ii-65-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 65 M</strong></span></h2>
+<h3 id="part-a-10-m-6"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-11">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.</strong> Write names of four countries in descending order to which maximum exports are made from India in year 2017-18. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. What are the main objectives of Young Interns Programme in Rajasthan? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. What is fiscal consolidation? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. What is negative interest rate? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5. What is the main objective of i-Start Rajasthan? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-11">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6. Write the main features of Mukhyamantri Jal Swavlamban Abhiyan in Rajasthan. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong> Give names of six major initiatives taken by Rajasthan Government to improve health indicators in the state. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> What do you understand by Bharatmala Pariyojna of Government of India? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.</strong> What is Direct Benefit Transfer (DBT) system for fertilizer subsidy in India? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> Explain automatic route and Government route by which India gets foreign direct investment. (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-30-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-4">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Write a note on the problems and future requirements of infrastructure investment in India.</strong> (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12. Discuss the determinants of Ease of Doing Business prescribed by World Bank. Which factors have contributed to an improvement in India’s rank in ease of doing business? (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. Write a brief note on 'Eastern Rajasthan Canal Project'. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="unit-iii-60-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - III : 60 M</strong></span></h2>
+<h3 id="section-a-20-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Section - A</strong></span> <span style="color: rgb(248, 202, 198);" class="jop-noMdConv">: 20 M</span></h3>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-12">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What is De-Sanskritization? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> What is ‘Simantonnayan Sanskar? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Caste is an endogamous group. How? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> What is social thought? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> What is “Sagari Custom Prohibition Act? (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-12">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> What are the changes brought by secularization in religion? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong> What are the Constitutional efforts to solve the problems of tribes in Rajasthan? (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="section-b-20-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Section - B</strong></span>  <span style="color: rgb(248, 202, 198);" class="jop-noMdConv">: 20 M</span></h3>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-13">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.</strong> What is the Principle of Unity of Direction? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> What do you mean by informal organisation? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Explain sustainable marketing in brief. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p>****<span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> What is ****<span style="color: rgb(241, 196, 15);" class="jop-noMdConv">”</span><strong><strong>Commercial Paper” as an instrument for short term finance? (2M15W)</strong></strong></span><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> What do you understand by Semantic Barriers’ in communication? (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-5"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-13">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Explain the two factor theory of motivation (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong> Explain the concept of wealth maximisation. (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="section-c-20-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Section - C</strong></span>  <span style="color: rgb(248, 202, 198);" class="jop-noMdConv">: 20 M</span></h3>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-14">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.</strong> Define Efficiency Audit. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> What is Ratio Analysis with reference to Analysis of Financial Statements? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> What do you understand by ‘Budgeting? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> What is Social Audit? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> What is Funds Flow Analysis Technique? (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-6"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-14">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Write a note on ‘Zero base budgeting’. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong> What is Operating Cycle Concept of Working Capital? (5M50W)</span></strong></strong><br>
+Ans</p>
+<h1 id="2021-20-21-march-2022">2021 - 20 / 21 March 2022</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202021%20Paper-1.pdf' href='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202021%20Paper-1.pdf'>https://www.drishtiias.com/images/pdf/Mains Rajasthan 2021 Paper-1.pdf</a></p>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2021_PREVIOUS_YEARS_QUESTION_(PAPER-1).pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2021_PREVIOUS_YEARS_QUESTION_%28PAPER-1%29.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2021_PREVIOUS_YEARS_QUESTION_(PAPER-1).pdf</a></p>
+<h2 id="unit-i-75-m-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 75 M</strong></span></h2>
+<h3 id="part-a-10-m-7"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-15">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Name any four out of six orthodox schools of Indian Vedic Philosophy. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> What is Ravanhatha? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Describe the Suharwardi Sufi Silsilah (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Highlight the role of Aruna Asaf Ali in the Quit India Movement. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Where did Leonardo de Vinci paint his famous painting 'The Last Supper'? (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-5"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-15">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Examine the salient features of Raj Singh style of temple architecture. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Throw 'light on the activities of Kanwar Singh in Bihar during the Revolt of 1857. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8. Write a short note on the integration of Sirohi in 'United Rajasthan'. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. Critically examine the Begun Peasant Movement of Rajasthan. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10. Discuss. the ideological background of American War of Independence. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-40-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 40 M</strong></span></h3>
+<h3 id="10m-100w-5">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Examine the significance of Charan Literature in Classical Literature of Rajasthan. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> Discuss in brief the growth of the ideology of Theosophists in the Theosophical society in India. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13.</strong> Discuss the development of 'Indigenous' industries in India during the Second World War. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong> &quot;Industrial Revolution was not only a technological revolution, but a socio-economic revolution also, that changed the way people lived afterwards.&quot; Discuss. (10M100W)</span></strong></strong><br>
+Ans</p>
+<h2 id="unit-ii-65-m-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 65 M</strong></span></h2>
+<h3 id="part-a-10-m-8"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-16">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.</strong> What are the eight core industries that support infrastructure in India? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. What are the main sources of biomass energy in Rajasthan? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. Write major items of revenue expenditure in Indian Budget. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. Write the objective and name of funding agency of Rajasthan Agricultural Competitiveness Project. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5. Define sustainable development. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-6"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-16">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6. Define micro, small and medium enterprises on the basis of investment and annual turnover in India. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong> What are the objectives of 'SAMARTH' scheme of Rajasthan? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> What incentives are provided under Pradhan Mantri Rojgar Protsahan Yojana (PMRPY) for: employers to create new employment in the country? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.</strong> Explain the main features of Rajasthan Investment Promotion Scheme 2019 (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> Write any five aims of World Bank Group Climate Change Action Plan 2021-2025. (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-30-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-6">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11.</strong> What are the key measures pertaining to industry and infrastructure under Atmanirbhar Bharat Abhiyan in India? (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12. Describe Chief Minister's 7 Point Programme for Empowerment of Women in Rajasthan. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. Write vision and key objectives of Rajasthan Solar Energy Policy 2019. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="unit-iii"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - III</strong></span></h2>
+<h3 id="section-a-20-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Section - A</strong></span> <span style="color: rgb(248, 202, 198);" class="jop-noMdConv">: 20 M</span></h3>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-17">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What is 'Sharda Act'? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Why is caste system an example of inequality? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> What is Global Village? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Define political corruption. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> What is the eligibility of 'old age pension' in Rajasthan? (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-7"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-17">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Which attributes have been given for dominant caste by M.N. Srinivas? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong> Write five major problems of tribal community of Rajasthan. (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="section-b-20-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Section - B</strong></span>  <span style="color: rgb(248, 202, 198);" class="jop-noMdConv">: 20 M</span></h3>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-18">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.</strong> Define Supply Chain Management. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> What is the objective of Startup India 'Scheme? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Write any four characteristics of charismatic leader. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Highlight any four characteristics of services. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5. Name two prominent stock exchanges of India.</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-8"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-18">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Explain Need - Hierarchy Theory as per A.H. Maslow. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong> Explain Product Life Cycle (PLC) with characteristics of any two stages. (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="section-c-20-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Section - C</strong></span>  <span style="color: rgb(248, 202, 198);" class="jop-noMdConv">: 20 M</span></h3>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-19">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.</strong> What are compound journal entries? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Name any two methods of Trend analysis. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Mention four types of responsibility centres with reference to Responsibility Accounting. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> What is the designation of person 'having highest authority in Government Audit? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Why Zero Base Budgeting was adopted by Government of India? (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-9"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-19">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Explain Dual-aspect concept in context of Double Entry System of Accounting with suitable examples. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. &quot;Performance Budgeting is useful for Government and Public sector undertakings.&quot; Why?</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<h1 id="2023-20-21-july-2024">2023 - 20 / 21 July 2024</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/RPSC%20Mains%20Exam-2023%20Paper-I.pdf' href='https://www.drishtiias.com/images/pdf/RPSC%20Mains%20Exam-2023%20Paper-I.pdf'>https://www.drishtiias.com/images/pdf/RPSC Mains Exam-2023 Paper-I.pdf</a></p>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2023_PREVIOUS_YEARS_QUESTION_(PAPER-1).pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2023_PREVIOUS_YEARS_QUESTION_%28PAPER-1%29.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2023_PREVIOUS_YEARS_QUESTION_(PAPER-1).pdf</a></p>
+<h2 id="unit-i-75-m-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 75 M</strong></span></h2>
+<h3 id="part-a-10-m-9"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-20">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Who were the Dyodhidars? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Name any two dialects counted under Middle-Eastern Rajasthani or Dhundhadi. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> How were Buddhism and Jainism different from the religion of Samhitas? Underline two main differences. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> What is Tin-Kthiya? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Explain Universal Priesthood. (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-7"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-20">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Explain the following terms related to Rajasthani Literature :<br>
+(1) Vat<br>
+(2) Vachnika<br>
+(5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Critically evaluate the attitude of the Jaipur Praja Mandal towards Quit India Movement. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8. Explain the socio-religious significance of Naynar and Alwar bhakti saints. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. The Razakars were the main obstacles to the accession of Hyderabad into Indian Union. Explain. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10. How did the two World Wars enhance the political and economic participation of European women? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-40-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 40 M</strong></span></h3>
+<h3 id="10m-100w-7">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Give a brief account of Sun temples of Rajasthan. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> Continuity of culture is a unique feature of Indian civilization, which is unparalleled in world civilizations. Explain. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13.</strong> Mauryan pillar are of indigenous origin. Explain. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong> European industrial revolution finally gave rise to New Imperialism. Explain. (10M100W)</span></strong></strong><br>
+Ans</p>
+<h2 id="unit-ii-65-m-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 65 M</strong></span></h2>
+<h3 id="part-a-10-m-10"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-21">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15.</strong> What comprises non-tax revenue of the Central Government? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. Write the name of the three economic railway corridors, which were announced in the interim budget for 2024-25 under the P.M. Gati Shakti Framework. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17. What is the inflation targeting framework of Reserve Bank of India? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18. Why Gyan Sankalp Portal has been established by Government of Rajasthan? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19. What is the main objective of Rajasthan Janani Shishu Suraksha Yojana? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-8"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-21">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20. What are the main objectives of Pradhan Mantri Kisan Sampada Yojana? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21.</strong> What are the functions of Bureau of Investment Promotion in Rajasthan ? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.</strong> What are the objectives of 'SVAMITVA' Scheme in India? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>23.</strong> What are the targets of National Logistics Policy of India? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>24.</strong> Describe the main recommendations of Sixth State Finance Commission of Rajasthan. (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-30-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-8">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>25.</strong> Discuss the salient features of Pradhan Mantri Fasal Bima Yojana in India. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>26. Discuss in brief India's updated Nationally Determined Contribution (NDC) submitted to the United Nations Framework Convention to Climate Change (UNFCCC). (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>27. Write a short note on Rajasthan Water Sector Livelihood Improvement Project (RWSLIP). (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="unit-iii-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - III</strong></span></h2>
+<h3 id="section-a-20-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Section - A</strong></span> <span style="color: rgb(248, 202, 198);" class="jop-noMdConv">: 20 M</span></h3>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-22">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>28. What do you mean by Westoxication? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>29.</strong> Mention the forms of Cultural Flow discussed by Arjun Appadurai regarding Global Society. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>30.</strong> Casual Employment (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>31.</strong> Culture of Poverty (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>32.</strong> Demerits of Dowry System (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-10"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-22">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>33. How Caste system represents segmental division of society?</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>34.</strong> Present the socio-economic profile of Garașia Tribe. (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="section-b-20-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Section - B</strong></span>  <span style="color: rgb(248, 202, 198);" class="jop-noMdConv">: 20 M</span></h3>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-23">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>35.</strong> What do you mean by the 'depth' of product portfolio? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>36.</strong> Who propounded the theory of 'Irrelevance of Capital Structure' ? Write one key assumption of the theory. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>37.</strong> List four leadership behaviours under 'Path Goal Theory of Leadership'. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>38.</strong> List two criteria (as per SEBI) for qualifying as an 'Angel Investor' in India. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>39.</strong> Expand 'MICE'. (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-11"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-23">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>40.</strong> Who proposed Three-Needs Theory? List and explain in brief those three needs. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>41.</strong> What are various types of NBFCs as per Reserve Bank of India (RBI) ? (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="section-c-20-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Section - C</strong></span>  <span style="color: rgb(248, 202, 198);" class="jop-noMdConv">: 20 M</span></h3>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-24">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>42.</strong> Give any four objectives of Auditing. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>43.</strong> Write down any four duties of Comptroller and Auditor General of India. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>44.</strong> Write down elements of Auditing as per definition given by International Auditing &amp; Assurance Standards Board (IAASB). (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>45.</strong> Write down any four essential features of Zero Based Budgeting. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>46.</strong> Write any two objectives of performance budgeting as recommended by Administrative Reforms Commission. (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-12"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-24">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>47.</strong> Write down any five techniques of financial statements-analysis. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>48. Give journal entries for the following transactions without narration: .<br>
+(1) Goods sold to B for 20,000 in cash and 10,000 on credit.<br>
+(2) Goods returned by B for ₹ 5,000.<br>
+(3) Withdrew goods of 5,000 for personal use.<br>
+(4) Furniture purchased for office purpose worth ₹ 30,000.<br>
+(5) Goods worth 5,000 burnt by fire.</strong><br>
+(5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2024-17-18-june-2025">2024 - 17 / 18 June 2025</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/RAS%20Mains%202024%20Paper%201.pdf' href='https://www.drishtiias.com/images/pdf/RAS%20Mains%202024%20Paper%201.pdf'>https://www.drishtiias.com/images/pdf/RAS Mains 2024 Paper 1.pdf</a></p>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_Mains_2024_Paper_1.pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_Mains_2024_Paper_1.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_Mains_2024_Paper_1.pdf</a></p>
+<h2 id="unit-i-75-m-5"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 75 M</strong></span></h2>
+<h3 id="part-a-10-m-11"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-25">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Two female saints of Charandasi sect  (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> What is meant by 'Hath Ka Kurab' in Marwar state? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong>  Who drafted India's First Five Year plan and on which growth model it was based upon? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Ahmadiyyah Movement  (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Thermidorian Reaction  (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-9"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-25">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong>  Comment on the 'Samrat Yantra' of Jantar Mantar, Jaipur. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Chandawal incident, 1942 of Rajasthan's Peasant Movement.  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8. Explain the concept of 'Panchratra'. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. Examine the indigenous impact on Mughal architecture.  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.  Throw light on the gradual development of the inventions leading to revolutionary changes in the textile industry during the Industrial Revolution. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-40-m-5"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 40 M</strong></span></h3>
+<h3 id="10m-100w-9">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Describe the revenue system of Mediaeval Rajasthan.  (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> Underline the similarities between the 6th century B.C. religious movements and Nirgun Bhakti movement of mediaeval India in terms of Varna system and prevalent evils.  (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13.</strong> Mahatma Gandhi was relevant to each generation in his three decades involvement in Indian Freedom Struggle. Elucidate with proper examples.  (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong>  Opium played a major role in the imperialistic exploitation of China. Elucidate. (10M100W)</span></strong></strong><br>
+Ans</p>
+<h2 id="unit-ii-65-m-5"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 65 M</strong></span></h2>
+<h3 id="part-a-10-m-12"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-26">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15.</strong>  What is the main objective of Namo Drone Didi Yojana of Rajasthan? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. Which body in India releases 'Export Preparedness Index Number'? What purpose?  (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17.  What is the purpose of introducing 'Urea Gold' in India? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18. What is the importance of Acknowledgement Certificate for MSMEs, issued by the nodal agency in Rajasthan under MSME Act, 2019?  (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19.  Write the name of top four districts of Rajasthan in descending order with respect to Per Capita Income (PCI) at current prices. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-10"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-26">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20.  What is GI-cloud 'Megh Raj' initiative of India? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21.</strong> What do you mean by TReDs in MSME in India ?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.</strong> Why was social sector Viability Gap Funding Scheme introduced in Rajasthan? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>23.</strong>  What are the aims of National Green Hydrogen Mission of India? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>24.</strong>  What are the objectives of establishment of Atal Tinkering Laboratories in India ? (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-30-m-5"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-10">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>25.</strong> What is the government's futuristic roadmap for the development of nuclear energy sector as announced in the Union Budget 2025-26? (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>26. What specific measures are announced in the Union Budget 2025-26 to boost MSMEs in India? (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>27. Write a short note on Rajasthan Refinery Project. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="unit-iii-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - III</strong></span></h2>
+<h3 id="section-a-20-m-5"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Section - A</strong></span> <span style="color: rgb(248, 202, 198);" class="jop-noMdConv">: 20 M</span></h3>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-27">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>28. What is 'Secularization of Caste'?  (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>29.</strong>  What is 'Separatist Communalism'? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>30.</strong> What do you mean by 'Socio-Cultural Ageing'?  (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>31.</strong>  What is the reinforcement theory of drug abuse ? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>32.</strong> What do you understand by 'Globalisation of Ethnicity'?  (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-13"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-27">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>33.</strong> In present context, mention role of Caste in Indian Politics.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>34.</strong>  Mention various initiatives for tribal welfare taken by the Government of India regarding empowering tribal communities. (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="section-b-20-m-5"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Section - B</strong></span>  <span style="color: rgb(248, 202, 198);" class="jop-noMdConv">: 20 M</span></h3>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-28">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>35.</strong> Explain the concept of 'Captive-Product Pricing'. Give two examples.  (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>36.</strong> What do you understand by the concept of 'Social Loafing'?  (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>37.</strong> What do you mean by 'Hot Money'? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>38.</strong> What is the full form of 'AYUSH'?  (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>39.</strong>  Define 'Seed Funding'. (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-14"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-28">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>40.</strong> List and explain in brief four Conflict-Stimulation Techniques. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>41.</strong>  What do you mean by Financial Derivatives ? List the various types of Financial Derivatives. (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="section-c-20-m-5"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Section - C</strong></span>  <span style="color: rgb(248, 202, 198);" class="jop-noMdConv">: 20 M</span></h3>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-29">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>42.</strong> Write any two objectives of Government Audit. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>43.</strong> Mention three basic elements of performance audit with reference to public sector. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>44.</strong> What are the different stages of accounting as per Double Entry System of Accounting? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>45.</strong>  Calculate Capital of the business from the following information :<br>
+(i) Fixed Assets: 4,00,000<br>
+(ii) Current Liabilities: 85,000<br>
+(iii) Stock, Sundry Debtors and Cash: ₹90,000 (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>46.</strong>  Give any four approaches of Social Accounting. (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-10-m-15"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 10 M</strong></span></h3>
+<h3 id="5m-50w-29">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>47.</strong>  The following information has been taken from the books of ABC Ltd. :</span></strong></strong></p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">Cash and Bank Balance 30,000<br>
+Trade Payables 45,000<br>
+Trade Receivables 75,000<br>
+Inventory 30,000<br>
+Sales (All credit) 4,50,000<br>
+Cost of Goods Sold 3,15,000<br>
+Calculate:<br>
+(i) Current Ratio;<br>
+(ii) Quick Ratio;<br>
+(iii) Receivables Turnover Ratio;<br>
+(iv) Inventory Turnover Ratio;<br>
+(v) Gross Profit Ratio<br>
+</span>********<span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>48.</strong>  Is the agreement of trial balance a conclusive proof of accuracy of books of accounts?<br>
+If not, which different types of errors may remain even after agreement of trial balance ?<br>
+(5M50W)</span></strong></strong><br>
+Ans</p>
+</div></div>
+					</body>
+				</html>
+			

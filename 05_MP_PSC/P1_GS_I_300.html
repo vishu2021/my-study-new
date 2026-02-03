@@ -1,0 +1,1794 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="../atom-one-light.css">
+						<title>P1_GS_I_300</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">P1_GS_I_300</div>
+
+<style>
+		/* https://necolas.github.io/normalize.css/ */
+		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
+		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
+		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
+
+		body {
+			font-size: 15px;
+			color: #32373F;
+			word-wrap: break-word;
+			line-height: 1.6em;
+			background-color: #ffffff;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+			padding-bottom: 0px;
+			padding-top: 0px;
+		}
+		kbd {
+			border: 1px solid rgb(220, 220, 220);
+			box-shadow: inset 0 -1px 0 rgb(220, 220, 220);
+			padding: 2px 4px;
+			border-radius: 3px;
+			background-color: rgb(243, 243, 243);
+		}
+
+		:root {
+			--scrollbar-size: 7px;
+		}
+
+		::-webkit-scrollbar {
+			width: var(--scrollbar-size);
+			height: var(--scrollbar-size);
+		}
+		::-webkit-scrollbar-thumb {
+			border-radius: calc(var(--scrollbar-size) / 2);
+		}
+		::-webkit-scrollbar-corner {
+			background: none;
+		}
+		::-webkit-scrollbar-track {
+			border: none;
+		}
+		::-webkit-scrollbar-thumb {
+			background: rgba(50, 55, 63, 0.54); 
+		}
+		::-webkit-scrollbar-track:hover {
+			background: rgba(0, 0, 0, 0.1); 
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background: rgba(50, 55, 63, 0.63); 
+		}
+
+		
+
+		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
+
+		#rendered-md > h1:first-child,
+		#rendered-md > h2:first-child,
+		#rendered-md > h3:first-child,
+		#rendered-md > h4:first-child,
+		#rendered-md > ul:first-child,
+		#rendered-md > ol:first-child,
+		#rendered-md > table:first-child,
+		#rendered-md > blockquote:first-child,
+		#rendered-md > img:first-child,
+		#rendered-md > p:first-child {
+			margin-top: 0;
+			padding-top: 0;
+		}
+		
+		p, h1, h2, h3, h4, h5, h6, ul, table {
+			margin-top: .6em;
+			margin-bottom: 1.35em;
+
+			/*
+				Adds support for RTL text in the note body. It automatically detects the direction using the content.
+				Issue: https://github.com/laurent22/joplin/issues/3991
+			*/
+			unicode-bidi: plaintext;
+		}
+
+		h1, h2, h3, h4, h5, h6, ul, table {
+			margin-bottom: 0.65em;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			line-height: 1.5em;
+		}
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			border-bottom: 1px solid #dddddd;
+			padding-bottom: .3em;
+		}
+		h2 {
+			font-size: 1.3em;
+			font-weight: bold;
+			padding-bottom: .1em; */
+		}
+		h3 {
+			font-size: 1.1em;
+			font-weight: bold;
+		}
+		h4, h5, h6 {
+			font-size: 1em;
+			font-weight: bold;
+		}
+
+		.exported-note-title {
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 0.8em;
+			line-height: 1.5em;
+			padding-bottom: .35em;
+			border-bottom: 1px solid #dddddd;
+		}
+
+		a {
+			color: #155BDA;
+		}
+		ul, ol {
+			padding-left: 0;
+			margin-left: 1.7em;
+		}
+		li {
+			margin-bottom: .4em;
+		}
+		li p {
+			margin-top: 0.2em;
+			margin-bottom: 0;
+		}
+
+		dt {
+			font-weight: bold;
+			margin-bottom: 0.25em;
+		}
+
+		dd {
+			margin-inline-start: 2.5em;
+			margin-bottom: 0.5em;
+		}
+
+		.resource-icon {
+			display: inline-block;
+			position: relative;
+			top: 0.3em;
+			text-decoration: none;
+			width: 1.2em;
+			height: 1.4em;
+			margin-right: 0.4em;
+			background-color:  #155BDA;
+		}
+    /* These icons are obtained from the wonderful ForkAwesome project by copying the src svgs 
+     * into the css classes below.
+     * svgs are obtained from https://github.com/ForkAwesome/Fork-Awesome/tree/master/src/icons/svg
+     * instead of the svg width, height property you must use a viewbox here, 0 0 1536 1792 is typically the actual size of the icon
+     * each line begins with the pre-amble -webkit-mask: url("data:image/svg+xml;utf8,
+     * and of course finishes with ");
+     * to prevent artifacts it is also necessary to include -webkit-mask-repeat: no-repeat;
+     * on the following line
+     * */
+		.fa-joplin {
+			/* Awesome Font file */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M373.834 128C168.227 128 0 296.223 0 501.834v788.336C0 1495.778 168.227 1664 373.834 1664h788.336c205.608 0 373.83-168.222 373.83-373.83V501.834C1536 296.224 1367.778 128 1162.17 128zm397.222 205.431h417.424a7.132 7.132 0 0 1 7.132 7.133v132.552c0 4.461-3.619 8.073-8.077 8.073h-57.23c-24.168 0-43.768 19.338-44.284 43.374v2.377h-.017v136.191h-.053l-.466 509.375c-5.02 77.667-39.222 149.056-96.324 201.046-60.28 54.834-141.948 85.017-229.962 85.017-12.45 0-25.208-.61-37.907-1.785-92.157-8.682-181.494-48.601-251.662-112.438-71.99-65.517-117.147-150.03-127.164-238-11.226-98.763 23.42-192.783 95.045-257.937 81.99-74.637 198.185-101.768 316.613-75.704 5.574 1.227 9.55 6.282 9.55 11.997v199.52c-.199 2.625-1.481 6.599-8.183 2.896-.663-.365-1.194-.511-1.653-.531-21.987-10.587-45.159-17.57-68.559-19.916-.38-.04-.757-.124-1.138-.163-.537-.048-1.034-.033-1.556-.075-4.13-.354-8.183-.517-12.203-.58-.87-.011-1.771-.127-2.641-.127-.486 0-.951.05-1.437.057-1.464.011-2.886.115-4.33.163-2.76.102-5.497.211-8.182.448-.273.024-.547.07-.835.097-25.509 2.4-47.864 11.104-65.012 25.47-.954.802-1.974 1.53-2.9 2.36a1.34 1.34 0 0 1-.168.146c-23.96 21.8-34.881 53.872-30.726 90.316 4.62 40.737 26.94 81.156 62.841 113.823 35.908 32.67 80.335 52.977 125.113 57.186 35.118 3.36 66.547-3.919 89.899-20.461a97.255 97.255 0 0 0 9.365-7.501c2.925-2.661 5.569-5.5 8.086-8.416.3-.348.672-.673.975-1.024 8.253-9.864 14.222-21.067 17.996-33.148.639-2.034 1.051-4.148 1.564-6.227.381-1.563.81-3.106 1.112-4.693.555-2.784.923-5.632 1.253-8.49.086-.709.183-1.414.237-2.128.492-4.893.693-9.858.55-14.91h.013V521.623c-2.01-22.626-20.78-40.434-43.928-40.434h-57.23a8.071 8.071 0 0 1-8.077-8.073V340.564a7.132 7.132 0 0 1 7.136-7.133z'/></svg>");
+		}
+		.fa-file-image {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-128-448v320H256v-192l192-192 128 128 384-384zm-832-192c-106 0-192-86-192-192s86-192 192-192 192 86 192 192-86 192-192 192z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-pdf {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-514-593c25 20 53 38 84 56 42-5 81-7 117-7 67 0 152 8 177 49 7 10 13 28 2 52-1 1-2 3-3 4v1c-3 18-18 38-71 38-64 0-161-29-245-73-139 15-285 46-392 83-103 176-182 262-242 262-10 0-19-2-28-7l-24-12c-3-1-4-3-6-5-5-5-9-16-6-36 10-46 64-123 188-188 8-5 18-2 23 6 1 1 2 3 2 4 31-51 67-116 107-197 45-90 80-178 104-262-32-109-42-221-24-287 7-25 22-40 42-40h22c15 0 27 5 35 15 12 14 15 36 9 68-1 3-2 6-4 8 1 3 1 5 1 8v30c-1 63-2 123-14 192 35 105 87 190 146 238zm-576 411c30-14 73-57 137-158-75 58-122 124-137 158zm398-920c-10 28-10 76-2 132 3-16 5-31 7-44 2-17 5-31 7-43 1-3 2-5 4-8-1-1-1-3-2-5-1-18-7-29-13-36 0 2-1 3-1 4zm-124 661c88-35 186-63 284-81-10-8-20-15-29-23-49-43-93-103-127-176-19 61-47 126-83 197-15 28-30 56-45 83zm646-16c-5-5-31-24-140-24 49 18 94 28 124 28 9 0 14 0 18-1 0-1-1-2-2-3z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-word {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM233 768v107h70l164 661h159l128-485c5-15 8-30 10-46 1-8 2-16 2-24h4l3 24c3 14 4 30 9 46l128 485h159l164-661h70V768h-300v107h90l-99 438c-4 16-6 33-7 46l-2 21h-4c0-6-2-14-3-21-3-13-5-30-9-46L825 768H711l-144 545c-4 16-5 33-8 46l-4 21h-4l-2-21c-1-13-3-30-7-46l-99-438h90V768H233z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-powerpoint {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-992-234v106h327v-106h-93v-167h137c43 0 82-2 118-15 90-31 146-124 146-233s-54-193-137-228c-38-15-84-19-130-19H416v107h92v555h-92zm353-280H650V882h120c35 0 62 6 83 18 36 21 56 62 56 115 0 56-20 99-62 120-21 10-47 15-78 15z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-excel {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-979-234v106h281v-106h-75l103-161c12-19 18-34 21-34h2c1 4 3 7 5 10 4 8 10 14 17 24l107 161h-76v106h291v-106h-68l-192-273 195-282h67V768H828v107h74l-103 159c-12 19-21 34-21 33h-2c-1-4-3-7-5-10-4-7-9-14-17-23L648 875h76V768H434v107h68l189 272-194 283h-68z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-audio {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM620 850c12 5 20 17 20 30v544c0 13-8 25-20 30-4 1-8 2-12 2-8 0-16-3-23-9l-166-167H288c-18 0-32-14-32-32v-192c0-18 14-32 32-32h131l166-167c10-9 23-12 35-7zm417 689c19 0 37-8 50-24 83-102 129-231 129-363s-46-261-129-363c-22-28-63-32-90-10-28 23-32 63-9 91 65 80 100 178 100 282s-35 202-100 282c-23 28-19 68 9 90 12 10 26 15 40 15zm-211-148c17 0 34-7 47-20 56-60 87-137 87-219s-31-159-87-219c-24-26-65-27-91-3-25 24-27 65-2 91 33 36 52 82 52 131s-19 95-52 131c-25 26-23 67 2 91 13 11 29 17 44 17z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-video {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM768 768c70 0 128 58 128 128v384c0 70-58 128-128 128H384c-70 0-128-58-128-128V896c0-70 58-128 128-128h384zm492 2c12 5 20 17 20 30v576c0 13-8 25-20 30-4 1-8 2-12 2-8 0-17-3-23-9l-265-266v-90l265-266c6-6 15-9 23-9 4 0 8 1 12 2z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-archive {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M640 384V256H512v128h128zm128 128V384H640v128h128zM640 640V512H512v128h128zm128 128V640H640v128h128zm700-388c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H768v128H640V128H128v1536h1280zM781 943c85 287 107 349 107 349 5 17 8 34 8 52 0 111-108 192-256 192s-256-81-256-192c0-18 3-35 8-52 0 0 21-62 120-396V768h128v128h79c29 0 54 19 62 47zm-141 465c71 0 128-29 128-64s-57-64-128-64-128 29-128 64 57 64 128 64z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-code {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM480 768c11-14 31-17 45-6l51 38c14 11 17 31 6 45l-182 243 182 243c11 14 8 34-6 45l-51 38c-14 11-34 8-45-6l-226-301c-8-11-8-27 0-38zm802 301c8 11 8 27 0 38l-226 301c-11 14-31 17-45 6l-51-38c-14-11-17-31-6-45l182-243-182-243c-11-14-8-34 6-45l51-38c14-11 34-8 45 6zm-620 461c-18-3-29-20-26-37l138-831c3-18 20-29 37-26l63 10c18 3 29 20 26 37l-138 831c-3 18-20 29-37 26z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-alt, .fa-file-csv {
+      /* fork-awesome doesn't have csv so we use the text icon */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM384 800c0-18 14-32 32-32h704c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64zm736 224c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704zm0 256c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		blockquote {
+			border-left: 4px solid rgb(220, 220, 220);
+			padding-left: 1.2em;
+			margin-left: 0;
+			opacity: 0.7;
+		}
+
+		.jop-tinymce table,
+		table {
+			text-align: left;
+			border-collapse: collapse;
+			border: 1px solid rgb(220, 220, 220);
+			background-color: #ffffff;
+		}
+
+		.jop-tinymce table td, .jop-tinymce table th,
+		table td, th {
+			text-align: left;
+			padding: .5em 1em .5em 1em;
+			font-size: 15;
+			color: #32373F;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+		}
+
+		.jop-tinymce table td,
+		table td {
+			border: 1px solid rgb(220, 220, 220);
+		}
+
+		.jop-tinymce table th,
+		table th {
+			border: 1px solid rgb(220, 220, 220);
+			border-bottom: 2px solid rgb(220, 220, 220);
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:nth-child(even),
+		table tr:nth-child(even) {
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:hover,
+		table tr:hover {
+			background-color: #e5e5e5;
+		}
+
+		hr {
+			border: none;
+			border-bottom: 2px solid #dddddd;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		.inline-code,
+		.mce-content-body code {
+			border: 1px solid rgb(220, 220, 220);
+			background-color: rgb(243, 243, 243);
+			padding-right: .2em;
+			padding-left: .2em;
+			border-radius: .25em;
+			color: rgb(0,0,0);
+			font-size: .9em;
+		}
+
+		.highlighted-keyword {
+			background-color: #F3B717;
+			color: black;
+		}
+
+		
+	.not-loaded-resource img {
+		width: 1.15em;
+		height: 1.15em;
+		background: white;
+		padding: 2px !important;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px #000000aa;
+	}
+
+	a.not-loaded-resource img {
+		margin-right: .2em;
+	}
+
+	a.not-loaded-resource {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+
+		.md-checkbox input[type=checkbox]:checked {
+			opacity: 0.7;
+		}
+
+		.jop-tinymce ul.joplin-checklist .checked,
+		.md-checkbox .checkbox-label-checked {
+			opacity: 0.5;
+		}
+
+		.exported-note {
+			padding: 1em;
+		}
+
+		.joplin-editable .joplin-source {
+			display: none;
+		}
+
+		mark {
+			background: #F7D26E;
+			color: black;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		.mce-content-body {
+			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
+			padding: 5px 10px 10em 0;
+		}
+
+		/*
+		.mce-content-body code {
+			background-color: transparent;
+		}
+		*/
+
+		.mce-content-body [data-mce-selected=inline-boundary] {
+			background-color: transparent;
+		}
+
+		.mce-content-body .joplin-editable {
+			cursor: pointer !important;
+		}
+
+		.mce-content-body.mce-content-readonly {
+			opacity: 0.5;
+		}
+
+		/* We need that to make sure click events have the A has a target */
+		.katex a span {
+			pointer-events: none;
+		}
+
+		.media-player {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.media-player.media-pdf {
+			min-height: 35rem;
+			width: 100%;
+			max-width: 1000px;
+			margin: 0;
+			border: 0;
+			display: block;
+		}
+
+		/* Clear the CODE style if the element is within a joplin-editable block */
+		.mce-content-body .joplin-editable code {
+			border: none;
+			background: none;
+			padding: 0;
+			color: inherit;
+			font-size: inherit;
+		}
+
+		/* To make code blocks horizontally scrollable */
+		/* https://github.com/laurent22/joplin/issues/5740 */
+		pre.hljs {
+			overflow-x: auto;
+		}
+
+		.joplin-table-wrapper{
+			overflow-x: auto;
+			overflow-y: hidden;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		@media print {
+			body {
+				height: auto !important;
+			}
+
+			pre {
+				white-space: pre-wrap;
+			}
+
+			.code, .inline-code {
+				border: 1px solid #CBCBCB;
+			}
+
+			#joplin-container-content {
+				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
+				   around various issues related to scrolling. However when printing we don't want this
+				   fixed size as that would crop the content. So we set it to auto here. "important" is
+				   needed to override the style set by JavaScript at the element-level. */
+				height: auto !important;
+			}
+		}
+	
+
+				/*
+					FOR THE MARKDOWN EDITOR
+				*/
+
+				/* Remove the indentation from the checkboxes at the root of the document
+				   (otherwise they are too far right), but keep it for their children to allow
+				   nested lists. Make sure this value matches the UL margin. */
+
+				li.md-checkbox {
+					list-style-type: none;
+				}
+
+				li.md-checkbox input[type=checkbox] {
+					margin-left: -1.71em;
+					margin-right: 0.7em;
+					position: relative;
+					top: 1px;
+				}
+				
+				ul.joplin-checklist {
+					list-style:none;
+				}
+
+				/*
+					FOR THE RICH TEXT EDITOR
+				*/
+
+				ul.joplin-checklist li::before {
+					content:"\f14a";
+					font-family:"Font Awesome 5 Free";
+					background-size: 16px 16px;
+					pointer-events: all;
+					cursor: pointer;
+					width: 1em;
+					height: 1em;
+					margin-left: -1.3em;
+					position: absolute;
+					color: #32373F;
+				}
+
+				.joplin-checklist li:not(.checked)::before {
+					content:"\f0c8";
+				}
+.mermaid { width: 640px; }
+pre.mermaid[data-processed=true] { white-space: unset; }
+.mermaid-export-graph {
+					opacity: 0;
+					height: 0;
+					z-index: 1;
+					position: relative;
+				} 
+				.joplin-editable:hover .mermaid-export-graph,
+				.joplin-editable .mermaid-export-graph:has(:focus-visible) {
+					opacity: 1;
+				}
+				.mermaid-export-graph > button:hover {
+					background-color: #CBDAF1 !important;
+				}</style><div id="rendered-md"><p><strong>Paper 1: General Studies - I - 300 M - 3 H</strong></p>
+<h1 id="syllabus">Syllabus</h1>
+<p><strong>Part A : History</strong><br>
+<strong>Part B : Geography</strong></p>
+<p>===================</p>
+<p><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part (A) – History</strong></span></p>
+<ul>
+<li>
+<p>Political, Economic, Social, and Cultural History of India from Harappan civilization to 10th Century A.D.</p>
+</li>
+<li>
+<p>Political, Economic, Social, and Cultural History of India from 11th to 18th Century A.D.</p>
+</li>
+<li>
+<p>Administration and evolution of medieval culture under Sultanate and Mughal rulers.</p>
+</li>
+<li>
+<p>History of Madhya Pradesh from pre-historic and protohistoric periods.</p>
+</li>
+<li>
+<p>Major dynasties: Gardbhill, Nag, Olinkar and Parivrajak, Uccha Kalp, Gurjar Pratihara, Kalchuri, Chandel, Parmar, Tomar, Gond, and Kacchapghaat.</p>
+</li>
+<li>
+<p>The effect of British colonial rule on the economy and society of India.</p>
+</li>
+<li>
+<p>Peasant and Tribal Revolts, the First Freedom Movement of Independence, Indian Renaissance, National Freedom Movement, and its leaders.</p>
+</li>
+<li>
+<p>Contribution of Madhya Pradesh in the Indian freedom struggle.</p>
+</li>
+<li>
+<p>Emergence of India as a Republic Nation, Reorganization of States, Formation of Madhya Pradesh, and major events in the post-independence period.</p>
+</li>
+<li>
+<p>Salient aspects of Art Forms, Literature, Festivals, and Architecture from ancient to modern times, with special reference to Madhya Pradesh.</p>
+</li>
+<li>
+<p>Notable world heritage sites and tourism-related aspects in Madhya Pradesh.</p>
+</li>
+<li>
+<p>Princely states: Gondwana, Bundeli, Bagheli, Holkar, Scindia, and Bhopal State (till independence).</p>
+</li>
+<li>
+<p><strong>Contributions of Tribal Heroes in History:</strong> Shankar Shah, Raghunath Shah, Bhimaji Nayak, Khajya Nayak, Tantya Bhil, Ganjan Singh Korku, Badal Bhoe, Pema Falya.</p>
+</li>
+</ul>
+<p> </p>
+<p><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part (B) – Geography</strong></span></p>
+<ul>
+<li><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit-I Physical Features and Climate of India</strong></span>
+<ul>
+<li>Geographical Knowledge in Ancient India.</li>
+<li>Major Physiographic (Physical) Divisions of India- the Himalayan Mountains, The Great Plain of North India, the Peninsular Plateau.</li>
+<li>Major Hills, Plateaus, Rivers and Lakes.</li>
+<li>Soils of India- Types and distribution.</li>
+<li>Climate- Seasons, Temperature, Rainfall, Origin of Monsoon, Upper Air Circulation- Jet Stream.</li>
+<li>Climatic Phenomena- El-Nino, La-Nina, Southern Oscillation, Western Disturbances, Indian Ocean Dipole (IOD), Consequences of Climate Change.</li>
+</ul>
+</li>
+<li><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit-II India- Agriculture and Water Resources</strong></span>
+<ul>
+<li>Agriculture- Production and Distribution of Major crops and Millets.</li>
+<li>Irrigation- Types of Irrigation Techniques, Sources of Irrigation and Multipurpose Projects.</li>
+<li>Food Security, Green Revolution, Strategies for Second Green Revolution and Sustainable Agriculture.</li>
+<li>Conservation and Augmentation of Water Resources- Rainwater Harvesting, Methods of Water Conservation, Interlinking the Rivers, National Water Policy.</li>
+</ul>
+</li>
+<li><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">Unit-III India- Natural Resources and Industrie</span>s</strong>
+<ul>
+<li>Forest Resources- Their Types and Distribution.</li>
+<li>Major Minerals and Energy Resources.</li>
+<li>Energy Crises and Non-Conventional Sources of Energy.</li>
+<li>Major industries- Iron and Steel, Cement, Paper, Sugar, Cotton Textile Industry.</li>
+<li>Major Food Processing Industries.</li>
+</ul>
+</li>
+<li><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit-IV Disasters and Techniques</strong></span>
+<ul>
+<li>Natural Hazards and Disasters in India~ Earthquake, Tsunamis, Droughts, Floods, Hailstorm, Fog, Cloud burst, Thunderstorm, Tropical Cyclones in India.</li>
+<li>Environmental Pollution- Air Pollution, Water Pollution, Soil or Land Pollution and their Prevention, Control and Management, Measures to Mitigate Pollution.</li>
+<li>Population Growth in India, Population Pressure on -Resources, Rural-urban Migration.</li>
+<li>Advanced Techniques in Geography- Remote Sensing, Geographical Information System (GIS), Global Positioning System (GPS) and their Applications. Types of Satellites.</li>
+</ul>
+</li>
+<li><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit-V Geography of Madhya Pradesh</strong></span>
+<ul>
+<li>Major Physiographic (Physical) Divisions- Malwa Plateau, Madhya Bharat Plateau, Bundelkhand Plateau, Vindhyachal Range, Baghelkhand Plateau, Narmada-Son Valley, Satpura Range.</li>
+<li>Major Rivers and Their Tributaries.</li>
+<li>Climate- Seasons, Temperature, Rainfall.</li>
+<li>Soils of Madhya Pradesh- Types and Distribution, Soil Erosion and Soil Conservation.</li>
+<li>Natural Vegetation- Types and Distribution of Forests, Major Forest Produce.</li>
+<li>Major Crops, Irrigation and Irrigation Projects.</li>
+<li>Major Minerals and Energy Resources, Non-Conventional Sources of Energy.</li>
+<li>Major Industries, Small and Cottage Industries.</li>
+<li>Population Growth, Distribution and Density, Urbanisation.</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<p> </p>
+<p><strong><a data-from-md title='https://www.drishtiias.com/free-downloads/state-pcs-previous-years-papers/madhya-pradesh' href='https://www.drishtiias.com/free-downloads/state-pcs-previous-years-papers/madhya-pradesh'>https://www.drishtiias.com/free-downloads/state-pcs-previous-years-papers/madhya-pradesh</a></strong></p>
+<h1 id="2017">2017</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20GS-1.pdf' href='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20GS-1.pdf'>https://www.drishtiias.com/images/pdf/MPPCS Mains GS-1.pdf</a></p>
+<h2 id="section-a"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="2-lines-3-marks">2 Lines 3 Marks</h3>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(A) Raphael</span></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Montesquieu</strong></span><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) Vishakhadatta</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Second Battle of Tarain</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Ashwaghosh</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Battle of Kalinga</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) Ramananda</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Alberuni</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) Ishwar Chandra Vidyasagar</strong></span></strong></strong>        <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) Chauri Chaura Incident</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) Subhadra Kumari Chauhan</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) Birsa Munda</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) Bhavbhuti</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N) Peshwa Bajirao-1</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O) Lord Mountbatten</strong></span></strong></strong><br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Why did the Renaissance start from Italy? Discuss the causes. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Throw light on the background of the French Revolution of 1789.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) Write a note on the decline of Indus Valley Civilization. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Throw light on the contribution of Raja Todarmal on the development of Dahsala Settlement. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Discuss the nature of the revolt of 1857. Was it a war of independence? (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Sketch the characteristics of Buddhist sites of Madhya Pradesh. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) Discuss those circumstances in which India achieved independence. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Evaluate Shershah as a ruler. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) Throw light on the characteristics of Malwa painting. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) Analyse the role of Arya Samaj in the development of nationalism. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) Throw light on the social conditions of the later Vedic age (1000 B.C. – 600 B.C.) (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) Why did Gandhiji accept the partition of the country? (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Discuss the causes of the Russian Revolution (1917) in detail. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Why is Akbar called a national monarch? Explain in detail. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) Write a short essay on the development of tourism in Madhya Pradesh. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) How far will it be proper to call the Gupta period the Golden Age of ancient India on the basis of cultural achievement? (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<h2 id="section-b"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="2-lines-3-marks-2">2 Lines 3 Marks</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Define Humus.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B)  Define Sericulture</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) Describe Green House Gases.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D)  Explain the meaning of Soil.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E)  Define ‘Dun’ and ‘Duar’.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Malabar Coast</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G)  Balram Tal Yojana</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H)  What is Albedo?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I)  Describe land reforms in India</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J)  Define ‘inversion of rainfall’.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K)  Define Central Business District (C.B.D.).</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L)  Define Jet Stream in short.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) What were the causes of flash flood in Uttarakhand in the year 2013?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N) What do you mean by roaring forties? Point out their location.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O) Define EI Nino and La Nino.</strong></span></strong></strong>  <br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A)  Write a short note on Chota Nagpur Plateau industrial region. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B)  Examine the canal irrigation in Madhya Pradesh – Chhattisgarh states. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C)  Describe the geographical distribution of tribes in central India. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Examine the problem of malnutrition in India.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E)  Identify the agro-climatic sub-regions of Madhya Pradesh. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Describe the Chernobyl Atomic Plant Tragedy 1986. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) What is eco-farming? how it is different from Green revolution farming? Discuss.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Write a note on the geographical characteristics of Vindhyachal-Baghelkhand Plateau. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I)  Discuss the Chambal Project. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) Discuss the problems of soil erosion and soil degradation in Madhya Pradesh and point out their remedies. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) Write a short note on Greater Himalaya or Himadri. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) What is Nappes? (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) Name five controlling factors of oceanic salinity.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N) What is latent heat?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O)  Name the misfit stream of India. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Divide Madhya Pradesh into physical divisions and present their detailed account.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B)  Describe the institutional organization and basic policy framework of disaster management. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C)  Evaluate the parameters of population stabilization in India and discuss the government strategy to arrest the growing population. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Describe the drainage system of Madhya Pradesh.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) What is Plate Tectonic Theory? Describe the role of Plate Tectonic in sea-floor spreading and continental displacement.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2018">2018</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20GS%20-%201.pdf' href='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20GS%20-%201.pdf'>https://www.drishtiias.com/images/pdf/MPPCS Mains GS - 1.pdf</a></p>
+<h2 id="section-a-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="2-lines-3-marks-3">2 Lines 3 Marks</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Kanva Dynasty</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Gautamiputra Satakarni</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) Maukharis</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Rehela</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Rajkumar Shukla</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Jacobins</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) Erasmus</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Emile</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) Czar Alexander II</strong></span></strong></strong>         <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) Thomas Brassey</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) Khijra Khan</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) Tuluva Dynasty</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) Shahabuddin Umar</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N) Razia Begum</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O) Treaty of Neuilly</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A)  Sketch the contributions of Michelangelo in European Renaissance. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Highlight the causes of the Glorious or Bloodless Revolution of England in 1688.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C)  Throw light on the socio-economic background of the rise of Buddhism in India. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D)  Throw light on the political conditions of Northern India during sixth century BC. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Describe the public welfare activities of Firuzshah Tughluq.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Discuss the nature and significance of Din-i-Ilahi.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G)  Explain 'economic drain' and discuss its causes. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H)  Give a brief account of the Birsa Munda Movement. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) Write a short note on Kunwar Singh.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) Discuss the social and educational contributions of Ramkrishna Mission in detail.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) Describe the World Heritage Sites of Madhya Pradesh in brief.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) Throw light on the literary contributions of Jaganik.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A)  Discuss the socio-economic causes of the French Revolution of 1789. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) To what extent is it correct to ascribe the outbreak of the Second World War to the defects of the Treaty of 1919?   (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) Examine the social structure under the Rajputs.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Mention the important sources of the history of Harshavardhana.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Trace the causes of failure of the Revolt of 1857 and throw light on its importance.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F)  Write an essay on rise and growth of Nationalism in India. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) Evaluate the political and cultural contributions of Bhoj Paramara (1010-1055).  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Throw light on the Flag Satyagraha Movement of Madhya Pradesh.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="section-b-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="2-lines-3-marks-4">2 Lines 3 Marks</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Vindhyachal mountain range comprises of which hills?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) What is Peneplain?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) What do you mean by Penda Agriculture?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Give three names of thermal power stations of Madhya Pradesh.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Name the origin place of Tapi river.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) 'Mangla' is famous for which economic activity?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) Mention the key bauxite producing States of India.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) What is 'Allah Bund?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) What is 'Loo?</strong></span></strong></strong>         <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) Write about diamond producing area of Madhya Pradesh.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) What is 'Atoll'?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) Give names of important centres of paper industry of Madhya Pradesh.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) Define Apogean and Perigean Tides.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N) What was, infant population growth rate of Madhya Pradesh between 2001 to 2011?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O) When and why did sudden flood occur in Uttarakhand (Kedarnath)?</strong></span></strong></strong> <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A)  Explain the origin of Himalayas on the basis of Plate Tectonics theory. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) In which areas of Madhya Pradesh, maximum development of irrigation by wells tube-wells has taken place and what are its causes?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) What are the traditional methods of water conservation? Which requirements can be fulfilled by these ?   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Give the measures taken for relief and rehabilitation in disaster management.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E)  Describe the regional pattern of population density in Madhya Pradesh.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F)  Describe flood-affected areas of India. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G)  Describe the dolomite mining areas of Madhya Pradesh.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H)  Describe the main characteristics of soils of Madhya Pradesh.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I)  Describe the population growth rate (1901-2011) of Madhya Pradesh.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) What are the major factors of migration from villages to cities? (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K)  Describe the factors and consequences of 2004 Tsunami in Indian Ocean.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) Describing the soya bean producing areas of Madhya Pradesh, give the factors for its rapid expansion.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M)  Give detailed account of localization of cement industry in Madhya Pradesh.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N)  Give account of areas of Madhya Pradesh which are affected by soil erosion and give measures to prevent soil erosion.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O) Describe the problems of water resources in Madhya Pradesh.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Discuss main areas of dry farming in India, their problems and strategy for development.   (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B)  Describe agro-climatic regions of Madhya Pradesh.   (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C)  Describe agro-based industries of Madhya Pradesh.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Describing various causes of origin of earthquakes, give detailed account of 2001 earthquake of Kutch.   (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Mentioning the tribal areas of Madhya Pradesh, describe their problems.   (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2019">2019</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/MPPSC%20Mains%202019%20Paper_GS_I.pdf' href='https://www.drishtiias.com/images/pdf/MPPSC%20Mains%202019%20Paper_GS_I.pdf'>https://www.drishtiias.com/images/pdf/MPPSC Mains 2019 Paper_GS_I.pdf</a></p>
+<h2 id="section-a-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="2-lines-3-marks-5">2 Lines 3 Marks</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Thermidorian Reaction</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(1.2) Bill of Rights, 1689</span></strong> <br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(1.3) Enclosure Movement</span></strong>  <br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(1.4) Rigvedic Panchjan</span></strong>  <br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(1.5) Vasubandhu</span></strong>  <br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(1.6) Tirthas in Mauryan period</span></strong>  <br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(1.7) Anwar-e-Suheli</span></strong>  <br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(1.8) Dastak system</span></strong>  <br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(1.9) Ulgulan</span></strong>         <br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(1.10) Shankarshah</span></strong>  <br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(1.11) Bhima Nayak</span></strong>  <br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(1.12) J. V. P. Committee</span></strong>  <br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(1.13) Seoni Satyagraha (Turia)</span></strong>  <br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(1.14) Bhumara temple</span></strong>  <br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(1.15) Bagh Caves</span></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) How did the Mangos influence Europe’s renaissance? Explain in brief.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2.2) Evaluate the responsibility of William Kaiser for First World War.  (6M100W)</span></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2.3) Evaluate the role of Bimbisara in the rise of Magadha.  (6M100W)</span></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2.4)  How did Nurjahan influence the politics of her time? Explain (6M100W)</span></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2.5) Critically examine the impact of British Rule over Indian Industry and Trade.  (6M100W)</span></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2.6) Reveal the reasons for the reaction of tribals against British rule in the light of tribals revolts.  (6M100W)</span></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2.7)  How did the Indian Renaissance support the discovery of Ancient Indian History? Explain. (6M100W)</span></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2.8) Throw light on the geographical location of the “Madhyabharat” State formed after Independence.  (6M100W)</span></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2.9) “British rule increases poverty in India.” Review this statement in light of the facts.  (6M100W)</span></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2.10) Write a short note on Malwa Utsav.  (6M100W)</span></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2.11)  Describe the salient features of Udayagiri Caves located in Madhya Pradesh. (6M100W)</span></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2.12)  Discuss the religious and cultural significance of Amarkhantak. (6M100W)</span></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) Discuss the features of Renaissance.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)  Describe the political consequences of Second World War. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3) Describe the economic condition of the Harappan Civilization. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4) Describe the development of Science and Technology in the Gupta period.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5) Evaluate the achievements of Chandel ruler Vidyadhar.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.6) Analyse the reasons for the launch of Quit India Movement.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="section-b-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="2-lines-3-marks-6">2 Lines 3 Marks</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) India is divided in how many geomorphic divisions? Write the name of geomorphic divisions.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) Write the name of top three States of India in terms of population size.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Write the name of top three copper producing States of India.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Write the name of the place of origin of Chambal river.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Write the name of three petroleum producing areas of India.</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What are the unfavourable factors for the development of canal irrigation in Madhya Pradesh?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) Write the name of three major crops of Madhya Pradesh in terms of area.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) What is food processing industry? Give examples.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) What is natural disaster? Give examples.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Write main measures to control the soil erosion.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Write name of the highest peak of Satpura mountain range with its height.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Write the name of major sugarcane producing districts of Madhya Pradesh.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) Write the name of two districts of Madhya Pradesh which have the lowest literacy rate.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) What are the impurities in drinking water?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) What are the essential geographical conditions for the agriculture of cotton?</strong></span></strong></strong><br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) Write about the favourable conditions for the development of Karst topography.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2) What is the contribution of Jet Stream in the effectivity of South-West Monsoon?   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3) Describe the areas affected by soil erosion in India.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)  Write about major problems of dry farming in India.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5) Give a brief account of the regional pattern of density of popluation in Madhya Pradesh.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6) Write a note on the variability of rainfall in Madhya Pradesh.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)  Give a brief account of the major soyabean producing areas of Madhya Pradesh.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8) Describe in biref about the managanese producing areas of Madhya Pradesh.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)  Divide Madhya Pradesh into physical division and write a note on the geographical characteristics of Malwa Plateau.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)  Write the regional distribution of Vindhyan system rocks in India.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.11)  Give an account of the cement industry in Madhya Pradesh.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.12)  Write a note on the Bhuj Earthquake-2001.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)  Compare the drainage pattern of Northern and Southern India.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)  Discuss the new techniques used in irrigation for prudent use of water. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)  Describe the agro-based industries in Madhya Pradesh. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4) Mention the principles of disaster management and analyse the measures for relief and rehabilitation in disaster management. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5)  Describe the distribution of Scheduled Tribes in Madhya Pradesh. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.6)  What are the causes of origin of tsunami? Analyse the landscape and effects of Indian tsunami, 2004.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2020">2020</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/mppsc%202020%20Paper_I.pdf' href='https://www.drishtiias.com/images/pdf/mppsc%202020%20Paper_I.pdf'>https://www.drishtiias.com/images/pdf/mppsc 2020 Paper_I.pdf</a></p>
+<h2 id="section-a-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="2-lines-3-marks-7">2 Lines 3 Marks</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Kotdeeji</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) Shrotsutra</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Amitraghat</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Debal</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Deevan-E-Insha</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) Tarabai</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) Ahome Rebellion</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) Mopala Rebellion</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Lala Hardayal</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Bheel Rebellion</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Gyaraspur</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Kun Raghunath Shah</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) Malhar Rao Holkar</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Bundela Rebellion</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Abanti Bai</strong></span></strong></strong><br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  What is Balathal Culture? Describe its main features.  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)  Write an essay on the Ancient Indian Scientific Literature.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3) Evaluate Akbar's religious policy.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)  Write the causes of decline of traditional cottage industries in India.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5) Give a brief description of 'India rise as a Republic'.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6) Describe the reorganization of Madhya Pradesh.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)  Throw light on the &quot;Jhanda Satyagraha&quot;.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)  Give a description of the main local festivals of Madhya Pradesh.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)  Give a brief description of the Bhopal Riyasat.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)  What do you know about Baghel Riyasat?</strong>  (5M50W)</span></strong></strong><br>
+Ans<br>
+<br class="jop-noMdConv"/></p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)   Sindhu Valley Civilization was a Urban Civilization' what is your opinion about this statement? (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2) Describe the development of arts and architecture in the Gupta period.</strong> (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3) &quot;Muhammad Tughlaq has been described as a mixture of opposition'. Discuss this statement.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)  'The cancer of South destructed Aurangzeb'. Discuss the South policy of Aurangzeb in the light of this statement.</strong> (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5)  Discuss the social and educational contribution of &quot;Arya Samaj Mission&quot;.</strong> (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.6)  Sketch the contribution of Balgangadhar Tilak in freedom movement in India.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.7) Describe the Freedom Movement in Madhya Pradesh.</strong>   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.8)</strong>  Give a description of the main historical and tourist places of Madhya Pradesh.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.9)</strong> Give description of Bundelkhand Riyasat.   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.10)</strong>  Give description of Holkar dynasty.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="section-b-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="2-lines-3-marks-8">2 Lines 3 Marks</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Write the name of instrument used to measure intensity of earthquake along with its year of invention.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) Write the name of country of flowing of San Jaun river.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Write the name of the climatic region represented by BW symbol.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Write the name of three important tributaries of Chenab.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) What is Karewa soil? Where is it found in India?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What is blue revolution? Which district is known as the Shrimp capital of India?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) At which place Narmada and Tapi rivers come close to each other?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) Write the name of three Thermal Power Stations of Madhya Pradesh.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Write the name of three tribes of Madhya Pradesh which practise shifting cultivation.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Write any three merits of rainwater harvesting.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Write a geographical note on Amphan cyclone.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) What are sun-synchronous satellites? Give examples.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) What are the hardware components of Geographic Information System?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Write a note on Quick Bird Satellite.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Write a note on Vizag Gas leak.</strong></span></strong></strong><br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  What are the three principal types of weathering? Describe.  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)  What are the major features of Tropical Savana Climate?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)  What is the process of formation of laterite soil?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4) Why are Jute mills concentrated in Hooghly basin of India?</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)  What are the major characteristics of forest resources of Madhya Pradesh?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6) What is the geographical distribution of coal resources of Madhya Pradesh?</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)   What are the main factors for ground water pollution?</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)  Provide main examples of technological disasters.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)  What is digital image?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)   Define 'Spatial data'.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)  Discuss the origin and characteristics of Tropical cyclones.  (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2) Describe the main types of wind systems and highlight the causes of their origin.</strong> (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3) Divide India into climatic zones according to Koppen and Thornthwaite.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4) Describe the origin of Monsoon in India.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5) Write the distribution of cotton reserves and production in Madhya Pradesh.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.6)   Describe the topography of Malwa Plateau.</strong> (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.7) Explain water pollution control measures.</strong>   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.8)  What is Disaster Mitigation and explain the role of information in Disaster Mitigation.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.9)  Explain the principles of Remote Sensing.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.10)  What is Global Positioning System (GPS) and how does GPS work?</strong> (11M200W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2021">2021</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/2021Mains_GS-I.pdf' href='https://www.drishtiias.com/images/pdf/2021Mains_GS-I.pdf'>https://www.drishtiias.com/images/pdf/2021Mains_GS-I.pdf</a></p>
+<h2 id="section-a-5"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="2-lines-3-marks-9">2 Lines 3 Marks</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Kaumudi Mahotsava</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) Sutradhayksha</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Shri Harsha Seeyak</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Khawajatash</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Chand Bibi</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) Ameeni Aayog</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) Bakashta</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) Hridyanath Kunjaru</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Bhartiya Swatantra Bill</strong></span></strong></strong>        <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Karmvir</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Macha</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Barman Mela</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) Jaijakbhukti</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Tukoji Rao III Holkar</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Dost Mohammad Khan</strong></span></strong></strong><br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  Write a short note on Great Bath.  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2) Discuss about &quot;Three Rinas&quot; in Indian Culture.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3) What is &quot;Diwan-E-Kohi&quot;? Discuss it.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4) Write a short note on treaty of Salbai.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5) Write a short note on Sannyasi Revolt.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)  What is &quot;Servants of India Society&quot;?</strong>  (5M50W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)  What do you know about Raja Bakhtawar Singh?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)  What do you know about &quot;Chitrakoot&quot;?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9) Discuss the treaty of Mandsaur.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10) What do you know about Maharaj Raghuraj Singh?</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) Discuss the political organization during Rigveda period.   (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Discuss the &quot;Dhamma&quot; of Ashoka.</strong> (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)  Throw light on Mughal - Sikh relations from Guru Nanak to Guru Govindsingh.</strong> (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Discuss the administrative system of Shivaji.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)  What was the nature of the Revolt of 1857 ? Is it correct to call it the first freedom struggle?</strong> (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)  What do you mean by Indian renaissance of 19th century ? Discuss the causes of Indian renaissance.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4) Throw light on non-cooperation movement in Mahakaushal region.</strong>   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)  Describe the main features of folk painting ofNimad and Malwa.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5)  Evaluate the personality and contribution of Ahilyabai Holkar.</strong>   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)  Evaluate the contribution of Shankar Shah and Raghunath Shah in the freedom movement of 1857.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<h2 id="section-b-5"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="2-lines-3-marks-10">2 Lines 3 Marks</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Mount Kilimanjaro mountain is situated in which continent?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) What is the epicentre of earthquake?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) What is Tornado ? And mainly in which countries are they found?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Why is the vast area of the Malwa Plateau flat?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Barak river is the main river of which two States of India?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What is El Nino ?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) Why is the Narmada river called the lifeline of Madhya Pradesh ?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) Which physical region of Madhya Pradesh is the most extensive and important from the point of view of forest?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Balaghat district of Madhya Pradesh is famous for which mineral deposits in the country?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) What is hydrological cycle?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) What is Water Resource Management?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Write the name with state, place and year of two major earthquakes that occurred after 1950 in the Peninsular India.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) What is meant by Remote sensing?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Write the definition of vector data in G.I.S.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) What is Global Positioning System (G.P.S.)?</strong></span></strong></strong><br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) Why the Aral Sea was called a 'Dying Saline Lake' ?   (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)  How does a Volcano form?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3) Give a brief description of Luni river.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)  How can we conserve the minerals of India?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)  Write a short note on 'Diamond Mining Project' in Madhya Pradesh.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6) Under which scheme the Ministry of Tribal Affairs has given benefit to particularly vulnerable tribal groups of Madhya Pradesh and what are the criteria for identifying them?</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)  What is arsenic and what are the various sources of arsenic?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)  Make a distinction between hazards and disasters.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)   Name the applications of Remote Sensing for Earth Resource Management.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)  What are the applications of geo-spatial information?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)  Describe glacial erosional landforms.  (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Describe the topographies created by process of volcanic eruption.   (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2) Describe the regional division of the Himalaya.</strong> (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Describe the national water grid.   (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3) Describe the physical features of Malwa Plateau.</strong>   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Mention the problem of soil erosion in Madhya Pradesh.   (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4) Describe the major pollutants of water.</strong>   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Mention the National Policy of Disaster Management.</strong>  (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5)  Discuss the meaning and benefits of remote sensing.</strong>   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)  Mention the function of the control division of G.P.S. Describe its use.  (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2022">2022</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/Paper_GS_I__Main_Exam_2022%20with%20cover.pdf' href='https://www.drishtiias.com/images/pdf/Paper_GS_I__Main_Exam_2022%20with%20cover.pdf'>https://www.drishtiias.com/images/pdf/Paper_GS_I__Main_Exam_2022 with cover.pdf</a></p>
+<h2 id="section-a-6"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="3m20w">3M20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) What are Saudayika and Asaudayika?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) How many Sangh Rajyas are mentioned in Kautilya's Arthashastra?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Write the names of any two places of Sindhu-Saraswati civilization located in Uttar Pradesh.</strong></span></strong></strong>     <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Which Mongol ruler ended the Khilafat and when?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) What was Kabuliyat in Mughal period?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What is meant by Siddha Sahitya Tradition?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) When and where did the Polygar Revolt take place?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) When and in which session did the Indian National Congress declare its policy towards the Princely States?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) When and where did the Tebhaga Movement take place?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) In which year was Bhimbetka declared as a World Heritage Site?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Who built the Chausath Yogini temple of Kalchuri period and when?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Write the names of any two books written by Raja Bhoj.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) Where and by whom was the Sipahi Bahadur Sarkar established?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Which British officer oppressed the Thagee and when?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Baiza Bai was associated with which Royal Family?</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  Write in short about 'Cave Edict of Ashoka'.   (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong> Write about the culture and society of Sangam Age.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong>   Write on the 'problem of the suppression of Turkish Amirs' by Balban.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong>   Explain the word 'Soofi'. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong>  Write in brief on 'The Background of Mopla Revolt'.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong> Write in brief on 'The British Policy of Dada Bhai Naoroji'.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)</strong>  Write in brief on the 'Varieties of Godana'. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong> Write a short note on Charan Paduka/Shaheed Mela.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)</strong>  Write a short note on Rashtrakoot Djmasty.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)</strong> Write about Madhya Pradesh during the Gondwana Period.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) Write an sirticle on Nalanda Vihar.  (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong>  Throw light on the art of Pallava period. (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong> What were the political ideals of Shivaji? Explain.   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> Explain the economic impacts of British rule on India,  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong> Write an Article on Hindu Code Bill.   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> Why is Sanchi famous? Describe.   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)</strong>  Throw light on Jungle Satyagraha. (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong>   Discuss the merger of Princely States in India. (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5)</strong> Write about the administrative reforms of Maharaja Venkat Raman Singh.   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> What was the role of Avanti Bai in the Freedom Struggle? Explain.   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<h2 id="section-b-6"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="3m20w-2">3M20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Alps Mountain is situated in which continent?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) Write down three examples of active volcanoes.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Which type of rainfall occurs in Equatorial regions?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Name the place and location of highest rainfall in India.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Give three examples of Igneous rocks.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) Which three States have major reserves of copper in India?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) Write three types of forests of Madhya Pradesh.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) Where is Kanhan valley coal area located?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Write the names of two districts of Madhya Pradesh that have the highest capacity of wind energy.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) What are the three primary sources of recharge of underground water?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) What is NDMA?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) What are the alternative means , of communication during disasters?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) How many types of platforms are there in remote sensing?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Write the height and speed of Geostationary satellite.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Where was the Global Positioning System (GPS) initially developed?</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) Write a short note on the Plateau of Tibet.   (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong> Write the types of seismic waves.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong> What is Jet Stream? Explain.    (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong>   What are the major types of soil in India? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong>  Write a short note on the problems of soil erosion in the Chambal region of Madhya Pradesh. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong> Give a brief account of National Newsprint and Paper mills.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)</strong>  Write a short note on the pandemic Covid-19. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong>   What do you understand by Safe Construction?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)</strong>  Explain the significance of electromagnetic radiation in remote sensing with examples. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)</strong> Explain the importance of computer in G.I.S.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) What is volcano? Explain the distribution of volcanoes in the world.   (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) What is cyclone? Mention the main features of tropical ■ cyclones.</strong>   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong> Describe the main geographical characteristics of the northern plain of India.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> What is migration? Analyse the impacts of rural to urban migration in India.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong> Explain the localisation and distribution of cement industry in Madhya Pradesh.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> <strong>Describe the geographical characteristics of the Malwa plateau</strong>.  <strong>(11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4) What are the main sources of impurities in drinking water? How can they be managed?   (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)  Describe man-made disasters with the example of Bhopal gas tragedy (1984). (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5) Explain the main elements, processes and applications of geographical information system.  (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Give an account of the uses, advantages and limitations of Geographical Positioning System (GPS).  (11M200W)</strong><br>
+</span>Ans</p>
+<p> </p>
+<h1 id="2023">2023</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20Exam_2023-I.pdf' href='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20Exam_2023-I.pdf'>https://www.drishtiias.com/images/pdf/MPPCS Mains Exam_2023-I.pdf</a></p>
+<h2 id="section-a-7"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="3m-20w">3M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Ambashtha</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) Naishthik</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Sadyodvaha</strong></span></strong></strong>     <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Bhavanaga</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Thatta</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) Shah Turkan</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) Sheikh Mohammed Ghaus</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) Barisal Rebellion</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Raja Mahendra Pratap</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Sarvodaya Yoj ana</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Central Province Government</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Bhadam</strong></span></strong></strong>          <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) Gay Gohari</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Council of Regency</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Amshera</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) Write a short note on Lichchhavi Republic of Vaishali.    (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong>  What is ‘Chaturvyuha' in Bhagvata Religion?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong>  What was the Izara system?   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong> Clarify the status of women in the Mughal society.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong>  Explain the role of Chapeker Brothers as leaders in the National Freedom Movement.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong>  Evaluate the Civil Disobedience Movement. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)</strong>  Throw light on the architectural features of the Shiva temple of Bhojpur. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong> Describe the folk drama Turra Kalangi.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)</strong> What do you know about 'Raja Shankar Shah ?   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)</strong> Explain the relations of Malhar Rao Holkar with the British.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) Take an analytical look at 'Hindu Samskaras'.  (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> Who was Gautamiputra Satakarni? Describe his military  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong> Discuss the conflict of Ahom kingdom with the Mughals.   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span> Explain the spread of printing art during the British Raj and its impact on the Indian culture.  (11M200W)<br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong>  Throw light on the first General Election of Independent India.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span>  &quot;The credit for giving rise to extreme nationalist sentiments in Indian politics goes to Tilak&quot;. Explain.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)</strong> Throw light on the history of 'Rang Manch' (Theatre) in Madhya Pradesh.  (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span></span>  <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Mention Holkar Chhatris in Indore as an excellent example of Maratha architecture.</strong></span>  (11M200W) <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5)</strong>  Discuss the factors that helped in the merger of Bhopal Princely State.  (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span></span> <strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">Explain what impact did the events of the third Maratha war have on Scindia and Holkar.</span></strong>   (11M200W) <br>
+Ans</p>
+<h2 id="section-b-7"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="3m-20w-2">3M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) Which is called as the cradle of folded mountains?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) In which country is Colorado Plateau located and what is its height?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) By which process is Lake Towa topography created and where is it located?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Deccan Plateau is made from which geologic process?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Which minerals are found in black soil?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) Saharia tribes are mainly centralised in which districts of Madhya Pradesh?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) What is landslide?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) How are the tectonic lakes formed?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) What are the natural sources of water pollution?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) What is tornado outbreak?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) What are the main steps for a successful disaster  management?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) What is electromagnetic spectrum?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) What is the application of remote sensing in forestry?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) What is wave velocity?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) What are the segments of Global Positioning System (GPS)?</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) Which is the main Dormant Volcano of the world? Discuss.   (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong> What is hurricane?   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong>  Which type of rainfall occurs by mountain ranges?   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong>  Give an account of the Tapti river.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong>  What are the groundwater challenges in India? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong>  Where are the evergreen forests located in India?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)</strong>  What is the geomorphic character of Narmada Valley? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong>  What are the characteristics of red and yellow soils?   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)</strong>  What is interlinking of rivers? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)</strong> How does remote sensing receive data?   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) Explain the stages in the life cycle of temperate cyclone.   (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> Give the classification of mountains on the basis of geomorphological characteristics.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong> Discuss the drainage system of the Himalayas.   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> Describe the drainage patterns in India.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong> Which are the major coalfields of Madhya Pradesh? Explain.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> <strong>State the areas and characteristics of black soil in Madhya Pradesh.</strong>  <strong>(11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)  Write an essay on National Water Policy, 2012.  (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Briefly describe the natural disasters.  (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5) Explain the elements and process of remote sensing.  (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) How many types of earth resources satellite are there? Describe briefly.  (11M200W)</strong><br>
+</span>Ans</p>
+<h1 id="2024">2024</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/MPPSC_2024_Mains-GS_I.pdf' href='https://www.drishtiias.com/images/pdf/MPPSC_2024_Mains-GS_I.pdf'>https://www.drishtiias.com/images/pdf/MPPSC_2024_Mains-GS_I.pdf</a></p>
+<h2 id="section-a-8"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="3m-20w-3">3M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) GOPJANSYA</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) SINGHVISHNU</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) AMAL-E-SALEH</strong></span></strong></strong>     <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) AWANTI JANPAD</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) UCHCHA KALPА</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) RAJA YASHOVARMAN</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) DRAIN OF WEALTH</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) Madhya Bharat Conference, 1948</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Pachmarhi Wood Craft</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Parikshit Dev Bundela</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Kunwar Raghunath Shah</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Bhima Nayak</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) Treaty of Gwalior, 1817 A.D.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Tantya Bhil</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Bhopal Praja Mandal</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)   Write a short note on Nandivarman style.  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong>  Give a short comparative introduction of Plassey and Buxar War.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong>  Write a note on 'Parivrajaka Dynasty'.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong> Evaluate 'Raja Dhang'.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong>  Explain 'the rise of middle class businessmen'.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong> Write a note on the Shivaji festival of Lokmanya Bal Gangadhar Tilak.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)</strong>  Write a brief note on 'The Poetic practice of poet Padmakar'. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong> Give a brief introduction of 'Ashrfee Palace of Mandu'.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)</strong>  Write a short note on the Martyrdom of Rani Durgawati.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)</strong> Write a short introduction of the history of Bhopal in 14th Century.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) Describe the terracotta figurines and animal figures of the Harappan Civilization.  (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> Describe the contemporary India according to Babarnama.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong></span> Throw light on the history of Kalchuri dynasty.   (11M200W)<br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span> Describe the major events that took place in Madhya Pradesh during Parmar period.  (11M200W)<br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong> What were the effects of British Rule on Indian Agriculture?   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span>  Describe the role of the tribals of Madhya Pradesh in the Jungle Satyagraha.  (11M200W)<br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)</strong> Explain Holkar State before Independence.  (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span>  Give a description of 'Orchha fair'.  (11M200W) <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5)</strong> rite about Gondwana genealogy and history.   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span>  Write a note on Khajyanayak and his associates.  (11M200W) <br>
+Ans</p>
+<h2 id="section-b-8"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="3m-20w-4">3M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) What are the names of Saptadwipas mentioned in the Purana?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) Mention the States of Black soil in India and its total area.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) What is La-Nina?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Mention the State wise 2021-22 Maize production.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Mention the State wise 2021-22 Bajra production.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) State the methods for rainwater harvesting in the rural areas.</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) Which five States of India have the highest area under forest in 2021?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) Explain Bina Refinery.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Give examples of Food Processing industry.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Explain cyclonic storm Biparjoy.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Mention three States each with the lowest and highest population growth rates in India in 2001-11.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Define the Geographical Information System.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) Write about Chambal river.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Which are the areas of iron-ore deposits in Madhya Pradesh?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Which are the agro-based industries in Madhya Pradesh?</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) Give a brief introduction of Malwa plateau.   (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong> Which are the major rivers originating from the Western Ghats?   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong>  What are the geographical conditions required for wheat cultivation?   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong>  What are the strategies for second green revolution?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong> Which are the major areas of Bauxite production in India?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong>  Explain sugarcane productions and their industries in Madhya Pradesh.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)</strong> What are the sources of soil pollution?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong>  What are the uses of Global Positioning System (GPS)?   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)</strong>  What are the major forest produces in Madhya Pradesh? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)</strong> Write about Amarkantak Thermal Power Station.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)  Give a geographical description of the peninsular plateau of India.  (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> Explain the origin of Indian Monsoon.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong> Describe rice production and major areas of rice production in India.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span> Discuss the water harvesting, conservation and augmentation in the context of the increasing needs in India.  (11M200W)<br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong> Write an account of the production and distribution of petroleum in India.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong></span></strong></strong> <strong>Write a brief description of the cotton textile industry in India.</strong>  <strong>(11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)  Give an account of the major earthquake prone areas in India.  (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong>(OR)</strong></strong></span>  Discuss the population growth and the pressure of population on the resources in India. (11M200W)<br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5) Describe the production of coal and major areas of coal production in Madhya Pradesh.  (11M200W)</strong><br>
+</span>Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong>(OR)</strong></strong></span> Present an account of the cement industry in Madhya Pradesh.  (11M200W)<br>
+Ans</p>
+</div></div>
+					</body>
+				</html>
+			

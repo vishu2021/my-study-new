@@ -1,0 +1,1383 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="../atom-one-light.css">
+						<title>P2_GS_II_200</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">P2_GS_II_200</div>
+
+<style>
+		/* https://necolas.github.io/normalize.css/ */
+		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
+		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
+		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
+
+		body {
+			font-size: 15px;
+			color: #32373F;
+			word-wrap: break-word;
+			line-height: 1.6em;
+			background-color: #ffffff;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+			padding-bottom: 0px;
+			padding-top: 0px;
+		}
+		kbd {
+			border: 1px solid rgb(220, 220, 220);
+			box-shadow: inset 0 -1px 0 rgb(220, 220, 220);
+			padding: 2px 4px;
+			border-radius: 3px;
+			background-color: rgb(243, 243, 243);
+		}
+
+		:root {
+			--scrollbar-size: 7px;
+		}
+
+		::-webkit-scrollbar {
+			width: var(--scrollbar-size);
+			height: var(--scrollbar-size);
+		}
+		::-webkit-scrollbar-thumb {
+			border-radius: calc(var(--scrollbar-size) / 2);
+		}
+		::-webkit-scrollbar-corner {
+			background: none;
+		}
+		::-webkit-scrollbar-track {
+			border: none;
+		}
+		::-webkit-scrollbar-thumb {
+			background: rgba(50, 55, 63, 0.54); 
+		}
+		::-webkit-scrollbar-track:hover {
+			background: rgba(0, 0, 0, 0.1); 
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background: rgba(50, 55, 63, 0.63); 
+		}
+
+		
+
+		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
+
+		#rendered-md > h1:first-child,
+		#rendered-md > h2:first-child,
+		#rendered-md > h3:first-child,
+		#rendered-md > h4:first-child,
+		#rendered-md > ul:first-child,
+		#rendered-md > ol:first-child,
+		#rendered-md > table:first-child,
+		#rendered-md > blockquote:first-child,
+		#rendered-md > img:first-child,
+		#rendered-md > p:first-child {
+			margin-top: 0;
+			padding-top: 0;
+		}
+		
+		p, h1, h2, h3, h4, h5, h6, ul, table {
+			margin-top: .6em;
+			margin-bottom: 1.35em;
+
+			/*
+				Adds support for RTL text in the note body. It automatically detects the direction using the content.
+				Issue: https://github.com/laurent22/joplin/issues/3991
+			*/
+			unicode-bidi: plaintext;
+		}
+
+		h1, h2, h3, h4, h5, h6, ul, table {
+			margin-bottom: 0.65em;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			line-height: 1.5em;
+		}
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			border-bottom: 1px solid #dddddd;
+			padding-bottom: .3em;
+		}
+		h2 {
+			font-size: 1.3em;
+			font-weight: bold;
+			padding-bottom: .1em; */
+		}
+		h3 {
+			font-size: 1.1em;
+			font-weight: bold;
+		}
+		h4, h5, h6 {
+			font-size: 1em;
+			font-weight: bold;
+		}
+
+		.exported-note-title {
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 0.8em;
+			line-height: 1.5em;
+			padding-bottom: .35em;
+			border-bottom: 1px solid #dddddd;
+		}
+
+		a {
+			color: #155BDA;
+		}
+		ul, ol {
+			padding-left: 0;
+			margin-left: 1.7em;
+		}
+		li {
+			margin-bottom: .4em;
+		}
+		li p {
+			margin-top: 0.2em;
+			margin-bottom: 0;
+		}
+
+		dt {
+			font-weight: bold;
+			margin-bottom: 0.25em;
+		}
+
+		dd {
+			margin-inline-start: 2.5em;
+			margin-bottom: 0.5em;
+		}
+
+		.resource-icon {
+			display: inline-block;
+			position: relative;
+			top: 0.3em;
+			text-decoration: none;
+			width: 1.2em;
+			height: 1.4em;
+			margin-right: 0.4em;
+			background-color:  #155BDA;
+		}
+    /* These icons are obtained from the wonderful ForkAwesome project by copying the src svgs 
+     * into the css classes below.
+     * svgs are obtained from https://github.com/ForkAwesome/Fork-Awesome/tree/master/src/icons/svg
+     * instead of the svg width, height property you must use a viewbox here, 0 0 1536 1792 is typically the actual size of the icon
+     * each line begins with the pre-amble -webkit-mask: url("data:image/svg+xml;utf8,
+     * and of course finishes with ");
+     * to prevent artifacts it is also necessary to include -webkit-mask-repeat: no-repeat;
+     * on the following line
+     * */
+		.fa-joplin {
+			/* Awesome Font file */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M373.834 128C168.227 128 0 296.223 0 501.834v788.336C0 1495.778 168.227 1664 373.834 1664h788.336c205.608 0 373.83-168.222 373.83-373.83V501.834C1536 296.224 1367.778 128 1162.17 128zm397.222 205.431h417.424a7.132 7.132 0 0 1 7.132 7.133v132.552c0 4.461-3.619 8.073-8.077 8.073h-57.23c-24.168 0-43.768 19.338-44.284 43.374v2.377h-.017v136.191h-.053l-.466 509.375c-5.02 77.667-39.222 149.056-96.324 201.046-60.28 54.834-141.948 85.017-229.962 85.017-12.45 0-25.208-.61-37.907-1.785-92.157-8.682-181.494-48.601-251.662-112.438-71.99-65.517-117.147-150.03-127.164-238-11.226-98.763 23.42-192.783 95.045-257.937 81.99-74.637 198.185-101.768 316.613-75.704 5.574 1.227 9.55 6.282 9.55 11.997v199.52c-.199 2.625-1.481 6.599-8.183 2.896-.663-.365-1.194-.511-1.653-.531-21.987-10.587-45.159-17.57-68.559-19.916-.38-.04-.757-.124-1.138-.163-.537-.048-1.034-.033-1.556-.075-4.13-.354-8.183-.517-12.203-.58-.87-.011-1.771-.127-2.641-.127-.486 0-.951.05-1.437.057-1.464.011-2.886.115-4.33.163-2.76.102-5.497.211-8.182.448-.273.024-.547.07-.835.097-25.509 2.4-47.864 11.104-65.012 25.47-.954.802-1.974 1.53-2.9 2.36a1.34 1.34 0 0 1-.168.146c-23.96 21.8-34.881 53.872-30.726 90.316 4.62 40.737 26.94 81.156 62.841 113.823 35.908 32.67 80.335 52.977 125.113 57.186 35.118 3.36 66.547-3.919 89.899-20.461a97.255 97.255 0 0 0 9.365-7.501c2.925-2.661 5.569-5.5 8.086-8.416.3-.348.672-.673.975-1.024 8.253-9.864 14.222-21.067 17.996-33.148.639-2.034 1.051-4.148 1.564-6.227.381-1.563.81-3.106 1.112-4.693.555-2.784.923-5.632 1.253-8.49.086-.709.183-1.414.237-2.128.492-4.893.693-9.858.55-14.91h.013V521.623c-2.01-22.626-20.78-40.434-43.928-40.434h-57.23a8.071 8.071 0 0 1-8.077-8.073V340.564a7.132 7.132 0 0 1 7.136-7.133z'/></svg>");
+		}
+		.fa-file-image {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-128-448v320H256v-192l192-192 128 128 384-384zm-832-192c-106 0-192-86-192-192s86-192 192-192 192 86 192 192-86 192-192 192z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-pdf {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-514-593c25 20 53 38 84 56 42-5 81-7 117-7 67 0 152 8 177 49 7 10 13 28 2 52-1 1-2 3-3 4v1c-3 18-18 38-71 38-64 0-161-29-245-73-139 15-285 46-392 83-103 176-182 262-242 262-10 0-19-2-28-7l-24-12c-3-1-4-3-6-5-5-5-9-16-6-36 10-46 64-123 188-188 8-5 18-2 23 6 1 1 2 3 2 4 31-51 67-116 107-197 45-90 80-178 104-262-32-109-42-221-24-287 7-25 22-40 42-40h22c15 0 27 5 35 15 12 14 15 36 9 68-1 3-2 6-4 8 1 3 1 5 1 8v30c-1 63-2 123-14 192 35 105 87 190 146 238zm-576 411c30-14 73-57 137-158-75 58-122 124-137 158zm398-920c-10 28-10 76-2 132 3-16 5-31 7-44 2-17 5-31 7-43 1-3 2-5 4-8-1-1-1-3-2-5-1-18-7-29-13-36 0 2-1 3-1 4zm-124 661c88-35 186-63 284-81-10-8-20-15-29-23-49-43-93-103-127-176-19 61-47 126-83 197-15 28-30 56-45 83zm646-16c-5-5-31-24-140-24 49 18 94 28 124 28 9 0 14 0 18-1 0-1-1-2-2-3z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-word {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM233 768v107h70l164 661h159l128-485c5-15 8-30 10-46 1-8 2-16 2-24h4l3 24c3 14 4 30 9 46l128 485h159l164-661h70V768h-300v107h90l-99 438c-4 16-6 33-7 46l-2 21h-4c0-6-2-14-3-21-3-13-5-30-9-46L825 768H711l-144 545c-4 16-5 33-8 46l-4 21h-4l-2-21c-1-13-3-30-7-46l-99-438h90V768H233z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-powerpoint {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-992-234v106h327v-106h-93v-167h137c43 0 82-2 118-15 90-31 146-124 146-233s-54-193-137-228c-38-15-84-19-130-19H416v107h92v555h-92zm353-280H650V882h120c35 0 62 6 83 18 36 21 56 62 56 115 0 56-20 99-62 120-21 10-47 15-78 15z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-excel {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-979-234v106h281v-106h-75l103-161c12-19 18-34 21-34h2c1 4 3 7 5 10 4 8 10 14 17 24l107 161h-76v106h291v-106h-68l-192-273 195-282h67V768H828v107h74l-103 159c-12 19-21 34-21 33h-2c-1-4-3-7-5-10-4-7-9-14-17-23L648 875h76V768H434v107h68l189 272-194 283h-68z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-audio {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM620 850c12 5 20 17 20 30v544c0 13-8 25-20 30-4 1-8 2-12 2-8 0-16-3-23-9l-166-167H288c-18 0-32-14-32-32v-192c0-18 14-32 32-32h131l166-167c10-9 23-12 35-7zm417 689c19 0 37-8 50-24 83-102 129-231 129-363s-46-261-129-363c-22-28-63-32-90-10-28 23-32 63-9 91 65 80 100 178 100 282s-35 202-100 282c-23 28-19 68 9 90 12 10 26 15 40 15zm-211-148c17 0 34-7 47-20 56-60 87-137 87-219s-31-159-87-219c-24-26-65-27-91-3-25 24-27 65-2 91 33 36 52 82 52 131s-19 95-52 131c-25 26-23 67 2 91 13 11 29 17 44 17z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-video {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM768 768c70 0 128 58 128 128v384c0 70-58 128-128 128H384c-70 0-128-58-128-128V896c0-70 58-128 128-128h384zm492 2c12 5 20 17 20 30v576c0 13-8 25-20 30-4 1-8 2-12 2-8 0-17-3-23-9l-265-266v-90l265-266c6-6 15-9 23-9 4 0 8 1 12 2z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-archive {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M640 384V256H512v128h128zm128 128V384H640v128h128zM640 640V512H512v128h128zm128 128V640H640v128h128zm700-388c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H768v128H640V128H128v1536h1280zM781 943c85 287 107 349 107 349 5 17 8 34 8 52 0 111-108 192-256 192s-256-81-256-192c0-18 3-35 8-52 0 0 21-62 120-396V768h128v128h79c29 0 54 19 62 47zm-141 465c71 0 128-29 128-64s-57-64-128-64-128 29-128 64 57 64 128 64z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-code {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM480 768c11-14 31-17 45-6l51 38c14 11 17 31 6 45l-182 243 182 243c11 14 8 34-6 45l-51 38c-14 11-34 8-45-6l-226-301c-8-11-8-27 0-38zm802 301c8 11 8 27 0 38l-226 301c-11 14-31 17-45 6l-51-38c-14-11-17-31-6-45l182-243-182-243c-11-14-8-34 6-45l51-38c14-11 34-8 45 6zm-620 461c-18-3-29-20-26-37l138-831c3-18 20-29 37-26l63 10c18 3 29 20 26 37l-138 831c-3 18-20 29-37 26z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-alt, .fa-file-csv {
+      /* fork-awesome doesn't have csv so we use the text icon */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM384 800c0-18 14-32 32-32h704c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64zm736 224c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704zm0 256c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		blockquote {
+			border-left: 4px solid rgb(220, 220, 220);
+			padding-left: 1.2em;
+			margin-left: 0;
+			opacity: 0.7;
+		}
+
+		.jop-tinymce table,
+		table {
+			text-align: left;
+			border-collapse: collapse;
+			border: 1px solid rgb(220, 220, 220);
+			background-color: #ffffff;
+		}
+
+		.jop-tinymce table td, .jop-tinymce table th,
+		table td, th {
+			text-align: left;
+			padding: .5em 1em .5em 1em;
+			font-size: 15;
+			color: #32373F;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+		}
+
+		.jop-tinymce table td,
+		table td {
+			border: 1px solid rgb(220, 220, 220);
+		}
+
+		.jop-tinymce table th,
+		table th {
+			border: 1px solid rgb(220, 220, 220);
+			border-bottom: 2px solid rgb(220, 220, 220);
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:nth-child(even),
+		table tr:nth-child(even) {
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:hover,
+		table tr:hover {
+			background-color: #e5e5e5;
+		}
+
+		hr {
+			border: none;
+			border-bottom: 2px solid #dddddd;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		.inline-code,
+		.mce-content-body code {
+			border: 1px solid rgb(220, 220, 220);
+			background-color: rgb(243, 243, 243);
+			padding-right: .2em;
+			padding-left: .2em;
+			border-radius: .25em;
+			color: rgb(0,0,0);
+			font-size: .9em;
+		}
+
+		.highlighted-keyword {
+			background-color: #F3B717;
+			color: black;
+		}
+
+		
+	.not-loaded-resource img {
+		width: 1.15em;
+		height: 1.15em;
+		background: white;
+		padding: 2px !important;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px #000000aa;
+	}
+
+	a.not-loaded-resource img {
+		margin-right: .2em;
+	}
+
+	a.not-loaded-resource {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+
+		.md-checkbox input[type=checkbox]:checked {
+			opacity: 0.7;
+		}
+
+		.jop-tinymce ul.joplin-checklist .checked,
+		.md-checkbox .checkbox-label-checked {
+			opacity: 0.5;
+		}
+
+		.exported-note {
+			padding: 1em;
+		}
+
+		.joplin-editable .joplin-source {
+			display: none;
+		}
+
+		mark {
+			background: #F7D26E;
+			color: black;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		.mce-content-body {
+			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
+			padding: 5px 10px 10em 0;
+		}
+
+		/*
+		.mce-content-body code {
+			background-color: transparent;
+		}
+		*/
+
+		.mce-content-body [data-mce-selected=inline-boundary] {
+			background-color: transparent;
+		}
+
+		.mce-content-body .joplin-editable {
+			cursor: pointer !important;
+		}
+
+		.mce-content-body.mce-content-readonly {
+			opacity: 0.5;
+		}
+
+		/* We need that to make sure click events have the A has a target */
+		.katex a span {
+			pointer-events: none;
+		}
+
+		.media-player {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.media-player.media-pdf {
+			min-height: 35rem;
+			width: 100%;
+			max-width: 1000px;
+			margin: 0;
+			border: 0;
+			display: block;
+		}
+
+		/* Clear the CODE style if the element is within a joplin-editable block */
+		.mce-content-body .joplin-editable code {
+			border: none;
+			background: none;
+			padding: 0;
+			color: inherit;
+			font-size: inherit;
+		}
+
+		/* To make code blocks horizontally scrollable */
+		/* https://github.com/laurent22/joplin/issues/5740 */
+		pre.hljs {
+			overflow-x: auto;
+		}
+
+		.joplin-table-wrapper{
+			overflow-x: auto;
+			overflow-y: hidden;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		@media print {
+			body {
+				height: auto !important;
+			}
+
+			pre {
+				white-space: pre-wrap;
+			}
+
+			.code, .inline-code {
+				border: 1px solid #CBCBCB;
+			}
+
+			#joplin-container-content {
+				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
+				   around various issues related to scrolling. However when printing we don't want this
+				   fixed size as that would crop the content. So we set it to auto here. "important" is
+				   needed to override the style set by JavaScript at the element-level. */
+				height: auto !important;
+			}
+		}
+	
+
+				/*
+					FOR THE MARKDOWN EDITOR
+				*/
+
+				/* Remove the indentation from the checkboxes at the root of the document
+				   (otherwise they are too far right), but keep it for their children to allow
+				   nested lists. Make sure this value matches the UL margin. */
+
+				li.md-checkbox {
+					list-style-type: none;
+				}
+
+				li.md-checkbox input[type=checkbox] {
+					margin-left: -1.71em;
+					margin-right: 0.7em;
+					position: relative;
+					top: 1px;
+				}
+				
+				ul.joplin-checklist {
+					list-style:none;
+				}
+
+				/*
+					FOR THE RICH TEXT EDITOR
+				*/
+
+				ul.joplin-checklist li::before {
+					content:"\f14a";
+					font-family:"Font Awesome 5 Free";
+					background-size: 16px 16px;
+					pointer-events: all;
+					cursor: pointer;
+					width: 1em;
+					height: 1em;
+					margin-left: -1.3em;
+					position: absolute;
+					color: #32373F;
+				}
+
+				.joplin-checklist li:not(.checked)::before {
+					content:"\f0c8";
+				}
+.mermaid { width: 640px; }
+pre.mermaid[data-processed=true] { white-space: unset; }
+.mermaid-export-graph {
+					opacity: 0;
+					height: 0;
+					z-index: 1;
+					position: relative;
+				} 
+				.joplin-editable:hover .mermaid-export-graph,
+				.joplin-editable .mermaid-export-graph:has(:focus-visible) {
+					opacity: 1;
+				}
+				.mermaid-export-graph > button:hover {
+					background-color: #CBDAF1 !important;
+				}</style><div id="rendered-md"><p>Paper II: General Studies - II - 200M - 3H</p>
+<h1 id="syllabus">Syllabus</h1>
+<h2 id="unit-i-administrative-ethics"><span style="color: rgb(185, 106, 217);" class="jop-noMdConv"><strong>Unit I - Administrative Ethics</strong></span></h2>
+<h3 id="ethics-and-human-values"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Ethics and Human Values</strong></span></h3>
+<ul>
+<li>Lessons from lives and teachings of great leaders, reformers, and administrators.</li>
+<li>Role of family, society, and educational institutions in inculcating values.</li>
+</ul>
+<h3 id="ethical-concepts"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong>Ethical Concepts</strong></strong></span></h3>
+<ul>
+<li>Rit and Rin.</li>
+<li>Concept of Duty, Good, and Virtue.</li>
+</ul>
+<h3 id="ethics-in-relationships"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong>Ethics in Relationships</strong></strong></span></h3>
+<ul>
+<li>Ethics in private and public relationships.</li>
+<li>Behaviour, moral and political attitudes of administrators.</li>
+<li>Philosophical basis of Integrity.</li>
+</ul>
+<h3 id="specific-ethical-teachings"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Specific Ethical Teachings</strong></span></h3>
+<ul>
+<li>Ethics of Bhagavad Geeta in administration.</li>
+<li>Gandhian Ethics.</li>
+</ul>
+<h3 id="moral-thinkers-and-philosophers"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Moral Thinkers and Philosophers</strong></span></h3>
+<ul>
+<li>Contributions from Indian and global moral thinkers.</li>
+</ul>
+<h3 id="administrative-challenges"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Administrative Challenges</strong></span></h3>
+<ul>
+<li>Ethical concerns, dilemmas, and challenges in administration.</li>
+<li>Ethical decision-making and contributing factors.</li>
+<li>Social justice, humanitarian concerns, accountability, and code of ethics.</li>
+</ul>
+<h3 id="practical-applications"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Practical Applications</strong></span></h3>
+<ul>
+<li>Case studies on the above topics.</li>
+</ul>
+<h2 id="unit-ii-general-science-technology"><span style="color: rgb(185, 106, 217);" class="jop-noMdConv"><strong>Unit II - General Science &amp; Technology</strong></span></h2>
+<h3 id="chemistry-in-everyday-life"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong><strong>Chemistry in Everyday Life</strong></strong></strong></span></h3>
+<ul>
+<li>States of Matter, Atomic Structure, and Metallurgical Principles.</li>
+<li>Acid, Base, and Salts; pH and Buffers.</li>
+<li>Important Drugs, Antioxidants, Preservatives, Insecticides, Pesticides, Herbicides, Fertilizers, and Sweeteners.</li>
+<li>Carbon compounds and their applications.</li>
+<li>Radioactivity concepts and applications.</li>
+</ul>
+<h3 id="physics-in-everyday-life"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong>Physics in Everyday Life</strong></strong></span></h3>
+<ul>
+<li>Gravitation, Human Eye, Heat, Electricity, Magnetism, Sound, and Electromagnetic Waves.</li>
+<li>Magnetic resonance imaging, Nuclear Magnetic Resonance, Fission, and Fusion.</li>
+</ul>
+<h3 id="biology-in-everyday-life"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong>Biology in Everyday Life</strong></strong></span></h3>
+<ul>
+<li>Human systems: Reproductive, Excretory, Respiratory, Circulatory, and Digestive.</li>
+<li>Blood groups, Hormones, Genetics, Lifestyle Diseases, Communicable and Non-communicable Diseases.</li>
+<li>Plant parts, Plant growth regulators, Medicinal Plants (Rajasthan), Organic Farming, and Biotechnology.</li>
+</ul>
+<h3 id="computer-science-it"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong><strong>Computer Science &amp; IT</strong></strong></strong></span></h3>
+<ul>
+<li>Human systems: Reproductive, Excretory, Respiratory, Circulatory, and Digestive.</li>
+<li>Blood groups, Hormones, Genetics, Lifestyle Diseases, Communicable and Non-communicable Diseases.</li>
+<li>Plant parts, Plant growth regulators, Medicinal Plants (Rajasthan), Organic Farming, and Biotechnology.</li>
+</ul>
+<h3 id="scientific-developments"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong>Scientific Developments</strong></strong></span></h3>
+<ul>
+<li>Robotics, Machine Learning, Augmented Reality, Nanotechnology, RFID, Quantum Computing.</li>
+<li>Contributions of Indian scientists and Rajasthan’s development in Science and Technology.</li>
+</ul>
+<h3 id="space-defence-technology"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong>Space &amp; Defence Technology</strong></strong></span></h3>
+<ul>
+<li>Indian space program, Satellites, Remote sensing, and Launch vehicles.</li>
+<li>Defence technology: Missiles, Indian missile program, Chemical and Biological weapons.</li>
+</ul>
+<h2 id="unit-iii-earth-science-geography-geology"><span style="color: rgb(185, 106, 217);" class="jop-noMdConv"><strong>Unit III - Earth Science (Geography &amp; Geology)</strong></span></h2>
+<h3 id="part-a-world"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><strong><strong>Part A - World</strong></strong></strong></span></h3>
+<ul>
+<li>Structure of the Earth and Geological Time Scale.</li>
+<li>Broad physical features: Mountains, Plateaus, Plains, Deserts.</li>
+<li>Earthquakes and Volcanoes: Types, distribution, and impact.</li>
+<li>Major geopolitical and environmental issues.</li>
+</ul>
+<h3 id="part-b-india"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Part B - <strong>India</strong></strong></span></h3>
+<ul>
+<li>Physical features: Mountains, Plateaus, Plains, Deserts.</li>
+<li>Major rivers and physiographic divisions.</li>
+<li>Climate: Monsoon, Rainfall distribution, Climatic regions.</li>
+<li>Natural resources: Water, Forest, Soil, Rocks, and Minerals.</li>
+<li>Population: Growth, distribution, density, sex ratio, literacy, urban and rural population.</li>
+</ul>
+<h3 id="part-c-rajasthan"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Part C - <strong>Rajasthan</strong></strong></span></h3>
+<ul>
+<li>Physical features: Mountains, Plateaus, Plains, Deserts.</li>
+<li>Major rivers, lakes, and climatic classifications.</li>
+<li>Major crops and their distribution.</li>
+<li>Minerals: Metallic, Non-metallic, and their industrial uses.</li>
+<li>Energy resources: Conventional and Non-conventional.</li>
+<li>Demographic characteristics, major tribes, wildlife, and biodiversity.</li>
+<li>Concept of UNESCO Geo-parks and Geo-heritage sites.</li>
+<li>Environmental issues and conservation efforts.</li>
+</ul>
+<p> </p>
+<h1 id="2013-11-april-2016">2013 - 11 April 2016</h1>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2013_PREVIOUS_YEARS_QUESTION_(PAPER-2).pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2013_PREVIOUS_YEARS_QUESTION_%28PAPER-2%29.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2013_PREVIOUS_YEARS_QUESTION_(PAPER-2).pdf</a></p>
+<p> </p>
+<h2 id="unit-i-100-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 100 M</strong></span></h2>
+<h3 id="part-a-20-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 20 M</strong></span></h3>
+<h3 id="2m-15w">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Statements:</strong></span></strong></strong> <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>I. Some pencils are erasers. <br>
+<strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>II.</strong></span></strong></strong> All pencils are sharpeners.<br>
+<strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>III.</strong></span></strong></strong> All erasers are not sharpeners.<br>
+Conclusions :<br>
+I. All erasers can be pencils.<br>
+II. Some sharpeners are erasers.<br>
+Which conclusion is correct?  (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong>  In the following sequence, there is a discrepancy in one of the numbers. Find that  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">number.<br>
+1, 2, 4, 7, 28, 93, 198, 205</span></strong></strong></span></strong></strong> <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Find the total number of squares in the following figure:<br>
+<strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>For Diagram : Refer to Paper's PDF</strong></span></strong></span></strong></strong><br>
+ (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Find the odd one among the following: 17, 27, 37, 43, 67  (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Two trains running in opposite directions at 36 km/hr and 45 km/hr cross each other in 20 seconds. If one is 200 metres long, then find the length of the other train.  (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6. The ratio of two numbers is 3: 4. If their greatest common factor is 4, then find out their least common factor. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7</strong>  Two dice are rolled simultaneously  Find the probability that the sum of the numbers  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">on them is</span></strong></strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">not</span></strong></strong> 8. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> Define sampling frame. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.  In the following figure, O is centre of circle and ∠AOC = 100°. Find the ratio ∠ADC to ∠ABC.<br>
+****</strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>For Diagram : Refer to Paper's PDF</strong></span>**</span></strong></strong><br>
+<strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2M15W)</span></strong></strong>**<br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> For a moderately symmetric distribution, the difference between mode and median is 28.<br>
+Find the difference between median and the mean of the distribution. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2M15W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-40-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 40 M</strong></span></h3>
+<h3 id="5m-50w">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11.</strong>  &quot;If you want to get the best treatment for heart diseases, you must approach hospital Z&quot;- P tells Q. Assumptions:<br>
+I. Q may be heart patient.<br>
+II. Q generally listens to P.<br>
+III. P may have enough information about the hospital facilities.<br>
+Which assumptions are implicit?<br>
+(5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12. What do you mean by correlation coefficient?  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13.</strong> Find the value of the following: (1 - 1/4) * (1 - 1/9) * (1 - 1/16) * (1 - 1/25) * ........ * (1 - 1/900)<br>
+(5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14. If a ↑ b is coded as the remainder (r) when a is divided by b, then find the value of following:<br>
+[1001 ↑ 25 + 1002 ↑ 25 + ...... + (1025 ↑ 25)] ↑ 25<br>
+ (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15. In the given right angle triangle PRQ, RS is perpendicular to PQ. Find RS when QR = 5 units and RP = 12 units.<br>
+****</strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>For Diagram : Refer to Paper's PDF</strong></span>**</span></strong></strong><br>
+ (5M50W)******<br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. On which compound interest rate, 25,600 will become 62,500 in four years?    (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17. The following table gives the details of the sports liked by students of all the classes of a school:  <br>
+For table : Refer to Paper's PDF<br>
+In how many of the given classes can more than 90 students like all the four games ?<br>
+(5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18.  Find the value of vacant cell in the following: <br>
+<span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>For Diagram : Refer to Paper's PDF</strong></span><br>
+(5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-c-40-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 40 M</strong></span></h3>
+<h3 id="20m-200w">20M 200W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19. All the six members of a family A, B, C, D, E and F are travelling together. B is the son of C but C is not mother of B. A and C are a married couple. E is the brother of C. D is the daughter of A. F is the brother of B.<br>
+Answer the following questions:  <br>
+(20M200W)</strong></span></strong></strong><br>
+<strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. How many male members are there in the family?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. Who is the mother of B?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. How many children does A have?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. How many brothers does D have?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5. Identify the names of Females in the family.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20.</strong> Six lectures A, B, C, D, E and F are to be organised in a span of seven days-from Sunday to Saturday. Only one lecture on each day in accordance with the following :  (20M200W)<br>
+</span></strong></strong></p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>i. A should not be organised on Thursday.</strong></span></strong></strong></p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>ii. C should be organised immediately after F.</strong></span></strong></strong></p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>iii. There should be a gap of two days between E and D.</strong></span></strong></strong></p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>iv. One day there will be no lecture (Friday is not that day), just before that day D will be organised.</strong></span></strong></strong></p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>v. B should be organised on Tuesday and should not be followed by D.<br>
+<br class="jop-noMdConv"/></strong></span>********<span style="color: rgb(241, 196, 15);" class="jop-noMdConv">Answer the following questions:</span></strong></strong></p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Which lectures are to be organised between C and D?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. Which lecture is to be organised on Saturday?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. On which day lecture C will be organised?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. On which day there will be no lecture ?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5. Is the information complete to decide the days for various lectures?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21. The details of expenditure of monthly income of a family is given in pie-chart. Answer the following questions:<br>
+****</strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>For Diagram : Refer to Paper's PDF</strong></span>**</span></strong></strong><br>
+ (20M200W)<br>
+**</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. If expenditure on cloth is 2,000, then find the expenditure on other items'.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. What is the percentage of savings of total budget?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. What is the total savings in a year?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. How much percentage is more on expenditure of item education from rent?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5. What is the amount of expenditure on each item?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.</strong>  Solve the following:  (20M200W)</span></strong></strong></p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Find the perimeter of a right angle isosceles triangle with unit area.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. A Box contains five rupee coins, fifty paise coins and twenty five paise coins in the proportion 5: 6: 8.<br>
+If the value of total coins is 210, then find the number of coins of each kind.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. An Army General wants to make a solid square by his 36,562 soldiers.<br>
+After arranging, he found that some soldiers are left. Find the number of soldiers who are left.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. To complete a work, A takes 50% more time than B.<br>
+If together they take 18 days to complete the work, then how much time shall B take to do it independently?</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-ii-100-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 100 M</strong></span></h2>
+<h3 id="part-a-20-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 20 M</strong></span></h3>
+<h3 id="2m-15w-2">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What is Cyber Warfare? How is this technique used in war?   (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. What are Quantum dots? Write about their applications.</strong>   (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> What is Spring/Vernal Equinox? How does it happen?  (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> What is cloning? Write about its applications.  (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong>  Why convex mirrors are used as rear view mirrors in vehicles ? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6. Define isotopes. Give two examples. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong> In which field Nobel prize was awarded to C.V. Raman and Hargovind Khurana? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8. What is acid rain? Write the cause for its formation.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. Write names of any two green house gases.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2M15W)</span></strong></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> What is the size of nanoparticles? List any two uses of these. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(2M15W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-b-40-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 40 M</strong></span></h3>
+<h3 id="5m-50w-2">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11.</strong> What are sources of Vitamin A? List the diseases caused due to deficiency of Vitamin А. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12. What is Vulcanization of Rubber?  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13.</strong> What is aquaregia? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.  What <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>is</strong></span></strong></strong> Blood  Pressure? What is the normal range of blood pressure and which <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>instrument is</strong></span></strong></strong> (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15. What is Biodiversity? Name the technologies that can be used for propagation and genome conservation in a given ecosystem using suitable examples.  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. Describe the use of biosensors and biochips in information storage, medicine and surgery.    (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17. What are genetically modified crops ? Give suitable examples related to Indian Agriculture and Horticulture.   (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18. Name the properties and uses of Perfluorocarbons (PFC).  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-c-40-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 40 M</strong></span></h3>
+<h3 id="20m-200w-2">20M 200W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19. Write an essay on the importance of narco-analysis, brain mapping and DNA barcoding in Forensic Science. Mention their limitations.  (20M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20.</strong>  What are non-conventional sources of energy? Describe any two non-conventional energy sources with special reference to Rajasthan. (20M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21. Give an account of the use of information technology in e-governance; e-commerce and international diplomacy.  (20M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.</strong>  Use your creativity  to develop a &quot;vision document&quot; for improving forestry, animal husbandry and information technology for Rajasthan. (20M200W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2016-2728-march-2017">2016 - 27/28 March 2017</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202016%20Paper-2.pdf' href='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202016%20Paper-2.pdf'>https://www.drishtiias.com/images/pdf/Mains Rajasthan 2016 Paper-2.pdf</a></p>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2016_PREVIOUS_YEARS_QUESTION_(PAPER-2).pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2016_PREVIOUS_YEARS_QUESTION_%28PAPER-2%29.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2016_PREVIOUS_YEARS_QUESTION_(PAPER-2).pdf</a></p>
+<p> </p>
+<h2 id="unit-i-65-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 65 M</strong></span></h2>
+<h3 id="part-a-20-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 20 M</strong></span></h3>
+<h3 id="2m-15w-3">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Find the number of 5's in the following number chain such that sum of two digits before it is not greater than the sum of two digits that follows it. 24593587652150503503 (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> A particle can complete a circular round in one minute, but it moves half round clockwise and one-third round anticlockwise successively. Find the time in which the particle will complete one round. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Find the smallest integer greater than I which is simultaneously a square and a cube of certain integers. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> In a right angle triangle ABC, right angled at B, prove that (AB)<sup class="jop-noMdConv">3</sup> + (BC)<sup class="jop-noMdConv">3</sup> &lt; (AC)<sup class="jop-noMdConv">3</sup> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> What is the variance of first n natural numbers? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6. If A, B And C are three sets such that none is a subset of other. Use the Venn Diagram to find (A – C) ∩ (C – B) (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong> If &quot;SHANTI&quot;¸ is coded as A981A4B09, &quot;FORUM&quot;¸ is coded as 6A5A8B1A3 in a certain code language, then how will &quot;BUILD&quot; be coded in the same language? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> Find the area of the shaded portion in the following figure. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.</strong> In An examination it is required to get 36% of maximum marks to pass. A student got 94 marks and was declared fail by 14 marks. Calculate the maximum marks. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10. An electronic device makes a beep after every 60 seconds. Another device makes a beep after every 62 seconds. They beep together at 10 a.m. for the first time, then find the time when they beep together at the earliest.</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-3">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11.</strong>  J, K, L, M, N and O are the members of a family. Professions of all members are different. If<br>
+(i) Family has two married couples.<br>
+(ii) 'M' is a doctor and his wife is an engineer<br>
+(iii) 'J' is grand daughter of 'O' and sister of 'L'.<br>
+(iv) 'K' is grand father of L' and is married to a teacher.<br>
+(v) 'L' is a clerk and his mother is 'N'.<br>
+Then, who is the wife of 'M'?<br>
+(5M50W)</span></strong></strong><br>
+Ans</p>
+<p>****<span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12. If tanθ · (x sinθ)/(1 − x cosϕ) = tanϕ · (y sinθ)/(1 − y cosθ),<br>
+then prove sinθ/sinϕ = x/y <br>
+<strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(5M50W)<br>
+</span></strong></strong></strong></span>****Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. N is a three digit number that is a multiple of 7, what is the probability that it will be a multiple of 5 also? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14. What is the largest integer not exceeding 1000 which leave remainder 3 when divided by 5, remainder 5 when divided by 7, and remainder 7 when divided by 9? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15. Mr. X invested money in two schemes A and B offering compound interest 5% and 10% per annum respectively. If the total amount of interest accrued through both schemes together in two years was ₹ 2075 and the total amount invested was ₹ 15,000. Find the amount invested in scheme A. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-20-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 20 M</strong></span></h3>
+<h3 id="10m-100w">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. Two tapes A and B can fill A tank in 5 hrs and 20 hrs respectively alone. If both taps are opened then it takes 30 minutes more to fill the tank completely due to a hole in the tank. If tank is completely filled then how much time (in hrs) will it take to get tank empty due to drain water from hole? (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17.</strong> In an election 10% of the voters on the voter's list did not cast their votes and 60 voters cast their ballot papers blank. There were only two candidates. The winner was supported by 47% of all voters in the listAnd got 308 votes more than his riva voters on the voter list. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-ii-70-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 70 M</strong></span></h2>
+<h3 id="part-a-10-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-4">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.</strong> A light and a heavy body have same momentum. Which one will have greater kinetic energy? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. How does the density of nuclear matter depends on size of nucleus? Does the density of atom also follows the same rule? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. What do you understand by &quot;Joule-Thomson effect&quot;? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. Write the name of causal organism and vector of 'Dengue fever'. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5. What are umbrella species? Give an example of umbrella species. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-20-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 20 M</strong></span></h3>
+<h3 id="5m-50w-4">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6. Write Kepler's law of planetary motion. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong> The concentration of Hydrogen ion in a sample of soft drink is 4-0 × 10-3 M. What is its pH? (log102 = 0.301) (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> Write a note on genetically engineered insulin. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.</strong> Enlist various trophic levels in an ecosystem and give suitable example of each trophic level. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-c-40-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 40 M</strong></span></h3>
+<h3 id="10m-100w-2">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> What do you understand with communication system? Give block diagram of communication system and explain its elements. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Distinguish between conductor, semi-conductor and insulator on the basis of band theory of solid. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12. What are chromosomal disorders in human beings? Write causes and symptoms of any two such disorders. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. Discuss the Breed Improvement Programme undertaken by the Department of animal Husbandry, Government of Rajasthan. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="unit-iii-65-m"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - III : 65 M</strong></span></h2>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-5">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. What are the meteoric lakes? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> What is Epicentre? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Which are the areas of India, receive winter rain? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Write the names of major non-metallic minerals of Rajasthan. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> What are the male and female literacy rates in Rajasthan as per Census-2011? (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-5">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Explain in brief the location, names and importance of the great lakes of North America. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong> Describe the 'Bshw' type of climate of India. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> Discuss the impact of La-Nina on Indian Monsoon. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.</strong> Discuss in brief the types and distribution of building stones in Rajasthan. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> Write about the distribution and industrial uses of lignite coal in Rajasthan. (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-30-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-3">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11.</strong> Explain the divisions of Geological Time Scale. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> Divide coastal plains of India into sub-divisions and explain their characteristics. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(10M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13.</strong> Describe the habitat, economy and society of Bhil tribe in Rajasthan. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(10M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2018-25-26-june-2019">2018 - 25 / 26 June 2019</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202018%20Paper-2.pdf' href='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202018%20Paper-2.pdf'>https://www.drishtiias.com/images/pdf/Mains Rajasthan 2018 Paper-2.pdf</a></p>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2018_PREVIOUS_YEARS_QUESTION_(PAPER-2).pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2018_PREVIOUS_YEARS_QUESTION_%28PAPER-2%29.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2018_PREVIOUS_YEARS_QUESTION_(PAPER-2).pdf</a></p>
+<h2 id="unit-i-65-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 65 M</strong></span></h2>
+<h3 id="part-a-10-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-6">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. How does the concept of ‘ Rta ’ / ‘ ऋत ' enhance administrative excellence? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> The aim of administration is public welfare. Which principle of Geeta upholds this intention? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Why is ‘non-violence’ or ‘ahimsa’ core value of Gandhian Ethics? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Define justice according to Plato. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> What do you understand by emotional intelligence? (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-6">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Extremism is dangerous. How can we avoid it? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. Explain the role of society in inculcating human values. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8. What are the main causes of mental stress in an administrator according to you? Explain. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. ‘Labour is capital and the living capital is inexhaustible. I want to establish equitable relationship between capital and labour. I do not wish for the supremacy of the one over the other.’ Discuss in the context of Mahatma Gandhi. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10. Political neutrality brings better administration. Discuss. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-30-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-4">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. How does Bhagwad Gita resolve dilemma of Arjun in the face of crisis? As an administrator how will you apply the tenets of Geeta when confronted with administrative dilemma? (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> Teachings of leaders and reformers never grow old. Bring out their significance in modern context.         (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. Plato’s theory of justice includes courage and temperance. Are they still needed in modern society and administration?</strong> (10M100W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-ii-70-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 70 M</strong></span></h2>
+<h3 id="part-a-10-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-7">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">Write the basic nuclear processes underlying b+ and b– decay</span></strong></strong></strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. Distinguish between analog and digital signals. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. Give two differences between soap and detergents. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4. What is the role of Haemoglobin in Human blood? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5. Define polymers. Give two examples of bio-polymers. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-20-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 20 M</strong></span></h3>
+<h3 id="5m-50w-7">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6. (a) What is the approximate wavelength range of microwave?<br>
+(b) Explain the principle of a microwave oven. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong> (a) What are the causes of communicable diseases?<br>
+(b) Classify following diseases as communicable and non-communicable diseases.<br>
+(i) Alzheimers<br>
+(ii) Trachoma<br>
+(iii) Cholera<br>
+(iv) Asthma<br>
+(v) Rabbies<br>
+(5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> Give a brief account of Acquired Immunity and its types. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.</strong> What is “nano-mission” of India and its objectives? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-c-40-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 40 M</strong></span></h3>
+<h3 id="10m-100w-5">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> (a) What is pH scale? Name the scientist who developed pH scale.<br>
+(b) Explain the pH change as the cause of tooth decay. How can tooth decay caused by pH change be prevented?<br>
+(c) A milkman adds a very small amount of baking soda to fresh milk, what will be its effect on the time taken by the milk to set as curd? Explain. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. (a) Distinguish between “Sky wave” and “Space wave” propagation in communication system.<br>
+(b) Draw a schematic diagram showing the<br>
+(i) Ground wave, (ii) Sky wave, (iii) Space Wave propagation of electromagnetic Waves.<br>
+(c) Write the frequency range for each of the following:<br>
+(i) Standard Amplitude Modulated (AM) Broadcast<br>
+(ii) Television<br>
+(iii) Satellite <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Communication</strong></span></strong></strong> (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12. What are the principles of food preservation? Explain the various methods used for food preservation. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13. Enumerate and comment upon the schemes and works considered under Public Health initiative in Rajasthan. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-iii-65-m-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - III : 65 M</strong></span></h2>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-8">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Name four orogenies (mountain-building events) and its main mountains in the world. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. What is the importance of Chota Nagpur plateau?</strong> (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> What are the suitable conditions prevailing in Rajasthan for solar energy? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong> Sonari and Malvi breeds of livestock are found in which districts of Rajasthan? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Name any eight conservation reserves of Rajasthan. (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-8">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> What is fissure volcanic eruption? Give regions of its occurrence in the world. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong> Describe the distinct phases of population growth in India from 1901 to 2011. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> Explain suitable production conditions of Maize and its main production areas in Rajasthan. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.</strong> Elucidate location factors and growth of cement industry in Rajasthan. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> Describe the main physical characteristics of Shekhawati region. (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-30-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-6">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.</strong> Elucidate the landmark developments during Palaeozoic era on the earth’s surface. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(10M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. Discuss orographic impact on rainfall distribution in India. <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(10M100W)</span></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Describe river systems of Rajasthan. <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(10M100W)</span></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2021-20-21-march-2022">2021 - 20 / 21 March 2022</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202021%20Paper-2.pdf' href='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202021%20Paper-2.pdf'>https://www.drishtiias.com/images/pdf/Mains Rajasthan 2021 Paper-2.pdf</a></p>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2021_PREVIOUS_YEARS_QUESTION_(PAPER-2).pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2021_PREVIOUS_YEARS_QUESTION_%28PAPER-2%29.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2021_PREVIOUS_YEARS_QUESTION_(PAPER-2).pdf</a></p>
+<h2 id="unit-i-65-m-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 65 M</strong></span></h2>
+<h3 id="part-a-10-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-9">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Explain the role of the concept of 'sthit pragya' in the discharge of administrative responsibility.  (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong>  What teachings of Buddha are most relevant today and why? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> What do you understand by ethical dilemma? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong>  Explain the relevance of ethical idea of 'Rina' ( <strong>ऋण / debt )</strong>  in the administrative life. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong>  What way 'detachment theory' of Bhagvad Geeta is significant in the life of an administrator? (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-5"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-9">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> 'Men's Moral Advancement depends upon complete advancement of society.' Discuss.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. &quot;Family is the most important institution for the moral. development of man&quot;. Evaluate this statement.  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8. Explain the Kant's ultimate good on the basis of relative and categorical imperative. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.  What are generally considered to be the minimum basic needs of an individual to lead a healthy and productive life? What is the administrators responsibility in ensuring these minimums? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10. What are the core ethical values required for excellence in civil service?  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-30-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-7">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11.  &quot;Necessarily related, means cannot be separated from ends. Therefore, both must be auspicious for real and lasting success.&quot; Explain the above comment in the context of Gandhian ethics. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong>  Explain the factors essential in &quot;Ethical decision&quot; making. In case of ethical decision being against to administrative decision, how will you harmonise them? Explain with examples. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13.</strong> &quot;Each other's success teaches a lesson for better governance.&quot; Analyze this statement with examples.  (10M100W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-ii-70-m-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 70 M</strong></span></h2>
+<h3 id="part-a-10-m-5"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-10">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.</strong>  Differentiate between nuclear fission and fusion.  (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.  Explain the role of calcium carbide in the artificial ripening of fruits. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3. What is an OTT platform? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.  What is the basic concept of operation of RFID? Give two application of this technology. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5. What is the difference between Polar Satellite launch vehicle and Geosynchronous Satellite launch vehicle?  (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-20-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 20 M</strong></span></h3>
+<h3 id="5m-50w-10">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.  Write any five benefits of the medicinal plant - Guduchi/Giloy. (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong>  What is Cryptocurrency? What are its advantages and disadvantages?<br>
+(5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong> What are the differences between the previous generations of mobile networks and 5G Network? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.</strong> Write the objective of Missiles and Strategic System (MSS). Name the laboratories which comprises MSS clustre  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-c-40-m-5"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 40 M</strong></span></h3>
+<h3 id="10m-100w-8">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> (a) Which property of carbon is responsible for formation of large number of compounds?<br>
+(b) Write domestic and industrial applications of carbon compounds.<br>
+(c) Give an example of each<br>
+(i) Artificial sweeteners<br>
+(ii) Food preservatives<br>
+(iii) Ores of zinc  (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Describe the functioning of the human eye and explain any one of the refractive defects of vision and its corrective measure.  (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12. Explain the concept of real time-PCR. What is 'Ct value' in RT-PCR Test for Covid-19?  (10M100W)</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13.  Mention the contribution of the following Indian Scientists -<br>
+(i) Homi Jehangir Bhabha<br>
+(ii) Sir Mokshagundam Visvesvaraya<br>
+(iii) Satyendra Nath Bose<br>
+(iv) Meghnad Saha<br>
+(v) Har Gobind Khorana (10M100W)</strong></span></strong></strong> <br>
+Ans</p>
+<p> </p>
+<h2 id="unit-iii-65-m-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - III : 65 M</strong></span></h2>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-11">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Write about time range of Mesozoic era.  (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong> Write about the structure of Sial.  (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong>  How Shivalik Himalayas was formed? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong>  Write the names of Mountain Ranges/Hills of Western Ghats. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong>  Write the zinc producing areas of Rajasthan. (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-6"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-11">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Describe the Circum - Pacific belt of Volcanoes.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.</strong>  Discuss in brief the geographical features of Rocky Mountain range (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8.</strong>  Discuss the geographical characteristics of Tropical evergreen forest of India. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.</strong>  Discuss the physical features of Hadoti plateau of Rajasthan. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10.</strong> Discuss the distribution of major metallic minerals of Rajasthan in brief.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-30-m-5"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-9">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.</strong>  Describe the problems of Geopolitics in context of South East Asian countries. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(10M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2. Describe the development of non-conventional energy in Rajasthan. <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(10M100W)</span></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> Explain the concept of Geo-heritage and highlight its potentialities in Rajasthan. <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(10M100W)</span></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2023-20-21-july-2024">2023 - 20 / 21 July 2024</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202018%20Paper-2.pdf' href='https://www.drishtiias.com/images/pdf/Mains%20Rajasthan%202018%20Paper-2.pdf'>https://www.drishtiias.com/images/pdf/Mains Rajasthan 2018 Paper-2.pdf</a></p>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2018_PREVIOUS_YEARS_QUESTION_(PAPER-2).pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2018_PREVIOUS_YEARS_QUESTION_%28PAPER-2%29.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_MAINS_2018_PREVIOUS_YEARS_QUESTION_(PAPER-2).pdf</a></p>
+<h2 id="unit-i-65-m-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 65 M</strong></span></h2>
+<h3 id="part-a-10-m-6"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-12">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1.   What are cardinal virtues according to Plato? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong>  What is Goodwill according to Kant? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong>  State the meaning of the term 'Purushartha'. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong>   What is meant by 'Ahimsa Parmo Dharma'? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong>  What is meant by 'Upaya Kaushalya' in Buddhism? (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-7"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-12">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong>  State the distinctive features of Human Values.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7. How can contemporary society benefit from the Vedic idea of 'Rna' (ऋण) ?  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8. What does Aurobindo mean by 'Life Divine' ? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9.  What according to Gandhi is the ideal of 'Swaraj'? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10. What is 'Surplus in man', according to Tagore?  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-30-m-6"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-10">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. Discuss the role of administration in bringing about 'social reform'.  (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> State the features of Deontology and Consequentialism. Which one of the two approaches is more suitable for an administrator? Why? (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13.</strong> What do you mean by moral dilemma? Should personal ethics take precedence over professional ethics in a situation of moral conflict?  (10M100W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-ii-70-m-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 70 M</strong></span></h2>
+<h3 id="part-a-10-m-7"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-13">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong>  (a) Why is solid carbon dioxide known as &quot;dry ice&quot;?<br>
+(b) Why Bee-sting causes pain and irritation? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15. Write Kepler's second law of planetary motion. On which conservation principle it is based?   (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. What is a &quot;DNA Vaccine&quot; ? Name the world's first Covid-19 &quot;DNA Vaccine&quot;.  (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17.  Write any two differences between IP Address and MAC address. (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18. Write any two differences between Classical Computing and Quantum Computing.  (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-20-m-4"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 20 M</strong></span></h3>
+<h3 id="5m-50w-13">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19. (a) Name the scientist known as &quot;Birdman of India&quot; and briefly mention his contributions.<br>
+(b) Who is called the &quot;Milkman of India&quot;? Briefly mention his contributions.   (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20.</strong>  What is National Super Computing Mission (NSM) ? Write any three salient achievements of this mission.<br>
+(5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21.</strong> Write brief note on &quot;ADITYA-L1&quot; mission. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.</strong> Write the salient features of the following missiles : (a) ORSAM (b) ASTRA  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h3 id="part-c-40-m-6"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 40 M</strong></span></h3>
+<h3 id="10m-100w-11">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>23.</strong> What are Nanomaterials? Give a brief account of any two carbon allotropes that are being used as Nanomaterial.  (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>24.  Discuss in brief the principle and working of MRI. Why it is considered safer than x-ray tomography? (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>25.  (a) What is &quot;Shree anna&quot;? Why are they considered to be the nutri-cereals?<br>
+(b) Describe the digestive-glands and their secretions which are associated with alimentary-canal in Human-beings. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>26. a) What is the full form of AIRAWAT ? Write its any four infrastructure requirements. <br>
+ (b) Describe in brief about ChatGPT. <br>
+(c) What is neural network in context of Artificial Intelligence ?  (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-iii-65-m-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - III : 65 M</strong></span></h2>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-14">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>27.  Write names of any 6 deserts found in Australia.  (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>28.</strong>  Name any eight tributaries of river Krishna. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>29.</strong>  Mark the following places in the given outline map of India :<br>
+(a) Thal Ghat (<br>
+b) Pal Ghat<br>
+(c) Nathu La<br>
+(d) Shipki La<br>
+For Map Figure - Refer to Paper PDF link shared above<br>
+(2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>30.</strong> Sabarmati river flows in which districts of Rajasthan? Name its tributaries.  (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Name the major rock phosphate producing areas of Rajasthan and mention its use.  (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-8"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-14">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>32.</strong> Describe the time and duration of carboniferous period and its chief characteristics.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>33. Which are the important Bauxite mining areas of Odisha, Gujarat and Jharkhand in India?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>34. Discuss the period of high growth of population with declining trend (1981-2011) in India.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>35.</strong>  Give a brief account of Biomass projects of Rajasthan. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>36.</strong> Name the major endangered species of wild life found in Southern Aravalli region of Rajasthan. What are the major reasons for wild life loss in the state?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-30-m-7"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-12">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>37.</strong> Discuss the causes and effects of Ozone layer depletion in the world.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(10M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>38. Write short notes on any two of the following:<br>
+(a) El-Nino effect on Indian monsoon<br>
+(b) Indian monsoon and Tibet plateau<br>
+(c) Western Disturbances in India <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(10M100W)</span></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>39.</strong>  Discuss the impact of physiography and climate on population distribution of Rajasthan. <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(10M100W)</span></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h1 id="2024-17-18-june-2025">2024 - 17 / 18 June 2025</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/RAS%20Mains%202024%20Paper%202.pdf' href='https://www.drishtiias.com/images/pdf/RAS%20Mains%202024%20Paper%202.pdf'>https://www.drishtiias.com/images/pdf/RAS Mains 2024 Paper 2.pdf</a></p>
+<p><a data-from-md title='https://www.sanskritiias.com/uploaded_files/pdf/RAS_Mains_2024_Paper_2.pdf' href='https://www.sanskritiias.com/uploaded_files/pdf/RAS_Mains_2024_Paper_2.pdf'>https://www.sanskritiias.com/uploaded_files/pdf/RAS_Mains_2024_Paper_2.pdf</a></p>
+<h2 id="unit-i-65-m-5"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - I : 65 M</strong></span></h2>
+<h3 id="part-a-10-m-8"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-15">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. Explain 'Samyak Charitra'.  (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>2.</strong>  Explain 'My station and its duties'. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>3.</strong> What is 'Dukh-Nirodh-Marga'? (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>4.</strong>  Explain Virtue as a mean. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>5.</strong> Explain 'Moral determinism'.  (2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-9"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-15">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>6.</strong> Does administrative objectivity necessarily pre-suppose administrative integrity?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>7.  Formal education or Social inculcation:<br>
+Which of the above two is more important in creation of a good administration? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>8. Do you think that administrative decisions are free of political bias? (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>9. &quot;There can be no high civility without a deep morality, though it may not call itself by that name.&quot;- R.W. Emerson Discuss.  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>10. How can hedonism be paradoxical? Discuss.  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-30-m-8"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 30 M</strong></span></h3>
+<h3 id="10m-100w-13">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>11. What is the meaning of 'Good' ? How shall your idea of Good help structure a good administration?  (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>12.</strong> Present a comparative evaluation of Utilitarianism, Sarvodaya and Lok-Samgraha as an inspiration for administration. (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>13.</strong> How is the idea of 'Human Resource' consistent with the idea of 'Humanity as an End'? Analyse in the perspective of Welfare State.  (10M100W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<h2 id="unit-ii-70-m-5"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - II : 70 M</strong></span></h2>
+<h3 id="part-a-10-m-9"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></h3>
+<h3 id="2m-15w-16">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>14.</strong> Name the methods of refining used for production of semiconductors and Zirconium/Titanium.  (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>15. What are the functions of blood platelets?  (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>16. What is Tokamak? On what principle it is based? (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>17. What are the names of main components of Apache Hadoop in the context of big data?  (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>18. What is Digital Rupee (e *) ? How does it differ from UPI?  (2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-40-m-3"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 40 M</strong></span></h3>
+<h3 id="5m-50w-16">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>19. What is the difference between an acidic and basic buffer? Give an example of each. How a buffer solution of known pH can be prepared ?  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>20. Give Lewis concept of acid and base with an example of each. For an acid HA, how the electronegativity of A affects the strength of the acid, give example.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>21. Enumerate the medicinal significance and drug abuse of Opium poppy.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>22.</strong> Mention the parts of the forebrain and enlist the functions of each part.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>23.</strong> What is MCB? Explain its working.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>24.</strong> <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">What is gravitational lensing? How does it occur ? Explain.</span></strong></strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>25.</strong> <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">Which latest digital initiatives are being planned by Department of Tourism, Govt. of Rajasthan under Rajasthan Tourism Policy drafted in 2024?</span></strong></strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>26.</strong> Discuss about the scientific achievements of Indian Scientists Haridatta and Panchanan Maheshwari.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-20-m-2"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 20 M</strong></span></h3>
+<h3 id="10m-100w-14">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>27.</strong> Development of which AI and Large Language Models (LLMs) addressing the Indian needs are being facilitated by the Government of India ? Also, briefly specify features of these models.  (10M100W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>28.  Critically evaluate the strategic and technological importance of indigenization in defence production, especially in missile and space technologies of India. (10M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p> </p>
+<h2 id="unit-iii-65-m-5"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Unit - III : 65 M</strong></span></h2>
+<p><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - A : 10 M</strong></span></p>
+<h3 id="2m-15w-17">2M 15W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>29. Mark the following Conservation Reserves on given outline map of Rajasthan :<br>
+(A) Sorsan (B) Akhargaon (C) Gogelao (D) Jod Beed Goadwale<br>
+For Figure of Map : Refer Paper PDF Link shared above<br>
+<strong></span></strong></strong><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"></strong>(2M15W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>30.</strong> Write name of any four waterfalls located between Chittorgarh and Kota.  (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>31.</strong>  Differentiate between 'Malnad' and 'Maidan' topography of Deccan Lava Plateau. (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>32. In which areas of India highest and lowest variability of annual rainfall is found?</strong>   (2M15W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>33.</strong>  Name the highest mountain peaks of the following continents:<br>
+(A) North America<br>
+(B) South America<br>
+(C) Africa<br>
+(D) Australia<br>
+(2M15W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-b-25-m-10"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - B : 25 M</strong></span></h3>
+<h3 id="5m-50w-17">5M 50W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>34. Write names of any ten Biodiversity Hotspots of the world.</strong>   (</strong></strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">5M50W</span><strong><strong>)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>35.</strong>  Differentiate between the Western and Eastern Coastal Plains of India. (</strong></strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">5M50W</span><strong><strong>)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>36.</strong>  Describe the location and strategic importance of 'Chicken Neck' in present scenario. (</strong></strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">5M50W</span><strong><strong>)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>37.</strong> Explain 'Sacred Groves' of Rajasthan.  (</strong></strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">5M50W</span><strong><strong>)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>38.</strong>  Discuss the &quot;Integrated Clean Energy Policy – 2024&quot; of Rajasthan. (5M50W)</span></strong></strong><br>
+Ans</p>
+<h3 id="part-c-35-m"><span style="color: rgb(248, 202, 198);" class="jop-noMdConv"><strong>Part - C : 35 M</strong></span></h3>
+<h3 id="10m-100w-15">10M 100W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>39.</strong>  Discuss the geopolitical factors behind the Russia-Ukraine struggle. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(10M100W)</span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>40. Explain the difference between the Himalayan and the Peninsular Rivers under the following heads :<br>
+Place of Origin, Nature of Flow, Type of Drainage, Nature of River and Catchment Area. <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(10M100W)</span></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>41.</strong> Describe habitat, economy and society of the Saharia tribe in Rajasthan and discuss the government's policies for the upliftment of Saharia tribe. <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(10M100W)</span></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p> </p>
+</div></div>
+					</body>
+				</html>
+			

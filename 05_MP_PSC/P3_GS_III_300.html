@@ -1,0 +1,1762 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="../atom-one-light.css">
+						<title>P3_GS_III_300</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">P3_GS_III_300</div>
+
+<style>
+		/* https://necolas.github.io/normalize.css/ */
+		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
+		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
+		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
+
+		body {
+			font-size: 15px;
+			color: #32373F;
+			word-wrap: break-word;
+			line-height: 1.6em;
+			background-color: #ffffff;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+			padding-bottom: 0px;
+			padding-top: 0px;
+		}
+		kbd {
+			border: 1px solid rgb(220, 220, 220);
+			box-shadow: inset 0 -1px 0 rgb(220, 220, 220);
+			padding: 2px 4px;
+			border-radius: 3px;
+			background-color: rgb(243, 243, 243);
+		}
+
+		:root {
+			--scrollbar-size: 7px;
+		}
+
+		::-webkit-scrollbar {
+			width: var(--scrollbar-size);
+			height: var(--scrollbar-size);
+		}
+		::-webkit-scrollbar-thumb {
+			border-radius: calc(var(--scrollbar-size) / 2);
+		}
+		::-webkit-scrollbar-corner {
+			background: none;
+		}
+		::-webkit-scrollbar-track {
+			border: none;
+		}
+		::-webkit-scrollbar-thumb {
+			background: rgba(50, 55, 63, 0.54); 
+		}
+		::-webkit-scrollbar-track:hover {
+			background: rgba(0, 0, 0, 0.1); 
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background: rgba(50, 55, 63, 0.63); 
+		}
+
+		
+
+		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
+
+		#rendered-md > h1:first-child,
+		#rendered-md > h2:first-child,
+		#rendered-md > h3:first-child,
+		#rendered-md > h4:first-child,
+		#rendered-md > ul:first-child,
+		#rendered-md > ol:first-child,
+		#rendered-md > table:first-child,
+		#rendered-md > blockquote:first-child,
+		#rendered-md > img:first-child,
+		#rendered-md > p:first-child {
+			margin-top: 0;
+			padding-top: 0;
+		}
+		
+		p, h1, h2, h3, h4, h5, h6, ul, table {
+			margin-top: .6em;
+			margin-bottom: 1.35em;
+
+			/*
+				Adds support for RTL text in the note body. It automatically detects the direction using the content.
+				Issue: https://github.com/laurent22/joplin/issues/3991
+			*/
+			unicode-bidi: plaintext;
+		}
+
+		h1, h2, h3, h4, h5, h6, ul, table {
+			margin-bottom: 0.65em;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			line-height: 1.5em;
+		}
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			border-bottom: 1px solid #dddddd;
+			padding-bottom: .3em;
+		}
+		h2 {
+			font-size: 1.3em;
+			font-weight: bold;
+			padding-bottom: .1em; */
+		}
+		h3 {
+			font-size: 1.1em;
+			font-weight: bold;
+		}
+		h4, h5, h6 {
+			font-size: 1em;
+			font-weight: bold;
+		}
+
+		.exported-note-title {
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 0.8em;
+			line-height: 1.5em;
+			padding-bottom: .35em;
+			border-bottom: 1px solid #dddddd;
+		}
+
+		a {
+			color: #155BDA;
+		}
+		ul, ol {
+			padding-left: 0;
+			margin-left: 1.7em;
+		}
+		li {
+			margin-bottom: .4em;
+		}
+		li p {
+			margin-top: 0.2em;
+			margin-bottom: 0;
+		}
+
+		dt {
+			font-weight: bold;
+			margin-bottom: 0.25em;
+		}
+
+		dd {
+			margin-inline-start: 2.5em;
+			margin-bottom: 0.5em;
+		}
+
+		.resource-icon {
+			display: inline-block;
+			position: relative;
+			top: 0.3em;
+			text-decoration: none;
+			width: 1.2em;
+			height: 1.4em;
+			margin-right: 0.4em;
+			background-color:  #155BDA;
+		}
+    /* These icons are obtained from the wonderful ForkAwesome project by copying the src svgs 
+     * into the css classes below.
+     * svgs are obtained from https://github.com/ForkAwesome/Fork-Awesome/tree/master/src/icons/svg
+     * instead of the svg width, height property you must use a viewbox here, 0 0 1536 1792 is typically the actual size of the icon
+     * each line begins with the pre-amble -webkit-mask: url("data:image/svg+xml;utf8,
+     * and of course finishes with ");
+     * to prevent artifacts it is also necessary to include -webkit-mask-repeat: no-repeat;
+     * on the following line
+     * */
+		.fa-joplin {
+			/* Awesome Font file */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M373.834 128C168.227 128 0 296.223 0 501.834v788.336C0 1495.778 168.227 1664 373.834 1664h788.336c205.608 0 373.83-168.222 373.83-373.83V501.834C1536 296.224 1367.778 128 1162.17 128zm397.222 205.431h417.424a7.132 7.132 0 0 1 7.132 7.133v132.552c0 4.461-3.619 8.073-8.077 8.073h-57.23c-24.168 0-43.768 19.338-44.284 43.374v2.377h-.017v136.191h-.053l-.466 509.375c-5.02 77.667-39.222 149.056-96.324 201.046-60.28 54.834-141.948 85.017-229.962 85.017-12.45 0-25.208-.61-37.907-1.785-92.157-8.682-181.494-48.601-251.662-112.438-71.99-65.517-117.147-150.03-127.164-238-11.226-98.763 23.42-192.783 95.045-257.937 81.99-74.637 198.185-101.768 316.613-75.704 5.574 1.227 9.55 6.282 9.55 11.997v199.52c-.199 2.625-1.481 6.599-8.183 2.896-.663-.365-1.194-.511-1.653-.531-21.987-10.587-45.159-17.57-68.559-19.916-.38-.04-.757-.124-1.138-.163-.537-.048-1.034-.033-1.556-.075-4.13-.354-8.183-.517-12.203-.58-.87-.011-1.771-.127-2.641-.127-.486 0-.951.05-1.437.057-1.464.011-2.886.115-4.33.163-2.76.102-5.497.211-8.182.448-.273.024-.547.07-.835.097-25.509 2.4-47.864 11.104-65.012 25.47-.954.802-1.974 1.53-2.9 2.36a1.34 1.34 0 0 1-.168.146c-23.96 21.8-34.881 53.872-30.726 90.316 4.62 40.737 26.94 81.156 62.841 113.823 35.908 32.67 80.335 52.977 125.113 57.186 35.118 3.36 66.547-3.919 89.899-20.461a97.255 97.255 0 0 0 9.365-7.501c2.925-2.661 5.569-5.5 8.086-8.416.3-.348.672-.673.975-1.024 8.253-9.864 14.222-21.067 17.996-33.148.639-2.034 1.051-4.148 1.564-6.227.381-1.563.81-3.106 1.112-4.693.555-2.784.923-5.632 1.253-8.49.086-.709.183-1.414.237-2.128.492-4.893.693-9.858.55-14.91h.013V521.623c-2.01-22.626-20.78-40.434-43.928-40.434h-57.23a8.071 8.071 0 0 1-8.077-8.073V340.564a7.132 7.132 0 0 1 7.136-7.133z'/></svg>");
+		}
+		.fa-file-image {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-128-448v320H256v-192l192-192 128 128 384-384zm-832-192c-106 0-192-86-192-192s86-192 192-192 192 86 192 192-86 192-192 192z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-pdf {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-514-593c25 20 53 38 84 56 42-5 81-7 117-7 67 0 152 8 177 49 7 10 13 28 2 52-1 1-2 3-3 4v1c-3 18-18 38-71 38-64 0-161-29-245-73-139 15-285 46-392 83-103 176-182 262-242 262-10 0-19-2-28-7l-24-12c-3-1-4-3-6-5-5-5-9-16-6-36 10-46 64-123 188-188 8-5 18-2 23 6 1 1 2 3 2 4 31-51 67-116 107-197 45-90 80-178 104-262-32-109-42-221-24-287 7-25 22-40 42-40h22c15 0 27 5 35 15 12 14 15 36 9 68-1 3-2 6-4 8 1 3 1 5 1 8v30c-1 63-2 123-14 192 35 105 87 190 146 238zm-576 411c30-14 73-57 137-158-75 58-122 124-137 158zm398-920c-10 28-10 76-2 132 3-16 5-31 7-44 2-17 5-31 7-43 1-3 2-5 4-8-1-1-1-3-2-5-1-18-7-29-13-36 0 2-1 3-1 4zm-124 661c88-35 186-63 284-81-10-8-20-15-29-23-49-43-93-103-127-176-19 61-47 126-83 197-15 28-30 56-45 83zm646-16c-5-5-31-24-140-24 49 18 94 28 124 28 9 0 14 0 18-1 0-1-1-2-2-3z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-word {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM233 768v107h70l164 661h159l128-485c5-15 8-30 10-46 1-8 2-16 2-24h4l3 24c3 14 4 30 9 46l128 485h159l164-661h70V768h-300v107h90l-99 438c-4 16-6 33-7 46l-2 21h-4c0-6-2-14-3-21-3-13-5-30-9-46L825 768H711l-144 545c-4 16-5 33-8 46l-4 21h-4l-2-21c-1-13-3-30-7-46l-99-438h90V768H233z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-powerpoint {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-992-234v106h327v-106h-93v-167h137c43 0 82-2 118-15 90-31 146-124 146-233s-54-193-137-228c-38-15-84-19-130-19H416v107h92v555h-92zm353-280H650V882h120c35 0 62 6 83 18 36 21 56 62 56 115 0 56-20 99-62 120-21 10-47 15-78 15z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-excel {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-979-234v106h281v-106h-75l103-161c12-19 18-34 21-34h2c1 4 3 7 5 10 4 8 10 14 17 24l107 161h-76v106h291v-106h-68l-192-273 195-282h67V768H828v107h74l-103 159c-12 19-21 34-21 33h-2c-1-4-3-7-5-10-4-7-9-14-17-23L648 875h76V768H434v107h68l189 272-194 283h-68z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-audio {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM620 850c12 5 20 17 20 30v544c0 13-8 25-20 30-4 1-8 2-12 2-8 0-16-3-23-9l-166-167H288c-18 0-32-14-32-32v-192c0-18 14-32 32-32h131l166-167c10-9 23-12 35-7zm417 689c19 0 37-8 50-24 83-102 129-231 129-363s-46-261-129-363c-22-28-63-32-90-10-28 23-32 63-9 91 65 80 100 178 100 282s-35 202-100 282c-23 28-19 68 9 90 12 10 26 15 40 15zm-211-148c17 0 34-7 47-20 56-60 87-137 87-219s-31-159-87-219c-24-26-65-27-91-3-25 24-27 65-2 91 33 36 52 82 52 131s-19 95-52 131c-25 26-23 67 2 91 13 11 29 17 44 17z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-video {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM768 768c70 0 128 58 128 128v384c0 70-58 128-128 128H384c-70 0-128-58-128-128V896c0-70 58-128 128-128h384zm492 2c12 5 20 17 20 30v576c0 13-8 25-20 30-4 1-8 2-12 2-8 0-17-3-23-9l-265-266v-90l265-266c6-6 15-9 23-9 4 0 8 1 12 2z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-archive {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M640 384V256H512v128h128zm128 128V384H640v128h128zM640 640V512H512v128h128zm128 128V640H640v128h128zm700-388c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H768v128H640V128H128v1536h1280zM781 943c85 287 107 349 107 349 5 17 8 34 8 52 0 111-108 192-256 192s-256-81-256-192c0-18 3-35 8-52 0 0 21-62 120-396V768h128v128h79c29 0 54 19 62 47zm-141 465c71 0 128-29 128-64s-57-64-128-64-128 29-128 64 57 64 128 64z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-code {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM480 768c11-14 31-17 45-6l51 38c14 11 17 31 6 45l-182 243 182 243c11 14 8 34-6 45l-51 38c-14 11-34 8-45-6l-226-301c-8-11-8-27 0-38zm802 301c8 11 8 27 0 38l-226 301c-11 14-31 17-45 6l-51-38c-14-11-17-31-6-45l182-243-182-243c-11-14-8-34 6-45l51-38c14-11 34-8 45 6zm-620 461c-18-3-29-20-26-37l138-831c3-18 20-29 37-26l63 10c18 3 29 20 26 37l-138 831c-3 18-20 29-37 26z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-alt, .fa-file-csv {
+      /* fork-awesome doesn't have csv so we use the text icon */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM384 800c0-18 14-32 32-32h704c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64zm736 224c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704zm0 256c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		blockquote {
+			border-left: 4px solid rgb(220, 220, 220);
+			padding-left: 1.2em;
+			margin-left: 0;
+			opacity: 0.7;
+		}
+
+		.jop-tinymce table,
+		table {
+			text-align: left;
+			border-collapse: collapse;
+			border: 1px solid rgb(220, 220, 220);
+			background-color: #ffffff;
+		}
+
+		.jop-tinymce table td, .jop-tinymce table th,
+		table td, th {
+			text-align: left;
+			padding: .5em 1em .5em 1em;
+			font-size: 15;
+			color: #32373F;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+		}
+
+		.jop-tinymce table td,
+		table td {
+			border: 1px solid rgb(220, 220, 220);
+		}
+
+		.jop-tinymce table th,
+		table th {
+			border: 1px solid rgb(220, 220, 220);
+			border-bottom: 2px solid rgb(220, 220, 220);
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:nth-child(even),
+		table tr:nth-child(even) {
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:hover,
+		table tr:hover {
+			background-color: #e5e5e5;
+		}
+
+		hr {
+			border: none;
+			border-bottom: 2px solid #dddddd;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		.inline-code,
+		.mce-content-body code {
+			border: 1px solid rgb(220, 220, 220);
+			background-color: rgb(243, 243, 243);
+			padding-right: .2em;
+			padding-left: .2em;
+			border-radius: .25em;
+			color: rgb(0,0,0);
+			font-size: .9em;
+		}
+
+		.highlighted-keyword {
+			background-color: #F3B717;
+			color: black;
+		}
+
+		
+	.not-loaded-resource img {
+		width: 1.15em;
+		height: 1.15em;
+		background: white;
+		padding: 2px !important;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px #000000aa;
+	}
+
+	a.not-loaded-resource img {
+		margin-right: .2em;
+	}
+
+	a.not-loaded-resource {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+
+		.md-checkbox input[type=checkbox]:checked {
+			opacity: 0.7;
+		}
+
+		.jop-tinymce ul.joplin-checklist .checked,
+		.md-checkbox .checkbox-label-checked {
+			opacity: 0.5;
+		}
+
+		.exported-note {
+			padding: 1em;
+		}
+
+		.joplin-editable .joplin-source {
+			display: none;
+		}
+
+		mark {
+			background: #F7D26E;
+			color: black;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		.mce-content-body {
+			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
+			padding: 5px 10px 10em 0;
+		}
+
+		/*
+		.mce-content-body code {
+			background-color: transparent;
+		}
+		*/
+
+		.mce-content-body [data-mce-selected=inline-boundary] {
+			background-color: transparent;
+		}
+
+		.mce-content-body .joplin-editable {
+			cursor: pointer !important;
+		}
+
+		.mce-content-body.mce-content-readonly {
+			opacity: 0.5;
+		}
+
+		/* We need that to make sure click events have the A has a target */
+		.katex a span {
+			pointer-events: none;
+		}
+
+		.media-player {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.media-player.media-pdf {
+			min-height: 35rem;
+			width: 100%;
+			max-width: 1000px;
+			margin: 0;
+			border: 0;
+			display: block;
+		}
+
+		/* Clear the CODE style if the element is within a joplin-editable block */
+		.mce-content-body .joplin-editable code {
+			border: none;
+			background: none;
+			padding: 0;
+			color: inherit;
+			font-size: inherit;
+		}
+
+		/* To make code blocks horizontally scrollable */
+		/* https://github.com/laurent22/joplin/issues/5740 */
+		pre.hljs {
+			overflow-x: auto;
+		}
+
+		.joplin-table-wrapper{
+			overflow-x: auto;
+			overflow-y: hidden;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		@media print {
+			body {
+				height: auto !important;
+			}
+
+			pre {
+				white-space: pre-wrap;
+			}
+
+			.code, .inline-code {
+				border: 1px solid #CBCBCB;
+			}
+
+			#joplin-container-content {
+				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
+				   around various issues related to scrolling. However when printing we don't want this
+				   fixed size as that would crop the content. So we set it to auto here. "important" is
+				   needed to override the style set by JavaScript at the element-level. */
+				height: auto !important;
+			}
+		}
+	
+
+				/*
+					FOR THE MARKDOWN EDITOR
+				*/
+
+				/* Remove the indentation from the checkboxes at the root of the document
+				   (otherwise they are too far right), but keep it for their children to allow
+				   nested lists. Make sure this value matches the UL margin. */
+
+				li.md-checkbox {
+					list-style-type: none;
+				}
+
+				li.md-checkbox input[type=checkbox] {
+					margin-left: -1.71em;
+					margin-right: 0.7em;
+					position: relative;
+					top: 1px;
+				}
+				
+				ul.joplin-checklist {
+					list-style:none;
+				}
+
+				/*
+					FOR THE RICH TEXT EDITOR
+				*/
+
+				ul.joplin-checklist li::before {
+					content:"\f14a";
+					font-family:"Font Awesome 5 Free";
+					background-size: 16px 16px;
+					pointer-events: all;
+					cursor: pointer;
+					width: 1em;
+					height: 1em;
+					margin-left: -1.3em;
+					position: absolute;
+					color: #32373F;
+				}
+
+				.joplin-checklist li:not(.checked)::before {
+					content:"\f0c8";
+				}
+.mermaid { width: 640px; }
+pre.mermaid[data-processed=true] { white-space: unset; }
+.mermaid-export-graph {
+					opacity: 0;
+					height: 0;
+					z-index: 1;
+					position: relative;
+				} 
+				.joplin-editable:hover .mermaid-export-graph,
+				.joplin-editable .mermaid-export-graph:has(:focus-visible) {
+					opacity: 1;
+				}
+				.mermaid-export-graph > button:hover {
+					background-color: #CBDAF1 !important;
+				}</style><div id="rendered-md"><p><strong>Paper 2: General Studies - III - 300 M - 3 H</strong></p>
+<h1 id="syllabus">Syllabus</h1>
+<p><strong>Part A :  <strong>Economics</strong></strong><br>
+<strong>Part B : <strong>Science, Technology and Public Health</strong></strong></p>
+<p>===================</p>
+<p><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part (A) – <strong>Economics</strong></strong></span></p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Fundamental Aspects of the Indian Economy:</strong></span></p>
+<ul>
+<li>Salient features of the Indian economy, Viksit Bharat @2047, Sectoral contribution of Agriculture, Industry, and Service Sector, Different concepts of National Income, Major Crops and Cropping Patterns, Challenges (Declining Productivity, Farmer Distress, Weather Dependency), Government Initiatives (PM-KISAN, NMSA, and various schemes), Agriculture Price Policy, Marketing and Finance, Agri Start-ups and Agro-Processing for Value Addition, Industrial Policies and Industrial Development in India, Manufacturing and Infrastructure (Make in India and Infrastructure Projects), Hospitality and Tourism (Contribution to Foreign Exchange Earnings), Standardisation of Goods and Services in India.</li>
+</ul>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Taxation and Policy Landscape:</strong></span></p>
+<ul>
+<li>Fiscal Policy (Public Expenditure, Revenue Taxation, and Deficit Management), Monetary Policy and Financial Inclusion in India, Impact of Cash Transactions on Informal Economy, Food Security and Public Distribution System, Poverty, Unemployment and Regional Imbalances, India’s Foreign Trade (Value, Composition, and Direction), Export Promotion, Import Substitution, and Foreign Capital, Role of International Financial Institutions (IMF, World Bank, ADB, and WTO).</li>
+</ul>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Overview of Madhya Pradesh Economy:</strong></span></p>
+<ul>
+<li>Growth in State Domestic Product and Per Capita Income in Madhya Pradesh, Self Reliant/Aatm Nirbhar Madhya Pradesh (ANMP), One District One Product (ODOP), Major Crops, Cropping Patterns, and Holdings, Food Security, Distribution Systems, and Storage, Horticulture, Livestock, Dairy, and Fisheries, Industrial Sector's Status, Infrastructure Development, MSME and Growth of Traditional Industries and Support, Rural and Urban Development in Madhya Pradesh, Tribal Economy (Farming Methods, Major Forest Produce, Handicrafts, and Haat Bazaar), Tourism, Trade, and Investment Promotion.</li>
+</ul>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Social and Economic Development in Madhya Pradesh:</strong></span></p>
+<ul>
+<li>Health Infrastructure, Education and Skill Development, Policies for Natural Resource Management (Forests, Water, and Minerals), Financial and Social Inclusion and Welfare Schemes, Influence of Demography of Madhya Pradesh, Productivity of Human Resources and Employment, Progress of Intellectual Property Rights (IPR) in Madhya Pradesh, State Revenue, Expenditure, Debt and Financial Discipline.</li>
+</ul>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Statistics, Data Analysis, and Probability:</strong></span></p>
+<ul>
+<li>Data collection techniques, Mean, Median, and Mode (Calculations and Interpretations), Types of Data Analysis (Descriptive vs. Inferential), Sampling techniques, Data presentation techniques (Tables, charts, graphs), Basic concepts of probability.</li>
+</ul>
+<p> </p>
+<p><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong><strong><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Part (B) – <strong>Science, Technology and Public Health</strong></strong></span></strong></strong></span></p>
+<ul>
+<li><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit - I General Science</strong></span>
+<ul>
+<li>Simple Application of Science.</li>
+<li>Micro-organism- structure and types and Organic Farming.</li>
+<li>Cell— Structure, Types, Division and Function, Classification of Animals and Plants.</li>
+<li>Nutrition in Plants, Animals and Human beings, Balanced Diet, Vitamins, Deficiency Diseases, Hormones, Body Organs of Human Beings- Structure and Functioning.</li>
+<li>Biotechnology- Definition and its uses in sectors like Health and Medicine, Agriculture, Horticulture, Animal Husbandry, Industry and Environment.</li>
+<li>Application of Ethnobiology.</li>
+<li>Contribution in Astronomy by Arya Bhatta, Varahmihir, Brahmagupta and Bhaskar First and Second. Initial Information on Ancient and Modern Observatories.</li>
+<li>Patents and Intellectual Property Rights (Trips, Trims).</li>
+</ul>
+</li>
+<li><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit - II Computer Science</strong></span>
+<ul>
+<li>Types of Computers, Characteristics and Generation.</li>
+<li>Memory, Input and Output Devices, Storage Devices, Software and Hardware, Operating systems, Windows, Uses of Microsoft office.</li>
+<li>Fundamental Knowledge of Computer Languages (C, C++, Java), Translators, Interpreters and Assemblers.</li>
+<li>Internet and E-mail.</li>
+<li>Social Media.</li>
+<li>E -Governance.</li>
+<li>Fundamental Knowledge of Artificial Intelligence (AI), Cloud Computing, Different useful Portals, Websites and Webpages.</li>
+<li>Mathematical Science
+<ul>
+<li>Numbers and its type, Methods of Unit Measurement, Equations and Factors, Profit Loss, Percentage, Simple and Compound Interest, Ratio Proportion.</li>
+<li>Area and Volume of Geometric shapes and Surface area.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit - III</strong></span>
+<ul>
+<li>AYUSH- Basic Principle of Ayurveda, Yoga and Naturopathy, Unani, Siddha, Sowa-rigpa, Basic Principles of Homeopathic Treatment.</li>
+<li>One Nation One Health System/Policy-2030.</li>
+<li>Ayurveda- Basic knowledge of Tridosh, Panchamahabhut, (Aakash, Vayu, Agni, Jal, Prathvi) Dincharya, Ritucharaya, Panchkarma. Biological Clock. Health Management including AYUSH at the Central, State, District and Village level. National Health Policy (NHP) and scope of Ayurveda in NHP.</li>
+<li>Yoga - Preliminary knowledge of Panchkosh Principles, Ashtanga Yoga, Shatkarma, Mudra. Naturopathy- Therapeutic effect of Soil treatment, Sun Bath, Hydrotherapy and its types.</li>
+<li>Shodasha Sanskar- General Knowledge of Namkarana, Nishkramana, Karnavedha etc and its scientific importance.</li>
+</ul>
+</li>
+<li><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit-IV</strong></span>
+<ul>
+<li>National Health Programme- Health Hygiene and Disease, Leprosy (NLEP), AIDS (NACP), Blindness (NPCB), Polio, National TB Elimination Program, Vector Born Disease Control Program, Reproductive and Child Health (RCH) Program, Integrated Child Development Scheme (ICDS), Universal and National Immunization Program, National Ayush Mission (NAM), National Family Health Survey (NFHS).</li>
+<li>Swachh Bharat Mission, Ayushman Bharat Yojana, National Health Mission (NRHM and NUHM), Maternal Mortality Rate in Madhya Pradesh.</li>
+<li>Different Biomarkers such as- normal range of Hematology, Biochemistry, Serology.</li>
+<li>Primary Health Care- Principles and Elements of Primary Health Care, levels of Health Care, Structure of Primary Health Care at Village and Sub center, Primary Health Center (PHC), Community Health Center (CHC) and levels of Rural Hospitals.</li>
+</ul>
+</li>
+<li><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Unit-V</strong></span>
+<ul>
+<li>Concept of Environment in Indian Tradition and Culture. JanapadodhvanshDistortions of Air, Water, land, Time.</li>
+<li>Impact of Human activities on Environment, Ethics and Values related to environment, bio-diversity (especially in the context of Madhya Pradesh), Environment- Pollution, Climate change. Endangered and Extinct Species.</li>
+<li>Problems and Challenges Related to Environment, Causes and Effects of Environmental Degradation.</li>
+<li>Environmental Education- Public Awareness Programs, Environmental Education and its Relationship with Health and Safety.</li>
+<li>Environment friendly Technology, Constitutional Provisions for Environmental Protection. Environmental Protection Policies and Regulatory Framework.</li>
+<li>Role of tribes of Madhya Pradesh (Baiga, Sahariya, Bhariya, Bhil, Gond. etc.) in Environmental Conservation.
+<ul>
+<li>Solid Waste Management- Causes, Effects and Control measures of Urban and Industrial Waste.</li>
+</ul>
+</li>
+<li>Cleanliness Survey Campaign- Objective, Various Stages, Achievements and Future.</li>
+<li>Water Security.</li>
+<li>Various efforts in the field of Water Conservation.</li>
+</ul>
+</li>
+</ul>
+<h1 id="2017">2017</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20GS-3.pdf' href='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20GS-3.pdf'>https://www.drishtiias.com/images/pdf/MPPCS Mains GS-3.pdf</a></p>
+<h2 id="section-a"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="3m-20w"><strong>3M 20W</strong></h3>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A)   What are radioisotopes?</strong></span>       <br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Hot spots of Biodiversity.</strong></span>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) Define Alloy.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) DNA Finger-printing.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Fossil Fuel</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Integers</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) Heavy Water</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Bird Flu and Swine Flu</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) Organic farming</strong></span></strong></strong>         <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) e-Health</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) MTOE</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) Golden Rice</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) SAFA</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N) Nuclear Fission</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O) A person incur a 05% loss by selling his bicycle for rupess (`) 1140. At what price the bicycle be sold/ sell-up to earn the 05% profit?</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Write briefly about Human Endocrine System.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Solar energy and Madhya Pradesh.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) What is green Chemistry?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Describe briefly FAME India.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(E)  Discuss briefly the contribution of former President of India honourable Late Dr. A.P.J. Abdul Kalam in the field of science and technolog</span></strong></strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>y</strong></span><strong><strong>. <span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(6M100W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Super Computer and India.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G)  What is World Intellectual Property Organization (WIPO)? (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Discuss briefly the effects of El-Nino and La-Nino.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I)  What is BOSS? (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J)  Discuss Biodiversity with special reference to Madhya Pradesh. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) Bio-technology and Social-development.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L)  What are Green buildings? (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M)  What do you understand by Disaster Management? (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N)  What is ‘‘MOM’’? (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O)  If Rupees (₹) 510 be divided among X, Y, Z in such a way that ‘X’ gets 2/3rd of what Y gets and Y gets 1/4th of what Z gets, then how many shares will be separately as well as respectively of the above three? (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) What is ‘‘Global Warming’’ and ‘‘Climate Change’’? Discuss their causes. Wite down the adverse effect of climate change and describe the international efforts are to be taken to control it.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) What is ‘‘Make in India’’ programme? How this programme will be helpful in the socio-economic development of INDIA? Explain.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(C) Write down short notes on the following:<br>
+i. Mainfold applications of Nano-technology.<br>
+ii. Remote sensing and Geographical Information System (GIS).<br>
+iii. Water resources in Madhya Pradesh state.<br>
+</span></strong> <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D)  What is the concept of ‘‘Smart City’’? what are the aims and objectives of our Prime Minister Shri Narendra Modi regarding the ‘‘Smart City Mission’’ and along with this what are the necessary criteria/ norms for the cities to join this mission? Which cities of Madhya-Pradesh state are ready to be a part of this Mission? (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E)  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Write down short notes on the following:<br>
+i. Nuclear energy and India<br>
+ii. e-waste management.<br>
+iii. ‘‘Namami Gange’’ Integrated ‘‘GANGA’’ Conservation Mission.</strong></span></strong></strong> (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Study the following table carefully and answer the questions given below: Classificaiton of 100 students on the basis of marks obtained in the subject of Botany and Zoology appeared in any examination.<br>
+<br class="jop-noMdConv"/>For Table: Refer PDF Shared Above<br>
+<br class="jop-noMdConv"/></strong></span><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>1. How many students, who aggregately obtained below 40% marks?<br>
+2. If at least 60% marks is necessary in the subject of Botany for higher education then how many students will be eligible for the studies of higher education in Botany? <br>
+3. What difference will be between the number of students passed with 30 as cut-off marks in Zoology and those who passed with 30 as cut-off marks in aggregate?<br>
+4. What percentage will be those students who obtained 60% marks in Zoology and those who aggregately got at least 40% marks?  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="section-b"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="3m-20w-2"><strong>3M 20W</strong></h3>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A)  Define Privatization.</strong></span><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) What is disguised unemployment?</strong></span>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) Write the parameters of poverty.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Define ‘‘Financial Inclusion’’.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) What is gender development indicator?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) What do you mean by ‘‘Regional lmbalances’’?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) What is called ‘‘Inclusive Development’’?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Define National Income.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) What is the role of SEBI?</strong></span></strong></strong>         <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) Define the parameters of ‘‘Food Security’’.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) What is difference between the poverty line and starvation line?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) What are the characteristics of co-operatives in Madhya Pradesh?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) Social Subsidies</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N) Write any five limitations of public distribution system.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O) What do you mean by Human Development?</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) What is Industrialization? What are the causes of low industrialization in Madhya Pradesh?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Explain the present main challenges of Indian economy.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) What are the contributions of 11th Five Plan in economic development of India?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Critically analyse the New Economic Policy 1991 and explain its impact on the banking sector.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Critically evaluate the role of infrastructure in economic development of the country.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F)  Urbanization is a big problem in India. Give your comments on future ill-effects of urbanization. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) How can regional imbalances be improved in India? (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Explain the targeted Public Distribution System.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I)  What do you understand by food security? Why it is necessary for a country like India? (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J)  What is rural credit? Critically examine the role of NABARD in rural Credit. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) Explain the factors of economic development.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L)  Explain the concept of industrialization of Madhya Pradesh. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) What is the concept of Smart City Project? Which cities of Madhya Pradesh have been chosen and why?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N) What are the major problems of transport development in Madhya Pradesh?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O)  Write the impact of liberalization in India. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(P) Write a short essay on the Food Security of Madhya Pradesh.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(Q) Explain the detail the ‘PURA’ model.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(R) Critically analyse the role of Public finance in the economic development of Madhya Pradesh.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(S) Explain the objectives of ‘TRIMS’.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(T) What is migration? What is condition of Migration in Madhya Pradesh?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A)  Describe the nature of urban and rural unemployment in India. What steps have been adopted by the government in recent times to reduce it? Write in detail. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B)  Explain in detail the different effects of Liberalization on Indian agriculture. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) What is faster inclusive growth? How it has helped in unemployment reduction (in 12th Five Year Plan) of the country?  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D)  Critically evaluate the MNREGA scheme and draw out the success or failure of the scheme based on the evaluation. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E)  What are the objectives of related subsidies of social sector? Which types of problems are barriers to fulfil its objectives? (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Explain the recent trends of the Indian economy.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<h1 id="2018">2018</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20GS%20-%203.pdf' href='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20GS%20-%203.pdf'>https://www.drishtiias.com/images/pdf/MPPCS Mains GS - 3.pdf</a></p>
+<h2 id="section-a-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="3m-20w-3"><strong>3M 20W</strong></h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Nuclear reactor</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Sources of vitamin C and disease caused due to its deficiency</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) Acetylene and its uses</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) Acid rain</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Pasteurization</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Hard water</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) CFC</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Sea horse</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) Write the full forms of the following: (i) UNESCO (ii) SCOPE (iii) UNDP</strong></span></strong></strong>         <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) Write the scientific names of causative agent and vector of plague.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) Write the scientific names of any two biopesticides</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) Enlist the natural colours present in sunlight in a sequence.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) A boy runs fast after seeing a street dog- His breathing becomes fast and blood pressure also increases. Which hormone will be found to be high in his blood? Name the gland secreting this hormone.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N) What is bleaching powder? Describe its two uses.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O) Enlist any three greenhouse gases.</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Plaster of Paris and its uses  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Corrosion and its prevention  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C)  Nuclear fallout and its effects (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D)  Polar sattelites and their usefulness (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Considering pond an ecosystem, describe its various trophic levels and give suitable example.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F)  In an examination, the students were required to obtain 36% pass marks. A student obtained 83 marks, but he was declared fail by 7 marks. Calculate the maximum marks allotted for the examination. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) Differentiate diabetes mellitus from diabetes insipidus. Describe their symptoms and concerned hormones.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Write a note on haemophilia.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I)  What is forensic science? Explain the role of insects in forensic science. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J)  Write a note on remote sensing. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) What is cyber defence and why is it essential?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) Father of Ramesh is 27-year older than Ramesh. After 5 years, the ratio of the age of Ramesh and his father will be 2:3. Calculate their present age.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M)  What are alloys? Explain with example. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N)  Write notes on mean, median and mode. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O) Briefly describe Darwinism.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A)  Enumerate various species of honeybees. Describe the scientific method for obtaining honey. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Define environmental pollution. Discuss the various sources of air pollution and its adverse effect on living beings. Also give suggestions for their remedy.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) What is meant by biodiversity? When do we observe International Biodiversity Day? Describe the technologies used for propagation and genome conservation in a given ecosystem.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) What is Information Technology? Discuss various means used in Information Technology.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Enumerate the various non-conventional sources of energy. Describe any three of them in detail.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Answer the following questions given below:<br>
+(i) What is diversity index?<br>
+(ii) Describe Simpson's index and Simpson's index of diversity.<br>
+(iii) Calculate Simpson's index for the following data:<br>
+Species (n)<br>
+1. Mango 2<br>
+2. Ashok 8<br>
+3. Cashew 1<br>
+4. Coconut 1<br>
+5. Amaltas 3  <br>
+(15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="section-b-2"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="3m-20w-4"><strong>3M 20W</strong></h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) What is the meaning of demonetization?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) What do you understand by Goods and Services Tax (GST)?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) What is the concept of net inflow?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) What is meant by Green Accounting?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) Which countries are the member of BRICS?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) What are the objectives of Pradhan Mantri Mudra Yojana?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G) What is the concept of food security?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) What do you understand by decentralized planning?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) What is the quality of employment?</strong></span></strong></strong>         <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J) What is the main purpose of Direct Benefit Transfer (DBT) Scheme?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K) What are the chief components on which Human Development Index is based on?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L) Give three reasons of regional imbalance.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M) What are the reasons for low sex ratio in our country?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N) Write any two reasons for low industrialization in Madhya Pradesh.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O) Write any two causes of inflationary rise in prices in recent years.</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) Analyze why Indian economy is considered as planned developing economy.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Distinguish between Green Revolution and Golden Revolution.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) What measures has been undertaken by the government for the reform in its financialsector on recommendations of the Narasimham Committee?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) What are some emerging trends in Indian agriculture as a result of liberalization?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) What are the objectives of Pradhan Mantri Gram Sadak Yojna (PMGSY)?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F)  Write a short note on Jawaharlal Nehru National Urban Renewal Mission (JNNURM). (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(G)  Write the role of Regional Rural Banks in providing institutional credit to agriculture. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(H) Write the salient feature of Kisan Credit Card Scheme.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(I) Suggest the measures to revitalize Cooperative Movement in India.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(J)  Write a short note on the importance of agriculture in Madhya Pradesh. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(K)  Discuss the economic reforms in India in the light of social justice and welfare. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(L)  Analyze PURA a new Gandhian approach to development for developing country like India. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(M)  Explain the functions of Stock Market. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(N)  Analyze various steps taken by SEBI to strengthen the capital market in India. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(O) Explain the measures taken by government to eliminate inequalities in income distribution in India.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(P) &quot;There is downward trend in economic inequality worldwide with a rise in the average education level.&quot; Comment.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(Q)  Mention the technological factors responsible for low productivity in agriculture in India. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(R) What are the objectives of land reforms in India?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(S)  Why did RBI have to change its role from controller to facilitator of financial sector in India? (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(T) Mention the chief features of National Rural Livelihood Mission (NRLM).  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(A) According to the National Skill Development Corporation (NSDC) there is severe quality gap and lack of availability of trainers in vocational education and training centre. Comment and explain the measures taken by the National Skill Development Council to overcome this problem.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(B) Critically evaluate various problems and challenges faced by our Indian economy.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(C) Critically evaluate the Cooperative Movement in Madhya Pradesh.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(D) &quot;Information Technology plays a significant role in achieving sustainable development and food security.&quot; Comment.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(E) State the measures taken during Five-Year Plans to solve unemployment problem in India.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(F) Analyze the prospects of Twelfth Plan in the light of its drivers of growth and growth targets for the plan.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<h1 id="2019">2019</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/MPPSC%20Mains%202019%20Paper_GS_III.pdf' href='https://www.drishtiias.com/images/pdf/MPPSC%20Mains%202019%20Paper_GS_III.pdf'>https://www.drishtiias.com/images/pdf/MPPSC Mains 2019 Paper_GS_III.pdf</a></p>
+<h2 id="section-a-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="3m-20w-5"><strong>3M 20W</strong></h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) What is the difference between “Gypsum and Plaster of Paris”?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) A coolie is walking on a railway platform with a load of 30kg on his head. How much work is done by coolie?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Why water hyacinth floats on water?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Two players, Sangeeta and Reshma play a tennis match. It is know that the probaility of Sangeeta wining the match is 0.62. What is the probability of Sangeeta winning the match is 0.62. What is the probability of Reshma winning the match?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Selling price of toy car is `540. If the profit made by shopkeeper was 20%. What was the cost price of this toy?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) The area of a trapezium shaped field is 480m2, the distance between two parallel sides is 15m and one of the parallel side is 20 m. Find the length of other parallel side.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) What is the Pie Chart?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) The minute hand of a circular clock is 15 cm long. How far does the tip of the minute hand more one hour? (p = 3.14)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Write the name of parts of National Intellectual Property Rights.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Transgenic Animals.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Energy Management : Issues and Challenges.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) What do you mean by fecal sludge management?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) Bioremediation.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Venkatraman Ramakrishnan.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Biomagnification.</strong></span></strong></strong><br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) Describe Bohr’s model of an atom.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)  Sonic Boom and its effects.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3) Three solid cubes of sides 30 cm, 40 cm and 50 cm respectively are melted and made one cube. Find the total surface area of new cube.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4) Write note on Mitochondira.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)  In a class, the percentage of girls is 40% of total number of students and are 22 in number. Find the ratio of the number of girls to the number of boys in the class.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)  Sum of the digits of a two digit number is 9. When we interchange the digits, it is found that the resulting new number is greater than the original number by 27. What is the two digit number?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)  Explain remote sensing, its types and uses.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)  What are fossil fuels? What are their disadvantages?  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)  Explain climate change, its causes and remedial measures.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)  Write note on Mission Chandrayaan-2.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.11)  Explain salient features of Environment Protection Act –1986. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.12) Write note on Bt Crops.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)  Study the following table carefully and answer the questions given below :<br>
+Sports Total players percentage Male : Female Players<br>
+Boxing          15           2 : 1<br>
+Chess           12           1 : 1<br>
+Snooker         8            1 : 7<br>
+Swimming    13            1 : 4<br>
+Badminton   26             1 : 1<br>
+Cricket         16             3 : 1<br>
+Shooting      10             2 : 3<br>
+Total number of Players = 100<br>
+(a) What is the total number of female players?<br>
+(b) In which sport maximum number of male players participated? <br>
+(c)  What is the percentage of male players participated in snooker to all the players (male and female)?<br>
+<strong></span><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"></strong>(15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2) What is quantum supremacy? How quantum computing is different from traditional computing? What can be the possible applications of quantum computing? (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">(3.3) Discuss the current scenario of alternative sources of energy and give an account of their futur</span></strong></strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>e</strong></span> <span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>perspectives.  (15M300W)</strong></span><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)  Explain the applications of science and technology in social and economic development. Give  examples. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5)  What are endocrine glands? Describe in brief the functions of hormones secreted by these glands. (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.6)  What are the impediments in disposing huge quantities of discarded solid wastes which are continuously being generated? How do we remove safely the toxic wastes that have been accumulating in our habitable environment?  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="section-b-3"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="3m-20w-6"><strong>3M 20W</strong></h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) In which State of India has the lowest literacy rate according to 2011 census?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) What do you mean by G.D.R.?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) What do you mean by ‘Minimum Support Price’?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Which sector of economy contributes the highest share in National Income of India?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) What do you mean by devaluation?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What is TRIPS?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) How many measuring methods of National Income are there?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) What do you mean by Gross Domestic Product?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) What is the Start Up India Programme?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) What is Disguised Unemployment?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) What is Buffer Stock?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) What do you mean by ‘Capital-Output Ratio’?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) What is the relative Poverty?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) What is UDITA Yojana?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Where is National Institute of Virology is located in India?</strong></span></strong></strong><br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  Explain the important pillars of ‘Atmanirbhar Bharat Abhiyan’.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2) State the reason for the lack of infrastructure for the growth of manufacturing sector in Madhya Pradesh.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3) ‘Globalization leads to sustainability in the Indian Economy.’ State your views in this regard.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)   Explain the importance of National Income Accounting. (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)   How is the methodology followed by the Rangarajan Committee different from that of the Tendulkar Committee in measuring poverty in India? (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6) Examine the ‘Service Area Approach’ in terms of rural credit.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)  Why is Monetary Transmission not effective in India? Examine.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)  ‘Special Economic Zones’ are an engine of industrial development, manufacturing and exports.’ Explain.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9) Explain the role of Horticulture in agricultural development of Madhya Pradesh.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10) Explain the trends of GDP of India in first two quarters of the year 2020–21.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.11) State the major weaknesses of Madhya Pradesh in Agricultural Sector.   (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.12)  ‘Subsidy in the form of free electricity has led to depletion of ground water.’ Explain it.  (6M100W)</strong></span></strong></strong><br>
+Ans</p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) Evaluate the role and performance of Public Sector Enterprises in the Indian economy.   (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2) Explain the National Food Security Act, 2013 (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3) Explain the nature and causes of rural and urban unemployment in India.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4) Analyse the achievement and failures of second generation reforms in India.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5) Explain the provisions of skill development under Make in India Programme taken by Government of India.  (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.6) How Universal Basic Income may be a tool of reducing income inequality and poverty? Give your opinion.   (15M300W)</strong></span></strong></strong><br>
+Ans</p>
+<h1 id="2020">2020</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/mppsc%202020%20Paper_III.pdf' href='https://www.drishtiias.com/images/pdf/mppsc%202020%20Paper_III.pdf'>https://www.drishtiias.com/images/pdf/mppsc 2020 Paper_III.pdf</a></p>
+<h3 id="3m-20w-7"><strong>3M 20W</strong></h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) A force of 200 N pulls a sledge of mass 50 kg and overcomes a frictional force of 40 N. What is the acceleration of the sledge?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) Define terminal velocity.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) When light is transmitted from one material to another, then what will be the effect on its frequency, wavelength and speed?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Write name of a non-metal having lustrous property similar to metals.</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Identify the Lewis acids in the following: NH3, AICI3, CI–, SnCI4</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) Write the types of hydrogen bonding in P-nitrophenol and O-nitrophenol.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) Define the transpiration.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) What is haemoglobin?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Write the names of fat soluble and water soluble vitamins.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Define the compiler.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) What is blog?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) List the different stages of e-governance.</strong></span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) What value will replace the question mark in the following equation?</strong><br>
+<strong>9/2 + 19/6 + ? + 7/3 = 67/5</strong><br>
+</span>Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) If the cost price is 96% of the selling price, then what is the profit percentage?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Evaluate : 28% of 450 + 45% of 280.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.16) NPCDCS is abbreviated form of</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.17) The causative agent of Dengue fever is</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.18) Ayushman Bharat Yojana is the part of</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.19) What was the theme of National Science Day 2022?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.20) What is represented by gold color in biotechnology?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.21) Write names of five generations of launch vehicles developed by ISRO.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.22) How is electric energy obtained from oceanic energy?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.23) What do you mean by energy management?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.24) How does energy conservation helps in energy strategies?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.25) Write the full forms of the following: (i) IUCN (ii) UNEP</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.26) Explain the term sustainable development.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.27) What is nuclear energy?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.28) On what basis outer core of the earth is assumed to be liquid?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.29) What is an ‘Arkose’?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.30) What is an ‘Ore’?</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  Describe the phenomenon of Looming.  (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)  Explain the concept of anti-sound.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)  Define nuclear fission. Why fission reaction produces large amount of energy?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4) Define Hund's rule of maximum multiplicity and tell the minimum number of electrons for pairing in p, d and f orbitals.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)  Comment on AIDS briefly.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)  Comment on different stages of mitosis cell division.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)  Explain about first generation of computers.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)   What is social media and its importance? Give any two suitable examples.</strong> (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9) A book was sold for `27.50 with a profit of 10%. If it were sold for ` 25.75, then what would have been the percentage of profit or loss?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)  A bag contains 50 p, 25 p and 10p coins in the ratio 5 : 9 : 4, amounting to ` 206. Find the number of coins of each type.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.11)  Define communicable diseases and comment on types of immunity.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.12) Write short note on Rashtriya Bal Svasthya Karyakram (RBSK) and its aims and objectives.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.13) What do you understand by soft and hard artificial intelligence in using artificial intelligence?</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.14) Describe briefly the work responsibilities done by National Remote Sensing Centre, Hyderabad.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.15) What is the principle of working of solar cell?</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.16)  Differentiate between conventional and non-conventional sources of energy.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.17)  Describe in brief about photochemical smog.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.18) Write in short about ecosystem services and their valuation.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.19) What is the difference between weathering and erosion?</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.20) Define term &quot;mineral&quot;.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) Compare in detail the properties of ferromagnetic, paramagnetic and diamagnetic materials.   (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2) What is VSEPR theory? Discuss the shapes of CH4, NH3 and H2O molecules on the basis of this theory.</strong> (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3) What is immune system? Give its components. Describe innate immunity in detail.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4) Explain the uses and applications of Microsoft Office Software.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5) The ages of 50 women who have committed suicide is given below. Find out the average age of the women from it.<br>
+Age of women in years: 15-20 20-25 25-30 30-35 35-40 40-45 45-50 50-55 55-60 60-65<br>
+No- of women :                 8        10       8        6        4        7        3        2        2        0<br>
+N = 50</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.6)  Give short comments on Ayush, AIDS and Covid-19.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.7)  Analyze the social dimensions of India Space Programmes.  (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.8) Discuss key socio-political factors influencing National Energy Policy.</strong>  (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.9)  Describe in detail about the major threats of biodiversity loss.</strong>  (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.10) Describe the factors affecting soil formation.</strong>   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<h1 id="2021">2021</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/2021Mains_GS-III.pdf' href='https://www.drishtiias.com/images/pdf/2021Mains_GS-III.pdf'>https://www.drishtiias.com/images/pdf/2021Mains_GS-III.pdf</a></p>
+<h3 id="3m-20w-8"><strong>3M 20W</strong></h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) A wave of wavelength 0.6 cm is produced in air and it travels at a speed of 300 ms1. Will it be audible?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) Define Curie temperature.</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Why steel is used for making permanent magnets?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) What is a Chemical Bond?</strong></span></strong></strong>      <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Write chemical formula of bleaching powder.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What is Galvanisation ?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7)  Define the cell.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) What are main components of food?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) What are the main functions of root hair in plants?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) What is done in phishing or e-mail spoofing?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) What is the usual format of e-mail address?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Android, Fedora, Windows and iOS are names of what?</strong></span></strong></strong> <br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) Write the equation x = 2y in the form ax+ by + c = 0, and find out the values of a, b and c.</strong></span> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14)  Multiply 7√5 by 3√5.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) What is the formula to find the class-mark of a class interval?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.16) Explain definition of Yoga.</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.17)  Write short note on World Health Organization.</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.18) Government of India has included which Traditional systems of health care in the Ministry of Ayush?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.19) Where is the Centre for Advanced Technology located? Who is the Scientist associated with this ?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.20) What is the main contribution of Scientist Prafulla Chandra Roy?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.21) When Remote sensing work started in India?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.22) As per the COP-26 conference, when India will achieve 'Net Zero' carbon emission target?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.23) Full form of 'TERI' is</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.24) What is 'Bio-fuel cell' ?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.25) Define the environmental ethics.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.26) Give the three names of Environmental Act.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.27) Describe the major environmental issues.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.28) Define Geology.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.29)  What is the maximum age of the Earth ?</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.30)  What is Index Fossil?</strong></span></strong></strong><br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  The mass of motor cyelist together with the motorcycle is 90 kg. Calculate the increase in Kinetic energy if the speed increases from 6.0 km/h to 12 km/h.   (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)  What are the three modes of heat transfer?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3) Write three differences between mixtures and compounds.</strong>    (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)  What is Activity Series ? Explain.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)  What is respiration ? What are the main respiratory organs in organisms ?</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6) Write a short note on testes of mammals.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)   What is the function of input and output devices of computer? Give two examples of each of the devices.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)  What are the benefits to citizens using &quot;Digilocker&quot;?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)  Shyam's father's age is 5 years more than three times Shyam's age. Shyam's father is 47 years old. Find Shyam's age.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)  Two players, Sita and Geeta, play a Table-tennis match. It is known that the probability of Sita winning the match is 0.59. What is the probability of Geeta winning the match?</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.11)  Write short note on Ayushman Bharat Programme of government of India.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.12)  Explain &quot;Family Planning&quot; programme of India.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.13)</strong>   What is cloning ?'Explain briefly.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.14)</strong>   Describe in brief the Geo-stationary satellite.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.15)  What are the main reasons behind energy crisis?</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.16) What are the factors affecting the nature of the wind while establishing the wind energy plant?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.17) Describe the concept of energy subsidy and give example of Natural Ecosystem.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.18) Describe the traditional water pollution control policy.</strong>   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.19)  What is Cataclastic metamorphism ?</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.20) Describe oil traps.</strong>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)  Define in detail about entropy.   (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2) Explain pH scale in detail.</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)  Describe the structure of thyroid gland, its hormone and related disorders.</strong> (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)  Why language translators are required in computers? What are the different types of translators in computing systems?</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5)  The digits of a two digit number differ by 3, if the digits are interchanged and the resulting number is added to the original number, we get 143. What can be the original number?</strong>  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.6) Explain National Immunization Schedule in table (chart) form.</strong>    (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.7)  Describe the uses of Biotechnology in the health sector.  (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.8) Write the hypothesis and objectives of &quot;Madhya Pradesh Renewable Energy Policу-2022&quot;.</strong>   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.9)  Describe the environmental education and awareness programmes in India.</strong>  (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.10)  Describe Primary Sedimentary structures in detail.</strong>  (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p> </p>
+<h1 id="2022">2022</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/Paper_GS_III_State_Service_Main_Exam_2022%20with%20cover.pdf' href='https://www.drishtiias.com/images/pdf/Paper_GS_III_State_Service_Main_Exam_2022%20with%20cover.pdf'>https://www.drishtiias.com/images/pdf/Paper_GS_III_State_Service_Main_Exam_2022 with cover.pdf</a></p>
+<h3 id="3m-20w-9">3M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) &quot;Energy has the same unit as that of work.&quot; Is this sentence true or false?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) What is the speed of light in vacuum? Is it different for different medias?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) What is the S.I. unit of electric current?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Give examples of chemical change.</strong></span></strong></strong>      <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Why is morphine sometimes referred to as opiates?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What will be the maximum number of electrons in M-shell. (orbit)?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) Most of the bacterial cell walls are made up of which substance?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) Define fermentation.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) What does 'S' indicate in 70S and SOS .ribosomes?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) What is hybrid computer?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Differentiate between Internet and World Wide Web (WWW).</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Which portal provides a single window access to the information and services provided by the Indian Government for citizens and other stakeholders?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) What is the probability of getting an even number in a • single throw of a dice?</strong></span>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) How many prime numbers are there between zero and twenty?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Find the compound ratio of 3 : 5, 5 : 7 and 7:9.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.16) What is the full form of DOTS?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.17) What is Ashtanga Yoga?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.18) Write a short note on UNICEF.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.19) In which subject did Har Gobind Khorana receive Nobel Prize?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.20) Give the names of Lander and Rover of Chandrayaan-3.</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.21) What is Artificial Intelligence?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.22) What is a Tiot spring'?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.23) What do you mean by conventional source of energy?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.24) When was Jawaharlal Nehru National Solar Energy Mission (JNNSM) started?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.25) What is Biomagnification?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.26) What is Montreal Protocol?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.27) What is e-waste?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.28) What is the composition of upper continental crust?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.29) Define igneous rock.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.30) Define an aquifer.</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  Describe the uses of a convex mirror.   (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong> A ruler drops under free fall. The distance travelled by this ruler is 21 cm. Estimate, the reaction time in seconds.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong> Why is NH3 a Lewis base and BF3 a Lewis acid? Explain.    (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong> Write the uses of bleaching powder.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong>  Write a note on 'endosperm' of plant.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong>  What is health and hygiene? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)</strong> What is the primary memory of a computer?    (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong>   What are machine independent languages? How is a code written in such languages executed by a computer? (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)</strong>  Aman's age is 15 years more than three times of Ravi's age. If Aman's age-is 60 years, find Ravi's age.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)</strong>  The population of a city increases by 10% annually. If its present population is 20000, find the population of the city after 2 (two) years.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.11)</strong> Write a short note on National AYUSH Mission (NAM).    (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.12)</strong> Briefly describe Pulse Polio vaccination.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.13)</strong>  Describe briefly 'TIFR'.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.14)</strong>  Give the names of 'Rashtriya Vigyan Puraskar' awarded by the Government of India.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.15)</strong>  Write a short note on &quot;Municipal solid waste can help to reduce energy purchase&quot;.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.16)</strong> Write a short note on 'UN-Energy Plan of Action, 2025'.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.17)</strong> Write a short note on Environmental Ethics.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.18)</strong>  What are sacred groves? What is their role in conservation?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.19)</strong> Describe greywacke sandstone.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.20)</strong> Write a note on the distribution of iron ores.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)  What is energy? Describe its different forms. Discuss renewable energy in detail.   (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong> Explain the postulates of Bohr's model for hydrogen atom.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong>  Discuss about the natural plant growth regulators in detail. (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)</strong>  Why does a Government use social media?  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5)</strong> Find the mode for the following frequency distribution :<br>
+Class interval 25-30 30-35 35-40 40-45 45-50 50-55<br>
+Frequency         20      53      42      42      38      36<br>
+(11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.6)</strong> Describe Naturopathy in detail.    (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.7)  What is remote sensing? Give its classification based on scope. What are the ranges of remote sensing application?  (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.8)</strong> Give an account of India's Nuclear Energy Programme.   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.9)</strong>  What is meant by biodiversity conservation? What efforts have been made at the National level in this regard?  (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.10)</strong>  Explain briefly the theories of the origin of the Earth.  (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p> </p>
+<h1 id="2023">2023</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20Exam_2023-III.pdf' href='https://www.drishtiias.com/images/pdf/MPPCS%20Mains%20Exam_2023-III.pdf'>https://www.drishtiias.com/images/pdf/MPPCS Mains Exam_2023-III.pdf</a></p>
+<h3 id="3m-20w-10">3M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) What is the difference between the mass and weight of an object?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) What is the audible frequency range for human ear? Is it same for children under the age of five years?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Which phenomenon is used in optical fibre?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Write the name of the series of spectral lines for atomic hydrogen.</strong></span></strong></strong>      <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Write the conjugated acids for the following Bronsted bases: NH₂⁻, NH₃ and HCOO⁻</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What is modern periodic law?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) What are the two main components of a typical virus?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) What do you mean by plasmolysis?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Who had formulated the cell theory?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) How to add footnote in a MS Word document?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) How is assembly language different from machine language?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) What is OMR? Why is it used?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) By selling a chair for ₹1564, a shopkeeper suffers a loss of 15%. Find the cost price of the chair.</strong></span>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) For any data, Median is 25 and Mode is 24, then find the Mean.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) If the numbers 2, x, x, 8 are in proportion, then find x.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.16) Write the names of any three communicable diseases.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.17) What are the parts of Ashtanga Yoga?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.18) What is the main aim of immunization programme?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.19) What is the purpose of Shanti Swarup Bhatnagar Award?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.20) What is the objective of Defence Research and Development Organisation?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.21) What is robotics?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.22) What is used for producing Biodiesel?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.23) When do spring tides occur?</strong></span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.24) What is the full form of IREDA&quot;?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.25) When was the Environmental Protection Act implemented in India?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.26) What is the full form of WCED?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.27) What do you understand by Eutrophication?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.28) Define mineral.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.29) What is chemical weathering?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.30) What is hydrosphere?</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  Explain the concept of Inertia.   (5M50W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong>  Describe the cartesian sign convention used in ray optics.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong>  Explain the octet rule of Kossel and Lewis.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong>  What is Aqua-regia? Write its uses.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong> Write a note on Pituitary gland.    (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong> Write a note on cell cycle.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)</strong>  What is Cache Memory?   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong>  What is the main difference between E-Government and E-Governance?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)</strong>  Find the largest three digit number, which will be completely divisible by number 8, 10 and 12.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)</strong>  Calculate the arithmetic mean of the following data :<br>
+Weekly wages   11-13 13-15 15-17 17-19 19-21 21-23 23-25<br>
+</span><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">Number of Labour 3      4         5         6       5         4        3<br>
+<br class="jop-noMdConv"/>  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.11)</strong> Write in brief, the main objectives of National Ayush Mission.    (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.12)</strong>   Write a short note on Panchakarma Chikitsa. (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.13)</strong> What is Artificial Intelligence? How does a machine acquires Artificial Intelligence?    (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.14)</strong> What are the main objectives of Vikram Sarabhai Space Centre (VSSC)?    (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.15)</strong> What is aquatic biomass? What are its advantages?    (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.16)</strong> How is electricity generated from geothermal energy?  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.17)</strong> Write down about the main uses of green belts.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.18)</strong> Comment on Environmental Education Programmes.   (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.19)</strong>  Write a note on the three different layers of the Earth.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.20)</strong> Write a note on granite.  (5M50W)</span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1)  Discuss the practical applications of heating effect of electric current.   (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong> What do you understand by saponification? Why does soap not work in hard water? Explain.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong> Describe the process of digestion of food in human.  (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4)</strong> What is a web page? List the features of a good website.   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5)</strong> A, B and C try to hit a target. A can hit the target 3 times in 5 shots, B, 2 times in 5 shots and C, 3 times in 4 shots. Find the probability of the following events :<br>
+(a) Any two of them hit<br>
+(b) At least two of them hit   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.6)</strong>  Describe in detail, the important health related welfare schemes of Madhya Pradesh Government.   (11M200W)</span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.7) Give a detailed account of the Indian Space Research Organisation.   (11M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.8)</strong> What is energy audit? Why is it needed?   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.9)</strong> Write an essay on Environmental Impact Assessment (EIA).   (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.10)</strong>  Define weathering and write a detailed note on the causes of physical weathering.  (11M200W)</span></strong></strong> <br>
+Ans</p>
+<p> </p>
+<h1 id="2024">2024</h1>
+<p><a data-from-md title='https://www.drishtiias.com/images/pdf/Paper_GS_III_Mains_Exam_2024.pdf' href='https://www.drishtiias.com/images/pdf/Paper_GS_III_Mains_Exam_2024.pdf'>https://www.drishtiias.com/images/pdf/Paper_GS_III_Mains_Exam_2024.pdf</a></p>
+<h2 id="section-a-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - A</strong></span></h2>
+<h3 id="2m-20w">2M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) What is cross domestic product deflator?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) What are the three sub-sectors to calculate the index of industrial production?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) On which four pillars is &quot;Make in India&quot; based?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) What is meant by Hawkish monetary policy stance?</strong></span></strong></strong>      <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) What has been India's share in export and import of goods and services in world trade in the year 2022?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) What is meant by Special Drawing Rights?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) Write the objective of Madhya Pradesh State Millet Mission.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) Write the names of six Special Economic Zones of Madhya Pradesh.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) Write the names of two sectors which contribute the most to the secondary sector in Madhya Pradesh in the year 2023-24.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) Write the objective of “Gaon Ki Beti Yojana” run in Madhya Pradesh.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) Write the main objective of “Devaranya Yojana”.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Which three schemes have been approved by the Council of Ministers of Madhya Pradesh to provide self-employment opportunities to the youth of ST category of Madhya Pradesh?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) What is the difference between 'Schedule' and 'Questionnaire'?</strong></span>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) What is histogram?</strong></span></strong></strong>          <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) What is bivariate frequency table?</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1)  Explain Purchasing Manager Index (PMI).   (7M60W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong> Write the main functions of NABARD.   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong>   What is meant by revenue deficit and effective revenue deficit?  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong>  What is multi-dimensional poverty index? Explain its dimension and indicators.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong> Write the important activities of Madhya Pradesh Trade Promotion Council.   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6)</strong> Write the schemes adopted for the development of MSME in Madhya Pradesh.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)</strong> Explain the contribution of revenue tax to GSDP of Madhya Pradesh between the years 2019-20 to 2022-23.   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong>  How &quot;Mukhyamantri Ladli Bahana Yojana&quot; proving helpful in the direction of women empowerment and economic self-reliance in Madhya Pradesh?  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)</strong>  Distinguish between exclusive and inclusive class intervals.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)</strong> Mention the general rules for constructing statistical diagrams.   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) Explain the different concepts of National Income.     (10M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong> Explain the features, challenges and main provisions of the Model Contract Farming Act in India.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M200W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2)</strong> Explain the National Food Security Act, 2013, while explaining the food security, management and public distribution system. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M200W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Explain the causes, concepts and various methods of measurement of unemployment in India.</strong></span>    <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3) Describe the major schemes and programs run for fisheries development in the State of Madhya Pradesh.</strong>    <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M200W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) What policy efforts is the Madhya Pradesh Government making to increase tourism facilities?</strong></span>     <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4) Throw light in detail on the major schemes run by the Madhya Pradesh Building and Other Construction Workers Welfare Board.</strong>    (10M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Explain the progress of Government schemes and programmes conducted for the development of forestry and allied sector in Madhya Pradesh.</strong></span>    <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5) What is sampling and what are its objectives? Describe the various methods of selecting samples.</strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M200W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Explain with examples addition and multiplication theorems of probability.</strong></span>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M200W)</strong></span></strong></strong><br>
+Ans</p>
+<h2 id="section-b-4"><span style="color: rgb(191, 237, 210);" class="jop-noMdConv"><strong>Section - B</strong></span></h2>
+<h3 id="2m-20w-2">2M 20W</h3>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.1) What is cell division?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.2) How does thyroxine regulate metabolism in the body?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.3) Write a short note on the contribution of Aryabhatta in astronomy.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.4) Why is Java a platform independent language?</strong></span></strong></strong>      <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.5) Define the cloud computing.</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.6) An item marked at ₹ 840 is sold for ₹ 714. What is the discount and discount %?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.7) What is the meaning of the word 'Sowa-Rigpa'?</strong></span></strong></strong>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.8) What is the definition of Ritu Sandhi?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.9) What is the basic principle of homoeopathy medicine?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.10) What is the difference between immunization and vaccination?</strong></span></strong></strong>    <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.11) What is the main objective of the Universal Immunization Programme?</strong></span></strong></strong>  <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.12) Name four parasites causing Malaria disease.</strong></span></strong></strong>  <br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.13) Define Dystrophic lakes.</strong></span>   <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.14) Define biochemical oxygen demand.</strong></span></strong></strong>       <br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(1.15) Define integrated crop management.</strong></span></strong></strong>  <br>
+Ans</p>
+<p>+++++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.1) Give the classification of plants growth regulators.    (7M60W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.2)</strong> What is patent?   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.3)</strong>  Why is secondary memory needed in a computer?   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.4)</strong> A hemisphere dome of a building needs to be painted. If the circumference of the base of the dome is 17.6 m, then find the cost of painting it, given the cost of painting is 5 per 100 cm2.   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.5)</strong>  What is the Gyan Mudra described in Yoga?  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.6) Write a short note on 'Annaprashana Samskara'.</strong>   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.7)</strong>  Write the symptoms of Dengue.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.8)</strong>  What are the services provided by Ayush Health and Wellness Centres (HWC)?  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.9)</strong>  Write a short note on different ecological pyramids.  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(2.10)</strong>  What are the different values associated with biodiversity?  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(7M60W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p> </p>
+<p> </p>
+<p>++++</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.1) What is ethnobiology? Highlight its interdisciplinary nature.    (10M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR)</strong>  Write about biotechnological applications in medicine. <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M200W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.2) What are social networking sites? Mention the important safety precautions that should be taken care of during the use of social networking sites.</strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M200W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) What is the need of software in a computer system? Discuss types of system softwares in detail.</strong></span>    <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.3)</strong> Describe the 'One Nation One Health System/Policy, 2030' in detail.   <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M200W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Write an article on the topic 'Human Resources for Health' as per National Health Policy, 2017.</strong></span>     <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.4) What are the salient features of NACP-V and Sampoorna Suraksha Kendra (SSK) as per National AIDS Control Organization? How is NACP-V build upon the game changer initiative of HIV/AIDS Prevention and Control Act, 2017?</strong>    (10M200W)</span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) Write the objectives of AYUSH Services under National AYUSH Mission (NAM), Ministry of AYUSH.</strong></span>    <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M200W)</strong></span></strong></strong><br>
+Ans</p>
+<p><strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(3.5) Explain various components of ecosystem.</strong>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M200W)</strong></span></strong></strong></span></strong></strong><br>
+Ans</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(OR) What is water softening? Explain its different methods.</strong></span>  <strong><strong><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>(10M200W)</strong></span></strong></strong><br>
+Ans</p>
+</div></div>
+					</body>
+				</html>
+			
