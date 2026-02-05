@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /**
 Neon Pink: #FF007F
 Vivid Red: #F90D1B
@@ -27,19 +27,19 @@ Synthwave Purple — #FF00FF
 Plasma Blue — #2979FF
 Matrix Lime — #C6FF00
 **/
-*{
+* {
     margin: 0;
     padding: 0;
-  }
+}
 body {
-background-color: #000!important;
+    background-color: #000 !important;
 }
 .my-app {
-display: flex;
-flex-direction: column;
-list-style: none;
-margin: 0;
-padding: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
 }
 .my-app li {
     margin: 16px 0;
@@ -53,71 +53,92 @@ padding: 20px;
     text-decoration: none;
 }
 .my-app li:nth-child(odd) a {
-  color:#FDE005;
+    color: #fde005;
 }
 .my-app li:nth-child(even) a {
-  color:#00CF35;
+    color: #00cf35;
 }
 pre code.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 1em
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
 }
 code.hljs {
-  padding: 3px 5px
+    padding: 3px 5px;
 }
 ::-webkit-scrollbar-track {
-      border: none;
-      background: rgba(255, 255, 255, 0.1)!important; 
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #aaa!important; 
-    }
-    ::-webkit-scrollbar-track:hover {
-      background: rgba(255, 255, 255, 0.1)!important; 
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #fff!important; 
-    }
-    p,   ul, table,li,ol {
-      color: #fff ;
-    }
-    .exported-note-title {
-        color: #ff0!important;
-    }
-    h1,h2,h3,h4,h5,h6,table th {
-      font-family: "Montserrat", sans-serif;
-      letter-spacing: 1px;
-       font-weight: 700;
-    }
-     ol,ul,li,p,table tr, table td {
-      font-family: "Lato", sans-serif;
-       letter-spacing: 0.5px;
-        font-weight: 400;
-    }
-    ol li strong {
-  color: #ff6bd8;
+    border: none;
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+::-webkit-scrollbar-thumb {
+    background: #aaa !important;
+}
+::-webkit-scrollbar-track:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #fff !important;
+}
+p,
+ul,
+table,
+li,
+ol {
+    color: #fff;
+}
+.exported-note-title {
+    color: #ff0 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table th {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+ol,
+ul,
+li,
+p,
+table tr,
+table td {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+ol li strong {
+    color: #ff6bd8;
 }
 p strong {
-  color:#C6FF00;
+    color: #c6ff00;
 }
-h1, h1 strong {
-color:#FFF700;
+h1,
+h1 strong {
+    color: #fff700;
 }
-h2, h2 strong {
-  color:#21FC0D;
+h2,
+h2 strong {
+    color: #21fc0d;
 }
-h3, h3 strong {
-  color:#00ced1;
+h3,
+h3 strong {
+    color: #ff8f00;
 }
-h4, h4 strong {
-  color:#1DE9B6;
+h4,
+h4 strong {
+    color: #1de9b6;
 }
-h5, h5 strong {
-  color:#FF5252;
+h5,
+h5 strong {
+    color: #ff5252;
 }
-h6, h6 strong {
-  color:#FF00FF;
+h6,
+h6 strong {
+    color: #ff00ff;
 }
 /*
 Atom One Light by Daniel Gamage
@@ -136,35 +157,35 @@ hue-6:   #986801
 hue-6-2: #c18401
 */
 .hljs {
-  color: #383a42;
-  background: #fafafa
+    color: #383a42;
+    background: #fafafa;
 }
 .hljs-comment,
 .hljs-quote {
-  color: #a0a1a7;
-  font-style: italic
+    color: #a0a1a7;
+    font-style: italic;
 }
 .hljs-doctag,
 .hljs-keyword,
 .hljs-formula {
-  color: #a626a4
+    color: #a626a4;
 }
 .hljs-section,
 .hljs-name,
 .hljs-selector-tag,
 .hljs-deletion,
 .hljs-subst {
-  color: #e45649
+    color: #e45649;
 }
 .hljs-literal {
-  color: #0184bb
+    color: #0184bb;
 }
 .hljs-string,
 .hljs-regexp,
 .hljs-addition,
 .hljs-attribute,
 .hljs-meta .hljs-string {
-  color: #50a14f
+    color: #50a14f;
 }
 .hljs-attr,
 .hljs-variable,
@@ -174,7 +195,7 @@ hue-6-2: #c18401
 .hljs-selector-attr,
 .hljs-selector-pseudo,
 .hljs-number {
-  color: #986801
+    color: #986801;
 }
 .hljs-symbol,
 .hljs-bullet,
@@ -182,49 +203,55 @@ hue-6-2: #c18401
 .hljs-meta,
 .hljs-selector-id,
 .hljs-title {
-  color: #4078f2
+    color: #4078f2;
 }
 .hljs-built_in,
 .hljs-title.class_,
 .hljs-class .hljs-title {
-  color: #c18401
+    color: #c18401;
 }
 .hljs-emphasis {
-  font-style: italic
+    font-style: italic;
 }
 .hljs-strong {
-  font-weight: bold
+    font-weight: bold;
 }
 .hljs-link {
-  text-decoration: underline
+    text-decoration: underline;
 }
-b, strong {
-  font-weight: 700!important;
+b,
+strong {
+    font-weight: 700 !important;
 }
 p a {
-  color:#6ca0ff!important;
+    color: #6ca0ff !important;
 }
-.jop-tinymce table, table {
-    text-align: left!important;
-    border-collapse: collapse!important;
-    border: 1px solid rgb(220, 220, 220)!important;
-    background-color: #313131!important;
+.jop-tinymce table,
+table {
+    text-align: left !important;
+    border-collapse: collapse !important;
+    border: 1px solid rgb(220, 220, 220) !important;
+    background-color: #313131 !important;
 }
-.jop-tinymce table th, table th {
-    border: 1px solid rgb(220, 220, 220)!important;
-    border-bottom: 2px solid rgb(220, 220, 220)!important;
-    background-color: rgb(3 3 3)!important;
+.jop-tinymce table th,
+table th {
+    border: 1px solid rgb(220, 220, 220) !important;
+    border-bottom: 2px solid rgb(220, 220, 220) !important;
+    background-color: rgb(3 3 3) !important;
 }
-.jop-tinymce table td, .jop-tinymce table th, table td, th {
-    text-align: left!important;
-    padding: .5em 1em .5em 1em!important;
-    font-size: 15px!important;
-    color: #c8c8c8!important; 
+.jop-tinymce table td,
+.jop-tinymce table th,
+table td,
+th {
+    text-align: left !important;
+    padding: 0.5em 1em 0.5em 1em !important;
+    font-size: 15px !important;
+    color: #c8c8c8 !important;
 }
-.jop-tinymce table tr:nth-child(even), 
+.jop-tinymce table tr:nth-child(even),
 table tr:nth-child(even) {
-    background-color: rgb(22 22 22)!important;
+    background-color: rgb(22 22 22) !important;
 }
 p strong span {
-color:  #C6FF00 !important;
+    color: #c6ff00 !important;
 }
