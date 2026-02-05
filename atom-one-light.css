@@ -112,27 +112,27 @@ table td {
 }
 h1,
 h1 strong {
-    color: #fff700;
+    color: #fff700!important;
 }
 h2,
 h2 strong {
-    color: #21fc0d;
+    color: #21fc0d!important;
 }
 h3,
 h3 strong {
-    color: #ff8f00;
+    color: #ff8f00!important;
 }
 h4,
 h4 strong {
-    color: #1de9b6;
+    color: #1de9b6!important;
 }
 h5,
 h5 strong {
-    color: #ff5252;
+    color: #ff5252!important;
 }
 h6,
 h6 strong {
-    color: #ff00ff;
+    color: #ff00ff!important;
 }
 /*
 Atom One Light by Daniel Gamage
