@@ -1,3 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/**
+Neon Pink: #FF007F
+Vivid Red: #F90D1B
+Bright Orange: #FF991C
+Lemon Yellow: #FFF700
+Electric Green: #21FC0D
+Bright Turquoise: #08E8DE
+Vivid Violet: #9D00FE
+Bright Blue: #0165FC 
+Neon Cyan — #00FFFF
+Electric Blue — #00BFFF
+Neon Green — #39FF14
+Lime Punch — #BFFF00
+Hot Pink — #FF2ED1
+Neon Purple — #B026FF
+Laser Red — #FF1744
+Aqua Glow — #00E5FF
+Mint Bright — #1DE9B6
+Sky Pop — #40C4FF
+Sun Yellow — #FFD600
+Coral Punch — #FF5252
+Bright Lavender — #E040FB
+Terminal Green — #00FF9C
+Cyber Teal — #00FFC6
+Synthwave Purple — #FF00FF
+Plasma Blue — #2979FF
+Matrix Lime — #C6FF00
+**/
+*{
+    margin: 0;
+    padding: 0;
+  }
+body {
+background-color: #000!important;
+}
+.my-app {
+display: flex;
+flex-direction: column;
+list-style: none;
+margin: 0;
+padding: 20px;
+}
+.my-app li {
+    margin: 16px 0;
+    text-align: center;
+}
+.my-app li a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.my-app li:nth-child(odd) a {
+  color:#FDE005;
+}
+.my-app li:nth-child(even) a {
+  color:#00CF35;
+}
 pre code.hljs {
   display: block;
   overflow-x: auto;
@@ -5,9 +65,6 @@ pre code.hljs {
 }
 code.hljs {
   padding: 3px 5px
-}
-body {
-  background-color: #000!important;
 }
 ::-webkit-scrollbar-track {
       border: none;
@@ -22,12 +79,46 @@ body {
     ::-webkit-scrollbar-thumb:hover {
       background: #fff!important; 
     }
-    p, h1, h2, h3, h4, h5, h6, ul, table,li,ol {
-      color: #fff!important;
+    p,   ul, table,li,ol {
+      color: #fff ;
     }
     .exported-note-title {
         color: #ff0!important;
     }
+    h1,h2,h3,h4,h5,h6,table th {
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 1px;
+       font-weight: 700;
+    }
+     ol,ul,li,p,table tr, table td {
+      font-family: "Lato", sans-serif;
+       letter-spacing: 0.5px;
+        font-weight: 400;
+    }
+    ol li strong {
+  color: #ff6bd8;
+}
+p strong {
+  color:#C6FF00;
+}
+h1, h1 strong {
+color:#FFF700;
+}
+h2, h2 strong {
+  color:#21FC0D;
+}
+h3, h3 strong {
+  color:#00ced1;
+}
+h4, h4 strong {
+  color:#1DE9B6;
+}
+h5, h5 strong {
+  color:#FF5252;
+}
+h6, h6 strong {
+  color:#FF00FF;
+}
 /*
 Atom One Light by Daniel Gamage
 Original One Light Syntax theme from https://github.com/atom/one-light-syntax
@@ -107,6 +198,33 @@ hue-6-2: #c18401
 .hljs-link {
   text-decoration: underline
 }
-ol li strong {
-  color: #ff6a9d;
+b, strong {
+  font-weight: 700!important;
+}
+p a {
+  color:#6ca0ff!important;
+}
+.jop-tinymce table, table {
+    text-align: left!important;
+    border-collapse: collapse!important;
+    border: 1px solid rgb(220, 220, 220)!important;
+    background-color: #313131!important;
+}
+.jop-tinymce table th, table th {
+    border: 1px solid rgb(220, 220, 220)!important;
+    border-bottom: 2px solid rgb(220, 220, 220)!important;
+    background-color: rgb(3 3 3)!important;
+}
+.jop-tinymce table td, .jop-tinymce table th, table td, th {
+    text-align: left!important;
+    padding: .5em 1em .5em 1em!important;
+    font-size: 15px!important;
+    color: #c8c8c8!important; 
+}
+.jop-tinymce table tr:nth-child(even), 
+table tr:nth-child(even) {
+    background-color: rgb(22 22 22)!important;
+}
+p strong span {
+color:  #C6FF00 !important;
 }
