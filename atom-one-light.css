@@ -111,26 +111,32 @@ table td {
     font-weight: 400;
 }
 h1,
+h1 span,
 h1 strong {
     color: #fff700!important;
 }
 h2,
+h2 span,
 h2 strong {
-    color: #21fc0d!important;
+    color: #bcff00!important;
 }
 h3,
+h3 span,
 h3 strong {
     color: #ff8f00!important;
 }
 h4,
+h4 span,
 h4 strong {
     color: #1de9b6!important;
 }
 h5,
+h5 span,
 h5 strong {
     color: #ff5252!important;
 }
 h6,
+h6 span,
 h6 strong {
     color: #ff00ff!important;
 }
