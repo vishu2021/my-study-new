@@ -87,7 +87,7 @@ ol {
     color: #fff;
 }
 .exported-note-title {
-    color: #ff0 !important;
+    color: #ff2424!important;
 }
 h1,
 h2,
@@ -258,4 +258,12 @@ p strong {
 }
 ol li strong {
     color: #ff6bd8!important;
+}
+.jop-tinymce table tr, 
+table tr {
+transition: all ease 0.4s;    
+}
+.jop-tinymce table tr:hover, 
+table tr:hover {
+    background-color: #002a08!important;
 }
