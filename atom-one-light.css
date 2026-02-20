@@ -267,3 +267,14 @@ transition: all ease 0.4s;
 table tr:hover {
     background-color: #002a08!important;
 }
+.pt_qb_2 p {
+font-weight: bold!important;
+    color: #00ff35!important;
+}
+.pt_qb_2 blockquote { 
+opacity: 1!important;
+}
+.pt_qb_2 blockquote p {
+    font-weight: normal!important;
+    color: #fff!important;
+}
