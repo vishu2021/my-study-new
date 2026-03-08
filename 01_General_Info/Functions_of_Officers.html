@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,16 +9,146 @@
 <link rel="icon" type="image/ico" sizes="64x64" href="https://demo.one3d.in/emailer-images/heart-india.png">
 <link rel="shortcut icon" href="https://demo.one3d.in/emailer-images/heart-india.png">
 <link rel="stylesheet" href="../atom-one-light.css">
+						<style>.jsdraw--editButton {
+  display: none;
+  width: min-content;
+  max-height: 50px;
+  z-index: 1;
+  opacity: 0.9;
+  align-self: flex-end;
+  justify-self: right;
+}
+
+.jsdraw--svgWrapper {
+  display: inline-grid;
+}
+
+.jsdraw--svgWrapper > * {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.jsdraw--svgWrapper:hover .jsdraw--editButton,
+.jsdraw--svgWrapper:focus .jsdraw--editButton,
+.jsdraw--svgWrapper:focus-within .jsdraw--editButton,
+.jsdraw--editButton:focus {
+  display: block;
+}</style><script>(()=>{"use strict";var t={167:(t,e)=>{Object.defineProperty(e,"__esModule",{value:!0}),e.default=t=>{const e=t.querySelector("img");if(!e)return void console.warn("Freehand drawing plugin: No image found in container.");if(t.classList.contains("js-draw--editable"))return;t.classList.add("js-draw--editable");const n=t.getAttribute("data-js-draw-edit-label"),o=t.getAttribute("data-js-draw-content-script-id"),s=()=>{const t=e.src;webviewApi.postMessage(o,t).catch((e=>{console.error("Error posting message!",e,"\nMessage: ",t)}))},r=document.body.classList.contains("mce-content-body")||"tinymce"===document.body.id,d="undefined"!=typeof webviewApi;r?e.style.cursor="pointer":d&&(()=>{const e=document.createElement("button");e.textContent=`${n} 🖊️`,e.classList.add("jsdraw--editButton"),t.appendChild(e),e.onclick=()=>{s()}})(),e.ondblclick=s}}},e={};function n(o){var s=e[o];if(void 0!==s)return s.exports;var r=e[o]={exports:{}};return t[o](r,r.exports,n),r.exports}(()=>{const t=n(167),e=()=>{const e=document.querySelectorAll("*[data-js-draw-content-script-id]");for(const n of e)(0,t.default)(n)};document.addEventListener("joplin-noteDidUpdate",(()=>{e()})),e()})()})();</script></script><style>pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+}
+
+code.hljs {
+  padding: 3px 5px;
+}
+
+/*
+
+Atom One Light by Daniel Gamage
+Original One Light Syntax theme from https://github.com/atom/one-light-syntax
+
+base:    #fafafa
+mono-1:  #383a42
+mono-2:  #686b77
+mono-3:  #a0a1a7
+hue-1:   #0184bb
+hue-2:   #4078f2
+hue-3:   #a626a4
+hue-4:   #50a14f
+hue-5:   #e45649
+hue-5-2: #c91243
+hue-6:   #986801
+hue-6-2: #c18401
+
+*/
+
+.hljs {
+  color: #383a42;
+  background: #fafafa;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #a0a1a7;
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: #a626a4;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e45649;
+}
+
+.hljs-literal {
+  color: #0184bb;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta .hljs-string {
+  color: #50a14f;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #986801;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: #4078f2;
+}
+
+.hljs-built_in,
+.hljs-title.class_,
+.hljs-class .hljs-title {
+  color: #c18401;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}</style>
 						<title>Functions_of_Officers</title>
 					</head>
 					<body>
 						<div class="exported-note"><div class="exported-note-title">Functions_of_Officers</div>
+
 <style>
 		/* https://necolas.github.io/normalize.css/ */
 		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
 		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
 		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
+
 		body {
 			font-size: 15px;
 			color: #32373F;
@@ -35,9 +166,11 @@
 			border-radius: 3px;
 			background-color: rgb(243, 243, 243);
 		}
+
 		:root {
 			--scrollbar-size: 7px;
 		}
+
 		::-webkit-scrollbar {
 			width: var(--scrollbar-size);
 			height: var(--scrollbar-size);
@@ -60,7 +193,11 @@
 		::-webkit-scrollbar-thumb:hover {
 			background: rgba(50, 55, 63, 0.63); 
 		}
+
+		
+
 		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
+
 		#rendered-md > h1:first-child,
 		#rendered-md > h2:first-child,
 		#rendered-md > h3:first-child,
@@ -74,18 +211,22 @@
 			margin-top: 0;
 			padding-top: 0;
 		}
+		
 		p, h1, h2, h3, h4, h5, h6, ul, table {
 			margin-top: .6em;
 			margin-bottom: 1.35em;
+
 			/*
 				Adds support for RTL text in the note body. It automatically detects the direction using the content.
 				Issue: https://github.com/laurent22/joplin/issues/3991
 			*/
 			unicode-bidi: plaintext;
 		}
+
 		h1, h2, h3, h4, h5, h6, ul, table {
 			margin-bottom: 0.65em;
 		}
+
 		h1, h2, h3, h4, h5, h6 {
 			line-height: 1.5em;
 		}
@@ -108,6 +249,7 @@
 			font-size: 1em;
 			font-weight: bold;
 		}
+
 		.exported-note-title {
 			font-size: 2em;
 			font-weight: bold;
@@ -116,6 +258,7 @@
 			padding-bottom: .35em;
 			border-bottom: 1px solid #dddddd;
 		}
+
 		a {
 			color: #155BDA;
 		}
@@ -130,14 +273,17 @@
 			margin-top: 0.2em;
 			margin-bottom: 0;
 		}
+
 		dt {
 			font-weight: bold;
 			margin-bottom: 0.25em;
 		}
+
 		dd {
 			margin-inline-start: 2.5em;
 			margin-bottom: 0.5em;
 		}
+
 		.resource-icon {
 			display: inline-block;
 			position: relative;
@@ -212,6 +358,7 @@
 			margin-left: 0;
 			opacity: 0.7;
 		}
+
 		.jop-tinymce table,
 		table {
 			text-align: left;
@@ -219,6 +366,7 @@
 			border: 1px solid rgb(220, 220, 220);
 			background-color: #ffffff;
 		}
+
 		.jop-tinymce table td, .jop-tinymce table th,
 		table td, th {
 			text-align: left;
@@ -227,24 +375,29 @@
 			color: #32373F;
 			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
 		}
+
 		.jop-tinymce table td,
 		table td {
 			border: 1px solid rgb(220, 220, 220);
 		}
+
 		.jop-tinymce table th,
 		table th {
 			border: 1px solid rgb(220, 220, 220);
 			border-bottom: 2px solid rgb(220, 220, 220);
 			background-color: rgb(247, 247, 247);
 		}
+
 		.jop-tinymce table tr:nth-child(even),
 		table tr:nth-child(even) {
 			background-color: rgb(247, 247, 247);
 		}
+
 		.jop-tinymce table tr:hover,
 		table tr:hover {
 			background-color: #e5e5e5;
 		}
+
 		hr {
 			border: none;
 			border-bottom: 2px solid #dddddd;
@@ -253,6 +406,7 @@
 			max-width: 100%;
 			height: auto;
 		}
+		
 		.inline-code,
 		.mce-content-body code {
 			border: 1px solid rgb(220, 220, 220);
@@ -263,10 +417,13 @@
 			color: rgb(0,0,0);
 			font-size: .9em;
 		}
+
 		.highlighted-keyword {
 			background-color: #F3B717;
 			color: black;
 		}
+
+		
 	.not-loaded-resource img {
 		width: 1.15em;
 		height: 1.15em;
@@ -275,60 +432,77 @@
 		border-radius: 2px;
 		box-shadow: 0 1px 3px #000000aa;
 	}
+
 	a.not-loaded-resource img {
 		margin-right: .2em;
 	}
+
 	a.not-loaded-resource {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 	}
+
+
 		.md-checkbox input[type=checkbox]:checked {
 			opacity: 0.7;
 		}
+
 		.jop-tinymce ul.joplin-checklist .checked,
 		.md-checkbox .checkbox-label-checked {
 			opacity: 0.5;
 		}
+
 		.exported-note {
 			padding: 1em;
 		}
+
 		.joplin-editable .joplin-source {
 			display: none;
 		}
+
 		mark {
 			background: #F7D26E;
 			color: black;
 		}
+
 		/* =============================================== */
 		/* For TinyMCE */
 		/* =============================================== */
+
 		.mce-content-body {
 			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
 			padding: 5px 10px 10em 0;
 		}
+
 		/*
 		.mce-content-body code {
 			background-color: transparent;
 		}
 		*/
+
 		.mce-content-body [data-mce-selected=inline-boundary] {
 			background-color: transparent;
 		}
+
 		.mce-content-body .joplin-editable {
 			cursor: pointer !important;
 		}
+
 		.mce-content-body.mce-content-readonly {
 			opacity: 0.5;
 		}
+
 		/* We need that to make sure click events have the A has a target */
 		.katex a span {
 			pointer-events: none;
 		}
+
 		.media-player {
 			width: 100%;
 			margin-top: 10px;
 		}
+
 		.media-player.media-pdf {
 			min-height: 35rem;
 			width: 100%;
@@ -337,6 +511,7 @@
 			border: 0;
 			display: block;
 		}
+
 		/* Clear the CODE style if the element is within a joplin-editable block */
 		.mce-content-body .joplin-editable code {
 			border: none;
@@ -345,28 +520,35 @@
 			color: inherit;
 			font-size: inherit;
 		}
+
 		/* To make code blocks horizontally scrollable */
 		/* https://github.com/laurent22/joplin/issues/5740 */
 		pre.hljs {
 			overflow-x: auto;
 		}
+
 		.joplin-table-wrapper{
 			overflow-x: auto;
 			overflow-y: hidden;
 		}
+
 		/* =============================================== */
 		/* For TinyMCE */
 		/* =============================================== */
+
 		@media print {
 			body {
 				height: auto !important;
 			}
+
 			pre {
 				white-space: pre-wrap;
 			}
+
 			.code, .inline-code {
 				border: 1px solid #CBCBCB;
 			}
+
 			#joplin-container-content {
 				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
 				   around various issues related to scrolling. However when printing we don't want this
@@ -375,27 +557,35 @@
 				height: auto !important;
 			}
 		}
+	
+
 				/*
 					FOR THE MARKDOWN EDITOR
 				*/
+
 				/* Remove the indentation from the checkboxes at the root of the document
 				   (otherwise they are too far right), but keep it for their children to allow
 				   nested lists. Make sure this value matches the UL margin. */
+
 				li.md-checkbox {
 					list-style-type: none;
 				}
+
 				li.md-checkbox input[type=checkbox] {
 					margin-left: -1.71em;
 					margin-right: 0.7em;
 					position: relative;
 					top: 1px;
 				}
+				
 				ul.joplin-checklist {
 					list-style:none;
 				}
+
 				/*
 					FOR THE RICH TEXT EDITOR
 				*/
+
 				ul.joplin-checklist li::before {
 					content:"\f14a";
 					font-family:"Font Awesome 5 Free";
@@ -408,6 +598,7 @@
 					position: absolute;
 					color: #32373F;
 				}
+
 				.joplin-checklist li:not(.checked)::before {
 					content:"\f0c8";
 				}
@@ -428,7 +619,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 				}</style><div id="rendered-md"><h2 id="functions-of-officers-civil-servants-in-india"><span style="color: rgb(45, 194, 107);" class="jop-noMdConv">Functions of Officers (Civil Servants) in India</span></h2>
 <ol>
 <li>
-<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Framing Policies</strong></span><br>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Framing Policies</strong></span><br/>
 Civil servants play a key role in policy formulation. They collect data, analyse problems, prepare reports, and draft policy proposals that form the basis of government decisions.</p>
 <p><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Posts involved:</strong></span></p>
 <ul>
@@ -451,7 +642,7 @@ Civil servants play a key role in policy formulation. They collect data, analyse
 <p>📌 <em>They draft policy notes, cabinet papers, rules, and long-term plans.</em></p>
 </li>
 <li>
-<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Advising Ministers</strong></span><br>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Advising Ministers</strong></span><br/>
 Officers advise ministers on administrative, technical, financial, and legal matters. Since ministers may change but civil servants remain permanent, their expertise ensures continuity and informed decision-making.</p>
 <p><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Posts involved:</strong></span></p>
 <ul>
@@ -471,7 +662,7 @@ Officers advise ministers on administrative, technical, financial, and legal mat
 <p>📌 <em>They provide administrative, legal, financial, and technical advice to ministers.</em></p>
 </li>
 <li>
-<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Maintaining Law and Order</strong></span><br>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Maintaining Law and Order</strong></span><br/>
 Civil servants, especially those in the police and district administration, are responsible for maintaining peace, public safety, and law and order in their jurisdictions.</p>
 <p><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Posts involved:</strong></span></p>
 <ul>
@@ -494,7 +685,7 @@ Civil servants, especially those in the police and district administration, are 
 <p>📌 <em>These officers are responsible for public order, security, and crisis management.</em></p>
 </li>
 <li>
-<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Implementing Government Policies</strong></span><br>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Implementing Government Policies</strong></span><br/>
 They supervise and ensure the proper implementation of policies and programs of both the <strong>State Government</strong> and the <strong>Central Government</strong>, translating decisions into action at the ground level.</p>
 <p><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Posts involved:</strong></span></p>
 <ul>
@@ -517,7 +708,7 @@ They supervise and ensure the proper implementation of policies and programs of 
 <p>📌 <em>They translate policies into action at the grassroots level.</em></p>
 </li>
 <li>
-<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Revenue Collection and Judicial Functions</strong></span><br>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Revenue Collection and Judicial Functions</strong></span><br/>
 Officers collect land revenue, taxes, and other government dues. Many also function as courts in revenue matters, settling disputes related to land and revenue administration.</p>
 <p><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Posts involved:</strong></span></p>
 <ul>
@@ -525,7 +716,7 @@ Officers collect land revenue, taxes, and other government dues. Many also funct
 <p>District Collector</p>
 </li>
 <li>
-<p>Additional District Magistrate (ADM – Revenue)</p>
+<p>Additional District Magistrate (ADM &ndash; Revenue)</p>
 </li>
 <li>
 <p>Sub-Divisional Magistrate (SDM)</p>
@@ -540,8 +731,8 @@ Officers collect land revenue, taxes, and other government dues. Many also funct
 <p>📌 <em>They collect land revenue, decide land disputes, and act as revenue courts.</em></p>
 </li>
 <li>
-<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Supervising Public Expenditure</strong></span><br>
-Civil servants ensure that public funds are spent according to rules of financial propriety—meaning money is used economically, efficiently, and only for approved purposes.</p>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Supervising Public Expenditure</strong></span><br/>
+Civil servants ensure that public funds are spent according to rules of financial propriety&mdash;meaning money is used economically, efficiently, and only for approved purposes.</p>
 <p><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Posts involved:</strong></span></p>
 <ul>
 <li>
@@ -563,7 +754,7 @@ Civil servants ensure that public funds are spent according to rules of financia
 <p>📌 <em>They ensure public money is spent according to financial rules and propriety.</em></p>
 </li>
 <li>
-<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Day-to-Day Administration</strong></span><br>
+<p><span style="color: rgb(241, 196, 15);" class="jop-noMdConv"><strong>Day-to-Day Administration</strong></span><br/>
 They handle the daily affairs of government departments, including drafting rules, coordinating between departments, and implementing policies in consultation with the concerned minister.</p>
 <p><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Posts involved:</strong></span></p>
 <ul>
@@ -583,24 +774,24 @@ They handle the daily affairs of government departments, including drafting rule
 <p>Municipal Commissioners / CEOs of local bodies</p>
 </li>
 </ul>
-<p>📌 *They manage routine administration, coordination, and departmental functioning.<br>
+<p>📌 *They manage routine administration, coordination, and departmental functioning.<br/>
 <br class="jop-noMdConv"/></p>
 </li>
 </ol>
-<p> </p>
+<p>&nbsp;</p>
 <ul>
-<li><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Policy → Secretary / Joint Secretary</strong></span></li>
-<li><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Law &amp; Order → DM / SP</strong></span></li>
-<li><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Revenue → Collector / Tehsildar</strong></span></li>
-<li><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Finance → Finance Secretary / DDO</strong></span></li>
-<li><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Implementation → Collector / BDO</strong></span></li>
+<li><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Policy &rarr; Secretary / Joint Secretary</strong></span></li>
+<li><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Law &amp; Order &rarr; DM / SP</strong></span></li>
+<li><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Revenue &rarr; Collector / Tehsildar</strong></span></li>
+<li><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Finance &rarr; Finance Secretary / DDO</strong></span></li>
+<li><span style="color: rgb(236, 202, 250);" class="jop-noMdConv"><strong>Implementation &rarr; Collector / BDO</strong></span></li>
 </ul>
-<p> </p>
-<p> </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <h1 id="key-master-framework-memory-exams-mindset">🔑 MASTER FRAMEWORK: MEMORY + EXAMS + MINDSET</h1>
-<hr>
+<hr/>
 <h2 id="one-memory-learning-what-actually-works">1️⃣ MEMORY &amp; LEARNING (WHAT ACTUALLY WORKS)</h2>
-<p><strong>Golden Rule:</strong><br>
+<p><strong>Golden Rule:</strong><br/>
 👉 <em>Understanding + Revision + Recall beats tricks.</em></p>
 <h3 id="core-techniques">Core Techniques</h3>
 <ul>
@@ -608,7 +799,7 @@ They handle the daily affairs of government departments, including drafting rule
 <p><strong>Understand first</strong> (never memorize blindly)</p>
 </li>
 <li>
-<p><strong>Active recall</strong> (close book → write/speak)</p>
+<p><strong>Active recall</strong> (close book &rarr; write/speak)</p>
 </li>
 <li>
 <p><strong>Spaced revision</strong></p>
@@ -625,7 +816,7 @@ They handle the daily affairs of government departments, including drafting rule
 </ul>
 </li>
 <li>
-<p><strong>Teach someone (real or imaginary)</strong> → best retention</p>
+<p><strong>Teach someone (real or imaginary)</strong> &rarr; best retention</p>
 </li>
 <li>
 <p><strong>Say it loud / write it out</strong></p>
@@ -655,15 +846,15 @@ They handle the daily affairs of government departments, including drafting rule
 <p>Passive reading</p>
 </li>
 </ul>
-<hr>
+<hr/>
 <h2 id="two-study-system-how-to-study-daily">2️⃣ STUDY SYSTEM (HOW TO STUDY DAILY)</h2>
 <h3 id="daily-rules">Daily Rules</h3>
 <ul>
 <li>
-<p><strong>6–8 hours focused study is enough</strong></p>
+<p><strong>6&ndash;8 hours focused study is enough</strong></p>
 </li>
 <li>
-<p><strong>Pomodoro (25–50 min + breaks)</strong></p>
+<p><strong>Pomodoro (25&ndash;50 min + breaks)</strong></p>
 </li>
 <li>
 <p><strong>Switch subjects</strong> to avoid fatigue</p>
@@ -690,7 +881,7 @@ They handle the daily affairs of government departments, including drafting rule
 <p>Quality &gt; quantity</p>
 </li>
 </ul>
-<hr>
+<hr/>
 <h2 id="three-exam-strategy-upsc-any-competitive-exam">3️⃣ EXAM STRATEGY (UPSC / ANY COMPETITIVE EXAM)</h2>
 <h3 id="what-to-study">What to Study</h3>
 <ul>
@@ -698,7 +889,7 @@ They handle the daily affairs of government departments, including drafting rule
 <p><strong>Syllabus = Bible</strong></p>
 </li>
 <li>
-<p><strong>PYQs (5–10 years) = Direction</strong></p>
+<p><strong>PYQs (5&ndash;10 years) = Direction</strong></p>
 </li>
 <li>
 <p><strong>Limited booklist</strong></p>
@@ -713,7 +904,7 @@ They handle the daily affairs of government departments, including drafting rule
 <p>❌ Multiple exams together</p>
 </li>
 <li>
-<p>❌ Treat first attempt as “trial”</p>
+<p>❌ Treat first attempt as &ldquo;trial&rdquo;</p>
 </li>
 <li>
 <p>❌ 5-year plans</p>
@@ -737,7 +928,7 @@ They handle the daily affairs of government departments, including drafting rule
 <p>Be <strong>generalist</strong>, not specialist</p>
 </li>
 </ul>
-<hr>
+<hr/>
 <h2 id="four-topper-mindset-non-negotiable">4️⃣ TOPPER MINDSET (NON-NEGOTIABLE)</h2>
 <h3 id="mental-rules">Mental Rules</h3>
 <ul>
@@ -766,7 +957,7 @@ They handle the daily affairs of government departments, including drafting rule
 <h3 id="personal-standards">Personal Standards</h3>
 <ul>
 <li>
-<p>Don’t lower your bar</p>
+<p>Don&rsquo;t lower your bar</p>
 </li>
 <li>
 <p>Be realistic, not dreamy</p>
@@ -781,9 +972,9 @@ They handle the daily affairs of government departments, including drafting rule
 <p>Say NO to unnecessary social commitments</p>
 </li>
 </ul>
-<hr>
-<h2 id="five-internal-state-external-result">5️⃣ INTERNAL STATE → EXTERNAL RESULT</h2>
-<p><strong>Key Law:</strong><br>
+<hr/>
+<h2 id="five-internal-state-external-result">5️⃣ INTERNAL STATE &rarr; EXTERNAL RESULT</h2>
+<p><strong>Key Law:</strong><br/>
 👉 <em>Your life reflects your dominant thoughts.</em></p>
 <h3 id="internal-state-control">Internal State Control</h3>
 <ul>
@@ -794,7 +985,7 @@ They handle the daily affairs of government departments, including drafting rule
 <p>External events should NOT disturb inner discipline</p>
 </li>
 <li>
-<p>Time delay exists → stay patient</p>
+<p>Time delay exists &rarr; stay patient</p>
 </li>
 </ul>
 <h3 id="practical-exercise-30-min-daily">Practical Exercise (30 min daily)</h3>
@@ -815,7 +1006,7 @@ They handle the daily affairs of government departments, including drafting rule
 <p>Act like that person <strong>today</strong></p>
 </li>
 </ol>
-<hr>
+<hr/>
 <h2 id="six-subconscious-mind-only-what-matters">6️⃣ SUBCONSCIOUS MIND (ONLY WHAT MATTERS)</h2>
 <ul>
 <li>
@@ -845,7 +1036,7 @@ They handle the daily affairs of government departments, including drafting rule
 <p>Repetition = reprogramming</p>
 </li>
 </ul>
-<hr>
+<hr/>
 <h2 id="seven-why-civil-services-crisp-version">7️⃣ WHY CIVIL SERVICES (CRISP VERSION)</h2>
 <p><strong>Essence:</strong></p>
 <ul>
@@ -874,7 +1065,7 @@ They handle the daily affairs of government departments, including drafting rule
 <p>Work-life balance must be consciously built</p>
 </li>
 </ul>
-<hr>
+<hr/>
 <h2 id="eight-final-topper-checklist-white_check_mark">8️⃣ FINAL TOPPER CHECKLIST ✅</h2>
 <ul>
 <li>
@@ -905,12 +1096,12 @@ They handle the daily affairs of government departments, including drafting rule
 <p>No excuses</p>
 </li>
 </ul>
-<p> </p>
+<p>&nbsp;</p>
 <h3 id="brain-one-line-summary">🧠 ONE-LINE SUMMARY</h3>
 <blockquote>
 <p><strong>Clear thinking + disciplined action + right sources + repeated revision = selection</strong></p>
 </blockquote>
-<p> </p>
+<p>&nbsp;</p>
 <h3 id="core-philosophy-mindset-the-foundation"><strong>Core Philosophy &amp; Mindset (The Foundation)</strong></h3>
 <ol>
 <li>
@@ -944,14 +1135,14 @@ They handle the daily affairs of government departments, including drafting rule
 </ul>
 </li>
 </ol>
-<hr>
+<hr/>
 <h3 id="strategic-execution-the-plan"><strong>Strategic Execution (The Plan)</strong></h3>
 <h4 id="a-study-memory-excellence"><strong>A. Study &amp; Memory Excellence</strong></h4>
 <ol>
 <li>
 <p><strong>Active Recall &gt; Passive Reading:</strong></p>
 <ul>
-<li>Use <strong>instant revision</strong> (within 24 hours), <strong>teaching others</strong> (or an imaginary student), and <strong>self-quizzing</strong>.</li>
+<li>Use&nbsp;<strong>instant revision</strong> (within 24 hours), <strong>teaching others</strong> (or an imaginary student), and <strong>self-quizzing</strong>.</li>
 </ul>
 </li>
 <li>
@@ -963,13 +1154,13 @@ They handle the daily affairs of government departments, including drafting rule
 <li>
 <p><strong>Smart Memorization:</strong></p>
 <ul>
-<li>Use <strong>mnemonics</strong>, <strong>chunking</strong> (grouping information), and the <strong>Memory Palace</strong> technique for lists/facts.</li>
+<li>Use&nbsp;<strong>mnemonics</strong>, <strong>chunking</strong> (grouping information), and the <strong>Memory Palace</strong> technique for lists/facts.</li>
 </ul>
 </li>
 <li>
 <p><strong>Verification &amp; Focus:</strong></p>
 <ul>
-<li>Never learn incorrect information. Verify from authentic sources. <strong>Be a good listener</strong> and reader to capture details correctly.</li>
+<li>Never learn incorrect information. Verify from authentic sources.&nbsp;<strong>Be a good listener</strong> and reader to capture details correctly.</li>
 </ul>
 </li>
 </ol>
@@ -978,25 +1169,25 @@ They handle the daily affairs of government departments, including drafting rule
 <li>
 <p><strong>PyQs are the Bible:</strong></p>
 <ul>
-<li>Analyze <strong>Past Year Questions (5-10 years)</strong>. Always <strong>&quot;think like an examiner&quot;</strong> to identify important patterns and topics.</li>
+<li>Analyze&nbsp;<strong>Past Year Questions (5-10 years)</strong>. Always <strong>&quot;think like an examiner&quot;</strong> to identify important patterns and topics.</li>
 </ul>
 </li>
 <li>
 <p><strong>Right Resources:</strong></p>
 <ul>
-<li>Don't waste time on bad books/teachers. Have a <strong>concise booklist</strong>. Use quality sources like <strong>Yojana/Kurukshetra</strong> for relevant topics.</li>
+<li>Don&apos;t waste time on bad books/teachers. Have a&nbsp;<strong>concise booklist</strong>. Use quality sources like <strong>Yojana/Kurukshetra</strong> for relevant topics.</li>
 </ul>
 </li>
 <li>
 <p><strong>Revision is Non-Negotiable:</strong></p>
 <ul>
-<li>Follow a spaced system: <strong>1st Rev → within 24 hrs, 2nd Rev → 1 week, 3rd Rev → 1 month.</strong></li>
+<li>Follow a spaced system:&nbsp;<strong>1st Rev &rarr; within 24 hrs, 2nd Rev &rarr; 1 week, 3rd Rev &rarr; 1 month.</strong></li>
 </ul>
 </li>
 <li>
 <p><strong>Syllabus &amp; Mock Tests:</strong></p>
 <ul>
-<li>Know the syllabus inside out. Use <strong>mock tests</strong> to simulate exam pressure, not your &quot;first attempt.&quot;</li>
+<li>Know the syllabus inside out. Use&nbsp;<strong>mock tests</strong> to simulate exam pressure, not your &quot;first attempt.&quot;</li>
 </ul>
 </li>
 </ol>
@@ -1011,7 +1202,7 @@ They handle the daily affairs of government departments, including drafting rule
 <li>
 <p><strong>Schedule Variety:</strong></p>
 <ul>
-<li>Study <strong>different subjects</strong> in a day to avoid saturation. Include breaks for <strong>mild exercise</strong> — it’s crucial for mental clarity.</li>
+<li>Study&nbsp;<strong>different subjects</strong> in a day to avoid saturation. Include breaks for <strong>mild exercise</strong> &mdash; it&rsquo;s crucial for mental clarity.</li>
 </ul>
 </li>
 <li>
@@ -1023,17 +1214,17 @@ They handle the daily affairs of government departments, including drafting rule
 <li>
 <p><strong>Monk Mode for Peaks:</strong></p>
 <ul>
-<li>During intense preparation phases, be like a monk—simplify social life and prioritize your mission.</li>
+<li>During intense preparation phases, be like a monk&mdash;simplify social life and prioritize your mission.</li>
 </ul>
 </li>
 </ol>
-<hr>
+<hr/>
 <h3 id="critical-mindset-shifts-to-avoid-pitfalls"><strong>Critical Mindset Shifts to Avoid Pitfalls</strong></h3>
 <ol>
 <li>
 <p><strong>No Long-Term Complacency:</strong></p>
 <ul>
-<li>Plan to clear the exam in <strong>1-2 years</strong>, not 5. Treat every attempt as your last.</li>
+<li>Plan to clear the exam in&nbsp;<strong>1-2 years</strong>, not 5. Treat every attempt as your last.</li>
 </ul>
 </li>
 <li>
@@ -1051,7 +1242,7 @@ They handle the daily affairs of government departments, including drafting rule
 <li>
 <p><strong>Realism Over Daydreaming:</strong></p>
 <ul>
-<li>Supplement <strong>hard work and smart work</strong> with tricks. Tricks alone won't suffice.</li>
+<li>Supplement&nbsp;<strong>hard work and smart work</strong> with tricks. Tricks alone won&apos;t suffice.</li>
 </ul>
 </li>
 <li>
@@ -1067,7 +1258,7 @@ They handle the daily affairs of government departments, including drafting rule
 </ul>
 </li>
 </ol>
-<hr>
+<hr/>
 <h3 id="understanding-the-goal-for-civil-services-aspirants"><strong>Understanding The Goal (For Civil Services Aspirants)</strong></h3>
 <ul>
 <li>
@@ -1088,7 +1279,7 @@ They handle the daily affairs of government departments, including drafting rule
 <li>
 <p><strong>Core Responsibility:</strong></p>
 <ul>
-<li>It's <strong>service and administration</strong> — implementing policy, ensuring justice, and managing crises for public welfare.</li>
+<li>It&apos;s&nbsp;<strong>service and administration</strong> &mdash; implementing policy, ensuring justice, and managing crises for public welfare.</li>
 </ul>
 </li>
 </ul>
@@ -1103,42 +1294,42 @@ They handle the daily affairs of government departments, including drafting rule
 <p>Frame it as a desire to <strong>solve systemic problems at scale</strong>, influenced by personal experiences that revealed the gap between policy and implementation.</p>
 </li>
 <li>
-<p>It's about effective action, not just intention.</p>
+<p>It&apos;s about effective action, not just intention.</p>
 </li>
 </ul>
 </li>
 </ul>
-<hr>
+<hr/>
 <h3 id="recommended-tools-resources-curated"><strong>Recommended Tools &amp; Resources (Curated)</strong></h3>
 <ol>
 <li>
 <p><strong>Mind Mapping:</strong></p>
 <ul>
-<li>Use tools like <strong>Text2MindMap</strong> or <strong><a data-from-md title='https://iasexpress.net/' href='https://iasexpress.net/'>iasexpress.net</a></strong> for synopsis and visual notes.</li>
+<li>Use tools like&nbsp;<strong>Text2MindMap</strong> or <strong><a data-from-md="" title="https://iasexpress.net/" href="https://iasexpress.net/">iasexpress.net</a></strong> for synopsis and visual notes.</li>
 </ul>
 </li>
 <li>
 <p><strong>Previous Year Questions:</strong></p>
 <ul>
-<li>Use <strong>NextIAS</strong> for subject-wise or <strong>Mrunal</strong> for topic-wise PYQs.</li>
+<li>Use&nbsp;<strong>NextIAS</strong> for subject-wise or <strong>Mrunal</strong> for topic-wise PYQs.</li>
 </ul>
 </li>
 <li>
 <p><strong>Current Affairs:</strong></p>
 <ul>
-<li>For national/international news analysis, follow structured news channels like <strong>Firstpost</strong>.</li>
+<li>For national/international news analysis, follow structured news channels like&nbsp;<strong>Firstpost</strong>.</li>
 </ul>
 </li>
 <li>
 <p><strong>Topper Insights:</strong></p>
 <ul>
-<li>Refer to <strong>&quot;Toppers Study Hacks&quot;</strong> for proven strategies.</li>
+<li>Refer to&nbsp;<strong>&quot;Toppers Study Hacks&quot;</strong> for proven strategies.</li>
 </ul>
 </li>
 <li>
 <p><strong>Maps:</strong></p>
 <ul>
-<li>Use <strong>MapsofIndia</strong> and <strong>WorldAtlas</strong>.</li>
+<li>Use&nbsp;<strong>MapsofIndia</strong> and <strong>WorldAtlas</strong>.</li>
 </ul>
 </li>
 </ol>
@@ -1151,7 +1342,7 @@ They handle the daily affairs of government departments, including drafting rule
 </ul>
 </li>
 <li>
-<p><strong>It's Powered by Repetition &amp; Emotion:</strong></p>
+<p><strong>It&apos;s Powered by Repetition &amp; Emotion:</strong></p>
 <ul>
 <li>Consistent emotional repetition (via visualization, affirmations) programs it.</li>
 </ul>
@@ -1166,7 +1357,7 @@ They handle the daily affairs of government departments, including drafting rule
 <p><strong>The Takeaway:</strong></p>
 <ul>
 <li>
-<p>Consistently <strong>visualize your success</strong> and embody the <strong>feelings of your future achieved goal</strong>.</p>
+<p>Consistently&nbsp;<strong>visualize your success</strong> and embody the <strong>feelings of your future achieved goal</strong>.</p>
 </li>
 <li>
 <p>Your subconscious will work to align your actions and opportunities with that internal state.</p>
@@ -1177,15 +1368,15 @@ They handle the daily affairs of government departments, including drafting rule
 <p><strong>Final Synthesis:</strong></p>
 <ol>
 <li>Success is a <strong>marathon of daily sprints</strong>.</li>
-<li>Combine an <strong>unshakeable mindset</strong> with a <strong>sharp, exam-focused strategy</strong>.</li>
+<li>Combine an&nbsp;<strong>unshakeable mindset</strong> with a <strong>sharp, exam-focused strategy</strong>.</li>
 <li>Work deeply, rest adequately, revise relentlessly, and let a strong personal &quot;why&quot; pull you through the challenges.</li>
 </ol>
-<p> </p>
+<p>&nbsp;</p>
 <h1 id="how-to-develop-officer-like-qualities-during-preparation-of-upsc-cse-that-will-eventually-help-me-in-preparation-in-career-as-civil-servant-and-in-personal-life">How to Develop Officer Like Qualities during preparation of UPSC CSE that will eventually help me in Preparation, in Career as Civil Servant and in Personal Life ?</h1>
-<p>Love this question. 🌟<br>
-If you prepare for UPSC only to “clear the exam,” you’ll get tired.<br>
+<p>Love this question. 🌟<br/>
+If you prepare for UPSC only to &ldquo;clear the exam,&rdquo; you&rsquo;ll get tired.<br/>
 If you prepare to <em>become the kind of person who deserves to be a civil servant</em>, everything changes.</p>
-<p>Let’s break this into officer-like qualities you can consciously build <strong>during preparation</strong>—so they help you in:</p>
+<p>Let&rsquo;s break this into officer-like qualities you can consciously build <strong>during preparation</strong>&mdash;so they help you in:</p>
 <ul>
 <li>
 <p>📝 UPSC exam</p>
@@ -1197,7 +1388,7 @@ If you prepare to <em>become the kind of person who deserves to be a civil serva
 <p>🧠 Personal life</p>
 </li>
 </ul>
-<hr>
+<hr/>
 <h2 id="one-integrity-inner-honesty">1️⃣ Integrity (Inner Honesty)</h2>
 <p><strong>What it means:</strong> Doing the right thing even when no one is watching.</p>
 <p><strong>During UPSC Prep:</strong></p>
@@ -1218,17 +1409,17 @@ If you prepare to <em>become the kind of person who deserves to be a civil serva
 <p><strong>How to build it:</strong></p>
 <ul>
 <li>
-<p>Maintain a daily “truth journal”: What did I promise? Did I follow through?</p>
+<p>Maintain a daily &ldquo;truth journal&rdquo;: What did I promise? Did I follow through?</p>
 </li>
 <li>
 <p>Reflect weekly: Where did I avoid responsibility?</p>
 </li>
 </ul>
-<p><strong>Why it matters later:</strong><br>
+<p><strong>Why it matters later:</strong><br/>
 Integrity builds <em>moral authority</em>. And administration without moral authority collapses.</p>
-<hr>
+<hr/>
 <h2 id="two-discipline-consistency-not-motivation">2️⃣ Discipline &amp; Consistency (Not Motivation)</h2>
-<p><strong>What it means:</strong> Showing up daily, even when you don’t feel like it.</p>
+<p><strong>What it means:</strong> Showing up daily, even when you don&rsquo;t feel like it.</p>
 <p><strong>During Prep:</strong></p>
 <ul>
 <li>
@@ -1238,7 +1429,7 @@ Integrity builds <em>moral authority</em>. And administration without moral auth
 <p>Planned study blocks.</p>
 </li>
 <li>
-<p>Regular answer writing practice (even when you don’t feel “ready”).</p>
+<p>Regular answer writing practice (even when you don&rsquo;t feel &ldquo;ready&rdquo;).</p>
 </li>
 </ul>
 <p><strong>How to build it:</strong></p>
@@ -1253,8 +1444,8 @@ Integrity builds <em>moral authority</em>. And administration without moral auth
 <p>Practice delayed gratification (e.g., no social media before study).</p>
 </li>
 </ul>
-<p><strong>UPSC secret:</strong> The exam is not cracked by brilliance. It’s cracked by <em>boring consistency</em>.</p>
-<hr>
+<p><strong>UPSC secret:</strong> The exam is not cracked by brilliance. It&rsquo;s cracked by <em>boring consistency</em>.</p>
+<hr/>
 <h2 id="three-emotional-stability">3️⃣ Emotional Stability</h2>
 <p>Civil servants face:</p>
 <ul>
@@ -1268,7 +1459,7 @@ Integrity builds <em>moral authority</em>. And administration without moral auth
 <p>Crisis situations</p>
 </li>
 </ul>
-<p>If you can’t handle anxiety during prelims, how will you handle a flood crisis?</p>
+<p>If you can&rsquo;t handle anxiety during prelims, how will you handle a flood crisis?</p>
 <p><strong>During Prep:</strong></p>
 <ul>
 <li>
@@ -1284,7 +1475,7 @@ Integrity builds <em>moral authority</em>. And administration without moral auth
 <p><strong>How to build it:</strong></p>
 <ul>
 <li>
-<p>Daily 10–15 minutes meditation.</p>
+<p>Daily 10&ndash;15 minutes meditation.</p>
 </li>
 <li>
 <p>Exercise regularly.</p>
@@ -1294,7 +1485,7 @@ Integrity builds <em>moral authority</em>. And administration without moral auth
 </li>
 </ul>
 <p>Emotional regulation = power.</p>
-<hr>
+<hr/>
 <h2 id="four-decision-making-ability">4️⃣ Decision-Making Ability</h2>
 <p>UPSC Mains + Interview test this heavily.</p>
 <p><strong>Build it like this:</strong></p>
@@ -1329,7 +1520,7 @@ Integrity builds <em>moral authority</em>. And administration without moral auth
 </li>
 </ul>
 <p>Overthinking is the enemy of officers.</p>
-<hr>
+<hr/>
 <h2 id="five-clarity-of-thought-communication">5️⃣ Clarity of Thought &amp; Communication</h2>
 <p>A good officer:</p>
 <ul>
@@ -1355,10 +1546,10 @@ Integrity builds <em>moral authority</em>. And administration without moral auth
 <p>Teach someone what you studied.</p>
 </li>
 </ul>
-<p>UPSC doesn’t reward knowledge. It rewards <strong>structured expression of knowledge</strong>.</p>
-<hr>
+<p>UPSC doesn&rsquo;t reward knowledge. It rewards <strong>structured expression of knowledge</strong>.</p>
+<hr/>
 <h2 id="six-empathy-social-sensitivity">6️⃣ Empathy &amp; Social Sensitivity</h2>
-<p>You’re preparing to serve people—not manage files.</p>
+<p>You&rsquo;re preparing to serve people&mdash;not manage files.</p>
 <p><strong>During Prep:</strong></p>
 <ul>
 <li>
@@ -1385,16 +1576,16 @@ Integrity builds <em>moral authority</em>. And administration without moral auth
 </ul>
 </li>
 </ul>
-<p><strong>Practical exercise:</strong><br>
+<p><strong>Practical exercise:</strong><br/>
 When reading news, ask:</p>
 <blockquote>
-<p>“How does this policy affect the poorest person?”</p>
+<p>&ldquo;How does this policy affect the poorest person?&rdquo;</p>
 </blockquote>
 <p>Empathy is not softness. It is strategic governance.</p>
-<hr>
+<hr/>
 <h2 id="seven-leadership-initiative">7️⃣ Leadership &amp; Initiative</h2>
-<p>Leadership is not about authority.<br>
-It’s about ownership.</p>
+<p>Leadership is not about authority.<br/>
+It&rsquo;s about ownership.</p>
 <p><strong>Start now:</strong></p>
 <ul>
 <li>
@@ -1410,8 +1601,8 @@ It’s about ownership.</p>
 <p>Take responsibility in family matters.</p>
 </li>
 </ul>
-<p>Officers don’t wait to be told.</p>
-<hr>
+<p>Officers don&rsquo;t wait to be told.</p>
+<hr/>
 <h2 id="eight-physical-mental-fitness">8️⃣ Physical &amp; Mental Fitness</h2>
 <p>Civil service is demanding. Field postings are not desk jobs.</p>
 <p><strong>Develop:</strong></p>
@@ -1430,7 +1621,7 @@ It’s about ownership.</p>
 </li>
 </ul>
 <p>A tired mind makes poor ethical decisions.</p>
-<hr>
+<hr/>
 <h2 id="nine-long-term-thinking">9️⃣ Long-Term Thinking</h2>
 <p>UPSC preparation itself teaches delayed gratification.</p>
 <p>Practice:</p>
@@ -1446,7 +1637,7 @@ It’s about ownership.</p>
 </li>
 </ul>
 <p>A civil servant must think beyond immediate headlines.</p>
-<hr>
+<hr/>
 <h1 id="daily-habit-framework-practical-system">Daily Habit Framework (Practical System)</h1>
 <p>If you want a simple routine to build officer-like personality:</p>
 <p><strong>Morning:</strong></p>
@@ -1487,17 +1678,17 @@ It’s about ownership.</p>
 </ul>
 </li>
 </ul>
-<hr>
+<hr/>
 <h1 id="the-real-mindset-shift">The Real Mindset Shift</h1>
-<p>Don’t ask:</p>
+<p>Don&rsquo;t ask:</p>
 <blockquote>
-<p>“Will I clear UPSC?”</p>
+<p>&ldquo;Will I clear UPSC?&rdquo;</p>
 </blockquote>
 <p>Ask:</p>
 <blockquote>
-<p>“Am I becoming someone capable of handling district responsibility?”</p>
+<p>&ldquo;Am I becoming someone capable of handling district responsibility?&rdquo;</p>
 </blockquote>
-<p>Even if UPSC doesn’t happen (and that’s a real possibility),<br>
+<p>Even if UPSC doesn&rsquo;t happen (and that&rsquo;s a real possibility),<br/>
 these qualities will make you:</p>
 <ul>
 <li>
@@ -1513,8 +1704,8 @@ these qualities will make you:</p>
 <p>A grounded human being</p>
 </li>
 </ul>
-<p>And honestly? That’s bigger than any exam.</p>
-<p>Here’s your <strong>clean, non-repetitive, well-structured 2-Year Plan (2026–2027)</strong> tailored to:</p>
+<p>And honestly? That&rsquo;s bigger than any exam.</p>
+<p>Here&rsquo;s your <strong>clean, non-repetitive, well-structured 2-Year Plan (2026&ndash;2027)</strong> tailored to:</p>
 <ul>
 <li>
 <p>29 years old</p>
@@ -1532,13 +1723,13 @@ these qualities will make you:</p>
 <p>2027 serious attempt</p>
 </li>
 </ul>
-<hr>
+<hr/>
 <h1 id="dart-overall-strategy">🎯 OVERALL STRATEGY</h1>
-<h2 id="2026-foundation-skill-building">2026 → Foundation + Skill Building</h2>
-<h2 id="2027-exam-execution-performance-mode">2027 → Exam Execution + Performance Mode</h2>
-<p>Not “prepare vs write.”<br>
-It’s <strong>build capacity → deliver performance</strong>.</p>
-<hr>
+<h2 id="2026-foundation-skill-building">2026 &rarr; Foundation + Skill Building</h2>
+<h2 id="2027-exam-execution-performance-mode">2027 &rarr; Exam Execution + Performance Mode</h2>
+<p>Not &ldquo;prepare vs write.&rdquo;<br/>
+It&rsquo;s <strong>build capacity &rarr; deliver performance</strong>.</p>
+<hr/>
 <h1 id="spiral_calendar_pad-2026-the-preparation-year">🗓 2026: THE PREPARATION YEAR</h1>
 <h2 id="dart-target-by-december-2026">🎯 Target by December 2026</h2>
 <p>You must have:</p>
@@ -1550,25 +1741,25 @@ It’s <strong>build capacity → deliver performance</strong>.</p>
 <p>✔ Sociology completed twice</p>
 </li>
 <li>
-<p>✔ 40–50 answers written</p>
+<p>✔ 40&ndash;50 answers written</p>
 </li>
 <li>
-<p>✔ 10–15 sectional tests</p>
+<p>✔ 10&ndash;15 sectional tests</p>
 </li>
 <li>
 <p>✔ Strong PYQ understanding</p>
 </li>
 <li>
-<p>✔ 2–3 essays written</p>
+<p>✔ 2&ndash;3 essays written</p>
 </li>
 <li>
 <p>✔ Current affairs consolidated</p>
 </li>
 </ul>
-<p>If this is achieved, 2027 becomes controlled — not chaotic.</p>
-<hr>
+<p>If this is achieved, 2027 becomes controlled &mdash; not chaotic.</p>
+<hr/>
 <h2 id="blue_book-subject-order-working-professional-friendly">📘 Subject Order (Working Professional Friendly)</h2>
-<h3 id="phase-1-janapril-2026">Phase 1 (Jan–April 2026)</h3>
+<h3 id="phase-1-janapril-2026">Phase 1 (Jan&ndash;April 2026)</h3>
 <ul>
 <li>
 <p>Polity</p>
@@ -1583,7 +1774,7 @@ It’s <strong>build capacity → deliver performance</strong>.</p>
 <p>Build newspaper habit</p>
 </li>
 </ul>
-<h3 id="phase-2-mayaugust-2026">Phase 2 (May–August 2026)</h3>
+<h3 id="phase-2-mayaugust-2026">Phase 2 (May&ndash;August 2026)</h3>
 <ul>
 <li>
 <p>Economy</p>
@@ -1601,7 +1792,7 @@ It’s <strong>build capacity → deliver performance</strong>.</p>
 <p>Increase to 4 answers per week</p>
 </li>
 </ul>
-<h3 id="phase-3-septdec-2026">Phase 3 (Sept–Dec 2026)</h3>
+<h3 id="phase-3-septdec-2026">Phase 3 (Sept&ndash;Dec 2026)</h3>
 <ul>
 <li>
 <p>Geography</p>
@@ -1622,9 +1813,9 @@ It’s <strong>build capacity → deliver performance</strong>.</p>
 <p>Full revision cycle 1</p>
 </li>
 </ul>
-<hr>
+<hr/>
 <h1 id="brain-sociology-optional-strategy-your-advantage">🧠 Sociology Optional Strategy (Your Advantage)</h1>
-<p>Since you’re a Sociology graduate:</p>
+<p>Since you&rsquo;re a Sociology graduate:</p>
 <h3 id="paper-1">Paper 1</h3>
 <ul>
 <li>
@@ -1634,7 +1825,7 @@ It’s <strong>build capacity → deliver performance</strong>.</p>
 <p>Clear definitions + conceptual clarity</p>
 </li>
 <li>
-<p>Short structured notes (100–120 pages max total)</p>
+<p>Short structured notes (100&ndash;120 pages max total)</p>
 </li>
 </ul>
 <h3 id="paper-2">Paper 2</h3>
@@ -1649,9 +1840,9 @@ It’s <strong>build capacity → deliver performance</strong>.</p>
 <p>Practice integrating thinkers in Indian context answers</p>
 </li>
 </ul>
-<p>Goal:<br>
+<p>Goal:<br/>
 By end of 2026, Sociology should feel like your strongest area.</p>
-<hr>
+<hr/>
 <h1 id="spiral_calendar_pad-weekly-study-template-with-full-time-job">🗓 Weekly Study Template (With Full-Time Job)</h1>
 <h3 id="weekdays">Weekdays</h3>
 <p>Morning (before work):</p>
@@ -1672,12 +1863,12 @@ By end of 2026, Sociology should feel like your strongest area.</p>
 <p>30 mins exercise</p>
 </li>
 </ul>
-<p>Total: ~2–2.5 hrs/day</p>
-<hr>
+<p>Total: ~2&ndash;2.5 hrs/day</p>
+<hr/>
 <h3 id="saturday">Saturday</h3>
 <ul>
 <li>
-<p>4–5 hrs focused study</p>
+<p>4&ndash;5 hrs focused study</p>
 </li>
 <li>
 <p>1 sectional test</p>
@@ -1686,7 +1877,7 @@ By end of 2026, Sociology should feel like your strongest area.</p>
 <p>Detailed analysis</p>
 </li>
 </ul>
-<hr>
+<hr/>
 <h3 id="sunday">Sunday</h3>
 <ul>
 <li>
@@ -1699,17 +1890,17 @@ By end of 2026, Sociology should feel like your strongest area.</p>
 <p>Light governance reading</p>
 </li>
 </ul>
-<p>Weekly total: ~16–18 hrs<br>
-Yearly total: ~800–900 quality hours</p>
-<hr>
+<p>Weekly total: ~16&ndash;18 hrs<br/>
+Yearly total: ~800&ndash;900 quality hours</p>
+<hr/>
 <h1 id="racing_car-2027-the-execution-year">🏎 2027: THE EXECUTION YEAR</h1>
-<h2 id="prelims-phase-janmay-2027">Prelims Phase (Jan–May 2027)</h2>
+<h2 id="prelims-phase-janmay-2027">Prelims Phase (Jan&ndash;May 2027)</h2>
 <ul>
 <li>
 <p>Weekly full-length mocks</p>
 </li>
 <li>
-<p>4–5 revision cycles</p>
+<p>4&ndash;5 revision cycles</p>
 </li>
 <li>
 <p>Daily MCQs</p>
@@ -1722,11 +1913,11 @@ Yearly total: ~800–900 quality hours</p>
 </li>
 </ul>
 <p>Enter Prelims calm. Not desperate.</p>
-<hr>
+<hr/>
 <h2 id="mains-phase">Mains Phase</h2>
 <ul>
 <li>
-<p>3–4 answers daily</p>
+<p>3&ndash;4 answers daily</p>
 </li>
 <li>
 <p>Essay every 2 weeks</p>
@@ -1742,7 +1933,7 @@ Yearly total: ~800–900 quality hours</p>
 </li>
 </ul>
 <p>Goal: Convert knowledge into performance.</p>
-<hr>
+<hr/>
 <h1 id="compass-officer-like-qualities-you-must-build-core-framework">🧭 Officer-Like Qualities You Must Build (Core Framework)</h1>
 <h2 id="one-integrity">1️⃣ Integrity</h2>
 <ul>
@@ -1805,20 +1996,20 @@ Yearly total: ~800–900 quality hours</p>
 <p>Administrative dimensions</p>
 </li>
 </ul>
-<hr>
+<hr/>
 <h1 id="briefcase-how-your-it-background-helps">💼 How Your IT Background Helps</h1>
 <ul>
 <li>
-<p>Analytical problem-solving → GS answers</p>
+<p>Analytical problem-solving &rarr; GS answers</p>
 </li>
 <li>
-<p>Structured documentation → Mains clarity</p>
+<p>Structured documentation &rarr; Mains clarity</p>
 </li>
 <li>
-<p>Financial stability → Mental calm</p>
+<p>Financial stability &rarr; Mental calm</p>
 </li>
 <li>
-<p>Professional maturity → Interview advantage</p>
+<p>Professional maturity &rarr; Interview advantage</p>
 </li>
 </ul>
 <p>Use job as leadership training ground:</p>
@@ -1834,15 +2025,15 @@ Yearly total: ~800–900 quality hours</p>
 </li>
 </ul>
 <p>Do NOT compromise work performance.</p>
-<hr>
+<hr/>
 <h1 id="warning-biggest-risk-in-your-plan">⚠️ Biggest Risk in Your Plan</h1>
-<p>Since exam feels “far” in 2026:</p>
+<p>Since exam feels &ldquo;far&rdquo; in 2026:</p>
 <p>Risk = reduced urgency.</p>
-<p>Solution:<br>
-Every 3 months in 2026, behave like:<br>
-“Prelims is 6 months away.”</p>
+<p>Solution:<br/>
+Every 3 months in 2026, behave like:<br/>
+&ldquo;Prelims is 6 months away.&rdquo;</p>
 <p>Create artificial intensity.</p>
-<hr>
+<hr/>
 <h1 id="bar_chart-milestone-reviews-every-3-months">📊 Milestone Reviews (Every 3 Months)</h1>
 <p>Ask:</p>
 <ul>
@@ -1859,8 +2050,8 @@ Every 3 months in 2026, behave like:<br>
 <p>Am I calmer than before?</p>
 </li>
 </ul>
-<p>If yes → you’re progressing like an officer.</p>
-<hr>
+<p>If yes &rarr; you&rsquo;re progressing like an officer.</p>
+<hr/>
 <h1 id="bricks-non-negotiables">🧱 Non-Negotiables</h1>
 <ul>
 <li>
@@ -1877,19 +2068,19 @@ Every 3 months in 2026, behave like:<br>
 </li>
 </ul>
 <p>Quiet preparation builds stronger focus.</p>
-<hr>
+<hr/>
 <h1 id="brain-final-mindset-anchor">🧠 Final Mindset Anchor</h1>
-<p>Stop thinking:<br>
-“I am preparing for UPSC.”</p>
-<p>Start thinking:<br>
-“I am training for administrative responsibility.”</p>
+<p>Stop thinking:<br/>
+&ldquo;I am preparing for UPSC.&rdquo;</p>
+<p>Start thinking:<br/>
+&ldquo;I am training for administrative responsibility.&rdquo;</p>
 <p>That shift changes daily behavior.</p>
 <h1 id="dart-the-7-core-practical-olqs-condensed-framework">🎯 The 7 Core Practical OLQs (Condensed Framework)</h1>
-<p>These are not “virtues.”<br>
+<p>These are not &ldquo;virtues.&rdquo;<br/>
 They are functional survival tools for UPSC + Civil Service + Life.</p>
-<hr>
-<h2 id="one-situational-awareness-radar">1️⃣ Situational Awareness (“Radar”)</h2>
-<p><strong>What it is:</strong><br>
+<hr/>
+<h2 id="one-situational-awareness-radar">1️⃣ Situational Awareness (&ldquo;Radar&rdquo;)</h2>
+<p><strong>What it is:</strong><br/>
 Reading people, power dynamics, and hidden agendas quickly.</p>
 <p><strong>Practice Now:</strong></p>
 <ul>
@@ -1911,26 +2102,26 @@ Reading people, power dynamics, and hidden agendas quickly.</p>
 </ul>
 </li>
 </ul>
-<p><strong>Why it matters:</strong><br>
+<p><strong>Why it matters:</strong><br/>
 Prevents manipulation. Improves interview maturity. Essential for field postings.</p>
-<hr>
-<h2 id="two-emotional-detachment-filter">2️⃣ Emotional Detachment (“Filter”)</h2>
-<p><strong>What it is:</strong><br>
+<hr/>
+<h2 id="two-emotional-detachment-filter">2️⃣ Emotional Detachment (&ldquo;Filter&rdquo;)</h2>
+<p><strong>What it is:</strong><br/>
 Separate ego from feedback.</p>
 <p><strong>Practice Now:</strong></p>
 <ul>
 <li>
-<p>Low mock score → treat as data, not identity.</p>
+<p>Low mock score &rarr; treat as data, not identity.</p>
 </li>
 <li>
-<p>Criticism → ask “Is this useful?” before reacting.</p>
+<p>Criticism &rarr; ask &ldquo;Is this useful?&rdquo; before reacting.</p>
 </li>
 </ul>
-<p><strong>Why it matters:</strong><br>
+<p><strong>Why it matters:</strong><br/>
 You cannot afford emotional reactions under political or public pressure.</p>
-<hr>
-<h2 id="three-boundary-management-gate">3️⃣ Boundary Management (“Gate”)</h2>
-<p><strong>What it is:</strong><br>
+<hr/>
+<h2 id="three-boundary-management-gate">3️⃣ Boundary Management (&ldquo;Gate&rdquo;)</h2>
+<p><strong>What it is:</strong><br/>
 Protecting time, focus, and energy.</p>
 <p><strong>Practice Now:</strong></p>
 <ul>
@@ -1941,16 +2132,16 @@ Protecting time, focus, and energy.</p>
 <p>Fixed study hours = non-negotiable.</p>
 </li>
 <li>
-<p>Say “No” politely to low-value commitments.</p>
+<p>Say &ldquo;No&rdquo; politely to low-value commitments.</p>
 </li>
 </ul>
-<p><strong>Why it matters:</strong><br>
-Officers who don’t manage boundaries burn out fast.</p>
-<hr>
-<h2 id="four-multi-dimensional-thinking-juggler">4️⃣ Multi-Dimensional Thinking (“Juggler”)</h2>
-<p><strong>What it is:</strong><br>
+<p><strong>Why it matters:</strong><br/>
+Officers who don&rsquo;t manage boundaries burn out fast.</p>
+<hr/>
+<h2 id="four-multi-dimensional-thinking-juggler">4️⃣ Multi-Dimensional Thinking (&ldquo;Juggler&rdquo;)</h2>
+<p><strong>What it is:</strong><br/>
 Seeing legal, political, economic, and social angles simultaneously.</p>
-<p><strong>Practice Now:</strong><br>
+<p><strong>Practice Now:</strong><br/>
 For any issue:</p>
 <ul>
 <li>
@@ -1963,26 +2154,26 @@ For any issue:</p>
 <p>Identify stakeholder conflicts.</p>
 </li>
 </ul>
-<p><strong>Why it matters:</strong><br>
+<p><strong>Why it matters:</strong><br/>
 Good decisions consider ground reality + law + public perception.</p>
-<hr>
-<h2 id="five-execution-bias-finisher">5️⃣ Execution Bias (“Finisher”)</h2>
-<p><strong>What it is:</strong><br>
+<hr/>
+<h2 id="five-execution-bias-finisher">5️⃣ Execution Bias (&ldquo;Finisher&rdquo;)</h2>
+<p><strong>What it is:</strong><br/>
 Completing tasks instead of endlessly planning.</p>
 <p><strong>Practice Now:</strong></p>
 <ul>
 <li>
-<p>Daily “Done List” (not just To-Do list).</p>
+<p>Daily &ldquo;Done List&rdquo; (not just To-Do list).</p>
 </li>
 <li>
 <p>Start day with hardest topic (20-minute rule).</p>
 </li>
 </ul>
-<p><strong>Why it matters:</strong><br>
-India doesn’t lack plans. It lacks execution.</p>
-<hr>
-<h2 id="six-learning-agility-shadow">6️⃣ Learning Agility (“Shadow”)</h2>
-<p><strong>What it is:</strong><br>
+<p><strong>Why it matters:</strong><br/>
+India doesn&rsquo;t lack plans. It lacks execution.</p>
+<hr/>
+<h2 id="six-learning-agility-shadow">6️⃣ Learning Agility (&ldquo;Shadow&rdquo;)</h2>
+<p><strong>What it is:</strong><br/>
 Admitting ignorance quickly and learning fast.</p>
 <p><strong>Practice Now:</strong></p>
 <ul>
@@ -1996,11 +2187,11 @@ Admitting ignorance quickly and learning fast.</p>
 <p>Improve weak areas first.</p>
 </li>
 </ul>
-<p><strong>Why it matters:</strong><br>
+<p><strong>Why it matters:</strong><br/>
 Young officers fail when they pretend to know everything.</p>
-<hr>
-<h2 id="seven-personal-endurance-stone">7️⃣ Personal Endurance (“Stone”)</h2>
-<p><strong>What it is:</strong><br>
+<hr/>
+<h2 id="seven-personal-endurance-stone">7️⃣ Personal Endurance (&ldquo;Stone&rdquo;)</h2>
+<p><strong>What it is:</strong><br/>
 Long-term durability.</p>
 <p><strong>Practice Now:</strong></p>
 <ul>
@@ -2014,9 +2205,9 @@ Long-term durability.</p>
 <p>One hobby weekly.</p>
 </li>
 </ul>
-<p><strong>Why it matters:</strong><br>
+<p><strong>Why it matters:</strong><br/>
 Civil service is 30-year career. Burnout is real.</p>
-<hr>
+<hr/>
 <h1 id="pushpin-how-to-implement-3-month-integration-plan">📌 How to Implement (3-Month Integration Plan)</h1>
 <h3 id="month-1">Month 1:</h3>
 <ul>
@@ -2057,29 +2248,29 @@ Civil service is 30-year career. Burnout is real.</p>
 <p>Physical fitness</p>
 </li>
 </ul>
-<hr>
+<hr/>
 <h1 id="brain-the-core-synthesis">🧠 The Core Synthesis</h1>
 <p>Your study routine becomes:</p>
 <ul>
 <li>
-<p>Time management → Boundary control</p>
+<p>Time management &rarr; Boundary control</p>
 </li>
 <li>
-<p>Answer writing → Decision-making</p>
+<p>Answer writing &rarr; Decision-making</p>
 </li>
 <li>
-<p>Current affairs analysis → Multi-dimensional thinking</p>
+<p>Current affairs analysis &rarr; Multi-dimensional thinking</p>
 </li>
 <li>
-<p>Mock analysis → Emotional detachment</p>
+<p>Mock analysis &rarr; Emotional detachment</p>
 </li>
 <li>
-<p>Exercise → Endurance</p>
+<p>Exercise &rarr; Endurance</p>
 </li>
 </ul>
-<p>You don’t “prepare OLQs separately.”<br>
+<p>You don&rsquo;t &ldquo;prepare OLQs separately.&rdquo;<br/>
 You embed them into daily behavior.</p>
-<p> </p>
+<p>&nbsp;</p>
 <h2 id="the-pragmatic-olq-framework">THE PRAGMATIC OLQ FRAMEWORK</h2>
 <h3 id="the-core-philosophy">The Core Philosophy</h3>
 <p>View every task through three lenses:</p>
@@ -2094,7 +2285,7 @@ You embed them into daily behavior.</p>
 <p><strong>Life:</strong> Does this make me a better human?</p>
 </li>
 </ul>
-<hr>
+<hr/>
 <h2 id="part-a-the-7-core-pragmatic-olqs">PART A: THE 7 CORE PRAGMATIC OLQs</h2>
 <p><em>(To be practiced for life, not just the exam)</em></p>
 <div class="joplin-table-wrapper">
@@ -2111,20 +2302,20 @@ You embed them into daily behavior.</p>
 <tr>
 <td><strong>1. The Radar</strong></td>
 <td>Read the room in 30 seconds. Spot power dynamics, unspoken agendas, and who is uncomfortable.</td>
-<td>In any group, shut up for 5 minutes. Just observe body language and tone. While reading news, ask: &quot;Who benefits? Who loses? What's not being said?&quot;</td>
+<td>In any group, shut up for 5 minutes. Just observe body language and tone. While reading news, ask: &quot;Who benefits? Who loses? What&apos;s not being said?&quot;</td>
 <td>In the field, missing undercurrents means getting outmanoeuvred (evade (an opponent) by moving faster or with greater agility.).</td>
 </tr>
 <tr>
 <td><strong>2. The Filter</strong></td>
-<td>Separate your ego from the problem. Don't take criticism or pressure personally.</td>
-<td>When criticized, first reaction: &quot;Is the point valid?&quot; not &quot;How dare they?&quot; Low test score = debug the error, don't cry about it.</td>
+<td>Separate your ego from the problem. Don&apos;t take criticism or pressure personally.</td>
+<td>When criticized, first reaction: &quot;Is the point valid?&quot; not &quot;How dare they?&quot; Low test score = debug the error, don&apos;t cry about it.</td>
 <td>If you react emotionally, you will be manipulated by the system, media, and public. You must be the calmest person in the room.</td>
 </tr>
 <tr>
 <td><strong>3. The Gate</strong></td>
 <td>Ruthlessly protect your time and energy. Know when to say no.</td>
-<td>Study hours = phone in another room. Politely tell people: &quot;I'm unavailable until 5 PM.&quot; Say no to social obligations that derail your plan, guilt-free.</td>
-<td>100 people will queue outside your door. Without a gate, you'll see everyone, solve nothing, and collapse.</td>
+<td>Study hours = phone in another room. Politely tell people: &quot;I&apos;m unavailable until 5 PM.&quot; Say no to social obligations that derail your plan, guilt-free.</td>
+<td>100 people will queue outside your door. Without a gate, you&apos;ll see everyone, solve nothing, and collapse.</td>
 </tr>
 <tr>
 <td><strong>4. The Juggler</strong></td>
@@ -2140,20 +2331,20 @@ You embed them into daily behavior.</p>
 </tr>
 <tr>
 <td><strong>6. The Shadow</strong></td>
-<td>Know what you don't know. Learn from anyone—even a peon with 30 years of experience.</td>
+<td>Know what you don&apos;t know. Learn from anyone&mdash;even a peon with 30 years of experience.</td>
 <td>Find someone who knows more than you on a weak topic. Ask them to explain it simply. In groups, shut up and listen to the top scorer.</td>
-<td>You'll be posted to unknown districts handling unfamiliar subjects. Officers who think they know everything on Day 1 fail.</td>
+<td>You&apos;ll be posted to unknown districts handling unfamiliar subjects. Officers who think they know everything on Day 1 fail.</td>
 </tr>
 <tr>
 <td><strong>7. The Stone</strong></td>
 <td>Durability over decades. Protect your physical and mental health to last 30 years.</td>
 <td><strong>30-min exercise daily:</strong> Non-negotiable. Treat it as &quot;Most Urgent&quot; file. <strong>7 hours sleep:</strong> A strategic asset. A tired brain makes bad decisions.</td>
-<td>Brilliant officers burn out in 5 years due to stress. You are useless to the country if you're in the hospital.</td>
+<td>Brilliant officers burn out in 5 years due to stress. You are useless to the country if you&apos;re in the hospital.</td>
 </tr>
 </tbody>
 </table>
 </div>
-<hr>
+<hr/>
 <h2 id="part-b-7-strategies-to-build-olqs-through-prep">PART B: 7 STRATEGIES TO BUILD OLQs THROUGH PREP</h2>
 <div class="joplin-table-wrapper">
 <table>
@@ -2167,28 +2358,28 @@ You embed them into daily behavior.</p>
 <tbody>
 <tr>
 <td><strong>1. Case Study Method</strong></td>
-<td><strong>4x4 Grid for news:</strong>  <br class="jop-noMdConv"/>Q1: Core issue &amp; stakeholders?  <br class="jop-noMdConv"/>Q2: Why can't govt solve it easily?  <br class="jop-noMdConv"/>Q3: If you were DM, what is your FIRST order?  <br class="jop-noMdConv"/>Q4: What are 3 negative consequences of your order?</td>
+<td><strong>4x4 Grid for news:</strong>  <br class="jop-noMdConv"/>Q1: Core issue &amp; stakeholders?  <br class="jop-noMdConv"/>Q2: Why can&apos;t govt solve it easily?  <br class="jop-noMdConv"/>Q3: If you were DM, what is your FIRST order?  <br class="jop-noMdConv"/>Q4: What are 3 negative consequences of your order?</td>
 <td><strong>Prep:</strong> GS facts &amp; linkages.  <br class="jop-noMdConv"/><strong>Officer:</strong> Stakeholder mapping, decision making, anticipating blowback.  <br class="jop-noMdConv"/><strong>Life:</strong> Empathy, patience, responsibility.</td>
 </tr>
 <tr>
 <td><strong>2. Zero-Based Budgeting</strong></td>
-<td><strong>Night Before Ritual:</strong> List tomorrow's tasks. Assign REAL time to each. Stack them in a sequence. Execute.</td>
+<td><strong>Night Before Ritual:</strong> List tomorrow&apos;s tasks. Assign REAL time to each. Stack them in a sequence. Execute.</td>
 <td><strong>Prep:</strong> Realistic, achievable daily targets.  <br class="jop-noMdConv"/><strong>Officer:</strong> You are the DM of your life. Time is your budget. Guard it.  <br class="jop-noMdConv"/><strong>Life:</strong> Kills guilt and procrastination.</td>
 </tr>
 <tr>
-<td><strong>3. Explain Like I'm Five</strong></td>
+<td><strong>3. Explain Like I&apos;m Five</strong></td>
 <td><strong>Dinner Table Lecture:</strong> Once a week, explain a complex topic (MPC, Electoral Bonds) to a non-expert family member in 5 mins, using zero jargon.</td>
-<td><strong>Prep:</strong> Forces you to master the concept.  <br class="jop-noMdConv"/><strong>Officer:</strong> Exactly what you'll do in a public meeting (Jan Sunwai).  <br class="jop-noMdConv"/><strong>Life:</strong> Makes you articulate and confident.</td>
+<td><strong>Prep:</strong> Forces you to master the concept.  <br class="jop-noMdConv"/><strong>Officer:</strong> Exactly what you&apos;ll do in a public meeting (Jan Sunwai).  <br class="jop-noMdConv"/><strong>Life:</strong> Makes you articulate and confident.</td>
 </tr>
 <tr>
 <td><strong>4. Adversity Simulation</strong></td>
 <td><strong>20-Minute &quot;Eat the Frog&quot;:</strong> First thing, study only your most dreaded topic for 20 mins. No phone. No excuses.</td>
-<td><strong>Prep:</strong> Conquers weak areas.  <br class="jop-noMdConv"/><strong>Officer:</strong> You cannot avoid a law-and-order crisis because it's &quot;difficult.&quot;  <br class="jop-noMdConv"/><strong>Life:</strong> Builds courage and determination.</td>
+<td><strong>Prep:</strong> Conquers weak areas.  <br class="jop-noMdConv"/><strong>Officer:</strong> You cannot avoid a law-and-order crisis because it&apos;s &quot;difficult.&quot;  <br class="jop-noMdConv"/><strong>Life:</strong> Builds courage and determination.</td>
 </tr>
 <tr>
 <td><strong>5. Social Audit</strong></td>
-<td><strong>Feedback Buddy:</strong> Every 2 weeks, exchange an answer or have an honest chat with a trusted aspirant. Ask: &quot;What is one weakness I'm blind to?&quot;</td>
-<td><strong>Prep:</strong> Improves answer quality.  <br class="jop-noMdConv"/><strong>Officer:</strong> Colleagues won't tell you your flaws. Learn to solicit critical feedback now.  <br class="jop-noMdConv"/><strong>Life:</strong> Builds self-awareness.</td>
+<td><strong>Feedback Buddy:</strong> Every 2 weeks, exchange an answer or have an honest chat with a trusted aspirant. Ask: &quot;What is one weakness I&apos;m blind to?&quot;</td>
+<td><strong>Prep:</strong> Improves answer quality.  <br class="jop-noMdConv"/><strong>Officer:</strong> Colleagues won&apos;t tell you your flaws. Learn to solicit critical feedback now.  <br class="jop-noMdConv"/><strong>Life:</strong> Builds self-awareness.</td>
 </tr>
 <tr>
 <td><strong>6. Digital Nakabandi</strong></td>
@@ -2203,43 +2394,565 @@ You embed them into daily behavior.</p>
 </tbody>
 </table>
 </div>
-<hr>
+<hr/>
 <h2 id="part-c-your-3-month-integration-plan">PART C: YOUR 3-MONTH INTEGRATION PLAN</h2>
 <p><strong>Do not do all at once.</strong></p>
 <ul>
 <li>
-<p><strong>Month 1: Foundation (The Gate + The Finisher)</strong><br>
+<p><strong>Month 1: Foundation (The Gate + The Finisher)</strong><br/>
 Master your schedule. Protect your time. Execute your daily plan. Get these two right, and your prep efficiency doubles.</p>
 </li>
 <li>
-<p><strong>Month 2: Expansion (Add The Radar + The Juggler)</strong><br>
-Start observing group dynamics. Play devil's advocate with current affairs. See the full chessboard.</p>
+<p><strong>Month 2: Expansion (Add The Radar + The Juggler)</strong><br/>
+Start observing group dynamics. Play devil&apos;s advocate with current affairs. See the full chessboard.</p>
 </li>
 <li>
-<p><strong>Month 3: Fortification (Add The Filter + The Shadow + The Stone)</strong><br>
+<p><strong>Month 3: Fortification (Add The Filter + The Shadow + The Stone)</strong><br/>
 Detach ego from criticism. Seek out experts to learn from. Lock in exercise and sleep as non-negotiables.</p>
 </li>
 </ul>
-<hr>
+<hr/>
 <h3 id="the-bottom-line">The Bottom Line</h3>
-<p>By the end of three months, these aren't &quot;qualities you are developing.&quot; <strong>They are who you are.</strong> That is how you crack the exam and thrive in the life that follows.</p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
+<p>By the end of three months, these aren&apos;t &quot;qualities you are developing.&quot; <strong>They are who you are.</strong> That is how you crack the exam and thrive in the life that follows.</p>
+<p>&nbsp;</p>
+<h1 id="teachings-of-buddhism"><strong>TEACHINGS OF BUDDHISM</strong></h1>
+<h1 id="1-awareness-and-mind-training">1. Awareness and Mind Training</h1>
+<ol>
+<li>
+<p>Observe your thoughts before reacting.</p>
+</li>
+<li>
+<p>Pause and breathe before making important decisions.</p>
+</li>
+<li>
+<p>Practice daily Mindfulness for a few minutes.</p>
+</li>
+<li>
+<p>Notice emotions without suppressing them.</p>
+</li>
+<li>
+<p>Learn to recognize when the mind is wandering.</p>
+</li>
+<li>
+<p>Bring attention back to the present moment gently.</p>
+</li>
+<li>
+<p>Watch how thoughts influence your emotions.</p>
+</li>
+<li>
+<p>Focus on one task at a time.</p>
+</li>
+<li>
+<p>Train attention like a muscle.</p>
+</li>
+<li>
+<p>Spend time in silence every day.</p>
+</li>
+<li>
+<p>Observe your breathing when stressed.</p>
+</li>
+<li>
+<p>Recognize that thoughts are temporary events.</p>
+</li>
+<li>
+<p>Accept mental distractions without frustration.</p>
+</li>
+<li>
+<p>Learn to return to the present again and again.</p>
+</li>
+<li>
+<p>Be curious about how your mind works.</p>
+</li>
+<li>
+<p>Notice how emotions change over time.</p>
+</li>
+<li>
+<p>Develop patience with yourself.</p>
+</li>
+<li>
+<p>Reflect on your reactions each day.</p>
+</li>
+<li>
+<p>Become aware of unconscious habits.</p>
+</li>
+<li>
+<p>Practice simple awareness during ordinary activities.</p>
+</li>
+</ol>
+<hr/>
+<h1 id="2-understanding-the-nature-of-life">2. Understanding the Nature of Life</h1>
+<ol start="21">
+<li>
+<p>Everything in life changes&mdash;this is the principle of Impermanence.</p>
+</li>
+<li>
+<p>Do not cling too tightly to temporary things.</p>
+</li>
+<li>
+<p>Happiness from possessions is often temporary.</p>
+</li>
+<li>
+<p>Accept uncertainty as part of life.</p>
+</li>
+<li>
+<p>Understand that suffering often comes from attachment.</p>
+</li>
+<li>
+<p>Recognize that expectations create disappointment.</p>
+</li>
+<li>
+<p>Appreciate what you have right now.</p>
+</li>
+<li>
+<p>Accept that loss is inevitable.</p>
+</li>
+<li>
+<p>Understand that emotions naturally rise and fall.</p>
+</li>
+<li>
+<p>Accept reality instead of resisting it.</p>
+</li>
+<li>
+<p>Recognize that control over life is limited.</p>
+</li>
+<li>
+<p>Avoid over-identifying with your roles.</p>
+</li>
+<li>
+<p>Understand that identity changes over time.</p>
+</li>
+<li>
+<p>Learn from both success and failure.</p>
+</li>
+<li>
+<p>See difficulties as opportunities for growth.</p>
+</li>
+<li>
+<p>Avoid excessive worry about the future.</p>
+</li>
+<li>
+<p>Understand that everything has causes and conditions.</p>
+</li>
+<li>
+<p>Be flexible when life changes direction.</p>
+</li>
+<li>
+<p>Accept that perfection is unrealistic.</p>
+</li>
+<li>
+<p>Practice gratitude regularly.</p>
+</li>
+</ol>
+<hr/>
+<h1 id="3-ethical-living">3. Ethical Living</h1>
+<ol start="41">
+<li>
+<p>Speak honestly.</p>
+</li>
+<li>
+<p>Avoid harming others intentionally.</p>
+</li>
+<li>
+<p>Practice kindness in daily interactions.</p>
+</li>
+<li>
+<p>Be mindful of how your words affect people.</p>
+</li>
+<li>
+<p>Develop compassion toward others&rsquo; struggles.</p>
+</li>
+<li>
+<p>Avoid gossip and unnecessary criticism.</p>
+</li>
+<li>
+<p>Respect people with different views.</p>
+</li>
+<li>
+<p>Use success to help others.</p>
+</li>
+<li>
+<p>Avoid actions that create regret.</p>
+</li>
+<li>
+<p>Choose integrity over short-term gain.</p>
+</li>
+<li>
+<p>Be patient in conflict situations.</p>
+</li>
+<li>
+<p>Forgive others when possible.</p>
+</li>
+<li>
+<p>Treat strangers with respect.</p>
+</li>
+<li>
+<p>Be generous when you can.</p>
+</li>
+<li>
+<p>Avoid unnecessary aggression.</p>
+</li>
+<li>
+<p>Practice fairness in business and work.</p>
+</li>
+<li>
+<p>Support people who are struggling.</p>
+</li>
+<li>
+<p>Cultivate empathy.</p>
+</li>
+<li>
+<p>Maintain humility when you succeed.</p>
+</li>
+<li>
+<p>Value kindness more than status.</p>
+</li>
+</ol>
+<hr/>
+<h1 id="4-mastering-the-mind">4. Mastering the Mind</h1>
+<ol start="61">
+<li>
+<p>Notice when anger begins to arise.</p>
+</li>
+<li>
+<p>Allow emotions to pass without acting impulsively.</p>
+</li>
+<li>
+<p>Avoid feeding negative thought loops.</p>
+</li>
+<li>
+<p>Recognize craving before it controls behavior.</p>
+</li>
+<li>
+<p>Train the mind through regular Meditation.</p>
+</li>
+<li>
+<p>Understand that comparison causes dissatisfaction.</p>
+</li>
+<li>
+<p>Reduce unnecessary mental noise.</p>
+</li>
+<li>
+<p>Keep attention grounded in the body.</p>
+</li>
+<li>
+<p>Observe your mental habits honestly.</p>
+</li>
+<li>
+<p>Learn to let go of grudges.</p>
+</li>
+<li>
+<p>Avoid overthinking small problems.</p>
+</li>
+<li>
+<p>Respond thoughtfully rather than reactively.</p>
+</li>
+<li>
+<p>Stay calm during stressful situations.</p>
+</li>
+<li>
+<p>Practice patience in difficult moments.</p>
+</li>
+<li>
+<p>Notice when ego tries to dominate conversations.</p>
+</li>
+<li>
+<p>Avoid the need to always be right.</p>
+</li>
+<li>
+<p>Recognize when pride blocks learning.</p>
+</li>
+<li>
+<p>Develop emotional balance.</p>
+</li>
+<li>
+<p>Learn to accept constructive criticism.</p>
+</li>
+<li>
+<p>Strengthen inner stability.</p>
+</li>
+</ol>
+<hr/>
+<h1 id="5-practical-wisdom-for-modern-life">5. Practical Wisdom for Modern Life</h1>
+<ol start="81">
+<li>
+<p>Simplify your lifestyle where possible.</p>
+</li>
+<li>
+<p>Reduce unnecessary distractions.</p>
+</li>
+<li>
+<p>Use technology consciously rather than compulsively.</p>
+</li>
+<li>
+<p>Take breaks to reset your attention.</p>
+</li>
+<li>
+<p>Balance ambition with well-being.</p>
+</li>
+<li>
+<p>Focus on meaningful goals.</p>
+</li>
+<li>
+<p>Avoid comparing your life with others on social media.</p>
+</li>
+<li>
+<p>Spend time in nature regularly.</p>
+</li>
+<li>
+<p>Practice mindful eating.</p>
+</li>
+<li>
+<p>Build habits that support clarity.</p>
+</li>
+<li>
+<p>Choose work aligned with your values.</p>
+</li>
+<li>
+<p>Invest in relationships rather than possessions.</p>
+</li>
+<li>
+<p>Accept mistakes as learning opportunities.</p>
+</li>
+<li>
+<p>Stay curious about life.</p>
+</li>
+<li>
+<p>Continue learning throughout life.</p>
+</li>
+<li>
+<p>Develop resilience through awareness.</p>
+</li>
+<li>
+<p>Cultivate gratitude each day.</p>
+</li>
+<li>
+<p>Remember that inner peace is more valuable than external status.</p>
+</li>
+<li>
+<p>Help others when you can.</p>
+</li>
+</ol>
+<p>100.Return to the present moment whenever you feel lost.</p>
+<hr/>
+<p>✅ <strong>Core idea behind these teachings</strong></p>
+<p>Many Buddhist teachings ultimately point to three foundations:</p>
+<ul>
+<li>
+<p>Wisdom (understanding reality clearly)</p>
+</li>
+<li>
+<p>Ethical living (acting with compassion and integrity)</p>
+</li>
+<li>
+<p>Mental training (developing awareness through practices like meditation)</p>
+</li>
+</ul>
+<p>These principles were originally taught by Gautama Buddha and are often summarized in the Eightfold Path.</p>
+<hr/>
+<p>&nbsp;</p>
+<p>They&rsquo;re like the &ldquo;core operating system&rdquo; behind many of the teachings above.</p>
+<h1 id="patterns-of-teaching-of-buddhism"><strong>PATTERNS OF TEACHING OF BUDDHISM</strong></h1>
+<p>Good question. The teachings of Buddhism are not random ideas; they follow <strong>clear patterns or frameworks</strong> designed to help people understand life step-by-step. Think of them like <strong>maps for training the mind and living wisely</strong>.</p>
+<p>Let&rsquo;s explore the main <strong>patterns of Buddhist teachings</strong> and how they work practically.</p>
+<hr/>
+<h1 id="1-problem-cause-solution-practice-pattern">1. Problem &rarr; Cause &rarr; Solution &rarr; Practice Pattern</h1>
+<p>One of the most fundamental teaching patterns comes from the Four Noble Truths.</p>
+<p>It follows a <strong>diagnosis model</strong>, similar to medicine.</p>
+<h3 id="step-1-identify-the-problem">Step 1: Identify the problem</h3>
+<p>Life contains dissatisfaction and struggle.</p>
+<h3 id="step-2-understand-the-cause">Step 2: Understand the cause</h3>
+<p>Suffering often arises from <strong>craving, attachment, and misunderstanding reality</strong>.</p>
+<h3 id="step-3-recognize-the-solution">Step 3: Recognize the solution</h3>
+<p>Freedom from suffering is possible.</p>
+<h3 id="step-4-follow-a-path">Step 4: Follow a path</h3>
+<p>Practice the Eightfold Path to transform the mind.</p>
+<p><strong>Practical pattern</strong></p>
+<h3 id="problem-understanding-solution-practice"><strong>Problem &rarr; Understanding &rarr; Solution &rarr; Practice</strong></h3>
+<hr/>
+<h1 id="2-cause-and-effect-pattern">2. Cause and Effect Pattern</h1>
+<p>Buddhist teachings emphasize that actions create consequences.</p>
+<p>This principle is known as Karma.</p>
+<p>The pattern is simple:</p>
+<h3 id="action-habit-character-life-outcomes"><strong>Action &rarr; Habit &rarr; Character &rarr; Life outcomes</strong></h3>
+<p>Example:</p>
+<ul>
+<li>
+<p>anger repeated &rarr; aggressive habits &rarr; relationship problems</p>
+</li>
+<li>
+<p>kindness repeated &rarr; trust &rarr; supportive relationships.</p>
+</li>
+</ul>
+<p><strong>Practical insight</strong></p>
+<p>Small daily actions gradually shape life.</p>
+<hr/>
+<h1 id="3-observation-pattern">3. Observation Pattern</h1>
+<p>Instead of demanding blind belief, many teachings encourage <strong>direct observation</strong>.</p>
+<p>Example practice:</p>
+<p>Observe:</p>
+<ul>
+<li>
+<p>breathing</p>
+</li>
+<li>
+<p>thoughts</p>
+</li>
+<li>
+<p>emotions</p>
+</li>
+<li>
+<p>body sensations.</p>
+</li>
+</ul>
+<p>This approach is central to practices like Vipassana meditation.</p>
+<p>The pattern is:</p>
+<h3 id="observe-understand-change-naturally"><strong>Observe &rarr; Understand &rarr; Change naturally.</strong></h3>
+<hr/>
+<h1 id="4-three-core-training-pattern">4. Three Core Training Pattern</h1>
+<p>Many teachings are structured around three trainings:</p>
+<ol>
+<li>
+<p><strong>Ethical behavior</strong></p>
+</li>
+<li>
+<p><strong>Mental discipline</strong></p>
+</li>
+<li>
+<p><strong>Wisdom</strong></p>
+</li>
+</ol>
+<p>These correspond to:</p>
+<ul>
+<li>
+<p>right actions and speech</p>
+</li>
+<li>
+<p>meditation and mindfulness</p>
+</li>
+<li>
+<p>insight into reality.</p>
+</li>
+</ul>
+<p>This pattern ensures that spiritual growth includes <strong>both character and understanding</strong>.</p>
+<hr/>
+<h1 id="5-impermanence-pattern">5. Impermanence Pattern</h1>
+<p>A central insight in Buddhism is Impermanence.</p>
+<p>The teaching pattern encourages people to observe that:</p>
+<ul>
+<li>
+<p>emotions change</p>
+</li>
+<li>
+<p>situations change</p>
+</li>
+<li>
+<p>thoughts change</p>
+</li>
+<li>
+<p>life circumstances change.</p>
+</li>
+</ul>
+<p>Recognizing this reduces attachment and frustration.</p>
+<p><strong>Practical application</strong></p>
+<p>Instead of resisting change, you learn to <strong>adapt wisely</strong>.</p>
+<hr/>
+<h1 id="6-middle-path-pattern">6. Middle Path Pattern</h1>
+<p>Another important pattern taught by Gautama Buddha is the Middle Way.</p>
+<p>It avoids extremes:</p>
+<ul>
+<li>
+<p>extreme pleasure-seeking</p>
+</li>
+<li>
+<p>extreme self-denial.</p>
+</li>
+</ul>
+<p>The idea is to live with <strong>balance and moderation</strong>.</p>
+<p>Example in modern life:</p>
+<ul>
+<li>
+<p>work hard but avoid burnout</p>
+</li>
+<li>
+<p>enjoy comfort but avoid addiction.</p>
+</li>
+</ul>
+<hr/>
+<h1 id="7-gradual-training-pattern">7. Gradual Training Pattern</h1>
+<p>Buddhist practice is usually taught as a <strong>gradual development</strong>.</p>
+<p>Typical progression:</p>
+<ol>
+<li>
+<p>learning ethical behavior</p>
+</li>
+<li>
+<p>stabilizing attention through meditation</p>
+</li>
+<li>
+<p>developing insight into the mind.</p>
+</li>
+</ol>
+<p>This gradual path helps people grow <strong>step by step rather than expecting instant transformation</strong>.</p>
+<hr/>
+<h1 id="8-questioning-and-investigation-pattern">8. Questioning and Investigation Pattern</h1>
+<p>Unlike many belief systems, Buddhist teachings encourage <strong>investigation and inquiry</strong>.</p>
+<p>Students are encouraged to test teachings through experience.</p>
+<p>This spirit of inquiry resembles approaches used in Philosophy and reflective traditions.</p>
+<p>The pattern is:</p>
+<h3 id="listen-reflect-test-in-experience"><strong>Listen &rarr; Reflect &rarr; Test in experience.</strong></h3>
+<hr/>
+<h1 id="simple-summary-of-teaching-patterns">Simple Summary of Teaching Patterns</h1>
+<p>Most Buddhist teachings follow a few recurring structures:</p>
+<ol>
+<li>
+<p>Identify suffering</p>
+</li>
+<li>
+<p>Understand causes</p>
+</li>
+<li>
+<p>Train the mind</p>
+</li>
+<li>
+<p>develop wisdom</p>
+</li>
+<li>
+<p>live ethically</p>
+</li>
+<li>
+<p>observe reality directly.</p>
+</li>
+</ol>
+<p>These patterns form the foundation of the teachings given by Gautama Buddha.</p>
+<hr/>
+<p>⭐ <strong>Interesting insight</strong></p>
+<p>Buddhism is often described as <strong>a practical psychology of the mind</strong>, because its teaching patterns focus heavily on:</p>
+<ul>
+<li>
+<p>mental habits</p>
+</li>
+<li>
+<p>emotional patterns</p>
+</li>
+<li>
+<p>perception and awareness.</p>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p>Current Affairs</p>
-<p>Making a Difference: The IAS as a Career<br>
-<a data-from-md title='https://www.gktoday.in/quizbase/current-affairs-quiz-june-2023' href='https://www.gktoday.in/quizbase/current-affairs-quiz-june-2023'>https://www.gktoday.in/quizbase/current-affairs-quiz-june-2023</a><br>
-<a data-from-md title='https://books.google.co.in/books?id=ppFFEAAAQBAJ&amp;pg=PT3&amp;source=gbs_selected_pages&amp;cad=2#v=onepage&amp;q&amp;f=false' href='https://books.google.co.in/books?id=ppFFEAAAQBAJ&amp;pg=PT3&amp;source=gbs_selected_pages&amp;cad=2#v=onepage&amp;q&amp;f=false'>https://books.google.co.in/books?id=ppFFEAAAQBAJ&amp;pg=PT3&amp;source=gbs_selected_pages&amp;cad=2#v=onepage&amp;q&amp;f=false</a><br>
-<a data-from-md title='https://www.quora.com/profile/Suyash-Chavan-7' href='https://www.quora.com/profile/Suyash-Chavan-7'>https://www.quora.com/profile/Suyash-Chavan-7</a><br>
-<a data-from-md title='https://www.youtube.com/watch?v=xemjYp4y2PQ&amp;t=258shttps://www.youtube.com/watch?v=1j16X4Ymsm0&amp;list=PLiqj4Wg9rmPgUFIaatXzJLPNgX7Ji0pZd&amp;index=3Critical' href='https://www.youtube.com/watch?v=xemjYp4y2PQ&amp;t=258shttps://www.youtube.com/watch?v=1j16X4Ymsm0&amp;list=PLiqj4Wg9rmPgUFIaatXzJLPNgX7Ji0pZd&amp;index=3Critical'>https://www.youtube.com/watch?v=xemjYp4y2PQ&amp;t=258shttps://www.youtube.com/watch?v=1j16X4Ymsm0&amp;list=PLiqj4Wg9rmPgUFIaatXzJLPNgX7Ji0pZd&amp;index=3Critical</a> Thinking - Rajan Singh<br>
-<a data-from-md title='https://www.quora.com/profile/Rajan-Singh-824' href='https://www.quora.com/profile/Rajan-Singh-824'>https://www.quora.com/profile/Rajan-Singh-824</a><br>
-Vision IAS<br>
-<a data-from-md title='http://www.visionias.in/resources/daily_current_affairs_programs.php?type=1&amp;m=02&amp;y=2023' href='http://www.visionias.in/resources/daily_current_affairs_programs.php?type=1&amp;m=02&amp;y=2023'>http://www.visionias.in/resources/daily_current_affairs_programs.php?type=1&amp;m=02&amp;y=2023</a><br>
-Drishti IAS<br>
-<a data-from-md title='https://www.drishtiias.com/images/pdf/Monthly%20Current%20Affairs%20Consolidation%20(March%202023)%20Part-I.pdf' href='https://www.drishtiias.com/images/pdf/Monthly%20Current%20Affairs%20Consolidation%20%28March%202023%29%20Part-I.pdf'>https://www.drishtiias.com/images/pdf/Monthly Current Affairs Consolidation (March 2023) Part-I.pdf</a><br>
-World Atlas<br>
-<a data-from-md title='https://www.worldatlas.com/' href='https://www.worldatlas.com/'>https://www.worldatlas.com/</a></p>
+<p>Making a Difference: The IAS as a Career<br/>
+<a data-from-md="" title="https://www.gktoday.in/quizbase/current-affairs-quiz-june-2023" href="https://www.gktoday.in/quizbase/current-affairs-quiz-june-2023">https://www.gktoday.in/quizbase/current-affairs-quiz-june-2023</a><br/>
+<a data-from-md="" title="https://books.google.co.in/books?id=ppFFEAAAQBAJ&amp;pg=PT3&amp;source=gbs_selected_pages&amp;cad=2#v=onepage&amp;q&amp;f=false" href="https://books.google.co.in/books?id=ppFFEAAAQBAJ&amp;pg=PT3&amp;source=gbs_selected_pages&amp;cad=2#v=onepage&amp;q&amp;f=false">https://books.google.co.in/books?id=ppFFEAAAQBAJ&amp;pg=PT3&amp;source=gbs_selected_pages&amp;cad=2#v=onepage&amp;q&amp;f=false</a><br/>
+<a data-from-md="" title="https://www.quora.com/profile/Suyash-Chavan-7" href="https://www.quora.com/profile/Suyash-Chavan-7">https://www.quora.com/profile/Suyash-Chavan-7</a><br/>
+<a data-from-md="" title="https://www.youtube.com/watch?v=xemjYp4y2PQ&amp;t=258shttps://www.youtube.com/watch?v=1j16X4Ymsm0&amp;list=PLiqj4Wg9rmPgUFIaatXzJLPNgX7Ji0pZd&amp;index=3Critical" href="https://www.youtube.com/watch?v=xemjYp4y2PQ&amp;t=258shttps://www.youtube.com/watch?v=1j16X4Ymsm0&amp;list=PLiqj4Wg9rmPgUFIaatXzJLPNgX7Ji0pZd&amp;index=3Critical">https://www.youtube.com/watch?v=xemjYp4y2PQ&amp;t=258shttps://www.youtube.com/watch?v=1j16X4Ymsm0&amp;list=PLiqj4Wg9rmPgUFIaatXzJLPNgX7Ji0pZd&amp;index=3Critical</a> Thinking - Rajan Singh<br/>
+<a data-from-md="" title="https://www.quora.com/profile/Rajan-Singh-824" href="https://www.quora.com/profile/Rajan-Singh-824">https://www.quora.com/profile/Rajan-Singh-824</a><br/>
+Vision IAS<br/>
+<a data-from-md="" title="http://www.visionias.in/resources/daily_current_affairs_programs.php?type=1&amp;m=02&amp;y=2023" href="http://www.visionias.in/resources/daily_current_affairs_programs.php?type=1&amp;m=02&amp;y=2023">http://www.visionias.in/resources/daily_current_affairs_programs.php?type=1&amp;m=02&amp;y=2023</a><br/>
+Drishti IAS<br/>
+<a data-from-md="" title="https://www.drishtiias.com/images/pdf/Monthly%20Current%20Affairs%20Consolidation%20(March%202023)%20Part-I.pdf" href="https://www.drishtiias.com/images/pdf/Monthly%20Current%20Affairs%20Consolidation%20%28March%202023%29%20Part-I.pdf">https://www.drishtiias.com/images/pdf/Monthly Current Affairs Consolidation (March 2023) Part-I.pdf</a><br/>
+World Atlas<br/>
+<a data-from-md="" title="https://www.worldatlas.com/" href="https://www.worldatlas.com/">https://www.worldatlas.com/</a></p>
 <div class="joplin-table-wrapper">
 <table>
 <thead>
@@ -2319,3 +3032,4 @@ World Atlas<br>
 </div></div>
 					</body>
 				</html>
+			

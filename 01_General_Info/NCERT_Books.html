@@ -1,23 +1,154 @@
+
 <!DOCTYPE html>
-				<html>
-					<head>
-						<meta charset="UTF-8">
-						<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 <link rel="icon" type="image/ico" href="https://demo.one3d.in/emailer-images/heart-india.png">
 <link rel="apple-touch-icon" sizes="64x64" href="https://demo.one3d.in/emailer-images/heart-india.png">
 <link rel="icon" type="image/ico" sizes="64x64" href="https://demo.one3d.in/emailer-images/heart-india.png">
 <link rel="shortcut icon" href="https://demo.one3d.in/emailer-images/heart-india.png">
-						<link rel="stylesheet" href="../atom-one-light.css">
+<link rel="stylesheet" href="../atom-one-light.css">
+						<style>.jsdraw--editButton {
+  display: none;
+  width: min-content;
+  max-height: 50px;
+  z-index: 1;
+  opacity: 0.9;
+  align-self: flex-end;
+  justify-self: right;
+}
+
+.jsdraw--svgWrapper {
+  display: inline-grid;
+}
+
+.jsdraw--svgWrapper > * {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.jsdraw--svgWrapper:hover .jsdraw--editButton,
+.jsdraw--svgWrapper:focus .jsdraw--editButton,
+.jsdraw--svgWrapper:focus-within .jsdraw--editButton,
+.jsdraw--editButton:focus {
+  display: block;
+}</style><script>(()=>{"use strict";var t={167:(t,e)=>{Object.defineProperty(e,"__esModule",{value:!0}),e.default=t=>{const e=t.querySelector("img");if(!e)return void console.warn("Freehand drawing plugin: No image found in container.");if(t.classList.contains("js-draw--editable"))return;t.classList.add("js-draw--editable");const n=t.getAttribute("data-js-draw-edit-label"),o=t.getAttribute("data-js-draw-content-script-id"),s=()=>{const t=e.src;webviewApi.postMessage(o,t).catch((e=>{console.error("Error posting message!",e,"\nMessage: ",t)}))},r=document.body.classList.contains("mce-content-body")||"tinymce"===document.body.id,d="undefined"!=typeof webviewApi;r?e.style.cursor="pointer":d&&(()=>{const e=document.createElement("button");e.textContent=`${n} 🖊️`,e.classList.add("jsdraw--editButton"),t.appendChild(e),e.onclick=()=>{s()}})(),e.ondblclick=s}}},e={};function n(o){var s=e[o];if(void 0!==s)return s.exports;var r=e[o]={exports:{}};return t[o](r,r.exports,n),r.exports}(()=>{const t=n(167),e=()=>{const e=document.querySelectorAll("*[data-js-draw-content-script-id]");for(const n of e)(0,t.default)(n)};document.addEventListener("joplin-noteDidUpdate",(()=>{e()})),e()})()})();</script></script><style>pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+}
+
+code.hljs {
+  padding: 3px 5px;
+}
+
+/*
+
+Atom One Light by Daniel Gamage
+Original One Light Syntax theme from https://github.com/atom/one-light-syntax
+
+base:    #fafafa
+mono-1:  #383a42
+mono-2:  #686b77
+mono-3:  #a0a1a7
+hue-1:   #0184bb
+hue-2:   #4078f2
+hue-3:   #a626a4
+hue-4:   #50a14f
+hue-5:   #e45649
+hue-5-2: #c91243
+hue-6:   #986801
+hue-6-2: #c18401
+
+*/
+
+.hljs {
+  color: #383a42;
+  background: #fafafa;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #a0a1a7;
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: #a626a4;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e45649;
+}
+
+.hljs-literal {
+  color: #0184bb;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta .hljs-string {
+  color: #50a14f;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #986801;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: #4078f2;
+}
+
+.hljs-built_in,
+.hljs-title.class_,
+.hljs-class .hljs-title {
+  color: #c18401;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}</style>
 						<title>NCERT_Books  </title>
 					</head>
 					<body>
 						<div class="exported-note"><div class="exported-note-title">NCERT_Books  </div>
+
 <style>
 		/* https://necolas.github.io/normalize.css/ */
 		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
 		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
 		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
+
 		body {
 			font-size: 15px;
 			color: #32373F;
@@ -35,9 +166,11 @@
 			border-radius: 3px;
 			background-color: rgb(243, 243, 243);
 		}
+
 		:root {
 			--scrollbar-size: 7px;
 		}
+
 		::-webkit-scrollbar {
 			width: var(--scrollbar-size);
 			height: var(--scrollbar-size);
@@ -60,7 +193,11 @@
 		::-webkit-scrollbar-thumb:hover {
 			background: rgba(50, 55, 63, 0.63); 
 		}
+
+		
+
 		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
+
 		#rendered-md > h1:first-child,
 		#rendered-md > h2:first-child,
 		#rendered-md > h3:first-child,
@@ -74,18 +211,22 @@
 			margin-top: 0;
 			padding-top: 0;
 		}
+		
 		p, h1, h2, h3, h4, h5, h6, ul, table {
 			margin-top: .6em;
 			margin-bottom: 1.35em;
+
 			/*
 				Adds support for RTL text in the note body. It automatically detects the direction using the content.
 				Issue: https://github.com/laurent22/joplin/issues/3991
 			*/
 			unicode-bidi: plaintext;
 		}
+
 		h1, h2, h3, h4, h5, h6, ul, table {
 			margin-bottom: 0.65em;
 		}
+
 		h1, h2, h3, h4, h5, h6 {
 			line-height: 1.5em;
 		}
@@ -108,6 +249,7 @@
 			font-size: 1em;
 			font-weight: bold;
 		}
+
 		.exported-note-title {
 			font-size: 2em;
 			font-weight: bold;
@@ -116,6 +258,7 @@
 			padding-bottom: .35em;
 			border-bottom: 1px solid #dddddd;
 		}
+
 		a {
 			color: #155BDA;
 		}
@@ -130,14 +273,17 @@
 			margin-top: 0.2em;
 			margin-bottom: 0;
 		}
+
 		dt {
 			font-weight: bold;
 			margin-bottom: 0.25em;
 		}
+
 		dd {
 			margin-inline-start: 2.5em;
 			margin-bottom: 0.5em;
 		}
+
 		.resource-icon {
 			display: inline-block;
 			position: relative;
@@ -212,6 +358,7 @@
 			margin-left: 0;
 			opacity: 0.7;
 		}
+
 		.jop-tinymce table,
 		table {
 			text-align: left;
@@ -219,6 +366,7 @@
 			border: 1px solid rgb(220, 220, 220);
 			background-color: #ffffff;
 		}
+
 		.jop-tinymce table td, .jop-tinymce table th,
 		table td, th {
 			text-align: left;
@@ -227,24 +375,29 @@
 			color: #32373F;
 			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
 		}
+
 		.jop-tinymce table td,
 		table td {
 			border: 1px solid rgb(220, 220, 220);
 		}
+
 		.jop-tinymce table th,
 		table th {
 			border: 1px solid rgb(220, 220, 220);
 			border-bottom: 2px solid rgb(220, 220, 220);
 			background-color: rgb(247, 247, 247);
 		}
+
 		.jop-tinymce table tr:nth-child(even),
 		table tr:nth-child(even) {
 			background-color: rgb(247, 247, 247);
 		}
+
 		.jop-tinymce table tr:hover,
 		table tr:hover {
 			background-color: #e5e5e5;
 		}
+
 		hr {
 			border: none;
 			border-bottom: 2px solid #dddddd;
@@ -253,6 +406,7 @@
 			max-width: 100%;
 			height: auto;
 		}
+		
 		.inline-code,
 		.mce-content-body code {
 			border: 1px solid rgb(220, 220, 220);
@@ -263,10 +417,13 @@
 			color: rgb(0,0,0);
 			font-size: .9em;
 		}
+
 		.highlighted-keyword {
 			background-color: #F3B717;
 			color: black;
 		}
+
+		
 	.not-loaded-resource img {
 		width: 1.15em;
 		height: 1.15em;
@@ -275,60 +432,77 @@
 		border-radius: 2px;
 		box-shadow: 0 1px 3px #000000aa;
 	}
+
 	a.not-loaded-resource img {
 		margin-right: .2em;
 	}
+
 	a.not-loaded-resource {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 	}
+
+
 		.md-checkbox input[type=checkbox]:checked {
 			opacity: 0.7;
 		}
+
 		.jop-tinymce ul.joplin-checklist .checked,
 		.md-checkbox .checkbox-label-checked {
 			opacity: 0.5;
 		}
+
 		.exported-note {
 			padding: 1em;
 		}
+
 		.joplin-editable .joplin-source {
 			display: none;
 		}
+
 		mark {
 			background: #F7D26E;
 			color: black;
 		}
+
 		/* =============================================== */
 		/* For TinyMCE */
 		/* =============================================== */
+
 		.mce-content-body {
 			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
 			padding: 5px 10px 10em 0;
 		}
+
 		/*
 		.mce-content-body code {
 			background-color: transparent;
 		}
 		*/
+
 		.mce-content-body [data-mce-selected=inline-boundary] {
 			background-color: transparent;
 		}
+
 		.mce-content-body .joplin-editable {
 			cursor: pointer !important;
 		}
+
 		.mce-content-body.mce-content-readonly {
 			opacity: 0.5;
 		}
+
 		/* We need that to make sure click events have the A has a target */
 		.katex a span {
 			pointer-events: none;
 		}
+
 		.media-player {
 			width: 100%;
 			margin-top: 10px;
 		}
+
 		.media-player.media-pdf {
 			min-height: 35rem;
 			width: 100%;
@@ -337,6 +511,7 @@
 			border: 0;
 			display: block;
 		}
+
 		/* Clear the CODE style if the element is within a joplin-editable block */
 		.mce-content-body .joplin-editable code {
 			border: none;
@@ -345,28 +520,35 @@
 			color: inherit;
 			font-size: inherit;
 		}
+
 		/* To make code blocks horizontally scrollable */
 		/* https://github.com/laurent22/joplin/issues/5740 */
 		pre.hljs {
 			overflow-x: auto;
 		}
+
 		.joplin-table-wrapper{
 			overflow-x: auto;
 			overflow-y: hidden;
 		}
+
 		/* =============================================== */
 		/* For TinyMCE */
 		/* =============================================== */
+
 		@media print {
 			body {
 				height: auto !important;
 			}
+
 			pre {
 				white-space: pre-wrap;
 			}
+
 			.code, .inline-code {
 				border: 1px solid #CBCBCB;
 			}
+
 			#joplin-container-content {
 				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
 				   around various issues related to scrolling. However when printing we don't want this
@@ -375,27 +557,35 @@
 				height: auto !important;
 			}
 		}
+	
+
 				/*
 					FOR THE MARKDOWN EDITOR
 				*/
+
 				/* Remove the indentation from the checkboxes at the root of the document
 				   (otherwise they are too far right), but keep it for their children to allow
 				   nested lists. Make sure this value matches the UL margin. */
+
 				li.md-checkbox {
 					list-style-type: none;
 				}
+
 				li.md-checkbox input[type=checkbox] {
 					margin-left: -1.71em;
 					margin-right: 0.7em;
 					position: relative;
 					top: 1px;
 				}
+				
 				ul.joplin-checklist {
 					list-style:none;
 				}
+
 				/*
 					FOR THE RICH TEXT EDITOR
 				*/
+
 				ul.joplin-checklist li::before {
 					content:"\f14a";
 					font-family:"Font Awesome 5 Free";
@@ -408,6 +598,7 @@
 					position: absolute;
 					color: #32373F;
 				}
+
 				.joplin-checklist li:not(.checked)::before {
 					content:"\f0c8";
 				}
@@ -426,21 +617,21 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 				.mermaid-export-graph > button:hover {
 					background-color: #CBDAF1 !important;
 				}</style><div id="rendered-md"><h1 id="prompt-for-ai"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">PROMPT FOR AI</span></h1>
-<p>&quot;Analyze this UPSC Mains question from [Year, Paper, Question No.]. Provide an answer that follows UPSC's GS/ESSAY answer guidelines with:</p>
-<p>1. Introduction (contextual, balanced)<br>
-2. Body with headings/subheadings<br>
-3. Multi-dimensional analysis (political, economic, social, environmental, ethical)<br>
-4. Current examples/data (post-2020)<br>
-5. Balanced conclusion with way forward<br>
-6. Keywords UPSC expects<br>
-7. Word limit: [250/150/1000 as per question]<br>
-8. Clarity over Complexity - Simple, clear language<br>
-9. Structure - Logical flow with signposting<br>
-10. Balance - Multiple perspectives without bias<br>
-11. Current Relevance - Latest examples, data, schemes<br>
+<p>&quot;Analyze this UPSC Mains question from [Year, Paper, Question No.]. Provide an answer that follows UPSC&apos;s GS/ESSAY answer guidelines with:</p>
+<p>1. Introduction (contextual, balanced)<br/>
+2. Body with headings/subheadings<br/>
+3. Multi-dimensional analysis (political, economic, social, environmental, ethical)<br/>
+4. Current examples/data (post-2020)<br/>
+5. Balanced conclusion with way forward<br/>
+6. Keywords UPSC expects<br/>
+7. Word limit: [250/150/1000 as per question]<br/>
+8. Clarity over Complexity - Simple, clear language<br/>
+9. Structure - Logical flow with signposting<br/>
+10. Balance - Multiple perspectives without bias<br/>
+11. Current Relevance - Latest examples, data, schemes<br/>
 12. Answer Directly - Address all parts of question</p>
 <p>Question: [Paste question here]&quot;</p>
-<p> </p>
+<p>&nbsp;</p>
 <h1 id="important-caution"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">Important Caution:</span></h1>
 <p>No AI can guarantee &quot;maximum marks&quot; - UPSC evaluates original thinking, critical analysis, and unique insights. Use AI for:</p>
 <p>Structuring practice</p>
@@ -455,7 +646,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Final Verdict: DeepSeek for daily practice + ChatGPT for occasional polish + Human evaluation for final improvement. The best answer comes from your mind - AI is just a tool to refine it! 🚀</p>
 <h1 id="ncert-books-strategy"><span style="color: rgb(241, 196, 15);" class="jop-noMdConv">NCERT Books - Strategy</span></h1>
 <p><strong>Micro Topics of UPSC Syllabus</strong></p>
-<p><a data-from-md title='https://iasscore.in/upsc-syllabus/history' href='https://iasscore.in/upsc-syllabus/history'>https://iasscore.in/upsc-syllabus/history</a></p>
+<p><a data-from-md="" title="https://iasscore.in/upsc-syllabus/history" href="https://iasscore.in/upsc-syllabus/history">https://iasscore.in/upsc-syllabus/history</a></p>
 <p><strong>Order of Reading NCERT:</strong></p>
 <ul>
 <li>
@@ -480,13 +671,13 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Developing analytical ability requires interlinking subjects and creating new perspectives from it.</p>
 </li>
 <li>
-<p>That's the main requirement of this examination and this is the reason why we need to read NCERTs.</p>
+<p>That&apos;s the main requirement of this examination and this is the reason why we need to read NCERTs.</p>
 </li>
 <li>
 <p>NCERTs are not only easy to understand but also has government backing. This is important.</p>
 </li>
 </ol>
-<p><strong>Strong Foundation</strong> — (builds)→ <strong>Conceptual Clarity</strong> —(helps in)→ <strong>Interlinkage</strong> —(gives)→ <strong>Analytical Thinking</strong></p>
+<p><strong>Strong Foundation</strong> &mdash; (builds)&rarr; <strong>Conceptual Clarity</strong> &mdash;(helps in)&rarr; <strong>Interlinkage</strong> &mdash;(gives)&rarr; <strong>Analytical Thinking</strong></p>
 <p><strong>For Guess Work in Pre :</strong></p>
 <ol>
 <li>
@@ -500,7 +691,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </li>
 </ol>
 <p><strong>CALMNESS, CONFIDENCE, CONCENTRATION</strong> and <strong>COMMON SENSE</strong></p>
-<p>**(**very important <em><strong>as UPSC is a general exam and sometimes we need to see it from a COMMON MAN’s point of view).</strong></em></p>
+<p>**(**very important <em><strong>as UPSC is a general exam and sometimes we need to see it from a COMMON MAN&rsquo;s point of view).</strong></em></p>
 <p>You must have heard that NCERT books are must read books if you want to crack UPSC. Today I will decode it. I will focus on <strong>why, when, how, which</strong> and <strong>what</strong> to prepare from them.</p>
 <p><em><strong>Why</strong></em></p>
 <p>You can not build a great building on a weak foundation.</p>
@@ -522,7 +713,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Every year at least 30-35 questions are directly asked from NCERTs.</p>
 </li>
 <li>
-<p>Most importantly today’s era is flooded with vast information, contents and materials.</p>
+<p>Most importantly today&rsquo;s era is flooded with vast information, contents and materials.</p>
 <p>Here NCERT books will filter the excesses.</p>
 <p>They will be time and content efficient.</p>
 </li>
@@ -714,7 +905,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Now you have a clear picture. Start the foundation early so that you can reach the top early.</p>
 </li>
 </ul>
-<p><strong>Don’t waste time.</strong></p>
+<p><strong>Don&rsquo;t waste time.</strong></p>
 <p><strong>Best of luck!</strong></p>
 <p><strong>Benefits of Reading NCERT Books for Preparation of UPSC CSE:</strong></p>
 <p>NCERT books are highly recommended for aspirants preparing for the UPSC Civil Services Examination (CSE) for several reasons.</p>
@@ -867,7 +1058,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Now I should add a word of caution here. Even if a candidate decides to join some coaching class there is only so much classes can do</p>
 </li>
 <li>
-<p>(at best say 20–30% of the work might get done in a classroom),</p>
+<p>(at best say 20&ndash;30% of the work might get done in a classroom),</p>
 </li>
 <li>
 <p>it will entirely depend on how much effort that you put in that will decide your result.</p>
@@ -895,7 +1086,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Newspapers are vital for any preparation strategy.</p>
 </li>
 <li>
-<p>I used to spend atleast 2–3 hours daily reading the newspaper.</p>
+<p>I used to spend atleast 2&ndash;3 hours daily reading the newspaper.</p>
 </li>
 <li>
 <p>It helps one cement the concepts and helps you evolve opinions and will help you analyse a given situation from multiple perspectives.</p>
@@ -1010,19 +1201,19 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Underline what you think is important.</p>
 </li>
 <li>
-<p>Don't try to remember anything , just read it like a novel.</p>
+<p>Don&apos;t try to remember anything , just read it like a novel.</p>
 </li>
 <li>
 <p>Try to understand what the author is trying to convey.</p>
 </li>
 <li>
-<p>If you don't understand then use Google , YouTube, Quora, Wikipedia etc.</p>
+<p>If you don&apos;t understand then use Google , YouTube, Quora, Wikipedia etc.</p>
 </li>
 </ol>
 <p><strong>Checkpoint :</strong></p>
 <ul>
 <li>
-<p>Try solving previous year's question papers or any test series.</p>
+<p>Try solving previous year&apos;s question papers or any test series.</p>
 </li>
 <li>
 <p>You will start having an idea about type of questions asked,</p>
@@ -1059,7 +1250,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Do the same thing as mentioned above.</p>
 </li>
 <li>
-<p>Try solving previous year's question papers or any test series.</p>
+<p>Try solving previous year&apos;s question papers or any test series.</p>
 </li>
 <li>
 <p>You will start having an idea about</p>
@@ -1091,7 +1282,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </li>
 <li>
 <p>Done. Go and give your exam.</p>
-<p>Don't forget to rock it.</p>
+<p>Don&apos;t forget to rock it.</p>
 </li>
 </ol>
 <ul>
@@ -1102,10 +1293,10 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>if you can successfully identify what you know and</p>
 </li>
 <li>
-<p>what you can't recall then you are prepared for Mains.</p>
+<p>what you can&apos;t recall then you are prepared for Mains.</p>
 </li>
 </ul>
-<p><strong>IF YOU DON'T HAVE TIME</strong></p>
+<p><strong>IF YOU DON&apos;T HAVE TIME</strong></p>
 <p>Again we do it in three passes.</p>
 <p><strong>1st Pass</strong></p>
 <p>Read the previous year question papers.</p>
@@ -1122,7 +1313,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Also read the related things.</p>
 </li>
 <li>
-<p>As rightly said by successful candidates , don't forget to link the current affairs.</p>
+<p>As rightly said by successful candidates , don&apos;t forget to link the current affairs.</p>
 </li>
 <li>
 <p>Read the NCERTs and connect current affairs or read current affairs and the link the NCERTs. Choice is yours !</p>
@@ -1137,7 +1328,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Follow top-bottom approach.</p>
 </li>
 <li>
-<p>Read NCERTs of higher classes first and then read lower classes' NCERTs.</p>
+<p>Read NCERTs of higher classes first and then read lower classes&apos; NCERTs.</p>
 </li>
 <li>
 <p>Higher NCERTs give you a broad framework and lower NCERTs fill in the minute details.</p>
@@ -1149,7 +1340,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p><strong>Approach to study NCERT Books</strong></p>
 <ul>
 <li>
-<p>NCERT’s are building base for any competition in India especially Civil Services.</p>
+<p>NCERT&rsquo;s are building base for any competition in India especially Civil Services.</p>
 </li>
 <li>
 <p>Based on the experience i can suggest a method to start NCERT and ensure effective reading then learning:</p>
@@ -1173,7 +1364,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>In fact students would be surprised to find new things which somehow got missed in the first stage.</p>
 </li>
 <li>
-<p>Think and introspect 10–20% of you time while reading.</p>
+<p>Think and introspect 10&ndash;20% of you time while reading.</p>
 </li>
 <li>
 <p>You should also highlight and make small indications in the book itself.</p>
@@ -1185,7 +1376,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p><strong>3:</strong> <strong>Synopsis:</strong></p>
 <ul>
 <li>
-<p>This is last and most important stage, here you should make a synopsis of 5–8 pages(Total) based on your understanding of concepts read.</p>
+<p>This is last and most important stage, here you should make a synopsis of 5&ndash;8 pages(Total) based on your understanding of concepts read.</p>
 </li>
 <li>
 <p>This should be for all the NCERTs. One can make flow chart and note important concepts in synopsis.</p>
@@ -1194,7 +1385,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p><strong>PYQs:</strong></p>
 <ul>
 <li>
-<p>Along with NCERT don’t forget to refer previous years question papers ,</p>
+<p>Along with NCERT don&rsquo;t forget to refer previous years question papers ,</p>
 </li>
 <li>
 <p>you will surprised to find many questions based on very basic concepts.</p>
@@ -1227,7 +1418,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p><strong>Timeline for NCERT:</strong></p>
 <ul>
 <li>
-<p>Now this is a very subjective question, still for a student devoting 5–6 hours on a average should be able cover NCERT’s in 3–4 months.</p>
+<p>Now this is a very subjective question, still for a student devoting 5&ndash;6 hours on a average should be able cover NCERT&rsquo;s in 3&ndash;4 months.</p>
 </li>
 <li>
 <p>This timeline is for qualitative approach.</p>
@@ -1236,13 +1427,13 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p><strong>Answer Writing:</strong></p>
 <ul>
 <li>
-<p>Now don’t forget this process if you are an aspirant.</p>
+<p>Now don&rsquo;t forget this process if you are an aspirant.</p>
 </li>
 <li>
-<p>Don’t wait for things to get over, since there will always be something on the platter to cover.</p>
+<p>Don&rsquo;t wait for things to get over, since there will always be something on the platter to cover.</p>
 </li>
 <li>
-<p>Write or scribble something for at least 10–15 minutes daily.</p>
+<p>Write or scribble something for at least 10&ndash;15 minutes daily.</p>
 </li>
 </ul>
 <p><strong>Small revisions:</strong></p>
@@ -1251,13 +1442,13 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Revision can be done in a baby step method.</p>
 </li>
 <li>
-<p>Just give 10–15 minutes of slot three times a day to ensure effective revision with retention.</p>
+<p>Just give 10&ndash;15 minutes of slot three times a day to ensure effective revision with retention.</p>
 </li>
 </ul>
 <p><strong>Switching Subjects in case of Boredom:</strong></p>
 <ul>
 <li>
-<p>Always remember <strong>“Change of work is the biggest source of relaxation”</strong>,</p>
+<p>Always remember <strong>&ldquo;Change of work is the biggest source of relaxation&rdquo;</strong>,</p>
 </li>
 <li>
 <p>hence change subject if you find the momentum difficult.</p>
@@ -1369,10 +1560,10 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </li>
 </ol>
 <p>By following these tips, you can effectively and efficiently self-study and get maximum benefit from your efforts.</p>
-<p> </p>
+<p>&nbsp;</p>
 <p>Polity</p>
 <p><strong>Micro Topics of UPSC Syllabus</strong></p>
-<p><a data-from-md title='https://iasscore.in/upsc-syllabus/polity-governance' href='https://iasscore.in/upsc-syllabus/polity-governance'>https://iasscore.in/upsc-syllabus/polity-governance</a></p>
+<p><a data-from-md="" title="https://iasscore.in/upsc-syllabus/polity-governance" href="https://iasscore.in/upsc-syllabus/polity-governance">https://iasscore.in/upsc-syllabus/polity-governance</a></p>
 <p><strong>Strategy:</strong></p>
 <ol>
 <li>
@@ -1583,7 +1774,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Practice Questions</p>
 </li>
 <li>
-<p>Previous Years' Questions</p>
+<p>Previous Years&apos; Questions</p>
 </li>
 </ul>
 <p><strong>Block 1: The Base - Constitutional Framework - 155</strong></p>
@@ -1688,10 +1879,10 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Finance Commission - 69</p>
 </li>
 <li>
-<p>National Commission for SC’s - 71</p>
+<p>National Commission for SC&rsquo;s - 71</p>
 </li>
 <li>
-<p>National Commission for ST’s - 73</p>
+<p>National Commission for ST&rsquo;s - 73</p>
 </li>
 <li>
 <p>Special Officer for Linguistic Minorities - 75</p>
@@ -1707,7 +1898,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </li>
 </ol>
 <p><strong>Block 7: Non-Constitutional Bodies - 84</strong></p>
-<p><strong>Block 8: System of Government  - 105</strong></p>
+<p><strong>Block 8: System of Government&nbsp; - 105</strong></p>
 <ol>
 <li>
 <p>Parliamentary System - 106</p>
@@ -1758,8 +1949,8 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Making of the Constitution - 166</p>
 </li>
 </ol>
-<p>Topper's Strategy - All Subjects</p>
-<p><strong>Jaagrati Awasthi ( AIR 2  - CSE 2020)</strong></p>
+<p>Topper&apos;s Strategy - All Subjects</p>
+<p><strong>Jaagrati Awasthi ( AIR 2&nbsp; - CSE 2020)</strong></p>
 <ul>
 <li>Refer - Previous Years Questions of at least last 5 years for every topic</li>
 </ul>
@@ -1826,7 +2017,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p><strong>6. Economics</strong></p>
 <ul>
 <li>
-<p>Mrunal Patel Sir's Economics (Latest Notes and updates)</p>
+<p>Mrunal Patel Sir&apos;s Economics (Latest Notes and updates)</p>
 </li>
 <li>
 <p>PIB Summary of Economic Survey</p>
@@ -2006,7 +2197,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </ul>
 <p><strong>Anudeep Durishetty</strong></p>
 <ul>
-<li>The Complete Booklist for UPSC Civil Services – Prelims Exam (Paper I)</li>
+<li>The Complete Booklist for UPSC Civil Services &ndash; Prelims Exam (Paper I)</li>
 </ul>
 <p><strong>Polity</strong></p>
 <ul>
@@ -2021,10 +2212,10 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Mrunal.org articles</p>
 </li>
 <li>
-<p>Macroeconomics – NCERT Class XII</p>
+<p>Macroeconomics &ndash; NCERT Class XII</p>
 </li>
 <li>
-<p>Indian Economic Development – NCERT Class XI</p>
+<p>Indian Economic Development &ndash; NCERT Class XI</p>
 </li>
 <li>
 <p>Economic Survey (Selective reading from Prelims perspective)</p>
@@ -2057,7 +2248,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>A Brief history of Modern India- Spectrum Publications</p>
 </li>
 <li>
-<p>India’s Struggle for Independence – Bipan Chandra (Selective Reading)</p>
+<p>India&rsquo;s Struggle for Independence &ndash; Bipan Chandra (Selective Reading)</p>
 </li>
 <li>
 <p>NCERT by Bipan Chandra (For the period 1700s to 1857)</p>
@@ -2066,7 +2257,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p><strong>Indian Art and Culture</strong></p>
 <ul>
 <li>
-<p>An Introduction to Indian Art – Class XI NCERT</p>
+<p>An Introduction to Indian Art &ndash; Class XI NCERT</p>
 </li>
 <li>
 <p>Chapters related to culture in Ancient and Medieval India NCERTs</p>
@@ -2085,7 +2276,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p><strong>General Science</strong></p>
 <ul>
 <li>
-<p>General Science books – IX and X standard</p>
+<p>General Science books &ndash; IX and X standard</p>
 </li>
 <li>
 <p>The Hindu (Note down and read about the latest scientific terms, discoveries and inventions frequently mentioned in news)</p>
@@ -2168,82 +2359,82 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </ul>
 <p><strong>Mr. Shubhankar Pratyush Pathak, AIR 11, UPSC CSE 2021</strong></p>
 <p><strong>Strategy:</strong></p>
-<p><a data-from-md title='https://www.youtube.com/watch?v=_tsaM2O4-wU' href='https://www.youtube.com/watch?v=_tsaM2O4-wU'>https://www.youtube.com/watch?v=_tsaM2O4-wU</a></p>
+<p><a data-from-md="" title="https://www.youtube.com/watch?v=_tsaM2O4-wU" href="https://www.youtube.com/watch?v=_tsaM2O4-wU">https://www.youtube.com/watch?v=_tsaM2O4-wU</a></p>
 <p><strong>Free Resources for Preparation of CSE (YouTube)</strong></p>
 <ol>
 <li>
-<p>Gaurav Budania  (<a data-from-md title='https://www.youtube.com/@UPSC_topper/videos' href='https://www.youtube.com/@UPSC_topper/videos'>https://www.youtube.com/@UPSC_topper/videos</a>) - Basic Guidance</p>
+<p>Gaurav Budania&nbsp; (<a data-from-md="" title="https://www.youtube.com/@UPSC_topper/videos" href="https://www.youtube.com/@UPSC_topper/videos">https://www.youtube.com/@UPSC_topper/videos</a>) - Basic Guidance</p>
 </li>
 <li>
-<p>PrepLadder (<a data-from-md title='https://www.youtube.com/watch?v=qYmOncbOw8M&amp;list=PLYA-oUeN_g2XSBqrVHYCS3-34tUS5iAPI' href='https://www.youtube.com/watch?v=qYmOncbOw8M&amp;list=PLYA-oUeN_g2XSBqrVHYCS3-34tUS5iAPI'>https://www.youtube.com/watch?v=qYmOncbOw8M&amp;list=PLYA-oUeN_g2XSBqrVHYCS3-34tUS5iAPI</a>) - PYQ - 5 Saal 25 Sawaal</p>
+<p>PrepLadder (<a data-from-md="" title="https://www.youtube.com/watch?v=qYmOncbOw8M&amp;list=PLYA-oUeN_g2XSBqrVHYCS3-34tUS5iAPI" href="https://www.youtube.com/watch?v=qYmOncbOw8M&amp;list=PLYA-oUeN_g2XSBqrVHYCS3-34tUS5iAPI">https://www.youtube.com/watch?v=qYmOncbOw8M&amp;list=PLYA-oUeN_g2XSBqrVHYCS3-34tUS5iAPI</a>) - PYQ - 5 Saal 25 Sawaal</p>
 </li>
 </ol>
 <h2 id="roadmap-of-cse-2023-2024"><strong>Roadmap of CSE (2023-2024)</strong></h2>
 <p>Kanki Mam</p>
-<p><a data-from-md title='https://www.youtube.com/watch?v=lg62iC2mCGg' href='https://www.youtube.com/watch?v=lg62iC2mCGg'>https://www.youtube.com/watch?v=lg62iC2mCGg</a></p>
+<p><a data-from-md="" title="https://www.youtube.com/watch?v=lg62iC2mCGg" href="https://www.youtube.com/watch?v=lg62iC2mCGg">https://www.youtube.com/watch?v=lg62iC2mCGg</a></p>
 <p>CSE Preparation Mistakes to Avoid (2023-2024)</p>
-<p><a data-from-md title='https://www.youtube.com/watch?v=-6-m7JKI4Nk' href='https://www.youtube.com/watch?v=-6-m7JKI4Nk'>https://www.youtube.com/watch?v=-6-m7JKI4Nk</a></p>
-<p><a data-from-md title='https://www.youtube.com/watch?v=pTSCfe0_KMo' href='https://www.youtube.com/watch?v=pTSCfe0_KMo'>https://www.youtube.com/watch?v=pTSCfe0_KMo</a></p>
+<p><a data-from-md="" title="https://www.youtube.com/watch?v=-6-m7JKI4Nk" href="https://www.youtube.com/watch?v=-6-m7JKI4Nk">https://www.youtube.com/watch?v=-6-m7JKI4Nk</a></p>
+<p><a data-from-md="" title="https://www.youtube.com/watch?v=pTSCfe0_KMo" href="https://www.youtube.com/watch?v=pTSCfe0_KMo">https://www.youtube.com/watch?v=pTSCfe0_KMo</a></p>
 <p><strong>Guidance - Shashank Sajwan (2023-2024)</strong></p>
 <ul>
 <li>
-<p><a data-from-md title='https://www.youtube.com/@ShashankSajwan/videos' href='https://www.youtube.com/@ShashankSajwan/videos'>https://www.youtube.com/@ShashankSajwan/videos</a></p>
+<p><a data-from-md="" title="https://www.youtube.com/@ShashankSajwan/videos" href="https://www.youtube.com/@ShashankSajwan/videos">https://www.youtube.com/@ShashankSajwan/videos</a></p>
 </li>
 <li>
-<p><a data-from-md title='https://www.youtube.com/@ShashankSajwanIASMentor/channels' href='https://www.youtube.com/@ShashankSajwanIASMentor/channels'>https://www.youtube.com/@ShashankSajwanIASMentor/channels</a></p>
+<p><a data-from-md="" title="https://www.youtube.com/@ShashankSajwanIASMentor/channels" href="https://www.youtube.com/@ShashankSajwanIASMentor/channels">https://www.youtube.com/@ShashankSajwanIASMentor/channels</a></p>
 </li>
 <li>
-<p><a data-from-md title='https://www.youtube.com/channel/UCfgC56o4pgbsL1Tz-V5fvSA' href='https://www.youtube.com/channel/UCfgC56o4pgbsL1Tz-V5fvSA'>https://www.youtube.com/channel/UCfgC56o4pgbsL1Tz-V5fvSA</a></p>
+<p><a data-from-md="" title="https://www.youtube.com/channel/UCfgC56o4pgbsL1Tz-V5fvSA" href="https://www.youtube.com/channel/UCfgC56o4pgbsL1Tz-V5fvSA">https://www.youtube.com/channel/UCfgC56o4pgbsL1Tz-V5fvSA</a></p>
 </li>
 </ul>
 <p><strong>RA Israel JebaSingh (Ex IAS)</strong></p>
-<p><a data-from-md title='https://www.quora.com/profile/R-A-Israel-Jebasingh' href='https://www.quora.com/profile/R-A-Israel-Jebasingh'>https://www.quora.com/profile/R-A-Israel-Jebasingh</a></p>
+<p><a data-from-md="" title="https://www.quora.com/profile/R-A-Israel-Jebasingh" href="https://www.quora.com/profile/R-A-Israel-Jebasingh">https://www.quora.com/profile/R-A-Israel-Jebasingh</a></p>
 <p><strong>Shubham Bansal (IAS)</strong></p>
-<p><a data-from-md title='https://www.quora.com/profile/Shubham-Bansal-804' href='https://www.quora.com/profile/Shubham-Bansal-804'>https://www.quora.com/profile/Shubham-Bansal-804</a></p>
+<p><a data-from-md="" title="https://www.quora.com/profile/Shubham-Bansal-804" href="https://www.quora.com/profile/Shubham-Bansal-804">https://www.quora.com/profile/Shubham-Bansal-804</a></p>
 <p><strong>The Power of Thinking (Must Read Article)</strong></p>
-<p><a data-from-md title='https://neverfear43.wordpress.com/2022/09/12/the-power-of-thinking/' href='https://neverfear43.wordpress.com/2022/09/12/the-power-of-thinking/'>https://neverfear43.wordpress.com/2022/09/12/the-power-of-thinking/</a></p>
+<p><a data-from-md="" title="https://neverfear43.wordpress.com/2022/09/12/the-power-of-thinking/" href="https://neverfear43.wordpress.com/2022/09/12/the-power-of-thinking/">https://neverfear43.wordpress.com/2022/09/12/the-power-of-thinking/</a></p>
 <p><strong>Gaurav Aggarwal Notes ( IAS)</strong></p>
-<p><a data-from-md title='https://thesupermanreturns.wordpress.com/2014/06/18/upscnotesgauravagrawal/comment-page-12/' href='https://thesupermanreturns.wordpress.com/2014/06/18/upscnotesgauravagrawal/comment-page-12/'>https://thesupermanreturns.wordpress.com/2014/06/18/upscnotesgauravagrawal/comment-page-12/</a></p>
+<p><a data-from-md="" title="https://thesupermanreturns.wordpress.com/2014/06/18/upscnotesgauravagrawal/comment-page-12/" href="https://thesupermanreturns.wordpress.com/2014/06/18/upscnotesgauravagrawal/comment-page-12/">https://thesupermanreturns.wordpress.com/2014/06/18/upscnotesgauravagrawal/comment-page-12/</a></p>
 <p><strong>Current Affairs</strong></p>
-<p><a data-from-md title='https://officerspulse.com/monthly-pulse-at-a-glance/' href='https://officerspulse.com/monthly-pulse-at-a-glance/'>https://officerspulse.com/monthly-pulse-at-a-glance/</a></p>
+<p><a data-from-md="" title="https://officerspulse.com/monthly-pulse-at-a-glance/" href="https://officerspulse.com/monthly-pulse-at-a-glance/">https://officerspulse.com/monthly-pulse-at-a-glance/</a></p>
 <p><strong>PYQs</strong></p>
-<p><a data-from-md title='https://officerspulse.com/previous-years-papers/' href='https://officerspulse.com/previous-years-papers/'>https://officerspulse.com/previous-years-papers/</a></p>
+<p><a data-from-md="" title="https://officerspulse.com/previous-years-papers/" href="https://officerspulse.com/previous-years-papers/">https://officerspulse.com/previous-years-papers/</a></p>
 <p><strong>PDF - CSAT</strong></p>
 <ul>
 <li>
-<p><a data-from-md title='https://www.pdfdrive.com/csat-books.html' href='https://www.pdfdrive.com/csat-books.html'>https://www.pdfdrive.com/csat-books.html</a></p>
+<p><a data-from-md="" title="https://www.pdfdrive.com/csat-books.html" href="https://www.pdfdrive.com/csat-books.html">https://www.pdfdrive.com/csat-books.html</a></p>
 </li>
 <li>
-<p><a data-from-md title='https://upscpdf.com/' href='https://upscpdf.com/'>https://upscpdf.com/</a></p>
+<p><a data-from-md="" title="https://upscpdf.com/" href="https://upscpdf.com/">https://upscpdf.com/</a></p>
 </li>
 <li>
-<p><a data-from-md title='https://edurev.in/chapter/6333_Basic-Numeracy' href='https://edurev.in/chapter/6333_Basic-Numeracy'>https://edurev.in/chapter/6333_Basic-Numeracy</a></p>
+<p><a data-from-md="" title="https://edurev.in/chapter/6333_Basic-Numeracy" href="https://edurev.in/chapter/6333_Basic-Numeracy">https://edurev.in/chapter/6333_Basic-Numeracy</a></p>
 </li>
 </ul>
 <p><strong>Physical Geography - World</strong></p>
 <ul>
 <li>
-<p><a data-from-md title='https://www.insightsonindia.com/world-geography/' href='https://www.insightsonindia.com/world-geography/'>https://www.insightsonindia.com/world-geography/</a></p>
+<p><a data-from-md="" title="https://www.insightsonindia.com/world-geography/" href="https://www.insightsonindia.com/world-geography/">https://www.insightsonindia.com/world-geography/</a></p>
 </li>
 <li>
-<p><a data-from-md title='https://lotusarise.com/upsc-notes/geography-upsc/' href='https://lotusarise.com/upsc-notes/geography-upsc/'>https://lotusarise.com/upsc-notes/geography-upsc/</a></p>
+<p><a data-from-md="" title="https://lotusarise.com/upsc-notes/geography-upsc/" href="https://lotusarise.com/upsc-notes/geography-upsc/">https://lotusarise.com/upsc-notes/geography-upsc/</a></p>
 </li>
 <li>
-<p><a data-from-md title='https://www.clearias.com/geography/' href='https://www.clearias.com/geography/'>https://www.clearias.com/geography/</a></p>
+<p><a data-from-md="" title="https://www.clearias.com/geography/" href="https://www.clearias.com/geography/">https://www.clearias.com/geography/</a></p>
 </li>
 </ul>
 <p><strong>Sociology - Optional</strong></p>
-<p><a data-from-md title='https://www.youtube.com/watch?v=rIhqqQQilTA&amp;list=PLYSuG-KZy7JDFWh1oAMvzNLbaLZGY5Ina' href='https://www.youtube.com/watch?v=rIhqqQQilTA&amp;list=PLYSuG-KZy7JDFWh1oAMvzNLbaLZGY5Ina'>https://www.youtube.com/watch?v=rIhqqQQilTA&amp;list=PLYSuG-KZy7JDFWh1oAMvzNLbaLZGY5Ina</a></p>
+<p><a data-from-md="" title="https://www.youtube.com/watch?v=rIhqqQQilTA&amp;list=PLYSuG-KZy7JDFWh1oAMvzNLbaLZGY5Ina" href="https://www.youtube.com/watch?v=rIhqqQQilTA&amp;list=PLYSuG-KZy7JDFWh1oAMvzNLbaLZGY5Ina">https://www.youtube.com/watch?v=rIhqqQQilTA&amp;list=PLYSuG-KZy7JDFWh1oAMvzNLbaLZGY5Ina</a></p>
 <p><strong>Sociology - IGNOU BA</strong></p>
-<p><a data-from-md title='https://drive.google.com/drive/folders/1l3Ezh3QmT69TAfNob75FH4vCQ_J7IsBl' href='https://drive.google.com/drive/folders/1l3Ezh3QmT69TAfNob75FH4vCQ_J7IsBl'>https://drive.google.com/drive/folders/1l3Ezh3QmT69TAfNob75FH4vCQ_J7IsBl</a></p>
+<p><a data-from-md="" title="https://drive.google.com/drive/folders/1l3Ezh3QmT69TAfNob75FH4vCQ_J7IsBl" href="https://drive.google.com/drive/folders/1l3Ezh3QmT69TAfNob75FH4vCQ_J7IsBl">https://drive.google.com/drive/folders/1l3Ezh3QmT69TAfNob75FH4vCQ_J7IsBl</a></p>
 <p><strong>Sociology - IGNOU MA - Not Important</strong></p>
-<p><a data-from-md title='https://drive.google.com/drive/folders/1QSgQt2ClO-uTQhZlohkmXewmhum6iZ9O' href='https://drive.google.com/drive/folders/1QSgQt2ClO-uTQhZlohkmXewmhum6iZ9O'>https://drive.google.com/drive/folders/1QSgQt2ClO-uTQhZlohkmXewmhum6iZ9O</a></p>
+<p><a data-from-md="" title="https://drive.google.com/drive/folders/1QSgQt2ClO-uTQhZlohkmXewmhum6iZ9O" href="https://drive.google.com/drive/folders/1QSgQt2ClO-uTQhZlohkmXewmhum6iZ9O">https://drive.google.com/drive/folders/1QSgQt2ClO-uTQhZlohkmXewmhum6iZ9O</a></p>
 <p><strong>Sociology - Current Affairs</strong></p>
-<p><a data-from-md title='https://www.youtube.com/watch?v=oZlmTz_KqwA' href='https://www.youtube.com/watch?v=oZlmTz_KqwA'>https://www.youtube.com/watch?v=oZlmTz_KqwA</a></p>
-<p> </p>
-<p>Topper's Strategy - Sociology - Optional</p>
+<p><a data-from-md="" title="https://www.youtube.com/watch?v=oZlmTz_KqwA" href="https://www.youtube.com/watch?v=oZlmTz_KqwA">https://www.youtube.com/watch?v=oZlmTz_KqwA</a></p>
+<p>&nbsp;</p>
+<p>Topper&apos;s Strategy - Sociology - Optional</p>
 <p><strong>Micro Topics of UPSC Syllabus</strong></p>
-<p><a data-from-md title='https://iasscore.in/upsc-syllabus/optional/sociology' href='https://iasscore.in/upsc-syllabus/optional/sociology'>https://iasscore.in/upsc-syllabus/optional/sociology</a></p>
+<p><a data-from-md="" title="https://iasscore.in/upsc-syllabus/optional/sociology" href="https://iasscore.in/upsc-syllabus/optional/sociology">https://iasscore.in/upsc-syllabus/optional/sociology</a></p>
 <p><strong>Anu Kumari</strong></p>
 <ul>
 <li>
@@ -2264,7 +2455,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </ul>
 <p><strong>Blog:</strong></p>
 <ul>
-<li><a data-from-md title='https://anubhokar.wordpress.com/2018/06/06/sociology-strategy-anu-kumari' href='https://anubhokar.wordpress.com/2018/06/06/sociology-strategy-anu-kumari'>https://anubhokar.wordpress.com/2018/06/06/sociology-strategy-anu-kumari</a></li>
+<li><a data-from-md="" title="https://anubhokar.wordpress.com/2018/06/06/sociology-strategy-anu-kumari" href="https://anubhokar.wordpress.com/2018/06/06/sociology-strategy-anu-kumari">https://anubhokar.wordpress.com/2018/06/06/sociology-strategy-anu-kumari</a></li>
 </ul>
 <p><strong>Jagrati Awasthi</strong></p>
 <ul>
@@ -2383,14 +2574,14 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Frameworks Videos of Sleepy Classes</p>
 </li>
 </ul>
-<p> </p>
+<p>&nbsp;</p>
 <p>Toppers + Unemployment + Corruption</p>
 <ol>
 <li>
 <p>The preparation for the exam is not as painful as it appears to be in reality.</p>
 </li>
 <li>
-<p>One need not study 12–14 hours a day. 6–8 hours of effective study regularly is more than enough.</p>
+<p>One need not study 12&ndash;14 hours a day. 6&ndash;8 hours of effective study regularly is more than enough.</p>
 </li>
 <li>
 <p>You can watch movies, use social media and live as normally as you want to.</p>
@@ -2405,7 +2596,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Even toppers are no different.</p>
 </li>
 <li>
-<p>It's just after clearing the exam everything seems to be picture perfect.</p>
+<p>It&apos;s just after clearing the exam everything seems to be picture perfect.</p>
 </li>
 <li>
 <p>The reality is they have struggled equally in their life.</p>
@@ -2426,13 +2617,13 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>So luck is always there in this exam along with efforts.</p>
 </li>
 <li>
-<p>If any topper is endorsing a particular institute to join don't follow it blindly.</p>
+<p>If any topper is endorsing a particular institute to join don&apos;t follow it blindly.</p>
 </li>
 <li>
 <p>Make your own choice.</p>
 </li>
 <li>
-<p>Also don't listen to shortcuts told by any toppers.</p>
+<p>Also don&apos;t listen to shortcuts told by any toppers.</p>
 </li>
 <li>
 <p>Always stick to basic books and newspapers.</p>
@@ -2456,19 +2647,19 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>There is no harm in having a plan B.</p>
 </li>
 <li>
-<p>Clearing this exam won't change your life forever.</p>
+<p>Clearing this exam won&apos;t change your life forever.</p>
 </li>
 <li>
 <p>For sometime it might be rosy.</p>
 </li>
 <li>
-<p>After that it's just a normal journey.</p>
+<p>After that it&apos;s just a normal journey.</p>
 </li>
 <li>
 <p>If you love your job you will be happy.</p>
 </li>
 <li>
-<p>Other things won't matter in a long run.</p>
+<p>Other things won&apos;t matter in a long run.</p>
 </li>
 <li>
 <p>The charm will fade away very soon.</p>
@@ -2483,7 +2674,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>The fight is endless.</p>
 </li>
 <li>
-<p>Firstly it's about getting selection then a good rank then IAS/IPS then home cadre then a good posting.</p>
+<p>Firstly it&apos;s about getting selection then a good rank then IAS/IPS then home cadre then a good posting.</p>
 </li>
 <li>
 <p>So satisfaction is a rare commodity.</p>
@@ -2492,7 +2683,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>A lot of people blindly fill their service preference and regret later.</p>
 </li>
 <li>
-<p>Just because a particular job is more famous it doesn't mean it will suit you.</p>
+<p>Just because a particular job is more famous it doesn&apos;t mean it will suit you.</p>
 </li>
 <li>
 <p>Many selected candidates later realise or feel they should have opted for some other service.</p>
@@ -2527,7 +2718,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <ol>
 <li>
 <p><strong>Lack of Assertiveness:</strong></p>
-<p>Being assertive means communicating with others in a direct and honest manner without intentionally hurting anyone's feelings.</p>
+<p>Being assertive means communicating with others in a direct and honest manner without intentionally hurting anyone&apos;s feelings.</p>
 <p>Direct communication can</p>
 <p>reduce conflict,</p>
 <p>build self-confidence and</p>
@@ -2550,17 +2741,17 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>may not value their own opinions or contributions as much as they should.</p>
 </li>
 </ol>
-<p>It's important to note that being submissive is not inherently good or bad, and</p>
+<p>It&apos;s important to note that being submissive is not inherently good or bad, and</p>
 <p>can be influenced by a variety of factors including personality, culture, and upbringing.</p>
 <p>Some people may naturally be more submissive or assertive, and</p>
-<p>it's important for individuals to find a balance that works for them and</p>
+<p>it&apos;s important for individuals to find a balance that works for them and</p>
 <p>helps them navigate different social situations effectively.</p>
 <p><strong>How to eliminate submissive nature and build a strong and powerful personality. Explain in points.</strong></p>
 <p>Here are some potential steps to help eliminate a submissive nature and build a strong and powerful personality:</p>
 <ol>
 <li>
 <p><strong>Identify the root cause:</strong></p>
-<p>It's important to understand the reasons behind your submissive behavior.</p>
+<p>It&apos;s important to understand the reasons behind your submissive behavior.</p>
 <p>It could be due to</p>
 <p>past experiences,</p>
 <p>cultural or societal expectations, or</p>
@@ -2605,10 +2796,10 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </li>
 <li>
 <p><strong>Seek Professional Help:</strong></p>
-<p>If you're struggling to eliminate submissive behavior on your own, consider seeking the help of a therapist or coach who can provide guidance and support.</p>
+<p>If you&apos;re struggling to eliminate submissive behavior on your own, consider seeking the help of a therapist or coach who can provide guidance and support.</p>
 </li>
 </ol>
-<p>It's important to remember that building a strong and powerful personality is a process that takes time and effort.</p>
+<p>It&apos;s important to remember that building a strong and powerful personality is a process that takes time and effort.</p>
 <p>Be patient with yourself and celebrate small successes along the way.</p>
 <p><strong>List the common traits of Strong and Powerful Personality.</strong></p>
 <p>Here are some common traits of a strong and powerful personality:</p>
@@ -2739,7 +2930,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </li>
 <li>
 <p><strong>RSTV:</strong></p>
-<p>RSTV and its programme like the BIG PICTURE, INDIA’S WORLD etc.</p>
+<p>RSTV and its programme like the BIG PICTURE, INDIA&rsquo;S WORLD etc.</p>
 <p>Really helps to know issues Well.</p>
 </li>
 <li>
@@ -2749,17 +2940,17 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </li>
 <li>
 <p><strong>PYQs:</strong></p>
-<p>Previous years’ question papers to analyse the pattern of the exam and to understand the nature of questions asked.</p>
+<p>Previous years&rsquo; question papers to analyse the pattern of the exam and to understand the nature of questions asked.</p>
 </li>
 <li>
 <p><strong>Develop Basic Understanding:</strong></p>
 <p>Reading and revising basic books (like NCERTS).</p>
 <p>Many a times we mark the answer wrong due to lack of understanding.</p>
-<p>This can be avoided by giving due consideration to basic books FOR NCERT [READ 6–12] ITS VERY BASIC NOT TOO TOUGH MAKE YOUR NOTES SO THAT YOU CAN REVISE IT LATER.</p>
+<p>This can be avoided by giving due consideration to basic books FOR NCERT [READ 6&ndash;12] ITS VERY BASIC NOT TOO TOUGH MAKE YOUR NOTES SO THAT YOU CAN REVISE IT LATER.</p>
 </li>
 <li>
 <p><strong>Revision:</strong></p>
-<p>REVISION  THERE IS NO SHORTCUT IN THIS - REVISE ATLEAST 3-TIMES</p>
+<p>REVISION&nbsp; THERE IS NO SHORTCUT IN THIS - REVISE ATLEAST 3-TIMES</p>
 </li>
 <li>
 <p><strong>Solving Test Papers:</strong></p>
@@ -2769,11 +2960,11 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <li>
 <p><strong>Take CSAT Seriously:</strong></p>
 <p>I know many aspirants who scored decently in GS but failed to make through CSAT.</p>
-<p>And this year’s CSAT paper speaks for itself. It says loud and clear, Don’t take me lightly</p>
+<p>And this year&rsquo;s CSAT paper speaks for itself. It says loud and clear, Don&rsquo;t take me lightly</p>
 </li>
 </ol>
 <p><strong>B. MAINS</strong></p>
-<p>This is the “Main” exam in true sense which ultimately will decide Rank, Service and Cadre you get.</p>
+<p>This is the &ldquo;Main&rdquo; exam in true sense which ultimately will decide Rank, Service and Cadre you get.</p>
 <p>Here, success rate is very high in comparison to prelims but you have to compete with the candidates having almost same knowledge base.</p>
 <p>Small differences create a big gap. Hence, try to fetch 1 extra mark in each question and that is going to create a very huge gap between you and the crowd.</p>
 <p><strong>GS-1 + GS-2 + GS-3</strong></p>
@@ -2804,12 +2995,12 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <li>
 <p><strong>Practice Answer Writing:</strong></p>
 <p>Practice answer writing to ensure that you complete the paper within prescribed time.</p>
-<p>It will also help know one’s weaknesses and strengths.</p>
+<p>It will also help know one&rsquo;s weaknesses and strengths.</p>
 <p>Answer writing helps in articulating our views properly and good articulation is always rewarding.</p>
 </li>
 <li>
 <p><strong>Revision Through Answer Writing:</strong></p>
-<p>Revision through answer writing can be a good approach if it works for someone as it’s like one arrow and two shots.</p>
+<p>Revision through answer writing can be a good approach if it works for someone as it&rsquo;s like one arrow and two shots.</p>
 </li>
 <li>
 <p><strong>Focus on Writing:</strong></p>
@@ -2818,11 +3009,11 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </li>
 <li>
 <p><strong>PYQs:</strong></p>
-<p>Have a look at the previous years’ question papers to know the type and nature of questions that UPSC asks.</p>
+<p>Have a look at the previous years&rsquo; question papers to know the type and nature of questions that UPSC asks.</p>
 </li>
 <li>
 <p><strong>No Page Blank:</strong></p>
-<p>Don’t leave any page of your answer sheet blank.</p>
+<p>Don&rsquo;t leave any page of your answer sheet blank.</p>
 <p>Attempt all questions.</p>
 <p>Even if you have slight knowledge about the question, attempt it.</p>
 </li>
@@ -2853,7 +3044,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <li>
 <p><strong>Choose Carefully:</strong></p>
 <p>Choose optional very carefully as you may need to spend 2-3 years in this field with the optional subject.</p>
-<p>Choice should totally be based on one’s interest.</p>
+<p>Choice should totally be based on one&rsquo;s interest.</p>
 <p>One can know ones interest by reading NCERTs.</p>
 </li>
 <li>
@@ -2875,7 +3066,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </li>
 <li>
 <p><strong>300 Marks:</strong></p>
-<p>One must strive to enter into the “<strong>ELITE GROUP OF 300 MARKS</strong>” to get desired service .</p>
+<p>One must strive to enter into the &ldquo;<strong>ELITE GROUP OF 300 MARKS</strong>&rdquo; to get desired service .</p>
 </li>
 </ol>
 <p><strong>Essay</strong></p>
@@ -2902,7 +3093,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </li>
 <li>
 <p><strong>Beware:</strong></p>
-<p>Beware of self proclaimed UPSC “Experts” who keep on unfurling the so called perfect strategies.</p>
+<p>Beware of self proclaimed UPSC &ldquo;Experts&rdquo; who keep on unfurling the so called perfect strategies.</p>
 <p>These experts have been misguiding candidates in the disguise of helping them.</p>
 <p>They are usually found at tea stalls in ORN, on YouTube, in libraries etc.</p>
 </li>
@@ -2914,13 +3105,13 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </li>
 <li>
 <p><strong>Keep Moving:</strong></p>
-<p>Keep moving, don’t pay heed to who is saying what.</p>
-<p>Don’t waste time on things which are not in your control.</p>
+<p>Keep moving, don&rsquo;t pay heed to who is saying what.</p>
+<p>Don&rsquo;t waste time on things which are not in your control.</p>
 </li>
 <li>
 <p><strong>Competitive Approach:</strong></p>
-<p>Always remember that If you don’t do it, someone else will.</p>
-<p>It’s a competition and you need to get comparative advantage over others in order to see your name in the “sacred list”.</p>
+<p>Always remember that If you don&rsquo;t do it, someone else will.</p>
+<p>It&rsquo;s a competition and you need to get comparative advantage over others in order to see your name in the &ldquo;sacred list&rdquo;.</p>
 </li>
 </ol>
 <p><strong>Explain Unemployment</strong></p>
@@ -3043,7 +3234,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>which can be detrimental to the economy in the long run.</p>
 </li>
 </ol>
-<p><strong>Explain all Points  of sociological understanding regarding problem of Unemployment.</strong></p>
+<p><strong>Explain all Points&nbsp; of sociological understanding regarding problem of Unemployment.</strong></p>
 <p>The problem of unemployment is a complex issue that can be examined from a sociological perspective.</p>
 <p>Here are some of the sociological understandings of the problem of unemployment:</p>
 <ol>
@@ -3067,7 +3258,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <li>
 <p><strong>Mental Health:</strong></p>
 <p>Unemployment can have a significant impact on</p>
-<p>an individual's mental health,</p>
+<p>an individual&apos;s mental health,</p>
 <p>leading to stress,</p>
 <p>depression, and</p>
 <p>anxiety.</p>
@@ -3286,7 +3477,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Insider trading is another form of corruption in the private sector,</p>
 <p>where individuals or companies use privileged information to gain an unfair advantage in the stock market.</p>
 <p>For example:</p>
-<p>the 2018 case against Tata Steel alleged that its managing director leaked sensitive financial information to his family members before the company's official announcement.</p>
+<p>the 2018 case against Tata Steel alleged that its managing director leaked sensitive financial information to his family members before the company&apos;s official announcement.</p>
 </li>
 <li>
 <p><strong>Fraud:</strong></p>
@@ -3294,7 +3485,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>with companies engaging in fraudulent activities such as accounting fraud, tax evasion, and money laundering.</p>
 <p>For example:</p>
 <p>the 2018 case against Punjab National Bank revealed that</p>
-<p>Nirav Modi's companies had engaged in a multi-billion dollar fraud using fake letters of credit.</p>
+<p>Nirav Modi&apos;s companies had engaged in a multi-billion dollar fraud using fake letters of credit.</p>
 </li>
 <li>
 <p><strong>Nepotism:</strong></p>
@@ -3370,7 +3561,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Implementing these measures can help create a culture of ethical business practices and promote a level playing field for all businesses.</p>
 <p><strong>Corruption in a Private Company by its Employee in India</strong></p>
 <p>Corruption in private companies by their employees in India is a serious problem that</p>
-<p>can have a detrimental impact on the company's reputation, profitability, and growth.</p>
+<p>can have a detrimental impact on the company&apos;s reputation, profitability, and growth.</p>
 <p>Here are some ways in which corruption can occur in a private company by its employees in India:</p>
 <ol>
 <li>
@@ -3379,14 +3570,14 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>It occurs when an employee offers or accepts money, gifts, or other benefits in exchange for a favor.</p>
 <p>For example:</p>
 <p>a sales representative may offer a bribe to a potential customer to secure a sale, or</p>
-<p>an employee may accept a bribe to leak confidential information about the company's operations or finances.</p>
+<p>an employee may accept a bribe to leak confidential information about the company&apos;s operations or finances.</p>
 </li>
 <li>
 <p><strong>Embezzlement:</strong></p>
 <p>Embezzlement is a form of corruption in which</p>
 <p>an employee steals funds, assets, or property from the company for personal use.</p>
 <p>For example:</p>
-<p>an accountant may embezzle funds from the company's account or an employee may steal inventory or other company assets.</p>
+<p>an accountant may embezzle funds from the company&apos;s account or an employee may steal inventory or other company assets.</p>
 </li>
 <li>
 <p><strong>Insider Trading:</strong></p>
@@ -3397,7 +3588,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </li>
 <li>
 <p><strong>Conflict of interest:</strong></p>
-<p>A conflict of interest occurs when an employee's personal interests conflict with the interests of the company.</p>
+<p>A conflict of interest occurs when an employee&apos;s personal interests conflict with the interests of the company.</p>
 <p>For example:</p>
 <p>an employee may accept a job offer from a competitor while still working for the company,</p>
 <p>or an employee may engage in a side business that competes with the company.</p>
@@ -3411,10 +3602,10 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </li>
 <li>
 <p><strong>Misuse of company resources:</strong></p>
-<p>Misuse of company resources occurs when an employee uses the company's resources, such as</p>
+<p>Misuse of company resources occurs when an employee uses the company&apos;s resources, such as</p>
 <p>equipment or facilities, for personal gain.</p>
 <p>For example:</p>
-<p>an employee may use the company's car for personal errands or use the company's computer to run a personal business.</p>
+<p>an employee may use the company&apos;s car for personal errands or use the company&apos;s computer to run a personal business.</p>
 </li>
 <li>
 <p><strong>Falsification of records:</strong></p>
@@ -3423,12 +3614,12 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>an employee may inflate their expenses or work hours to receive more compensation or bonuses.</p>
 </li>
 </ol>
-<p>In conclusion, corruption in private companies by their employees in India can have a negative impact on the company's profitability, reputation, and growth.</p>
+<p>In conclusion, corruption in private companies by their employees in India can have a negative impact on the company&apos;s profitability, reputation, and growth.</p>
 <p>It is essential for companies to implement strict ethical standards, and</p>
 <p>for the government to enforce laws and regulations to prevent corruption.</p>
 <p>It is also important for companies to train their employees to recognize and report any signs of corruption.</p>
-<p><strong>Measures to erase corruption done by an  Employee  in a Private Company in India.</strong></p>
-<p>Erasing corruption done by an employee in a private company in India is essential to maintain ethical business practices and protect the company's reputation.</p>
+<p><strong>Measures to erase corruption done by an&nbsp; Employee&nbsp; in a Private Company in India.</strong></p>
+<p>Erasing corruption done by an employee in a private company in India is essential to maintain ethical business practices and protect the company&apos;s reputation.</p>
 <p>Here are some measures that can be taken to eradicate corruption by an employee in a private company in India:</p>
 <ol>
 <li>
@@ -3448,7 +3639,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </li>
 <li>
 <p><strong>Regular Audits:</strong></p>
-<p>Regular audits of the company's financial records and operations can help identify any irregularities or suspicious activities by employees.</p>
+<p>Regular audits of the company&apos;s financial records and operations can help identify any irregularities or suspicious activities by employees.</p>
 </li>
 <li>
 <p><strong>Independent Oversight:</strong></p>
@@ -3472,7 +3663,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>strict policies, employee training, regular audits, independent oversight, consequences for violations, promoting transparency, and conducting background checks.</p>
 <p>Implementing these measures can help create a culture of ethical conduct and prevent corruption in private companies.</p>
 <p><strong>Corruption in Public/Government Sector in India.</strong></p>
-<p>Corruption in the public/government sector in India is a serious issue that affects the country's development and progress.</p>
+<p>Corruption in the public/government sector in India is a serious issue that affects the country&apos;s development and progress.</p>
 <p>It is a widespread problem that is often fueled by</p>
 <p>a lack of transparency,</p>
 <p>accountability, and</p>
@@ -3481,7 +3672,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <ol>
 <li>
 <p><strong>Bribery:</strong></p>
-<p>Bribery is one of the most common forms of corruption in India's public/government sector.</p>
+<p>Bribery is one of the most common forms of corruption in India&apos;s public/government sector.</p>
 <p>Public officials often demand bribes to provide basic services like issuing permits, licenses, or to expedite work.</p>
 <p>For example:</p>
 <p>a traffic police officer may demand a bribe from a motorist to avoid a traffic violation fine.</p>
@@ -3504,25 +3695,25 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </li>
 <li>
 <p><strong>Red tape:</strong></p>
-<p>Bureaucratic red tape is another form of corruption in India's public/government sector.</p>
+<p>Bureaucratic red tape is another form of corruption in India&apos;s public/government sector.</p>
 <p>Officials may create unnecessary bureaucratic procedures to delay or deny services to individuals,</p>
 <p>forcing them to pay bribes to expedite their work.</p>
 </li>
 <li>
 <p><strong>Lack of transparency:</strong></p>
 <p>Corruption thrives in an environment where there is a lack of transparency.</p>
-<p>In India's public/government sector, officials often keep their activities and decision-making processes hidden from the public,</p>
+<p>In India&apos;s public/government sector, officials often keep their activities and decision-making processes hidden from the public,</p>
 <p>making it difficult to hold them accountable for their actions.</p>
 </li>
 <li>
 <p><strong>Weak legal framework:</strong></p>
-<p>The weak legal framework is another reason why corruption persists in India's public/government sector.</p>
+<p>The weak legal framework is another reason why corruption persists in India&apos;s public/government sector.</p>
 <p>There are often delays in the prosecution of corrupt officials,</p>
 <p>and the punishments are often inadequate,</p>
 <p>which fails to deter others from engaging in corrupt practices.</p>
 </li>
 </ol>
-<p><strong>Examples of corruption in India's public/government sector include:</strong></p>
+<p><strong>Examples of corruption in India&apos;s public/government sector include:</strong></p>
 <ol>
 <li>
 <p><strong>The 2G spectrum scam</strong></p>
@@ -3550,7 +3741,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>the recruitment process for various government jobs in Madhya Pradesh.</p>
 </li>
 </ol>
-<p>Overall, corruption in India's public/government sector is a major hindrance to the country's development and progress.</p>
+<p>Overall, corruption in India&apos;s public/government sector is a major hindrance to the country&apos;s development and progress.</p>
 <p>Addressing this issue requires a concerted effort from all stakeholders, including</p>
 <p>the government,</p>
 <p>civil society organizations, and</p>
@@ -3558,7 +3749,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>It requires a transparent and accountable governance system, strong legal frameworks, and</p>
 <p>a culture of ethical behavior and integrity.</p>
 <p><strong>Erase Corruption in Public/Government Sector in India.</strong></p>
-<p>Erasing corruption in India's public/government sector is a complex and challenging task that requires a sustained effort from all stakeholders.</p>
+<p>Erasing corruption in India&apos;s public/government sector is a complex and challenging task that requires a sustained effort from all stakeholders.</p>
 <p>Here are some points that explain how corruption can be addressed in the public/government sector in India:</p>
 <ol>
 <li>
@@ -3633,7 +3824,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>increases transparency and accountability in government activities.</p>
 <p>It requires a sustained effort from all stakeholders, including the government, civil society organizations, and the public.</p>
 <p><strong>Unconventional ways to erase Corruption in Public/Government Sector in India</strong></p>
-<p>Erasing corruption in India's public/government sector is a complex and challenging task that</p>
+<p>Erasing corruption in India&apos;s public/government sector is a complex and challenging task that</p>
 <p>requires a sustained effort from all stakeholders.</p>
 <p>Here are some unconventional ways that could potentially help in erasing corruption in the public/government sector in India:</p>
 <ol>
@@ -3654,13 +3845,13 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p><strong>Peer Monitoring:</strong></p>
 <p>Another unconventional way to reduce corruption is by introducing peer monitoring.</p>
 <p>This could involve creating a network of officials</p>
-<p>who monitor each other's activities and</p>
+<p>who monitor each other&apos;s activities and</p>
 <p>report any instances of corruption.</p>
 <p>This could create a sense of accountability among officials and</p>
 <p>reduce the chances of corrupt practices.</p>
 <p>For example:</p>
 <p>the state government of Kerala introduced a system called &quot;Kerala Service Rules&quot;</p>
-<p>which allowed officials to monitor each other's activities and</p>
+<p>which allowed officials to monitor each other&apos;s activities and</p>
 <p>report any instances of corruption.</p>
 </li>
 <li>
@@ -3681,8 +3872,8 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>provided financial rewards and protection to whistleblowers who exposed corrupt practices.</p>
 </li>
 <li>
-<p><strong>Citizen's Jury:</strong></p>
-<p>Another unconventional way to reduce corruption is by introducing the concept of citizen's jury.</p>
+<p><strong>Citizen&apos;s Jury:</strong></p>
+<p>Another unconventional way to reduce corruption is by introducing the concept of citizen&apos;s jury.</p>
 <p>This could involve selecting a group of citizens who are randomly chosen and</p>
 <p>trained to review government activities and provide feedback.</p>
 <p>This could create a system of checks and balances on government activities and</p>
@@ -3697,11 +3888,11 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>accountability in government activities.</p>
 <p>While unconventional methods such as</p>
 <p>gamification, peer monitoring, social media campaigns, incentivizing whistleblowers, and</p>
-<p>citizen's jury may not be a panacea,</p>
+<p>citizen&apos;s jury may not be a panacea,</p>
 <p>they can complement traditional methods and</p>
 <p>potentially contribute to erasing corruption in the public/government sector in India.</p>
-<p><strong>Types of Bribe given in  Public/Government Sector in India.</strong></p>
-<p>Bribery is a widespread phenomenon in India's public/government sector.</p>
+<p><strong>Types of Bribe given in&nbsp; Public/Government Sector in India.</strong></p>
+<p>Bribery is a widespread phenomenon in India&apos;s public/government sector.</p>
 <p>It takes various forms and is often used to facilitate the delivery of services or gain favors from government officials.</p>
 <p>Here are some of the types of bribes given in the public/government sector in India:</p>
 <ol>
@@ -3736,7 +3927,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>This could involve offering a job or promotion to a government official in exchange for</p>
 <p>their help in getting a contract or in expediting the processing of a document.</p>
 <p>For example:</p>
-<p>a person may offer a job to a government official's relative in exchange for their help in getting a contract.</p>
+<p>a person may offer a job to a government official&apos;s relative in exchange for their help in getting a contract.</p>
 </li>
 <li>
 <p><strong>Service bribes:</strong></p>
@@ -3748,10 +3939,11 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>a person may offer legal services to a government official in exchange for their help in getting a contract.</p>
 </li>
 </ol>
-<p>In conclusion, bribery is a pervasive problem in India's public/government sector, and it takes various forms.</p>
+<p>In conclusion, bribery is a pervasive problem in India&apos;s public/government sector, and it takes various forms.</p>
 <p>Cash, gift, travel, job, and service bribes are some of the common types of bribes given in the public/government sector in India.</p>
 <p>It is essential to address this problem effectively by strengthening the legal framework, increasing transparency and accountability, and</p>
 <p>promoting ethical behavior among government officials.</p>
 </div></div>
 					</body>
 				</html>
+			
