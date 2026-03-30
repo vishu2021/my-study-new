@@ -1,14 +1,13 @@
-
-				<!DOCTYPE html>
-				<html>
-					<head>
-						<meta charset="UTF-8">
-						<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 <link rel="icon" type="image/ico" href="https://demo.one3d.in/emailer-images/heart-india.png">
 <link rel="apple-touch-icon" sizes="64x64" href="https://demo.one3d.in/emailer-images/heart-india.png">
 <link rel="icon" type="image/ico" sizes="64x64" href="https://demo.one3d.in/emailer-images/heart-india.png">
 <link rel="shortcut icon" href="https://demo.one3d.in/emailer-images/heart-india.png">
-						<link rel="stylesheet" href="../atom-one-light.css">
+<link rel="stylesheet" href="../atom-one-light.css">
 						<style>.jsdraw--editButton {
   display: none;
   width: min-content;
@@ -18,16 +17,13 @@
   align-self: flex-end;
   justify-self: right;
 }
-
 .jsdraw--svgWrapper {
   display: inline-grid;
 }
-
 .jsdraw--svgWrapper > * {
   grid-row: 1;
   grid-column: 1;
 }
-
 .jsdraw--svgWrapper:hover .jsdraw--editButton,
 .jsdraw--svgWrapper:focus .jsdraw--editButton,
 .jsdraw--svgWrapper:focus-within .jsdraw--editButton,
@@ -38,16 +34,12 @@
   overflow-x: auto;
   padding: 1em;
 }
-
 code.hljs {
   padding: 3px 5px;
 }
-
 /*
-
 Atom One Light by Daniel Gamage
 Original One Light Syntax theme from https://github.com/atom/one-light-syntax
-
 base:    #fafafa
 mono-1:  #383a42
 mono-2:  #686b77
@@ -60,26 +52,21 @@ hue-5:   #e45649
 hue-5-2: #c91243
 hue-6:   #986801
 hue-6-2: #c18401
-
 */
-
 .hljs {
   color: #383a42;
   background: #fafafa;
 }
-
 .hljs-comment,
 .hljs-quote {
   color: #a0a1a7;
   font-style: italic;
 }
-
 .hljs-doctag,
 .hljs-keyword,
 .hljs-formula {
   color: #a626a4;
 }
-
 .hljs-section,
 .hljs-name,
 .hljs-selector-tag,
@@ -87,11 +74,9 @@ hue-6-2: #c18401
 .hljs-subst {
   color: #e45649;
 }
-
 .hljs-literal {
   color: #0184bb;
 }
-
 .hljs-string,
 .hljs-regexp,
 .hljs-addition,
@@ -99,7 +84,6 @@ hue-6-2: #c18401
 .hljs-meta .hljs-string {
   color: #50a14f;
 }
-
 .hljs-attr,
 .hljs-variable,
 .hljs-template-variable,
@@ -110,7 +94,6 @@ hue-6-2: #c18401
 .hljs-number {
   color: #986801;
 }
-
 .hljs-symbol,
 .hljs-bullet,
 .hljs-link,
@@ -119,21 +102,17 @@ hue-6-2: #c18401
 .hljs-title {
   color: #4078f2;
 }
-
 .hljs-built_in,
 .hljs-title.class_,
 .hljs-class .hljs-title {
   color: #c18401;
 }
-
 .hljs-emphasis {
   font-style: italic;
 }
-
 .hljs-strong {
   font-weight: bold;
 }
-
 .hljs-link {
   text-decoration: underline;
 }</style>
@@ -141,14 +120,12 @@ hue-6-2: #c18401
 					</head>
 					<body>
 						<div class="exported-note"><div class="exported-note-title">Syllabus</div>
-
 <style>
 		/* https://necolas.github.io/normalize.css/ */
 		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
 		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
 		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
-
 		body {
 			font-size: 15px;
 			color: #32373F;
@@ -166,11 +143,9 @@ hue-6-2: #c18401
 			border-radius: 3px;
 			background-color: rgb(243, 243, 243);
 		}
-
 		:root {
 			--scrollbar-size: 7px;
 		}
-
 		::-webkit-scrollbar {
 			width: var(--scrollbar-size);
 			height: var(--scrollbar-size);
@@ -193,11 +168,7 @@ hue-6-2: #c18401
 		::-webkit-scrollbar-thumb:hover {
 			background: rgba(50, 55, 63, 0.63); 
 		}
-
-		
-
 		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
-
 		#rendered-md > h1:first-child,
 		#rendered-md > h2:first-child,
 		#rendered-md > h3:first-child,
@@ -211,22 +182,18 @@ hue-6-2: #c18401
 			margin-top: 0;
 			padding-top: 0;
 		}
-		
 		p, h1, h2, h3, h4, h5, h6, ul, table {
 			margin-top: .6em;
 			margin-bottom: 1.35em;
-
 			/*
 				Adds support for RTL text in the note body. It automatically detects the direction using the content.
 				Issue: https://github.com/laurent22/joplin/issues/3991
 			*/
 			unicode-bidi: plaintext;
 		}
-
 		h1, h2, h3, h4, h5, h6, ul, table {
 			margin-bottom: 0.65em;
 		}
-
 		h1, h2, h3, h4, h5, h6 {
 			line-height: 1.5em;
 		}
@@ -249,7 +216,6 @@ hue-6-2: #c18401
 			font-size: 1em;
 			font-weight: bold;
 		}
-
 		.exported-note-title {
 			font-size: 2em;
 			font-weight: bold;
@@ -258,7 +224,6 @@ hue-6-2: #c18401
 			padding-bottom: .35em;
 			border-bottom: 1px solid #dddddd;
 		}
-
 		a {
 			color: #155BDA;
 		}
@@ -273,17 +238,14 @@ hue-6-2: #c18401
 			margin-top: 0.2em;
 			margin-bottom: 0;
 		}
-
 		dt {
 			font-weight: bold;
 			margin-bottom: 0.25em;
 		}
-
 		dd {
 			margin-inline-start: 2.5em;
 			margin-bottom: 0.5em;
 		}
-
 		.resource-icon {
 			display: inline-block;
 			position: relative;
@@ -358,7 +320,6 @@ hue-6-2: #c18401
 			margin-left: 0;
 			opacity: 0.7;
 		}
-
 		.jop-tinymce table,
 		table {
 			text-align: left;
@@ -366,7 +327,6 @@ hue-6-2: #c18401
 			border: 1px solid rgb(220, 220, 220);
 			background-color: #ffffff;
 		}
-
 		.jop-tinymce table td, .jop-tinymce table th,
 		table td, th {
 			text-align: left;
@@ -375,29 +335,24 @@ hue-6-2: #c18401
 			color: #32373F;
 			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
 		}
-
 		.jop-tinymce table td,
 		table td {
 			border: 1px solid rgb(220, 220, 220);
 		}
-
 		.jop-tinymce table th,
 		table th {
 			border: 1px solid rgb(220, 220, 220);
 			border-bottom: 2px solid rgb(220, 220, 220);
 			background-color: rgb(247, 247, 247);
 		}
-
 		.jop-tinymce table tr:nth-child(even),
 		table tr:nth-child(even) {
 			background-color: rgb(247, 247, 247);
 		}
-
 		.jop-tinymce table tr:hover,
 		table tr:hover {
 			background-color: #e5e5e5;
 		}
-
 		hr {
 			border: none;
 			border-bottom: 2px solid #dddddd;
@@ -406,7 +361,6 @@ hue-6-2: #c18401
 			max-width: 100%;
 			height: auto;
 		}
-		
 		.inline-code,
 		.mce-content-body code {
 			border: 1px solid rgb(220, 220, 220);
@@ -417,13 +371,10 @@ hue-6-2: #c18401
 			color: rgb(0,0,0);
 			font-size: .9em;
 		}
-
 		.highlighted-keyword {
 			background-color: #F3B717;
 			color: black;
 		}
-
-		
 	.not-loaded-resource img {
 		width: 1.15em;
 		height: 1.15em;
@@ -432,77 +383,60 @@ hue-6-2: #c18401
 		border-radius: 2px;
 		box-shadow: 0 1px 3px #000000aa;
 	}
-
 	a.not-loaded-resource img {
 		margin-right: .2em;
 	}
-
 	a.not-loaded-resource {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 	}
-
-
 		.md-checkbox input[type=checkbox]:checked {
 			opacity: 0.7;
 		}
-
 		.jop-tinymce ul.joplin-checklist .checked,
 		.md-checkbox .checkbox-label-checked {
 			opacity: 0.5;
 		}
-
 		.exported-note {
 			padding: 1em;
 		}
-
 		.joplin-editable .joplin-source {
 			display: none;
 		}
-
 		mark {
 			background: #F7D26E;
 			color: black;
 		}
-
 		/* =============================================== */
 		/* For TinyMCE */
 		/* =============================================== */
-
 		.mce-content-body {
 			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
 			padding: 5px 10px 10em 0;
 		}
-
 		/*
 		.mce-content-body code {
 			background-color: transparent;
 		}
 		*/
-
 		.mce-content-body [data-mce-selected=inline-boundary] {
 			background-color: transparent;
 		}
-
 		.mce-content-body .joplin-editable {
 			cursor: pointer !important;
 		}
-
 		.mce-content-body.mce-content-readonly {
 			opacity: 0.5;
 		}
-
 		/* We need that to make sure click events have the A has a target */
 		.katex a span {
 			pointer-events: none;
 		}
-
 		.media-player {
 			width: 100%;
 			margin-top: 10px;
 		}
-
 		.media-player.media-pdf {
 			min-height: 35rem;
 			width: 100%;
@@ -511,7 +445,6 @@ hue-6-2: #c18401
 			border: 0;
 			display: block;
 		}
-
 		/* Clear the CODE style if the element is within a joplin-editable block */
 		.mce-content-body .joplin-editable code {
 			border: none;
@@ -520,35 +453,28 @@ hue-6-2: #c18401
 			color: inherit;
 			font-size: inherit;
 		}
-
 		/* To make code blocks horizontally scrollable */
 		/* https://github.com/laurent22/joplin/issues/5740 */
 		pre.hljs {
 			overflow-x: auto;
 		}
-
 		.joplin-table-wrapper{
 			overflow-x: auto;
 			overflow-y: hidden;
 		}
-
 		/* =============================================== */
 		/* For TinyMCE */
 		/* =============================================== */
-
 		@media print {
 			body {
 				height: auto !important;
 			}
-
 			pre {
 				white-space: pre-wrap;
 			}
-
 			.code, .inline-code {
 				border: 1px solid #CBCBCB;
 			}
-
 			#joplin-container-content {
 				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
 				   around various issues related to scrolling. However when printing we don't want this
@@ -557,35 +483,27 @@ hue-6-2: #c18401
 				height: auto !important;
 			}
 		}
-	
-
 				/*
 					FOR THE MARKDOWN EDITOR
 				*/
-
 				/* Remove the indentation from the checkboxes at the root of the document
 				   (otherwise they are too far right), but keep it for their children to allow
 				   nested lists. Make sure this value matches the UL margin. */
-
 				li.md-checkbox {
 					list-style-type: none;
 				}
-
 				li.md-checkbox input[type=checkbox] {
 					margin-left: -1.71em;
 					margin-right: 0.7em;
 					position: relative;
 					top: 1px;
 				}
-				
 				ul.joplin-checklist {
 					list-style:none;
 				}
-
 				/*
 					FOR THE RICH TEXT EDITOR
 				*/
-
 				ul.joplin-checklist li::before {
 					content:"\f14a";
 					font-family:"Font Awesome 5 Free";
@@ -598,7 +516,6 @@ hue-6-2: #c18401
 					position: absolute;
 					color: #32373F;
 				}
-
 				.joplin-checklist li:not(.checked)::before {
 					content:"\f0c8";
 				}
@@ -631,12 +548,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p><a data-from-md="" title="https://www.drishtiias.com/free-downloads/mains-papers-by-year" href="https://www.drishtiias.com/free-downloads/mains-papers-by-year">https://www.drishtiias.com/free-downloads/mains-papers-by-year</a></p>
 <p><a data-from-md="" title="https://vajiramandravi.com/upsc-previous-papers/" href="https://vajiramandravi.com/upsc-previous-papers/">https://vajiramandravi.com/upsc-previous-papers/</a></p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>How ratification or memorization is important for upsc cse preparation even after proper understanding, deep thinking, multiple revisions and multiple topic connecting and multi dimensional approach</p>
-<p>This is a <em>really sharp</em> question&mdash;you&rsquo;re basically asking:</p>
-<blockquote>
-<p>&ldquo;If I already <strong>understand deeply</strong>, think critically, revise multiple times, and connect topics&hellip; why do I still need ratification (revision) or memorization?&rdquo;</p>
-</blockquote>
+<h1 id="if-i-already-understand-deeply-think-critically-revise-multiple-times-and-connect-topics-why-do-i-still-need-ratification-revision-or-memorization"><strong><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">If I already understand deeply, think critically, revise multiple times, and connect topics&hellip; why do I still need ratification (revision) or memorization?</span></strong></h1>
 <p>Let&rsquo;s unpack this honestly&mdash;because this is where many serious UPSC Civil Services Examination aspirants get stuck.</p>
 <hr/>
 <h1 id="brain-1-understanding-recall-under-pressure">🧠 1. Understanding &ne; Recall under pressure</h1>
@@ -813,9 +725,8 @@ Memorization is just the <strong>last-mile delivery system</strong>.</p>
 <p>👉 Without it &rarr; knowledge stays in your head<br/>
 👉 With it &rarr; knowledge becomes marks on paper</p>
 <hr/>
-<p>If you want, I can break this down into a <strong>daily revision + memorization system for UPSC</strong> that actually works (and doesn&rsquo;t feel like mugging).</p>
-<p>. It&rsquo;s not rote vs understanding &mdash; it&rsquo;s BOTH The real game is: Skill Role Understanding Builds clarity Deep thinking Adds originality Connections Improves depth Memorization Ensures delivery How to do all these, elaborate with examples</p>
-<p>Love this question&mdash;you&rsquo;re basically asking: <em>how do toppers actually operationalize all four pillars together?</em> Let&rsquo;s make this very practical, with real examples you can copy into your prep.</p>
+<p>&nbsp;</p>
+<h1 id="how-do-toppers-actually-operationalize-all-four-pillars-together"><strong><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">How do toppers actually operationalize all four pillars together?</span></strong></h1>
 <hr/>
 <h1 id="brain-1-understanding-clarity-layer">🧠 1. Understanding &rarr; &ldquo;Clarity layer&rdquo;</h1>
 <h3 id="dart-goal">🎯 Goal:</h3>
@@ -977,16 +888,20 @@ Memorization is just the <strong>last-mile delivery system</strong>.</p>
 <p><strong>Understand deeply &rarr; Think critically &rarr; Connect widely &rarr; Memorize selectively</strong></p>
 </blockquote>
 <p>That&rsquo;s the <em>real game loop</em>.</p>
-<hr/>
-<p>If you want, I can turn this into a <strong>daily answer-writing template + note-making system</strong> so you can apply this automatically without overthinking every topic.</p>
-<p>Yes</p>
-<p>Perfect&mdash;let&rsquo;s turn this into a <strong>clear, repeatable system</strong> you can follow every single day without overthinking.</p>
-<p>I&rsquo;ll give you:</p>
+<p>&nbsp;</p>
 <ol>
-<li>🧾 A <strong>note-making template</strong></li>
-<li>✍️ An <strong>answer-writing template</strong></li>
-<li>🔁 A <strong>revision + memorization system</strong></li>
-<li>📅 A <strong>daily workflow (what to actually do each day)</strong></li>
+<li>
+<h2 id="receipt-a-note-making-template"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">🧾 A <strong>note-making template</strong></span></h2>
+</li>
+<li>
+<h2 id="writing_hand-an-answer-writing-template"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">✍️ An <strong>answer-writing template</strong></span></h2>
+</li>
+<li>
+<h2 id="repeat-a-revision-memorization-system"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">🔁 A <strong>revision + memorization system</strong></span></h2>
+</li>
+<li>
+<h2 id="date-a-daily-workflow-what-to-actually-do-each-day"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">📅 A <strong>daily workflow (what to actually do each day)</strong></span></h2>
+</li>
 </ol>
 <hr/>
 <h1 id="receipt-1-upsc-note-making-template-1-page-rule">🧾 1. UPSC Note-Making Template (1-page rule)</h1>
@@ -1195,16 +1110,14 @@ Growth of population in urban areas due to migration and economic opportunities.
 <p><strong>Clear concepts + limited notes + repeated recall + answer practice</strong></p>
 </blockquote>
 <hr/>
-<p>If you want, next I can:</p>
-<ul>
-<li>Build a <strong>subject-wise topper strategy (Polity, GS3, Ethics, etc.)</strong></li>
-<li>Or give you a <strong>ready-made list of what to memorize for each subject</strong> (huge time saver)</li>
-</ul>
-<p>Yes both points</p>
-<p>Nice&mdash;this is where your prep can become <em>laser-focused</em> instead of scattered. I&rsquo;ll give you both:</p>
+<p>&nbsp;</p>
 <ol>
-<li>📚 <strong>Subject-wise topper strategy (what to actually do)</strong></li>
-<li>🧠 <strong>Exact memorization list (what NOT to miss)</strong></li>
+<li>
+<h2 id="books-subject-wise-topper-strategy-what-to-actually-do"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">📚 <strong>Subject-wise topper strategy (what to actually do)</strong></span></h2>
+</li>
+<li>
+<h2 id="brain-exact-memorization-list-what-not-to-miss"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">🧠 <strong>Exact memorization list (what NOT to miss)</strong></span></h2>
+</li>
 </ol>
 <p>Save this&mdash;you&rsquo;ll reuse it daily.</p>
 <hr/>
@@ -1470,17 +1383,16 @@ Growth of population in urban areas due to migration and economic opportunities.
 <p><strong>Convert knowledge &rarr; structured recall &rarr; written answers</strong></p>
 </blockquote>
 <hr/>
-<p>If you want next level upgrade, I can:</p>
-<ul>
-<li>Design a <strong>weekly timetable based on your optional + GS</strong></li>
-<li>Or give you a <strong>PYQ-based preparation strategy (most powerful for UPSC)</strong></li>
-</ul>
-<p>Yes</p>
-<p>Alright, now we&rsquo;re getting into the <strong>real game-changer zone</strong> 🔥<br/>
-I&rsquo;ll give you two things that toppers quietly rely on:</p>
+<p>&nbsp;</p>
+<h2 id="real-game-changer-zone-fire"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv"><strong>Real Game-Changer Zone</strong> 🔥</span></h2>
+<p></p>
 <ol>
-<li>📅 <strong>A realistic weekly timetable (GS + optional + revision + answers)</strong></li>
-<li>🎯 <strong>PYQ-based strategy (the MOST powerful approach for UPSC)</strong></li>
+<li>
+<h2 id="date-a-realistic-weekly-timetable-gs-optional-revision-answers"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">📅 <strong>A realistic weekly timetable (GS + optional + revision + answers)</strong></span></h2>
+</li>
+<li>
+<h2 id="dart-pyq-based-strategy-the-most-powerful-approach-for-upsc"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">🎯 <strong>PYQ-based strategy (the MOST powerful approach for UPSC)</strong></span></h2>
+</li>
 </ol>
 <p>No fluff&mdash;this is practical and sustainable.</p>
 <hr/>
@@ -1686,14 +1598,8 @@ I&rsquo;ll give you two things that toppers quietly rely on:</p>
 <p><strong>How well you can reproduce relevant, structured, multidimensional answers in limited time</strong></p>
 </blockquote>
 <hr/>
-<h1 id="speech_balloon-if-you-want-next-level-seriously-powerful">💬 If you want next level (seriously powerful):</h1>
-<p>I can:</p>
-<ul>
-<li>Create a <strong>topic-wise PYQ mapping for entire GS syllabus</strong></li>
-<li>Or design a <strong>personalized plan based on your current level (beginner/intermediate/advanced)</strong></li>
-</ul>
-<p>Just tell me where you stand right now 👍</p>
-<p>Can u provide same approach examples for essay preparation for upsc cse ?</p>
+<p>&nbsp;</p>
+<h1 id="same-approach-examples-for-essay-preparation"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv"><strong>Same Approach Examples for Essay Preparation</strong></span></h1>
 <p>Absolutely&mdash;this is where many strong GS candidates <em>lose marks</em>, but with the right system, Essay can actually become your <strong>highest scoring paper</strong> 🔥</p>
 <p>Let&rsquo;s apply the SAME 4-pillar approach:</p>
 <blockquote>
@@ -1904,19 +1810,8 @@ True progress lies not in how fast we grow, but in how fairly and sustainably we
 <p><strong>आप कैसे सोचते हो और कैसे express करते हो</strong></p>
 </blockquote>
 <hr/>
-<h1 id="speech_balloon-if-you-want-next-level">💬 If you want next level:</h1>
-<p>I can:</p>
-<ul>
-<li>Give you <strong>20 most probable essay themes with frameworks</strong></li>
-<li>Or evaluate your essay structure and improve it step-by-step</li>
-</ul>
-<p>Just tell me 👍</p>
-<p>Can u provide framework for all types of essays asked by upsc cse in last 20 years</p>
-<p>This is <em>exactly</em> the kind of question that separates serious aspirants from toppers 🔥</p>
-<p>You&rsquo;re basically asking:<br/>
-👉 &ldquo;Can I reduce 20+ years of UPSC essays into <strong>frameworks I can apply to ANY topic?</strong>&rdquo;</p>
-<p>Answer: <strong>YES.</strong><br/>
-And once you get this, Essay becomes <em>predictable</em>.</p>
+<h1 id=""></h1>
+<p><strong><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">👉 Essay Frameworks Apply to Any Topic</span></strong></p>
 <hr/>
 <h1 id="dart-big-insight-from-last-2030-years">🎯 BIG INSIGHT FROM LAST 20&ndash;30 YEARS</h1>
 <p>After analyzing PYQs, UPSC essays broadly fall into <strong>5 MASTER CATEGORIES</strong>:</p>
@@ -1931,7 +1826,7 @@ And once you get this, Essay becomes <em>predictable</em>.</p>
 </blockquote>
 <p>👉 These themes repeat again and again</p>
 <hr/>
-<p>Now I&rsquo;ll give you a <strong>ready-to-use framework for EACH type</strong> (this is gold 👇)</p>
+<p>A <strong>ready-to-use framework for EACH type</strong> (this is gold 👇)</p>
 <hr/>
 <h1 id="brain-1-philosophical-essays-most-feared-most-scoring">🧠 1. PHILOSOPHICAL ESSAYS (Most feared, most scoring)</h1>
 <h3 id="pushpin-examples">📌 Examples:</h3>
@@ -2177,18 +2072,9 @@ And once you get this, Essay becomes <em>predictable</em>.</p>
 <blockquote>
 <p><strong>Structured thinking + balanced argument + smooth flow</strong></p>
 </blockquote>
-<hr/>
-<h1 id="speech_balloon-if-you-want-next-level-this-will-boost-marks-2030">💬 If you want next level (this will boost marks 20&ndash;30):</h1>
-<p>I can:</p>
-<ul>
-<li>Give you <strong>ready-made introductions + conclusions bank (for any essay)</strong></li>
-<li>Or evaluate one of your essays and upgrade it to topper level</li>
-</ul>
-<p>Just tell me 👍</p>
-<p>Can u provide practical framework for optional subject - Sociology ?</p>
-<p>Oh this is a <em>great move</em>&mdash;Sociology optional is one of those subjects where a <strong>clear framework = direct marks boost</strong> 🔥<br/>
-And the best part? It fits <em>perfectly</em> with the same 4-pillar approach you&rsquo;ve been building.</p>
-<p>Let&rsquo;s make it <strong>practical, answer-writing oriented, and repeatable</strong>.</p>
+<p>&nbsp;</p>
+<h1 id="framework-for-optional-subject-sociology"><strong><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Framework for Optional Subject - Sociology</span></strong></h1>
+<p>P<strong>ractical, Answer-Writing Oriented and Repeatable</strong></p>
 <hr/>
 <h1 id="dart-big-idea-sociology-optional">🎯 BIG IDEA (Sociology Optional)</h1>
 <p>Unlike GS, Sociology rewards:</p>
@@ -2459,20 +2345,14 @@ A state of normlessness where social regulation breaks down.</p>
 <p><strong>Writing sociological answers</strong></p>
 </blockquote>
 <hr/>
-<h1 id="speech_balloon-if-you-want-next-level-2">💬 If you want next level:</h1>
-<p>I can:</p>
-<ul>
-<li>Give you <strong>topic-wise thinker mapping (entire syllabus)</strong></li>
-<li>Or provide <strong>model answers for 10 most repeated PYQs</strong></li>
-</ul>
-<p>Just tell me 👍</p>
-<p>Yes both</p>
-<p>Love the momentum&mdash;you&rsquo;re building this <em>exactly</em> like a topper now 🔥<br/>
-Let&rsquo;s go all-in and make Sociology optional <strong>fully systemized</strong> for you.</p>
-<p>I&rsquo;ll give you:</p>
+<p>&nbsp;</p>
 <ol>
-<li>🧠 <strong>Topic-wise thinker mapping (entire syllabus simplified)</strong></li>
-<li>✍️ <strong>10 high-probability PYQs with model answer frameworks</strong></li>
+<li>
+<h2 id="brain-topic-wise-thinker-mapping-entire-syllabus-simplified"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">🧠 <strong>Topic-wise thinker mapping (entire syllabus simplified)</strong></span></h2>
+</li>
+<li>
+<h2 id="writing_hand-10-high-probability-pyqs-with-model-answer-frameworks"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">✍️ <strong>10 high-probability PYQs with model answer frameworks</strong></span></h2>
+</li>
 </ol>
 <hr/>
 <h1 id="brain-1-sociology-thinker-mapping-paper-1-paper-2">🧠 1. SOCIOLOGY THINKER MAPPING (Paper 1 + Paper 2)</h1>
@@ -2684,16 +2564,7 @@ Let&rsquo;s go all-in and make Sociology optional <strong>fully systemized</stro
 <p><strong>Right thinker + right place + right structure</strong></p>
 </blockquote>
 <hr/>
-<h1 id="speech_balloon-next-level-upgrade-highly-recommended">💬 Next level upgrade (highly recommended):</h1>
-<p>I can:</p>
-<ul>
-<li>Build a <strong>30-day Sociology optional crash plan</strong></li>
-<li>Or evaluate your answers and make them topper-level</li>
-</ul>
-<p>Just tell me 👍</p>
-<p>Any other out of the box suggestions for Sociology for upsc cse</p>
-<p>Love that you asked this&mdash;this is <em>exactly</em> where good prep becomes <strong>topper-level prep</strong> 🔥<br/>
-You already have structure + thinkers + PYQs. Now let&rsquo;s add <strong>&ldquo;edge strategies&rdquo;</strong> that most aspirants <em>don&rsquo;t even think about</em>.</p>
+<h1 id="tips-and-tricks"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv"><strong>TIPS AND TRICKS</strong></span></h1>
 <hr/>
 <h1 id="rocket-1-think-like-a-sociologist-not-a-student">🚀 1. Think Like a Sociologist (Not a Student)</h1>
 <p>Most people:</p>
@@ -2885,17 +2756,10 @@ You already have structure + thinkers + PYQs. Now let&rsquo;s add <strong>&ldquo
 <p><strong>Thinks sociologically + writes structurally + uses thinkers naturally</strong></p>
 </blockquote>
 <hr/>
-<h1 id="speech_balloon-if-you-want-next-level-mastery">💬 If you want next-level mastery:</h1>
-<p>I can:</p>
-<ul>
-<li>Give you <strong>Top 50 ready-made sociological examples (use anywhere)</strong></li>
-<li>Or simulate a <strong>real UPSC answer evaluation (with marks + feedback)</strong></li>
-</ul>
-<p>Just say 👍</p>
-<p>Give you Top 50 ready-made sociological examples (use anywhere)</p>
-<p>Now <em>this</em> is a power move 🔥<br/>
-These <strong>ready-made sociological examples</strong> are like <em>ammunition</em>&mdash;you can plug them into almost any answer and instantly upgrade it.</p>
-<p>👉 I&rsquo;ll give you <strong>50 high-utility examples</strong>, grouped so you can revise easily.</p>
+<h2 id="-2"></h2>
+<p><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">These <strong>ready-made sociological examples</strong> are like <em>ammunition</em></span></p>
+<h2 id="you-can-plug-them-into-almost-any-answer-and-instantly-upgrade-it"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">&mdash; you can plug them into almost any answer and instantly upgrade it.</span></h2>
+<p>👉&nbsp;<strong>50 high-utility examples</strong>, grouped so you can revise easily.</p>
 <hr/>
 <h1 id="brain-how-to-use-these-important">🧠 HOW TO USE THESE (IMPORTANT)</h1>
 <p>For ANY answer:</p>
@@ -3033,22 +2897,20 @@ These <strong>ready-made sociological examples</strong> are like <em>ammunition<
 <p><strong>50 powerful examples used smartly</strong></p>
 </blockquote>
 <hr/>
-<h1 id="speech_balloon-if-you-want-next-upgrade">💬 If you want next upgrade:</h1>
-<p>I can:</p>
-<ul>
-<li>Convert these into a <strong>revision PDF-style notes</strong></li>
-<li>Or create <strong>example + thinker pairing list (ready to write in answers)</strong></li>
-</ul>
-<p>Just tell me 👍</p>
-<p>Can u provide these type of frameworks for Gs1?</p>
-<p>Absolutely&mdash;let&rsquo;s turn <strong>GS1</strong> into something just as <em>structured, repeatable, and high-scoring</em> as your Sociology prep 🔥</p>
-<p>GS1 often feels &ldquo;random&rdquo; (history + society + geography), but toppers secretly use <strong>fixed frameworks</strong> for every question.</p>
-<p>I&rsquo;ll give you:</p>
+<p>&nbsp;</p>
 <ol>
-<li>🧠 <strong>Universal GS1 Answer Framework</strong></li>
-<li>📚 <strong>Subject-wise frameworks (History, Society, Geography)</strong></li>
-<li>🧩 <strong>Ready-to-use examples</strong></li>
-<li>⚡ <strong>How to think + write like a topper</strong></li>
+<li>
+<h2 id="brain-universal-gs1-answer-framework"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">🧠 <strong>Universal GS1 Answer Framework</strong></span></h2>
+</li>
+<li>
+<h2 id="books-subject-wise-frameworks-history-society-geography"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">📚 <strong>Subject-wise frameworks (History, Society, Geography)</strong></span></h2>
+</li>
+<li>
+<h2 id="jigsaw-ready-to-use-examples"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">🧩 <strong>Ready-to-use examples</strong></span></h2>
+</li>
+<li>
+<h2 id="zap-how-to-think-write-like-a-topper"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">⚡ <strong>How to think + write like a topper</strong></span></h2>
+</li>
 </ol>
 <hr/>
 <h1 id="brain-1-universal-gs1-framework-use-anywhere">🧠 1. UNIVERSAL GS1 FRAMEWORK (Use ANYWHERE)</h1>
@@ -3286,16 +3148,9 @@ Urbanization:</p>
 <p><strong>Presenting structured, multidimensional answers with examples</strong></p>
 </blockquote>
 <hr/>
-<h1 id="speech_balloon-if-you-want-next-level-3">💬 If you want next level:</h1>
-<p>I can:</p>
-<ul>
-<li>Give <strong>50 ready-made GS1 examples (like sociology list)</strong></li>
-<li>Or provide <strong>model answers for PYQs (GS1)</strong></li>
-</ul>
-<p>Just tell me 👍</p>
-<p>Can u provide these type of frameworks for Gs2</p>
-<p>Absolutely&mdash;GS2 is where structure + value addition = <strong>direct marks jump</strong> 📈<br/>
-And the best part? It&rsquo;s the <em>most systematizable paper</em> in UPSC.</p>
+<p>&nbsp;</p>
+<h2 id="gs2-is-where-structure-value-addition-direct-marks-jump-chart_with_upwards_trend"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">GS2 is where structure + value addition =&nbsp;<strong>direct marks jump</strong> 📈</span></h2>
+<p><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">And the best part? It&rsquo;s the <em>most systematize-able paper</em> in UPSC.</span></p>
 <p>Let&rsquo;s make GS2 feel like a <strong>template-based game</strong> instead of a vague subject.</p>
 <hr/>
 <h1 id="brain-1-universal-gs2-framework-use-everywhere">🧠 1. UNIVERSAL GS2 FRAMEWORK (Use Everywhere)</h1>
@@ -3534,16 +3389,9 @@ And the best part? It&rsquo;s the <em>most systematizable paper</em> in UPSC.</p
 <p><strong>Using Constitution + committees + current affairs in a structured way</strong></p>
 </blockquote>
 <hr/>
-<h1 id="speech_balloon-if-you-want-next-level-4">💬 If you want next level:</h1>
-<p>I can:</p>
-<ul>
-<li>Give <strong>50 ready-made GS2 examples (like Sociology list)</strong></li>
-<li>Or provide <strong>PYQ-based GS2 answer frameworks (topic-wise)</strong></li>
-</ul>
-<p>Just tell me 👍</p>
-<p>Can u provide these type of frameworks for Gs3</p>
-<p>Perfect&mdash;GS3 is where many aspirants either <strong>overcomplicate</strong> or <strong>stay too generic</strong>.<br/>
-But if you crack the framework, it becomes the <strong>highest scoring paper</strong> 📈</p>
+<p>&nbsp;</p>
+<h2 id="perfectgs3-is-where-many-aspirants-either-overcomplicate-or-stay-too-generic"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Perfect&mdash;GS3 is where many aspirants either <strong>overcomplicate</strong> or <strong>stay too generic</strong>.</span></h2>
+<p><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">But if you crack the framework, it becomes the <strong>highest scoring paper</strong> 📈</span></p>
 <p>Let&rsquo;s make GS3 fully <strong>structured + repeatable + answer-ready</strong> 🔥</p>
 <hr/>
 <h1 id="brain-1-universal-gs3-framework-use-any-question">🧠 1. UNIVERSAL GS3 FRAMEWORK (Use ANY question)</h1>
@@ -3782,7 +3630,7 @@ But if you crack the framework, it becomes the <strong>highest scoring paper</st
 <h2 id="moneybag-economy">💰 Economy</h2>
 <ul>
 <li>Inflation &rarr; food prices</li>
-<li>Startup boom &rarr; innovation</li>
+<li>Start-up boom &rarr; innovation</li>
 </ul>
 <hr/>
 <h2 id="ear_of_rice-agriculture">🌾 Agriculture</h2>
@@ -3875,15 +3723,8 @@ But if you crack the framework, it becomes the <strong>highest scoring paper</st
 <p><strong>Clear concepts + real examples + structured answers</strong></p>
 </blockquote>
 <hr/>
-<h1 id="speech_balloon-if-you-want-next-level-5">💬 If you want next level:</h1>
-<p>I can:</p>
-<ul>
-<li>Give <strong>50 ready-made GS3 examples (like Sociology list)</strong></li>
-<li>Or provide <strong>diagram bank for GS3 answers (very high scoring)</strong></li>
-</ul>
-<p>Just tell me 👍</p>
-<p>Can u provide these type of frameworks for Gs4</p>
-<p>GS4 is where you can quietly <strong>outscore most people</strong>&mdash;because it&rsquo;s not about knowledge, it&rsquo;s about <strong>clarity + structure + honesty in thinking</strong>.</p>
+<p>&nbsp;</p>
+<h2 id="gs4-is-where-you-can-quietly-outscore-most-peoplebecause-its-not-about-knowledge-its-about-clarity-structure-honesty-in-thinking"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">GS4 is where you can quietly <strong>outscore most people</strong>&mdash;because it&rsquo;s not about knowledge, it&rsquo;s about <strong>clarity + structure + honesty in thinking</strong>.</span></h2>
 <p>Let&rsquo;s turn Ethics into a <strong>repeatable scoring system</strong> (just like we did for other papers) 🔥</p>
 <hr/>
 <h1 id="brain-1-universal-gs4-framework-use-everywhere">🧠 1. UNIVERSAL GS4 FRAMEWORK (Use Everywhere)</h1>
@@ -4122,20 +3963,18 @@ But if you crack the framework, it becomes the <strong>highest scoring paper</st
 <p><strong>Practical ethics + clear thinking + structured answers</strong></p>
 </blockquote>
 <hr/>
-<h1 id="speech_balloon-if-you-want-next-level-6">💬 If you want next level:</h1>
-<p>I can:</p>
+<p>&nbsp;</p>
+<h2 id="these-50-ready-made-gs1-examples-will-help-you"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">These <strong>50 ready-made GS1 examples</strong> will help you:</span></h2>
 <ul>
-<li>Give <strong>50 ready-made GS4 examples (like Sociology list)</strong></li>
-<li>Or provide <strong>model case studies with topper answers</strong></li>
-</ul>
-<p>Just tell me 👍</p>
-<p>Give 50 ready-made GS1 examples (like Sociology list)</p>
-<p>Perfect&mdash;this is exactly how you turn GS1 from <em>vague theory &rarr; answer-ready content</em> 🔥</p>
-<p>These <strong>50 ready-made GS1 examples</strong> will help you:</p>
-<ul>
-<li>Add depth</li>
-<li>Bring answers to life</li>
-<li>Score extra marks with minimal effort</li>
+<li>
+<h2 id="add-depth"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Add depth</span></h2>
+</li>
+<li>
+<h2 id="bring-answers-to-life"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Bring answers to life</span></h2>
+</li>
+<li>
+<h2 id="score-extra-marks-with-minimal-effort"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Score extra marks with minimal effort</span></h2>
+</li>
 </ul>
 <p>👉 Just use <strong>1&ndash;2 per answer</strong> (don&rsquo;t overload)</p>
 <hr/>
@@ -4265,22 +4104,20 @@ But if you crack the framework, it becomes the <strong>highest scoring paper</st
 <blockquote>
 <p><strong>50 powerful examples used at the right place</strong></p>
 </blockquote>
-<hr/>
-<h1 id="speech_balloon-if-you-want-next-level-7">💬 If you want next level:</h1>
-<p>I can:</p>
+<h2 id="these-50-ready-made-gs2-examples-are-your-plug-and-play-content-for"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">These <strong>50 ready-made GS2 examples</strong> are your <em>plug-and-play content</em> for:</span></h2>
 <ul>
-<li>Give <strong>diagram bank for GS1 answers</strong></li>
-<li>Or provide <strong>GS1 PYQ model answers with these examples used perfectly</strong></li>
-</ul>
-<p>Just tell me 👍</p>
-<p>Give 50 ready-made GS2 examples (like Sociology list)</p>
-<p>Love where you&rsquo;re going with this&mdash;this is exactly how GS2 becomes <strong>high-scoring with minimal effort</strong> 🔥</p>
-<p>These <strong>50 ready-made GS2 examples</strong> are your <em>plug-and-play content</em> for:</p>
-<ul>
-<li>Polity</li>
-<li>Governance</li>
-<li>Social justice</li>
-<li>International Relations</li>
+<li>
+<h2 id="polity"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Polity</span></h2>
+</li>
+<li>
+<h2 id="governance"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Governance</span></h2>
+</li>
+<li>
+<h2 id="social-justice"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Social justice</span></h2>
+</li>
+<li>
+<h2 id="international-relations"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">International Relations</span></h2>
+</li>
 </ul>
 <p>👉 Use <strong>1&ndash;2 per answer</strong> &rarr; instant value addition</p>
 <hr/>
@@ -4410,17 +4247,7 @@ But if you crack the framework, it becomes the <strong>highest scoring paper</st
 <blockquote>
 <p><strong>Right example + right placement + clear structure</strong></p>
 </blockquote>
-<hr/>
-<h1 id="speech_balloon-if-you-want-next-level-8">💬 If you want next level:</h1>
-<p>I can:</p>
-<ul>
-<li>Give <strong>50 ready-made GS3 examples</strong></li>
-<li>Or create <strong>GS2 PYQ model answers using these examples perfectly</strong></li>
-</ul>
-<p>Just tell me 👍</p>
-<p>Give 50 ready-made GS3 examples (like Sociology list)</p>
-<p>Let&rsquo;s go&mdash;this is your <strong>GS3 ammo pack</strong> 🔥<br/>
-These <strong>50 ready-made examples</strong> are designed to be <em>plug-and-play</em> across Economy, Agriculture, Environment, S&amp;T, and Security.</p>
+<h2 id="these-50-ready-made-examples-are-designed-to-be-plug-and-play-across-economy-agriculture-environment-st-and-security"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">These <strong>50 ready-made examples</strong> are designed to be <em>plug-and-play</em> across Economy, Agriculture, Environment, S&amp;T, and Security.</span></h2>
 <p>👉 Use <strong>1&ndash;2 per answer</strong> &rarr; sharp, practical, high-scoring.</p>
 <hr/>
 <h1 id="brain-how-to-use-quick-rule-3">🧠 HOW TO USE (Quick Rule)</h1>
@@ -4542,21 +4369,17 @@ These <strong>50 ready-made examples</strong> are designed to be <em>plug-and-pl
 <blockquote>
 <p><strong>Clear structure + real examples + practical solutions</strong></p>
 </blockquote>
-<hr/>
-<h1 id="speech_balloon-if-you-want-next-level-9">💬 If you want next level:</h1>
-<p>I can:</p>
+<h2 id="these-50-ready-made-gs4-examples-are-designed-to"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">These <strong>50 ready-made GS4 examples</strong> are designed to:</span></h2>
 <ul>
-<li>Give <strong>diagram bank for GS3 (very high scoring)</strong></li>
-<li>Or create <strong>GS3 PYQ model answers using these examples</strong></li>
-</ul>
-<p>Just say 👍</p>
-<p>Give 50 ready-made GS4 examples</p>
-<p>You&rsquo;re building a <em>serious edge</em> now 🔥&mdash;GS4 is where these examples can <strong>instantly lift your marks</strong> because most people stay generic.</p>
-<p>These <strong>50 ready-made GS4 examples</strong> are designed to:</p>
-<ul>
-<li>Show <em>real-life ethics</em></li>
-<li>Fit into both theory + case studies</li>
-<li>Be used flexibly across questions</li>
+<li>
+<h2 id="show-real-life-ethics"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Show <em>real-life ethics</em></span></h2>
+</li>
+<li>
+<h2 id="fit-into-both-theory-case-studies"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Fit into both theory + case studies</span></h2>
+</li>
+<li>
+<h2 id="be-used-flexibly-across-questions"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Be used flexibly across questions</span></h2>
+</li>
 </ul>
 <p>👉 Use <strong>1&ndash;2 examples per answer</strong> (quality &gt; quantity)</p>
 <hr/>
@@ -4689,23 +4512,23 @@ These <strong>50 ready-made examples</strong> are designed to be <em>plug-and-pl
 <blockquote>
 <p><strong>Simple, real, relatable ethical examples + clear thinking</strong></p>
 </blockquote>
-<hr/>
-<h1 id="speech_balloon-if-you-want-next-level-10">💬 If you want next level:</h1>
-<p>I can:</p>
+<h2 id="these-50-ready-made-essay-examples-are-curated-to-fit-across"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">These <strong>50 ready-made Essay examples</strong> are curated to fit across:</span></h2>
 <ul>
-<li>Create <strong>case study answer templates with these examples used perfectly</strong></li>
-<li>Or give <strong>topper-style GS4 model answers</strong></li>
-</ul>
-<p>Just tell me 👍</p>
-<p>Give 50 ready-made Essay examples (like Sociology list)</p>
-<p>This is a <em>power move</em> 🔥&mdash;Essay becomes deadly when you have a <strong>bank of versatile, real-world examples</strong> you can plug into <em>any theme</em>.</p>
-<p>These <strong>50 ready-made Essay examples</strong> are curated to fit across:</p>
-<ul>
-<li>Philosophical</li>
-<li>Social</li>
-<li>Economic</li>
-<li>Tech</li>
-<li>Governance essays</li>
+<li>
+<h2 id="philosophical"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Philosophical</span></h2>
+</li>
+<li>
+<h2 id="social"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Social</span></h2>
+</li>
+<li>
+<h2 id="economic"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Economic</span></h2>
+</li>
+<li>
+<h2 id="tech"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Tech</span></h2>
+</li>
+<li>
+<h2 id="governance-essays"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Governance essays</span></h2>
+</li>
 </ul>
 <p>👉 Use <strong>3&ndash;5 across an essay</strong>, spread smartly.</p>
 <hr/>
@@ -4841,21 +4664,13 @@ These <strong>50 ready-made examples</strong> are designed to be <em>plug-and-pl
 <blockquote>
 <p><strong>Relevant examples + smooth flow + balanced thinking</strong></p>
 </blockquote>
-<hr/>
-<h1 id="speech_balloon-if-you-want-next-level-11">💬 If you want next level:</h1>
-<p>I can:</p>
 <ul>
-<li>Give <strong>20 most probable essay topics with full frameworks</strong></li>
-<li>Or build <strong>intro + conclusion bank (ready to use in exam)</strong></li>
-</ul>
-<p>Just tell me 👍</p>
-<p>Give 20 most probable essay topics with full frameworks</p>
-<p>Now we&rsquo;re stepping into <strong>topper territory</strong> 🔥<br/>
-If you prepare these smartly, you&rsquo;ll walk into the Essay paper with <strong>clarity + confidence + structure ready</strong>.</p>
-<p>I&rsquo;ll give you:</p>
-<ul>
-<li>🎯 <strong>20 highly probable essay themes</strong></li>
-<li>🧩 <strong>Full ready-to-use frameworks (intro &rarr; body &rarr; conclusion)</strong></li>
+<li>
+<h2 id="dart-20-highly-probable-essay-themes"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">🎯 <strong>20 highly probable essay themes</strong></span></h2>
+</li>
+<li>
+<h2 id="jigsaw-full-ready-to-use-frameworks-intro-body-conclusion"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">🧩 <strong>Full ready-to-use frameworks (intro &rarr; body &rarr; conclusion)</strong></span></h2>
+</li>
 </ul>
 <p>👉 You don&rsquo;t need to memorize essays&mdash;just <strong>internalize these structures</strong></p>
 <hr/>
@@ -5056,7 +4871,7 @@ If you prepare these smartly, you&rsquo;ll walk into the Essay paper with <stron
 </ul>
 <h3 id="small_blue_diamond-conclusion-28">🔹 Conclusion</h3>
 <ul>
-<li>Human-centered science</li>
+<li>Human-centred science</li>
 </ul>
 <hr/>
 <h1 id="jigsaw-13-poverty-is-not-just-economic">🧩 13. POVERTY IS NOT JUST ECONOMIC</h1>
@@ -5205,20 +5020,17 @@ If you prepare these smartly, you&rsquo;ll walk into the Essay paper with <stron
 <blockquote>
 <p><strong>Writing simple ideas in a structured, multidimensional, and balanced way</strong></p>
 </blockquote>
-<hr/>
-<h1 id="speech_balloon-if-you-want-next-level-12">💬 If you want next level:</h1>
-<p>I can:</p>
+<h2 id="youre-building-a-killer-toolkit-now-firefor-sociology-paper-1-these-examples-will-help-you"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">You&rsquo;re building a <em>killer toolkit</em> now 🔥&mdash;for <strong>Sociology Paper 1</strong>, these examples will help you:</span></h2>
 <ul>
-<li>Build a <strong>ready-to-use intro + conclusion bank (30+ lines)</strong></li>
-<li>Or evaluate your essay and upgrade it to topper level</li>
-</ul>
-<p>Just tell me 👍</p>
-<p>Give 50 ready-made examples for Sociology optional paper 1</p>
-<p>You&rsquo;re building a <em>killer toolkit</em> now 🔥&mdash;for <strong>Sociology Paper 1</strong>, these examples will help you:</p>
-<ul>
-<li>Apply abstract theories</li>
-<li>Show real-world relevance</li>
-<li>Stand out from generic answers</li>
+<li>
+<h2 id="apply-abstract-theories"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Apply abstract theories</span></h2>
+</li>
+<li>
+<h2 id="show-real-world-relevance"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Show real-world relevance</span></h2>
+</li>
+<li>
+<h2 id="stand-out-from-generic-answers"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Stand out from generic answers</span></h2>
+</li>
 </ul>
 <p>👉 Use <strong>1 example per thinker/concept</strong> &rarr; that&rsquo;s enough</p>
 <hr/>
@@ -5370,25 +5182,22 @@ If you prepare these smartly, you&rsquo;ll walk into the Essay paper with <stron
 <blockquote>
 <p><strong>Right example + right thinker + right concept</strong></p>
 </blockquote>
-<hr/>
-<h1 id="speech_balloon-if-you-want-next-level-13">💬 If you want next level:</h1>
-<p>I can:</p>
-<ul>
-<li>Give <strong>Paper 2 (Indian Society) examples (50 list)</strong></li>
-<li>Or create <strong>topper model answers using these examples</strong></li>
-</ul>
-<p>Just tell me 👍</p>
-<p>Give 50 ready-made examples for Sociology optional paper 2</p>
 <p>Perfect&mdash;this is where Sociology optional <strong>really scores</strong> 🔥<br/>
 Paper 2 is all about:</p>
 <blockquote>
 <p><strong>Indian examples + sociological concepts + current relevance</strong></p>
 </blockquote>
-<p>These <strong>50 ready-made examples</strong> will help you:</p>
+<h2 id="these-50-ready-made-examples-will-help-you"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">These <strong>50 ready-made examples</strong> will help you:</span></h2>
 <ul>
-<li>Link Paper 1 &rarr; Paper 2</li>
-<li>Add contemporary depth</li>
-<li>Write &ldquo;Indian sociological answers&rdquo;</li>
+<li>
+<h2 id="link-paper-1-paper-2"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Link Paper 1 &rarr; Paper 2</span></h2>
+</li>
+<li>
+<h2 id="add-contemporary-depth"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Add contemporary depth</span></h2>
+</li>
+<li>
+<h2 id="write-indian-sociological-answers"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv">Write &ldquo;Indian sociological answers&rdquo;</span></h2>
+</li>
 </ul>
 <p>👉 Use <strong>1&ndash;2 examples per answer</strong></p>
 <hr/>
@@ -5524,4 +5333,3 @@ Paper 2 is all about:</p>
 </div></div>
 					</body>
 				</html>
-			
