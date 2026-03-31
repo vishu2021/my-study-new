@@ -292,3 +292,13 @@ blockquote p {
 color:#00ff35 !important;
 font-weight: bold !important; 
 }
+@media screen and (max-width: 1024px) {
+    html,h1, h2, h3,h4,h5,h6 {
+        font-size: 16px !important;  
+        line-height: 1.5 !important;
+    }
+    p,ol,li,blockquote {
+        font-size: 14px !important; 
+        line-height: 1.5 !important;
+    }
+}
