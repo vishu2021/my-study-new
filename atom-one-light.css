@@ -274,8 +274,15 @@ table tr:hover {
 font-weight: bold!important;
     color: #00ff35!important;
 }
-.pt_qb_2 blockquote { 
-opacity: 1!important;
+blockquote { 
+opacity: 1 !important;
+margin: 30px 0 !important;
+padding: 20px 20px !important;
+background-color: #222 !important;
+box-shadow: 0 0 40px rgba(248, 104, 104, 0.2) !important;
+}
+blockquote p {
+    margin: 0!important;
 }
 .pt_qb_2 blockquote p {
     font-weight: normal!important;
