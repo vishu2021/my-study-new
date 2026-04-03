@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,13 +18,16 @@
   align-self: flex-end;
   justify-self: right;
 }
+
 .jsdraw--svgWrapper {
   display: inline-grid;
 }
+
 .jsdraw--svgWrapper > * {
   grid-row: 1;
   grid-column: 1;
 }
+
 .jsdraw--svgWrapper:hover .jsdraw--editButton,
 .jsdraw--svgWrapper:focus .jsdraw--editButton,
 .jsdraw--svgWrapper:focus-within .jsdraw--editButton,
@@ -34,12 +38,16 @@
   overflow-x: auto;
   padding: 1em;
 }
+
 code.hljs {
   padding: 3px 5px;
 }
+
 /*
+
 Atom One Light by Daniel Gamage
 Original One Light Syntax theme from https://github.com/atom/one-light-syntax
+
 base:    #fafafa
 mono-1:  #383a42
 mono-2:  #686b77
@@ -52,21 +60,26 @@ hue-5:   #e45649
 hue-5-2: #c91243
 hue-6:   #986801
 hue-6-2: #c18401
+
 */
+
 .hljs {
   color: #383a42;
   background: #fafafa;
 }
+
 .hljs-comment,
 .hljs-quote {
   color: #a0a1a7;
   font-style: italic;
 }
+
 .hljs-doctag,
 .hljs-keyword,
 .hljs-formula {
   color: #a626a4;
 }
+
 .hljs-section,
 .hljs-name,
 .hljs-selector-tag,
@@ -74,9 +87,11 @@ hue-6-2: #c18401
 .hljs-subst {
   color: #e45649;
 }
+
 .hljs-literal {
   color: #0184bb;
 }
+
 .hljs-string,
 .hljs-regexp,
 .hljs-addition,
@@ -84,6 +99,7 @@ hue-6-2: #c18401
 .hljs-meta .hljs-string {
   color: #50a14f;
 }
+
 .hljs-attr,
 .hljs-variable,
 .hljs-template-variable,
@@ -94,6 +110,7 @@ hue-6-2: #c18401
 .hljs-number {
   color: #986801;
 }
+
 .hljs-symbol,
 .hljs-bullet,
 .hljs-link,
@@ -102,17 +119,21 @@ hue-6-2: #c18401
 .hljs-title {
   color: #4078f2;
 }
+
 .hljs-built_in,
 .hljs-title.class_,
 .hljs-class .hljs-title {
   color: #c18401;
 }
+
 .hljs-emphasis {
   font-style: italic;
 }
+
 .hljs-strong {
   font-weight: bold;
 }
+
 .hljs-link {
   text-decoration: underline;
 }</style>
@@ -120,12 +141,14 @@ hue-6-2: #c18401
 					</head>
 					<body>
 						<div class="exported-note"><div class="exported-note-title">Syllabus</div>
+
 <style>
 		/* https://necolas.github.io/normalize.css/ */
 		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
 		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
 		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
+
 		body {
 			font-size: 15px;
 			color: #32373F;
@@ -143,9 +166,11 @@ hue-6-2: #c18401
 			border-radius: 3px;
 			background-color: rgb(243, 243, 243);
 		}
+
 		:root {
 			--scrollbar-size: 7px;
 		}
+
 		::-webkit-scrollbar {
 			width: var(--scrollbar-size);
 			height: var(--scrollbar-size);
@@ -168,7 +193,11 @@ hue-6-2: #c18401
 		::-webkit-scrollbar-thumb:hover {
 			background: rgba(50, 55, 63, 0.63); 
 		}
+
+		
+
 		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
+
 		#rendered-md > h1:first-child,
 		#rendered-md > h2:first-child,
 		#rendered-md > h3:first-child,
@@ -182,18 +211,22 @@ hue-6-2: #c18401
 			margin-top: 0;
 			padding-top: 0;
 		}
+		
 		p, h1, h2, h3, h4, h5, h6, ul, table {
 			margin-top: .6em;
 			margin-bottom: 1.35em;
+
 			/*
 				Adds support for RTL text in the note body. It automatically detects the direction using the content.
 				Issue: https://github.com/laurent22/joplin/issues/3991
 			*/
 			unicode-bidi: plaintext;
 		}
+
 		h1, h2, h3, h4, h5, h6, ul, table {
 			margin-bottom: 0.65em;
 		}
+
 		h1, h2, h3, h4, h5, h6 {
 			line-height: 1.5em;
 		}
@@ -216,6 +249,7 @@ hue-6-2: #c18401
 			font-size: 1em;
 			font-weight: bold;
 		}
+
 		.exported-note-title {
 			font-size: 2em;
 			font-weight: bold;
@@ -224,6 +258,7 @@ hue-6-2: #c18401
 			padding-bottom: .35em;
 			border-bottom: 1px solid #dddddd;
 		}
+
 		a {
 			color: #155BDA;
 		}
@@ -238,14 +273,17 @@ hue-6-2: #c18401
 			margin-top: 0.2em;
 			margin-bottom: 0;
 		}
+
 		dt {
 			font-weight: bold;
 			margin-bottom: 0.25em;
 		}
+
 		dd {
 			margin-inline-start: 2.5em;
 			margin-bottom: 0.5em;
 		}
+
 		.resource-icon {
 			display: inline-block;
 			position: relative;
@@ -320,6 +358,7 @@ hue-6-2: #c18401
 			margin-left: 0;
 			opacity: 0.7;
 		}
+
 		.jop-tinymce table,
 		table {
 			text-align: left;
@@ -327,6 +366,7 @@ hue-6-2: #c18401
 			border: 1px solid rgb(220, 220, 220);
 			background-color: #ffffff;
 		}
+
 		.jop-tinymce table td, .jop-tinymce table th,
 		table td, th {
 			text-align: left;
@@ -335,24 +375,29 @@ hue-6-2: #c18401
 			color: #32373F;
 			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
 		}
+
 		.jop-tinymce table td,
 		table td {
 			border: 1px solid rgb(220, 220, 220);
 		}
+
 		.jop-tinymce table th,
 		table th {
 			border: 1px solid rgb(220, 220, 220);
 			border-bottom: 2px solid rgb(220, 220, 220);
 			background-color: rgb(247, 247, 247);
 		}
+
 		.jop-tinymce table tr:nth-child(even),
 		table tr:nth-child(even) {
 			background-color: rgb(247, 247, 247);
 		}
+
 		.jop-tinymce table tr:hover,
 		table tr:hover {
 			background-color: #e5e5e5;
 		}
+
 		hr {
 			border: none;
 			border-bottom: 2px solid #dddddd;
@@ -361,6 +406,7 @@ hue-6-2: #c18401
 			max-width: 100%;
 			height: auto;
 		}
+		
 		.inline-code,
 		.mce-content-body code {
 			border: 1px solid rgb(220, 220, 220);
@@ -371,10 +417,13 @@ hue-6-2: #c18401
 			color: rgb(0,0,0);
 			font-size: .9em;
 		}
+
 		.highlighted-keyword {
 			background-color: #F3B717;
 			color: black;
 		}
+
+		
 	.not-loaded-resource img {
 		width: 1.15em;
 		height: 1.15em;
@@ -383,60 +432,77 @@ hue-6-2: #c18401
 		border-radius: 2px;
 		box-shadow: 0 1px 3px #000000aa;
 	}
+
 	a.not-loaded-resource img {
 		margin-right: .2em;
 	}
+
 	a.not-loaded-resource {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 	}
+
+
 		.md-checkbox input[type=checkbox]:checked {
 			opacity: 0.7;
 		}
+
 		.jop-tinymce ul.joplin-checklist .checked,
 		.md-checkbox .checkbox-label-checked {
 			opacity: 0.5;
 		}
+
 		.exported-note {
 			padding: 1em;
 		}
+
 		.joplin-editable .joplin-source {
 			display: none;
 		}
+
 		mark {
 			background: #F7D26E;
 			color: black;
 		}
+
 		/* =============================================== */
 		/* For TinyMCE */
 		/* =============================================== */
+
 		.mce-content-body {
 			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
 			padding: 5px 10px 10em 0;
 		}
+
 		/*
 		.mce-content-body code {
 			background-color: transparent;
 		}
 		*/
+
 		.mce-content-body [data-mce-selected=inline-boundary] {
 			background-color: transparent;
 		}
+
 		.mce-content-body .joplin-editable {
 			cursor: pointer !important;
 		}
+
 		.mce-content-body.mce-content-readonly {
 			opacity: 0.5;
 		}
+
 		/* We need that to make sure click events have the A has a target */
 		.katex a span {
 			pointer-events: none;
 		}
+
 		.media-player {
 			width: 100%;
 			margin-top: 10px;
 		}
+
 		.media-player.media-pdf {
 			min-height: 35rem;
 			width: 100%;
@@ -445,6 +511,7 @@ hue-6-2: #c18401
 			border: 0;
 			display: block;
 		}
+
 		/* Clear the CODE style if the element is within a joplin-editable block */
 		.mce-content-body .joplin-editable code {
 			border: none;
@@ -453,28 +520,35 @@ hue-6-2: #c18401
 			color: inherit;
 			font-size: inherit;
 		}
+
 		/* To make code blocks horizontally scrollable */
 		/* https://github.com/laurent22/joplin/issues/5740 */
 		pre.hljs {
 			overflow-x: auto;
 		}
+
 		.joplin-table-wrapper{
 			overflow-x: auto;
 			overflow-y: hidden;
 		}
+
 		/* =============================================== */
 		/* For TinyMCE */
 		/* =============================================== */
+
 		@media print {
 			body {
 				height: auto !important;
 			}
+
 			pre {
 				white-space: pre-wrap;
 			}
+
 			.code, .inline-code {
 				border: 1px solid #CBCBCB;
 			}
+
 			#joplin-container-content {
 				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
 				   around various issues related to scrolling. However when printing we don't want this
@@ -483,27 +557,35 @@ hue-6-2: #c18401
 				height: auto !important;
 			}
 		}
+	
+
 				/*
 					FOR THE MARKDOWN EDITOR
 				*/
+
 				/* Remove the indentation from the checkboxes at the root of the document
 				   (otherwise they are too far right), but keep it for their children to allow
 				   nested lists. Make sure this value matches the UL margin. */
+
 				li.md-checkbox {
 					list-style-type: none;
 				}
+
 				li.md-checkbox input[type=checkbox] {
 					margin-left: -1.71em;
 					margin-right: 0.7em;
 					position: relative;
 					top: 1px;
 				}
+				
 				ul.joplin-checklist {
 					list-style:none;
 				}
+
 				/*
 					FOR THE RICH TEXT EDITOR
 				*/
+
 				ul.joplin-checklist li::before {
 					content:"\f14a";
 					font-family:"Font Awesome 5 Free";
@@ -516,6 +598,7 @@ hue-6-2: #c18401
 					position: absolute;
 					color: #32373F;
 				}
+
 				.joplin-checklist li:not(.checked)::before {
 					content:"\f0c8";
 				}
@@ -552,71 +635,161 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Let&rsquo;s unpack this honestly&mdash;because this is where many serious UPSC Civil Services Examination aspirants get stuck.</p>
 <hr/>
 <h1 id="brain-1-understanding-recall-under-pressure">🧠 1. Understanding &ne; Recall under pressure</h1>
-<p>You might <em>understand</em> a concept beautifully&hellip;<br/>
-&hellip;but in the exam hall, UPSC tests <strong>retrieval speed + precision</strong>.</p>
-<p>👉 Example:</p>
-<ul>
-<li>You <em>understand</em> federalism</li>
-<li>But can you instantly recall:
-<ul>
-<li>7th Schedule divisions?</li>
-<li>Specific article numbers?</li>
-<li>2&ndash;3 committee names?</li>
-</ul>
-</li>
-</ul>
-<p>That&rsquo;s where <strong>memorization kicks in</strong>.</p>
-<p>📌 Think of it like:</p>
-<ul>
-<li>Understanding = knowing the story</li>
-<li>Memorization = having exact lines ready to quote</li>
-</ul>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th><strong>Section</strong></th>
+<th><strong>Key Points</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Understanding vs Recall</td>
+<td>Understanding &rarr; concept clarity (story, logic)  <br class="jop-noMdConv"/>Memorization &rarr; instant recall (articles, data, examples)</td>
+</tr>
+<tr>
+<td>Exam Reality</td>
+<td>Study time &rarr; you understand  <br class="jop-noMdConv"/>Exam hall &rarr; you must retrieve quickly + precisely</td>
+</tr>
+<tr>
+<td>Core Requirement</td>
+<td>Understanding builds answers  <br class="jop-noMdConv"/>Recall fetches marks under pressure</td>
+</tr>
+<tr>
+<td>Conversion System</td>
+<td>Micro notes (1-page)  <br class="jop-noMdConv"/>Keywords (trigger points)  <br class="jop-noMdConv"/>Repetition (spaced revision)  <br class="jop-noMdConv"/>Active recall (write from memory)  <br class="jop-noMdConv"/>Answer writing (apply under pressure)</td>
+</tr>
+<tr>
+<td>Example (Federalism)</td>
+<td>Understanding &rarr; power division  <br class="jop-noMdConv"/>Memorization &rarr; Art 246, 7th Schedule, commissions  <br class="jop-noMdConv"/>Application &rarr; Centre&ndash;State issues, GST</td>
+</tr>
+<tr>
+<td>Golden Formula</td>
+<td>Understanding + Memorization + Practice</td>
+</tr>
+<tr>
+<td>Smart Strategy</td>
+<td>Don&rsquo;t remember everything  <br class="jop-noMdConv"/>Remember trigger points</td>
+</tr>
+<tr>
+<td>Trigger Examples</td>
+<td>Federalism &rarr; Art 246 + 7th Schedule  <br class="jop-noMdConv"/>Judiciary &rarr; vacancies + collegium  <br class="jop-noMdConv"/>Climate &rarr; UNFCCC + NDCs</td>
+</tr>
+<tr>
+<td>Final Insight</td>
+<td>Average &rarr; understand but slow recall  <br class="jop-noMdConv"/>Toppers &rarr; compress + store + retrieve instantly</td>
+</tr>
+</tbody>
+</table>
+</div>
 <hr/>
 <h1 id="zap-2-upsc-rewards-ready-to-deploy-knowledge">⚡ 2. UPSC rewards &ldquo;ready-to-deploy knowledge&rdquo;</h1>
-<p>In Mains, you don&rsquo;t get time to <em>think from scratch</em>. You need:</p>
-<ul>
-<li>Keywords</li>
-<li>Examples</li>
-<li>Case studies</li>
-<li>Committees / Reports</li>
-<li>Data points</li>
-</ul>
-<p>👉 Without memorization:&nbsp;You&rsquo;ll write <strong>generic answers</strong><br/>
-👉 With memorization:&nbsp;You write <strong>ranker-level answers</strong></p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th><strong>Section</strong></th>
+<th><strong>Key Points</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Core Idea</td>
+<td>UPSC rewards ready-to-deploy knowledge  <br class="jop-noMdConv"/>(not on-the-spot thinking)</td>
+</tr>
+<tr>
+<td>Exam Reality</td>
+<td>No time to think from scratch &rarr; need instant recall</td>
+</tr>
+<tr>
+<td>What to Store</td>
+<td>Keywords  <br class="jop-noMdConv"/>Examples  <br class="jop-noMdConv"/>Case studies  <br class="jop-noMdConv"/>Committees / Reports  <br class="jop-noMdConv"/>Data points</td>
+</tr>
+<tr>
+<td>Without Memorization</td>
+<td>Generic answers  <br class="jop-noMdConv"/>Repetitive content  <br class="jop-noMdConv"/>Low value addition</td>
+</tr>
+<tr>
+<td>With Memorization</td>
+<td>Specific points  <br class="jop-noMdConv"/>Multi-dimensional answers  <br class="jop-noMdConv"/>Ranker-level quality</td>
+</tr>
+</tbody>
+</table>
+</div>
 <hr/>
 <h1 id="repeat-3-revision-strengthening-neural-pathways">🔁 3. Revision = Strengthening neural pathways</h1>
-<p>Even after multiple revisions, your brain:</p>
-<ul>
-<li>Forgets details</li>
-<li>Mixes facts</li>
-<li>Loses sharpness</li>
-</ul>
-<p>Memorization through repetition:</p>
-<ul>
-<li>Converts knowledge &rarr; <strong>automatic recall</strong></li>
-<li>Reduces thinking load during exam</li>
-</ul>
-<p>📌 This is cognitive science:</p>
-<blockquote>
-<p>&ldquo;What is not actively recalled is eventually lost.&rdquo;</p>
-</blockquote>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th><strong>Section</strong></th>
+<th><strong>Key Points</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Core Idea</td>
+<td>Revision strengthens neural pathways</td>
+</tr>
+<tr>
+<td>Brain Reality</td>
+<td>Forgets details  <br class="jop-noMdConv"/>Mixes facts  <br class="jop-noMdConv"/>Loses sharpness over time</td>
+</tr>
+<tr>
+<td>Role of Repetition</td>
+<td>Converts knowledge &rarr; automatic recall  <br class="jop-noMdConv"/>Reduces thinking load in exam</td>
+</tr>
+<tr>
+<td>Without Revision</td>
+<td>Weak recall  <br class="jop-noMdConv"/>Confusion in answers</td>
+</tr>
+<tr>
+<td>With Revision</td>
+<td>Fast recall  <br class="jop-noMdConv"/>Clarity + accuracy</td>
+</tr>
+<tr>
+<td>Cognitive Principle</td>
+<td>What is not actively recalled &rarr; eventually lost</td>
+</tr>
+</tbody>
+</table>
+</div>
 <hr/>
 <h1 id="jigsaw-4-multi-dimensional-thinking-needs-memory-blocks">🧩 4. Multi-dimensional thinking NEEDS memory blocks</h1>
-<p>You said:</p>
-<blockquote>
-<p>&ldquo;multi-dimensional approach&rdquo;</p>
-</blockquote>
-<p>Exactly&mdash;and here&rsquo;s the catch:</p>
-<p>To think in dimensions (social, economic, ethical, political), you need:</p>
-<ul>
-<li>Stored examples</li>
-<li>Pre-learned frameworks</li>
-<li>Case studies</li>
-</ul>
-<p>👉 Without memorized inputs, your &ldquo;multi-dimensional answer&rdquo; becomes:</p>
-<blockquote>
-<p>vague + repetitive + theoretical</p>
-</blockquote>
+<p>This is your <strong>&ldquo;thinking backbone&rdquo;</strong>&mdash;you don&rsquo;t think from scratch, you <strong>retrieve and structure</strong>.</p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th><strong>Section</strong></th>
+<th><strong>Key Points</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Core Idea</td>
+<td>Multi-dimensional thinking requires memory blocks</td>
+</tr>
+<tr>
+<td>Requirement</td>
+<td>Stored examples  <br class="jop-noMdConv"/>Pre-learned frameworks  <br class="jop-noMdConv"/>Case studies</td>
+</tr>
+<tr>
+<td>Why Needed</td>
+<td>Enables thinking across social,  <br class="jop-noMdConv"/>economic, ethical, political dimensions</td>
+</tr>
+<tr>
+<td>Without Memory Blocks</td>
+<td>Vague answers  <br class="jop-noMdConv"/>Repetitive content  <br class="jop-noMdConv"/>Theoretical writing</td>
+</tr>
+<tr>
+<td>With Memory Blocks</td>
+<td>Specific examples  <br class="jop-noMdConv"/>Multi-dimensional depth  <br class="jop-noMdConv"/>Practical answers</td>
+</tr>
+</tbody>
+</table>
+</div>
 <hr/>
 <h1 id="receipt-5-prelims-is-brutally-memory-driven">🧾 5. Prelims is brutally memory-driven</h1>
 <p>Let&rsquo;s be blunt:</p>
@@ -650,25 +823,42 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </div>
 <hr/>
 <h1 id="dart-6-memorization-improves-answer-structure">🎯 6. Memorization improves answer structure</h1>
-<p>When you memorize:</p>
-<ul>
-<li>Definitions</li>
-<li>Keywords</li>
-<li>Standard intro/conclusion lines</li>
-</ul>
-<p>Your answers become:</p>
-<ul>
-<li>Crisp</li>
-<li>Structured</li>
-<li>Examiner-friendly</li>
-</ul>
-<p>👉 Example:<br/>
-Instead of explaining vaguely, you write:</p>
-<ul>
-<li>&ldquo;According to ARC&hellip;&rdquo;</li>
-<li>&ldquo;As per SDG framework&hellip;&rdquo;</li>
-</ul>
-<p>That&rsquo;s <strong>value addition</strong>, and it&rsquo;s mostly memorized.</p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th><strong>Section</strong></th>
+<th><strong>Key Points</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Core Idea</td>
+<td>Memorization improves answer structure</td>
+</tr>
+<tr>
+<td>What to Memorize</td>
+<td>Definitions  <br class="jop-noMdConv"/>Keywords  <br class="jop-noMdConv"/>Standard intro / conclusion lines</td>
+</tr>
+<tr>
+<td>Impact on Answers</td>
+<td>Crisp  <br class="jop-noMdConv"/>Structured  <br class="jop-noMdConv"/>Examiner-friendly</td>
+</tr>
+<tr>
+<td>Value Addition</td>
+<td>Use references &rarr; ARC, SDGs, reports</td>
+</tr>
+<tr>
+<td>Without Memorization</td>
+<td>Vague explanations  <br class="jop-noMdConv"/>Unstructured answers</td>
+</tr>
+<tr>
+<td>With Memorization</td>
+<td>Precise statements  <br class="jop-noMdConv"/>Strong introductions &amp; conclusions</td>
+</tr>
+</tbody>
+</table>
+</div>
 <hr/>
 <h1 id="scales-7-its-not-rote-vs-understanding-its-both">⚖️ 7. It&rsquo;s not rote vs understanding &mdash; it&rsquo;s BOTH</h1>
 <p>The real game is:</p>
@@ -712,16 +902,34 @@ Instead of explaining vaguely, you write:</p>
 <hr/>
 <h1 id="bulb-how-to-do-smart-memorization-not-boring-rote">💡 How to do &ldquo;smart memorization&rdquo; (not boring rote)</h1>
 <p>Instead of cramming, do this:</p>
-<p>🔹 Memorize <strong>frameworks</strong>, not paragraphs</p>
-<p>🔹 Use <strong>active recall</strong> (close book &rarr; write)</p>
-<p>🔹 Revise in <strong>spaced intervals</strong></p>
-<p>🔹 Make <strong>micro notes (1-page per topic)</strong></p>
-<p>🔹 Memorize:</p>
-<ol>
-<li>2&ndash;3 examples per topic</li>
-<li>1 committee</li>
-<li>1 data point</li>
-</ol>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th><strong>Section</strong></th>
+<th><strong>Key Points</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Core Idea</td>
+<td>Focus on smart memorization, not rote learning</td>
+</tr>
+<tr>
+<td>Approach</td>
+<td>Memorize frameworks, not paragraphs  <br class="jop-noMdConv"/>Use active recall (close book &rarr; write)  <br class="jop-noMdConv"/>Revise in spaced intervals  <br class="jop-noMdConv"/>Make micro notes (1-page per topic)</td>
+</tr>
+<tr>
+<td>What to Memorize</td>
+<td>2&ndash;3 examples per topic  <br class="jop-noMdConv"/>1 committee  <br class="jop-noMdConv"/>1 data point</td>
+</tr>
+<tr>
+<td>Outcome</td>
+<td>Better retention  <br class="jop-noMdConv"/>Faster recall  <br class="jop-noMdConv"/>Structured answers</td>
+</tr>
+</tbody>
+</table>
+</div>
 <hr/>
 <h1 id="rocket-final-takeaway">🚀 Final takeaway</h1>
 <p>You&rsquo;re already doing the <em>hard part</em> (understanding, connecting, thinking).<br/>
@@ -872,11 +1080,108 @@ Memorization is just the <strong>last-mile delivery system</strong>.</p>
 <p><em>&ldquo;Discuss challenges in Indian federalism.&rdquo;</em></p>
 <hr/>
 <h3 id="x-average-answer-only-understanding">❌ Average answer (only understanding):</h3>
-<ul>
-<li>Talks about centre-state relations</li>
-<li>Mentions GST, governor issues<br/>
-👉 Generic, forgettable</li>
-</ul>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th><strong>Section</strong></th>
+<th><strong>Key Points</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Question</td>
+<td>Discuss challenges in Indian federalism</td>
+</tr>
+<tr>
+<td>Average Approach</td>
+<td>Only conceptual understanding</td>
+</tr>
+<tr>
+<td>Answer Content</td>
+<td>General discussion on Centre&ndash;State relations  <br class="jop-noMdConv"/>Mentions GST, Governor issues</td>
+</tr>
+<tr>
+<td>Problem</td>
+<td>Generic  <br class="jop-noMdConv"/>Lacks depth  <br class="jop-noMdConv"/>Easily forgettable</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="white_check_mark-topper-level-answer-indian-federalism">✅ Topper-Level Answer (Indian Federalism)</h3>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th><strong>Section</strong></th>
+<th><strong>Content</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intro</td>
+<td>Indian federalism, as defined under Article 1,  <br class="jop-noMdConv"/>is a &ldquo;Union of States&rdquo; with a strong unitary bias (K.C. Wheare).  <br class="jop-noMdConv"/>Recent trends show growing Centre&ndash;State tensions.</td>
+</tr>
+<tr>
+<td>Issues</td>
+<td>Fiscal centralization (GST, reduced state autonomy)  <br class="jop-noMdConv"/>Governor&rsquo;s role (political misuse)  <br class="jop-noMdConv"/>Legislative conflicts (Concurrent List overlap)  <br class="jop-noMdConv"/>Unequal resource distribution</td>
+</tr>
+<tr>
+<td>Examples</td>
+<td>GST compensation disputes  <br class="jop-noMdConv"/>Governor&ndash;State conflicts (e.g., delays in assent)</td>
+</tr>
+<tr>
+<td>Analysis</td>
+<td>Root causes &rarr;  <br class="jop-noMdConv"/>Central dominance, political differences,  <br class="jop-noMdConv"/>weak institutional mechanisms</td>
+</tr>
+<tr>
+<td>Value Addition</td>
+<td>Sarkaria Commission &rarr; cooperative federalism  <br class="jop-noMdConv"/>Punchhi Commission &rarr; clear role of Governor</td>
+</tr>
+<tr>
+<td>Way Forward</td>
+<td>Strengthen Inter-State Council  <br class="jop-noMdConv"/>Ensure fiscal autonomy  <br class="jop-noMdConv"/>Promote cooperative + competitive federalism</td>
+</tr>
+<tr>
+<td>Conclusion</td>
+<td>Federalism must evolve towards  <br class="jop-noMdConv"/>&ldquo;collaborative governance&rdquo; for balanced development</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="why-this-is-a-topper-answer">Why This Is a Topper Answer</h3>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th><strong>Element</strong></th>
+<th><strong>Present</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Keywords</td>
+<td>Article 1, cooperative federalism</td>
+</tr>
+<tr>
+<td>Committees</td>
+<td>Sarkaria, Punchhi</td>
+</tr>
+<tr>
+<td>Examples</td>
+<td>GST, Governor issues</td>
+</tr>
+<tr>
+<td>Structure</td>
+<td>Clear intro &rarr; issues &rarr; analysis &rarr; solution</td>
+</tr>
+<tr>
+<td>Depth</td>
+<td>Multi-dimensional + analytical</td>
+</tr>
+</tbody>
+</table>
+</div>
 <hr/>
 <h3 id="white_check_mark-topper-style-answer-all-4-combined">✅ Topper-style answer (all 4 combined):</h3>
 <p><strong>Intro (Memorization):</strong><br/>
@@ -956,12 +1261,34 @@ Memorization is just the <strong>last-mile delivery system</strong>.</p>
 </ul>
 <hr/>
 <h1 id="jigsaw-one-more-example-quick-climate-change">🧩 One More Example (Quick &ndash; Climate Change)</h1>
-<ul>
-<li><strong>Understanding:</strong> Greenhouse effect mechanism</li>
-<li><strong>Thinking:</strong> Development vs sustainability conflict</li>
-<li><strong>Connections:</strong> Economy (jobs), ethics (intergenerational justice), IR (Paris Agreement)</li>
-<li><strong>Memorization:</strong> &ldquo;National Action Plan on Climate Change&rdquo;, SDG 13</li>
-</ul>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Key Points</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Understanding</td>
+<td>Greenhouse effect mechanism</td>
+</tr>
+<tr>
+<td>Thinking</td>
+<td>Development vs sustainability conflict</td>
+</tr>
+<tr>
+<td>Connections</td>
+<td>Economy (jobs)  <br class="jop-noMdConv"/>Ethics (intergenerational justice)  <br class="jop-noMdConv"/>IR (Paris Agreement)</td>
+</tr>
+<tr>
+<td>Memorization</td>
+<td>National Action Plan on Climate Change  <br class="jop-noMdConv"/>SDG 13</td>
+</tr>
+</tbody>
+</table>
+</div>
 <p>👉 That&rsquo;s a complete UPSC-ready approach.</p>
 <hr/>
 <h1 id="rocket-final-insight-very-important">🚀 Final Insight (very important)</h1>
@@ -1417,7 +1744,7 @@ If it exceeds &rarr; you&rsquo;re overdoing it.</p>
 </tr>
 <tr>
 <td><strong>🟡 GS3</strong></td>
-<td>Economic terms: Inflation, Fiscal deficit  <br class="jop-noMdConv"/>Reports: Economic Survey, NITI Aayog  <br class="jop-noMdConv"/>Environment: National parks, Conventions (Paris Agreement etc.)</td>
+<td>Economic terms: Inflation, Fiscal deficit  <br class="jop-noMdConv"/>Reports: Economic Survey, NITI Aayog  <br class="jop-noMdConv"/>Environment: National parks,  <br class="jop-noMdConv"/>Conventions (Paris Agreement etc.)</td>
 <td>Focus on application + current relevance</td>
 </tr>
 <tr>
@@ -1688,19 +2015,38 @@ If it exceeds &rarr; you&rsquo;re overdoing it.</p>
 <hr/>
 <h1 id="zap-combining-timetable-pyq-daily-flow">⚡ COMBINING TIMETABLE + PYQ (Daily Flow)</h1>
 <p>When studying a topic:</p>
-<p>👉 DO THIS:</p>
-<ol>
-<li>Read concept</li>
-<li>Check PYQs</li>
-<li>Make 1-page notes</li>
-<li>Add:
-<ul>
-<li>Examples</li>
-<li>Committees</li>
-</ul>
-</li>
-<li>Write 1 answer</li>
-</ol>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th><strong>Step</strong></th>
+<th><strong>Action</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Read concept &rarr; focus on basics (what + how)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Check PYQs &rarr; identify pattern + keywords UPSC uses</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Make 1-page notes &rarr; convert into keywords, not paragraphs</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Add examples + committees &rarr; 1&ndash;2 examples + 1 committee/report</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Write 1 answer &rarr; use structure (intro &rarr; issues &rarr; analysis &rarr; solution)</td>
+</tr>
+</tbody>
+</table>
+</div>
 <hr/>
 <h1 id="rotating_light-common-mistakes-avoid-these">🚨 COMMON MISTAKES (Avoid these)</h1>
 <p>❌ Making 100-page notes<br/>
@@ -1825,7 +2171,6 @@ If it exceeds &rarr; you&rsquo;re overdoing it.</p>
 </div>
 <hr/>
 <h1 id="repeat-4-daily-essay-practice-system">🔁 4. DAILY ESSAY PRACTICE SYSTEM</h1>
-<hr/>
 <h2 id="spiral_calendar_pad-alternate-day-practice-3040-min">🗓️ Alternate Day Practice (30&ndash;40 min)</h2>
 <hr/>
 <div class="joplin-table-wrapper">
@@ -1863,7 +2208,6 @@ If it exceeds &rarr; you&rsquo;re overdoing it.</p>
 </div>
 <hr/>
 <h1 id="jigsaw-full-example-mini-demonstration">🧩 FULL EXAMPLE (Mini Demonstration)</h1>
-<hr/>
 <div class="joplin-table-wrapper">
 <table>
 <thead>
@@ -2288,7 +2632,6 @@ If it exceeds &rarr; you&rsquo;re overdoing it.</p>
 <p>👉 This = complete sociology note in ONE page</p>
 <hr/>
 <h1 id="writing_hand-2-sociology-answer-writing-framework">✍️ 2. SOCIOLOGY ANSWER WRITING FRAMEWORK</h1>
-<hr/>
 <h2 id="jigsaw-intro-very-important">🧩 INTRO (VERY IMPORTANT)</h2>
 <p>Use:</p>
 <ul>
@@ -2823,7 +3166,6 @@ This is reflected in India through Srinivas&rsquo; concept of Sanskritization&he
 </blockquote>
 <hr/>
 <h1 id="tips-and-tricks"><span style="color: rgb(255, 153, 46);" class="jop-noMdConv"><strong>TIPS AND TRICKS</strong></span></h1>
-<hr/>
 <h1 id="rocket-1-think-like-a-sociologist-not-a-student">🚀 1. Think Like a Sociologist (Not a Student)</h1>
 <p>Most people:</p>
 <ul>
@@ -3751,7 +4093,6 @@ This is reflected in India through Srinivas&rsquo; concept of Sanskritization&he
 <p>Let&rsquo;s make GS3 fully <strong>structured + repeatable + answer-ready</strong> 🔥</p>
 <hr/>
 <h1 id="brain-1-universal-gs3-framework-use-any-question">🧠 1. UNIVERSAL GS3 FRAMEWORK (Use ANY question)</h1>
-<hr/>
 <h2 id="jigsaw-the-c-f-i-a-s-w-model">🧩 THE &ldquo;C-F-I-A-S-W&rdquo; MODEL</h2>
 <ul>
 <li><strong>C</strong> = Context (current issue / definition)</li>
@@ -3977,7 +4318,6 @@ This is reflected in India through Srinivas&rsquo; concept of Sanskritization&he
 </div>
 <hr/>
 <h1 id="robot_face-5-science-tech-framework">🤖 5. SCIENCE &amp; TECH FRAMEWORK</h1>
-<hr/>
 <h2 id="dart-approach-10">🎯 Approach:</h2>
 <p>👉 <strong>What + Application + Risk</strong></p>
 <hr/>
@@ -4979,7 +5319,6 @@ This is reflected in India through Srinivas&rsquo; concept of Sanskritization&he
 </tbody>
 </table>
 </div>
-<p>&nbsp;</p>
 <hr/>
 <h1 id="rocket-final-secret-4">🚀 FINAL SECRET</h1>
 <p>You don&rsquo;t need:</p>
@@ -6492,3 +6831,4 @@ Paper 2 is all about:</p>
 </div></div>
 					</body>
 				</html>
+			
