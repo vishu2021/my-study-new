@@ -276,6 +276,7 @@ font-weight: bold!important;
     color: #00ff35!important;
 }
 table tr td  strong {
+    font-weight: normal!important;
     color: #00ff35!important;
 }
 table tr td:first-child strong,
