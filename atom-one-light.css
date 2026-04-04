@@ -7,7 +7,7 @@ Lemon Yellow: #FFF700
 Electric Green: #21FC0D
 Bright Turquoise: #08E8DE
 Vivid Violet: #9D00FE
-Bright Blue: #0165FC 
+Bright Blue: #0165FC
 Neon Cyan — #00FFFF
 Electric Blue — #00BFFF
 Neon Green — #39FF14
@@ -87,7 +87,7 @@ ol {
     color: #fff;
 }
 .exported-note-title {
-    color: #ff2424!important;
+    color: #ff2424 !important;
 }
 h1,
 h2,
@@ -113,47 +113,47 @@ table td {
 h1,
 h1 span,
 h1 strong {
-    color: #fff700!important;
+    color: #fff700 !important;
 }
 h2,
 h2 span,
 h2 strong {
-    color: #00dbff!important;
+    color: #00dbff !important;
 }
 h3,
 h3 span,
 h3 strong {
-    color: #ffca00!important;
+    color: #ffca00 !important;
 }
 h4,
 h4 span,
 h4 strong {
-    color: #1de9b6!important;
+    color: #1de9b6 !important;
 }
 h5,
 h5 span,
 h5 strong {
-    color: #ff5252!important;
+    color: #ff5252 !important;
 }
 h6,
 h6 span,
 h6 strong {
-    color: #ff00ff!important;
+    color: #ff00ff !important;
 }
 /*
 Atom One Light by Daniel Gamage
 Original One Light Syntax theme from https://github.com/atom/one-light-syntax
-base:    #fafafa
-mono-1:  #383a42
-mono-2:  #686b77
-mono-3:  #a0a1a7
-hue-1:   #0184bb
-hue-2:   #4078f2
-hue-3:   #a626a4
-hue-4:   #50a14f
-hue-5:   #e45649
+base: #fafafa
+mono-1: #383a42
+mono-2: #686b77
+mono-3: #a0a1a7
+hue-1: #0184bb
+hue-2: #4078f2
+hue-3: #a626a4
+hue-4: #50a14f
+hue-5: #e45649
 hue-5-2: #c91243
-hue-6:   #986801
+hue-6: #986801
 hue-6-2: #c18401
 */
 .hljs {
@@ -238,7 +238,8 @@ table th {
     border: 1px solid rgb(220, 220, 220) !important;
     border-bottom: 2px solid rgb(220, 220, 220) !important;
     background-color: #030303 !important;
-    color: #00dbff!important;
+    color: #00dbff !important;
+    text-transform: uppercase !important;
 }
 .jop-tinymce table td,
 .jop-tinymce table th,
@@ -247,7 +248,7 @@ th {
     text-align: left !important;
     padding: 0.5em 1em 0.5em 1em !important;
     font-size: 15px !important;
-    color: #c8c8c8 !important;
+    color: #fff !important;
 }
 .jop-tinymce table tr:nth-child(even),
 table tr:nth-child(even) {
@@ -261,64 +262,80 @@ ol li strong,
 ol li span,
 ul li strong,
 ul li span {
-    color: #f4ff00!important;
+    color: #f4ff00 !important;
 }
-.jop-tinymce table tr, 
+.jop-tinymce table tr,
 table tr {
-    transition: all ease 0.4s;    
+    transition: all ease 0.4s;
 }
-.jop-tinymce table tr:hover, 
+.jop-tinymce table tr:hover,
 table tr:hover {
-    background-color: #002a08!important;
+    background-color: #002a08 !important;
 }
 .pt_qb_2 p {
-font-weight: bold!important;
-    color: #00ff35!important;
+    font-weight: bold !important;
+    color: #00ff35 !important;
 }
-table tr td  strong {
-    font-weight: normal!important;
-    color: #00ff35!important;
+table tr td strong {
+    font-weight: normal !important;
+    color: #00ff35 !important;
 }
 table tr td:first-child strong,
 table tr td:first-child {
-    color: #ffca00!important;
-    font-weight: normal!important;
+    color: #ffca00 !important;
+    font-weight: normal !important;
+    text-transform: capitalize !important;
 }
-blockquote { 
+blockquote {
     opacity: 1 !important;
     margin: 30px 0 !important;
     padding: 20px !important;
     background-color: #222 !important;
-    box-shadow: 0 0 40px rgba(255, 255, 255, 0.2) !important;
+    /* box-shadow: 0 0 40px rgba(255, 255, 255, 0.2) !important; */
 }
 blockquote p {
-    margin: 0!important;
+    margin: 0 !important;
 }
 .pt_qb_2 blockquote p {
-    font-weight: normal!important;
-    color: #fff!important;
+    font-weight: normal !important;
+    color: #fff !important;
 }
-.essay_300 p span  {
-    color:#00ff35 !important;
-    font-weight: bold !important; 
+.essay_300 p span {
+    color: #00ff35 !important;
+    font-weight: bold !important;
 }
 @media screen and (max-width: 1024px) {
-    html,h1, h2, h3,h4,h5,h6 {
-        font-size: 16px !important;  
+    html,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 16px !important;
         line-height: 1.5 !important;
     }
-    p,ol,li,blockquote {
-        font-size: 14px !important; 
+    h1 {
+        font-size: 20px !important;
+        line-height: 1.5 !important;
+    }
+    h2 {
+        font-size: 18px !important;
+        line-height: 1.5 !important;
+    }
+    p,
+    ol,
+    li,
+    blockquote {
+        font-size: 14px !important;
         line-height: 1.5 !important;
     }
     .my-app li {
-        margin: 6px 0; 
+        margin: 6px 0;
     }
     .my-app li a {
         font-size: 20px;
     }
-     blockquote {
+    blockquote {
         margin: 10px 0 !important;
         padding: 10px !important;
-     }
+    }
 }
